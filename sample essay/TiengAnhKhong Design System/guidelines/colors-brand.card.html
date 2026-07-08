@@ -1,0 +1,42 @@
+<!-- @dsCard group="Colors" viewport="700x140" name="Brand Colors" subtitle="The two-color brand palette — cream surface and near-black ink" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { background: var(--surface-base); margin: 0; padding: 20px 24px; display: flex; gap: 16px; align-items: stretch; }
+    .swatch { flex: 1; border-radius: var(--radius-md); display: flex; flex-direction: column; justify-content: flex-end; padding: 14px 16px; min-height: 100px; border: 1px solid var(--surface-border); }
+    .name { font-family: var(--font-sans); font-size: var(--text-sm); font-weight: var(--weight-medium); }
+    .hex  { font-family: var(--font-mono); font-size: var(--text-xs); opacity: 0.65; margin-top: 2px; }
+    .token { font-family: var(--font-mono); font-size: 10px; opacity: 0.5; margin-top: 1px; }
+  </style>
+</head>
+<body>
+  <div class="swatch" style="background:#FAF9F5; color:#141413; flex:2;">
+    <div class="name">Cream</div>
+    <div class="hex">#FAF9F5</div>
+    <div class="token">--gray-50 / --surface-base</div>
+  </div>
+  <div class="swatch" style="background:#F2F0E9; color:#141413;">
+    <div class="name">Warm 100</div>
+    <div class="hex">#F2F0E9</div>
+    <div class="token">--gray-100</div>
+  </div>
+  <div class="swatch" style="background:#DEDAD0; color:#141413;">
+    <div class="name">Warm 200</div>
+    <div class="hex">#DEDAD0</div>
+    <div class="token">--gray-200</div>
+  </div>
+  <div class="swatch" style="background:#C8C4B5; color:#141413;">
+    <div class="name">Warm 300</div>
+    <div class="hex">#C8C4B5</div>
+    <div class="token">--gray-300</div>
+  </div>
+  <div class="swatch" style="background:#141413; color:#FAF9F5; flex:2;">
+    <div class="name">Ink</div>
+    <div class="hex">#141413</div>
+    <div class="token">--gray-900 / --text-primary</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Reader & Writer Importer",
+  "version": "1.0",
+  "description": "1-Click import for paywalled articles into Reader & Writer.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_title": "Send to Reader & Writer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

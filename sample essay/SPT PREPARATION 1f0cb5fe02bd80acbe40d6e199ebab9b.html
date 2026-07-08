@@ -1,0 +1,750 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SPT PREPARATION</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1f0cb5fe-02bd-80ac-be40-d6e199ebab9b" class="page sans"><header><h1 class="page-title" dir="auto">SPT PREPARATION</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c6-a5d0-c346f897d43c" class="">PHẦN IV. WRITING</p></div><div style="display:contents" dir="auto"><ol type="1" id="1f0cb5fe-02bd-804d-9f8a-c8c82ed4c033" class="numbered-list" start="1"><li>Write a paragraph (of approximately 150 words) to answer the following question: <strong>Reading </strong>has become <strong>less popular among young people</strong>. What are the <strong>main reasons</strong> for this decline, and how can the younger generation be encouraged to read more? Provide <strong>examples and details</strong> to support your ideas</li></ol></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8043-ac2a-d95b87cd18b8" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-80ed-8ce9-c7dff0c95fde"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8022-b546-dad58ee6e0e7" class="">Trước khi vào nhận xét, a muốn làm rõ là những nhận xét của anh sẽ không nói gì về từ vựng và ngữ pháp cả mà a sẽ tập trung vào 2 tiêu chí còn lại đó là nội dung và sự rành mạch (nếu thấy a nhắc tới grammar thì tức là e cần cái grammar đó để tăng điểm cho 2 tiêu chí kia). Vì đối với anh, grammar và từ vựng là nền tảng - giờ anh có nói thì sẽ ko có ích gì cả vì e sắp thi rồi.</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e5-bf44-dacc12256fd5" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-802f-89e4-e0fbcfb2b649" class="">In our digital age, the <strong>prevalence </strong>of reading among young people has gradually decreased. This decline is attributed to different causes, and there are several measures, <strong>if taken wisely</strong>, can help to improve the situation. <strong>First</strong>, <strong>the development of advanced technologies</strong> makes youngsters be likely to spend too much time on Internet. They tend to surf, explore various interesting platforms instead of reading books. Second, work and academic pressure also poses a risk to their mental health, making them become depressed, overwhelmed with deadlines, assignments and so on. This leads to the fact that they seem not have enough time to concentrate on reading. However, young people can be motivated to read more in several ways. First, they should be facilitated online reading apps such as PDF Reader, Drive and so on. Not only does this platform contain a large number of useful materials, but it also provides users with access to read anywhere. Besides, governments should mount some campaigns and festivals, which raise people’s awareness of the importance of reading. In conclusion, reading has become less common in light of technology, and the young should be encouraged to read more.</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ba-bb9e-d43894cedbf0" class="">Đầu tiên a muốn e hiểu được về cách viết luận - Đó là e cần đề cao sự rõ ràng và rành mạch</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d4-831f-c479bbbb2a24" class="">Nói về sự rành mạch trước, nếu là một người nước ngoài đọc, thì họ sẽ đọc theo tuyến tính (cái này là do ảnh hưởng của văn hóa)</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8050-ae93-eb197c334d7f" class="">Nếu là người việt, đoạn này e đọc sẽ ko có vấn đề gì, nhưng nếu một người bản địa đọc thì họ sẽ question chỗ “First” này của em. Lí do đơn giản là họ đọc theo tuyến tính, tức khi họ đọc tới “different causes” and “several measures” thì họ sẽ dự đoán đc rằng “à đằng sau sẽ nói về các vấn đề này”</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e7-aa71-e010bf2ea727" class="">Nhưng nếu e để ý thì từ “First” này của e đang nói về causes hay measures?</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-8058-bbc3-f34ddac09cf9"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e9-af5e-eff94ec77144" class="">This decline is attributed to different causes, and there are several measures, <strong>if taken wisely</strong>, can help to improve the situation. <strong>First</strong>, <strong>the development of advanced technologies</strong> makes youngsters be likely to spend too much time on Internet.</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80f1-aabe-f2a3592997e3" class="">Và đây là một lỗi lớn nhất khi viết, tức là e đang bị gãy tuyến tính - vì thế khi e muốn đưa người đọc vào một đoạn nào đó thì e nên dùng sign-posting language tức là một cụm nào đó để dự báo trước là tiếp theo sẽ nói về vấn đề gì</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8065-87b0-d3383531655a" class="">Như đoạn này của e thì a sẽ thêm “Regarding the reasons behind this phenomenon, it is evident that….” - Khi này người đọc sẽ kiểu “À đoạn này nói về reasons” và lí do họ không cảm thấy awkward là vì trước đó khi e nói “attributed to different causes” thì họ đã aware đc rằng bên dưới e sẽ nói tới causes. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8002-a304-e81dc00af73b" class="">Đó, đọc tới đây a mong e sẽ nắm đc cách đọc và tiếp nhận của người chấm bài/bản ngữ - qua đó thay đổi trong những bài sau về mặt tuyến tính nhé.  </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-809f-892c-c9b0093f9d12" class="">Vẫn là đoạn này, nhưng giờ anh sẽ nói về vấn đề rõ ràng hoặc đúng hơn là chính phụ. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-808c-85ff-d9ca1a26132e" class="">Về cơ bản, thì chính phụ là những ý chính và ý phụ trong một bài luận </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8053-bdf6-d6557e5be90d" class="">E hãy hiểu như này - Một bài luận cần những luận điểm để chứng minh cho bài luận đó (ý chính của bài luận) - Những luận điểm này lại cần những lí lẽ để chứng minh cho luận điểm đó (ý chính của luận điểm hay nói vui là ý chính của ý chính) - Nhưng những cái lí lẽ này đôi khi cũng sẽ cần đc chứng minh (khi này a chắc e đã hiểu sơ sơ về cách hình thành một bài luận rồi - hay còn gọi là ý chính của ý chính của ý chính). </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c7-89de-f32883c9d092" class="">Vì nó quá nhiều tầng nhiều lớp như vậy, cách sắp xếp ý của em sẽ ảnh hưởng rất nhiều tới sự rõ ràng của bài luận. Ý nào em sẽ đưa vào mạch chính của bài luận, ý nào em sẽ hạ cấp nó xuống thành ý phụ.</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-80b2-abb2-d0fc1631c760"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-804e-9fee-e5475af3322a" class=""><em>First, the development of advanced technologies makes youngsters be likely to spend too much time on Internet. They tend to surf, explore various interesting platforms instead of reading books</em> </p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d4-9f58-e40aea9e2a2d" class="">Như câu bên trên của em, nêu em để ý thì phần “tend to suft, explore” nó chỉ là một dạng paraphrase của “spend time on Internet” và “various interesting platforms” ở đây có thể hiểu là một phần của “development of advanced technologies”. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8012-9615-d74fe42b73ad" class="">Tiếp theo, ý chính của em là - Cái sự phát triển của internet nó làm ng trẻ dành nhiều tgian cho mxh hơn dành cho việc đọc sách. Tức là e đang có 2 ý chính - 1 là internet phát triển → dành nhiều tgian cho mxh và 2 là ít đọc sách hơn. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ec-917c-c8c70f69cf64" class="">Và cái ý internet phát triển e lại có một ý nữa để chứng minh cho luận điểm này là “various interesting platforms” - Vậy thì cái ý “various…” này được coi là một ý phụ. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80f7-af89-d451fc55a12e" class="">Như anh đã nói bên trên, nếu em không sắp xếp đúng cách thì em sẽ chồng chéo ý chính ý phụ loạn hết lên → dẫn tới vấn đề là bài em không có trọng tâm cần thiết. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ec-8724-ff5d86e18fb4" class="">Và đây sẽ là hướng anh sửa dựa trên ý của e</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8015-83fa-de52b9e6c0c4" class="">The development of advanced technologies, particularly the rise social media platforms, featuring shortform and easily digestible content, has made youngsters spend more time online. This has directly led to them having less and less time for reading.   </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80fa-a5d7-c638a628cbed" class="">Nhưng sẽ hay hơn nếu e bỏ ý “advanced technologies” đi và đi thẳng vào luôn “social media” vì cái social media này có ảnh hưởng trực tiếp/lớn hơn lên cái hiện tượng này - nên được cho vào làm ý chính</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c7-9148-c425ca3cdbb4" class="">Khi đó, đọc sẽ hay hơn và ko bị thừa ra cái ý “advanced technologies” - cái ý mà a thấy nó dù nằm trong mạch chính nhưng lại có ảnh hưởng ko lớn =))))</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-8072-b077-e3ba5923030a"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8031-a5f8-fb8fb6c0121f" class=""><em>It is evident that the rise of social media, </em><em>which offer shortform and easily digestible content</em><em>, has led youngsters to spend more and more time online, </em><em>often at the expense of traditional reading. </em><em> </em><em><strong>[[Ở đây e nên viết một example]]</strong></em></p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-803f-b0e5-fd313f269dfd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8008-9020-cff16b0239b6" class="">Như vậy em đã hiểu được phần nào về 2 tiêu chí quan trọng là rõ ràng và rành mạch, giờ xuyên suốt bài này a sẽ nhận xét và sửa theo 2 tiêu chí này nhé. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e1-8cac-da46230ff585" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-8000-906f-fca9ae7ab32e"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8058-9505-dbf558304133" class="">Second, work and academic pressure also poses a risk to their mental health, making them become depressed, overwhelmed with deadlines, assignments and so on. This leads to the fact that they seem not have enough time to concentrate on reading</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8036-a993-daef13e43b5b" class="">Phần này a nghĩ sẽ giúp e hiểu rõ hơn về nội dung của những bài luận vì có một lỗi khá lớn e đang mắc phải ở đây. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e9-925a-c7e8472112c6" class="">E cần nhớ mục tiêu chính là đưa ra lý do cho việc “reading becomes less popular”. Vậy thì vấn đề ở đây là “mental health”</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8093-bbf6-e8c98bc23f22" class="">E thử nghĩ mental health thì có liên hệ gì với “not have enough time” không?</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-806d-816e-f469186fd602" class="">Tức là ở đây cách e link các ý với nhau nó rất kì - A leads to B nhưng logic lại không hợp lý chút nào vì A chả liên quan gì tới B cả</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-800f-a788-d8ae95542f68" class="">A đoán ý của e là quá nhiều bài tập hả? - Nếu vậy thì dựa vào cái cơ sở này a sẽ sửa bài nhé. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8089-b806-cc8a2d897b27" class="">Đầu tiên a sẽ tìm ra mạch ý chính của em đó là </p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-801a-9f0a-f980868c2c7a"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8063-8422-ea6963567290" class="">Quá nhiều bài tập → Limited free time</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8015-922f-e4ba64b29523" class="">Nghĩ đc như này là ổn rồi</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8044-b6cd-c7d0cf923f48" class="">Nhưng nếu muốn chặt chẽ hơn nữa thì e cần nghĩ critical hơn.</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8022-951c-f020feb852f2" class="">Kiểu, limited free time những vẫn có free time mà? - vẫn đọc sách đc chứ?</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ac-b6fa-e9fcb335f46d" class="">Khi này, làm sao để em giải quyết đc câu hỏi đặt ra này?</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d1-80ab-d43bacdb42a5" class="">Để bài của e nó chặt chẽ - siêu chặt chẽ luôn thì e có nhớ tới cái ý về “social media” chứ?</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80a2-a091-cc5f6c4e508b" class="">Đó, nếu em link ý này với câu hỏi “siêu critical” này thì bài của e rất có chiều sâu luôn</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-809a-9319-f97708359cbe" class="">Kiểu limited free time nhưng kể cả khi có free time thì họ cũng dành tgian trên mxh - nên reading trở nên less popular. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-809b-b2b9-feaacd2e1f18" class="">Đó, ngheeeee rấtttttttt cóooooooo chiềuuuuuuuuuuu sâuuuuuuuuuuuuuuuuu</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d6-b3c7-df14a3180dde" class="">Khi này ta có mạch ý chính là</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-80c5-bced-e627dd936817"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d9-97ee-c9054cba668a" class="">Many deadlines → Limited free time - Even when they do have free time → Spend on social media</p></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-806f-b17c-fb666752eb6c" class="bulleted-list"><li style="list-style-type:disc">nếu e để ý thì ở đây ta ko có ý phụ nào cả - vì những gì đưa vào trong bài của e nó là Ý CHÍNH và KHÔNG CẦN CHỨNG MINH<div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-80a1-989f-efb46be4ef50" class="bulleted-list"><li style="list-style-type:circle">Ý chính là những ý liên quan mật thiết tới vấn đề bàn luận - ở đây là “less time for reading” thì những ý chính như free time, deadlines và social media nó hoàn toàn liên quan tới vấn đề này</li></ul></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-802e-851d-e9b3f16ae1fb" class="bulleted-list"><li style="list-style-type:circle">Còn đoạn bên trên - nếu e nhớ thì ta có ý phụ là shortform and easily digestible content - ý này lại chả liên quan gì tới vấn đề chính là “less time for reading” mà chỉ liên quan tới “spend more time on internet”</li></ul></div></li></ul></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-805f-82f1-c8e9ba37e66c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c3-8af5-fff3f55a7112" class="">Như vậy là đã xong phần causes, tiếp theo là tới measures</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-80c7-a1ca-f56fa576fc4c"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d5-9a8b-d4284e5794bd" class="">However, young people can be motivated to read more in several ways. First, they should be facilitated online reading apps such as PDF Reader, Drive and so on. Not only does this platform contain a large number of useful materials, but it also provides users with access to read anywhere. </p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-808b-8b0f-d0f04db692e7" class="">Khi viết luận nhất là những dạng kiểu liệt kê lợi ích/nguyên nhân/giải pháp thì a sẽ ko khuyến khích dùng first để bắt đầu. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ac-94c2-c78fa7ded474" class="">Lí do là a muốn e dùng một cụm kiểu “One approach/solution/measure is to…”. Giải thích cho điều này là vì để nâng điểm cohesion, tức là khi đọc câu đầu e viết là “…in several ways” thì ng đọc sẽ expect e nói về các ways này trong phần tiếp theo (ta đã bàn tới trước đó) và việc e bắt đầu bằng first cũng phần nào phản ánh đc điều này rồi. Nhưng khi e dùng “one approach is….” thì e nhắc lại một lần nữa từ “way” (kiểu như e paraphrase ấy). </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ba-91dd-f668e1680f18" class="">Có một cái tip khi viết để tăng tính cohesion là e luôn bắt đầu câu mới bằng thông tin nằm trong ở câu cũ - và đây cũng là chỗ e áp dụng điều này bằng cách paraphrase từ way. </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ec-be8d-d935a7440daa" class="">Thì đấy là một tip để viết đọc nó mượt hơn :D</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-802d-a59a-d4d083194d80" class="">Còn về phần nội dung a thấy ổn rồi đó</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8083-b3f9-dbfd963e9043" class="">À còn về mặt ngữ pháp chỗ đảo ngữ “not only…but also…” thì a thấy sẽ oke hơn nếu ko đảo ngữ nữa đó</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8050-b1a5-d879ffdb5db0" class="">Lí do thì như bên trên a đã nói là nó sẽ okela hơn nếu e bắt đầu câu sau bằng thông tin câu trước kiểu như “This, These, Such, That…” những thứ mà người đọc expect e sẽ viết. Còn e đảo ngữ như này vẫn oke thôi chỉ là sẽ làm ng đọc hơi bất ngờ một chút nhưng k ảnh hưởng quá nhiều vì e vẫn có từ “this” ngay sau đó (a nghĩ nó thiên về phong cách - chắc nên research thêm)</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-8081-8e7f-e13811abb056"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c8-9622-fce52fd36d6c" class="">Besides, governments should mount some campaigns and festivals, which raise people’s awareness of the importance of reading. </p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80fa-aad2-fb0919c3bd9a" class="">Phần này thì a sẽ chỉnh chỗ mệnh đề quan hệ - raise people’s….</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e8-a330-c616441026fb" class="">Lí do là a muốn mệnh đề này nằm trong mạch văn chính thay vì em đưa nó vào một mệnh đề quan hệ - với mục đích là thêm thông tin cho mệnh đề chính</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-806c-b8a6-f51db6143ac3" class="">Vì raise awareness of the importance of reading nó có vai trò mật thiết trong việc “encourage reading” mà nhỉ?</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-800b-9d25-e0ff95c555c2"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80d5-b48f-cb7d8c20fdb5" class="">In conclusion, reading has become less common in light of technology, and the young should be encouraged to read more.</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-807e-ae0e-c094789c8872" class="">A k thích cái conclusion này, lí do đơn giản là vì e muốn cái conclusion nó phải tóm đc nội dung của đoạn này thay vì paraphrase nguyên cái introduction như này =)))))</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-80a2-88f2-da98d8cf7cad"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80c7-b9bc-e925e9d53095" class="">Một cái approach khá hay vừa giữ được cohesion vừa kết đc bài là bắt đầu bằng “In conclusion, by [[áp dụng các measure trên]] [[chúng ta sẽ giải quyết đc vấn đề đã nêu trên đề bài]]</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8055-a699-daa55d483de2" class="">Thì đó là vấn đề e cần để ý tới</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-804c-8360-f743e101b268" class="">Mặc dù có một số chỗ e sử dụng từ ngữ vẫn hơi dài dòng, ko cần thiết nhưng trong tgian ngắn thì rất khó sửa <strong>(nếu e muốn biết sửa sao thì e có thể dùng chatgpt - a rất khuyến khích dùng cái này để cách diễn đạt)</strong> - còn về nội dung và lập luận/mạch lạc thì dễ nâng điểm hơn nếu em aware được những vấn đề này.  </p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80ed-9729-d72511f0ee83" class="">Thì để a tóm gọn những gì e cần tập trung trong tgian tới nhé:</p></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-80bf-b9b7-ca4509ae5e8c" class="bulleted-list"><li style="list-style-type:disc">E cần đặt bản thân vào người đọc để duy trì cohesion và tuyến tính - đang nói về gì thì câu tiếp theo NÊN (chứ không phải lúc nào cũng thế) bắt đầu bằng thông tin ở câu cũ</li></ul></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-8031-9d11-f3247c89dfe2" class="bulleted-list"><li style="list-style-type:disc">E cần phân biệt đc đâu là ý chính/ý phụ - ý phụ sẽ dùng mệnh đề quan hệ để hạ cấp và lồng ghép vào mệnh đề chính như câu dưới đây (phần anh in đậm là ý phụ) - ý chính và phụ a đã giải thích bên trên e có thể xem lại</li></ul></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="1f0cb5fe-02bd-802e-8374-f6552109c85d"><div style="width:100%"><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8051-bc89-fb13e22263aa" class=""><em>It is evident that the rise of social media, </em><em><strong>which offer shortform and easily digestible content,</strong></em><em> has led youngsters to spend more and more time online, often at the expense of traditional reading. </em></p></div></div></figure></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-8031-85df-fbd41e3f3dc7" class="bulleted-list"><li style="list-style-type:disc">Về mặt nội dung thì em nên đặt câu hỏi NGƯỢC nhiều hơn - kiểu nếu…thì sao?<div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-80da-97f4-fc0f88053471" class="bulleted-list"><li style="list-style-type:circle">Ví dụ như chỗ “limited free time” - Nếu có free time thì sao?</li></ul></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-80f1-aad7-cb8cd3cb8e19" class="bulleted-list"><li style="list-style-type:circle">Tức là e đặt câu hỏi đúng thì câu trả lời sẽ hiện ra trước mắt và sẽ tăng chiều sâu cho bài của e</li></ul></div><div style="display:contents" dir="auto"><ul id="1f0cb5fe-02bd-809c-add6-f7bfb8eb9d10" class="bulleted-list"><li style="list-style-type:circle">Mấu chốt chỉ là tìm ra lỗ hổng trong lập luận của em - Những người ngoài đọc vào họ sẽ phản biện ra sao?</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8091-a648-f1d1056c387d" class="">(191 words).</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8035-ab37-ed4ab8b43ac1" class="">
+</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8031-8942-e5ee9608e045" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="1f0cb5fe-02bd-80ed-8c63-d1a17f488439" class="numbered-list" start="1"><li>Write a paragraph (of approximately 150 words) to answer the following question: Cyberbullying is a pressing issue affecting many teenagers today. What measures can individuals, schools, or governments take to address this problem effectively? Give examples and details to support your answer.</li></ol></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e6-a518-e5f92b5ab4d1" class="">Bài làm</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-80e3-8779-e00da3b1c6a3" class="">In this day and age, an increasing number of teenagers suffer from cyberbullying. This situation should be tackled immediately, and several solutions should be adopted by individuals, schools and goverments. Firstly, each teeenager should be encouraged to take brief precautions of those who tends to be violent and abuse on the Internet. They are likely to disturb their profiles, even steal their accounts. Teenagers also need to opt for wholesome messaging apps such as Zalo, Telegram and so on. In terms of schools, they should educate teenage children about the negative impact of cyberbullying as well as encourge them to bond healthier relationships. This makes contribution to create a friendly, sustainable learning environment. Last but not least, governments need to mount some campaigns to criticise the detriment and consequence of cyberbullying. In addition, governments also need to take stricly control of online social media platforms to set limitations their effects on teenagers. In conclusion, cyberbullying needs to be resolved effectively by educating them about the negave effects and limit their usage on online platforms.</p></div><div style="display:contents" dir="auto"><p id="1f0cb5fe-02bd-8060-adf2-d37625f31bbd" class="">(174 words).</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"><hr/><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Inline comments</summary><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">E thử nghĩ mental health thì có liên hệ gì với “not have enough time” không?</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 9:05 PM</time></span></span></div><div style="padding:0.2em">e có thể nhắn để a hiểu cách e vào bài nhé</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">which has made reading less time-consuming with shortform content</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:57 PM</time></span></span></div><div style="padding:0.2em">đây sẽ là ý chính của ý chính=)))))<br/>đc dùng để củng cố cho ý “spend more and more time”</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">often at the expense of traditional reading. </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:59 PM</time></span></span></div><div style="padding:0.2em">a thấy sẽ ko hay nếu tách riêng một câu ra để làm một mini-conclusion vì nếu làm thế thì 2 sẽ có tới 2 ý mini-conclusions trong một đoạn - rất rất kì<br/>vì thế sẽ hay hơn nếu e dành một chi tiết nhỏ để nói về cái kết quả “less time for reading” </div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Resolved inline comments</summary><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>prevalence </strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:14 PM</time></span></span></div><div style="padding:0.2em">can we use prevalence in this case?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">gradually </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:15 PM</time></span></span></div><div style="padding:0.2em">does the task mention this expression?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>if taken wisely</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:15 PM</time></span></span></div><div style="padding:0.2em">will this phrase be useful later in the text?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>First</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:17 PM</time></span></span></div><div style="padding:0.2em">if u r a native, they will think this is awkward as its not linear</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>the development of advanced technologies</strong> </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:18 PM</time></span></span></div><div style="padding:0.2em">dive deeper into this, like how its more engaging compared to reading → young people love them more</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">concentrate on reading</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:19 PM</time></span></span></div><div style="padding:0.2em">let say, not have enough time to read?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">contain a large number of useful materials, but it also provides users with access to read anywhere</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:21 PM</time></span></span></div><div style="padding:0.2em">does this really encourage them to read?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">some </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">May 11, 2025, 2:21 PM</time></span></span></div><div style="padding:0.2em">this “some” is really vague and should be at all cost avoided in writing</div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details></span></body></html>

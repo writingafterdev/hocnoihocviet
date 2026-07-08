@@ -1,0 +1,73 @@
+/* TiengAnhKhong — Spacing, Radius & Motion Tokens
+   4px base unit. Scale is intentionally generous — the product
+   calls for "quiet, focused workspace" with ample whitespace.
+*/
+
+:root {
+  /* ── Spacing Scale ───────────────────────────────────────────────── */
+  --space-0:    0;
+  --space-1:    0.25rem;   /* 4px */
+  --space-2:    0.5rem;    /* 8px */
+  --space-3:    0.75rem;   /* 12px */
+  --space-4:    1rem;      /* 16px */
+  --space-5:    1.25rem;   /* 20px */
+  --space-6:    1.5rem;    /* 24px */
+  --space-8:    2rem;      /* 32px */
+  --space-10:   2.5rem;    /* 40px */
+  --space-12:   3rem;      /* 48px */
+  --space-16:   4rem;      /* 64px */
+  --space-20:   5rem;      /* 80px */
+  --space-24:   6rem;      /* 96px */
+  --space-32:   8rem;      /* 128px */
+
+  /* ── Semantic Spacing ────────────────────────────────────────────── */
+  --gap-xs:  var(--space-2);   /* 8px  — tight icon+label */
+  --gap-sm:  var(--space-3);   /* 12px — form field gap */
+  --gap-md:  var(--space-4);   /* 16px — standard gap */
+  --gap-lg:  var(--space-6);   /* 24px — section gap */
+  --gap-xl:  var(--space-8);   /* 32px — major section */
+  --gap-2xl: var(--space-12);  /* 48px — page sections */
+
+  --inset-xs: var(--space-2);  /* 8px  — dense padding */
+  --inset-sm: var(--space-3);  /* 12px — compact */
+  --inset-md: var(--space-4);  /* 16px — standard */
+  --inset-lg: var(--space-6);  /* 24px — comfortable */
+  --inset-xl: var(--space-8);  /* 32px — spacious */
+
+  /* ── Border Radius ───────────────────────────────────────────────── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* ── Borders ─────────────────────────────────────────────────────── */
+  --border-width:     1px;
+  --border-width-md:  2px;
+  --border-style:     solid; /* @kind other */
+
+  /* ── Motion ──────────────────────────────────────────────────────── */
+  /* Flat design — transitions are subtle and brief */
+  --ease-default:  cubic-bezier(0.2, 0, 0, 1);   /* @kind other */
+  --ease-out:      cubic-bezier(0, 0, 0.3, 1); /* @kind other */
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+
+  --duration-fast:    80ms; /* @kind other */
+  --duration-default: 150ms; /* @kind other */
+  --duration-slow:    250ms; /* @kind other */
+
+  /* ── Shadows ─────────────────────────────────────────────────────── */
+  /* Flat design — almost no shadows. Only cards on white surfaces
+     get a very subtle 1px border instead of a box-shadow. */
+  --shadow-none:  none;
+  --shadow-xs:    0 1px 2px 0 oklch(7% 0.01 90 / 0.06);
+  --shadow-sm:    0 2px 6px 0 oklch(7% 0.01 90 / 0.08);
+
+  /* ── Z-index ─────────────────────────────────────────────────────── */
+  --z-base:    0; /* @kind other */
+  --z-raised:  10; /* @kind other */
+  --z-overlay: 100; /* @kind other */
+  --z-modal:   200; /* @kind other */
+  --z-toast:   300; /* @kind other */
+}

@@ -1,0 +1,39 @@
+<!-- @dsCard group="Brand" viewport="700x160" name="Voice & Tone" subtitle="How tienganhkhong communicates — honest, precise, calm" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { background: var(--surface-base); margin: 0; padding: 24px; display: flex; gap: 24px; }
+    .col { flex: 1; }
+    .pill { display: inline-flex; align-items: center; font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 500; padding: 3px 10px; border-radius: var(--radius-xs); margin-right: 4px; margin-bottom: 4px; }
+    .good { background: var(--score-high-bg); color: var(--score-high); border: 1px solid color-mix(in oklch, var(--score-high) 25%, transparent); }
+    .bad  { background: var(--score-low-bg);  color: var(--score-low);  border: 1px solid color-mix(in oklch, var(--score-low) 25%, transparent); text-decoration: line-through; }
+    .h { font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 8px; }
+    .ex { font-family: var(--font-sans); font-size: var(--text-sm); color: var(--text-primary); line-height: 1.5; margin-bottom: 4px; }
+    .ex span { color: var(--text-tertiary); }
+  </style>
+</head>
+<body>
+  <div class="col">
+    <div class="h">Tone</div>
+    <div>
+      <span class="pill good">Precise</span>
+      <span class="pill good">Calm</span>
+      <span class="pill good">Direct</span>
+      <span class="pill good">Honest</span>
+      <span class="pill bad">Encouraging 🎉</span>
+      <span class="pill bad">Gamified</span>
+      <span class="pill bad">Overly warm</span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="h">Examples</div>
+    <div class="ex">✓ <strong>Your topic sentences are clear, but paragraphs 2–3 lack cohesive devices.</strong></div>
+    <div class="ex">✗ <span>Great job! You're almost there — keep going! 🌟</span></div>
+    <div class="ex">✓ <strong>287 words. Aim for 250+ to meet the minimum requirement.</strong></div>
+    <div class="ex">✗ <span>Wow, you wrote so much! Amazing effort today.</span></div>
+  </div>
+</body>
+</html>

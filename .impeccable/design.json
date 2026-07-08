@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-03T08:15:00Z",
+  "title": "Design System: Reader & Writer",
+  "extensions": {
+    "colorMeta": {
+      "focus-blue":       { "role": "primary",   "displayName": "Focus Blue",      "canonical": "#3b82f6", "tonalRamp": ["#1e3a8a","#1d4ed8","#2563eb","#3b82f6","#60a5fa","#93c5fd","#bfdbfe","#eff6ff"] },
+      "focus-blue-vivid": { "role": "primary",   "displayName": "Focus Blue Vivid","canonical": "#008dff", "tonalRamp": ["#003d70","#0057a0","#006fcb","#008dff","#33a3ff","#66b9ff","#99cfff","#cce7ff"] },
+      "success-green":    { "role": "secondary", "displayName": "Success Green",   "canonical": "#37c25c", "tonalRamp": ["#14532d","#15803d","#16a34a","#37c25c","#4ade80","#86efac","#bbf7d0","#f0fdf4"] },
+      "caution-amber":    { "role": "tertiary",  "displayName": "Caution Amber",   "canonical": "#e6961f", "tonalRamp": ["#78350f","#92400e","#b45309","#e6961f","#f59e0b","#fbbf24","#fde68a","#fffbeb"] },
+      "alert-coral":      { "role": "tertiary",  "displayName": "Alert Coral",     "canonical": "#ec6a5b", "tonalRamp": ["#7f1d1d","#991b1b","#b91c1c","#ec6a5b","#f87171","#fca5a5","#fecaca","#fef2f2"] },
+      "canvas":           { "role": "neutral",   "displayName": "Desk Canvas",     "canonical": "#f2f2f2", "tonalRamp": ["#171717","#404040","#737373","#a3a3a3","#d4d4d4","#e5e5e5","#f2f2f2","#fafafa"] },
+      "surface":          { "role": "neutral",   "displayName": "Card White",      "canonical": "#ffffff", "tonalRamp": ["#171717","#404040","#737373","#a3a3a3","#d4d4d4","#e5e5e5","#f5f5f5","#ffffff"] },
+      "ink-primary":      { "role": "neutral",   "displayName": "Ink Primary",     "canonical": "#171717", "tonalRamp": ["#0a0a0a","#171717","#262626","#404040","#525252","#737373","#a3a3a3","#d4d4d4"] },
+      "tint-blue":        { "role": "neutral",   "displayName": "Blue Tint",       "canonical": "#e5f3fe", "tonalRamp": ["#1e3a8a","#1d4ed8","#3b82f6","#60a5fa","#93c5fd","#bfdbfe","#dbeafe","#eff6ff"] },
+      "tint-green":       { "role": "neutral",   "displayName": "Green Tint",      "canonical": "#e1fae8", "tonalRamp": ["#14532d","#15803d","#16a34a","#4ade80","#86efac","#bbf7d0","#dcfce7","#f0fdf4"] },
+      "tint-amber":       { "role": "neutral",   "displayName": "Amber Tint",      "canonical": "#fcf4db", "tonalRamp": ["#78350f","#92400e","#f59e0b","#fbbf24","#fde68a","#fef3c7","#fffbeb","#fffdf5"] },
+      "tint-coral":       { "role": "neutral",   "displayName": "Coral Tint",      "canonical": "#fff4ee", "tonalRamp": ["#7f1d1d","#b91c1c","#ec6a5b","#f87171","#fca5a5","#fecaca","#fee2e2","#fef2f2"] }
+    },
+    "typographyMeta": {
+      "display":  { "displayName": "Display",  "purpose": "Page-level h1 headings. Feed, Exercise, Library, Profile screen titles." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings inside the main content area. 'Ideas worth sharing'." },
+      "title":    { "displayName": "Title",    "purpose": "Article card h3 titles, card section headers." },
+      "body":     { "displayName": "Body",     "purpose": "All supporting copy. Activity feeds, descriptions, metadata." },
+      "label":    { "displayName": "Label",    "purpose": "Table column headers (uppercase+tracked), timestamps, tag text, progress deltas." }
+    },
+    "shadows": [
+      { "name": "ambient-low",  "value": "0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04)", "purpose": "All cards, inputs, ghost buttons at rest." },
+      { "name": "ambient-high", "value": "0px 13.18px 7.688px 0px rgba(0,0,0,0.02), 0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04)", "purpose": "Elevated overlays: NavDock, dropdowns, QuoteStack front card." },
+      { "name": "action-glow",  "value": "0px 13.674px 19.206px 0px rgba(59,130,246,0.28)", "purpose": "Primary button only. Blue-tinted glow. The only colored shadow in the system." }
+    ],
+    "motion": [
+      { "name": "ease-expressive", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Standard easing for all enter/exit transitions: card crossfades, dropdown reveals, article card enter/exit." },
+      { "name": "spring-nav",      "value": "type: spring, stiffness: 400, damping: 32",     "purpose": "NavDock active pill layout animation." },
+      { "name": "duration-fast",   "value": "150ms",  "purpose": "Dropdown item stagger." },
+      { "name": "duration-base",   "value": "250ms",  "purpose": "Card transitions, QuoteStack swaps." },
+      { "name": "duration-slow",   "value": "800ms",  "purpose": "Progress bar fill on mount." }
+    ],
+    "breakpoints": [
+      { "name": "content-max", "value": "1200px", "purpose": "Feed max-width." },
+      { "name": "layout-max",  "value": "1180px", "purpose": "Library, Profile, Exercise max-width." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main call-to-action. Read more, Start climbing, Study. Blue background, blue action glow.",
+      "html": "<button class=\"ds-btn-primary\">Read more <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 6px; background: #3b82f6; color: #fff; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; font-weight: 500; padding: 10px 20px; border: none; border-radius: 12px; cursor: pointer; box-shadow: 0px 13.674px 19.206px 0px rgba(59,130,246,0.28); transition: background 0.15s; white-space: nowrap; } .ds-btn-primary:hover { background: #2563eb; } .ds-btn-primary:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary actions: Edit profile, Import, filter icon buttons. White background, ambient shadow.",
+      "html": "<button class=\"ds-btn-ghost\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z\"/></svg> Edit profile</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 6px; background: #ffffff; color: #404040; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; font-weight: 400; padding: 8px 14px; border: none; border-radius: 12px; cursor: pointer; box-shadow: 0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04); transition: background 0.15s; } .ds-btn-ghost:hover { background: #fafafa; } .ds-btn-ghost:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }"
+    },
+    {
+      "name": "Tint Button",
+      "kind": "button",
+      "refersTo": "chip-status",
+      "description": "Soft in-card actions: View all activity, View stats, Apply filters. No shadow.",
+      "html": "<button class=\"ds-btn-tint\">View all activity</button>",
+      "css": ".ds-btn-tint { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background: #e5f3fe; color: #3b82f6; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 12px; font-weight: 400; padding: 8px 16px; border: none; border-radius: 12px; cursor: pointer; transition: background 0.15s; } .ds-btn-tint:hover { background: #d6e8fd; } .ds-btn-tint:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card-default",
+      "description": "The universal surface. White, 16–24px radius, ambient-low shadow. Main content cards use p-6; sidebar cards use p-5.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-title\">Card title</div><p class=\"ds-card-body\">Supporting content goes here, at 13px with 1.6 line-height.</p></div>",
+      "css": ".ds-card { background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04); } .ds-card-title { font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 14px; font-weight: 600; color: #171717; } .ds-card-body { font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; font-weight: 400; color: #737373; line-height: 1.6; margin-top: 8px; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "White, rounded-2xl, ambient-low shadow, embedded icon button. Used in page headers.",
+      "html": "<div class=\"ds-input-search\"><svg class=\"ds-input-search__icon\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#a3a3a3\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input class=\"ds-input-search__field\" placeholder=\"Search articles, topics, ideas…\"/></div>",
+      "css": ".ds-input-search { display: flex; align-items: center; gap: 8px; background: #ffffff; border-radius: 16px; padding: 10px 16px; width: 320px; box-shadow: 0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04); } .ds-input-search__icon { flex-shrink: 0; } .ds-input-search__field { flex: 1; background: transparent; border: none; outline: none; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; color: #404040; } .ds-input-search__field::placeholder { color: #a3a3a3; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "chip-status",
+      "description": "Semantic state chip. Tint background + icon + label. Variants: pending (coral), inProgress (blue), success (green), inReview (amber).",
+      "html": "<span class=\"ds-badge ds-badge--inprogress\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 12a9 9 0 1 1 18 0\"/></svg>In progress</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 12px; font-weight: 400; } .ds-badge--inprogress { background: #e5f3fe; color: #008dff; } .ds-badge--success { background: #e1fae8; color: #37c25c; } .ds-badge--pending { background: #fff4ee; color: #e68f38; } .ds-badge--inreview { background: #fcf4db; color: #e6961f; } .ds-badge--failed { background: #fdefee; color: #ec6a5b; }"
+    },
+    {
+      "name": "NavDock",
+      "kind": "nav",
+      "refersTo": "button-ghost",
+      "description": "Fixed bottom navigation. White/90 frosted glass container, 4 items, spring-animated active pill.",
+      "html": "<nav class=\"ds-navdock\"><button class=\"ds-navdock__item ds-navdock__item--active\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 22V12l8-8 8 8v10\"/><path d=\"M9 22V12h6v10\"/></svg> Feed</button><button class=\"ds-navdock__item\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m6.5 6.5 11 11\"/><path d=\"M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0\"/></svg> Exercise</button></nav>",
+      "css": ".ds-navdock { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.9); backdrop-filter: blur(12px); border-radius: 16px; padding: 6px; box-shadow: 0px 13.18px 7.688px 0px rgba(0,0,0,0.02), 0px 5.492px 5.492px 0px rgba(0,0,0,0.04), 0px 1.098px 3.295px 0px rgba(0,0,0,0.04); } .ds-navdock__item { position: relative; display: flex; align-items: center; gap: 8px; padding: 10px 16px; border: none; background: transparent; border-radius: 12px; font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 13px; color: #737373; cursor: pointer; transition: color 0.15s; } .ds-navdock__item--active { background: #3b82f6; color: #ffffff; box-shadow: 0px 8px 16px 0px rgba(59,130,246,0.28); } .ds-navdock__item:not(.ds-navdock__item--active):hover { color: #171717; }"
+    },
+    {
+      "name": "Tinted Icon Chip",
+      "kind": "chip",
+      "refersTo": "chip-status",
+      "description": "36×36px rounded-xl chip: semantic tint bg, semantic color icon. Used in activity feeds, progress rows, exercise session cards.",
+      "html": "<div class=\"ds-icon-chip ds-icon-chip--blue\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2 3 14h9l-1 8 10-12h-9l1-8z\"/></svg></div>",
+      "css": ".ds-icon-chip { width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; } .ds-icon-chip--blue   { background: #e5f3fe; color: #3b82f6; } .ds-icon-chip--green  { background: #e1fae8; color: #37c25c; } .ds-icon-chip--amber  { background: #fcf4db; color: #e6961f; } .ds-icon-chip--coral  { background: #fff4ee; color: #ec6a5b; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Focused Desk",
+    "overview": "Reader & Writer is the design of a well-organized, quiet workspace — the kind that belongs to someone who reads with a pencil in hand. Everything on screen is there because it earns its presence. The canvas (#f2f2f2) is the desk surface: warm enough to feel physical, neutral enough to disappear behind the content. Cards are white sheets of paper stacked at rest. The accent is a single, clear blue — informational, never decorative — used precisely where the eye needs guidance.\n\nThis is explicitly not a gamified learning tool. There are no confetti explosions, no mascots, no loop-closure pressure mechanics. Progress stats live in the sidebar like a quietly updated scoreboard — available when you look, invisible when you don't.\n\nThe motion energy is responsive: state changes and transitions only, no choreographed entrances. Springs handle active-pill nav transitions; crossfades handle card swaps. Every animation has a prefers-reduced-motion alternative.",
+    "keyCharacteristics": [
+      "Off-white canvas (#f2f2f2) with pure-white cards — depth through layering, not shadows",
+      "Single accent color (Focus Blue #3b82f6); semantic secondaries for data states only",
+      "Rounded-but-not-bubbly: 16–24px on cards, 12–16px on controls, 999px on tags/pills only",
+      "Tight, tracked display type; comfortable 13px body; 11px uppercase tracking for labels",
+      "Ambient shadow vocabulary — diffuse, layered — never structural or directional",
+      "Data richness tucked into the sidebar; reading surface kept free"
+    ],
+    "rules": [
+      { "name": "The Single Voice Rule",  "body": "Focus Blue appears on ≤10% of any screen surface. Its rarity communicates meaning. Semantic secondaries appear only in data-state chips — never as button colors or section backgrounds.", "section": "colors" },
+      { "name": "The One-Family Rule",    "body": "No second typeface is introduced. No serifs, no display faces, no mono for decorative use. One family, varied by weight. If a surface needs to feel more editorial, increase weight and decrease size.", "section": "typography" },
+      { "name": "The Flatness Rule",      "body": "Shadows are ambient, never directional. The two-layer ambient formula is the only permitted shadow structure. Cards do not acquire shadows on hover.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use white cards on the #f2f2f2 canvas as the primary depth mechanism.",
+      "Do use Focus Blue only on primary CTAs, the active nav state, active tab indicators, and selected states.",
+      "Do pair tint backgrounds with their semantic foreground color consistently.",
+      "Do keep card corners at 16–24px.",
+      "Do use the two-layer ambient shadow formula verbatim for all cards.",
+      "Do include prefers-reduced-motion alternatives for every animation.",
+      "Do keep body copy at 13px with 1.6 line-height on a 65ch max-width on reading surfaces."
+    ],
+    "donts": [
+      "Don't use borderLeft greater than 1px as a colored stripe on cards or list items.",
+      "Don't introduce a second typeface.",
+      "Don't animate layout properties — springs and crossfades on transform and opacity only.",
+      "Don't use gradient backgrounds, gradient text, or glassmorphism as decoration.",
+      "Don't build Duolingo-style reward mechanics: no confetti, no celebration modals, no mascot icons.",
+      "Don't use heavy directional drop shadows. The ambient two-layer formula is the ceiling.",
+      "Don't use semantic colors on interactive controls — they are data-state colors only.",
+      "Don't use uppercase body copy.",
+      "Don't nest cards inside cards.",
+      "Don't use rounded-[32px+] on cards. 24px is the maximum."
+    ]
+  }
+}

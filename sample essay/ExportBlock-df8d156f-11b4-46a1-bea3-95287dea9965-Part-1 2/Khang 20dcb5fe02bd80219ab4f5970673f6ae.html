@@ -1,0 +1,759 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Khang</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="20dcb5fe-02bd-8021-9ab4-f5970673f6ae" class="page sans"><header><h1 class="page-title" dir="auto">Khang</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80a9-a103-d88299bf7691" class=""><strong>Some people think </strong><mark class="highlight-blue_background"><strong>success in life</strong></mark><strong> comes from hard work and determination, while others think that there are more important factors such as money and appearance.</strong></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8055-9a44-fe181282a49c" class=""><strong>Discuss both views and give your opinion.</strong></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-806f-981f-f59d425c0934" class="">Opinions vary on whether the main contributors to success in life are hard work and determination or money and appearance. While both of them are valid, I prefer the first one due to their strong effects on life as a whole.</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="20ecb5fe-02bd-8096-b07d-e8bc5e4c5ddc"><div style="width:100%"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-806f-a1a8-e78ab98e0493" class="">The claim that money and appearance are strong determinants to success <mark class="highlight-blue_background"><strong>is not entirely baseless</strong></mark>. Having a financially well-off background often <mark class="highlight-blue_background"><strong>creates better opportunities to attain targeted goals more quickly.</strong></mark> For instance, in order to fulfill academic potential, students from privileged families are willing to dedicate large sums of money to study abroad and access progressive education. <strong>This is also true considering appearance</strong>, since a visually attractive person often leaves positive impressions, <mark class="highlight-blue_background"><strong>which strengthen social connections and career prospects</strong></mark>. <strong>Artists or singers can exemplify this situation</strong>. Having a striking appearance helps them to stand out and become more influential, potentially gain long-lasting support from their fans and make their careers more successful.</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8056-977a-c9d49a5c777c" class="">Đầu tiên thì t sẽ visualize cái logic của bác ra và nhận xét từng logic một nhé</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80e5-8c19-fc913cab6a51" class="">Rich → Better opportunities to success (what?) - Exemplification</p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80e0-8a1e-f8d4aef44fca" class="bulleted-list"><li style="list-style-type:disc">T thấy một vấn đề ở đây là câu explanation này của bác<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80f1-933d-d782b67156a9" class="bulleted-list"><li style="list-style-type:circle">Having a financially well-off background often <mark class="highlight-blue_background"><strong>creates better opportunities to attain targeted goals more quickly</strong></mark><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-809f-b30f-d3b1ae92299b" class="bulleted-list"><li style="list-style-type:square">Dường như câu này đang là một câu claim (khẳng định) thay vì giải thích tại sao giàu → thành công. </li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8042-8a4c-ddc27d0d34f3" class="bulleted-list"><li style="list-style-type:square">Kiểu như bác bảo: giàu thì nó có nhiều cơ hội hơn để thành công<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-806c-9cdb-c082107d4320" class="bulleted-list"><li style="list-style-type:disc">Nhưng vấn đề là bác chưa giải thích <strong>TẠI SAO GIÀU LẠI NHIỀU CƠ HỘI HƠN. </strong></li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8056-a14a-f18e6e7f18fe" class="">Tức là, trong phần lập luận chỗ [better opportunities] thì bác đang khiến cái lập luận nó quá khái quát. Kiểu better opportunities là như nào? Tại sao có [well-off background] thì lại có [better opportunities]? Tại sao nhiều tiền lại có nhiều cơ hội hơn?</p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80cc-9564-eeb281467276" class="bulleted-list"><li style="list-style-type:disc">Trong post trước t có nói là nếu bác trả lời đc câu hỏi trên thì tức là bác đang bị logical gap đó. <div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8086-8884-fa425075ffcf" class="bulleted-list"><li style="list-style-type:circle">Nếu là t thì t sẽ giải thích như này: Money → <strong>Access to better and more advanced services, such as….</strong> → <strong>Enhanced qualifications and professional network</strong> →  Instrumental for later success/better opportunities to succeed/Foundational for their later success. </li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-806c-a1a2-c3334234baa2" class="bulleted-list"><li style="list-style-type:circle">Nôm na là b luôn phải đặt câu hỏi TẠI SAO để giải thích cho những claim của chính bác. </li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-800a-9e4b-ecc2e5afbfe7" class="bulleted-list"><li style="list-style-type:circle">Rất nhiều người nhầm lẫn giữa clam và giải thích. Vì thế mỗi khi bác chứng minh điều gì đó, hãy luôn đặt câu hỏi là TẠI SAO A → B. <div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80d2-a27b-eb3b4a9297e4" class="bulleted-list"><li style="list-style-type:square">Nếu còn giải thích đc tiếp thì tức là bác đang có logical gap. </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80cb-bcde-e9abafed6571" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80f3-84e1-ed971b3242f1" class="">Tiếp theo tới ý về appearance. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8027-88bf-e517b18c8fb3" class="">Appearance → positive impressions → strengthen social connections &amp; career prospects. </p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-804b-8bfb-f8c42617739b" class="">since a visually attractive person often leaves positive impressions, which strengthen social connections and career prospects</blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80a5-a394-c19ace665e8e" class="">Câu này có 2 lỗi. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80b6-a670-ff119b0cffc2" class="">Lỗi thứ nhất như lỗi bên trên, thì bác có thấy đc cái gap trong câu này không?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8048-a13d-e845d5db7605" class="">Đồng ý là positive impressions → strengthen social connections là oke</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80de-a89a-c24501a20b40" class="">NHƯNG </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-801f-9a9e-e1c05f92761a" class="">TẠI SAO POSITIVE IMPRESSIONS LẠI STRENGTHEN CAREER PROSPECTS?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8018-acec-eb9d18b418b3" class="">Tại sao ấn tượng tốt lại có sự nghiệp thành công? Có sự liên kết nào giữa 2 khái niệm này không?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-800e-997b-f23df85d122a" class="">Nếu là t thì t sẽ giải thích theo kiểu</p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-809c-b7c2-c7d974336889" class="">Positive impressions → Social connections. <strong>Social connections, a key success driver in today’s interconnected world </strong>→ instrumental for career success. </blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80a1-8034-e1cc2e287c82" class="">T thấy riêng trong đoạn 1 này c đã mắc duy nhất 1 lỗi là logical gap - một lỗi khá là nặng. </p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80bb-b6cc-d49d1778d0ba" class="bulleted-list"><li style="list-style-type:disc">Vì thế từ sau khi viết, mỗi khi có cái kết luận nào đó kiểu như Money → Success/Better opportunities hay Positive impressions → Career prospects thì <div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8067-b23b-ffca293430bc" class="bulleted-list"><li style="list-style-type:circle"><strong>hãy luôn hỏi bản thân là TẠI SAO LẠI THẾ?</strong></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80f3-a9db-e044ad1c76df" class="">Lỗi tiếp theo của bác chính là Ý CHÍNH BỊ LẪN VÀO Ý PHỤ. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80ca-a4c4-cecb5078ca63" class="">Trong viết, ý nào quan trọng thì ta cần tách một câu ra để dành riêng cho nó với mục đích nhấn mạnh nó. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80de-bcba-fa30eef629a0" class="">Như vậy, nếu nhìn vào câu này của b </p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-80f7-9a10-ff62f2ddc35e" class="">since a visually attractive person often leaves positive impressions, which strengthen social connections and career prospects</blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-806a-bfb9-c7a83d66e8f1" class="">thì sẽ thấy là câu này đang nhần mạnh về [CAUSE] - [POSITIVE IMPRESSIONS]. Trong khi [EFFECT] là [SOCIAL CONNECTIONS &amp; CAREER PROSPECTS] thì lại bị đưa vào trong MĐQH - cái chủ yếu đc dùng để thêm thắt thông tin. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80fd-9d3c-fee747513465" class="">Nhưng cái [EFFECT] này là ý chính mà, ý quan trọng tại sao lại không đc nhấn mạnh?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8089-9262-f56b10e45eb2" class="">Đó là lúc ta cần tách câu ra để người đọc biết đâu là ý chính, đâu là ý phụ. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80ff-b473-d2ff290f1996" class="">Để t sửa theo câu gốc của b nhé</p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-8099-b4ea-cd13a655c3bd" class="">since a visually attractive person often leaves positive impressions, which strengthen social connections and career prospects</blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8021-98c3-edd1aef6696b" class="">→ since a visually attractive person often leaves positive impressions. Such impression is instrumental in strengthening social connections and career prospects. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80a0-9064-cc7a36be5cf1" class="">Dù câu này đã tách biệt đc [CAUSE] và [EFFECT] với chủ ý nhấn mạnh trọng tâm các ý tốt hơn</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-801b-be66-c87bae157620" class="">Nhưng vấn đề về logical gap vẫn chưa đc giải quyết. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8088-a8a0-e3eb3a62001c" class="">TẠI SAO IMPRESSION → CAREER PROSPECTS?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80c2-8c0d-eb5d3ad9cd35" class="">Nếu dựa vào cách giải thích của t là</p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-800a-88a6-e4d6f05edb86" class="">Impressions → Connections → Career success</blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80f5-9aee-cdac11617e46" class="">Bây giờ nếu viết kiểu</p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-80a4-9cac-deaca83602e6" class="">This is also true considering appearance since a visually attractive person often leaves <strong>positive impressions</strong>. Such impression is instrumental in <strong>strengthening social connections</strong>, which play a key role in <strong>fostering career prospects</strong></blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80b0-ad9e-e3b6c3a9f916" class="">Thì lại lòi ra vấn đề là cái kết luận chính [Career prospects] lại bị đưa vào MĐQH - cái nên sử dụng với mục đích thêm thông tin thay vì nhấn mạnh ý đó. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8068-97d9-e50b84382eca" class="">Vậy thì sao giờ?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80bf-adb5-d62d8218d224" class="">B sẽ sửa như nào?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8077-9b34-cac366c1adca" class="">Đầu tiên t muốn b hình dung ra cấu trúc của một bài luận như thế này. </p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-800e-99e5-edd09ec396a1" class="bulleted-list"><li style="list-style-type:disc">I belive A is good - [TOPIC SENTENCE]<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8086-bb12-ff44cc5ee0b1" class="bulleted-list"><li style="list-style-type:circle">Because A have B, C &amp; D - [CAUSE]<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80ed-ad33-f07a2305d6b8" class="bulleted-list"><li style="list-style-type:square">Nhưng vấn đề bây giờ là sẽ có những trường hợp c phải back-up thêm cho ý này để dẫn tới ý cuối cùng là “beneficial”</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80c4-b161-fdb68b8181e9" class="bulleted-list"><li style="list-style-type:square">Ví dụ:</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-805f-8d6e-cfc1b4ba4481" class="bulleted-list"><li style="list-style-type:square">Good impressions → Career prospects?<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80e4-8844-c22c7384eb7a" class="bulleted-list"><li style="list-style-type:disc">Sao biết được đúng chứ? Làm sao mà xinh đẹp lại đồng nghĩa thành công được?</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80c6-9a7e-d210916d91a4" class="bulleted-list"><li style="list-style-type:disc">Nhưng vì kết luận của b là xinh đẹp  → thành công nên ta cần ý để back-up cho cái kết luận này<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8079-8f81-d75e22e73a6f" class="bulleted-list"><li style="list-style-type:circle">Và ý đó chính là “social connections”</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8043-b830-ca01f2618c97" class="bulleted-list"><li style="list-style-type:disc">Nếu b nghĩ trong tiếng việt nó sẽ kiểu. Xinh đẹp thì giúp <strong>xây dựng mqh dễ dàng hơn. Mà những mqh này vô cùng quan trọng cho việc thành công trong thế giới hội nhập ngày nay</strong>, nên có thể nói xinh đẹp → thành công. <div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80a6-a28d-e6931d7d7d21" class="bulleted-list"><li style="list-style-type:circle">Phần t tô đậm là để back-up cho ý t rút ra kết luận là</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80bd-95cc-ff375c29bd22" class="bulleted-list"><li style="list-style-type:disc">Nôm na là c PHẢI BIẾT KẾT LUẬN CỦA C LÀ GÌ, LUẬN ĐIỂM LÀ GÌ. TỪ ĐÓ C PHẢI THÊM THẮT CÁC Ý SAO CHO NÓ DẪN ĐC TỚI CÁI KẾT LUẬN NÀY. </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-800c-b41e-c7b93844c576" class="bulleted-list"><li style="list-style-type:circle">Beneficial for E, F &amp; G - [EFFECT]</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8022-a6d2-cd12a63da0cf" class="">Như vậy, nếu nhìn lai câu này</p></div><div style="display:contents" dir="auto"><blockquote id="20ecb5fe-02bd-8053-8ef8-df12575e23f9" class="">This is also true considering appearance since a visually attractive person often leaves <strong>positive impressions</strong>. Such impression is instrumental in <strong>strengthening social connections</strong>, which play a key role in <strong>fostering career prospects</strong></blockquote></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8052-9638-e1acd0a3cce3" class="">Thì b có biết đc đâu là ý chính và đâu sẽ là ý back-up chưa?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80bf-85c2-c15c56e58a96" class=""><strong>Ý back-up luôn có vai trò kém quan trọng hơn ý chính nên có thể đưa vào MĐQH.</strong></p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-809d-a063-cb5d6ceed730" class=""><strong>Từ những kiến thức trên t muốn b thử phân tích và viết lại cả đoạn này xem nhé (trừ ý example t khá ưng r)</strong></p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8012-9eb5-d0efbd5c6bfd" class="bulleted-list"><li style="list-style-type:disc">Cả ý về money nữa, hãy phân biệt cause-effect để ngắt câu cho phù hợp</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8064-97a5-f82fc73160e3" class="bulleted-list"><li style="list-style-type:disc">Tương tự phân biệt chính phụ để xác định khi nào nên sử dụng MĐQH nhé. </li></ul></div></div></figure></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="20ecb5fe-02bd-80a8-90dc-fcb59484d201"><div style="width:100%"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8086-9b59-cae91e393d10" class="">However, I believe that such traits as hard work and determination are <strong>more highly indicative </strong>of achieving success and fulfilling one’s potential. Firstly, these traits fuel the ability to <strong>persevere through challenges and setbacks</strong>, encouraging individuals <strong>not to give up easily</strong>. This means they <strong>foster focus and direction</strong>,<strong> preventing distractions and ensuring that goals are pursued with purpose.</strong> Secondly, resilient and determined individuals can <strong>persist to succeed over time</strong>, despite <strong>lacking material support such as a strong financial capacity or distinctive appearance</strong>. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8038-8906-e804b10c4a83" class=""><strong>How they can succeed over time despite lacking material support?</strong></p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8083-91db-e7f7440fe4bd" class="">Hard work + determination → Persist to success. </p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80d2-8d95-c7949c7e6055" class="">Đầu tiên, nếu b để ý vào câu topic của bác “more highly indicative” thì bác đang mang hàm ý so sánh giữa [A - hard work + determination] và [B - money + appearance]. Tức là trong bài này bác phải so sánh giữa 2 cái này với nhau để chứng minh [A - hard work + determination] &gt; [B - money + appearance]. Đây sẽ là kim chỉ nam (nhưng hãy tạm bỏ qua để nhận xét bài của b đã nhé)</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80aa-8ee9-f1f65557ab9b" class="">Nhìn vào phần đầu tiên [FIRSTLY] thì t thấy bác đang chỉ ra lợi ích của nhóm A và nó đang có vấn đề</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-805b-8eb6-d9db0be515bf" class="">Bác tập trung vào 2 ý này: [<strong>persevere through challenges and setbacks] và [</strong>encouraging individuals <strong>not to give up easily]</strong></p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8091-a769-cc9c353cb6ec" class="bulleted-list"><li style="list-style-type:disc">Vấn đề ở đây là 2 ý này dù cách diễn đạt khác nhau nhưng về ý nghĩa thì nó giống nhau<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80d0-9182-fa0de3692dae" class="bulleted-list"><li style="list-style-type:circle">Kiên trì vượt qua bão giông</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-801d-b6e9-d317951607ea" class="bulleted-list"><li style="list-style-type:circle">Không bỏ cuộc dễ dàng<div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-803b-bfe2-f67f99f724c0" class="bulleted-list"><li style="list-style-type:square">Giống nhau chứ?</li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-8097-b993-cc4423145ccc" class="bulleted-list"><li style="list-style-type:square">Vấn đề là b đang dùng RGMĐQH cho 2 ý này tức là ý [PERSEVERE] dẫn tới [NOT GIVING UP]. Trong khi 2 ý này có nghĩa y hệt nhau. B nhận ra vấn đề rồi chứ?</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80e4-ae48-c0dc47641542" class="bulleted-list"><li style="list-style-type:circle">Cái việc 2 ý diễn đạt khác nhưng có nghĩa giống nhau này sẽ khiến điểm TR của bác bị trừ rất nhiều vì nó khiến bài của bác “đứng yên”, kiểu nó k develop đc. </li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-808f-92a9-e3a6aa24d793" class="bulleted-list"><li style="list-style-type:disc">Một vấn đề tiếp theo, cũng tương tự như BODY 1 đó là logical gap và lại thêm một lần nữa b mắc lỗi repetition<div style="display:contents" dir="auto"><blockquote id="20fcb5fe-02bd-80d0-a7b9-d595e88481e8" class="">This means they <strong>foster focus and direction</strong>,<strong> preventing distractions and ensuring that goals are pursued with purpose</strong></blockquote></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80cb-a02d-e9e49d0ca6a6" class="">Ở đây, đầu tiên là logical gap</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8076-8c6a-f1ad6a6c26cd" class="">Bác để ý từ [This] đang dẫn tới [Foster focus and direction]. Với [This] ở đây đc hiểu theo [Not giving up easily]</p></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8083-a307-db4f91a06613" class="bulleted-list"><li style="list-style-type:circle">Vấn đề là làm thế nào mà [Không bỏ cuộc] lại dẫn tới [Focus and direction]?<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80ea-aa8c-f2d0557244c3" class="bulleted-list"><li style="list-style-type:square">Có mối liên hệ nào giữa hai điều này không?</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80a9-b50a-c227013856ce" class="bulleted-list"><li style="list-style-type:square">Như tôi đã bàn tới ở trong post trên threads thì để khắc phục đc lỗi này. B thử tự hỏi bản thân xem là: Tại sao [Không bỏ cuộc] lại khiến ta [tập trung hơn và có kế hoạch rõ ràng hơn]?<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80df-8b72-ca3a4ed68ab0" class="bulleted-list"><li style="list-style-type:disc">Rõ ràng là bác cần phải giải thích tiếp đúng chứ? Vì mối liên hệ giữa 2 ý này chưa rõ ràng. </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80a8-8e98-d529655b60b2" class="">Tới lỗi thứ hai là repetition. </p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8049-8b07-f58efedd5636" class="">Đầu tiên t sẽ visualize cái logic của b,</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8083-9b37-c3923ae89fa3" class="">[This] → [Foster focus and direction] → [<strong>preventing distractions and ensuring that goals are pursued with purpose]</strong></p></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8073-8f51-c955007457c2" class="bulleted-list"><li style="list-style-type:circle">Bác để ý ở đây là <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80cf-92f0-e29788326df7" class="bulleted-list"><li style="list-style-type:square">[FOCUS] = [PREVENTING DISTRACTIONS]</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8015-8b50-df7847d861c4" class="bulleted-list"><li style="list-style-type:square">[DIRECTION] = [PURSUE GOALS WITH PURPOSE]<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8055-9a36-d78116db7c1b" class="bulleted-list"><li style="list-style-type:disc">Tức là các ý này đang nghĩa giống hệt nhau chỉ khác mỗi cách diễn đạt mà thôi. </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80c3-ac26-de9492b9c4dd" class="bulleted-list"><li style="list-style-type:circle">Như vậy, sơ sơ qua BODY 2 và BODY 1 t thấy đc 2 lỗi lớn nhất của bác đang là LOGICAL GAP và REPETITION. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80c8-9821-f825a3b58870" class="bulleted-list"><li style="list-style-type:square">T không biết về Coherence &amp; Cohesion bác có ổn không nhưng trong bài này thì với t là okela<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80fa-95bd-d40541a5bcba" class="bulleted-list"><li style="list-style-type:disc">Vì thế nên t sẽ đưa ra strategy để ngưng cái lỗi repetition này (lỗi logical gap thì t đã nói bên trên)<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80bb-b112-d76de88cac6f" class="bulleted-list"><li style="list-style-type:circle">Về cơ bản thì cách sửa nó vẫn như vậy. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80f5-896d-c8c938481bf5" class="bulleted-list"><li style="list-style-type:square">Đầu tiên bác phải hình dung ra được cái đích đến của mình. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80da-b77a-d4401b133596" class="bulleted-list"><li style="list-style-type:disc">Ví dụ: [A - BẢO VỆ MÔI TRƯỜNG] dẫn tới [B - CON NGƯỜI SỐNG LÂU DÀI/KHỎE MẠNH HƠN] - Ở đây [B] là đích đến của t</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80f6-99bd-ec8d5cdf2bc5" class="bulleted-list"><li style="list-style-type:disc">Khi đã có đích đến rồi thì bắt đầu lập luận để chỉ ra mối liên hệ giữa hai ý nào - làm sao mà bảo vệ môi trường lại giúp con người sống lâu hơn?<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-804f-a4be-e096fdcad0a0" class="bulleted-list"><li style="list-style-type:circle">Bve mtrg → Không khí trong sạch hơn/Tài nguyên dồi dào hơn…/ → Con người sống lâu hơn</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80a1-8da5-f5fa391300ed" class="bulleted-list"><li style="list-style-type:circle">Đây sẽ là kết quả khi b có đích đến và b lập luận để dẫn tới cái đích đến này</li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8076-b1e5-dec434696bbd" class="bulleted-list"><li style="list-style-type:square">Tiếp theo, nếu như có đích đến nhưng b vẫn muốn biết liệu có mắc lỗi REPETITION hay không thì<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-807d-8753-e2f9802336e5" class="bulleted-list"><li style="list-style-type:disc">Hãy vẽ sơ đồ ra xem ý nào dẫn tới ý nào<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80b4-9c2e-e6c6485507d4" class="bulleted-list"><li style="list-style-type:circle">Kiểu A [Tôi đi trời mưa] → B [Tôi bị ốm] → C [Tôi nghỉ học] → D [Tôi hổng kiến thức]<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8055-a23e-d368f9fb4716" class="bulleted-list"><li style="list-style-type:square">Khi đã có sơ đồ logic của bài viết thì bác đặt câu hỏi là: Làm thế nào mà [Tôi đi trời mưa] lại dẫn tới [Tôi bị ốm] được?</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-809e-8b6b-e2e664fef3f2" class="bulleted-list"><li style="list-style-type:square">Nếu nó rõ ràng và hiển nhiên thì b đã tránh đc cả 2 lỗi là LOGICAL GAP và REPETITION</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80e5-9e54-c3cf4ec6a775" class="bulleted-list"><li style="list-style-type:square">Nhưng nếu hai ý nó nghĩa giống nhau thì bác sẽ phát hiện ra ngay kiểu như<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8024-b17b-ee566fb725c7" class="bulleted-list"><li style="list-style-type:disc">Làm sao mà [Tập trung hơn] lại dẫn tới [Ngăn sự xao nhãng]?<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8006-bb14-c9ff525ba0f5" class="bulleted-list"><li style="list-style-type:circle">Bác sẽ nhận thấy là hai cái này nó ngang nghĩa nhau luôn<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8032-8346-d4e7e3b5db99" class="bulleted-list"><li style="list-style-type:square">Kiểu đã tập trung rồi thì hàm ý đã là không bị xao nhãng<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-801c-bfa1-ef2cf33f3169" class="bulleted-list"><li style="list-style-type:disc">Nhưng nếu trời mưa thì đâu có hàm ý tôi bị ốm đâu? </li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8010-b1d7-f17b9eb604fb" class="bulleted-list"><li style="list-style-type:disc">Tương tự với [Có hướng đi] dẫn tới [Theo đuổi ước mơ với mục đích rõ ràng]<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80d0-bda5-e52af5771006" class="bulleted-list"><li style="list-style-type:circle">Kiểu [Có hướng đi] thì hàm ý là bác đã có định hướng rõ ràng rồi</li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8016-aca5-ed32f99d6384" class="bulleted-list"><li style="list-style-type:square">Vấn đề là native mong chờ một đoạn text được develop, nó được phát triển tiếp thay vì lặp lại như này - với hàm ý như nhau chỉ khác cách diễn đạt. </li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-808a-bc0a-f08de8279987" class="bulleted-list"><li style="list-style-type:square">Tóm lại, cần biết đích đến của bác là gì sau đó lập luận dần dần để đạt đc cái đích đến đó. Sau đó thì visualize cái logic của bác ra và đặt câu hỏi để tìm lỗi logical gap và repetition. </li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80f5-befc-ec53c013416a" class="">Tiếp theo, cùng phân tích xem có lỗi gì k nhé. <div class="indented"><div style="display:contents" dir="auto"><blockquote id="20fcb5fe-02bd-80cd-a3b2-f9c4f8b85c9b" class="">Secondly, resilient and determined individuals can <strong>persist to succeed over time</strong>, despite <strong>lacking material support such as a strong financial capacity or distinctive appearance</strong>. </blockquote></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-809f-8d9b-ff115d324650" class="">Bác biết tại sao TA của bác cần cải thiện không?</p></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-802b-9545-ed6af74e88b0" class="bulleted-list"><li style="list-style-type:disc">Lí do là cách bác chứng minh cho luận điểm đang bị repeat itself, bị logical gap và bác sử dụng example để chứng minh cho luận điểm. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8098-ae65-cb27eb2e88fa" class="bulleted-list"><li style="list-style-type:circle">Và trong ý [SECONDLY] này của bác thì vấn đề là bác lập luận bằng example</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80e1-a116-e763f88580d6" class="bulleted-list"><li style="list-style-type:circle">T không có ý bảo example là xấu nhưng tùy trường hợp mới dùng được bởi example đâu có coi là develop đâu. Nó chỉ là illustrate lại cái ý của bác mà thôi và nó không phải develop - cái yếu tố quan trọng nhất trong TA. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80e6-8a1c-e810aba21f27" class="bulleted-list"><li style="list-style-type:square">Cái bác đang làm đơn giản là đưa ra quan điểm và lấy ví dụ cho điều này. Nhưng cái người ta cần là bác phải chứng minh cơ, chứng minh tại sao [kiên trì] lại dẫn tới [thành công] cơ. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80ce-9fdc-edade899a17c" class="bulleted-list"><li style="list-style-type:disc">Để sửa đc cái lỗi này thì bác cứ tự hỏi bản thân như bên trên tôi đã nói<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8025-bbd3-f6b6fb639f36" class="bulleted-list"><li style="list-style-type:circle">Tại sao A lại dẫn tới B?<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8006-90c7-d4c599eb8321" class="bulleted-list"><li style="list-style-type:square">Khi này nếu tiếng anh bác chưa đủ tốt thì hãy cứ giải thích bằng tiếng việt <em>sau đó sắp xếp các ý sao cho nó linear nhất (bài này lập luận chưa tốt nên t chưa có cơ hội nói về linearity nên chắc để cho lần sau)</em><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-800b-8a8e-ef9540679ef6" class="bulleted-list"><li style="list-style-type:disc">Sau đó diễn đạt lại bằng tiếng anh và tiếp thu vốn từ dần dần. </li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80d0-a13b-dcdd5ca96708" class="bulleted-list"><li style="list-style-type:square">Nhưng nhớ là bác phải develop nhé, luôn nhớ là vậy<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8077-a49b-d66dfb13c705" class="bulleted-list"><li style="list-style-type:disc">Develop đc rồi thì bắt đầu để ý tới các lỗi như REPETITION và LOGICAL GAP. </li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8038-a4d4-d5e920803a85" class="bulleted-list"><li style="list-style-type:circle">Trở lại câu [SECONDLY] này thì nếu t hỏi là <strong>[TẠI SAO KIÊN TRÌ LẠI THÀNH CÔNG]?</strong><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8048-b829-e9f414c4f36a" class="bulleted-list"><li style="list-style-type:square">Bởi vì khi sự kiên trì của họ kết hợp với nguồn tài liệu bao la trên internet thì họ sẽ dần dần <strong>xây dựng được nền tảng kiến thức một cách vững chắc</strong> Nền tảng này khi kết hợp với <strong>sự kiên cường của họ trước những khó khăn</strong> sẽ giúp họ <strong>vững bước trên con đường dẫn tới thành công. </strong><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80c0-a819-eb263431d9c1" class="bulleted-list"><li style="list-style-type:disc">Kiên trì + Tài liệu → Nền tảng chắc + kiên cường trc khó khăn → thành công</li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8017-b2f5-c2eb2d5df87e" class="bulleted-list"><li style="list-style-type:disc">Đây gọi là <strong>develop</strong>.  </li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80bc-b162-d0eab8d15fdb" class="bulleted-list"><li style="list-style-type:disc">Còn của bác thì là KIÊN TRÌ → THÀNH CÔNG. VÍ DỤ: KIÊN TRÌ VƯỢT KHÓ → THÀNH CÔNG - Chưa có develop gì cả. Mối liên hệ giữa kiên trì vào thành công còn chưa rõ ràng - Và đây có thể coi là một LOGICAL GAP nhưng nó LỚN HƠN lỗi ở BODY 1. </li></ul></div></li></ul></div></li></ul></div></li></ul></div></div></p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-806e-ae86-fac4f36f2517" class="">Và cuối cùng ta sẽ tới vấn đề lớn nhất là bác đang chưa chứng minh đc cái luận điểm của bác. </p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-800c-b43d-c7aa6c235cd9" class="">Để ý câu topic sentence của bác là </p></div><div style="display:contents" dir="auto"><blockquote id="20fcb5fe-02bd-80df-898b-cfc7769c08c9" class="">However, I believe that such traits as hard work and determination are <strong>more highly indicative </strong>of achieving success and fulfilling one’s potential.</blockquote></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8027-b475-d28d44b455d9" class="">‘[MORE HIGHLY INDICATIVE] mang hàm ý so sánh. So sánh rằng [Hard work + determination] &gt; [Money + appearance]</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8092-8fd8-e9789824798f" class="">Tức là trong đoạn này, bác phải đi chứng minh rằng [Hard work + determination] &gt; [Money + appearance] thay vì đơn thuần chỉ ra lợi ích của [hard work + determination]. </p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80a3-b149-dce202fab7bf" class="">Và điều này khiến TA của bác đang nằm ở điểm 5. </p></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80df-9389-cad8026df603" class="bulleted-list"><li style="list-style-type:disc"><strong>Để sửa đc cái lỗi này thì đầu tiên bác cần BIẾT RÕ ĐƯỢC MỤC TIÊU CỦA ĐOẠN NÀY ĐỂ LÀM GÌ. </strong><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80df-bf24-d476d99124b7" class="bulleted-list"><li style="list-style-type:circle"><strong>Để so sánh?</strong></li></ul></div><div style="display:contents" dir="auto"><ul id="20ecb5fe-02bd-80d4-935d-fe4b310916a2" class="bulleted-list"><li style="list-style-type:circle"><strong>Để đưa ra lợi ích?</strong><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8003-854a-f09c125d1d31" class="bulleted-list"><li style="list-style-type:square">Để đặt đc ra câu hỏi như này thì bác chỉ cần nhìn lại cái câu [TOPIC SENTENCE] của bác. Đọc thật kĩ diễn đạt là bác sẽ biết mục đích của đoạn này là gì:D</li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8098-889a-f6a1cefd523b" class="">This is particularly noticeable with Nick Vujicic, who is well-known for being an inspiring international speaker, regardless of his discouraging background as a disabled person from a family of modest income. His willpower refuses to fail and persists to overcome many obstacles to eventually gain a successful career.</p></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80f1-a982-e390cb188fdc" class="bulleted-list"><li style="list-style-type:disc">Còn đối với example - mục tiêu là illustrate ý của bác - thì đã rất ổn rồi:D.</li></ul></div></div></figure></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80f2-bf14-fdfca19ede3b" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80c3-b871-ceb8765f31f4" class="">Anyway, hi vọng bác sẽ học đc gì đó từ những lời nhận xét của tôi dù khá là dài…</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-80c6-97a4-e40b4629d5c3" class="">Còn về LR, tôi nghĩ đây là phần dễ nhất. Bác không cần phải tư duy quá nhiều mà chỉ là quen tay mà thôi. </p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8012-8b8a-c5dc2c1caac4" class="">Để sửa LR thì bác cứ lên ChatGPT rồi copy paste bài luận của bác rồi gõ prompt<div class="indented"><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80d1-ab16-eb11995b6afe" class="bulleted-list"><li style="list-style-type:disc"><strong>read this text then find out any awkward phrasing and suggest ways to fix them<br/>no need to do anything to this text. Just focus on vocabulary and phrasing.</strong><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80d7-a301-c53f12bc9a8b" class="bulleted-list"><li style="list-style-type:circle">Cái prompt này sẽ giúp bác fix kha khá cách diễn đạt unnatural và awkward đó<div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80b9-912c-d19252744be2" class="bulleted-list"><li style="list-style-type:square">Cái này thì nó nhanh, tiện và chính xác hơn nhiều vì ChatGPT đc train với data hầu như bằng tiếng anh mà nên nó sẽ nhận diện tốt lắm:D. <div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-8087-8baf-fe7774bd03f0" class="bulleted-list"><li style="list-style-type:disc">Bên dưới là demo cho cách nó sửa.</li></ul></div><div style="display:contents" dir="ltr"><figure id="20fcb5fe-02bd-800a-b348-dda8fd07e0fa" class="image"><a href="Khang/image.png"><img style="width:601.96875px" src="Khang/image.png"/></a></figure></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20fcb5fe-02bd-80fd-9234-dfb2b382977a" class="bulleted-list"><li style="list-style-type:square">Và mỗi bài bác viết thì bác cứ note lại các lỗi sau một thời gian lại vào đọc để review rồi dần dần sẽ tốt lên thôi<div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-801a-982c-d2f508c24e6b" class="">
+</p></div></li></ul></div></li></ul></div></li></ul></div></div></p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-807c-82b0-ff26b2fbda5a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20fcb5fe-02bd-8021-9f1e-e5d69a3d607c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8067-a2fb-dba0a7188d01" class="">In conclusion, while money and appearance are truly valuable tools for overall success, qualities such as hard work and dedication are more essential for individuals to succeed consistently in various aspects of life</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-808f-aafe-ec8132c655b5" class="">
+</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-8031-96bc-d6b9e0de2ef1" class=""><strong>VIẾT LẠI 1:</strong></p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80da-af10-d1e89e90c97c" class="">Supporters of appearance and money point to the effects they bring into life. Being rich means you can gain access to better opportunities and services, such as better educational systems, elite mentoring, and so on. <strong>In </strong><strong>today’s world</strong><strong> where success often comes with deep understanding of specialized knowledge</strong>, such educational opportunities can fill the knowledge gap and sharpen one’s cognitive skills, significantly contributing to their long-term achievements. A similar logic can be applied to physical appearance, since a  good-looking person often leaves positive first impressions, which help them build strong social networks. <strong>In today’s </strong><strong>interconnected </strong><strong>world</strong>, such networks are <strong>instrumental in opening doors</strong> to one’s professional advancement. This is particularly evident in the entertainment industry, where artists and singers with striking appearance can easily stand out, gain public support, build devoted fanbase and achieve lasting success.</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80f5-be3c-d64383449277" class=""><strong>Body 2 ver 1</strong> However, I believe that such traits as hard work and determination are more highly indicative of  achieving success and fulfilling one’s potential. Hard work can train individuals to become more patient and more disciplined. This is very important because during the process to success, there will be challenges and setbacks, all of which require individuals’ patience and consistency to overcome. Without these abilities, they may lose their will to persist and discourage themselves to keep pushing towards achieving success. Secondly, resilient and determined individuals can still succeed, despite lacking favorable conditions such as financial privilege or outstanding physical appearance. In today’s digital age, everyone can access massive sources of valuable knowledge and concepts via the Internet; therefore, if anyone can patiently study these sources, they can comprehensively develop themselves and gain personal achievements over time. This is particularly noticeable with Nick Vujicic, who is well-known for being an inspiring international speaker, regardless of his discouraging background as a disabled person from a family of modest income. His willpower refuses to fail and persists to overcome many obstacles to eventually gain a successful career.</p></div><div style="display:contents" dir="auto"><blockquote id="213cb5fe-02bd-8027-b415-c50bd8e4d31d" class=""><strong>Nếu bác có thắc mắc liệu có nên vừa đưa ra lợi ích vừa so sánh không thì câu trả lời là không nhé</strong><div style="display:contents" dir="auto"><ul id="213cb5fe-02bd-80d0-9202-fe80cbcc8066" class="bulleted-list"><li style="list-style-type:disc">Lí do là riêng việc bác so sanh là bác đã đưa ra đc cái lợi ích rồi. Vì phải có lợi ích thì bác mới so sánh đc chứ:D</li></ul></div><div style="display:contents" dir="auto"><ul id="213cb5fe-02bd-80a7-9f8e-f958ed7d74c2" class="bulleted-list"><li style="list-style-type:disc">Lí do thứ hai là điều này khiến bài bác rất dài → tốn thời gian suy nghĩ + viết. Và đối với một bài chỉ yêu cầu 250 words trong 40 min thì yeah, its not worthy at all.</li></ul></div><div style="display:contents" dir="auto"><ul id="213cb5fe-02bd-80a9-9b1c-ef5722ebe02f" class="bulleted-list"><li style="list-style-type:disc">Anyway, t vẫn sẽ nhận xét cả 2 version nhé vì t thấy có chỗ để t nói về coherence rồi=)))))</li></ul></div></blockquote></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80c3-a4a4-c84682779d40" class=""><strong>Body 2 ver 2 </strong>However, I believe that such traits as hard work and determination are more highly indicative of  achieving success and fulfilling one’s potential. While looks and wealth can be beneficial for a head start, <strong>they are not sustainable without an inner drive</strong>. In contrast,  resilient and determined individuals can overcome this lack of support by making the most of the available sources via the internet, such as free educational content, online workshops and community-based support. Over time, consistency allows them to <strong>build real competence, strengthen resilience, and expand networks through their proactive mindset</strong>. In other words, rooted self-discipline rather than favorable conditions, creates a stronger and sustainable foundation for long-term success.  A compelling example is Nick Vujicic, who is well-known for being an inspiring international speaker, regardless of his discouraging background as a disabled person from a family of modest income. His willpower refuses to fail and persists to overcome many obstacles to eventually gain a successful career. </p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80f8-a177-d6a7a0c4f884" class="">
+</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80f3-9bbd-e17b89a342cf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80a4-babc-f5e77e38c32e" class=""><strong>ESSAY 2: </strong></p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-805a-819f-ea8faae89fce" class=""><strong>Some people say it is the government&#x27;s responsibility to transport children to school, while others believe parents should transport their children to school.</strong></p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-80ab-8b7f-cec89442fc79" class=""><strong>Discuss both views and your opinion.</strong></p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-805d-955f-ce3869302918" class="">Opinions vary on whether the responsibility to transport students to school should be taken by the government or parents. I prefer the second viewpoint because having parents take their children to schools may offer more direct supervision compared to using school buses.</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="211cb5fe-02bd-806a-a0ab-d2c1ba523bfc"><div style="width:100%"><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-80cc-a980-e292048c296f" class="">The claim that the governments should take children to school rather than parents is not entirely baseless, because this approach would contribute to alleviating traffic-related and environmental issues. If children commute to schools by buses provided by the governments, the number of private vehicles traveling to schools will decrease significantly, <strong>which not only saves traffic congestion but also reduces the amount of gas emission to the environment, thus improving the surrounding air quality</strong>. This is particularly noticeable with Vietnam, where parents consistently transport their children to schools, causing prolonged traffic jams and polluting the atmosphere on various primary routes.</p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-80ab-b774-f0a3ebb233fa" class="">Alleviate traffic-related and environmental issues. If its the case → Less vehicles → Traffic congestion → Air quality. </p></div></div></figure></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-80a6-93ee-ef931ffb5f99" class="">
+</p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-804a-b54a-d00f7cd45f02" class="">Although the above argument is understandable, I would contend that delegating responsibility for the safety of one’s children to others, regardless of their trustworthiness, is highly risky. This is because parents will eventually take the highest responsibility even if others cause accidents to their children. For example, there are many cases in which young students are left behind by drivers or monitors on school buses owing to insufficient oversight, which may lead to detrimental consequences to overall health or even fatality. Therefore, by handling transportation themselves, parents can not only care for their children’s well-being but also avoid potential risks caused by third parties.</p></div><div style="display:contents" dir="auto"><p id="211cb5fe-02bd-8059-a55e-dfba858d333f" class="">In conclusion, while state-provided transportation to schools can be valuable contributors to reduced traffic jams and improved atmosphere, it is more necessary for parents to be directly involved in the activity to ensure the safety of their children.</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80ed-875b-cd229b9aa83b" class="">
+</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80ee-915a-e8475c77bc74" class="">
+</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80a5-824c-f331bbff18e9" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="233cb5fe-02bd-80ce-a359-c2e581bcb32b"><div style="width:100%"><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80e7-b5f5-faa1ee5e35c5" class=""><strong>Some people think </strong><mark class="highlight-blue_background"><strong>success in life</strong></mark><strong> comes from hard work and determination, while others think that there are more important factors such as money and appearance.</strong></p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-8066-94c9-c6cfc7633030" class=""><strong>Discuss both views and give your opinion.</strong></p></div></div></figure></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-8064-b108-f20c7578f38e" class="">Supporters of money and appearance genuinely come from their observance of a minor group of successful people on social media. These successful people often have luxurious lifestyles and striking appearance, and they can travel across countries regularly on expensive transports such as aircrafts and yachts. Hence, advocates claim these people&#x27;s lifestyles are the model of success, and money and appearance are two important tools allowing them to achieve it.</p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80a1-999e-fd8fb83c39e4" class="">However, these proponents ignore another factor that deserves more emphasis: a strong financial background and attractive appearance are not easy to earn. In most cases, wealth is inherited rather than self-made, and physical attractiveness is often a result of genetics or costly cosmetic interventions. <strong>These factors, </strong><mark class="highlight-teal"><strong>[however]</strong></mark><strong>,</strong> are largely beyond individual control, and relying on them as the foundation of success may create a misleading narrative, especially for young people who are striving for upward mobility through their own efforts.</p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80e2-8e87-cd0024fb8941" class="">Depending on inner traits such as hard work and perseverance, on the other hand, can build sustainable success in life. As these inner drives are self-generated, not only do they support individuals’ motivations to consistently move forward, but also protect them from being diverted by setbacks and challenges, which are inevitable during the pursuit of success. <strong>Unlike money and appearance which are temporary or hardly controllable, these traits are </strong><strong>rooted reasons</strong><strong> determining one’s success</strong>. In other words, hard work and perseverance help individuals build real competence, strengthen resilience and reinforce proactive mindset overtime. A notable example is Nick Vujicic, who is well-known for being an inspiring international speaker, despite his discouraging background as a disabled person from a family of modest income. His willpower refuses to fail and persists to overcome many obstacles to eventually gain a successful career.</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80cf-bbc2-f46551e5db00" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="233cb5fe-02bd-8098-afa3-facebb9aa085"><div style="width:100%"><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-8055-ac8b-efaa94bd3d71" class=""><strong>Some people say it is the </strong><mark class="highlight-teal"><strong>government&#x27;s responsibility</strong></mark><strong> to transport children to school, while others believe parents should transport their children to school.</strong></p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-8019-9a57-cb17a2231804" class=""><strong>Discuss both views and your opinion.</strong></p></div></div></figure></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-804f-88d9-cd6fe9d539c0" class="">Many believe that the government should be responsible for transporting children to school, while others think parents are more suitable. Personally, I disagree with the former view because the government may not ensure safety to all students during the school commutes.</p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80a1-a17f-fa6c4344fb3a" class="">On the one hand, one main reason why state-funded are preferred rather than parental transportation is that an increasing number of parents are currently unable to transport their children regularly to school. In today’s fast-paced world, many parents are often occupied with hectic schedules at work, which limits their time dedicated to  other necessary tasks, including transporting their children to school. To address this issue, they opt to transport services organized by the government, using state-supported buses or public metro systems. They believe this method is effective because public transport generally operates on fixed schedules, which can ensure children are transported to school daily with minimal delays.</p></div><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="234cb5fe-02bd-802a-a0bf-c387d52dca02"><div style="width:100%"><div style="display:contents" dir="auto"><p id="234cb5fe-02bd-80dd-a856-de92a2d05a3a" class="">hectic schedule → no time for tasks → government-based transportation</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80df-94e7-d5ab6dd5b4dd" class="">However, others disagree with the above argument for several reasons. Specifically, as the government needs to manage a large number of students, it may struggle to provide adequate supervision, <mark class="highlight-red"><strong>potentially resulting in risky situations such as a student being forgotten and left behind</strong></mark><mark class="highlight-red"><strong>.</strong></mark> There have been unfortunate cases illustrating this explanation, where some students are locked for hours in school buses without anyone noticing, causing serious health risks due to lack of oxygen. Additionally, the transportation services provided by the government are often standardized for the majority of students, potentially overlooking those with special or unexpected requirements. For instance, students with physical disabilities may require vehicles equipped with ramps or lifts, which are not always available in public transport services. These mistakes highlight the possible limitations of the one-size-fits-all services and underscore the <mark class="highlight-blue"><strong>need for tailored solutions</strong></mark> to ensure all students can go to school safely and conveniently.</p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-8059-b67b-ff14493f2701" class="">After considering those reasons,  I <mark class="highlight-blue"><strong>also</strong></mark> believe that parents should transport their children rather than letting the government do it. <mark class="highlight-red"><strong>One key factor</strong></mark><strong> </strong>is the level of personalized care that parents can offer. Unlike government-run transport services, which must cater to large groups of students and adhere to a strict schedule, parents can ensure their child’s safety and comfort by choosing the safest routes and adjusting <mark class="highlight-red"><strong>travel times</strong></mark> based on their child’s needs. <mark class="highlight-red"><strong>Furthermore</strong></mark>, parents are more familiar with any special requirements their child might have, whether it’s medical conditions, allergies, or behavioral needs that may not be immediately obvious to a bus driver or transportation officer.</p></div><div style="display:contents" dir="auto"><p id="233cb5fe-02bd-80d2-87b6-efeebd675ec1" class="">In conclusion, although entrusting the government to transport students to school has certain merits, it could pose risks that lead to more serious consequences. Therefore, I believe that it is safer for children to go to school with their parents rather than depending on the services provided by the government.</p></div><div style="display:contents" dir="auto"><p id="236cb5fe-02bd-80a4-8a6f-e71e45d5e4d8" class="">
+</p></div><div style="display:contents" dir="auto"><ol type="1" id="236cb5fe-02bd-802c-bc67-c4087079cf21" class="numbered-list" start="1"><li>On the one hand, one main reason why state-funded transportation are preferred over parental commuting is that an increasing number of parents are currently unable to transport their children regularly to school. In today’s fast-paced world, many parents are often occupied with hectic schedules at work, which limits their time dedicated to other necessary tasks, including transporting their children to school. To address this issue, they resort to transport services organized by the government, using state-supported buses or public metro systems. Since the public transport generally operates on fixed schedules, it is believed to ensure children are transported to school daily with minimal delays.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="236cb5fe-02bd-8042-b00b-c225c5e9ce6c" class="numbered-list" start="2"><li>However, others disagree with the above argument, as they argue the government lack the ability to provide inclusive caring services to all students. Many supervisors and bus drivers are often required to prioritize efficiency over individual care, adhering strictly to standardized procedures. Consequently, such oversights for personalized care could lead to risky situations such as a student being forgotten and left behind. For instance, there have been unfortunate cases where some students are locked for hours in school buses without anyone noticing, causing serious health risks due to lack of oxygen. Although such situations are rare, they still highlight the possible limitations of the one-size-fits-all services and underscore the need for tailored solutions to ensure all students can go to school safely and conveniently.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="236cb5fe-02bd-8030-ab32-d185d3cade07" class="numbered-list" start="3"><li>After considering those reasons, I believe that parents should transport their children rather than letting the government do it. Children at early ages tend to depend on their parents more than anyone else, which enables parents to gain deep insights into their children&#x27;s needs. As a result, parents are often more familiar with any special requirements their child might have, whether it’s medical conditions, allergies, or behavioral needs that may not be immediately obvious to a bus driver or transportation officer. Ultimately, they can ensure their child’s safety and comfort by choosing the safest routes and adjusting travel times based on their child’s needs, unlike government-run transport services, which must cater to large groups of students and adhere to a strict schedule.</li></ol></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8057-a1d5-e6b0b7291545" class="">
+</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8084-9b5a-c546a0d96a03" class="">
+</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8015-93ec-fd95bae6e905" class="">Access to clean water is a basic human right. Therefore every home should have a water supply that is provided free of charge. Do you agree or disagree?</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8093-88d6-f6dfb3ad5861" class="">Many people contend that access to clean water for everyone should be totally free, because it is a basic human right. While this might be reasonable for various reasons, I disagree due to its scarcity and the cost of producing it.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-801d-b8b7-f163026f8002" class="">On the one hand, it is morally understandable why some think clean water should be supplied to everyone free of charge. Firstly, it serves as an irreplaceable material for us to maintain daily essential demands, ranging from small-scale activities such as washing clothes and cooking food, to large-scale endeavors such as industrial and agricultural production. Secondly, in terms of medical applications, clean water is widely utilized for various purposes, particularly infusion therapy, which is a useful method to ensure patients stay hydrated during medical treatment. In contrast, consuming contaminated water in the long-term instead of clean water necessarily contributes to higher rates of malnutrition or even serious diseases such as diarrhea, all of which frequently appear in underdeveloped countries.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80b7-a2a1-d663f9e6239d" class="">However, providing clean water should not be free at all, due to its scarcity and the cost of producing it is prohibitively high.  As for the first category, it has been shown that clean water sources are disappearing rapidly as a result of climate changes. For example, one of the largest sources of fresh water, Antarctic glaciers, are evaporating day by day because of global warming.  Regarding production cost, it requires high investment to manufacture clean water, from conducting researches for the appropriate source of water to building specialised factories for filtration, before making it accessible to every household through constructed pipe systems. Therefore, it is better not to utilize clean water in a wasteful way, and one way to ensure that is not providing it freely. Residents can exchange clean water with different means, whether they are cash, substitute goods, or even workforce.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8008-b9db-f203bf9f63eb" class="">To conclude, as clean water is a valuable resource for humans, we should utilize it moderately by not supplying it free of charge</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"><hr/><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Inline comments</summary><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">This is particularly evident in the entertainment industry, where artists and singers with striking appearance can easily stand out, gain public support, build devoted fanbase and achieve lasting success.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 5:49 PM</time></span></span></div><div style="padding:0.2em">t biết bác viết đc mà:v<br/>nma có một cái t thấy khá phổ biến ở người viết là dùng [THIS] để refer tới ý trước đó. Nhưng điều này somehow khiến người đọc không biết bác dang refer tới ý nào. <br/>This what? Nên t luôn khuyên là khi dùng this, that, these, those thì thêm một danh từ đằng sau để clarify xem đang refer tới gì. <br/>This situation? This technology? This….</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">such educational opportunities can fill the knowledge gap and sharpen one’s cognitive skills, significantly contributing to their long-term achievements</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 5:46 PM</time></span></span></div><div style="padding:0.2em">có lẽ t hơi khó tính chăng khi t muốn phần này<br/>bác làm cái lợi ích của [such educational opportunities] lúc [rich] khác biệt hơn so với lúc [poor]<br/>kiểu để mình cho thấy rằng [money] thực sự quan trọng trong thành công ấy. chứ nếu đưa ra lợi ích thuần như này thì t thấy chưa đc thuyết phục lắm =))))))  </div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>today’s world</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 5:59 PM</time></span></span></div><div style="padding:0.2em">t thích c sửa diễn đạt theo kiểu [In <strong>a world</strong> where…] vì cái việc [Success comes with deep understanding and specialized knowledge] nó là một lẽ dĩ nhiên nên yeah, sửa thành [In a world] đọc nó hay hơn á - tránh lặp in today’s world nưa =))))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>interconnected </strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 6:13 PM</time></span></span></div><div style="padding:0.2em">bác có thêm thêm “increasingly” để thể hiện xu hướng cũng ok ấy<br/>t feedback về diễn đạt thì bác cứ note vào để học dần dần, để cách diễn đạt của mình nó sâu sắc hơn:V</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Being rich means you can gain access</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 6:15 PM</time></span></span></div><div style="padding:0.2em">t k thích dùng từ “means” khi viết lí do là vì cái means này nó là một động từ khá là kiểu do nothing?<br/>thay vào đó bác thử nghĩ một động từ nào đó do something, actually do something kiểu allow, offer,….<br/><strong>being financially well-off allows people to access to better….</strong></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">such networks are <strong>instrumental in opening doors</strong> to one’s professional advancement.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 6:18 PM</time></span></span></div><div style="padding:0.2em">khi viết bác nên viết theo kiểu [càng tiết kiệm càng tốt]<br/>nếu câu nào viết theo ít từ nhất thì hãy viết - để giữ câu văn xúc tích và tránh lặp ý<br/>điển hình như câu này khi mà [instrumental] nó đã ngụ ý là [open doors] rồi:v</div><div style="padding:0.3em"></div></li><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 6:23 PM</time></span></span></div><div style="padding:0.2em">hơn thế nữa, như t luôn nói thì bác nên nói rõ mối quan hệ giữa [such networks] và [professional advancement] <br/>kiểu làm thế nào mà [such networks] lại → [professional advancement]?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">help them build strong social networks</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 6:32 PM</time></span></span></div><div style="padding:0.2em">t nghĩ k nên oversimplify kiểu này<br/>vì có rất nhiều yếu tố để build a strong network<br/>nên t nghĩ bác nên thay đổi cách diễn đạt kiểu [dễ hơn trong việc xây dựng mqhe] - vừa chỉ ra đc sự khác biệt vừa k oversimplify:D<br/>nói chung là để nhận ra đc mấy cái lỗi về diễn đạt nó subtle như này thì bác cần đọc rất nhiều, kiểu đọc đi đọc lại để có cho bản thân cái nhìn clear và overall về bài của bác, sau đó bác mới reflect lại xem các ý của bác nó có phản ánh đúng những gì đề bài y/cau không, đúng những gì bác muốn không.</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Hard work can train individuals to become more patient and more disciplined. This is very important because during the process to success, there will be challenges and setbacks, all of which require individuals’ patience and consistency to overcome</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 8:42 PM</time></span></span></div><div style="padding:0.2em">cái logic của bác trong câu này là:<br/>hard work….is very important ← during the process of success there will be challenges &amp; setbacks → require individuals’ patience and consistency.<br/>tức là nếu bác có đọc post trước của t về linearity thì sẽ thấy câu này nó đang violate linearity (khiến readers cảm thấy awkward)<br/>bác có thể dành tgian ra đọc lại post đó của t cũng đc tại giải thích hết ở đây nó hơi mất tgian =)))))<br/>Hơn nữa, nếu bác để ý kĩ hơn thì dường như đang có sự lặp lại ý ở đây:<br/><br/>[Hard work..patient and disciplined is important] &amp; [Require patience &amp; consistency]<br/><br/>Khi đó thì cần sửa lại cái logic này của bác một chút<br/>T sẽ để cái [CAUSE - challenges &amp; stebacks] lên đầu <br/>sau đó t để cái [EFFECT - Hard work…] về sau để cái logic nó là Cause-Effect và yeah nó linear.<br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Without these abilities, they may lose their will to persist and discourage themselves to keep pushing towards achieving success</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 8:46 PM</time></span></span></div><div style="padding:0.2em">nếu bác muốn so sánh tiếp thì bác sẽ diễn đạt ý này lại kiểu<br/>[Nếu k có những traits này thì kể cả có tiền hay ngoại hình thì họ cũng không đạt được thành công]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"> In today’s digital age, everyone can access massive sources of valuable knowledge and concepts via the Internet; therefore, if anyone can patiently study these sources, they can comprehensively develop themselves and gain personal achievements over time</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 8:55 PM</time></span></span></div><div style="padding:0.2em">t muốn bác xem xét và thử diễn đạt lại câu này xem, rõ ràng từng thành phần cấu trúc ngữ pháp ra tại t đọc thấy nó rất rối á. <br/>hơn nữa, t muốn cái ý giải thích này của bác nó phản ánh đúng cái câu topic của bác<strong> [can still succeed, despite lacking…]<br/></strong>còn về example thì yeah, still nice. </div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>they are not sustainable without an inner drive</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 8:58 PM</time></span></span></div><div style="padding:0.2em">how?<br/>tại sao lại [not sustainable without an inner drive]?<br/>linking giữa 2 ý này là gì? bác phải luôn đặt câu hỏi khi dẫn dắt từ ý này sang ý kia nhé vì sẽ rất dễ mắc lỗi logical gap.</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">lack of support </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 8:59 PM</time></span></span></div><div style="padding:0.2em">cái [this lack of support] bác đang refer tới ý nào?<br/>this này đang nói tới cái nào:v</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"> <strong>build real competence, strengthen resilience, and expand networks through their proactive mindset</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 9:00 PM</time></span></span></div><div style="padding:0.2em">t nghĩ bác có thể tận dụng cái ý này để thêm cấu trúc not only…but also vào đó:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">In other words, rooted self-discipline rather than favorable conditions, creates a stronger and sustainable foundation for long-term success</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 9:01 PM</time></span></span></div><div style="padding:0.2em">nice mini-conclusion</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">A compelling example is Nick Vujicic, who is well-known for being an inspiring international speaker, regardless of his discouraging background as a disabled person from a family of modest income. His willpower refuses to fail and persists to overcome many obstacles to eventually gain a successful</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 9:08 PM</time></span></span></div><div style="padding:0.2em">t nghĩ bác nên đổi từ “regardless” thành “despite”<br/>vì regardless ngụ ý là kiểu không quan tâm, không màng tới kiểu các yếu tố đó nó không quá quan trọng ấy<br/>trong khi despite thì nó ngụ ý là các yếu tố nó quan trọng, nhưng…<br/>thì trong cái ngữ cảnh này disability &amp; modest income nó khá là quan trọng và có ảnh hưởng lớn nên yeah:v</div><div style="padding:0.3em"></div></li><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 9:10 PM</time></span></span></div><div style="padding:0.2em">ý nữa là cái [refuse to fail] dùng awkward lắm tại t search thì cái cụm này k đc dùng nhiều<br/> với [persist to] cũng đang dùng sai nữa<br/></div><div style="padding:0.3em"></div></li><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 9:11 PM</time></span></span></div><div style="padding:0.2em">thêm ý nữa là thường nó sẽ dùng [build a successful career] thay vì gain<br/>bởi gain là kiểu đạt đc cái gì đó, kiểu nhận lại á<br/>trong khi career nó là một hành trình so yeah build is better here.</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">come from</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 9:39 AM</time></span></span></div><div style="padding:0.2em">t cảm thấy [come from] không phù hợp trong ngữ cảnh này<br/>ý bác đang là [supporters] ĐẾN TỪ [observance]?<br/>nó đang không hợp lý á</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">and they can travel across countries regularly on expensive transports such as aircrafts and yachts</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 9:41 AM</time></span></span></div><div style="padding:0.2em">bác thấy ý [travel across countries on expensive transport] này có đang bị lặp không?<br/>ý này đang là một ví dụ nhỏ trong ý [luxurious lifestyles] nhưng bác đang dùng [and] để nối nên là đang có lỗi nho nhỏ về repetition ở đây</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Hence, advocates claim these people&#x27;s lifestyles are the model of success, and money and appearance are two important tools allowing them to achieve it.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 9:54 AM</time></span></span></div><div style="padding:0.2em">the [hence] sounds kinda weird?<br/>[ppl có lối sống sang trọng]. VÌ THẾ nên supporters coi đây là success…<br/>bác có thấy từ [hence] ở đây nó sao sao không?<br/>kiểu đây không phải là mối quan hệ nhân quả [cause-effect] ấy<br/>họ sống sang trọng nên tôi coi đó là hình mẫu của tôi:D????<br/>thường thì cái [cause] nó phải có ảnh hưởng tới bản thân chúng ta, ví dụ nó có tác động gì đó tới sức khoẻ, môi trường… của chúng ta, nhưng cái việc [họ sống giàu sang] đang không có ảnh hưởng gì tới chúng ta (họ sống sao thì liên quan gì tới ta) (do là chúng ta chưa viết về ảnh hưởng)<br/>vì thế bác cần viết ảnh hưởng của cái này lên con người.<br/>Ví dụ:<br/>họ sống sang trọng. <mark class="highlight-brown"><strong>Sự sang trọng is often believed to mang tới happiness [ảnh hưởng tới con người]</strong></mark>, thereby<strong> </strong><mark class="highlight-blue"><strong>dần trở thành hình mẫu lý tưởng về sự thành công của nhiều người</strong></mark><mark class="highlight-blue">.</mark> Điều này lại càng khiến these supporters tin vào vai trò quan trọng của tiền và ngoại hình trong con đường thành công<br/><br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">another</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 9:56 AM</time></span></span></div><div style="padding:0.2em">sao lại dùng [another] ở đây nhỉ =)))))<br/>thường [another] chỉ dùng khi có một cái factor nào đó đi trước đó rồi, kiểu there are 2 factors A and B. A…, B…. <mark class="highlight-teal"><strong>Another factor is C<br/></strong></mark></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">In most cases</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 9:57 AM</time></span></span></div><div style="padding:0.2em">vì đây là một bài ielts thì sử dụng [in most cases] này vẫn ổn, nhưng khi viết một bài báo or nckh thì không nên bác nhé, vì đâu có cơ sở nào mà cho rằng [in most cases] đâu:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">In other words, hard work and perseverance help individuals build real competence, strengthen resilience and reinforce proactive mindset overtime.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 10:00 AM</time></span></span></div><div style="padding:0.2em">cái câu chốt lại quan trọng nhất đâu bác =)))))<br/>chỗ này đang rất ổn rùi, kiểu tổng hợp các lợi ích của 2 cái traits này, nhưng câu kết là [lead a successful life] thì t chưa thấy đâu<br/>kiểu sau mỗi đoạn mình cần chốt lại cái vấn đề bàn luận ban đầu nhé</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Depending on inner traits such as hard work and perseverance, on the other hand, can build sustainable success in life</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 10:01 AM</time></span></span></div><div style="padding:0.2em">đề này yêu cầu bác discuss both views mà t đọc thì thấy bác mới discuss cái view 1 thôi còn view 2 là opinion của bác luôn r =))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>rooted reasons</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 2:02 PM</time></span></span></div><div style="padding:0.2em">t thêm cái nữa nhé =)))))<br/>t cảm thấy cái [rooted reasons] này chưa làm bật lên sự khác biệt giữa 2 cái này.<br/>1 cái là [temporary + hardly controllable] và 1 cái là [rooted reasons] thì t chưa thấy nó toát lên sự đối lập:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">In other words</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 17, 2025, 2:03 PM</time></span></span></div><div style="padding:0.2em">một cái nữa là từ in other words ở đây thì bác phải diễn đạt lại cái ý trước đó (ý so sánh)<br/>mà câu này bác đã so sánh đâu nhể =)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">To address this issue, they opt to transport services organized by the government, using state-supported buses or public metro systems</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:19 PM</time></span></span></div><div style="padding:0.2em">imo thì câu này t đang cảm thấy nó hơi lạc lạc kiểu gì đó (bác có thể phản biện lại t nhé)<br/>đề bài nói là: TRÁCH NHIỆM của chính phủ<br/>nhưng ở câu này của bác t cảm thấy nó đang như một OPTION thay vì là RESPONSIBILITY:D<br/>so imo bác nên diễn đạt sao cho nó mang nghĩa trách nhiệm thay vì kiểu [opt for] như này:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">They believe this method is effective because public transport generally operates on fixed schedules, which can ensure children are transported to school daily with minimal delays.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:26 PM</time></span></span></div><div style="padding:0.2em">here we are with (finally) one linearity problem=))))<br/>bác để ý này<br/>nếu bóc tách câu này thì t sẽ có 3 ý<br/>A: this method is effective<br/>B: public transport operates on fixed schedules<br/>C: ensure children are transported to school daily with minimal delays<br/>Và theo câu này t sẽ có dòng tuyến tính như sau:<br/>A ← B → C<br/>A BECAUSE B, which C<br/>Hơn nữa câu này cũng đang hơi thừa<br/>Vì ý A đang có vẻ trùng với ý C<br/>Effectiive = Minimal delays (+ daily)<br/><br/>bác thử viết lại chỗ này nhé=))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">state-funded</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 3:02 PM</time></span></span></div><div style="padding:0.2em">chưa proofread cái này nhé :))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">limits their time dedicated to  other necessary tasks, including transporting their children to school</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 3:04 PM</time></span></span></div><div style="padding:0.2em">well, ý này t nghĩa bác nên dành hẳn một câu ra để nói vì nó quan trọng mà (liên quan hẳn tới ý chính của đoạn - transporting children to school)<br/>khi viết thì bác cần xác định đc tầm quan trọng của các ý để mà từ đó sắp xếp vị trí của nó sao cho hợp lý nhất <br/>khi đặt ý qtrong như này trong một embedded clause như trê thì người đọc sẽ k để tâm tới ý này bằng khi bác dành hẳn một câu cho ý đó</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><mark class="highlight-red"><strong>potentially resulting in risky situations such as a student being forgotten and left behind</strong></mark></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:39 PM</time></span></span></div><div style="padding:0.2em">t nghĩ bác nên dành ra 1 câu để nói về ý này<br/>vì t cảm thấy ý này có vai trò khá quan trọng trong việc illustrating cái xấu của government =))) nên để nó trong một embedded clause (với vai trò chỉ để thêm thắt thông tin) thì t cảm thấy không hay lắm 😀</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">explanation</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:55 PM</time></span></span></div><div style="padding:0.2em">this situation chứ nhể =)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><mark class="highlight-blue"><strong>also</strong></mark></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:31 PM</time></span></span></div><div style="padding:0.2em">t đoán từ [also] này bác đang dùng để refer tới cái ý [tailored solutions] bên trên nhỉ <br/>nma t nghĩ k chuẩn lắm<br/>tại vì tailored solutions có thể mang nhiều nghĩa khác thay vì chỉ là [parents..]<br/>hoặc nếu bác k có ý refer thì t nghĩ từ [also] đang bị thừa ở đây:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">After considering those reasons,  I <mark class="highlight-blue"><strong>also</strong></mark> believe that parents should transport their children rather than letting the government do it. <mark class="highlight-red"><strong>One key factor</strong></mark><strong> </strong>is the level of personalized care that parents can offer</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 18, 2025, 2:55 PM</time></span></span></div><div style="padding:0.2em">chỗ này đang nị non-linear này bác :))<br/>After considering those reasons → Parents should… ← One key factor<br/><br/>2 cái này đều dẫn tới [i believe]<br/>bác thử nghĩ xem nên sửa kiểu gì?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">, which limits their time dedicated to other necessary tasks, including transporting their children to school.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 20, 2025, 9:35 PM</time></span></span></div><div style="padding:0.2em">t vẫn nghĩ bác nên dành 1 câu ra cho cái ý này =))))))))<br/>hoặc nếu khi tách ra đọc nó gượng (t thấy gượng thật vì cái ý [hectic schedules] nó k quá liên quan tới transporting children] thì bác có thể sử dụng cấu trúc ngữ pháp mang quan hệ nhấn quả ấy<br/>As….,….<br/>Vì như t nói bên trên thì ý này rất quan trọng trong bài này vì nó link directly tới cái vấn đề bàn luận mà=)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">there have been unfortunate cases where some students are locked for hours in school buses without anyone noticing, causing serious health risks due to lack of oxygen.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 20, 2025, 9:31 PM</time></span></span></div><div style="padding:0.2em">bác có nhận thấy 1 lỗi về linearity ở câu này không =)))))<br/>t để bác tự nghĩ nhá, vì chúng ta đã đến bước tự nhận ra lỗi của bản thân, gradually có cái phản xạ khi viết</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">adhering strictly to standardized procedures</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 20, 2025, 9:36 PM</time></span></span></div><div style="padding:0.2em">:)))) prioritize efficiency over individual care, which adheres to… à bác<br/>sao lại thế đc nhỉ =))))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Children at early ages tend to depend on their parents more than anyone else, which enables parents to gain deep insights into their children&#x27;s needs.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 20, 2025, 9:40 PM</time></span></span></div><div style="padding:0.2em">tương tự với đoạn 1 thì t thấy cái ý [gain deep insights] nó có vai trò khá quan trọng trong bài này<br/>vì nó là cái lý do trực tiếp, cái ưu điểm lớn nhất của parents mà nhỉ <br/>so t nghĩ bác nên sử dụng cấu trúc nào để để làm bật cái ý này lên mạch văn chính, thay vì là đưa nó vào trong 1 mdqh như này<br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">letting the government do it</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 20, 2025, 9:41 PM</time></span></span></div><div style="padding:0.2em">relying on government-run services </div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">consuming contaminated water in the long-term instead of clean water </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:47 PM</time></span></span></div><div style="padding:0.2em">bác thấy chỗ này nó cứ overlap sao sao ko =)))<br/>kiểu consuming contaminated water với inaccessibility to clean water nó kiểu ngang nghĩa sao á</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">all of which frequently appear in underdeveloped countries.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:48 PM</time></span></span></div><div style="padding:0.2em">huh, ý này có liên quan gì tới vấn đề bàn luận k bác =))))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Secondly, in terms of medical applications, clean water is widely utilized for various purposes</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:58 PM</time></span></span></div><div style="padding:0.2em">bác thấy cái ý này nó chưa làm nổi bật lên đc cái benefit của free clean water k =)))))<br/>t biết là đc dùng cho various purposes but why?<br/>tại sao lại nên là free? mà k phải charge:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Firstly, it serves as an irreplaceable material for us to maintain daily essential demands, ranging from small-scale activities such as washing clothes and cooking food</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:59 PM</time></span></span></div><div style="padding:0.2em">ý này cũng vậy<br/>t thấy nó chưa làm bật đc lí do tại sao clean water should be free<br/>biết là nó irreplaceable rồi nhưng tại sao lại free mà ko phải charge?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">the cost of producing it is prohibitively high</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:49 PM</time></span></span></div><div style="padding:0.2em">due to đi với N or V-ing chứ bác =))))))))<br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">providing clean water should not be free at all</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:49 PM</time></span></span></div><div style="padding:0.2em">t nghĩ bác nên thêm cái phrase nào đó mang ý [i think, i believe] ấy để thể hiện ra đây là quan điểm của bác</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">utilize</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:51 PM</time></span></span></div><div style="padding:0.2em">actually, utilize nó mang nghĩa là tận dụng nên t thấy nó ko hợp trong câu mang ý [wasteful] =)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Residents can exchange clean water with different means, whether they are cash, substitute goods, or even workforce.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:53 PM</time></span></span></div><div style="padding:0.2em">t thấy câu này cứ thừa thừa sao á :))))<br/>different means thì có làm cái argument của bác chặt chẽ hơn đâu nhỉ?<br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">category</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:54 PM</time></span></span></div><div style="padding:0.2em">sao lại là category nhở =)))))<br/>kiểu sao 2 cái factors này lại đc coi là category ấy, t kha là doubt từ này<br/>có thể t sai vì t khá lười tra từ :))))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Therefore</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:55 PM</time></span></span></div><div style="padding:0.2em">t nghĩ bác nên thay từ này bằng một phrase nào kiểu [sau khi xem xét các lí do trên], tôi nghĩ [its better not to use clean water in a wasteful way]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>Artists or singers can exemplify this situation</strong>. Having a striking appearance helps them to stand out and become more influential, potentially gain long-lasting support from their fans and make their careers more successful.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 10, 2025, 3:06 PM</time></span></span></div><div style="padding:0.2em">cái example này t thấy viết hay mà tự nhiên b ngắt thành 2 câu =)))))<br/>t đoán là những gì t đọc từ đầu đến giờ t nghĩ b sẽ có khả năng nối 2 câu này thành 1 câu. B thử nối cho t xem nhé</div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details></span></body></html>

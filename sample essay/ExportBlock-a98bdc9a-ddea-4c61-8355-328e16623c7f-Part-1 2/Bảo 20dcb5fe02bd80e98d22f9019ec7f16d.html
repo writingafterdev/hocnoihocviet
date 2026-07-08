@@ -1,0 +1,755 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Bảo</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="20dcb5fe-02bd-80e9-8d22-f9019ec7f16d" class="page sans"><header><h1 class="page-title" dir="auto">Bảo</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80a6-946d-fe79de5b98bd" class="">Some people say that what children watch on TV influences their behaviour while others say the amount of time children spend watching TV influences their behaviour. Discuss both views and give your opinion.</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8094-bfca-ecfaa16fa2c2" class=""><strong>Một số từ có thể paraphrase: Screen time, explicit scenes (Các hình ảnh tiêu cực)</strong></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80d2-b973-eed30f3d9d50" class="">lỗi ngữ pháp</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-805d-8ec5-ce03c0648a98" class="">The influence of television on children’s behavior has been the subject of much controversy and debate. Some individuals argue that the way children behave is significantly affected by the <strong>duration of sreen exposure</strong> duration of viewing television while others contend that the main factor is the content of what they watch. From my perspective, I believe that both determinants have a significant impact on children’s patterns of behavior, especially when these factors are combined.</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80ba-acf6-e891cb611665" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="20dcb5fe-02bd-8085-b38b-c8c2e5710982"><div style="width:100%"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80c1-ad02-e3dd6255fa95" class="">Granted, some people might argue that the information embedded in several television programs or movie scenes can have a profound repercussion on children’s cognitive development and behavioral responses. Adolescence is the developmental stage when the cognitive ability has not yet reached the full maturity and has the ability to learn new things by imitation. Therefore, when viewing the characters from TV shows or movies, young minds are able to mimic and replay accurately all of character’s motions. However, movie scenes and TV shows today normally contain a variety of toxic scenes such as pornography, violent images,... which can distort the children’s perception and therefore, negatively shape their behavior. For example, studies have shown that children exposed to media violence are more likely to exhibit aggressive behavior at school and decreased empathy toward others.</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8052-9a73-f5f126850904" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80f3-99ed-edcdc1533c0b" class=""><strong>Giờ toi sẽ vẽ ra cái logic của c nhé: Learn by imitations → Mimic and replay character motions → Toxic scenes → Distort children’s perception → Affect behavior. </strong></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-808a-9e5b-da07080cbdea" class="">Đầu tiên, t muốn nói về vấn đề <strong>cohesion </strong>trước. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80a8-86bf-f5d6a84f6345" class="">Trước hết, t muốn nói về Old-New trong cohesion. Nôm na là mỗi khi bắt đầu một câu mới, c nên bắt đầu câu đó bằng một thông tin cũ nằm trong câu trước đó (c có thể nhìn hình dưới đây). </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-807b-af27-dde2e98d9181" class="">Hình bên dưới là một phần về thematic progressions, cũng là cách đc coi là tốt nhất để tăng cohesion cho một đoạn text. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8077-911f-fe262f67fc96" class="">Dù có nhiều cách khác nữa, nhưng có 2 loại c nên dùng trong một đoạn (phải dùng).</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80aa-9b58-d8b5741b5352" class="bulleted-list"><li style="list-style-type:disc">Cách 1 là ảnh dưới đây<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8000-87d1-e64df48b69b0" class="bulleted-list"><li style="list-style-type:circle">Ví dụ: I (theme 1) have a cat (rheme 1). It (theme 2 = rheme 1) is chasing a mouse</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8068-84df-f68a598ea6de" class="bulleted-list"><li style="list-style-type:disc">Cách 2 là thay vì dùng rheme 1 = theme 2 thì ta dùng theme 1 = theme 2<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8009-87e1-cf54336dc152" class="bulleted-list"><li style="list-style-type:circle">The concert has raised 3 million dollars. It also attracted millions of fans. We can therefore, consider it as one of the most successful concerts. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80b8-9526-cfdc7f07dd7e" class="bulleted-list"><li style="list-style-type:square">Ở đây, t tách ra làm hai câu với cùng theme là “The concert”. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-806d-be76-d7039246fb2d" class="bulleted-list"><li style="list-style-type:square">Mục đích của loại này phần lớn là để liệt kê các chi tiết, đặc điểm của cái gì đó. Tức là c dùng phải có chủ đích, nếu c có thể sử dụng cách 1 nhưng lại chọn cách 2 thì có thể c đang mắc lỗi đó. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8083-9c95-c1c7c3a47981" class="bulleted-list"><li style="list-style-type:disc">Nôm na là, nếu c dùng được dạng 1 thì hãy dùng vì trong task response nó đòi hỏi c fully develop (trong khi dạng 2 không develop mà chỉ bàn qua bàn lại một vấn đề thôi)</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8008-b0f8-d2d2911c51c0" class="bulleted-list"><li style="list-style-type:square">Và cohesion của loại này chắc chắn sẽ kém hơn loại 1. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8027-a4fc-e4ed51824955" class="bulleted-list"><li style="list-style-type:square">Để giải thích cho điều này thì c hãy đặt mình vào người đọc. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8053-8d8b-cf189882b6f9" class="bulleted-list"><li style="list-style-type:disc">Khi đọc tới [….million dollars] thì chắc chắn họ sẽ ấn tượng với cụm này nhất (nhớ nhất) còn [The concert] họ cũng nhớ nhưng k nhớ bằng cái [million dollars] này được. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80fd-ba5a-ec15bb3731b2" class="bulleted-list"><li style="list-style-type:disc">Khi này, nếu bắt đầu câu sau với [million dollars] hay bất kì phrases nào đồng nghĩa với cụm này thì người đọc sẽ cảm thấy bài viết đang kết nối rất tốt</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8061-9b39-f6d6f7f6e0ee" class="bulleted-list"><li style="list-style-type:disc">Trong khi đó, nếu bắt đầu câu sau với [The concert] hay bất kì phrases nào đồng nghĩa thì người đọc sẽ chỉ nhớ mang máng là [à trc đó có nói tới concert]. Tức là họ cần có thời gian để nhớ lại. </li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="ltr"><figure id="20dcb5fe-02bd-801e-90f9-c00b697a5278" class="image"><a href="B%E1%BA%A3o/image.png"><img style="width:363.9921875px" src="B%E1%BA%A3o/image.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="20dcb5fe-02bd-80ae-96c8-fc726a3ea8ed" class="image"><a href="B%E1%BA%A3o/image%201.png"><img style="width:667.953125px" src="B%E1%BA%A3o/image%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e5-a328-fa3088090172" class="">Bây giờ, nếu nhìn lại đoạn này của c thì c sẽ thấy phần lớn chi tiết đang k giúp nâng điểm cohesion. </p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8083-b781-c22235d28ce2" class="bulleted-list"><li style="list-style-type:disc">when viewing the characters from TV shows or movies, <strong>young minds</strong> are<strong> able to mimic and replay accurately all of character’s motions</strong>. However, <strong>movie scenes and TV shows</strong> today<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80b0-891d-c65875ab22cd" class="bulleted-list"><li style="list-style-type:circle">Như c thấy thì cả theme và rheme của câu đầu nó chả có gì match với theme của câu sau cả → cohesion kém…</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8076-b3d2-db3821755177" class="bulleted-list"><li style="list-style-type:disc">….has not yet <strong>reached the full maturity and has the ability to learn new things by imitation </strong>→ When viewing the characters from TV shows or movies<strong>, young minds</strong><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8057-8c23-f2d6f8655313" class="bulleted-list"><li style="list-style-type:circle">khi c đọc câu này, có thể thấy c bắt đầu câu mới với một thông tin về ngữ cảnh (như t đã comment)</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-807c-b3aa-f71cd6c07b31" class="bulleted-list"><li style="list-style-type:circle">nhưng vấn đề là c để cái theme “young minds” mãi tận về sau và lí do tại sao c k nên làm vậy chắc t đã giải thích đủ rõ bên trên rồi nhỉ:D (nếu chưa thì có thể nhắn lại cho t hỏi nhé) </li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8016-8db5-c2b325f4c7f2" class="">Như vậy, xong cohesion ta sẽ tới linearity (1 trong 2 cái đóng góp lớn nhất tới coherence bên cạnh logic giữa các ý của c)</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-802c-93e4-eae232541f10" class="bulleted-list"><li style="list-style-type:disc">Varied length of sentences for emphasis purposes</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80ef-b770-f5592b579f9c" class="bulleted-list"><li style="list-style-type:disc">Causal relationship should be clear. </li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8016-b448-d03c2f7e2c23" class="">Đầu tiên, t muốn nhấn mạnh cho c rằng ĐỘ DÀI CỦA CÂU SẼ ẢNH HƯỞNG TỚI CÁI TONE CỦA CÂU ĐÓ. </p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8051-a1cb-ced4bf31a479" class="bulleted-list"><li style="list-style-type:disc">Ví dụ như câu: I want that toy! - thì nó mang cái tone kiểu rất nhấn mạnh vào cái yêu cầu đó</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8007-8082-f1d3951b79b3" class="bulleted-list"><li style="list-style-type:disc">Nhưng với câu: I want that toy, which is not only functional but also beautiful! - thì tone ở câu này nó không còn mạnh như câu trước nữa. </li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80c0-a709-fcc4e69803eb" class="">Tức là, c muốn nhấn mạnh câu nào thì độ dài của câu đó nó sẽ ngắn hơn. Trong khi đó, một câu dài thường sẽ thiên về việc giải thích, đưa ra lí do cho vấn đề nào đó. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80be-a795-fef44b3aafac" class="">Như vậy, t muốn hỏi c một câu. Khi c thuyết phục ai đó về một món đồ nào đó, c muốn nhấn mạnh điều gì nhất?</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80f5-9945-c2f3fd99a1b0" class="bulleted-list"><li style="list-style-type:disc">Theo như t từng đọc qua về marketing thì ta cần nhấn mạnh vào tác dụng của món đồ đó đối với người tiêu dùng - hay còn gọi là effects trong mối quan hệ cause-effect đó. </li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-803d-9fe2-fe2535f2c56f" class="">Từ đó, khi nhìn vào câu này của c. C thấy cái effect của c có được nhấn mạnh không? </p></div><div style="display:contents" dir="auto"><blockquote id="20dcb5fe-02bd-8006-b4c8-e265f1435528" class=""> However, movie scenes and TV shows today normally contain a variety of toxic scenes such as pornography, violent images,... which can <strong>distort the children’s perception and therefore, negatively shape their behavior</strong></blockquote></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8097-bf09-e00b0dd7ab23" class="">C đã đặt ý <strong>effect </strong>này vào môt MĐQH trong một câu đang bàn về <strong>cause. </strong>Tức trọng tâm của câu này đang không rõ liệu nó đang về cause hay về effect. Hoặc thậm chí nó thiên về cause hơn và phần effect không còn đc nhấn mạnh nữa (lí do thì bên trên t đã giải thích). </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8096-a0c7-fb39dd2877d5" class="">Trong khi đó, một câu nói về effects của TV &amp; Movies → Children behavior cần phải đc nhấn mạnh vì nó là vấn đề bàn luận của đề bài. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8063-94a3-c87598686e46" class="">Như vậy thì c đã hiểu đc khi nào nên ngắt câu, khi nào nên duy trì không nhỉ?</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80ce-9311-f596efe50917" class="bulleted-list"><li style="list-style-type:disc">Nôm na là hãy duy trì một câu nếu c đang giải thích, các ý nằm trong câu đó đều có chung một name - cause or effect? - tức nó đều nằm chung một mâm ấy</li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80ae-a7dc-cfb8d3225eb6" class="">Như vậy thì qua đây ta biết rằng [<strong>distort the children’s perception and therefore, negatively shape their behavior] </strong>nên được tách ra làm câu riêng lẻ để nhấn mạnh lại tác động của [TV &amp; movies] lên [children behavior]</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8064-b5e9-e98e34e50b15" class="">Tới đây, t sẽ nói về vấn đề ý chính/ý phụ và ảnh hưởng của nó lên cái flow của toàn bài. Và khi c hiểu đc khái niệm ý chính/ý phụ rồi thì t sẽ cho c sửa lại bài đọc nó hay và có trọng tâm hơn rất nhiều. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-802f-b115-d85db94bd3fa" class="">Đầu tiên t muốn c hình dung ra cấu trúc của một bài luận như thế này. </p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8056-90fa-d87daf9fc2f0" class="bulleted-list"><li style="list-style-type:disc">I belive A is good - [TOPIC SENTENCE]<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80d7-992e-c6dbbb506a79" class="bulleted-list"><li style="list-style-type:circle">Because A have B, C &amp; D - [CAUSE]<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80e7-b67e-e95b9a6ef4bb" class="bulleted-list"><li style="list-style-type:square">Nhưng vấn đề bây giờ là sẽ có những trường hợp c phải back-up thêm cho ý này để dẫn tới ý cuối cùng là “beneficial”</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80ea-b2ad-fe2915aeaecb" class="bulleted-list"><li style="list-style-type:square">Nó giống hệt như bên trên của c. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8094-b2c2-ca42b558462e" class="bulleted-list"><li style="list-style-type:square">Because children can easily mimic → Negatively affect their behavior?<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-805a-8a2d-fcaabab18ca1" class="bulleted-list"><li style="list-style-type:disc">Chưa chắc - vì còn dựa vào content mà children xem nữa.</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80c3-ac77-dcb2187c6c3c" class="bulleted-list"><li style="list-style-type:disc">Nhưng vì ý của c đang muốn nói là nó NEGATIVE nên ta cần một cái ý nào đó để backup cho cái [can easily mimic] để nó dẫn tới cái kết luận là - [Negatively affect their behavior]</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80da-955c-f3112c4d98cc" class="bulleted-list"><li style="list-style-type:disc">Nếu c nghĩ trong tiếng việt nó sẽ kiểu. Bọn trẻ con nó hay bắt chước mấy cái chúng nó xem trên mạng. <strong>Mà mấy cái này toàn độc hại </strong>nên chúng nó sẽ bị ảnh hưởng xấu. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80ca-89cc-c04fa2da88ca" class="bulleted-list"><li style="list-style-type:circle">Phần t tô đậm là để back-up cho cái ý [bắt chước] để t rút ra kết luận là [ảnh hưởng xấu]</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80dc-8bfe-cd6dfb4c877c" class="bulleted-list"><li style="list-style-type:disc">Nôm na là c PHẢI BIẾT KẾT LUẬN CỦA C LÀ GÌ, LUẬN ĐIỂM LÀ GÌ. TỪ ĐÓ C PHẢI THÊM THẮT CÁC Ý SAO CHO NÓ DẪN ĐC TỚI CÁI KẾT LUẬN NÀY. </li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80ae-b614-d3565da97b51" class="bulleted-list"><li style="list-style-type:circle">Beneficial for E, F &amp; G - [EFFECT]</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e7-9ea8-feec535450ce" class="">Như vậy, c đã hình dung đc cái cấu trúc cơ bản. Vấn đề bây giờ là ta cần sắp xếp nó sao cho những cái ý back-up này không đc chen lên mạch văn chính. Lí do đơn giản là vì nó không phải ý chính. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8039-9309-fd4063f861e7" class="">Vậy ý chính là gì?</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80f9-905a-f1c285a46abd" class="bulleted-list"><li style="list-style-type:disc">Ý chính là những cái ý quan trọng nhất trong cái nhóm của nó. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8080-a243-d8cc69480e38" class="bulleted-list"><li style="list-style-type:circle">Ví dụ: trong phần cause có: Children mimic movies + movies are toxic → Negative<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80e9-b44d-d45ff037e6ee" class="bulleted-list"><li style="list-style-type:square">Tức [Children mimic movies → Negative] và [Movies are toxic cũng → Negative]</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-806a-961e-d0799d15d0d7" class="bulleted-list"><li style="list-style-type:square">Nhưng độ quan trọng của 2 cái cause này lại khác nhau khi [Children mimic movies] &gt; [Movies are toxic]<div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8051-a6b8-d50405e555be" class="bulleted-list"><li style="list-style-type:disc">Lí do đơn giản là vì nếu children không mimic thì movies có tệ như nào thì nó cũng không negative. </li></ul></div></li></ul></div></li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-809b-aa24-c7662185e03b" class="">Như vậy, c đã rõ hơn chưa nhỉ?</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80c6-b90b-f9a2b3d5e0e5" class="">Tức là đầu tiên c phải tách biệt được CAUSE - EFFECT ra. Sau đó trong mỗi nhóm [CAUSE] &amp; [EFFECT] c phải sắp xếp tầm quan trọng của các ý (trong trường hợp c có các ý back-up đã nói bên trên)</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-804c-bc23-c8c1586bde9f" class="">Như vậy khi sắp xếp theo chính phụ như này, ta sẽ giữ được linearity của bài trong khi bài của ta vẫn có chiều sâu - khi có các ý back-up để dẫn tới cái kết luận. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8095-b982-e551fad595b4" class="">Như vậy, t sẽ lấy luôn ví dụ bài của c để t tách biệt cause-effect, sắp xếp chính phụ để nâng coherence và sử dụng Old-New để nâng cohesion nhé</p></div><div style="display:contents" dir="auto"><blockquote id="20dcb5fe-02bd-80ef-a636-f5458b0b2196" class="">Therefore, when viewing the characters from TV shows or movies, young minds are able to mimic and replay accurately all of character’s motions. However, movie scenes and TV shows today normally contain a variety of toxic scenes such as pornography, violent images,... which can distort the children’s perception and therefore, negatively shape their behavior. </blockquote></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80b5-92ac-c737cf0c100a" class="">Giờ t sẽ tách biệt cause với effect và sắp xếp chính phụ nhé sau đó áp dụng Old-new nhé.</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e6-8799-d67f32163c42" class=""><strong>[CAUSE] - [A - Mimic &amp; replay accurately all of character’s motions] + [B - Toxic scenes such as pornography, violent images]</strong><div class="indented"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80b8-8f51-f3dce4983640" class="">A &gt; B (như bên trên đã giải thích)</p></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-808a-ba94-df1971aa137d" class="bulleted-list"><li style="list-style-type:disc">Khi này, t sẽ nói về kiến thức tiếp theo là sử dụng ngữ pháp để sắp xếp chính phụ. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8092-ba11-df3554abd89f" class="bulleted-list"><li style="list-style-type:disc">Phần lớn thời gian thì sẽ dùng MĐQH để sắp xếp chính phụ, tức là cái gì có tầm quan trọng lớn hơn thì sẽ đc đưa lên đầu trong khi cái gì có tầm quan trọng nhỏ hơn sẽ đưa vào trong MĐQH. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8033-89f7-f37d9e3907e6" class="bulleted-list"><li style="list-style-type:disc">Như vậy t sẽ sửa lại câu này của c sao cho ý [Toxic scenes] nằm trong một MĐQH và [Mimic &amp; replay] sẽ nằm trong mệnh đề chính. </li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80ee-b8ef-f6202de10286" class="">→ when viewing the characters from TV shows or movies, young minds are able to mimic and replay accurately all of character’s motions<div class="indented"><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-805e-a88b-f3497701c65a" class="bulleted-list"><li style="list-style-type:disc">Ở đây thì [Mimic &amp; replay] đã đc nằm trong mệnh đề chính rồi, nhưng còn ý [Toxic scenes] thì chưa. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80e8-b6c5-f5e5fe5f4394" class="bulleted-list"><li style="list-style-type:disc">Nhưng vấn đề là ta cần một cụm như [Movie scenes &amp; TV shows] để dùng MĐQH. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80c5-8998-d35a02862115" class="bulleted-list"><li style="list-style-type:circle">Kiểu như <strong>[movie scenes &amp; tv shows which often contain a variety of toxic scenes such as….]</strong></li></ul></div></li></ul></div></div></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8035-a745-ec20b767b23e" class="">Khi này ta chỉ cần biến đổi sao cho có được cụm [movie scenes &amp; tv shows] nằm ở cuối câu để dùng đc MĐQH để back-up cho kết luận của ta. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8003-9aa4-d1bc6a2fc4f7" class="">Khi đã mang ý [movie scenes &amp; tv shows] đặt xuống cuối câu thì phần đầu [when viewing the characters from TV shows or movies] cần đc bỏ đi do đang lặp lại ý. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8081-88e8-d6e243849152" class="">Hoặc nếu c thắc mắc thì ta vẫn có thể giữa nguyên [when viewing the characters from TV shows or movies] ở đầu và sử dụng MĐQH ngay ở chỗ này <div class="indented"><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80f6-a262-c3925f3e9f06" class="bulleted-list"><li style="list-style-type:disc">When viewing the characters from TV shows or movies,<strong> which often contain toxic scenes such as… </strong><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8018-9fdb-f0bccd9f4c4d" class="bulleted-list"><li style="list-style-type:circle">Therefore, when viewing the characters from TV shows or movies,<strong> which often contain toxic scenes such as pornography and violence</strong>, young minds are able to mimic and replay accurately all of character’s motions.</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8044-9711-cfc6485d0530" class="bulleted-list"><li style="list-style-type:circle">Nhưng vấn đề ở đây là nó đang làm hỏng đi cohesion của câu c <strong>đang delay cái ý chính quá lâu [young minds are able to mimic and replay]</strong><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-801d-b1c8-dc9472e0d85e" class="bulleted-list"><li style="list-style-type:square">Do đó thì thông thường ý phụ nên để ở cuối câu. </li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-807f-94c8-d71aa88155a8" class="bulleted-list"><li style="list-style-type:square">Hoặc c có thể để nó giữa câu cũng được với điều kiện là THEME của câu đó phải đc đặt lên đầu để nối với câu trước giúp tăng cohesion. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-808f-9dc5-e210f23e8ef2" class="bulleted-list"><li style="list-style-type:disc">Ví dụ: Therefore, <mark class="highlight-blue_background"><strong>young minds</strong></mark>, <strong>when watching these movies and tv shows, which often contain….</strong>, tend to mimic and reproduce the sensitive behavior. <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-80c5-9d78-cfac7fb9b757" class="bulleted-list"><li style="list-style-type:circle">Nhưng vẫn đề của câu này là [CAUSE] và [EFFECT] đang chung một câu dẫn tới là không có trọng tâm rõ ràng:D</li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></div></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80f3-8385-e611002d3931" class="">Khi này, t có thể viết lại như sau:</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80af-a56c-d38bb62f9474" class="">→ Young minds are able to mimic and replay accurately all of character’s motions <strong>coming from movie scenes and tv shows, which, unfortunately, often contain toxic scenes such as pornography and violence. </strong><div class="indented"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80bf-8714-ce79f74865f5" class="">Trong câu này, t đố c biết “unfortunately” ở đây t thêm vào làm gì?</p></div></div></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8060-a039-f11ab4993a32" class="">Như vậy, ta đã xong phần sắp xếp chính phụ cho câu. Vấn đề còn lại bây giờ là Old-new để duy trì cohesion. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8008-8041-e785f54d9e25" class="">Khi nhìn vào câu trước:</p></div><div style="display:contents" dir="auto"><blockquote id="20dcb5fe-02bd-80fc-a528-caa48ff9c306" class="">Adolescence is the developmental stage when the cognitive ability has not yet reached the full maturity and <strong>(therefore - đố biết thêm vào làm gì?) </strong>has the ability to learn new things by imitation. (note nhỏ là câu này đang sai ngữ pháp r nhớ) =))))</blockquote></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-804c-b1b1-d8a254549dd7" class="bulleted-list"><li style="list-style-type:disc">Ta sẽ thấy đc theme và rheme của câu này như sau: <div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-8053-9039-db7bbf678b31" class="bulleted-list"><li style="list-style-type:circle">Theme: adolesence</li></ul></div><div style="display:contents" dir="auto"><ul id="20dcb5fe-02bd-804d-9b21-d0b818dec1f0" class="bulleted-list"><li style="list-style-type:circle">Rheme: is the <strong>developmental stage</strong> when….<strong>maturity</strong>….<strong>ability</strong>.</li></ul></div></li></ul></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e9-828e-ecaff268e65a" class="">Như vậy trong câu sau, ta cần ưu tiên sử dụng rheme của câu này làm theme câu sau. </p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8052-8ef2-e708e323c2b6" class="">Khi này t sẽ viết đc như sau:</p></div><div style="display:contents" dir="auto"><blockquote id="20dcb5fe-02bd-8032-8f34-c191552a4814" class="">→ Adolescence is the developmental stage when the cognitive ability has not yet reached the full maturity and <strong>therefore </strong>has <strong>the ability to learn new things by imitation</strong>. <strong>Such ability (tại sao không phải developmental stage hay maturity mà lại là ability?)</strong> allows young minds to mimic and reproduce actions from movies and TV shows, which, <strong>unfortunately</strong>, often contain toxic content such as pornography and violence. </blockquote></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8086-8f55-ea917e45dbca" class="">Tới đây, t muốn c quay lại cái cmt ban đầu của t </p></div><div style="display:contents" dir="ltr"><figure id="20dcb5fe-02bd-8096-ba92-ca26ed6ceba3" class="image"><a href="B%E1%BA%A3o/image%202.png"><img style="width:289.9921875px" src="B%E1%BA%A3o/image%202.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8013-88f5-ee6967fdd62a" class="">Nếu t bỏ qua yếu tố negativity thì tự nhiên, ta sẽ bỏ luôn được cái ý [often contain toxic content..] và tự nhiên bài sẽ đơn giản hơn đúng chứ?</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e9-8644-ef22a70fdbca" class="">Ta chẳng cần lo lắng tới ý chính ý phụ ở câu này nữa mà chỉ cần dùng Old-new là đã đủ rồi. </p></div><div style="display:contents" dir="auto"><blockquote id="20dcb5fe-02bd-80e9-b5f0-e7333c57fbdb" class="">Adolescence is the developmental stage when the cognitive ability has not yet reached the full maturity and <strong>therefore </strong>has <strong>the ability to learn new things by imitation</strong>. <strong>Such ability (tại sao không phải developmental stage hay maturity mà lại là ability?)</strong> allows young minds to mimic and reproduce actions from movies and TV shows.</blockquote></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8069-a4b4-c3bb2a49c324" class="">
+</p></div></div></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80c2-97ae-d361ed9e7a12" class=""><strong>Tiếp theo là tới [EFFECT]</strong></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80d2-8c52-c0c65bca2218" class="">[EFFECT] - [A - Distort children’s perception] + [B - Negatively shape their behavior]<div class="indented"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-809a-8ae5-fb3d9f88259e" class="">A &gt; B do A là kết quả gốc. B là kết quả sau cùng. Tức là phải có A thì mới dẫn được tới B. </p></div></div></p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-808b-be7b-eaf5ed39a711" class="">Tương tự thì với phần [EFFECT] và [BODY 2] này t muốn c thử thực hành luôn xem được không nhé? (một note nhỏ là body 2 đang mắc 1 trong 2 lỗi t nhắc tới trong post trước đó của t)</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80e3-9553-e74fd8bb0d09" class="">Nên nhớ trong đầu rằng, c phải phân biệt được các nhóm ý liệu nó là [CAUSE] hay [EFFECT]. Sau đó trong mỗi nhóm c lại phân biệt tầm quan trọng của các ý và sau đó sử dụng MĐQH và đặt nó ở vị trí phù hợp. Cuối cùng là tập trung vào Old-New để tăng điểm cohesion</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8022-897d-f7c4ee264a2e" class="">Nguyên bên trên t đã tất cả những gì quan trọng nhất trong việc nâng điểm CC (có lẽ là khó nhất)</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8001-ab83-e3d2286f48e1" class="">Còn đối với TR thì bài này t thấy c đã phát triển khá ổn r đó nên t k biết liệu c có kém trong TR không. Nếu đc thì trong tương lai viết t bài mới t xem nhé. </p></div></div></figure></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80f7-aaf5-de8a287d9114" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-8099-aebf-c32d102dcd42" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-807f-b7c8-f7d3f52a772a" class="">
+</p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="20dcb5fe-02bd-803e-93df-c51bd28bd1d3"><div style="width:100%"><div style="display:contents" dir="auto"><p id="20dcb5fe-02bd-80ac-b441-e763997dca19" class="">On the other hand, <mark class="highlight-blue_background"><strong>not only does the content of what children view but also the duration of screen </strong></mark>time (that) might probably (might vs prob same nghĩa) has a considerable impact on their behavior. When <mark class="highlight-blue_background"><strong>spending an excessive amount of time in watching television</strong></mark>, <mark class="highlight-blue_background"><strong>children are easily engrossed in the virtual worlds portrayed in TV shows and movies</strong></mark> because it generates a sense of relaxation and escapism to the children and continuously seek out the new contents. (cau toi nghia vi ‘and’ dang su dung de noi vi ngu cho chu ngu “TV shows and movies”) This immersion can result in several detrimental effects to <mark class="highlight-blue_background"><strong>youngsters’ physiological healths such as disturbed sleep, emotional impulses</strong></mark>, aggressive behavior,..<mark class="highlight-blue_background"><strong>.and the primary reason being that most children suffer from a severe lack of outdoor activity and exercise, which are crucial for the development of a child’s well-being</strong></mark></p></div></div></figure></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-802d-b86c-e412ec07ad1c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-805e-838b-ee615181aaab" class=""><strong>Topic:</strong> Mental health concerns are a growing issue for many people around the world.  What are some reasons for poor mental health, and what can governments do to support citizens’ mental health?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-805f-a261-ea9a001e7dac" class="">Logic Flow</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80f7-8fa0-d21367ebb96a" class="">Para 1: Poor mental health</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8069-a323-f27605720cb6" class="">Reason 1:  Lack of outdoor activities -&gt; People has propensity in spending excessive time on digital devices and social network</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80eb-9265-c7800190618e" class="">Reason 2: Burgeoning work and school pressure -&gt; Competitive nature of society (Giải thích rõ về đối tượng học sinh thì phải chịu áp lực từ high grade expectation from parents, peer pressure,... Labors thì chịu áp lực từ gánh nặng tài chính, cạnh tranh trong nội bộ công ty, áp lực thăng tiến)</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80ef-91da-eb685a2d15da" class="">Solution 1: Có các chương trình</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8001-922a-dd10fc320e77" class=""><strong>Answer:</strong></p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-8088-881d-e0225a6e0835" class="">In this modern era, there has been a dramatic increase in the number of people afflicted with mental health issues worldwide. This essay will attempt to elaborate  primary causes of  the degrading mental health before proposing some solutions that the governments can adopt.</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80b4-b29a-cd1c1e87d5da" class="">One of the contributing factors to the deteriorating mental well-being is the lack of outdoor activities. <strong>Such outdoor exercises can not only enable people to enhance the physical state but also recharge their stamina and relieve stress, which are crucial for sustaining a robust psychological health</strong>. However, people today have a propensity for spending excessive time in digital devices and social networks. This engrossment in digital content and virtual world can generate a sense of relaxation and escapism, <strong>which</strong><strong> demotivate individuals from exercising regularly</strong>. Therefore, in the long term, this pattern  of behavior probably undermines both physical and psychological well-being. </p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80c2-a44c-d1b80335f52d" class="">Besides, low mental condition can stem from the burgeoning work and school pressure. Individuals today are living in an increasingly competitive society, where they are expected to fulfill numerous demands and shoulder various responsibilities, regardless of their age or occupation. For instance, students often suffer from a variety of academic stress coming from high grade expectation from parents, peer pressure while financial burden, intensely competitive workplace and promotion pressure are the primary reasons for the worse mental condition in adults. Consequently, these combined factors has contributed to a widespread decline in the mental health of the entire society.</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-803b-8be8-f99f162d76a0" class="">
+</p></div><div style="display:contents" dir="auto"><p id="213cb5fe-02bd-80a9-8f0d-d2beea84cf84" class=""><strong>Topic:</strong> Mental health concerns are a growing issue for many people around the world.  What are some reasons for <strong>poor mental health</strong>, and what can governments do to support citizens’ mental health?</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-80a2-95a7-f2dafa4f53fd" class="">There is a variety of feasible measures that the governments should conduct to tackle these issues. Firstly, the authorities can launch several nationwide campaigns that raise the citizen awareness about doing exercise frequently by highlighting the physical and mental benefits of outdoor activities. Besides, outdoor group activities such as weekend fun runs, community yoga sessions, or walking clubs should be facilitated in public sites such as green parks or squares. These initiatives not only help residents develop a better understanding of the advantages of physical activity, but also motivate them to exercise regularly by creating a sense of community and shared commitment.</p></div><div style="display:contents" dir="auto"><p id="219cb5fe-02bd-80f6-a708-cabdc6bf6a71" class=""> Secondly, to deal with the issues stem from academic and work-related pressure, governments can carry out several tailored measures for different target groups. Regarding to students, governments can collaborate with schools to establish the on-campus counselling centers that provide professional mental health cares and stress management approaches. For the labor force, authorities can introduce some policies such as flexible working hours or subsidize the organizations that conduct several regulations to protect employee’s psychological well-being. By taking these steps, governments can create a more balanced environment that promotes both productivity and psychological resilience across all age groups.</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-806d-9adb-f07be7f72857" class="">In conclusion, there are different determinants that lead to the increasing mental health issue worldwide and my belief is that government should implement several practical solutions to alleviate the severe consequences associated with this problem.</p></div><div style="display:contents" dir="auto"><p id="20ecb5fe-02bd-800c-bf23-c208f720042f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8033-bc75-eef28a72ecc0" class=""><strong>Topic: </strong>Some people think that <strong>the best way</strong> to become successful in life is to <strong>get a university education</strong>, whereas others say <strong>this is no longer true</strong>. Discuss both these views and give your own opinion.</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8018-9d5e-dee4e0b50aa1" class=""><strong>Outline</strong></p></div><div style="display:contents" dir="auto"><ol type="1" id="230cb5fe-02bd-8032-854a-d1fe02386e54" class="numbered-list" start="1"><li>View 1: To get a university education </li></ol></div><div style="display:contents" dir="auto"><ul id="230cb5fe-02bd-80eb-a20e-d31fa8f1aa24" class="bulleted-list"><li style="list-style-type:disc">&gt; Be equipped with foundational knowledge and essential skills such as leadership, collaboration and communication through several pratices conducted in university</li></ul></div><div style="display:contents" dir="auto"><ul id="230cb5fe-02bd-80f4-b654-f93915420d09" class="bulleted-list"><li style="list-style-type:disc">&gt; Opportunity to get contact with successful entrepreneurs or expertise in field -&gt; Learn from their experience</li></ul></div><div style="display:contents" dir="auto"><ol type="1" id="230cb5fe-02bd-80c3-83e2-dd99ee65e123" class="numbered-list" start="1"><li>View 2: Success does not require university related background</li></ol></div><div style="display:contents" dir="auto"><ul id="230cb5fe-02bd-800c-85cd-ea6fd3b0ee02" class="bulleted-list"><li style="list-style-type:disc">&gt; Theo đuổi con đường kinh doanh từ sớm để tích lũy cho bản thân kinh nghiệm và nuôi dưỡng tư duy thực tế. Thừa nhận rằng các kiến thức đại học là nền tảng cho con đường sau này nhưng không phải lý thuyết nào cũng practical và able to be adopted in reality.</li></ul></div><div style="display:contents" dir="auto"><ul id="230cb5fe-02bd-8053-835d-e4f80379d98b" class="bulleted-list"><li style="list-style-type:disc">&gt; Ví dụ về những người thế hệ trước, dù không có điều kiện để theo học chương trình đại học nhưng bằng sự perserverance and internally business talent, họ vẫn có thể thành công ở chính lĩnh vực của họ</li></ul></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8044-a221-e6d6c254c744" class=""><strong>Answer</strong></p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8070-b716-d78c9a38e384" class="">Some people believe that a prosperous life can only be obtained by individuals who have completed the tertiary education while others indicate that there are other factors contributing to success. From my point of view, I believe that obtaining a university degree is not a necessary condition for becoming successful.</p></div><div style="display:contents" dir="auto"><ul id="230cb5fe-02bd-8009-883c-f57d2601cd55" class="bulleted-list"><li style="list-style-type:disc">Dù c đang bị lạc đề nhưng t sẽ chấm luôn theo cái đề này của c nhé (giả sử c đang nói về lợi ích của university education]</li></ul></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8037-be6b-efe15d8bbfaf" class="">Admittedly, some people may argue that a university pathway can offer various opportunities and knowledge which are crucial for attaining success. <strong>This argument </strong>is predicated on the assumption that <strong>foundational concepts and skills such as leadership, collaboration and communication,</strong> can be <strong>cultivated through academic coursework</strong><strong>.</strong> <strong>According to this theory</strong>, people holistically equipped with professional knowledge and practical skills can confidently overcome obstacles that can probably hinder them along the path to success. </p></div><div style="display:contents" dir="ltr"><figure class="block-color-yellow_background callout" style="white-space:pre-wrap;display:flex" id="230cb5fe-02bd-809a-a56a-ee8d3e14e1ba"><div style="width:100%"><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80c3-ae62-f385a153f603" class="">[Foundational concepts] ← [Academic coursework]. [Professional knowledge and practical skills (so-called foundational concepts)] → [Overcome obstacles]</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8082-ace7-d21cf09c2531" class="">C đã thấy chỗ non-linear chưa:D<br/>Đấy, lỗi gốc là do c đang dùng câu bị động. Do đó thứ tự câu bị đảo lộn dẫn tới non-linearity.<br/>Nếu sửa lại thành câu chủ động thì đọc sẽ mượt hơn kiểu<br/>[Academic coursework] → [Foundational concepts] → [Overcome obstacles]</p></div></div></figure></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80c8-a283-d0be9ef98723" class="">Furthermore, not only can theories and abilities be fostered, but also networking and relationships are also significantly broadened in tertiary environment. This provides opportunity for students to connect and interact with different successful entrepreneurs or pioneers who have successfully thrived and highly experienced in their field. Such sharing and experiences are profoundly precious for individuals who still struggle to navigate their way to success.</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-804d-8881-d264a02737ef" class="">However, prosperity and success can also be accomplished by other determinants such as consistency and adaptability. There are a variety of cases when successful individuals decide not to pursue university education in order to embark on their business at early age. This decision can help them accumulate their practical experience and nurture their independent mindset earlier than those who remain in higher education. <strong>Granted, concepts and skills absorbed in higher education are rudimentary and fundamental for future career, but not all of them are truly essential and easily applicable in real circumstances compared with mistakes and insights gained from practical trial-and-error experiences</strong>. Consider our parents and grandparents who lived under <strong>financial harship</strong> and had to give up their tertiary dream <strong>because of unaffordability</strong><strong>.</strong> However, they are still thriving and affluent in the face of adversity by their perseverance and the ability to anticipate and exploit most of business opportunities that came to them.</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-80da-bc9f-dab6c00ebe66" class="">
+</p></div><div style="display:contents" dir="auto"><p id="230cb5fe-02bd-8019-97b8-c408ffc29da4" class="">In conclusion, while tertiary education undoubtedly plays a vital role in equipping individuals with academic knowledge and essential skills, it is not the sole determinant of success. A prosperous life can also be attained through other crucial factors such as perseverance, adaptability, and real-world experience.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8073-8c06-ff83d833e5bd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-806c-b81a-c6fd55551d29" class="">
+</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8085-b8f5-e9ee25a6a99c" class=""><strong>Topic</strong>: Many nations focus on raising living standards by prioritizing economic development, but this may lead to the erosion of <strong>significant social values.</strong> Do you think the advantages of economic development outweigh the disadvantages?</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8029-8751-cca62e68c088" class="">Main idea: These benefits are outstripped by the associated problems</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80e9-8885-ef7e95e75d5c" class="">Para 1: Acknowledge that the priority of economic growth can reap benefits for citizen’s living standards</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-807b-97ff-d1eb99339130" class="">Ý 1: Hunger (Starvation) and Poverty can be tackled substantially</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-803e-8694-efff7340c295" class="">Why? -&gt; Kinh tế phát triển thì các năng lực sản xuất sẽ được gia tăng -&gt; Gia tăng lượng food supplier cho overall population</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-803a-a156-f9856d34d4fc" class="">Paragraph 2: Tuy nhiên thì the sacrifice of social values to economic enhancement leads to far more negative repurcussions.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80c6-88cb-ff558985f144" class="">Ý 1: Nếu phát triển kinh tế mà không chú trọng tới các giá trị xã hội như equitable rights, freedom và respect trong môi trường doanh nghiệp thì có thể dẫn tới tình trạng constant laid-off and strikes of employees.</p></div><div style="display:contents" dir="auto"><ul id="23dcb5fe-02bd-8082-95cb-f4f95c6882ed" class="bulleted-list"><li style="list-style-type:disc">&gt; Như vậy thì năng suất lao động giảm và thực tế thì hiệu quả sản xuất cũng không thực sự được nâng cao</li></ul></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-805c-9ba9-fe3c96aa00be" class="">Ý 2:  Việc tập trung vào phát triển kinh tế còn dẫn đến những tác động tiêu cực tới môi trường.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-800e-ab03-eee6df4363eb" class="">Vì sao-&gt; natural inhabitants will be deprived of building factories and workshops</p></div><div style="display:contents" dir="auto"><ul id="23dcb5fe-02bd-80c1-a1c4-cd4c4f4d0e13" class="bulleted-list"><li style="list-style-type:disc">&gt; The carbon emission cũng gia tăng uncontrollably</li></ul></div><div style="display:contents" dir="auto"><ul id="23dcb5fe-02bd-809a-a937-dd6427c19958" class="bulleted-list"><li style="list-style-type:disc">&gt; Khiến cho chất lượng không khí, một yếu tố quan trọng của quality of life bị hạ thấp nghiêm trọng (diminish significantly) (Phản biện lại với vấn đề rằng phát triển kinh tế là gia tăng chất lượng cuộc sống)</li></ul></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80ce-810c-df160c69c235" class="">Bài làm:</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80e8-8fcc-c9ccb5c8015e" class="">In this contemporary society, many/various nations have prioritized economic growth over  social values/compromise/ put sth ahead sth/give priority to sth, as it which is believed to be the key contributor to higher quality of life. While I acknowledge/ it is Vp2 that economic stimulation can offer a variety of benefits, I opine that they are outsripped by associated problems.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80fb-bd53-d37bcf007e02" class="">Admittedly, the advantages of economic enhancement are indeed in plain sight.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-80c9-ae41-e558ebe38a8b" class="">Chief of these is that this development can substantially tackle hunger and poverty problems in a nation. As the economy thrives, this can facilitate the development of technology and training quality is facilitated alongside, both of which hold a crucial significance in enhancing production capacity. This, in turn, enables a greater food supply, thereby mitigating the problems of food shortages and starvation. In addition, a prosperous nation can also offer a wide range of job opportunities for citizens and solveing the accelerating unemployment rate. Studies have demonstrated that there is a positive correlation between economic development and level of happiness since people in well-developed countries will have stable jobs and less likely to suffer financial distress and anxiety.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8052-857b-d11fa4748e15" class="">However, the problems involved in focusing only on economic development and neglecting several social values are far more significant. Firstly, this development does not actually increase the production capacity. This is because when nations show too much consideration for thriving economy and undermining a wide range of noble social values such as equity, respect and freedom, this can lead to an increase of employee turnover rate and even constant strikes. Therefore, total work productivity will significantly decline and have negative effects on production capacity. Secondly, the economy is widely perceived to be prospering at the expense of the environment. Natural habitats will be destroyed to build factories and workshops with a view to stimulating production and economy. This leads to the excessive carbon emission into the atmosphere, which causes dire consequences to the quality of air, thêm vào nhé. Air quality and environment/ These are some of the key factors of the living standards, hence focusing solely on economic development does not necessarily enhance the quality of life.</p></div><div style="display:contents" dir="auto"><p id="23dcb5fe-02bd-8066-b034-e8b4129ee6ff" class="">In conclusion, although economic growth undoubtedly brings certain advantages such as poverty reduction and increased employment, the neglect of essential social values and environmental quality can result in serious long-term consequences</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"><hr/><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Inline comments</summary><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">lack of outdoor activities</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 11:10 AM</time></span></span></div><div style="padding:0.2em">t thấy cái topic sentence này của c chưa đủ ấy<br/>c thử nhìn lại phần “lack of outdoor” này xem, có 2 mảng chính trong cái ý này của c đó là” [digital devices] &amp; [lack of outdoor activities]<br/>dây là 2 ý chính trong phần này trong khi câu topic của c mới nhắc tới [lack of outdoor activities]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>Such outdoor exercises can not only enable people to enhance the physical state but also recharge their stamina and relieve stress, which are crucial for sustaining a robust psychological health</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 11:20 AM</time></span></span></div><div style="padding:0.2em">có một vấn đề duy nhất ở phần này đó là cái ý này đặt chưa đúng chỗ<br/>t biết c đưa ra <strong>[lợi ích của outdoor activities]</strong> ra để nhấn mạnh cho quan điểm <strong>[lack of outdoor activities → mental health]<br/></strong>nhưng vấn đề là 2 ý này đang cách xa nhau quá. <br/>Ý về lợi ích thì ở ngay đầu<br/>Trong khi cái ý nhấn mạnh [lack of outdoor stuff → mental health] lại nằm ở cuối. <br/>Khi này, người đọc sẽ đọc kiểu: “<strong>Outdoor rất tốt</strong>. Nhưng ngta thời nay k thích outdoor mà chọn indoor để xem đthoai. Mà đthoai lại càng khiến họ k thích đi outdoor. <strong>Điều này ảnh hưởng tới mental health</strong>”<br/>Tức là các lợi ích của outdoor nó ở quá xa, vô hình chung làm ý này mất đi tầm quan trọng của nó trong việc tạo chiều sâu cho bài của c.<br/>Nếu t sửa thì t sẽ sửa kiểu: “Ngta thích digital stuff hơn outdoor. Mà vì những cái digital này cho họ relaxation,… họ lại càng nghiện hơn. Overtime, thời gian họ dành cho thể dục giảm đi, <strong>cái mà đàng buồn thay lại có rất nhiều lợi ích</strong>. [Câu kết về mental health]”<br/><br/>→ Trong cái t sửa lại thì ý về lợi ích được đặt ngay trước ý về mental health. Điều này giúp t nhấn mạnh đc tầm quan trọng của outdoor. <br/><br/>Nếu c để ý thì khi mình kết hợp với câu topic sentence được sửa lại và cách t sắp xếp lại các ý thì khi viết lại bài t thấy mượt hơn á. <br/><br/><br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"> escapism, <strong>which</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 11:21 AM</time></span></span></div><div style="padding:0.2em">TẠI SAO RELAXATION VÀ ESCAPISM LẠI DẪN TỚI DEMOTIVATION TO EXERCISE?<br/><br/>any logical gap?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">has </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 11:30 AM</time></span></span></div><div style="padding:0.2em">have:)</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Besides</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 13, 2025, 7:46 AM</time></span></span></div><div style="padding:0.2em">change this conjunction</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">these issues</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 15, 2025, 11:34 AM</time></span></span></div><div style="padding:0.2em">t tưởng có mỗi 1 issue là poor mental health thôi?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">that </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:24 AM</time></span></span></div><div style="padding:0.2em">t nghĩ nên đổi thành [to] để biến ý này thành ý chính (vì doing exercise là solution mà đúng chứ?)<br/>còn nếu giữ là [that] thì nó chuyển thành ý phụ mất rồi:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">not only help residents develop a better understanding of the advantages of physical activity, but also motivate them to exercise regularly by creating a sense of community and shared commitment</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:21 AM</time></span></span></div><div style="padding:0.2em">vấn đề cần bàn luận ở đây là làm thế nào để solve POOR MENTAL HEALTH…..</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">the physical</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:23 AM</time></span></span></div><div style="padding:0.2em">có lẽ là nên bỏ physical đi nhỉ=))))) lí do chắc c cũng biết tại sao mà đúng chứ</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">by highlighting the physical and mental benefits of outdoor</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:28 AM</time></span></span></div><div style="padding:0.2em">nếu c để ý post trc của t về linearity thì c có thể sửa lại câu này một chút<br/>trình tự nó sẽ kiểu:<br/>launch campaigns → highlight benefits → raise awareness - đây là cái linearity mà ta nên hướng tới<br/>còn của c nó đang là:<br/>launch campaigns → raise awareness ← highlight benefits<br/>cái logic của c đang là cả [launch campaigns] và [highlight benefits] → [raise awareness]<br/>nhưng vấn đề là 2 ý này đặt ở hai đầu khác nhau dẫn tới câu nó bị non-linear.<br/>vì thế c thử sửa lại theo logic t suggest xem nhé</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Besides, outdoor group activities such as weekend fun runs, community yoga sessions, or walking clubs should be facilitated in public sites such as green parks or squares. These initiatives not only help residents develop a better understanding of the advantages of physical activity, but also motivate them to exercise regularly by creating a sense of community and shared commitment.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:43 AM</time></span></span></div><div style="padding:0.2em">t thường k khuyến khích dùng [besides] [furthermore] hay [moreover] trong một đoạn vì các cụm nối này cho thấy mối liên hệ giữa các ý nó k có mà một rule trong academic writing là trong một đoạn, các ý cần có mối quan hệ nào đó với nhau<br/>nếu c để ý thì cái [outdoor group activities] này nó giúp mọi người đi tập thể dục - tức là nó giúp cho cái solution ban đầu là [raise awareness] tốt lên - kiểu mqh tương trợ lẫn nhau ấy.<br/>Khi c viết lại c có thể sử dụng một cụm nối kiểu [Để khiến các campaigns này hiệu quả hơn], government có thể…..<br/><br/>Khi c sửa cách c nối ý này + sửa lại cái mini-conclusion của c thì c sẽ nhận ra được một lỗi về linearity và chính phụ của c đó:D<br/><br/>t sẽ không khi thẳng cách c nên sửa, t sẽ để c tự ngẫm và nghĩ phương án sửa lại sau đó c có thể hỏi t để t guide cho nhé=)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">stem </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 21, 2025, 10:43 AM</time></span></span></div><div style="padding:0.2em">stemminggggg</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">&gt; Be equipped with foundational knowledge and essential skills such as leadership, collaboration and communication through several pratices conducted in university<br/>&gt; Opportunity to get contact with successful entrepreneurs or expertise in field -&gt; Learn from their experience</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:50 PM</time></span></span></div><div style="padding:0.2em">t nghĩ c đang hiểu nhầm đề bài ở đây<br/>đề này yêu cầu c chứng minh rằng [university education] is the BEST WAY to succeed<br/>Tức là nó phải tốt hơn tất cả mọi thứ khác. <br/>Nhưng cái outline này của c đang thiên về cái liệt kê các benefits của [uni edu] hơn:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">&gt; Be equipped with foundational knowledge and essential skills such as leadership, collaboration and communication through several pratices conducted in university<br/>&gt; Opportunity to get contact with successful entrepreneurs or expertise in field -&gt; Learn from their experience</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:50 PM</time></span></span></div><div style="padding:0.2em">t nghĩ c đang hiểu nhầm đề bài ở đây<br/>đề này yêu cầu c chứng minh rằng [university education] is the BEST WAY to succeed<br/>Tức là nó phải tốt hơn tất cả mọi thứ khác. <br/>Nhưng cái outline này của c đang thiên về cái liệt kê các benefits của [uni edu] hơn:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">there are other factors contributing to success</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:51 PM</time></span></span></div><div style="padding:0.2em">liệu câu này có thực sự mang nghĩa là [is no longer true] không?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">I believe that obtaining a university degree is not a necessary condition for becoming successful.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:51 PM</time></span></span></div><div style="padding:0.2em">t thấy c dùng [i side with the…view] thì nó ngắn gọn hơn đó=)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">can be</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:36 PM</time></span></span></div><div style="padding:0.2em">should be</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><mark class="highlight-blue_background"><strong>foundational concepts and skills such as leadership, collaboration and communication,</strong></mark> can be <mark class="highlight-blue_background"><strong>cultivated through academic coursework</strong></mark></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:55 PM</time></span></span></div><div style="padding:0.2em">câu này c cần đổi câu thành chủ động<br/>khi đó câu sẽ có trình tự là [academic coursework] là chủ ngữ và [foundational concepts] là vị ngữ<br/><br/>thông thường, chủ ngữ là vị trí đc nhấn mạnh hơn vị ngữ<br/>và trong đề này, university education (so called academic coursework) là thứ đc nhấn mạnh trong đề bài chứ k phải foundational concepts<br/><br/>hơn thế nữa, ưu tiên dùng câu chủ động c nhé vì nó linear hơn á, con người thích đọc những đoạn text nó linear và khi nào mà c viết non-linear thì cần phải có chủ đích, ví dụ như nhấn mạnh chẳng hạn. <br/>nên dùng câu bị động một cách strategically nhé=)))))</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">can help</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 9:01 PM</time></span></span></div><div style="padding:0.2em">allow them sounds better i guess:)</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>financial harship</strong> and had to give up their tertiary dream <strong>because of unaffordability</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 9:03 PM</time></span></span></div><div style="padding:0.2em">c có thấy c đang repeat ý [financial hardship] khum=))))))<br/>financial hardship → give up ← unaffordability</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">they are still thriving and affluent in the face of adversity by their perseverance and the ability to anticipate and exploit most of business opportunities that came to them.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 9:04 PM</time></span></span></div><div style="padding:0.2em">t sẽ nhường câu này để c củng cố kiến thức về linearity nhé<br/>spoil là câu này đang mắc lỗi về linearity:)</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>Granted, concepts and skills absorbed in higher education are rudimentary and fundamental for future career, but not all of them are truly essential and easily applicable in real circumstances compared with mistakes and insights gained from practical trial-and-error experiences</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 9:10 PM</time></span></span></div><div style="padding:0.2em">câu này t cảm thấy c đang bị lệch khỏi trọng tâm của đoạn này ấy<br/>nên nhớ là đoạn này của [no longer true] chứ không còn là [university education]<br/>trong khi đó câu này của c đang nhấn mạnh về cái higher education<br/><br/>vì đó c nên sửa lại câu này nhé:D<br/>my suggestion:<br/>sử dụng thematic progression để nối câu trước với câu sau với [practical experience] để duy trì trọng tâm, sau đó so sánh với higher education để giữ lại cái ý này của c (rất hay)<br/>qua đó trọng tâm đc giữ nguyên, vẫn so sánh đc → kinda good.</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">this can facilitate the development of technology and training quality is facilitated alongside</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:35 PM</time></span></span></div><div style="padding:0.2em">c đã đặt ra cái ngữ cảnh [as the economy thrives] rồi<br/>thì đâu cần [this can] nữa chứ <br/>còn nữa là [training quality is facilitated alongside] nữa chứ =))))))))))<br/>nói rõ hơn là hai ý này nó đang mang nghĩa nguyên nhân-kết quả và cấu trúc này cũng có hàm ý cause-effect rồi nên khi c dùng [this can..] thì nó đang bị thừa:D<br/>i mean c đang tốn nhiều chữ cho một cái ý có thể đc diễn tả trong ít chữ ấy<br/>as the economy thrives, more and more money will be spent on both the development of technology and the training quality [cần clarify là training cái gì, nhân sự hay ???]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">In addition</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:02 PM</time></span></span></div><div style="padding:0.2em">id rather [in addition to this]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">solveing the accelerating unemployment rate.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:12 PM</time></span></span></div><div style="padding:0.2em">t nghĩ cái này là [effect] của [offer a wide range of job opportunities]</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Studies have demonstrated that there is a positive correlation between economic development and level of happiness since people in well-developed countries will have stable jobs and less likely to suffer financial distress and anxiety.</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:19 PM</time></span></span></div><div style="padding:0.2em">t luôn bảo c là phải cân nhắc yếu tố [thematic progression] khi viết<br/>câu này với t chưa đáp ứng đc điều này là 1<br/>thứ 2 là c đang phức tạp hoá vấn đề<br/>[studies have demonstrated that] but which studies? là 2<br/>và nếu sửa lại thì tự nhiên nó đơn giản hơn c nghĩ nhiều<br/>[…unemployment rate] → [stable job] → [less likely to suffer from financial distress and anxiety] → [happiness]<br/>ý t là nếu c cân nhắc yếu tố [thematic progression] ở chỗ này thì nó đơn giản hơn rất nhiều ấy<br/>cách c đang viết là c dùng một cái theme hoàn toàn mới [studies]<br/>điều này vừa khiến cái transition từ câu trước nó bị abrupt lại khiến lập luận của c không chặt chẽ<br/>trong khi đó, c hoàn toàn có thể dùng [solving accelerating unemployment rate] làm theme của câu sau <br/>khi này, cái transition nó không bị abrupt lại khiến lập luận của c chặt chẽ hơn:D<br/></div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">Natural habitats will be destroyed to build factories and workshops with a view to stimulating production and economy. This leads to the excessive carbon emission into the atmosphere</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:41 PM</time></span></span></div><div style="padding:0.2em">một lỗi nữa về linearity =))))<br/>nếu c để ý thì<br/>[natural habitats will be destroyed] ← [to build factories + workshops] → [excessive carbon emission] → [air quality]<br/>see the problem huh?</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">does not actually</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:21 PM</time></span></span></div><div style="padding:0.2em">t nghĩ c nên dùng hedging language ở đây<br/>vì đâu phải cái gì cũng là tuyệt đối đâu, nhỉ?<br/>tương tự với những phần bên dưới nhé, vì ban đầu c đã khẳng định chắc nịch như này rồi nên đằng sau sẽ có rất nhiều chỗ c khẳng định 100% kiểu này</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">this can lead to an increase of employee turnover rate and even constant strikes. </mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:37 PM</time></span></span></div><div style="padding:0.2em">chỗ này cũng vậy<br/>c đã đặt ra ngữ cảnh là [show to much consideration…undermining…] rồi<br/>thì cái [this can lead to] này nó quá là thừa thãi =)))))<br/>vì nằm dưới cái cấu trúc này nó đã mang hàm ý là nguyên nhân kết quả rồi:D<br/><br/>tiếp nữa là t nghĩ c nên thêm 1 cái ý vào giữa kiểu [employees ko hài lòng → bỏ việc] thay vì trực tiếp như này á</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">a wide range of</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 27, 2025, 9:24 PM</time></span></span></div><div style="padding:0.2em">=)))) sao c toàn thêm mấy cụm nó k cần thiết ấy<br/>kiểu nó bị thừa thãi, bỏ [a wide range] đi cũng chả ảnh hưởng gì:D</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">However, movie scenes and TV shows today normally contain a variety of toxic scenes such as pornography, violent images,... which can distort the children’s perception and therefore, negatively shape their behavior</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 9, 2025, 10:03 AM</time></span></span></div><div style="padding:0.2em">có một vấn đề khá lớn ở đây, không phải về lập luận mà về cách c interpret đề bài<br/>đề bài nói rằng “influences their behaviour” <br/>nhưng trong đoạn này t thấy c đang thiên về ý “<strong>negatively </strong>influences their bahviour”<br/>nếu c không tập trung vào cái negativity này thì bài này sẽ dễ viết hơn nhiều, nhưng tạm bỏ qua vấn đề này thì t sẽ nhận xét cách c đang viết luôn<br/>sau đó t sẽ cho c thấy nếu bỏ qua yếu tố negativity thì bài nó sẽ dễ viết hơn như thế nào</div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background"><strong>viewing the characters from TV shows or movies</strong></mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jun 9, 2025, 10:58 AM</time></span></span></div><div style="padding:0.2em">nếu c có thắc mắc thì cái này k được coi là Theme hay Rheme của câu, lí do là vì đây đc coi là một contextual frame kiểu như để cung cấp thông tin về ngữ cảnh cho câu ấy nên k đc coi là theme hay rheme</div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details><details open="" style="padding-top:1em"><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Resolved inline comments</summary><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">&gt; Theo đuổi con đường kinh doanh từ sớm để tích lũy cho bản thân kinh nghiệm và nuôi dưỡng tư duy thực tế. Thừa nhận rằng các kiến thức đại học là nền tảng cho con đường sau này nhưng không phải lý thuyết nào cũng practical và able to be adopted in reality.<br/>&gt; Ví dụ về những người thế hệ trước, dù không có điều kiện để theo học chương trình đại học nhưng bằng sự perserverance and internally business talent, họ vẫn có thể thành công ở chính lĩnh vực của họ</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:34 PM</time></span></span></div><div style="padding:0.2em">good. uve compared </div><div style="padding:0.3em"></div></li></ul></div><hr/></div><div class="indented"><div><p style="padding:0.2em"><b>Block text</b>: <mark class="highlight-yellow_background">&gt; Theo đuổi con đường kinh doanh từ sớm để tích lũy cho bản thân kinh nghiệm và nuôi dưỡng tư duy thực tế. Thừa nhận rằng các kiến thức đại học là nền tảng cho con đường sau này nhưng không phải lý thuyết nào cũng practical và able to be adopted in reality.<br/>&gt; Ví dụ về những người thế hệ trước, dù không có điều kiện để theo học chương trình đại học nhưng bằng sự perserverance and internally business talent, họ vẫn có thể thành công ở chính lĩnh vực của họ</mark></p><ul class="toggle"><li><div><span class="user" style="padding:0.2em"><img src="https://lh3.googleusercontent.com/a/ACg8ocLPWOPEwW9OTTnLGersFRsHKbAFFl04rtY1bJ3ppIOkhJt0r_s=s96-c" class="icon user-icon"/><span><b>Duc Anh Dao</b> <time style="font-size:0.8em">Jul 14, 2025, 8:34 PM</time></span></span></div><div style="padding:0.2em">good. uve compared </div><div style="padding:0.3em"></div></li></ul></div><hr/></div></details></span></body></html>

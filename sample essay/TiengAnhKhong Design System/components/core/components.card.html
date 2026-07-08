@@ -1,0 +1,111 @@
+<!-- @dsCard group="Components" viewport="700x560" name="Core Components" subtitle="Button · Badge · Tag · ScoreRing · Card · Input · Textarea" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <style>
+    body { background: var(--surface-base); padding: 24px; }
+    .section { margin-bottom: 24px; }
+    .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 8px; }
+    .label { font-family: var(--font-sans); font-size: var(--text-xs); color: var(--text-tertiary); letter-spacing: var(--tracking-caps); text-transform: uppercase; margin-bottom: 8px; }
+    .divider { border: none; border-top: 1px solid var(--surface-border); margin: 20px 0; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, Badge, Tag, ScoreRing, Card, Input, Textarea } = window.TiengAnhKhongDesignSystem_3b3b0d;
+
+function Demo() {
+  return (
+    <div>
+      <div class="section">
+        <div class="label">Button</div>
+        <div class="row">
+          <Button variant="primary" size="sm">Submit</Button>
+          <Button variant="primary" size="md">Submit essay</Button>
+          <Button variant="primary" size="lg">Get feedback</Button>
+        </div>
+        <div class="row">
+          <Button variant="secondary">Save draft</Button>
+          <Button variant="ghost">Cancel</Button>
+          <Button variant="destructive">Delete</Button>
+          <Button variant="primary" disabled>Disabled</Button>
+          <Button variant="primary" loading>Analysing…</Button>
+        </div>
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="section">
+        <div class="label">Badge</div>
+        <div class="row">
+          <Badge variant="score">Band 7</Badge>
+          <Badge variant="high">7.5</Badge>
+          <Badge variant="mid">5.5</Badge>
+          <Badge variant="low">3.0</Badge>
+          <Badge variant="default">Draft</Badge>
+          <Badge variant="outline">Submitted</Badge>
+        </div>
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="section">
+        <div class="label">Tag — IELTS Criteria</div>
+        <div class="row">
+          <Tag criterion="TA" />
+          <Tag criterion="CC" />
+          <Tag criterion="LR" />
+          <Tag criterion="GRA" />
+          <Tag>Opinion essay</Tag>
+          <Tag>Argument</Tag>
+          <Tag>Task 2</Tag>
+        </div>
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="section">
+        <div class="label">ScoreRing</div>
+        <div class="row" style={{alignItems:'flex-start', gap: '24px'}}>
+          <ScoreRing score={7.5} label="Overall" size={96} />
+          <ScoreRing score={7.0} label="Task Achievement" size={72} />
+          <ScoreRing score={5.5} label="Coherence" size={72} />
+          <ScoreRing score={6.0} label="Lexical" size={72} />
+          <ScoreRing score={4.0} label="Grammar" size={72} />
+        </div>
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="section">
+        <div class="label">Card variants</div>
+        <div class="row" style={{alignItems:'stretch'}}>
+          <Card style={{flex:1, minWidth:160}}>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-sm)', fontWeight:'var(--weight-medium)', marginBottom:4}}>Default card</div>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-xs)', color:'var(--text-tertiary)'}}>White bg, 1px border</div>
+          </Card>
+          <Card variant="flat" style={{flex:1, minWidth:160}}>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-sm)', fontWeight:'var(--weight-medium)', marginBottom:4}}>Flat card</div>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-xs)', color:'var(--text-tertiary)'}}>Sunken surface</div>
+          </Card>
+          <Card variant="outline" style={{flex:1, minWidth:160}}>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-sm)', fontWeight:'var(--weight-medium)', marginBottom:4}}>Outline card</div>
+            <div style={{fontFamily:'var(--font-sans)', fontSize:'var(--text-xs)', color:'var(--text-tertiary)'}}>Transparent bg</div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo />);
+</script>
+</body>
+</html>

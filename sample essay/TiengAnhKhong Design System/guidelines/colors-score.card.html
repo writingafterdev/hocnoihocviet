@@ -1,0 +1,36 @@
+<!-- @dsCard group="Colors" viewport="700x130" name="Score Colors" subtitle="Semantic band-score palette — high, mid, low, neutral" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { background: var(--surface-base); margin: 0; padding: 20px 24px; display: flex; gap: 12px; }
+    .chip { flex: 1; border-radius: var(--radius-md); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+    .label { font-family: var(--font-sans); font-size: var(--text-sm); font-weight: var(--weight-medium); }
+    .sub   { font-family: var(--font-mono); font-size: 10px; opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <div class="chip" style="background: var(--score-high-bg); color: var(--score-high); border: 1px solid color-mix(in oklch, var(--score-high) 20%, transparent)">
+    <div class="label">Band 7–9</div>
+    <div class="sub">--score-high · #3D7A5B</div>
+  </div>
+  <div class="chip" style="background: var(--score-mid-bg); color: var(--score-mid); border: 1px solid color-mix(in oklch, var(--score-mid) 20%, transparent)">
+    <div class="label">Band 5–6</div>
+    <div class="sub">--score-mid · #8B6325</div>
+  </div>
+  <div class="chip" style="background: var(--score-low-bg); color: var(--score-low); border: 1px solid color-mix(in oklch, var(--score-low) 20%, transparent)">
+    <div class="label">Band 1–4</div>
+    <div class="sub">--score-low · #8B3A35</div>
+  </div>
+  <div class="chip" style="background: var(--score-neutral-bg); color: var(--score-neutral); border: 1px solid var(--surface-border)">
+    <div class="label">Neutral</div>
+    <div class="sub">--score-neutral</div>
+  </div>
+  <div class="chip" style="background: var(--accent-bg); color: var(--accent); border: 1px solid color-mix(in oklch, var(--accent) 20%, transparent)">
+    <div class="label">Accent</div>
+    <div class="sub">--accent · #C17040</div>
+  </div>
+</body>
+</html>

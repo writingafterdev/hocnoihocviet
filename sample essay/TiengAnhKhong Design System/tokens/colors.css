@@ -1,0 +1,70 @@
+/* TiengAnhKhong — Color Tokens
+   Two-color brand palette (cream + ink) extended into a warm gray scale.
+   All colors use a slightly warm (yellow-shifted) neutral base to stay
+   coherent with the brand's #FAF9F5 cream and #141413 near-black.
+*/
+
+:root {
+  /* ── Raw Scale ──────────────────────────────────────────────────── */
+  --gray-0:   #FFFFFF;
+  --gray-50:  #FAF9F5;   /* brand cream — primary surface */
+  --gray-100: #F2F0E9;
+  --gray-150: #EAE8DF;
+  --gray-200: #DEDAD0;
+  --gray-300: #C8C4B5;
+  --gray-400: #A9A494;
+  --gray-500: #857F70;
+  --gray-600: #5E5950;
+  --gray-700: #3A3630;
+  --gray-800: #242019;
+  --gray-900: #141413;   /* brand ink — primary text */
+
+  /* ── Semantic: Surfaces ─────────────────────────────────────────── */
+  --surface-base:       var(--gray-50);    /* page background */
+  --surface-raised:     var(--gray-0);     /* cards, modals */
+  --surface-sunken:     var(--gray-100);   /* inputs, code blocks */
+  --surface-overlay:    var(--gray-150);   /* hover states */
+  --surface-border:     var(--gray-200);   /* dividers, borders */
+  --surface-strong:     var(--gray-300);   /* stronger borders */
+
+  /* ── Semantic: Text ─────────────────────────────────────────────── */
+  --text-primary:   var(--gray-900);  /* headings, body */
+  --text-secondary: var(--gray-600);  /* captions, labels */
+  --text-tertiary:  var(--gray-500);  /* placeholders, hints */
+  --text-disabled:  var(--gray-400);
+  --text-inverse:   var(--gray-50);   /* on dark backgrounds */
+
+  /* ── Semantic: Interactive ──────────────────────────────────────── */
+  --interactive-default:  var(--gray-900);
+  --interactive-hover:    var(--gray-700);
+  --interactive-active:   var(--gray-800);
+  --interactive-disabled: var(--gray-300);
+  --interactive-focus:    var(--gray-900);
+
+  /* ── Score / Semantic Colors (muted, warm-toned) ─────────────────── */
+  /* Used for IELTS band score feedback — never garish */
+  --score-high:       #3D7A5B;   /* band 7–9: muted sage green */
+  --score-high-bg:    #EEF4F0;
+  --score-mid:        #8B6325;   /* band 5–6: warm amber */
+  --score-mid-bg:     #F7F1E6;
+  --score-low:        #8B3A35;   /* band 1–4: muted clay */
+  --score-low-bg:     #F5EDED;
+  --score-neutral:    var(--gray-600);
+  --score-neutral-bg: var(--gray-100);
+
+  /* ── Accent ─────────────────────────────────────────────────────── */
+  /* Warm clay — used sparingly for CTAs and interactive highlights */
+  --accent:        #C17040;
+  --accent-hover:  #A85D30;
+  --accent-bg:     #F8EDE4;
+
+  /* ── Product Card Surfaces ──────────────────────────────────────── */
+  /* Three pastel surfaces for featured-project / marketing cards.
+     Always pair with --text-primary (ink) for copy. Muted, warm,
+     never saturated — they extend the two-color brand into soft tints. */
+  --card-sage:   #8F9F7F;   /* writing — eucalyptus green */
+  --card-blush:  #EAD5CD;   /* speaking — warm blush */
+  --card-sand:   #ECE4CD;   /* vocabulary — warm sand */
+  --card-sage-tint:  #E7EDE0;  /* section pill / soft sage highlight */
+  --card-rule:   color-mix(in oklch, var(--gray-900) 16%, transparent);
+}

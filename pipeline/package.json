@@ -1,0 +1,27 @@
+{
+  "name": "readernwriter-pipeline",
+  "version": "1.0.0",
+  "description": "Ingestion pipeline for Reader & Writer magazine blog",
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx ingest.ts",
+    "upload": "tsx upload.ts",
+    "setup": "tsx setup-appwrite.ts",
+    "migrate:highlights": "tsx add-highlights-attr.ts",
+    "seed": "tsx seed-fake-data.ts"
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^1.11.0",
+    "appwrite": "^16.0.0",
+    "dotenv": "^17.4.2",
+    "epub2": "^3.0.2",
+    "node-appwrite": "^25.2.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.100.0",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  }
+}

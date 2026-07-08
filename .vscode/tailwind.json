@@ -1,0 +1,13 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@theme",
+      "description": "Tailwind CSS theme configuration"
+    },
+    {
+      "name": "@tailwind",
+      "description": "Tailwind CSS base directive"
+    }
+  ]
+}

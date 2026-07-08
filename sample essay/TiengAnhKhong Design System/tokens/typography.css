@@ -1,0 +1,76 @@
+/* TiengAnhKhong — Typography Tokens
+   Two-font system: Lora (editorial serif, display & pull quotes)
+   + DM Sans (clean sans, all UI + body copy).
+   JetBrains Mono for band scores, inline code, and tabular data.
+
+   NOTE: Lora is the nearest Google Fonts substitute for a Tiempos-style
+   editorial serif. If Tiempos Text files are provided, replace the
+   @font-face rules in fonts.css and update --font-serif below.
+*/
+
+:root {
+  /* ── Font Families ──────────────────────────────────────────────── */
+  --font-sans:   'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-serif:  'Lora', 'Georgia', serif;
+  --font-mono:   'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Scale (Major Third: 1.25×) ─────────────────────────────────── */
+  --text-xs:   0.75rem;    /* 12px — labels, captions */
+  --text-sm:   0.875rem;   /* 14px — UI labels, secondary */
+  --text-base: 1rem;       /* 16px — body copy */
+  --text-md:   1.125rem;   /* 18px — large body */
+  --text-lg:   1.25rem;    /* 20px — subheadings */
+  --text-xl:   1.5rem;     /* 24px — section headings */
+  --text-2xl:  1.875rem;   /* 30px — page headings */
+  --text-3xl:  2.25rem;    /* 36px — display */
+  --text-4xl:  3rem;       /* 48px — hero display */
+  --text-5xl:  3.75rem;    /* 60px — large hero */
+
+  /* ── Line Heights ────────────────────────────────────────────────── */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose:   1.8;
+
+  /* ── Letter Spacing ──────────────────────────────────────────────── */
+  --tracking-tight:  -0.02em;
+  --tracking-snug:   -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-wider:  0.08em;
+  --tracking-caps:   0.12em;  /* all-caps labels */
+
+  /* ── Font Weights ────────────────────────────────────────────────── */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+
+  /* ── Semantic: Role assignments ──────────────────────────────────── */
+  --type-display-family: var(--font-serif);
+  --type-display-weight: var(--weight-medium);
+  --type-display-leading: var(--leading-tight);
+  --type-display-tracking: var(--tracking-snug);
+
+  --type-heading-family: var(--font-sans);
+  --type-heading-weight: var(--weight-semibold);
+  --type-heading-leading: var(--leading-snug);
+  --type-heading-tracking: var(--tracking-snug);
+
+  --type-body-family: var(--font-sans);
+  --type-body-weight: var(--weight-regular);
+  --type-body-leading: var(--leading-relaxed);
+  --type-body-tracking: var(--tracking-normal);
+
+  --type-label-family: var(--font-sans);
+  --type-label-weight: var(--weight-medium);
+  --type-label-leading: var(--leading-tight);
+  --type-label-tracking: var(--tracking-wide);
+
+  --type-mono-family: var(--font-mono);
+  --type-mono-weight: var(--weight-regular);
+  --type-mono-leading: var(--leading-normal);
+}
+
+/* ── Google Fonts Import ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');

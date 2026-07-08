@@ -1,0 +1,9 @@
+/* TiengAnhKhong Design System — Global Stylesheet
+   Import this single file to get all tokens + base resets.
+   All rules live in imported files; no inline declarations here.
+*/
+
+@import './tokens/colors.css';
+@import './tokens/typography.css';
+@import './tokens/spacing.css';
+@import './tokens/base.css';

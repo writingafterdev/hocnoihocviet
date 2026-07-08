@@ -1,0 +1,33 @@
+<!-- @dsCard group="Type" viewport="700x180" name="Body Type" subtitle="DM Sans — all UI, body copy, labels, and form elements" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { background: var(--surface-base); margin: 0; padding: 24px; display: flex; gap: 40px; }
+    .col { flex: 1; }
+    .meta { font-family: var(--font-sans); font-size: 10px; color: var(--text-tertiary); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+    .body-lg { font-family: var(--font-sans); font-size: 18px; font-weight: 400; line-height: 1.65; color: var(--text-primary); }
+    .body    { font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 1.65; color: var(--text-primary); }
+    .body-sm { font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 1.5; color: var(--text-secondary); }
+    .label   { font-family: var(--font-sans); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; color: var(--text-tertiary); text-transform: uppercase; }
+    .mono    { font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary); }
+  </style>
+</head>
+<body>
+  <div class="col">
+    <div class="meta">DM Sans · Regular 400</div>
+    <div class="body-lg">Your essay shows a clear position.</div>
+    <div class="body" style="margin-top:6px">The argument is generally well-developed, though some supporting ideas could be extended with more specific examples to reach a higher band.</div>
+    <div class="body-sm" style="margin-top:8px">Submitted 14 June · 287 words · Task 2</div>
+  </div>
+  <div class="col">
+    <div class="meta">DM Sans · Medium 500 + Mono</div>
+    <div class="label" style="margin-bottom:8px">Task Achievement</div>
+    <div class="body" style="font-weight:500">Score: 7.0 / 9.0</div>
+    <div class="body-sm" style="margin-top:6px">You addressed all parts of the task with a relevant position maintained throughout.</div>
+    <div class="mono" style="margin-top:12px">7.0 · 6.5 · 7.5 · 6.0</div>
+  </div>
+</body>
+</html>

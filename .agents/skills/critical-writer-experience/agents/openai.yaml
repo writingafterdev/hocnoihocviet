@@ -1,0 +1,4 @@
+interface:
+  display_name: "Critical Writer Experience"
+  short_description: "Shape Critical Writer around its memorable editorial feeling."
+  default_prompt: "Use the Critical Writer Experience skill to review this feature and make design decisions that preserve the app feeling."

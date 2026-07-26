@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:assessment-cost": "tsx --test src/lib/assessment-cost-budget.test.ts",
+    "benchmark:deepseek": "tsx scripts/benchmark-deepseek.ts --provider deepseek",
+    "benchmark:assessment": "tsx scripts/benchmark-deepseek.ts",
+    "benchmark:worker": "tsx scripts/process-benchmark-reference-assessments.ts"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
@@ -41,6 +45,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "tsx": "^4.23.1",
     "typescript": "^5"
   }
 }

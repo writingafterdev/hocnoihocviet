@@ -12,6 +12,33 @@ export interface Prompt {
 
 export const promptsDatabase: Prompt[] = [
   {
+    id: 'p1-young-offenders',
+    task: 'task2',
+    title: 'Young Offenders and Adult Punishment',
+    category: 'Agree or Disagree',
+    topic: 'Government & Criminal Justice',
+    text: 'Young people who commit crimes should be treated the same way as adults. To what extent do you agree or disagree with this statement?',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'p1-coherence-flow-test',
+    task: 'task2',
+    title: 'International News Flow Test',
+    category: 'Agree or Disagree',
+    topic: 'Education',
+    text: 'Some people think international news should become a subject in secondary schools. Others think this would waste valuable school time. To what extent do you agree or disagree?',
+    image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'p1-international-news',
+    task: 'task2',
+    title: 'International News at School',
+    category: 'Discussion',
+    topic: 'Education',
+    text: 'Some people think secondary school students should study international news as one of their subjects, while others believe that this is a waste of valuable school time? Discuss both these views and give your own opinion.',
+    image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80'
+  },
+  {
     id: 'p1-tech-communication',
     task: 'task2',
     title: 'Technology and Communication',

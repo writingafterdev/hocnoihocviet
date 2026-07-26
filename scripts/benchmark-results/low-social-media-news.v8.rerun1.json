@@ -1,0 +1,1150 @@
+{
+  "analysis": {
+    "promptType": "outweigh",
+    "assessmentAudit": {
+      "provisionalScores": {
+        "taskAchievement": 6,
+        "coherenceCohesion": 6,
+        "lexicalResource": 6,
+        "grammaticalRange": 5,
+        "overall": 6
+      },
+      "evidenceScores": {
+        "taskAchievement": 6,
+        "coherenceCohesion": 6,
+        "lexicalResource": 6,
+        "grammaticalRange": 5,
+        "overall": 6
+      },
+      "reconciliation": {
+        "changedCriteria": [],
+        "summaryVi": "Điểm ban đầu đã được đối chiếu lại với toàn bài sau bước xác minh. Chỉ các vấn đề có bằng chứng đủ rõ và ảnh hưởng đáng kể mới được giữ lại; kết quả này không khẳng định đã phát hiện mọi lỗi có thể có. Prompt profile được dùng như diagnostic lens; quote được resolve lại với nguyên văn ở local."
+      }
+    },
+    "scores": {
+      "taskAchievement": 6,
+      "coherenceCohesion": 6,
+      "lexicalResource": 6,
+      "grammaticalRange": 5,
+      "overall": 6
+    },
+    "taskCoverage": [
+      {
+        "id": "requirement:position",
+        "requirement": "The essay must clearly state whether advantages outweigh disadvantages.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-0-3"
+        ],
+        "assessmentVi": "Bạn tuyên bố rằng lợi ích 'far outweigh' (vượt trội hơn nhiều) các nhược điểm, nhưng đoạn văn không giải thích tại sao lợi ích lại quan trọng hơn hoặc có tác động lớn hơn. Bạn chỉ liệt kê lợi ích về giao tiếp và cơ hội, nhưng không so sánh trực tiếp với các nhược điểm về tin giả và quyền riêng tư để chứng minh tại sao chúng kém nghiêm trọng hơn hoặc được bù đắp tốt hơn."
+      },
+      {
+        "id": "requirement:comparison",
+        "requirement": "The essay must provide a comparative judgment, weighing the relative significance of advantages versus disadvantages.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-2-1",
+          "sentence-3-2"
+        ],
+        "assessmentVi": "Bạn tuyên bố rằng lợi ích 'far outweigh' (vượt trội hơn nhiều) các nhược điểm, nhưng đoạn văn không giải thích tại sao lợi ích lại quan trọng hơn hoặc có tác động lớn hơn. Bạn chỉ liệt kê lợi ích về giao tiếp và cơ hội, nhưng không so sánh trực tiếp với các nhược điểm về tin giả và quyền riêng tư để chứng minh tại sao chúng kém nghiêm trọng hơn hoặc được bù đắp tốt hơn."
+      },
+      {
+        "id": "requirement:coverage",
+        "requirement": "The essay must address both the 'communication' and 'news events' aspects of the prompt.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-1-2",
+          "sentence-2-2"
+        ],
+        "assessmentVi": "Khía cạnh 'giao tiếp' được thảo luận rõ ràng. Khía cạnh 'nhận tin tức' chỉ được đề cập lướt qua ở đoạn 2 ('news consumption', 'fake news') nhưng không được phát triển thành một luận điểm riêng biệt hoặc tích hợp đầy đủ vào phần lợi ích."
+      }
+    ],
+    "relevanceGate": [
+      {
+        "nodeId": "sentence-0-1",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-0-2",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-0-3",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-1",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-2",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-3",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-4",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-5",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-6",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-1",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-2",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-3",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-4",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-5",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-1",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-2",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      }
+    ],
+    "argumentFlowOverview": {
+      "titleVi": "",
+      "bodyVi": "",
+      "nodeIds": []
+    },
+    "argumentFlowChapters": [],
+    "pyramid": {
+      "macroAnswer": {
+        "text": "The writer argues that the advantages of using social media for communication and news consumption outweigh the disadvantages.",
+        "errors": [
+          {
+            "errorCode": "unsupported_comparative_judgment",
+            "errorLabelVi": "Phép cân chưa được chứng minh",
+            "type": "internal",
+            "message": "Phép cân chưa được chứng minh",
+            "explanation": "Bạn tuyên bố rằng lợi ích 'far outweigh' (vượt trội hơn nhiều) các nhược điểm, nhưng đoạn văn không giải thích tại sao lợi ích lại quan trọng hơn hoặc có tác động lớn hơn. Bạn chỉ liệt kê lợi ích về giao tiếp và cơ hội, nhưng không so sánh trực tiếp với các nhược điểm về tin giả và quyền riêng tư để chứng minh tại sao chúng kém nghiêm trọng hơn hoặc được bù đắp tốt hơn.",
+            "suggestion": "Bạn cần thêm một câu so sánh trực tiếp, chẳng hạn giải thích tại sao việc duy trì mối quan hệ gia đình hoặc cơ hội việc làm có ý nghĩa lớn hơn đối với cuộc sống so với rủi ro tin giả hoặc mất dữ liệu cá nhân.",
+            "affectedNodes": {
+              "paragraphs": [
+                2,
+                3
+              ],
+              "sentences": [
+                {
+                  "paraIndex": 2,
+                  "sentenceIndex": 1
+                },
+                {
+                  "paraIndex": 3,
+                  "sentenceIndex": 2
+                }
+              ]
+            },
+            "proposedFix": {
+              "type": "rewrite",
+              "details": "Bạn cần thêm một câu so sánh trực tiếp, chẳng hạn giải thích tại sao việc duy trì mối quan hệ gia đình hoặc cơ hội việc làm có ý nghĩa lớn hơn đối với cuộc sống so với rủi ro tin giả hoặc mất dữ liệu cá nhân.",
+              "proposedText": "",
+              "whyBetter": ""
+            },
+            "comment": {
+              "bodyVi": "Bạn tuyên bố rằng lợi ích 'far outweigh' (vượt trội hơn nhiều) các nhược điểm, nhưng đoạn văn không giải thích tại sao lợi ích lại quan trọng hơn hoặc có tác động lớn hơn. Bạn chỉ liệt kê lợi ích về giao tiếp và cơ hội, nhưng không so sánh trực tiếp với các nhược điểm về tin giả và quyền riêng tư để chứng minh tại sao chúng kém nghiêm trọng hơn hoặc được bù đắp tốt hơn.",
+              "solutionBodyVi": "Bạn cần thêm một câu so sánh trực tiếp, chẳng hạn giải thích tại sao việc duy trì mối quan hệ gia đình hoặc cơ hội việc làm có ý nghĩa lớn hơn đối với cuộc sống so với rủi ro tin giả hoặc mất dữ liệu cá nhân."
+            },
+            "evidenceSpans": [
+              {
+                "startChar": 898,
+                "endChar": 999,
+                "sourceText": "it is evident that the benefits of using social media far outweigh the disadvantages mentioned above.",
+                "role": "primary"
+              },
+              {
+                "startChar": 1591,
+                "endChar": 1632,
+                "sourceText": "social media offers more value than harm.",
+                "role": "primary"
+              }
+            ],
+            "nodeLinks": {
+              "primaryNodeIds": [
+                "sentence-2-1",
+                "sentence-3-2"
+              ],
+              "contextNodeIds": [],
+              "affectedNodeIds": []
+            },
+            "descriptorAnchor": {
+              "criterion": "task_response",
+              "featureCode": "unsupported_comparative_judgment",
+              "featureEn": "a clear and developed position that directly answers an outweigh task"
+            }
+          }
+        ],
+        "review": {
+          "nodeId": "macro",
+          "status": "weak",
+          "job": "State and sustain the essay position",
+          "assessment": "",
+          "issues": []
+        }
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "label": "Introduction",
+          "job": "",
+          "paragraphStartChar": 0,
+          "paragraphEndChar": 297,
+          "errors": [],
+          "review": {
+            "nodeId": "para-0",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-0-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "With the development of technology, social media has becoming an important part of our daily lives.",
+              "startChar": 0,
+              "endChar": 99,
+              "role": "claim",
+              "simplifiedIdea": "With the development of technology, social media has becoming an important part of our daily lives.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-1",
+                "status": "works",
+                "job": "With the development of technology, social media has becoming an important part of our daily lives.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-0-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Many people use it to stay connected with others and update news and current events.",
+              "startChar": 100,
+              "endChar": 184,
+              "role": "claim",
+              "simplifiedIdea": "Many people use it to stay connected with others and update news and current events.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-2",
+                "status": "works",
+                "job": "Many people use it to stay connected with others and update news and current events.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-0-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "While there are some disadvantages, I strongly believe that the benefits of social media outweigh the drawbacks.",
+              "startChar": 185,
+              "endChar": 297,
+              "role": "claim",
+              "simplifiedIdea": "While there are some disadvantages, I strongly believe that the benefits of social media outweigh the drawbacks.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-3",
+                "status": "works",
+                "job": "While there are some disadvantages, I strongly believe that the benefits of social media outweigh the drawbacks.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "label": "Paragraph 2",
+          "job": "On the one hand, using social media to communicate and news consumption can lead to several concerning issues.",
+          "paragraphStartChar": 299,
+          "paragraphEndChar": 877,
+          "errors": [],
+          "review": {
+            "nodeId": "para-1",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-1-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "On the one hand, using social media to communicate and news consumption can lead to several concerning issues.",
+              "startChar": 299,
+              "endChar": 409,
+              "role": "claim",
+              "simplifiedIdea": "On the one hand, using social media to communicate and news consumption can lead to several concerning issues.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-1",
+                "status": "works",
+                "job": "On the one hand, using social media to communicate and news consumption can lead to several concerning issues.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-1-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "One of the biggest problems is that the spread of false information and \"fake news\".",
+              "startChar": 410,
+              "endChar": 494,
+              "role": "claim",
+              "simplifiedIdea": "One of the biggest problems is that the spread of false information and \"fake news\".",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-2",
+                "status": "works",
+                "job": "One of the biggest problems is that the spread of false information and \"fake news\".",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-1-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "Since unchecked information is often shared without proper fact-checking, which then can lead people to make false assumptions based on fake news.",
+              "startChar": 495,
+              "endChar": 641,
+              "role": "claim",
+              "simplifiedIdea": "Since unchecked information is often shared without proper fact-checking, which then can lead people to make false assumptions based on fake news.",
+              "errors": [
+                {
+                  "errorCode": "missing_mechanism",
+                  "errorLabelVi": "Thiếu cơ chế giải thích",
+                  "type": "internal",
+                  "message": "Thiếu cơ chế giải thích",
+                  "explanation": "Bạn nói tin giả 'lead people to make false assumptions', nhưng chưa giải thích hậu quả thực tế của việc này. Giả định sai có thể dẫn đến hành vi nào? (ví dụ: bỏ lọt vắc-xin, bỏ phiếu sai, hoảng loạn không cần thiết). Without a concrete consequence, the point remains a general concern rather than a proven disadvantage.",
+                  "suggestion": "Bạn nên thêm một hậu quả cụ thể, ví dụ: '...which can lead people to make false assumptions, such as rejecting medical advice or making poor financial decisions.'",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      1
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 1,
+                        "sentenceIndex": 3
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên thêm một hậu quả cụ thể, ví dụ: '...which can lead people to make false assumptions, such as rejecting medical advice or making poor financial decisions.'",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn nói tin giả 'lead people to make false assumptions', nhưng chưa giải thích hậu quả thực tế của việc này. Giả định sai có thể dẫn đến hành vi nào? (ví dụ: bỏ lọt vắc-xin, bỏ phiếu sai, hoảng loạn không cần thiết). Without a concrete consequence, the point remains a general concern rather than a proven disadvantage.",
+                    "solutionBodyVi": "Bạn nên thêm một hậu quả cụ thể, ví dụ: '...which can lead people to make false assumptions, such as rejecting medical advice or making poor financial decisions.'"
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 569,
+                      "endChar": 641,
+                      "sourceText": "which then can lead people to make false assumptions based on fake news.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-1-3"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "missing_mechanism",
+                    "featureEn": "ideas are well extended and supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-1-3",
+                "status": "weak",
+                "job": "Since unchecked information is often shared without proper fact-checking, which then can lead people to make false assumptions based on fake news.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-1-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "In addition, privacy concerns are also significant.",
+              "startChar": 642,
+              "endChar": 693,
+              "role": "claim",
+              "simplifiedIdea": "In addition, privacy concerns are also significant.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-4",
+                "status": "works",
+                "job": "In addition, privacy concerns are also significant.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 5,
+              "nodeId": "sentence-1-5",
+              "sourceSentenceIndex": 5,
+              "chunkIndex": 5,
+              "sourceText": "Personal data can be misused and leaked.",
+              "startChar": 694,
+              "endChar": 734,
+              "role": "claim",
+              "simplifiedIdea": "Personal data can be misused and leaked.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-5",
+                "status": "works",
+                "job": "Personal data can be misused and leaked.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 6,
+              "nodeId": "sentence-1-6",
+              "sourceSentenceIndex": 6,
+              "chunkIndex": 6,
+              "sourceText": "For example, the recently Chat GPT data leak showed millions of user's data is spread quickly, raising serious worries about personal details.",
+              "startChar": 735,
+              "endChar": 877,
+              "role": "claim",
+              "simplifiedIdea": "For example, the recently Chat GPT data leak showed millions of user's data is spread quickly, raising serious worries about personal details.",
+              "errors": [
+                {
+                  "errorCode": "unsupported_claim",
+                  "errorLabelVi": "Nhận định thiếu chứng minh",
+                  "type": "internal",
+                  "message": "Nhận định thiếu chứng minh",
+                  "explanation": "Bạn dùng ví dụ về ChatGPT để minh họa cho mối lo ngại quyền riêng tư trên mạng xã hội. Tuy nhiên, ChatGPT là một công cụ AI, không phải mạng xã hội. Mặc dù cả hai đều xử lý dữ liệu cá nhân, bạn chưa giải thích cơ chế chung (ví dụ: cách mạng xã hội thu thập và rò rỉ dữ liệu) để kết nối ví dụ này với claim của mình.",
+                  "suggestion": "Bạn nên dùng ví dụ trực tiếp hơn về mạng xã hội (ví dụ: vụ rò rỉ dữ liệu Facebook-Cambridge Analytica) hoặc giải thích cơ chế chung: '...similar to how social media platforms collect and sometimes leak personal data for targeted advertising.'",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      1
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 1,
+                        "sentenceIndex": 6
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên dùng ví dụ trực tiếp hơn về mạng xã hội (ví dụ: vụ rò rỉ dữ liệu Facebook-Cambridge Analytica) hoặc giải thích cơ chế chung: '...similar to how social media platforms collect and sometimes leak personal data for targeted advertising.'",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn dùng ví dụ về ChatGPT để minh họa cho mối lo ngại quyền riêng tư trên mạng xã hội. Tuy nhiên, ChatGPT là một công cụ AI, không phải mạng xã hội. Mặc dù cả hai đều xử lý dữ liệu cá nhân, bạn chưa giải thích cơ chế chung (ví dụ: cách mạng xã hội thu thập và rò rỉ dữ liệu) để kết nối ví dụ này với claim của mình.",
+                    "solutionBodyVi": "Bạn nên dùng ví dụ trực tiếp hơn về mạng xã hội (ví dụ: vụ rò rỉ dữ liệu Facebook-Cambridge Analytica) hoặc giải thích cơ chế chung: '...similar to how social media platforms collect and sometimes leak personal data for targeted advertising.'"
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 735,
+                      "endChar": 877,
+                      "sourceText": "For example, the recently Chat GPT data leak showed millions of user's data is spread quickly, raising serious worries about personal details.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-1-6"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "unsupported_claim",
+                    "featureEn": "main ideas are supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-1-6",
+                "status": "weak",
+                "job": "For example, the recently Chat GPT data leak showed millions of user's data is spread quickly, raising serious worries about personal details.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Paragraph 3",
+          "job": "On the other hand, it is evident that the benefits of using social media far outweigh the disadvantages mentioned above.",
+          "paragraphStartChar": 879,
+          "paragraphEndChar": 1449,
+          "errors": [],
+          "review": {
+            "nodeId": "para-2",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-2-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "On the other hand, it is evident that the benefits of using social media far outweigh the disadvantages mentioned above.",
+              "startChar": 879,
+              "endChar": 999,
+              "role": "claim",
+              "simplifiedIdea": "On the other hand, it is evident that the benefits of using social media far outweigh the disadvantages mentioned above.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-1",
+                "status": "works",
+                "job": "On the other hand, it is evident that the benefits of using social media far outweigh the disadvantages mentioned above.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-2-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Online platforms allow people stay in touch with families and friends all around the world.",
+              "startChar": 1000,
+              "endChar": 1091,
+              "role": "claim",
+              "simplifiedIdea": "Online platforms allow people stay in touch with families and friends all around the world.",
+              "errors": [
+                {
+                  "errorCode": "underdeveloped_idea",
+                  "errorLabelVi": "Ý chưa phát triển đủ",
+                  "type": "internal",
+                  "message": "Ý chưa phát triển đủ",
+                  "explanation": "Khía cạnh 'giao tiếp' được thảo luận rõ ràng. Khía cạnh 'nhận tin tức' chỉ được đề cập lướt qua ở đoạn 2 ('news consumption', 'fake news') nhưng không được phát triển thành một luận điểm riêng biệt hoặc tích hợp đầy đủ vào phần lợi ích.",
+                  "suggestion": "Bạn cần làm rõ phần còn thiếu bằng một bước giải thích cụ thể hơn, thay vì chỉ nêu claim rồi chuyển ý.",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      1,
+                      2
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 2,
+                        "sentenceIndex": 2
+                      },
+                      {
+                        "paraIndex": 1,
+                        "sentenceIndex": 2
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn cần làm rõ phần còn thiếu bằng một bước giải thích cụ thể hơn, thay vì chỉ nêu claim rồi chuyển ý.",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Khía cạnh 'giao tiếp' được thảo luận rõ ràng. Khía cạnh 'nhận tin tức' chỉ được đề cập lướt qua ở đoạn 2 ('news consumption', 'fake news') nhưng không được phát triển thành một luận điểm riêng biệt hoặc tích hợp đầy đủ vào phần lợi ích.",
+                    "solutionBodyVi": "Bạn cần làm rõ phần còn thiếu bằng một bước giải thích cụ thể hơn, thay vì chỉ nêu claim rồi chuyển ý."
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 446,
+                      "endChar": 493,
+                      "sourceText": "the spread of false information and \"fake news\"",
+                      "role": "context"
+                    },
+                    {
+                      "startChar": 1000,
+                      "endChar": 1091,
+                      "sourceText": "Online platforms allow people stay in touch with families and friends all around the world.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-2-2"
+                    ],
+                    "contextNodeIds": [
+                      "sentence-1-2"
+                    ],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "underdeveloped_idea",
+                    "featureEn": "main ideas are extended and supported; some may be insufficiently developed"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-2-2",
+                "status": "weak",
+                "job": "Online platforms allow people stay in touch with families and friends all around the world.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-2-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "Maintaining long-distance relationships has become much easier, as students can stay closed to their relatives living abroad through regular updates and conversations.",
+              "startChar": 1092,
+              "endChar": 1259,
+              "role": "claim",
+              "simplifiedIdea": "Maintaining long-distance relationships has become much easier, as students can stay closed to their relatives living abroad through regular updates and conversations.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-3",
+                "status": "works",
+                "job": "Maintaining long-distance relationships has become much easier, as students can stay closed to their relatives living abroad through regular updates and conversations.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-2-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "Moreover, social media opens opportunities for education, work and business.",
+              "startChar": 1260,
+              "endChar": 1336,
+              "role": "claim",
+              "simplifiedIdea": "Moreover, social media opens opportunities for education, work and business.",
+              "errors": [
+                {
+                  "errorCode": "underdeveloped_idea",
+                  "errorLabelVi": "Ý chưa phát triển đủ",
+                  "type": "internal",
+                  "message": "Ý chưa phát triển đủ",
+                  "explanation": "Prompt yêu cầu bạn đánh giá việc sử dụng mạng xã hội để 'learn about news events'. Trong phần lợi ích, bạn chỉ đề cập đến giao tiếp và cơ hội giáothren/work/business, nhưng không nêu bất kỳ lợi ích cụ thể nào của việc cập nhật tin tức (ví dụ: tiếp cận thông tin nhanh chóng, nâng cao nhận thức toàn cầu). Điều này khiến phần so sánh không cân bằng vì một khía cạnh trung tâm của prompt chỉ xuất hiện ở phần nhược điểm.",
+                  "suggestion": "Bạn nên thêm một lợi ích cụ thể liên quan đến việc học tin tức, chẳng hạn: 'Additionally, it provides instant access to global news, helping people stay informed about world events.'",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      2
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 2,
+                        "sentenceIndex": 4
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên thêm một lợi ích cụ thể liên quan đến việc học tin tức, chẳng hạn: 'Additionally, it provides instant access to global news, helping people stay informed about world events.'",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Prompt yêu cầu bạn đánh giá việc sử dụng mạng xã hội để 'learn about news events'. Trong phần lợi ích, bạn chỉ đề cập đến giao tiếp và cơ hội giáothren/work/business, nhưng không nêu bất kỳ lợi ích cụ thể nào của việc cập nhật tin tức (ví dụ: tiếp cận thông tin nhanh chóng, nâng cao nhận thức toàn cầu). Điều này khiến phần so sánh không cân bằng vì một khía cạnh trung tâm của prompt chỉ xuất hiện ở phần nhược điểm.",
+                    "solutionBodyVi": "Bạn nên thêm một lợi ích cụ thể liên quan đến việc học tin tức, chẳng hạn: 'Additionally, it provides instant access to global news, helping people stay informed about world events.'"
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 1260,
+                      "endChar": 1336,
+                      "sourceText": "Moreover, social media opens opportunities for education, work and business.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-2-4"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "underdeveloped_idea",
+                    "featureEn": "main ideas are extended and supported; some may be insufficiently developed"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-2-4",
+                "status": "weak",
+                "job": "Moreover, social media opens opportunities for education, work and business.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 5,
+              "nodeId": "sentence-2-5",
+              "sourceSentenceIndex": 5,
+              "chunkIndex": 5,
+              "sourceText": "Many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+              "startChar": 1337,
+              "endChar": 1449,
+              "role": "claim",
+              "simplifiedIdea": "Many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-5",
+                "status": "works",
+                "job": "Many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Paragraph 4",
+          "job": "",
+          "paragraphStartChar": 1451,
+          "paragraphEndChar": 1632,
+          "errors": [],
+          "review": {
+            "nodeId": "para-3",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-3-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "In conclusion, while social media has some drawbacks, its ability to connect people and provide many useful chances.",
+              "startChar": 1451,
+              "endChar": 1567,
+              "role": "claim",
+              "simplifiedIdea": "In conclusion, while social media has some drawbacks, its ability to connect people and provide many useful chances.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-1",
+                "status": "works",
+                "job": "In conclusion, while social media has some drawbacks, its ability to connect people and provide many useful chances.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-3-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "When used responsibly, social media offers more value than harm.",
+              "startChar": 1568,
+              "endChar": 1632,
+              "role": "claim",
+              "simplifiedIdea": "When used responsibly, social media offers more value than harm.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-2",
+                "status": "works",
+                "job": "When used responsibly, social media offers more value than harm.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        }
+      ],
+      "edgeReviews": [],
+      "coherenceFlows": []
+    },
+    "cohesionHighlights": [
+      {
+        "startChar": 1260,
+        "endChar": 1336,
+        "errorCode": "faulty_sentence_link",
+        "errorLabelVi": "Liên kết trong câu bị lỗi",
+        "highlightType": "error",
+        "label": "Liên kết trong câu bị lỗi",
+        "sourceText": "Moreover, social media opens opportunities for education, work and business.",
+        "feedback": "Bạn giới thiệu một ý mới với 'Moreover' là 'opportunities for education, work and business'. Câu tiếp theo bắt đầu bằng 'Many individuals...', đây là một chủ đề mới (theme) so với 'opportunities'. Mặc dù các ví dụ ('jobs, online courses, customers') liên quan đến các cơ hội, nhưng sự gắn kết yếu vì câu thứ hai không trực tiếp tiếp nối và phát triển chủ đề 'opportunities' mà thay vào đó bắt đầu một chuỗi ý mới về 'individuals'.",
+        "replacementText": "These opportunities are evident as many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+        "correction": "These opportunities are evident as many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+        "suggestedText": "These opportunities are evident as many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram.",
+        "solutionFeedback": "Bắt đầu câu thứ hai bằng cách tham chiếu trực tiếp đến 'opportunities', ví dụ: 'These opportunities are evident as many individuals have found jobs, online courses, and customers...'",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "coherence_cohesion",
+          "featureCode": "faulty_sentence_link",
+          "featureEn": "cohesion within sentences is accurate"
+        }
+      },
+      {
+        "startChar": 642,
+        "endChar": 693,
+        "errorCode": "faulty_sentence_link",
+        "errorLabelVi": "Liên kết trong câu bị lỗi",
+        "highlightType": "error",
+        "label": "Liên kết trong câu bị lỗi",
+        "sourceText": "In addition, privacy concerns are also significant.",
+        "feedback": "Bạn dùng 'In addition' để giới thiệu một ý mới ('privacy concerns'). Tuy nhiên, câu tiếp theo bắt đầu bằng 'Personal data...', đây là một thực thể mới so với 'privacy concerns'. Mặc dù chúng liên quan về mặt chủ đề, nhưng sự gắn kết yếu vì người đọc phải tự suy luận rằng 'personal data' chính là nội dung cụ thể của 'privacy concerns'. Sự chuyển tiếp không liền mạch.",
+        "replacementText": "In addition, privacy concerns are also significant, as personal data can be misused and leaked.",
+        "correction": "In addition, privacy concerns are also significant, as personal data can be misused and leaked.",
+        "suggestedText": "In addition, privacy concerns are also significant, as personal data can be misused and leaked.",
+        "solutionFeedback": "Nối hai câu lại hoặc thêm từ nối để chỉ rõ mối quan hệ, ví dụ: 'In addition, privacy concerns are also significant, as personal data can be misused and leaked.'",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "coherence_cohesion",
+          "featureCode": "faulty_sentence_link",
+          "featureEn": "cohesion within sentences is accurate"
+        }
+      }
+    ],
+    "lexicalHighlights": [
+      {
+        "startChar": 799,
+        "endChar": 810,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "user's data",
+        "feedback": "Bạn dùng 'user's data' (dữ liệu của một người dùng) nhưng ngữ cảnh là 'millions of user data' (dữ liệu của hàng triệu người dùng). Cần dùng số nhiều 'users' không có dấu nháy.",
+        "replacementText": "users data",
+        "correction": "users data",
+        "suggestedText": "users data",
+        "solutionFeedback": "Thay 'user's' bằng 'users'.",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      },
+      {
+        "startChar": 1017,
+        "endChar": 1034,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "allow people stay",
+        "feedback": "Bạn viết 'allow people stay' nhưng cấu trúc đúng là 'allow people to stay'. Đây là lỗi thiếu giới từ 'to' trong cụm động từ.",
+        "replacementText": "allow people to stay",
+        "correction": "allow people to stay",
+        "suggestedText": "allow people to stay",
+        "solutionFeedback": "Thêm 'to' trước 'stay'.",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      },
+      {
+        "startChar": 1172,
+        "endChar": 1183,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "stay closed",
+        "feedback": "Bạn dùng 'stay closed' (ở trong tình trạng đóng cửa) nhưng ý bạn là 'stay close' (giữ liên lạc gần gũi). Đây là lỗi sai từ (wrong word) làm sai nghĩa.",
+        "replacementText": "stay close",
+        "correction": "stay close",
+        "suggestedText": "stay close",
+        "solutionFeedback": "Thay 'closed' bằng 'close'.",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      }
+    ],
+    "grammaticalHighlights": [
+      {
+        "startChar": 36,
+        "endChar": 61,
+        "errorCode": "tense_error",
+        "errorLabelVi": "Sai thì",
+        "highlightType": "error",
+        "label": "Sai thì",
+        "sourceText": "social media has becoming",
+        "feedback": "Bạn dùng 'has becoming' nhưng cần dùng thì hiện tại hoàn thành với dạng quá khứ phân từ: 'has become'.",
+        "replacementText": "has become",
+        "correction": "has become",
+        "suggestedText": "has become",
+        "solutionFeedback": "thay 'has becoming' bằng 'has become'",
+        "paragraphIndex": 0,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "tense_error",
+          "featureEn": "tense is used accurately"
+        }
+      },
+      {
+        "startChar": 410,
+        "endChar": 494,
+        "errorCode": "sentence_fragment",
+        "errorLabelVi": "Câu thiếu thành phần",
+        "highlightType": "error",
+        "label": "Câu thiếu thành phần",
+        "sourceText": "One of the biggest problems is that the spread of false information and \"fake news\".",
+        "feedback": "Bạn viết một câu không hoàn chỉnh. Cụm 'the spread of...' không thể làm tân ngữ cho 'is that'. Cần thêm động từ hoặc sửa lại cấu trúc.",
+        "replacementText": "One of the biggest problems is the spread of false information and \"fake news\".",
+        "correction": "One of the biggest problems is the spread of false information and \"fake news\".",
+        "suggestedText": "One of the biggest problems is the spread of false information and \"fake news\".",
+        "solutionFeedback": "sửa thành 'One of the biggest problems is the spread of false information and \"fake news\".'",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "sentence_fragment",
+          "featureEn": "sentence forms are complete and accurate"
+        }
+      },
+      {
+        "startChar": 495,
+        "endChar": 641,
+        "errorCode": "sentence_fragment",
+        "errorLabelVi": "Câu thiếu thành phần",
+        "highlightType": "error",
+        "label": "Câu thiếu thành phần",
+        "sourceText": "Since unchecked information is often shared without proper fact-checking, which then can lead people to make false assumptions based on fake news.",
+        "feedback": "Bạn bắt đầu câu bằng 'Since' (mệnh đề phụ thuộc) nhưng không có mệnh đề chính đi kèm, tạo thành một câu không hoàn chỉnh.",
+        "replacementText": "Since unchecked information is often shared without proper fact-checking, it can lead people to make false assumptions based on fake news.",
+        "correction": "Since unchecked information is often shared without proper fact-checking, it can lead people to make false assumptions based on fake news.",
+        "suggestedText": "Since unchecked information is often shared without proper fact-checking, it can lead people to make false assumptions based on fake news.",
+        "solutionFeedback": "sửa thành 'Since unchecked information is often shared without proper fact-checking, it can lead people to make false assumptions based on fake news.'",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "sentence_fragment",
+          "featureEn": "sentence forms are complete and accurate"
+        }
+      },
+      {
+        "startChar": 1505,
+        "endChar": 1567,
+        "errorCode": "sentence_fragment",
+        "errorLabelVi": "Câu thiếu thành phần",
+        "highlightType": "error",
+        "label": "Câu thiếu thành phần",
+        "sourceText": "its ability to connect people and provide many useful chances.",
+        "feedback": "Mệnh đề 'its ability...' không có động từ chính, làm câu kết luận trở nên không hoàn chỉnh.",
+        "replacementText": "its ability to connect people and provide many useful chances is significant.",
+        "correction": "its ability to connect people and provide many useful chances is significant.",
+        "suggestedText": "its ability to connect people and provide many useful chances is significant.",
+        "solutionFeedback": "sửa thành 'its ability to connect people and provide many useful chances is significant.' hoặc thêm một động từ phù hợp.",
+        "paragraphIndex": 3,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "sentence_fragment",
+          "featureEn": "sentence forms are complete and accurate"
+        }
+      }
+    ],
+    "overallAssessment": {
+      "summaryVi": "Bài được chấm 6. Phần tổng hợp chỉ dùng những vấn đề đã được đối chiếu với nguyên văn và đủ rõ để đưa ra feedback; kết quả không được xem là danh sách đầy đủ mọi lỗi có thể có.",
+      "priorities": [
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Phép cân chưa được chứng minh",
+          "actionVi": "Bạn cần thêm một câu so sánh trực tiếp, chẳng hạn giải thích tại sao việc duy trì mối quan hệ gia đình hoặc cơ hội việc làm có ý nghĩa lớn hơn đối với cuộc sống so với rủi ro tin giả hoặc mất dữ liệu cá nhân.",
+          "evidenceIds": [
+            "tr:1"
+          ]
+        },
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Ý chưa phát triển đủ",
+          "actionVi": "Bạn nên thêm một lợi ích cụ thể liên quan đến việc học tin tức, chẳng hạn: 'Additionally, it provides instant access to global news, helping people stay informed about world events.'",
+          "evidenceIds": [
+            "tr:2"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "titleVi": "Mạch ý chưa rõ",
+          "actionVi": "Sau khi nêu lợi điểm, bạn cần thêm một câu giải thích tại sao lợi điểm này có trọng số lớn hơn. Ví dụ: 'Mặc dù rủi ro tin giả là có thật, khả năng kết nối toàn cầu và tiếp cận cơ hội là những lợi ích nền tảng và thường xuyên hơn trong cuộc sống hàng ngày.'",
+          "evidenceIds": [
+            "coherence:1"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "titleVi": "Liên kết trong câu bị lỗi",
+          "actionVi": "Bắt đầu câu thứ hai bằng cách tham chiếu trực tiếp đến 'opportunities', ví dụ: 'These opportunities are evident as many individuals have found jobs, online courses, and customers...'",
+          "evidenceIds": [
+            "cohesion:3"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "titleVi": "Liên kết trong câu bị lỗi",
+          "actionVi": "Nối hai câu lại hoặc thêm từ nối để chỉ rõ mối quan hệ, ví dụ: 'In addition, privacy concerns are also significant, as personal data can be misused and leaked.'",
+          "evidenceIds": [
+            "cohesion:2"
+          ]
+        }
+      ],
+      "descriptorAlignment": [
+        {
+          "criterion": "taskAchievement",
+          "band": 6,
+          "rationaleVi": "Bạn đã đưa ra vị trí rõ ràng rằng lợi ích lớn hơn và đã đề cập đến cả hai khía cạnh giao tiếp và tin tức. Tuy nhiên, phần so sánh chỉ được nêu ra chứ chưa được chứng minh một cách thuyết phục. Điểm lợi về giao tiếp được giải thích tốt, nhưng điểm lợi về tin tức và các điểm hại chỉ được liệt kê mà thiếu cơ chế hoặc hậu quả cụ thể để người đọc thấy tại sao lợi ích thực sự lớn hơn.",
+          "evidenceIds": [
+            "tr:1",
+            "tr:2",
+            "tr:3",
+            "tr:4",
+            "coverage:2"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "band": 6,
+          "rationaleVi": "Bài luận có kiến trúc tổng thể rõ ràng với vị trí được xác định, nhưng sự so sánh giữa hai bên yếu đi do đoạn thân bài thứ hai liệt kê lợi điểm mà không có cầu nối logic để chứng minh chúng quan trọng hơn các bất lợi đã nêu. Bài viết có vấn đề nghiêm trọng về sự gắn kết do các lỗi chuyển ý đột ngột, tham chiếu không rõ ràng và sự gián đoạn của chuỗi từ vựng, khiến người đọc phải đoán liên kết giữa các câu.",
+          "evidenceIds": [
+            "coherence:1",
+            "coherence:2",
+            "cohesion:3",
+            "cohesion:2"
+          ]
+        },
+        {
+          "criterion": "lexicalResource",
+          "band": 6,
+          "rationaleVi": "Bạn sử dụng một số từ vựng chủ đề phù hợp (social media, fake news, privacy concerns) nhưng phạm vi từ vựng còn hạn chế, có lỗi lặp từ và một số không tự nhiên, ảnh hưởng đến độ chính xác.",
+          "evidenceIds": [
+            "lr:1",
+            "lr:2",
+            "lr:3"
+          ]
+        },
+        {
+          "criterion": "grammaticalRange",
+          "band": 5,
+          "rationaleVi": "Bạn sử dụng một số cấu trúc phức tạp (câu ghép, mệnh đề quan hệ, câu điều kiện) nhưng phạm lỗi ngữ pháp thường xuyên, đặc biệt là thiếu chủ ngữ, sai thì, và lỗi agreement. Những lỗi này gây ra sự bối rối cho người đọc và đôi khi làm ý nghĩa bị che khuất.",
+          "evidenceIds": [
+            "gra:1",
+            "gra:2",
+            "gra:3",
+            "gra:7"
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "targetBand": 8,
+      "revisedEssay": "With the development of technology, social media has become an important part of our daily lives. Many people use it to stay connected with others and to learn about news events. While there are some disadvantages, I strongly believe that the benefits of social media outweigh the drawbacks.\n\nOn the one hand, using social media for communication and news consumption can lead to several concerning issues. One of the biggest problems is the spread of false information and \"fake news\". Since unchecked information is often shared without proper fact-checking, it can lead people to make false assumptions, such as rejecting medical advice or making poor financial decisions. In addition, privacy concerns are also significant, as personal data can be misused and leaked. For example, social media platforms have been involved in major data breaches, where millions of users' personal details were exposed, raising serious worries about online security.\n\nOn the other hand, it is evident that the benefits of using social media far outweigh the disadvantages mentioned above. Online platforms allow people to stay in touch with families and friends all around the world. Maintaining long-distance relationships has become much easier, as students can stay close to their relatives living abroad through regular updates and conversations. Moreover, social media provides instant access to global news, helping people stay informed about world events and develop a broader perspective. These opportunities are also evident in education, work, and business, as many individuals have found jobs, online courses, and customers through platforms such as Facebook or Instagram. While the risks of misinformation and privacy loss are real, the fundamental advantages of global connectivity and access to information and opportunities are more pervasive and essential in modern life.\n\nIn conclusion, while social media has some drawbacks, its ability to connect people, provide timely news, and offer many useful opportunities outweighs them. When used responsibly, social media offers more value than harm.",
+      "changeSummaryVi": "Bản sửa đã khắc phục các lỗi ngữ pháp nghiêm trọng (câu thiếu thành phần, sai thì), cải thiện sự gắn kết bằng cách nối các câu liền mạch hơn, và sửa các lỗi từ vựng ('stay closed' thành 'stay close'). Quan trọng nhất, nó phát triển đầy đủ hơn luận điểm về lợi ích của việc cập nhật tin tức, thêm một câu so sánh trực tiếp để chứng minh tại sao lợi ích vượt trội hơn, và sửa lại câu kết luận để tóm tắt rõ ràng hơn.",
+      "preservedStrengthsVi": [
+        "Cấu trúc hai phần rõ ràng",
+        "Vị trí luận điểm vững chắc",
+        "Một số từ vựng tốt như 'pervasive', 'essential'"
+      ],
+      "changes": []
+    }
+  }
+}

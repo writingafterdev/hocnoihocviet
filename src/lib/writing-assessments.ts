@@ -1,0 +1,3 @@
+export const WRITING_ASSESSMENTS_COLLECTION_ID =
+  process.env.APPWRITE_WRITING_ASSESSMENTS_COLLECTION_ID || 'writing_assessments';
+

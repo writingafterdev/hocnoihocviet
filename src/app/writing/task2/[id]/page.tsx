@@ -7,13 +7,12 @@ import Link from 'next/link';
 import TopHeader from '@/components/TopHeader';
 import TranslateModal from '@/components/writing/TranslateModal';
 import ScoreBar, { DimensionKey } from '@/components/writing/ScoreBar';
-import SimplePyramid from '@/components/writing/SimplePyramid';
-import EditablePyramid from '@/components/writing/EditablePyramid';
-import EssayPanel from '@/components/writing/EssayPanel';
+import EditableArgumentGraph from '@/components/writing/EditableArgumentGraph';
+import WritingReviewWorkbench from '@/components/writing/WritingReviewWorkbench';
 import { WritingAnalysis } from '@/types/writing';
 import { useParams } from 'next/navigation';
 import { getPromptById } from '@/lib/prompts';
-import { DEMO_ANALYSIS, DEMO_ESSAY, EMPTY_ANALYSIS } from '@/lib/writing-demo';
+import { EMPTY_ANALYSIS } from '@/lib/writing-demo';
 import { motion, AnimatePresence } from 'motion/react';
 
 type PageState = 'idle' | 'analyzing' | 'result';
@@ -32,56 +31,100 @@ function WordCount({ text }: { text: string }) {
 export default function WritingPage() {
   const params = useParams<{ id: string }>();
   const promptData = getPromptById(params.id || '');
-  const promptText = promptData?.text || '';
+  const [promptText, setPromptText] = useState(promptData?.text || '');
 
   const [state, setState] = useState<PageState>('idle');
   const [paragraphTexts, setParagraphTexts] = useState<Record<string, string>>({});
+  const [resultEssay, setResultEssay] = useState<string | null>(null);
   const [analysis, setAnalysis] = useState<WritingAnalysis | null>(null);
   const [planPyramid, setPlanPyramid] = useState(EMPTY_ANALYSIS.pyramid);
   const [error, setError] = useState<string | null>(null);
+  const [persistenceError, setPersistenceError] = useState<string | null>(null);
   const [activeParagraphIndex, setActiveParagraphIndex] = useState<number | null>(null);
   const [activeDimension, setActiveDimension] = useState<DimensionKey>('taskAchievement');
-  const [isPyramidFullscreen, setIsPyramidFullscreen] = useState(false);
+  const [isGraphFullscreen, setIsGraphFullscreen] = useState(false);
   const [translateOpen, setTranslateOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const hasLoadedDraft = useRef(false);
 
   useEffect(() => {
-    setIsMounted(true);
-    
-    try {
-      const cacheKey = `rnw-draft-${params.id}`;
-      const cached = localStorage.getItem(cacheKey);
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (parsed.paragraphTexts) setParagraphTexts(parsed.paragraphTexts);
-        if (parsed.planPyramid) setPlanPyramid(parsed.planPyramid);
-        if (parsed.state) setState(parsed.state);
-        if (parsed.analysis) setAnalysis(parsed.analysis);
+    const mountedTimer = window.setTimeout(() => setIsMounted(true), 0);
+    return () => window.clearTimeout(mountedTimer);
+  }, []);
+
+  useEffect(() => {
+    if (state !== 'result') return;
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [state]);
+
+  useEffect(() => {
+    const loadTimer = window.setTimeout(async () => {
+      try {
+        const cacheKey = `rnw-draft-task2-${params.id}`;
+        const response = await fetch(`/api/writing/assessments/${params.id}`);
+        if (response.ok) {
+          const { assessment } = await response.json();
+          const persistedAnalysis = assessment.analysis as WritingAnalysis;
+          const persistedEssay = assessment.essay as string;
+          const hydratedParagraphs = Object.fromEntries(
+            persistedAnalysis.pyramid.paragraphs.map((paragraph) => [
+              paragraph.index,
+              persistedEssay.slice(paragraph.paragraphStartChar, paragraph.paragraphEndChar),
+            ]),
+          );
+
+          setParagraphTexts(hydratedParagraphs);
+          setResultEssay(persistedEssay);
+          setPlanPyramid(persistedAnalysis.pyramid);
+          setPromptText(assessment.prompt as string);
+          setAnalysis(persistedAnalysis);
+          setState('result');
+          return;
+        }
+
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (parsed.prompt === promptData?.text) {
+            if (parsed.paragraphTexts) setParagraphTexts(parsed.paragraphTexts);
+            if (parsed.planPyramid) setPlanPyramid(parsed.planPyramid);
+            if (parsed.state) setState(parsed.state);
+            if (parsed.analysis) setAnalysis(parsed.analysis);
+            if (typeof parsed.resultEssay === 'string') setResultEssay(parsed.resultEssay);
+          }
+        }
+      } catch (e) {
+        console.error('Failed to load draft:', e);
+      } finally {
+        hasLoadedDraft.current = true;
       }
-    } catch (e) {
-      console.error('Failed to load draft:', e);
-    }
-  }, [params.id]);
+    }, 0);
+
+    return () => window.clearTimeout(loadTimer);
+  }, [params.id, promptData?.text]);
 
   useEffect(() => {
-    if (!isMounted) return;
+    if (!hasLoadedDraft.current) return;
     try {
-      const cacheKey = `rnw-draft-${params.id}`;
+      const cacheKey = `rnw-draft-task2-${params.id}`;
       localStorage.setItem(cacheKey, JSON.stringify({
+        prompt: promptText,
         paragraphTexts,
         planPyramid,
         state,
         analysis,
+        resultEssay,
       }));
     } catch (e) {
       console.error('Failed to save draft:', e);
     }
-  }, [paragraphTexts, planPyramid, state, analysis, params.id, isMounted]);
+  }, [paragraphTexts, planPyramid, state, analysis, resultEssay, params.id, promptText]);
 
-  const essay = planPyramid.paragraphs
+  const draftEssay = planPyramid.paragraphs
     .map(p => paragraphTexts[p.index] || '')
     .filter(text => text.trim().length > 0)
     .join('\n\n');
+  const essay = state === 'result' && resultEssay !== null ? resultEssay : draftEssay;
 
   const [leftWidth, setLeftWidth] = useState(65);
   const [isDragging, setIsDragging] = useState(false);
@@ -116,6 +159,7 @@ export default function WritingPage() {
   const handleSubmit = async () => {
     if (!promptText.trim() || !essay.trim()) return;
     setError(null);
+    setPersistenceError(null);
     setState('analyzing');
 
     try {
@@ -127,9 +171,18 @@ export default function WritingPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Analysis failed');
       setAnalysis(data.analysis);
+      setResultEssay(essay);
       setState('result');
-    } catch (err: any) {
-      setError(err.message);
+      const saveResponse = await fetch(`/api/writing/assessments/${params.id}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt: promptText, essay, analysis: data.analysis }),
+      });
+      if (!saveResponse.ok) {
+        setPersistenceError('Bài đã được chấm nhưng chưa lưu được. Hãy giữ trang này mở và thử lại sau.');
+      }
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Analysis failed');
       setState('idle');
     }
   };
@@ -137,19 +190,33 @@ export default function WritingPage() {
   const displayAnalysis = state === 'result' && analysis ? analysis : EMPTY_ANALYSIS;
 
   return (
-    <div 
-      className={`overflow-hidden flex flex-col text-[#141413] antialiased transition-colors duration-500 ${state === 'result' ? 'bg-[#F8F9FA]' : 'bg-[#FFFFFF]'}`}
-      style={{ height: 'calc(100vh / 1.1)' }}
+    <div
+      className={`${state === 'result' ? 'overflow-auto' : 'overflow-hidden'} flex flex-col text-[#141413] antialiased transition-colors duration-500 ${state === 'result' ? 'bg-[#F8F9FA]' : 'bg-[#FFFFFF]'}`}
+      style={{
+        height: 'calc(100vh / 1.1)',
+      }}
     >
       <TopHeader user={null} />
 
       <div className="w-full max-w-[1440px] mx-auto px-4 md:px-8 py-6 flex-1 min-h-0">
-        <div ref={resultContainerRef} className="w-full h-full flex relative min-h-0">
+        <div
+          ref={resultContainerRef}
+          className={`h-full flex relative min-h-0 ${state === 'result' ? 'min-w-[960px] w-full' : 'w-full'}`}
+        >
+          {state === 'result' ? (
+            <WritingReviewWorkbench
+              prompt={promptText}
+              essay={essay}
+              analysis={displayAnalysis}
+              onStartNew={() => { setState('idle'); setAnalysis(null); setResultEssay(null); setActiveParagraphIndex(null); }}
+            />
+          ) : (
+            <>
 
           {/* LEFT: Essay + Tabs / Input Form */}
                     <main 
             style={{ width: `calc(${leftWidth}% - 12px)` }}
-            className={`shrink-0 bg-white rounded-[24px] shadow-[0_2px_12px_rgba(0,0,0,0.03),0_0_0_1px_rgba(0,0,0,0.04)] p-6 md:p-8 hide-scrollbar h-full flex flex-col ${state === 'result' ? 'overflow-y-auto' : 'overflow-hidden'}`}
+            className="shrink-0 bg-white rounded-[24px] shadow-[0_2px_12px_rgba(0,0,0,0.03),0_0_0_1px_rgba(0,0,0,0.04)] p-6 md:p-8 hide-scrollbar h-full flex flex-col overflow-hidden"
           >
             <div className="flex flex-col h-full min-h-0">
               <div className="flex items-center justify-between mb-8 shrink-0">
@@ -162,8 +229,8 @@ export default function WritingPage() {
                   </Link>
                 ) : (
                   <button
-                    onClick={() => { setState('idle'); setAnalysis(null); setActiveParagraphIndex(null); }}
-                    className="font-sans text-[13px] font-medium bg-[#141413] text-[#FFFFFF] px-4 py-2 rounded-[12px] hover:bg-black transition-colors flex items-center gap-1.5"
+                    onClick={() => { setState('idle'); setAnalysis(null); setResultEssay(null); setActiveParagraphIndex(null); }}
+                    className="font-sans text-[13px] font-medium text-[#857F70] px-1 py-2 rounded-[8px] hover:text-[#141413] transition-colors flex items-center gap-1.5"
                   >
                     <span>←</span> Bài mới
                   </button>
@@ -180,78 +247,19 @@ export default function WritingPage() {
 
               <div className="border-t border-black/8 pt-6 flex flex-col flex-1 min-h-0">
                             <p className="font-mono text-[9px] font-semibold tracking-[0.12em] uppercase text-black/35 mb-4">
-                              {activeDimension === 'taskAchievement' ? 'Pyramid' : 'Feedback Details'}
+                              {activeDimension === 'taskAchievement' ? 'Planning' : 'Feedback Details'}
                             </p>
                             {activeDimension === 'taskAchievement' ? (
-                              state === 'result' ? (
                                 <>
-                                  <SimplePyramid
-                                    macroAnswer={displayAnalysis.pyramid.macroAnswer}
-                                    paragraphs={displayAnalysis.pyramid.paragraphs}
-                                    activeParagraphIndex={activeParagraphIndex}
-                                    onParagraphClick={setActiveParagraphIndex}
-                                    onRequestFullscreen={() => setIsPyramidFullscreen(true)}
-                                  />
-                                  <AnimatePresence>
-                                  {isPyramidFullscreen && (
-                                    <motion.div 
-                                      initial={{ opacity: 0 }}
-                                      animate={{ opacity: 1 }}
-                                      exit={{ opacity: 0 }}
-                                      className="fixed inset-0 z-50"
-                                    >
-                                      <motion.div 
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="absolute inset-0 bg-black/20" 
-                                      />
-                                      <div className="absolute inset-8 md:inset-12 flex justify-center">
-                                        <motion.div 
-                                          initial={{ opacity: 0, scale: 0.96, y: 16 }}
-                                          animate={{ opacity: 1, scale: 1, y: 0 }}
-                                          exit={{ opacity: 0, scale: 0.96, y: 16 }}
-                                          transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-                                          className="w-full h-full max-w-[1400px] bg-[#F8F7F4] rounded-[24px] shadow-2xl flex flex-col overflow-hidden border border-black/5 relative" style={{ fontFamily: 'inherit' }}
-                                        >
-                                          <div className="flex items-center justify-between px-6 py-4 border-b border-black/[0.06] bg-white/80 backdrop-blur-sm shrink-0 relative z-10">
-                                          <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/40">Sơ đồ lập luận — Fullscreen</span>
-                                          <button
-                                            onClick={() => setIsPyramidFullscreen(false)}
-                                            className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-black/40 hover:text-black/80 transition-colors"
-                                          >
-                                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v4H3M21 8h-4V3M16 21v-4h4M3 16h4v4"/></svg>
-                                            Esc
-                                          </button>
-                                        </div>
-                                        <div className="flex-1 overflow-hidden relative">
-                                          <SimplePyramid
-                                            macroAnswer={displayAnalysis.pyramid.macroAnswer}
-                                            paragraphs={displayAnalysis.pyramid.paragraphs}
-                                            activeParagraphIndex={activeParagraphIndex}
-                                            onParagraphClick={setActiveParagraphIndex}
-                                            isFullscreen={true}
-                                            onExitFullscreen={() => setIsPyramidFullscreen(false)}
-                                          />
-                                        </div>
-                                      </motion.div>
-                                    </div>
-                                  </motion.div>
-                                )}
-                                </AnimatePresence>
-                                </>
-                              ) : (
-                                <>
-                                  <EditablePyramid
-                                    pyramid={planPyramid}
+                                  <EditableArgumentGraph
+                                    graph={planPyramid}
                                     onChange={setPlanPyramid}
                                     activeParagraphIndex={activeParagraphIndex}
                                     onParagraphClick={setActiveParagraphIndex}
-                                    onRequestFullscreen={() => setIsPyramidFullscreen(true)}
+                                    onRequestFullscreen={() => setIsGraphFullscreen(true)}
                                   />
                                   <AnimatePresence>
-                                  {isPyramidFullscreen && (
+                                  {isGraphFullscreen && (
                                     <motion.div 
                                       initial={{ opacity: 0 }}
                                       animate={{ opacity: 1 }}
@@ -271,13 +279,13 @@ export default function WritingPage() {
                                           animate={{ opacity: 1, scale: 1, y: 0 }}
                                           exit={{ opacity: 0, scale: 0.96, y: 16 }}
                                           transition={{ type: "spring", bounce: 0, duration: 0.4 }}
-                                          className="w-full h-full max-w-[1400px] bg-[#F8F7F4] rounded-[24px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.18)] flex flex-col overflow-hidden border border-black/5 relative"
+                                          className="w-full h-full max-w-[1400px] bg-[#F2F2F2] rounded-[24px] shadow-[0px_13.18px_7.688px_0px_rgba(0,0,0,0.02),0px_5.492px_5.492px_0px_rgba(0,0,0,0.04),0px_1.098px_3.295px_0px_rgba(0,0,0,0.04)] flex flex-col overflow-hidden border border-black/[0.06] relative"
                                           style={{ fontFamily: 'inherit' }}
                                         >
                                           <div className="flex items-center justify-between px-6 py-4 border-b border-black/[0.06] bg-white/80 backdrop-blur-sm shrink-0 relative z-10">
-                                            <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/40">Sơ đồ lập luận — Planning</span>
+                                            <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/40">Argument outline — Planning</span>
                                             <button
-                                              onClick={() => setIsPyramidFullscreen(false)}
+                                              onClick={() => setIsGraphFullscreen(false)}
                                               className="flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-widest text-black/40 hover:text-black/80 transition-colors"
                                             >
                                               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v4H3M21 8h-4V3M16 21v-4h4M3 16h4v4"/></svg>
@@ -285,8 +293,8 @@ export default function WritingPage() {
                                             </button>
                                           </div>
                                           <div className="flex-1 overflow-hidden relative hide-scrollbar">
-                                            <EditablePyramid
-                                              pyramid={planPyramid}
+                                            <EditableArgumentGraph
+                                              graph={planPyramid}
                                               onChange={setPlanPyramid}
                                               activeParagraphIndex={activeParagraphIndex}
                                               onParagraphClick={setActiveParagraphIndex}
@@ -299,10 +307,8 @@ export default function WritingPage() {
                                   )}
                                 </AnimatePresence>
                                 </>
-                              )
                             ) : (
                               <div className="flex flex-col items-center justify-center h-48 bg-black/[0.02] rounded-[16px] border border-black-[0.04] border-dashed">
-                                <span className="text-[24px] mb-3 opacity-30">🛠️</span>
                                 <p className="font-sans text-[13px] text-black/40">
                                   Detailed analysis for this dimension coming soon.
                                 </p>
@@ -321,7 +327,7 @@ export default function WritingPage() {
             <div className={`w-[4px] h-12 rounded-[10px] transition-colors duration-150 ${isDragging ? 'bg-black/30' : 'bg-black/10 group-hover:bg-black/20'}`} />
           </div>
 
-          {/* RIGHT: Reasoning Map */}
+          {/* RIGHT: Essay input */}
           <aside 
             style={{ width: `calc(${100 - leftWidth}% - 12px)`, marginLeft: '24px' }}
             className="shrink-0 bg-white rounded-[24px] shadow-[0_2px_12px_rgba(0,0,0,0.03),0_0_0_1px_rgba(0,0,0,0.04)] p-6 overflow-hidden h-full flex flex-col"
@@ -334,7 +340,7 @@ export default function WritingPage() {
               {state === 'idle' || state === 'analyzing' ? (
                 <div className="flex flex-col gap-4 flex-grow min-h-0">
 
-                  {/* Essay inputs by pyramid */}
+                  {/* Essay inputs by paragraph */}
                   <div className="flex flex-col flex-grow min-h-0">
                     <div className="flex items-center justify-between mb-4 shrink-0">
                       <label className="block font-mono text-[10px] font-semibold tracking-[0.12em] uppercase text-black/50">
@@ -384,39 +390,26 @@ export default function WritingPage() {
                       )}
                     </button>
 
-                    <button
-                      onClick={() => {
-                        const parts = DEMO_ESSAY.split('\n\n');
-                        const newTexts: Record<string, string> = {};
-                        planPyramid.paragraphs.forEach((p, i) => {
-                          newTexts[p.index] = parts[i] || '';
-                        });
-                        setParagraphTexts(newTexts);
-                        setAnalysis(DEMO_ANALYSIS);
-                        setState('result');
-                      }}
-                      className="font-sans text-[13px] font-medium border border-[#E2E2E2] hover:border-[#111] text-[#111] px-5 py-2.5 rounded-[10px] transition-colors"
-                    >
-                      Tải bài mẫu
-                    </button>
                   </div>
                 </div>
-              ) : (
-                <EssayPanel 
-                  essay={essay} 
-                  analysis={analysis as WritingAnalysis} 
-                  activeDimension={activeDimension} 
-                  onHighlightClick={(index) => setActiveParagraphIndex(index)}
-                />
-              )}
+              ) : null}
             </div>
           </aside>
 
 
 
 
+            </>
+          )}
         </div>
       </div>
+
+      {persistenceError && state === 'result' && (
+        <div className="fixed bottom-5 left-1/2 z-[120] flex -translate-x-1/2 items-center gap-3 rounded-[9px] border border-[#EC6A5B]/25 bg-white px-4 py-3 shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
+          <p className="font-sans text-[11px] text-[#7A3028]">{persistenceError}</p>
+          <button type="button" onClick={() => setPersistenceError(null)} className="font-mono text-[9px] uppercase text-black/45 hover:text-black">Đóng</button>
+        </div>
+      )}
 
       {isMounted && typeof document !== 'undefined' ? createPortal(
         <>

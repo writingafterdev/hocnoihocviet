@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Critical Writer Benchmark Importer",
+  "version": "1.0.0",
+  "description": "Extract a YouPass essay, prompt, and scores, then save a MiMo reference assessment through the local app.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Import current benchmark assessment"
+  }
+}

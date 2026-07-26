@@ -1,0 +1,819 @@
+{
+  "analysis": {
+    "promptType": "agree_disagree",
+    "assessmentAudit": {
+      "provisionalScores": {
+        "taskAchievement": 8,
+        "coherenceCohesion": 8,
+        "lexicalResource": 8,
+        "grammaticalRange": 8,
+        "overall": 8
+      },
+      "evidenceScores": {
+        "taskAchievement": 8,
+        "coherenceCohesion": 8,
+        "lexicalResource": 8,
+        "grammaticalRange": 8,
+        "overall": 8
+      },
+      "reconciliation": {
+        "changedCriteria": [],
+        "summaryVi": "Điểm ban đầu đã được đối chiếu lại với toàn bài sau bước xác minh. Chỉ các vấn đề có bằng chứng đủ rõ và ảnh hưởng đáng kể mới được giữ lại; kết quả này không khẳng định đã phát hiện mọi lỗi có thể có. Prompt profile được dùng như diagnostic lens; quote được resolve lại với nguyên văn ở local."
+      }
+    },
+    "scores": {
+      "taskAchievement": 8,
+      "coherenceCohesion": 8,
+      "lexicalResource": 8,
+      "grammaticalRange": 8,
+      "overall": 8
+    },
+    "taskCoverage": [
+      {
+        "id": "requirement:position",
+        "requirement": "The essay must clearly state the writer's position on the extent of agreement with treating young offenders like adults.",
+        "status": "fully_addressed",
+        "evidenceNodeIds": [
+          "sentence-0-2"
+        ],
+        "assessmentVi": "Vị trí của tác giả được nêu rõ ràng ở đoạn mở đầu và được duy trì xuyên suốt bài viết."
+      },
+      {
+        "id": "requirement:development",
+        "requirement": "The essay must develop and support the stated position with relevant ideas and explanations.",
+        "status": "fully_addressed",
+        "evidenceNodeIds": [
+          "sentence-2-1",
+          "sentence-3-1"
+        ],
+        "assessmentVi": "Quan điểm được hỗ trợ bởi hai ý tưởng chính: sự khác biệt về phát triển não bộ và sự cần thiết phải tập trung vào cải tạo, mỗi ý đều được giải thích và mở rộng."
+      },
+      {
+        "id": "requirement:comparison",
+        "requirement": "If arguing for different treatment, the essay must justify why it is necessary or more appropriate for young people.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-2-4"
+        ],
+        "assessmentVi": "Bài viết giải thích rõ tại sao việc đối xử khác biệt là cần thiết dựa trên sự phát triển não bộ chưa hoàn thiện của thanh thiếu niên."
+      }
+    ],
+    "relevanceGate": [
+      {
+        "nodeId": "sentence-0-1",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-0-2",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-1",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-2",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-3",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-4",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-1",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-2",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-3",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-4",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-1",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-2",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-3",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-4",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-4-1",
+        "paragraphIndex": 4,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-4-2",
+        "paragraphIndex": 4,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      }
+    ],
+    "argumentFlowOverview": {
+      "titleVi": "",
+      "bodyVi": "",
+      "nodeIds": []
+    },
+    "argumentFlowChapters": [],
+    "pyramid": {
+      "macroAnswer": {
+        "text": "The writer fully disagrees with treating young offenders the same as adults, arguing for different treatment based on developmental differences and a focus on rehabilitation.",
+        "errors": [
+          {
+            "errorCode": "unsupported_comparative_judgment",
+            "errorLabelVi": "Phép cân chưa được chứng minh",
+            "type": "internal",
+            "message": "Phép cân chưa được chứng minh",
+            "explanation": "Bài viết giải thích rõ tại sao việc đối xử khác biệt là cần thiết dựa trên sự phát triển não bộ chưa hoàn thiện của thanh thiếu niên.",
+            "suggestion": "Bạn cần thêm một câu cân trực tiếp: vì sao lợi ích/hại này lớn hơn phía còn lại về phạm vi, mức độ, tần suất hoặc hậu quả.",
+            "affectedNodes": {
+              "paragraphs": [
+                2
+              ],
+              "sentences": [
+                {
+                  "paraIndex": 2,
+                  "sentenceIndex": 4
+                }
+              ]
+            },
+            "proposedFix": {
+              "type": "rewrite",
+              "details": "Bạn cần thêm một câu cân trực tiếp: vì sao lợi ích/hại này lớn hơn phía còn lại về phạm vi, mức độ, tần suất hoặc hậu quả.",
+              "whyBetter": ""
+            },
+            "comment": {
+              "bodyVi": "Bài viết giải thích rõ tại sao việc đối xử khác biệt là cần thiết dựa trên sự phát triển não bộ chưa hoàn thiện của thanh thiếu niên.",
+              "solutionBodyVi": "Bạn cần thêm một câu cân trực tiếp: vì sao lợi ích/hại này lớn hơn phía còn lại về phạm vi, mức độ, tần suất hoặc hậu quả."
+            },
+            "evidenceSpans": [
+              {
+                "startChar": 1146,
+                "endChar": 1357,
+                "sourceText": "Applying adult-level punishments for juveniles fails to account for these developmental differences and may result in unjustly harsh punishments that do not align with the offenders' capacity for rehabilitation.",
+                "role": "primary"
+              }
+            ],
+            "nodeLinks": {
+              "primaryNodeIds": [
+                "sentence-2-4"
+              ],
+              "contextNodeIds": [],
+              "affectedNodeIds": []
+            },
+            "descriptorAnchor": {
+              "criterion": "task_response",
+              "featureCode": "unsupported_comparative_judgment",
+              "featureEn": "a clear and developed position that directly answers an outweigh task"
+            }
+          }
+        ],
+        "review": {
+          "nodeId": "macro",
+          "status": "weak",
+          "job": "State and sustain the essay position",
+          "assessment": "",
+          "issues": []
+        }
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "label": "Introduction",
+          "job": "",
+          "paragraphStartChar": 0,
+          "paragraphEndChar": 201,
+          "errors": [],
+          "review": {
+            "nodeId": "para-0",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-0-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "Some people propose that young offenders should face the same legal consequences as their adult counterparts, regardless of age.",
+              "startChar": 0,
+              "endChar": 128,
+              "role": "claim",
+              "simplifiedIdea": "Some people propose that young offenders should face the same legal consequences as their adult counterparts, regardless of age.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-1",
+                "status": "works",
+                "job": "Some people propose that young offenders should face the same legal consequences as their adult counterparts, regardless of age.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-0-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "I disagree with this proposal, despite acknowledging the reasons for it.",
+              "startChar": 129,
+              "endChar": 201,
+              "role": "claim",
+              "simplifiedIdea": "I disagree with this proposal, despite acknowledging the reasons for it.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-2",
+                "status": "works",
+                "job": "I disagree with this proposal, despite acknowledging the reasons for it.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "label": "Paragraph 2",
+          "job": "Those who support treating young offenders like adults often emphasize that it serves as a strong deterrent.",
+          "paragraphStartChar": 203,
+          "paragraphEndChar": 718,
+          "errors": [],
+          "review": {
+            "nodeId": "para-1",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-1-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "Those who support treating young offenders like adults often emphasize that it serves as a strong deterrent.",
+              "startChar": 203,
+              "endChar": 311,
+              "role": "claim",
+              "simplifiedIdea": "Those who support treating young offenders like adults often emphasize that it serves as a strong deterrent.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-1",
+                "status": "works",
+                "job": "Those who support treating young offenders like adults often emphasize that it serves as a strong deterrent.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-1-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Harsher penalties, they believe, will instill fear and discourage juveniles from engaging in criminal activities.",
+              "startChar": 312,
+              "endChar": 425,
+              "role": "claim",
+              "simplifiedIdea": "Harsher penalties, they believe, will instill fear and discourage juveniles from engaging in criminal activities.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-2",
+                "status": "works",
+                "job": "Harsher penalties, they believe, will instill fear and discourage juveniles from engaging in criminal activities.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-1-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "For example, proponents might argue that a teenager committing a serious crime, such as robbery or assault, should face the same severe consequences as an adult to understand the gravity of their actions.",
+              "startChar": 426,
+              "endChar": 630,
+              "role": "claim",
+              "simplifiedIdea": "For example, proponents might argue that a teenager committing a serious crime, such as robbery or assault, should face the same severe consequences as an adult to understand the gravity of their actions.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-3",
+                "status": "works",
+                "job": "For example, proponents might argue that a teenager committing a serious crime, such as robbery or assault, should face the same severe consequences as an adult to understand the gravity of their actions.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-1-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "They claim that equal treatment ensures justice for victims and maintains social order.",
+              "startChar": 631,
+              "endChar": 718,
+              "role": "claim",
+              "simplifiedIdea": "They claim that equal treatment ensures justice for victims and maintains social order.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-4",
+                "status": "works",
+                "job": "They claim that equal treatment ensures justice for victims and maintains social order.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Paragraph 3",
+          "job": "However, this perspective overlooks the fact that juveniles are fundamentally different from adults in terms of cognitive and emotional development.",
+          "paragraphStartChar": 720,
+          "paragraphEndChar": 1357,
+          "errors": [],
+          "review": {
+            "nodeId": "para-2",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-2-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "However, this perspective overlooks the fact that juveniles are fundamentally different from adults in terms of cognitive and emotional development.",
+              "startChar": 720,
+              "endChar": 868,
+              "role": "claim",
+              "simplifiedIdea": "However, this perspective overlooks the fact that juveniles are fundamentally different from adults in terms of cognitive and emotional development.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-1",
+                "status": "works",
+                "job": "However, this perspective overlooks the fact that juveniles are fundamentally different from adults in terms of cognitive and emotional development.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-2-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Scientific research has shown that the brains of young people are not fully developed, particularly in areas responsible for impulse control and decision-making.",
+              "startChar": 869,
+              "endChar": 1030,
+              "role": "claim",
+              "simplifiedIdea": "Scientific research has shown that the brains of young people are not fully developed, particularly in areas responsible for impulse control and decision-making.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-2",
+                "status": "works",
+                "job": "Scientific research has shown that the brains of young people are not fully developed, particularly in areas responsible for impulse control and decision-making.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-2-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "This immaturity often leads to poor judgment and a lack of foresight regarding the repercussions of their actions.",
+              "startChar": 1031,
+              "endChar": 1145,
+              "role": "claim",
+              "simplifiedIdea": "This immaturity often leads to poor judgment and a lack of foresight regarding the repercussions of their actions.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-3",
+                "status": "works",
+                "job": "This immaturity often leads to poor judgment and a lack of foresight regarding the repercussions of their actions.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-2-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "Applying adult-level punishments for juveniles fails to account for these developmental differences and may result in unjustly harsh punishments that do not align with the offenders' capacity for rehabilitation.",
+              "startChar": 1146,
+              "endChar": 1357,
+              "role": "claim",
+              "simplifiedIdea": "Applying adult-level punishments for juveniles fails to account for these developmental differences and may result in unjustly harsh punishments that do not align with the offenders' capacity for rehabilitation.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-4",
+                "status": "works",
+                "job": "Applying adult-level punishments for juveniles fails to account for these developmental differences and may result in unjustly harsh punishments that do not align with the offenders' capacity for rehabilitation.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Paragraph 4",
+          "job": "Moreover, the primary focus of juvenile justice should be rehabilitation rather than punishment.",
+          "paragraphStartChar": 1359,
+          "paragraphEndChar": 1875,
+          "errors": [],
+          "review": {
+            "nodeId": "para-3",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-3-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "Moreover, the primary focus of juvenile justice should be rehabilitation rather than punishment.",
+              "startChar": 1359,
+              "endChar": 1455,
+              "role": "claim",
+              "simplifiedIdea": "Moreover, the primary focus of juvenile justice should be rehabilitation rather than punishment.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-1",
+                "status": "works",
+                "job": "Moreover, the primary focus of juvenile justice should be rehabilitation rather than punishment.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-3-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Young offenders have a higher potential for change and reformation if given appropriate guidance and support.",
+              "startChar": 1456,
+              "endChar": 1565,
+              "role": "claim",
+              "simplifiedIdea": "Young offenders have a higher potential for change and reformation if given appropriate guidance and support.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-2",
+                "status": "works",
+                "job": "Young offenders have a higher potential for change and reformation if given appropriate guidance and support.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-3-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "Programs that focus on education, counseling, and community service can help redirect juveniles towards a productive path, reducing the likelihood of reoffending.",
+              "startChar": 1566,
+              "endChar": 1728,
+              "role": "claim",
+              "simplifiedIdea": "Programs that focus on education, counseling, and community service can help redirect juveniles towards a productive path, reducing the likelihood of reoffending.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-3",
+                "status": "works",
+                "job": "Programs that focus on education, counseling, and community service can help redirect juveniles towards a productive path, reducing the likelihood of reoffending.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-3-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "Treating young offenders like adults often places them in environments that are more likely to reinforce criminal behavior rather than correct it.",
+              "startChar": 1729,
+              "endChar": 1875,
+              "role": "claim",
+              "simplifiedIdea": "Treating young offenders like adults often places them in environments that are more likely to reinforce criminal behavior rather than correct it.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-4",
+                "status": "works",
+                "job": "Treating young offenders like adults often places them in environments that are more likely to reinforce criminal behavior rather than correct it.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "label": "Paragraph 5",
+          "job": "",
+          "paragraphStartChar": 1877,
+          "paragraphEndChar": 2252,
+          "errors": [],
+          "review": {
+            "nodeId": "para-4",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-4-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "In conclusion, while equal treatment of young and adult offenders might seem like a straightforward approach to justice, it fails to consider the unique needs and potential for rehabilitation among juveniles.",
+              "startChar": 1877,
+              "endChar": 2085,
+              "role": "claim",
+              "simplifiedIdea": "In conclusion, while equal treatment of young and adult offenders might seem like a straightforward approach to justice, it fails to consider the unique needs and potential for rehabilitation among juveniles.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-4-1",
+                "status": "works",
+                "job": "In conclusion, while equal treatment of young and adult offenders might seem like a straightforward approach to justice, it fails to consider the unique needs and potential for rehabilitation among juveniles.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-4-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "A justice system that recognizes these differences and focuses on rehabilitation will be more effective in promoting long-term societal well-being and reducing crime.",
+              "startChar": 2086,
+              "endChar": 2252,
+              "role": "claim",
+              "simplifiedIdea": "A justice system that recognizes these differences and focuses on rehabilitation will be more effective in promoting long-term societal well-being and reducing crime.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-4-2",
+                "status": "works",
+                "job": "A justice system that recognizes these differences and focuses on rehabilitation will be more effective in promoting long-term societal well-being and reducing crime.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        }
+      ],
+      "edgeReviews": [],
+      "coherenceFlows": []
+    },
+    "cohesionHighlights": [
+      {
+        "startChar": 1031,
+        "endChar": 1145,
+        "errorCode": "faulty_sentence_link",
+        "errorLabelVi": "Tham chiếu chưa rõ",
+        "highlightType": "error",
+        "label": "Tham chiếu chưa rõ",
+        "sourceText": "This immaturity often leads to poor judgment and a lack of foresight regarding the repercussions of their actions.",
+        "feedback": "Bạn chuyển từ việc mô tả 'immaturity' (sự thiếu trưởng thành) sang chủ đề mới là 'Applying adult-level punishments' (Việc áp dụng hình phạt dành cho người lớn). Mặc dù hai ý liên quan, nhưng chủ đề của câu mới không được thiết lập rõ ràng từ câu trước. Câu trước kết thúc với 'repercussions of their actions', và câu sau bắt đầu một chủ đề mới về 'hình phạt' mà không có từ nối hoặc tham chiếu nào quay lại 'immaturity' hoặc 'developmental differences' vừa được nhắc đến.",
+        "replacementText": "Given this immaturity, applying adult-level punishments for juveniles fails to account for these developmental differences",
+        "correction": "Given this immaturity, applying adult-level punishments for juveniles fails to account for these developmental differences",
+        "suggestedText": "Given this immaturity, applying adult-level punishments for juveniles fails to account for these developmental differences",
+        "solutionFeedback": "Thêm một cụm từ liên kết ở đầu câu sau để gắn nó trực tiếp với 'immaturity' hoặc 'developmental differences', ví dụ: 'Given this immaturity, applying adult-level punishments...' hoặc 'Therefore, applying adult-level punishments...'",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "coherence_cohesion",
+          "featureCode": "faulty_sentence_link",
+          "featureEn": "cohesion within sentences is accurate"
+        }
+      }
+    ],
+    "lexicalHighlights": [
+      {
+        "startChar": 350,
+        "endChar": 362,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "instill fear",
+        "feedback": "Bạn dùng 'instill fear' trong ngữ cảnh hình phạt răn đe. Mặc dù từ này đúng nghĩa, nhưng trong bối cảnh pháp lý và xã hội, người ta thường dùng 'deter' hoặc 'create a deterrent effect' để diễn tả việc ngăn chặn tội phạm bằng hình phạt. 'Instill' thường dùng với 'instill values' hoặc 'instill confidence'.",
+        "replacementText": "serve as a deterrent",
+        "correction": "serve as a deterrent",
+        "suggestedText": "serve as a deterrent",
+        "solutionFeedback": "thay thế bằng 'serve as a deterrent' hoặc 'create a deterrent effect'",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      },
+      {
+        "startChar": 1114,
+        "endChar": 1127,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "repercussions",
+        "feedback": "Bạn dùng 'repercussions' để nói về hậu quả của hành động. Từ này hoàn toàn chính xác, nhưng trong ngữ cảnh này, 'consequences' hoặc 'effects' sẽ tự nhiên và phổ biến hơn. 'Repercussions' thường dùng cho các hậu quả lớn, phức tạp hoặc gián tiếp.",
+        "replacementText": "consequences",
+        "correction": "consequences",
+        "suggestedText": "consequences",
+        "solutionFeedback": "thay thế bằng 'consequences'",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      }
+    ],
+    "grammaticalHighlights": [
+      {
+        "startChar": 426,
+        "endChar": 630,
+        "errorCode": "article_error",
+        "errorLabelVi": "Sai mạo từ",
+        "highlightType": "error",
+        "label": "Sai mạo từ",
+        "sourceText": "For example, proponents might argue that a teenager committing a serious crime, such as robbery or assault, should face the same severe consequences as an adult to understand the gravity of their actions.",
+        "feedback": "Bạn đã bỏ sót mạo từ 'the' trước cụm danh từ 'gravity of their actions' trong một câu phức tạp.",
+        "replacementText": "to understand the gravity of their actions.",
+        "correction": "to understand the gravity of their actions.",
+        "suggestedText": "to understand the gravity of their actions.",
+        "solutionFeedback": "Thêm mạo từ 'the' trước 'gravity'.",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "article_error",
+          "featureEn": "articles are used accurately"
+        }
+      },
+      {
+        "startChar": 1566,
+        "endChar": 1728,
+        "errorCode": "complex_structure_breakdown",
+        "errorLabelVi": "Cấu trúc phức bị gãy",
+        "highlightType": "error",
+        "label": "Cấu trúc phức bị gãy",
+        "sourceText": "Programs that focus on education, counseling, and community service can help redirect juveniles towards a productive path, reducing the likelihood of reoffending.",
+        "feedback": "Bạn sử dụng 'towards' nhưng 'toward' (không có 's') cũng chính xác và phổ biến hơn trong một số ngữ cảnh. Đây là một sai sót nhỏ về sự trôi chảy.",
+        "replacementText": "redirect juveniles toward a productive path",
+        "correction": "redirect juveniles toward a productive path",
+        "suggestedText": "redirect juveniles toward a productive path",
+        "solutionFeedback": "Thay 'towards' bằng 'toward' để tự nhiên hơn.",
+        "paragraphIndex": 3,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "complex_structure_breakdown",
+          "featureEn": "complex structures are used with flexibility and accuracy"
+        }
+      }
+    ],
+    "overallAssessment": {
+      "summaryVi": "Bài được chấm 8. Phần tổng hợp chỉ dùng những vấn đề đã được đối chiếu với nguyên văn và đủ rõ để đưa ra feedback; kết quả không được xem là danh sách đầy đủ mọi lỗi có thể có.",
+      "priorities": [
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Phép cân chưa được chứng minh",
+          "actionVi": "Bạn cần thêm một câu cân trực tiếp: vì sao lợi ích/hại này lớn hơn phía còn lại về phạm vi, mức độ, tần suất hoặc hậu quả.",
+          "evidenceIds": [
+            "coverage:1"
+          ]
+        }
+      ],
+      "descriptorAlignment": [
+        {
+          "criterion": "taskAchievement",
+          "band": 8,
+          "rationaleVi": "Bạn đã trình bày một lập trường rõ ràng và duy trì nó xuyên suốt bài luận, đồng thời phát triển các ý chính bằng lý luận logic và bằng chứng khoa học. Tuy nhiên, phần phát triển điểm chính về sự khác biệt nhận thức có thể được mở rộng thêm để giải thích rõ hơn cơ chế tại sao điều này dẫn đến hình phạt không công bằng.",
+          "evidenceIds": [
+            "coverage:1"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "band": 8,
+          "rationaleVi": "Bài luận có kiến trúc logic rõ ràng: mở bài nêu lập trường, thân bài trình bày và bác bỏ quan điểm đối lập, sau đó đưa ra hai lý do chính để bảo vệ quan điểm của mình, và kết bài tóm tắt. Các đoạn có ý tưởng kiểm soát rõ ràng và di chuyển theo hướng đã hứa. Bài luận duy trì sự gắn kết tốt thông qua chuỗi tham chiếu rõ ràng và sự chuyển tiếp mượt mà giữa các câu, mặc dù có một số điểm yếu nhỏ trong việc chuyển giao ý tưởng mới.",
+          "evidenceIds": [
+            "cohesion:2"
+          ]
+        },
+        {
+          "criterion": "lexicalResource",
+          "band": 8,
+          "rationaleVi": "Bạn sử dụng từ vựng đa dạng, chính xác và phù hợp với chủ đề pháp luật, xã hội. Các thuật ngữ chuyên ngành được dùng đúng ngữ cảnh và tự nhiên. Có một vài chỗ dùng từ hơi chung chung nhưng không ảnh hưởng lớn đến sự trôi chảy.",
+          "evidenceIds": [
+            "lr:1",
+            "lr:2"
+          ]
+        },
+        {
+          "criterion": "grammaticalRange",
+          "band": 8,
+          "rationaleVi": "Bạn sử dụng cấu trúc câu đa dạng và chính xác, bao gồm câu ghép và câu phức tạp với các mệnh đề quan hệ và trạng ngữ. Lỗi ngữ pháp rất ít và không đáng kể, chủ yếu là những sai sót nhỏ về mạo từ hoặc sự trôi chảy tự nhiên, không ảnh hưởng đến việc truyền đạt ý nghĩa.",
+          "evidenceIds": [
+            "gra:1",
+            "gra:2"
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "targetBand": 8,
+      "revisedEssay": "Some people propose that young offenders should face the same legal consequences as their adult counterparts, regardless of age. I disagree with this proposal, despite acknowledging the reasons for it.\n\nThose who support treating young offenders like adults often emphasize that it serves as a strong deterrent. Harsher penalties, they believe, will create a deterrent effect and discourage juveniles from engaging in criminal activities. For example, proponents might argue that a teenager committing a serious crime, such as robbery or assault, should face the same severe consequences as an adult to understand the gravity of their actions. They claim that equal treatment ensures justice for victims and maintains social order.\n\nHowever, this perspective overlooks the fact that juveniles are fundamentally different from adults in terms of cognitive and emotional development. Scientific research has shown that the brains of young people are not fully developed, particularly in areas responsible for impulse control and decision-making. This immaturity often leads to poor judgment and a lack of foresight regarding the consequences of their actions. Given this immaturity, applying adult-level punishments for juveniles fails to account for these developmental differences and may result in unjustly harsh punishments that do not align with the offenders' capacity for rehabilitation.\n\nMoreover, the primary focus of juvenile justice should be rehabilitation rather than punishment. Young offenders have a higher potential for change and reformation if given appropriate guidance and support. Programs that focus on education, counseling, and community service can help redirect juveniles toward a productive path, reducing the likelihood of reoffending. Treating young offenders like adults often places them in environments that are more likely to reinforce criminal behavior rather than correct it.\n\nIn conclusion, while equal treatment of young and adult offenders might seem like a straightforward approach to justice, it fails to consider the unique needs and potential for rehabilitation among juveniles. The benefits of a rehabilitation-focused system for long-term crime reduction and societal well-being clearly outweigh the perceived deterrent benefits of equal punishment. A justice system that recognizes these differences and focuses on rehabilitation will be more effective in promoting long-term societal well-being and reducing crime.",
+      "changeSummaryVi": "Bản sửa đã khắc phục các lỗi nhỏ về từ vựng ('instill fear' -> 'serve as a deterrent', 'repercussions' -> 'consequences'), ngữ pháp (thêm mạo từ 'the', sửa 'towards' thành 'toward'), và liên kết câu (thêm 'Given this immaturity'). Quan trọng nhất, bản sửa đã thêm một câu so sánh trực tiếp ở phần kết luận để đáp ứng yêu cầu của đề bài về việc cân nhắc lợi ích và hại, từ đó củng cố lập luận và đạt được band điểm cao hơn.",
+      "preservedStrengthsVi": [
+        "Cấu trúc bài luận rõ ràng với các đoạn văn phát triển ý riêng biệt.",
+        "Lập luận phản biện dựa trên cơ sở khoa học về sự phát triển não bộ.",
+        "Từ vựng và ngữ pháp tổng thể đã ở mức tốt."
+      ],
+      "changes": []
+    }
+  }
+}

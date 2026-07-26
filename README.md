@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# DeepSeek assessment benchmark
+
+Run an assessment benchmark from a JSON file containing `prompt` and `essay` strings:
+
+```bash
+npm run benchmark:deepseek -- --input tmp/request.json --output tmp/result.json
+```
+
+The runner loads `.env.local`, uses `DEEPSEEK_API_KEY` without printing it, and defaults to a hard `$0.10` preflight cap. Override the cap with `--max-usd`; override conservative token prices with `DEEPSEEK_INPUT_CACHE_HIT_USD_PER_MILLION`, `DEEPSEEK_INPUT_CACHE_MISS_USD_PER_MILLION`, and `DEEPSEEK_OUTPUT_USD_PER_MILLION`. Custom model names require all three prices. Requests stop before dispatch when their worst-case reservation would exceed the remaining cap.

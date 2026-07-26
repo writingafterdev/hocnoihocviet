@@ -1,0 +1,932 @@
+{
+  "analysis": {
+    "promptType": "discuss_both",
+    "assessmentAudit": {
+      "provisionalScores": {
+        "taskAchievement": 7,
+        "coherenceCohesion": 7,
+        "lexicalResource": 7,
+        "grammaticalRange": 7,
+        "overall": 7
+      },
+      "evidenceScores": {
+        "taskAchievement": 6,
+        "coherenceCohesion": 7,
+        "lexicalResource": 8,
+        "grammaticalRange": 8,
+        "overall": 7.5
+      },
+      "reconciliation": {
+        "changedCriteria": [
+          {
+            "criterion": "taskAchievement",
+            "provisionalBand": 7,
+            "evidenceBand": 6,
+            "finalBand": 6,
+            "reasonVi": "Bạn đã trình bày cả hai quan điểm và đưa ra ý kiến cá nhân, nhưng các luận điểm chính chưa được phát triển đầy đủ, thiếu cơ chế giải thích rõ ràng và dẫn chứng chưa đủ sức nặng.",
+            "evidenceIds": []
+          },
+          {
+            "criterion": "lexicalResource",
+            "provisionalBand": 7,
+            "evidenceBand": 8,
+            "finalBand": 8,
+            "reasonVi": "Bạn sử dụng từ vựng học thuật và đa dạng, có khả năng diễn đạt chính xác các ý tưởng phức tạp. Các lỗi lexical rất ít và không đáng kể, chủ yếu là một vài chỗ dùng từ chưa tự nhiên nhất định.",
+            "evidenceIds": []
+          },
+          {
+            "criterion": "grammaticalRange",
+            "provisionalBand": 7,
+            "evidenceBand": 8,
+            "finalBand": 8,
+            "reasonVi": "Bạn sử dụng cấu trúc câu đa dạng và chính xác, bao gồm các câu ghép và câu phức tạp với các mệnh đề quan hệ, trạng từ và cụm danh từ. Có một vài lỗi nhỏ về trật tự từ và sự thiếu sót của mạo từ, nhưng những lỗi này không gây hiểu nhầm và không làm mất đi ý nghĩa của câu.",
+            "evidenceIds": []
+          }
+        ],
+        "summaryVi": "Điểm ban đầu đã được đối chiếu lại với toàn bài sau bước xác minh. Chỉ các vấn đề có bằng chứng đủ rõ và ảnh hưởng đáng kể mới được giữ lại; kết quả này không khẳng định đã phát hiện mọi lỗi có thể có. Prompt profile được dùng như diagnostic lens; quote được resolve lại với nguyên văn ở local."
+      }
+    },
+    "scores": {
+      "taskAchievement": 6,
+      "coherenceCohesion": 7,
+      "lexicalResource": 8,
+      "grammaticalRange": 8,
+      "overall": 7.5
+    },
+    "taskCoverage": [
+      {
+        "id": "hard:discuss-view-1",
+        "requirement": "Discuss the view that studying international news is beneficial or necessary for secondary students.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-1-1"
+        ],
+        "assessmentVi": "Quan điểm ủng hộ được trình bày rõ ràng với lý do chính là nâng cao nhận thức toàn cầu và chuẩn bị cho tương lai."
+      },
+      {
+        "id": "hard:discuss-view-2",
+        "requirement": "Discuss the opposing view that studying international news is a waste of school time.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-2-1"
+        ],
+        "assessmentVi": "Quan điểm phản đối được trình bày rõ ràng với lý do chính là lãng phí thời gian và không liên quan đến thi cử."
+      },
+      {
+        "id": "hard:own-opinion",
+        "requirement": "Clearly state the writer's own opinion on the issue.",
+        "status": "partly_addressed",
+        "evidenceNodeIds": [
+          "sentence-3-2"
+        ],
+        "assessmentVi": "Quan điểm cá nhân được nêu rõ ràng ở đoạn kết: ủng hộ việc đưa môn học vào chương trình nếu được triển khai đúng cách."
+      }
+    ],
+    "relevanceGate": [
+      {
+        "nodeId": "sentence-0-1",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-0-2",
+        "paragraphIndex": 0,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-1",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-2",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-3",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-1-4",
+        "paragraphIndex": 1,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-1",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-2",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-3",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-4",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-2-5",
+        "paragraphIndex": 2,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-1",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      },
+      {
+        "nodeId": "sentence-3-2",
+        "paragraphIndex": 3,
+        "status": "eligible",
+        "paragraphRoleFit": "fits",
+        "coherenceEligible": true,
+        "reasonVi": "Ý này thuộc mạch chính của đoạn."
+      }
+    ],
+    "argumentFlowOverview": {
+      "titleVi": "",
+      "bodyVi": "",
+      "nodeIds": []
+    },
+    "argumentFlowChapters": [],
+    "pyramid": {
+      "macroAnswer": {
+        "text": "The writer takes a balanced position, arguing that while international news as a subject has clear benefits for global awareness, its effectiveness is conditional on proper teaching methods and implementation.",
+        "errors": [],
+        "review": {
+          "nodeId": "macro",
+          "status": "works",
+          "job": "State and sustain the essay position",
+          "assessment": "",
+          "issues": []
+        }
+      },
+      "paragraphs": [
+        {
+          "index": 0,
+          "label": "Introduction",
+          "job": "",
+          "paragraphStartChar": 0,
+          "paragraphEndChar": 297,
+          "errors": [],
+          "review": {
+            "nodeId": "para-0",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-0-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "Globalization has increased the importance of preparing students for international engagement.",
+              "startChar": 0,
+              "endChar": 94,
+              "role": "claim",
+              "simplifiedIdea": "Globalization has increased the importance of preparing students for international engagement.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-0-1",
+                "status": "works",
+                "job": "Globalization has increased the importance of preparing students for international engagement.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-0-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Some argue that including international news in school curricula can improve global awareness and practical skills, while others believe it may be ineffective without proper teaching and exam relevance.",
+              "startChar": 95,
+              "endChar": 297,
+              "role": "claim",
+              "simplifiedIdea": "Some argue that including international news in school curricula can improve global awareness and practical skills, while others believe it may be ineffective without proper teaching and exam relevance.",
+              "errors": [
+                {
+                  "errorCode": "unsupported_claim",
+                  "errorLabelVi": "Nhận định thiếu chứng minh",
+                  "type": "internal",
+                  "message": "Nhận định thiếu chứng minh",
+                  "explanation": "Bạn đã nêu ra cả hai quan điểm nhưng chưa phát triển chúng một cách thuyết phục. Quan điểm ủng hộ chủ yếu lặp lại ý 'nâng cao nhận thức toàn cầu' mà không giải thích rõ cơ chế hoặc đưa ra lợi ích cụ thể. Quan điểm phản đối cũng chỉ đề cập đến 'sự kém hiệu quả' và 'mất tập trung vào thi cử' mà chưa chứng minh tại sao nó thực sự là một 'lãng phí thời gian'.",
+                  "suggestion": "Bạn nên giải thích rõ hơn: việc học tin tức quốc tế giúp học sinh phát triển kỹ năng tư duy phản biện hoặc hiểu biết văn hóa cụ thể nào? Và việc lãng phí thời gian sẽ dẫn đến hậu quả gì cụ thể cho việc học của các môn khác?",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      0
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 0,
+                        "sentenceIndex": 2
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên giải thích rõ hơn: việc học tin tức quốc tế giúp học sinh phát triển kỹ năng tư duy phản biện hoặc hiểu biết văn hóa cụ thể nào? Và việc lãng phí thời gian sẽ dẫn đến hậu quả gì cụ thể cho việc học của các môn khác?",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn đã nêu ra cả hai quan điểm nhưng chưa phát triển chúng một cách thuyết phục. Quan điểm ủng hộ chủ yếu lặp lại ý 'nâng cao nhận thức toàn cầu' mà không giải thích rõ cơ chế hoặc đưa ra lợi ích cụ thể. Quan điểm phản đối cũng chỉ đề cập đến 'sự kém hiệu quả' và 'mất tập trung vào thi cử' mà chưa chứng minh tại sao nó thực sự là một 'lãng phí thời gian'.",
+                    "solutionBodyVi": "Bạn nên giải thích rõ hơn: việc học tin tức quốc tế giúp học sinh phát triển kỹ năng tư duy phản biện hoặc hiểu biết văn hóa cụ thể nào? Và việc lãng phí thời gian sẽ dẫn đến hậu quả gì cụ thể cho việc học của các môn khác?"
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 95,
+                      "endChar": 297,
+                      "sourceText": "Some argue that including international news in school curricula can improve global awareness and practical skills, while others believe it may be ineffective without proper teaching and exam relevance.",
+                      "role": "context"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [],
+                    "contextNodeIds": [
+                      "sentence-0-2"
+                    ],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "unsupported_claim",
+                    "featureEn": "main ideas are supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-0-2",
+                "status": "weak",
+                "job": "Some argue that including international news in school curricula can improve global awareness and practical skills, while others believe it may be ineffective without proper teaching and exam relevance.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "label": "Paragraph 2",
+          "job": "On the one hand, many believe that using international news as a new subject is essential, as it allows secondary students to explore the world and acquire practical skills for their lives.",
+          "paragraphStartChar": 299,
+          "paragraphEndChar": 1174,
+          "errors": [],
+          "review": {
+            "nodeId": "para-1",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-1-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "On the one hand, many believe that using international news as a new subject is essential, as it allows secondary students to explore the world and acquire practical skills for their lives.",
+              "startChar": 299,
+              "endChar": 488,
+              "role": "claim",
+              "simplifiedIdea": "On the one hand, many believe that using international news as a new subject is essential, as it allows secondary students to explore the world and acquire practical skills for their lives.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-1",
+                "status": "works",
+                "job": "On the one hand, many believe that using international news as a new subject is essential, as it allows secondary students to explore the world and acquire practical skills for their lives.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-1-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "While most education systems focus on foundational subjects such as mathematics, literature, and language, they often neglect global awareness and cultural understanding.",
+              "startChar": 489,
+              "endChar": 659,
+              "role": "claim",
+              "simplifiedIdea": "While most education systems focus on foundational subjects such as mathematics, literature, and language, they often neglect global awareness and cultural understanding.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-2",
+                "status": "works",
+                "job": "While most education systems focus on foundational subjects such as mathematics, literature, and language, they often neglect global awareness and cultural understanding.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-1-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "This omission is particularly problematic in today's increasingly interconnected world, where collaboration and mutual understanding between people from diverse backgrounds have become commonplace.",
+              "startChar": 660,
+              "endChar": 857,
+              "role": "claim",
+              "simplifiedIdea": "This omission is particularly problematic in today's increasingly interconnected world, where collaboration and mutual understanding between people from diverse backgrounds have become commonplace.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-1-3",
+                "status": "works",
+                "job": "This omission is particularly problematic in today's increasingly interconnected world, where collaboration and mutual understanding between people from diverse backgrounds have become commonplace.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-1-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "To address this issue and promote international cooperation, integrating global news into the curriculum appears to be a highly effective solution, as it would expose students to various cultures, lifestyles, and global perspectives, thereby enriching their knowledge and preparing them for future global engagement.",
+              "startChar": 858,
+              "endChar": 1174,
+              "role": "claim",
+              "simplifiedIdea": "To address this issue and promote international cooperation, integrating global news into the curriculum appears to be a highly effective solution, as it would expose students to various cultures, lifestyles, and global perspectives, thereby enriching their knowledge and preparing them for future global engagement.",
+              "errors": [
+                {
+                  "errorCode": "missing_mechanism",
+                  "errorLabelVi": "Thiếu cơ chế giải thích",
+                  "type": "internal",
+                  "message": "Thiếu cơ chế giải thích",
+                  "explanation": "Bạn cho rằng việc tích hợp tin tức toàn cầu là 'một giải pháp hiệu quả' vì nó giúp học sinh tiếp xúc với nhiều nền văn hóa. Tuy nhiên, bạn chưa giải thích cơ chế: làm thế nào việc đọc tin tức lại chuyển hóa thành sự hiểu biết sâu sắc về văn hóa hoặc kỹ năng hợp tác quốc tế thực tế?",
+                  "suggestion": "Bạn nên thêm một bước giải thích, ví dụ: việc phân tích các sự kiện quốc tế giúp học sinh hiểu bối cảnh văn hóa đằng sau chúng, từ đó rèn luyện khả năng giao tiếp đa văn hóa.",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      1
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 1,
+                        "sentenceIndex": 4
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên thêm một bước giải thích, ví dụ: việc phân tích các sự kiện quốc tế giúp học sinh hiểu bối cảnh văn hóa đằng sau chúng, từ đó rèn luyện khả năng giao tiếp đa văn hóa.",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn cho rằng việc tích hợp tin tức toàn cầu là 'một giải pháp hiệu quả' vì nó giúp học sinh tiếp xúc với nhiều nền văn hóa. Tuy nhiên, bạn chưa giải thích cơ chế: làm thế nào việc đọc tin tức lại chuyển hóa thành sự hiểu biết sâu sắc về văn hóa hoặc kỹ năng hợp tác quốc tế thực tế?",
+                    "solutionBodyVi": "Bạn nên thêm một bước giải thích, ví dụ: việc phân tích các sự kiện quốc tế giúp học sinh hiểu bối cảnh văn hóa đằng sau chúng, từ đó rèn luyện khả năng giao tiếp đa văn hóa."
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 858,
+                      "endChar": 1174,
+                      "sourceText": "To address this issue and promote international cooperation, integrating global news into the curriculum appears to be a highly effective solution, as it would expose students to various cultures, lifestyles, and global perspectives, thereby enriching their knowledge and preparing them for future global engagement.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-1-4"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "missing_mechanism",
+                    "featureEn": "ideas are well extended and supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-1-4",
+                "status": "weak",
+                "job": "To address this issue and promote international cooperation, integrating global news into the curriculum appears to be a highly effective solution, as it would expose students to various cultures, lifestyles, and global perspectives, thereby enriching their knowledge and preparing them for future global engagement.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Paragraph 3",
+          "job": "On the other hand, some argue that such a subject would waste students’ time due to its inefficiency.",
+          "paragraphStartChar": 1176,
+          "paragraphEndChar": 1892,
+          "errors": [],
+          "review": {
+            "nodeId": "para-2",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-2-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "On the other hand, some argue that such a subject would waste students’ time due to its inefficiency.",
+              "startChar": 1176,
+              "endChar": 1277,
+              "role": "claim",
+              "simplifiedIdea": "On the other hand, some argue that such a subject would waste students’ time due to its inefficiency.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-1",
+                "status": "works",
+                "job": "On the other hand, some argue that such a subject would waste students’ time due to its inefficiency.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-2-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "Keeping up with global news, without proper teaching methods and structured guidance, may feel meaningless to students, particularly those who are more focused on their final exams and therefore perceive the subject as impractical.",
+              "startChar": 1278,
+              "endChar": 1509,
+              "role": "claim",
+              "simplifiedIdea": "Keeping up with global news, without proper teaching methods and structured guidance, may feel meaningless to students, particularly those who are more focused on their final exams and therefore perceive the subject as impractical.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-2",
+                "status": "works",
+                "job": "Keeping up with global news, without proper teaching methods and structured guidance, may feel meaningless to students, particularly those who are more focused on their final exams and therefore perceive the subject as impractical.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 3,
+              "nodeId": "sentence-2-3",
+              "sourceSentenceIndex": 3,
+              "chunkIndex": 3,
+              "sourceText": "As a result, integrating this activity into the curriculum could be considered ineffective and redundant.",
+              "startChar": 1510,
+              "endChar": 1615,
+              "role": "claim",
+              "simplifiedIdea": "As a result, integrating this activity into the curriculum could be considered ineffective and redundant.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-3",
+                "status": "works",
+                "job": "As a result, integrating this activity into the curriculum could be considered ineffective and redundant.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 4,
+              "nodeId": "sentence-2-4",
+              "sourceSentenceIndex": 4,
+              "chunkIndex": 4,
+              "sourceText": "For instance, when students are asked to study political affairs, a dynamic, complex, and often controversial topic, they may regard it as boring and irrelevant.",
+              "startChar": 1616,
+              "endChar": 1777,
+              "role": "claim",
+              "simplifiedIdea": "For instance, when students are asked to study political affairs, a dynamic, complex, and often controversial topic, they may regard it as boring and irrelevant.",
+              "errors": [
+                {
+                  "errorCode": "unsupported_claim",
+                  "errorLabelVi": "Nhận định thiếu chứng minh",
+                  "type": "internal",
+                  "message": "Nhận định thiếu chứng minh",
+                  "explanation": "Bạn đưa ra ví dụ về việc học sinh có thể thấy chủ đề chính trị 'buồn chán và không liên quan'. Tuy nhiên, bạn chưa phân tích tại sao điều này lại chứng minh cho quan điểm 'lãng phí thời gian'. Sự nhàm chán của học sinh có thực sự dẫn đến việc lãng phí thời gian học tập không, hay đó chỉ là vấn đề về phương pháp giảng dạy?",
+                  "suggestion": "Bạn nên kết nối ví dụ với hậu quả rõ ràng hơn, ví dụ: nếu học sinh thấy nhàm chán, họ sẽ không chú ý, dẫn đến việc thời gian dành cho môn này không mang lại giá trị học tập nào, trong khi có thể dùng cho các môn cơ bản.",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      2
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 2,
+                        "sentenceIndex": 4
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên kết nối ví dụ với hậu quả rõ ràng hơn, ví dụ: nếu học sinh thấy nhàm chán, họ sẽ không chú ý, dẫn đến việc thời gian dành cho môn này không mang lại giá trị học tập nào, trong khi có thể dùng cho các môn cơ bản.",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn đưa ra ví dụ về việc học sinh có thể thấy chủ đề chính trị 'buồn chán và không liên quan'. Tuy nhiên, bạn chưa phân tích tại sao điều này lại chứng minh cho quan điểm 'lãng phí thời gian'. Sự nhàm chán của học sinh có thực sự dẫn đến việc lãng phí thời gian học tập không, hay đó chỉ là vấn đề về phương pháp giảng dạy?",
+                    "solutionBodyVi": "Bạn nên kết nối ví dụ với hậu quả rõ ràng hơn, ví dụ: nếu học sinh thấy nhàm chán, họ sẽ không chú ý, dẫn đến việc thời gian dành cho môn này không mang lại giá trị học tập nào, trong khi có thể dùng cho các môn cơ bản."
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 1616,
+                      "endChar": 1777,
+                      "sourceText": "For instance, when students are asked to study political affairs, a dynamic, complex, and often controversial topic, they may regard it as boring and irrelevant.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-2-4"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "unsupported_claim",
+                    "featureEn": "main ideas are supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-2-4",
+                "status": "weak",
+                "job": "For instance, when students are asked to study political affairs, a dynamic, complex, and often controversial topic, they may regard it as boring and irrelevant.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 5,
+              "nodeId": "sentence-2-5",
+              "sourceSentenceIndex": 5,
+              "chunkIndex": 5,
+              "sourceText": "Over time, this disinterest may diminish the subject’s effectiveness and undermine its intended educational value.",
+              "startChar": 1778,
+              "endChar": 1892,
+              "role": "claim",
+              "simplifiedIdea": "Over time, this disinterest may diminish the subject’s effectiveness and undermine its intended educational value.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-2-5",
+                "status": "works",
+                "job": "Over time, this disinterest may diminish the subject’s effectiveness and undermine its intended educational value.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Paragraph 4",
+          "job": "",
+          "paragraphStartChar": 1894,
+          "paragraphEndChar": 2212,
+          "errors": [],
+          "review": {
+            "nodeId": "para-3",
+            "status": "works",
+            "job": "",
+            "assessment": "",
+            "issues": []
+          },
+          "sentences": [
+            {
+              "index": 1,
+              "nodeId": "sentence-3-1",
+              "sourceSentenceIndex": 1,
+              "chunkIndex": 1,
+              "sourceText": "In conclusion, while adding international news to the curriculum has clear benefits in developing global awareness, its success depends on effective teaching methods.",
+              "startChar": 1894,
+              "endChar": 2060,
+              "role": "claim",
+              "simplifiedIdea": "In conclusion, while adding international news to the curriculum has clear benefits in developing global awareness, its success depends on effective teaching methods.",
+              "errors": [],
+              "review": {
+                "nodeId": "sentence-3-1",
+                "status": "works",
+                "job": "In conclusion, while adding international news to the curriculum has clear benefits in developing global awareness, its success depends on effective teaching methods.",
+                "assessment": "",
+                "issues": []
+              }
+            },
+            {
+              "index": 2,
+              "nodeId": "sentence-3-2",
+              "sourceSentenceIndex": 2,
+              "chunkIndex": 2,
+              "sourceText": "In my opinion, with proper implementation, this subject can be a valuable addition to education, helping students better prepare for a connected world.",
+              "startChar": 2061,
+              "endChar": 2212,
+              "role": "claim",
+              "simplifiedIdea": "In my opinion, with proper implementation, this subject can be a valuable addition to education, helping students better prepare for a connected world.",
+              "errors": [
+                {
+                  "errorCode": "unsupported_claim",
+                  "errorLabelVi": "Nhận định thiếu chứng minh",
+                  "type": "internal",
+                  "message": "Nhận định thiếu chứng minh",
+                  "explanation": "Bạn đưa ra ý kiến rằng môn học này có thể là 'một bổ sung có giá trị' với điều kiện 'thực hiện đúng cách'. Tuy nhiên, ý kiến này khá chung chung và không thể hiện rõ lập trường của bạn so với hai quan điểm đã thảo luận. Bạn có hoàn toàn ủng hộ việc đưa môn học này vào hay chỉ ủng hộ trong điều kiện nhất định?",
+                  "suggestion": "Bạn nên nêu rõ hơn quan điểm của mình, ví dụ: 'Tôi tin rằng lợi ích của việc nâng cao nhận thức toàn cầu lớn hơn những lo ngại về lãng phí thời gian, miễn là môn học được thiết kế tốt'.",
+                  "affectedNodes": {
+                    "paragraphs": [
+                      3
+                    ],
+                    "sentences": [
+                      {
+                        "paraIndex": 3,
+                        "sentenceIndex": 2
+                      }
+                    ]
+                  },
+                  "proposedFix": {
+                    "type": "rewrite",
+                    "details": "Bạn nên nêu rõ hơn quan điểm của mình, ví dụ: 'Tôi tin rằng lợi ích của việc nâng cao nhận thức toàn cầu lớn hơn những lo ngại về lãng phí thời gian, miễn là môn học được thiết kế tốt'.",
+                    "proposedText": "",
+                    "whyBetter": ""
+                  },
+                  "comment": {
+                    "bodyVi": "Bạn đưa ra ý kiến rằng môn học này có thể là 'một bổ sung có giá trị' với điều kiện 'thực hiện đúng cách'. Tuy nhiên, ý kiến này khá chung chung và không thể hiện rõ lập trường của bạn so với hai quan điểm đã thảo luận. Bạn có hoàn toàn ủng hộ việc đưa môn học này vào hay chỉ ủng hộ trong điều kiện nhất định?",
+                    "solutionBodyVi": "Bạn nên nêu rõ hơn quan điểm của mình, ví dụ: 'Tôi tin rằng lợi ích của việc nâng cao nhận thức toàn cầu lớn hơn những lo ngại về lãng phí thời gian, miễn là môn học được thiết kế tốt'."
+                  },
+                  "evidenceSpans": [
+                    {
+                      "startChar": 2061,
+                      "endChar": 2212,
+                      "sourceText": "In my opinion, with proper implementation, this subject can be a valuable addition to education, helping students better prepare for a connected world.",
+                      "role": "primary"
+                    }
+                  ],
+                  "nodeLinks": {
+                    "primaryNodeIds": [
+                      "sentence-3-2"
+                    ],
+                    "contextNodeIds": [],
+                    "affectedNodeIds": []
+                  },
+                  "descriptorAnchor": {
+                    "criterion": "task_response",
+                    "featureCode": "unsupported_claim",
+                    "featureEn": "main ideas are supported"
+                  }
+                }
+              ],
+              "review": {
+                "nodeId": "sentence-3-2",
+                "status": "weak",
+                "job": "In my opinion, with proper implementation, this subject can be a valuable addition to education, helping students better prepare for a connected world.",
+                "assessment": "",
+                "issues": []
+              }
+            }
+          ]
+        }
+      ],
+      "edgeReviews": [],
+      "coherenceFlows": []
+    },
+    "cohesionHighlights": [
+      {
+        "startChar": 489,
+        "endChar": 659,
+        "errorCode": "faulty_sentence_link",
+        "errorLabelVi": "Tham chiếu chưa rõ",
+        "highlightType": "error",
+        "label": "Tham chiếu chưa rõ",
+        "sourceText": "While most education systems focus on foundational subjects such as mathematics, literature, and language, they often neglect global awareness and cultural understanding.",
+        "feedback": "Bạn bắt đầu câu mới bằng 'This omission' để chỉ sự thiếu sót của các hệ thống giáo dục. Tuy nhiên, câu trước đã giới thiệu một chủ đề mới ('foundational subjects') và một khái niệm mới ('global awareness'). 'This omission' không được thiết lập rõ ràng như một thông tin đã cho từ câu trước, khiến người đọc phải suy luận rằng 'omission' chỉ việc bỏ qua 'global awareness'.",
+        "replacementText": "",
+        "correction": "",
+        "suggestedText": "",
+        "solutionFeedback": "Bạn có thể cải thiện bằng cách gắn 'This omission' trực tiếp với khái niệm đã được nhấn mạnh ở câu trước, ví dụ: 'This neglect of global awareness is particularly problematic...'",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "coherence_cohesion",
+          "featureCode": "faulty_sentence_link",
+          "featureEn": "cohesion within sentences is accurate"
+        }
+      },
+      {
+        "startChar": 1278,
+        "endChar": 1396,
+        "errorCode": "faulty_sentence_link",
+        "errorLabelVi": "Tham chiếu chưa rõ",
+        "highlightType": "error",
+        "label": "Tham chiếu chưa rõ",
+        "sourceText": "Keeping up with global news, without proper teaching methods and structured guidance, may feel meaningless to students",
+        "feedback": "Bạn chuyển từ 'Keeping up with global news' sang 'integrating this activity'. 'This activity' không phải là một thay thế rõ ràng cho 'keeping up with global news', vì 'activity' là một khái niệm rộng hơn và trừu tượng hơn. Sự thay đổi thuật ngữ này làm gián đoạn chuỗi từ vựng, khiến người đọc phải tự liên kết rằng 'activity' ở đây chính là việc 'học tin tức quốc tế'.",
+        "replacementText": "",
+        "correction": "",
+        "suggestedText": "",
+        "solutionFeedback": "Bạn có thể sử dụng một đại từ hoặc cụm từ thay thế chính xác hơn, ví dụ: 'integrating this subject' hoặc 'integrating such a subject'.",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "coherence_cohesion",
+          "featureCode": "faulty_sentence_link",
+          "featureEn": "cohesion within sentences is accurate"
+        }
+      }
+    ],
+    "lexicalHighlights": [
+      {
+        "startChar": 596,
+        "endChar": 658,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "they often neglect global awareness and cultural understanding",
+        "feedback": "Bạn dùng 'neglect' để chỉ việc các hệ thống giáo dục không đưa vào chương trình. Tuy nhiên, 'neglect' thường mang nghĩa bỏ mặc, không quan tâm đến một cách có chủ đích hoặc do bất cẩn. Ở đây, ý bạn là các hệ thống này 'không bao gồm' hoặc 'bỏ qua' một cách hệ thống.",
+        "replacementText": "they often exclude global awareness and cultural understanding",
+        "correction": "they often exclude global awareness and cultural understanding",
+        "suggestedText": "they often exclude global awareness and cultural understanding",
+        "solutionFeedback": "Thay thế bằng 'exclude' hoặc 'omit' để chính xác hơn.",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      },
+      {
+        "startChar": 1364,
+        "endChar": 1396,
+        "errorCode": "imprecise_word_choice",
+        "errorLabelVi": "Chọn từ chưa chính xác",
+        "highlightType": "error",
+        "label": "Chọn từ chưa chính xác",
+        "sourceText": "may feel meaningless to students",
+        "feedback": "Cụm 'feel meaningless' nghe có vẻ hơi lạ. Một người nói bản xứ thường sẽ nói 'seem meaningless' hoặc 'feel pointless'/'feel futile'. 'Meaningless' thường được dùng với sự vật hoặc hành động, không phải với cảm giác của người học.",
+        "replacementText": "may seem meaningless to students",
+        "correction": "may seem meaningless to students",
+        "suggestedText": "may seem meaningless to students",
+        "solutionFeedback": "Thay thế bằng 'seem meaningless' hoặc 'feel pointless'.",
+        "paragraphIndex": 2,
+        "descriptorAnchor": {
+          "criterion": "lexical_resource",
+          "featureCode": "imprecise_word_choice",
+          "featureEn": "vocabulary is used precisely and appropriately"
+        }
+      }
+    ],
+    "grammaticalHighlights": [
+      {
+        "startChar": 390,
+        "endChar": 487,
+        "errorCode": "article_error",
+        "errorLabelVi": "Sai mạo từ",
+        "highlightType": "error",
+        "label": "Sai mạo từ",
+        "sourceText": "as it allows secondary students to explore the world and acquire practical skills for their lives",
+        "feedback": "Bạn đã bỏ sót mạo từ 'the' trước 'secondary students' trong ngữ cảnh này, nơi nó chỉ một nhóm học sinh cụ thể.",
+        "replacementText": "as it allows the secondary students to explore the world and acquire practical skills for their lives",
+        "correction": "as it allows the secondary students to explore the world and acquire practical skills for their lives",
+        "suggestedText": "as it allows the secondary students to explore the world and acquire practical skills for their lives",
+        "solutionFeedback": "Thêm 'the' trước 'secondary students'.",
+        "paragraphIndex": 1,
+        "descriptorAnchor": {
+          "criterion": "grammatical_range_accuracy",
+          "featureCode": "article_error",
+          "featureEn": "articles are used accurately"
+        }
+      }
+    ],
+    "overallAssessment": {
+      "summaryVi": "Bài được chấm 7.5. Phần tổng hợp chỉ dùng những vấn đề đã được đối chiếu với nguyên văn và đủ rõ để đưa ra feedback; kết quả không được xem là danh sách đầy đủ mọi lỗi có thể có.",
+      "priorities": [
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Nhận định thiếu chứng minh",
+          "actionVi": "Bạn nên giải thích rõ hơn: việc học tin tức quốc tế giúp học sinh phát triển kỹ năng tư duy phản biện hoặc hiểu biết văn hóa cụ thể nào? Và việc lãng phí thời gian sẽ dẫn đến hậu quả gì cụ thể cho việc học của các môn khác?",
+          "evidenceIds": [
+            "tr:1"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "titleVi": "Tham chiếu chưa rõ",
+          "actionVi": "Bạn có thể cải thiện bằng cách gắn 'This omission' trực tiếp với khái niệm đã được nhấn mạnh ở câu trước, ví dụ: 'This neglect of global awareness is particularly problematic...'",
+          "evidenceIds": [
+            "cohesion:1"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "titleVi": "Tham chiếu chưa rõ",
+          "actionVi": "Bạn có thể sử dụng một đại từ hoặc cụm từ thay thế chính xác hơn, ví dụ: 'integrating this subject' hoặc 'integrating such a subject'.",
+          "evidenceIds": [
+            "cohesion:2"
+          ]
+        },
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Thiếu cơ chế giải thích",
+          "actionVi": "Bạn nên thêm một bước giải thích, ví dụ: việc phân tích các sự kiện quốc tế giúp học sinh hiểu bối cảnh văn hóa đằng sau chúng, từ đó rèn luyện khả năng giao tiếp đa văn hóa.",
+          "evidenceIds": [
+            "tr:2"
+          ]
+        },
+        {
+          "criterion": "taskAchievement",
+          "titleVi": "Nhận định thiếu chứng minh",
+          "actionVi": "Bạn nên kết nối ví dụ với hậu quả rõ ràng hơn, ví dụ: nếu học sinh thấy nhàm chán, họ sẽ không chú ý, dẫn đến việc thời gian dành cho môn này không mang lại giá trị học tập nào, trong khi có thể dùng cho các môn cơ bản.",
+          "evidenceIds": [
+            "tr:3"
+          ]
+        }
+      ],
+      "descriptorAlignment": [
+        {
+          "criterion": "taskAchievement",
+          "band": 6,
+          "rationaleVi": "Bạn đã trình bày cả hai quan điểm và đưa ra ý kiến cá nhân, nhưng các luận điểm chính chưa được phát triển đầy đủ, thiếu cơ chế giải thích rõ ràng và dẫn chứng chưa đủ sức nặng.",
+          "evidenceIds": [
+            "tr:1",
+            "tr:2",
+            "tr:3",
+            "tr:4"
+          ]
+        },
+        {
+          "criterion": "coherenceCohesion",
+          "band": 7,
+          "rationaleVi": "Bài luận có kiến trúc logic rõ ràng: mỗi đoạn thân bài có ý tưởng kiểm soát rõ ràng và phát triển đúng hướng, các đoạn liên kết chặt chẽ theo trình tự luận điểm hợp lý, và kết luận tóm tắt chính xác. Bài luận có sự gắn kết ở mức cơ bản với các từ nối rõ ràng, nhưng sự tiến triển chủ đề thường yếu, đặc biệt khi chuyển sang các ý mới mà không gắn liền với thông tin đã được thiết lập trước đó, khiến người đọc phải suy luận nhiều.",
+          "evidenceIds": [
+            "cohesion:1",
+            "cohesion:2"
+          ]
+        },
+        {
+          "criterion": "lexicalResource",
+          "band": 8,
+          "rationaleVi": "Bạn sử dụng từ vựng học thuật và đa dạng, có khả năng diễn đạt chính xác các ý tưởng phức tạp. Các lỗi lexical rất ít và không đáng kể, chủ yếu là một vài chỗ dùng từ chưa tự nhiên nhất định.",
+          "evidenceIds": [
+            "lr:1",
+            "lr:2"
+          ]
+        },
+        {
+          "criterion": "grammaticalRange",
+          "band": 8,
+          "rationaleVi": "Bạn sử dụng cấu trúc câu đa dạng và chính xác, bao gồm các câu ghép và câu phức tạp với các mệnh đề quan hệ, trạng từ và cụm danh từ. Có một vài lỗi nhỏ về trật tự từ và sự thiếu sót của mạo từ, nhưng những lỗi này không gây hiểu nhầm và không làm mất đi ý nghĩa của câu.",
+          "evidenceIds": [
+            "gra:1",
+            "gra:2"
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "targetBand": 8,
+      "revisedEssay": "Globalization has increased the importance of preparing students for international engagement. Some argue that including international news in school curricula can improve global awareness and practical skills, while others believe it may be ineffective without proper teaching and exam relevance.\n\nOn the one hand, many believe that using international news as a new subject is essential, as it allows secondary students to explore the world and acquire practical skills for their lives. While most education systems focus on foundational subjects such as mathematics, literature, and language, they often exclude global awareness and cultural understanding. This neglect is particularly problematic in today's increasingly interconnected world, where collaboration and mutual understanding between people from diverse backgrounds have become commonplace. To address this issue and promote international cooperation, integrating global news into the curriculum appears to be a highly effective solution. It would expose students to various cultures, lifestyles, and global perspectives, thereby enriching their knowledge. More importantly, by analysing real-world events, students can develop critical thinking skills and a deeper contextual understanding, which are essential for effective cross-cultural communication and future global engagement.\n\nOn the other hand, some argue that such a subject would waste students' time due to its inefficiency. Keeping up with global news, without proper teaching methods and structured guidance, may seem meaningless to students, particularly those who are more focused on their final exams and therefore perceive the subject as impractical. As a result, integrating this subject into the curriculum could be considered ineffective and redundant. For instance, when students are asked to study political affairs, a dynamic, complex, and often controversial topic, they may regard it as boring and irrelevant. If this disengagement occurs, the time allocated to the subject yields little educational value, while the opportunity cost is significant; that time could have been used to strengthen their grasp of core academic disciplines.\n\nIn conclusion, while adding international news to the curriculum has clear benefits in developing global awareness, its success depends on effective teaching methods. In my opinion, the advantages of fostering a globally aware and critically thinking generation outweigh the concerns about wasted time, provided the subject is implemented thoughtfully and integrated with other learning goals.",
+      "changeSummaryVi": "Bản sửa đổi đã cải thiện đáng kể độ sâu của lập luận bằng cách giải thích rõ cơ chế: tin tức giúp phát triển tư duy phản biện và hiểu biết bối cảnh cho giao tiếp đa văn hóa. Lập luận phía phản đối cũng được củng cố bằng cách kết nối rõ ràng giữa sự nhàm chán của học sinh với hậu quả lãng phí thời gian thực tế (chi phí cơ hội cho các môn cơ bản). Mối liên kết giữa các câu đã được sửa chữa bằng cách sử dụng đại từ chính xác hơn ('this subject') và thay thế từ 'neglect' bằng 'exclude' cho chính xác. Ý kiến cá nhân được diễn đạt rõ ràng và có sức nặng hơn, thể hiện lập trường ủng hộ có điều kiện.",
+      "preservedStrengthsVi": [
+        "Cấu trúc bài luận rõ ràng với hai quan điểm và ý kiến cá nhân.",
+        "Từ vựng phong phú và chính xác ở nhiều điểm.",
+        "Ngữ pháp đa dạng và phần lớn chính xác."
+      ],
+      "changes": []
+    }
+  }
+}

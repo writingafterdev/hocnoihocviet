@@ -1,0 +1,369 @@
+[
+  {
+    "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+    "band": 7,
+    "rationaleVi": "Bạn trả lời đúng dạng outweigh, giữ quan điểm rõ ràng từ mở bài đến kết bài, và có đủ hai phía. Phần advantages đi được một chuỗi lý lẽ thật (immersion dẫn tới thực hành hằng ngày), nhưng nhiều ý còn dừng ở mức liệt kê: các giải pháp cho khó khăn tài chính và cảm giác cô đơn chỉ được kể tên, ý về văn hóa quay vòng lại chính nó, và ý về nghề nghiệp chưa cho thấy con đường từ khả năng ngôn ngữ tới cơ hội thật.",
+    "findings": [
+      {
+        "id": "tr-old-f1-cost-list",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "students need to pay tuition and fees, accommodation, and living expenses",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Ví dụ chỉ liệt kê, chưa chứng minh",
+        "explanationVi": "Bạn đưa ví dụ này để chứng minh a significant financial burden, nhưng câu chỉ kể tên ba khoản chi mà ai cũng đoán được. Người đọc chưa thấy khoản chi này nặng tới mức nào so với học ở trong nước, nên gánh nặng tài chính vẫn chỉ là một lời khẳng định chứ chưa phải một bất lợi đã được chứng minh.",
+        "repairVi": "Thay danh sách khoản chi bằng một so sánh: học ở nước ngoài tốn gấp mấy lần một khóa học tương đương trong nước, và điều đó buộc gia đình phải đánh đổi cái gì.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f1-rebuttal-mechanism",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "these problems can typically be addressed by scholarships, part-time jobs, or financial savings",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "seeking support from local communities, joining student clubs, or staying in touch with family regularly",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu cơ chế trong phần phản biện",
+        "explanationVi": "Đây là hai chỗ bạn dùng để hạ trọng lượng của phía bất lợi, nên chúng phải làm việc nặng nhất trong bài. Nhưng cả hai chỉ là danh sách giải pháp được nêu tên. Bạn chưa cho thấy scholarships hay part-time jobs bù được bao nhiêu phần chi phí, hay tại sao joining student clubs lại xử lý được đúng cái khó là khác biệt văn hóa. Vì phản biện chỉ dừng ở tên gọi, kết luận rằng bất lợi có thể vượt qua được vẫn chưa đứng vững.",
+        "repairVi": "Chọn một giải pháp thôi và đi hết một vòng: part-time job giúp trang trải phần nào, nhưng đổi lại mất giờ học, nên nó giảm chứ không xóa được gánh nặng.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f1-loneliness-endpoint",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "which may cause them to become more sensitive",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Hệ quả mơ hồ",
+        "explanationVi": "Bạn đi từ khác biệt văn hóa tới mental issues about loneliness rồi dừng ở become more sensitive. Đó là một trạng thái cảm xúc, không phải một hậu quả người đọc đo được. Đề bài hỏi về việc học ngôn ngữ, nên điểm dừng đúng phải là điều cô đơn làm hỏng trong việc học: bỏ lớp, ngại nói với người bản xứ, hoặc về nước sớm.",
+        "repairVi": "Cho ý này chạm tới việc học: cô đơn khiến người học tránh giao tiếp với người bản xứ, nên mất chính cái lợi thế mà họ trả tiền để có.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f1-culture-circular",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "which allows them to further broaden their knowledge about cultures",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết ý quay vòng",
+        "explanationVi": "Ý này mở đầu bằng students gain first-hand cultural exposure và kết lại bằng broaden their knowledge about cultures, tức là câu kết chỉ nói lại câu mở bằng chữ khác. Người đọc chưa thấy tiếp xúc văn hóa đó đổi thành cái gì có ích cho việc học ngôn ngữ hay cho lập luận outweigh của bạn.",
+        "repairVi": "Nối văn hóa với ngôn ngữ: hiểu văn hóa giúp bạn dùng đúng mức lịch sự, đúng thành ngữ, đúng ngữ cảnh, thứ mà sách giáo khoa không dạy được.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f1-career-mechanism",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "students can proactively expand their career opportunities in the international labor market",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Nhảy bước sang kết quả nghề nghiệp",
+        "explanationVi": "Bạn nói International employers highly appreciate candidates rồi lập tức kết luận là cơ hội nghề nghiệp mở rộng. Bước ở giữa bị bỏ qua: nhà tuyển dụng đánh giá cao không tự động thành việc làm. Người đọc cần thấy khả năng ngôn ngữ và cross-cultural experience giúp ứng viên làm được việc gì mà ứng viên học trong nước không làm được.",
+        "repairVi": "Nêu một loại công việc cụ thể mà kinh nghiệm sống ở nước ngoài là điều kiện thật, ví dụ vị trí làm việc trực tiếp với khách hàng nước ngoài.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+    "band": 6,
+    "rationaleVi": "Bài nộp chứa hai bản của cùng một bài viết, nên phần nhận xét dưới đây bám vào bản thứ hai vì nó đầy đủ hơn, và các lỗi tương ứng cũng có mặt ở bản đầu. Bạn có bàn cả hai quan điểm và nêu rõ mình nghiêng về phía tự do lựa chọn, nên phần bao phủ đề bài là đủ. Vấn đề nằm ở chỗ lập luận: ví dụ 21 người chết được đưa ra rồi bỏ lửng, phía bạn ủng hộ dựa trên khẳng định về nhân quyền chứ chưa chứng minh, và bạn không bao giờ cân phía tự do với chính rủi ro chết người mà bạn đã tự nêu.",
+    "findings": [
+      {
+        "id": "tr-old-f2-no-weighing",
+        "criterion": "task_response",
+        "scope": "macro",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 6,
+            "sourceText": "individuals’ freedom to choose their preferred sports should be prioritized over bans on these activities",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 5,
+            "sourceText": "which claimed 21 lives in extreme weather conditions",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Chưa cân hai phía trước khi chọn phía",
+        "explanationVi": "Chính bạn đã đặt lên bàn một sự thật rất nặng là 21 người chết, rồi ở đoạn sau bạn tuyên bố tự do lựa chọn phải được ưu tiên hơn lệnh cấm. Nhưng bạn không quay lại xử lý con số đó. Người đọc đang được yêu cầu tin rằng quyền tự quyết quan trọng hơn tính mạng, mà bài chưa đưa ra bất kỳ lý do nào về mức độ nghiêm trọng, phạm vi ảnh hưởng hay khả năng khắc phục để bênh vực điều đó. Phần opinion vì vậy mới chỉ được tuyên bố, chưa được giành lấy.",
+        "repairVi": "Thêm một bước cân trực tiếp: rủi ro chết người là do người tham gia tự chọn và tự gánh, còn lệnh cấm lấy đi lựa chọn của tất cả mọi người kể cả những người chơi an toàn.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f2-example-unanalyzed",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 5,
+            "sourceText": "the government succeeded in ensuring citizens’ safety and wellbeing, thus reducing the likelihood of future incidents",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 5,
+            "sourceText": "It led to a nationwide ban on extreme sports",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết luận vượt trước bằng chứng",
+        "explanationVi": "Ví dụ của bạn chứng minh được một điều: đã có một thảm kịch và sau đó có lệnh cấm. Nó chưa chứng minh được lệnh cấm cứu được ai. Nhưng câu tiếp theo lại khẳng định luôn là chính phủ succeeded và reducing the likelihood of future incidents. Đây là kết luận rút ra trước khi có bằng chứng, và nó chính là chỗ phía ủng hộ lệnh cấm đáng lẽ phải mạnh nhất.",
+        "repairVi": "Hoặc nêu điều đã đo được sau lệnh cấm, hoặc hạ giọng khẳng định xuống thành lệnh cấm loại bỏ đúng loại sự kiện đã gây ra cái chết đó.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f2-gear-assertion",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 5,
+            "sourceText": "protective gear offers limited protection",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Ý được nêu tên, chưa được giải thích",
+        "explanationVi": "Câu này gánh cả lập luận rằng không thể làm cho môn thể thao nguy hiểm trở nên an toàn, nhưng bạn chỉ nói đồ bảo hộ có tác dụng hạn chế mà không nói hạn chế ở đâu. Người đọc cần thấy loại rủi ro nào nằm ngoài tầm của thiết bị, ví dụ thời tiết, độ cao hay lực va chạm, thì mới chấp nhận rằng cấm là cách duy nhất còn lại.",
+        "repairVi": "Chỉ ra loại rủi ro mà thiết bị không chạm tới được, và nối nó với đúng ví dụ ultramarathon bạn đang dùng.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f2-rights-jump",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 6,
+            "sourceText": "If the government infringed upon basic human rights, it would spark widespread public resentment",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Nhảy bước lập luận về nhân quyền",
+        "explanationVi": "Câu này chỉ đúng nếu người đọc đã đồng ý rằng cấm một môn thể thao nguy hiểm là xâm phạm basic human rights, mà đó lại chính là điều bạn cần chứng minh. Bạn đang lấy kết luận làm tiền đề. Ngoài ra public resentment là phản ứng của dân chúng, không phải lý do cho thấy lệnh cấm sai.",
+        "repairVi": "Chứng minh bước bị thiếu trước: giải thích vì sao rủi ro mà người trưởng thành tự nhận cho bản thân thuộc về quyền tự quyết, khác với hành vi gây hại cho người khác.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f2-solution-misaligned",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 6,
+            "sourceText": "the government should implement rigorous safety inspections as well as certify equipment and facilities",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 6,
+            "sourceText": "Such an approach helps maintain a crucial balance between individuals’ safety and their own choices",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Giải pháp không khớp với rủi ro đã nêu",
+        "explanationVi": "Giải pháp thay thế của bạn là kiểm định thiết bị và cơ sở vật chất, nhưng rủi ro duy nhất bạn đã đưa vào bài là extreme weather conditions, thứ mà kiểm định thiết bị không xử lý được. Vì vậy câu kết Such an approach helps maintain a crucial balance chưa được chứng minh: giải pháp không chạm tới đúng mối nguy mà phía kia vừa nêu.",
+        "repairVi": "Chọn biện pháp trúng rủi ro đã nêu, ví dụ bắt buộc dừng sự kiện khi thời tiết vượt ngưỡng, rồi mới nói tới cân bằng.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f2-conclusion-drift",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 7,
+            "sourceText": "such sports remain essential in upholding",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết bài lệch khỏi điều thân bài đã bảo vệ",
+        "explanationVi": "Suốt thân bài bạn bảo vệ quyền được chọn, chứ không bảo vệ bản thân các môn thể thao mạo hiểm. Đến kết bài lại thành các môn đó là thiết yếu cho tự do lựa chọn, một khẳng định mạnh hơn hẳn và chưa từng được lập luận. Quan điểm vì thế bị trượt ở đúng chỗ người chấm đọc lại lần cuối.",
+        "repairVi": "Kết lại đúng điều bạn đã chứng minh: cái thiết yếu là quyền tự quyết của người trưởng thành, không phải bản thân môn thể thao.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+    "band": 6,
+    "rationaleVi": "Bạn nêu quan điểm rõ và có bàn cả hai phía lợi ích mà đề bài yêu cầu là cho teenagers và cho society. Nhưng bài bỏ sót phần khó nhất của đề: đề hỏi về việc bắt buộc tất cả thanh thiếu niên, còn bạn chỉ chứng minh rằng làm việc không lương thì có ích. Ngoài ra nhiều ý dừng ở mức liệt kê, có chỗ khái quát quá rộng, và phần lợi ích cho xã hội lại quay về lợi ích cá nhân.",
+    "findings": [
+      {
+        "id": "tr-old-f3-requirement-gap",
+        "criterion": "task_response",
+        "scope": "macro",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "I totally agree with this statement due to numerous reasons",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "charity activities organized by the local community that youngsters should participate in",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Bỏ sót phần bắt buộc của đề",
+        "explanationVi": "Đề không hỏi làm việc không lương có tốt hay không, mà hỏi có nên bắt buộc tất cả thanh thiếu niên phải làm hay không. Bạn nói totally agree, nhưng cả bài chỉ chứng minh vế thứ nhất. Chữ should participate in ở phần sau còn cho thấy bạn đang hình dung đây là việc tự nguyện. Người đọc vì vậy chưa được thuyết phục về đúng điều bạn đã đồng ý, là tính bắt buộc và phạm vi tất cả.",
+        "repairVi": "Thêm một bước bảo vệ tính bắt buộc: nếu để tự nguyện thì chỉ những em vốn đã năng động mới tham gia, nên bắt buộc mới đưa được lợi ích tới nhóm cần nhất.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f3-workforce-misaligned",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "entering the workforce helps teenagers to gain more soft skills",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "they will have the chance to become a real employee",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Lập luận nói về việc làm, không phải việc thiện nguyện",
+        "explanationVi": "Đề nói về unpaid work giúp cộng đồng, còn bạn lại lập luận trên nền entering the workforce và become a real employee với colleagues và customers. Đó là đi làm có lương, một hoàn cảnh khác. Lợi ích bạn chứng minh vì thế thuộc về việc đi làm chứ chưa chắc thuộc về việc thiện nguyện không lương, nên nó chưa chống đỡ được cho điều đề bài hỏi.",
+        "repairVi": "Đặt lại ý trong đúng bối cảnh cộng đồng: làm cùng nhóm tình nguyện, chịu trách nhiệm với người được giúp, và phải theo lịch đã cam kết.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f3-discipline-jump",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "it helps them to become more strict and disciplined",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu cơ chế",
+        "explanationVi": "Bạn nối việc làm cùng người khác với việc trở nên kỷ luật, nhưng bỏ trống đoạn đường ở giữa. Điều gì trong công việc tạo ra kỷ luật, là giờ giấc cố định, là có người phụ thuộc vào mình, hay là hậu quả khi làm hỏng việc? Nếu không nói ra thì đây mới là một danh sách phẩm chất tốt được gán vào.",
+        "repairVi": "Nêu một ràng buộc cụ thể tạo ra kỷ luật, ví dụ phải có mặt đúng giờ vì có người đang chờ suất ăn.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f3-overgeneralization",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "spending time on doing useless things such as playing computer games",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Khái quát quá rộng",
+        "explanationVi": "Bạn coi mọi hoạt động giải trí là useless things để làm nổi bật việc thiện nguyện. Người đọc không có lý do gì để chấp nhận điều đó, và một người phản đối chỉ cần một phản ví dụ là ý này sụp. Lập luận sẽ mạnh hơn nếu bạn so sánh có mức độ thay vì phủ định toàn bộ.",
+        "repairVi": "Đổi thành so sánh có chừng mực: thời gian giải trí kéo dài quá mức không đem lại kỹ năng nào, còn vài giờ thiện nguyện thì có.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f3-mental-health-jump",
+        "criterion": "task_response",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "their mental health will be ensured because staying at home for too long can lead to some mental problems",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Khẳng định quá mạnh và thiếu bước nối",
+        "explanationVi": "Bạn kết luận sức khỏe tinh thần sẽ được bảo đảm, một lời hứa tuyệt đối, chỉ dựa vào việc ở nhà lâu có thể gây vấn đề tâm lý. Ở nhà ít đi không đồng nghĩa với tinh thần tốt lên, và bạn cũng chưa nói yếu tố nào trong việc thiện nguyện tạo ra thay đổi đó, chẳng hạn quan hệ xã hội mới hay cảm giác mình có ích.",
+        "repairVi": "Hạ mức khẳng định và nêu cơ chế: việc thiện nguyện tạo tiếp xúc xã hội đều đặn, điều mà ở nhà một mình không có.",
+        "replacementText": ""
+      },
+      {
+        "id": "tr-old-f3-society-underdeveloped",
+        "criterion": "task_response",
+        "scope": "paragraph",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "They can lend a hand to people in difficulties, from old people to poor children",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "cutting grass, sweeping the road, or picking up litter",
+            "role": "affected"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "receive certificates that are good for their CV",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Vế lợi ích cho xã hội mới dừng ở liệt kê",
+        "explanationVi": "Đây là vế đề bài yêu cầu chứng minh là society as a whole, nhưng bạn mới kể ra ai được giúp và làm những việc gì. Người đọc chưa thấy xã hội thay đổi ra sao, chẳng hạn nhu cầu nào đang thiếu người làm mà thanh thiếu niên bù được. Nặng hơn, ví dụ duy nhất bạn phát triển lại kết ở certificates that are good for their CV, tức là quay về lợi ích của chính thanh thiếu niên, nên nó không chứng minh cho vế xã hội.",
+        "repairVi": "Chọn một nhu cầu cộng đồng cụ thể đang thiếu nhân lực, cho thấy thanh thiếu niên lấp được chỗ đó, rồi bỏ chi tiết CV khỏi đoạn này.",
+        "replacementText": ""
+      }
+    ]
+  }
+]

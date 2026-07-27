@@ -1,0 +1,5789 @@
+[
+ {
+  "fileId": "t2-animals-5.5.pdf",
+  "band": 0,
+  "rationaleVi": "Bài viết có một cụm từ vẫn còn quá chung chung, không được làm rõ trong văn bản, khiến tuyên bố thiếu sức thuyết phục.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "beautiful creatures",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ quá chung",
+    "explanationVi": "Bạn sử dụng cụm từ 'beautiful creatures' mà không nêu rõ loài động vật nào hoặc mô tả cụ thể, khiến người đọc không thể hình dung chi tiết.",
+    "repairVi": "Thay bằng tên loài động vật cụ thể hoặc cung cấp đặc điểm rõ ràng hơn."
+   },
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the majority people think",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khái quát hóa quá mức",
+    "explanationVi": "Bạn đang đề cập đến 'majority people' nhưng không nói rõ nhóm người cụ thể nào, khiến tuyên bố trở nên mơ hồ.",
+    "repairVi": "Nên chỉ ra rõ ràng nhóm người hoặc nguồn gốc của ý kiến này, ví dụ như 'các nhà khoa học' hoặc 'công chúng nói chung'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "expending human activities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chỉ chung chung",
+    "explanationVi": "Bạn nói 'expending human activities' là nguyên nhân chính nhưng không nêu rõ hoạt động nào, như phá rừng hay xây dựng.",
+    "repairVi": "Nên liệt kê các hoạt động cụ thể như khai thác木材 hoặc đô thị hóa để minh họa rõ ràng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "human activities over these tyyears have largely affected living spacess of animals",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu chi tiết",
+    "explanationVi": "Bạn đề cập đến 'human activities' mà không giải thích cụ thể hoạt động nào đã ảnh hưởng, làm tuyên bố mờ nhạt.",
+    "repairVi": "Nên thêm chi tiết về các hoạt động như săn bắt hoặc ô nhiễm để làm rõ.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "omany animals in danger",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Không cụ thể",
+    "explanationVi": "Bạn viết 'omany animals in danger' nhưng không nêu tên loài động vật nào đang gặp nguy hiểm.",
+    "repairVi": "Nên đưa ra ví dụ cụ thể về các loài như hổ hoặc gấu trúc để tăng tính thuyết phục.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "requires different species for reasons",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lý do không rõ",
+    "explanationVi": "Bạn viết 'for reasons' mà không nêu rõ lý do cụ thể nào, làm câu trở nên chung chung.",
+    "repairVi": "Nên giải thích lý do như duy trì cân bằng sinh thái hoặc hỗ trợ các loài khác.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Lack for certain species often lead to unrecoverable consequences",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu ví dụ cụ thể",
+    "explanationVi": "Bạn nói 'certain species' nhưng không chỉ ra loài nào, khiến hậu quả trở nên trừu tượng.",
+    "repairVi": "Nên nêu tên loài cụ thể, ví dụ như ong hoặc thực vật, để minh họa hậu quả.",
+    "replacementText": ""
+   },
+   {
+    "id": "f9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "more beautiful creatures",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Không xác định",
+    "explanationVi": "Bạn viết 'more beautiful creatures' mà không nói rõ loài nào, làm ý kiến trở nên mông lung.",
+    "repairVi": "Nên nhắc đến loài cụ thể như voi hoặc cá heo để người đọc hình dung rõ.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "beautiful creatures",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ quá chung",
+      "explanationVi": "Bạn sử dụng cụm từ 'beautiful creatures' mà không nêu rõ loài động vật nào hoặc mô tả cụ thể, khiến người đọc không thể hình dung chi tiết.",
+      "repairVi": "Thay bằng tên loài động vật cụ thể hoặc cung cấp đặc điểm rõ ràng hơn."
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the majority people think",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái quát hóa quá mức",
+      "explanationVi": "Bạn đang đề cập đến 'majority people' nhưng không nói rõ nhóm người cụ thể nào, khiến tuyên bố trở nên mơ hồ.",
+      "repairVi": "Nên chỉ ra rõ ràng nhóm người hoặc nguồn gốc của ý kiến này, ví dụ như 'các nhà khoa học' hoặc 'công chúng nói chung'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "expending human activities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chỉ chung chung",
+      "explanationVi": "Bạn nói 'expending human activities' là nguyên nhân chính nhưng không nêu rõ hoạt động nào, như phá rừng hay xây dựng.",
+      "repairVi": "Nên liệt kê các hoạt động cụ thể như khai thác木材 hoặc đô thị hóa để minh họa rõ ràng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "human activities over these tyyears have largely affected living spacess of animals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu chi tiết",
+      "explanationVi": "Bạn đề cập đến 'human activities' mà không giải thích cụ thể hoạt động nào đã ảnh hưởng, làm tuyên bố mờ nhạt.",
+      "repairVi": "Nên thêm chi tiết về các hoạt động như săn bắt hoặc ô nhiễm để làm rõ.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "omany animals in danger",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Không cụ thể",
+      "explanationVi": "Bạn viết 'omany animals in danger' nhưng không nêu tên loài động vật nào đang gặp nguy hiểm.",
+      "repairVi": "Nên đưa ra ví dụ cụ thể về các loài như hổ hoặc gấu trúc để tăng tính thuyết phục.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "requires different species for reasons",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do không rõ",
+      "explanationVi": "Bạn viết 'for reasons' mà không nêu rõ lý do cụ thể nào, làm câu trở nên chung chung.",
+      "repairVi": "Nên giải thích lý do như duy trì cân bằng sinh thái hoặc hỗ trợ các loài khác.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Lack for certain species often lead to unrecoverable consequences",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu ví dụ cụ thể",
+      "explanationVi": "Bạn nói 'certain species' nhưng không chỉ ra loài nào, khiến hậu quả trở nên trừu tượng.",
+      "repairVi": "Nên nêu tên loài cụ thể, ví dụ như ong hoặc thực vật, để minh họa hậu quả.",
+      "replacementText": ""
+     },
+     {
+      "id": "f9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "more beautiful creatures",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Không xác định",
+      "explanationVi": "Bạn viết 'more beautiful creatures' mà không nói rõ loài nào, làm ý kiến trở nên mông lung.",
+      "repairVi": "Nên nhắc đến loài cụ thể như voi hoặc cá heo để người đọc hình dung rõ.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "cause-t2-band-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Một số tuyên bố trong bài quá chung chung, thiếu chi tiết cụ thể khiến người đọc khó hình dung và không thuyết phục.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "other activities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mô tả không đủ chi tiết",
+    "explanationVi": "Bạn cần nêu rõ 'other activities' là những hoạt động nào, như vẽ tranh hay nghe nhạc, để người đọc hình dung được.",
+    "repairVi": "Thay vì chỉ nói 'other activities', hãy liệt kê vài ví dụ cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "sometimes restrict their imagination",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu lý do cụ thể",
+    "explanationVi": "Bạn nên giải thích rõ trường hợp nào hoặc tại sao việc xem TV đôi khi hạn chế trí tưởng tượng.",
+    "repairVi": "Cung cấp nguyên nhân cụ thể hoặc ví dụ về thời điểm nào.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "globally regarded as a beneficial activity",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không nêu nguồn cụ thể",
+    "explanationVi": "Bạn cần chỉ ra cụ thể ai hoặc nhóm nào trên thế giới coi đọc sách là có lợi, để tăng tính thuyết phục.",
+    "repairVi": "Thêm bằng chứng từ các nghiên cứu hoặc quan điểm cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "other methods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mô tả không đủ chi tiết",
+    "explanationVi": "Bạn nên liệt kê các phương pháp khác để so sánh, như học từ sách giáo khoa hoặc tham gia lớp học ngoại khóa.",
+    "repairVi": "Đưa ra tên hoặc mô tả các phương pháp khác.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "numerous beneficial TV programs",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu ví dụ cụ thể",
+    "explanationVi": "Bạn cần nêu tên hoặc thể loại cụ thể của các chương trình TV có lợi, để người đọc thấy rõ.",
+    "repairVi": "Ví dụ như chương trình khoa học hoặc giáo dục.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "increasing number of intellectual-oriented games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không có số liệu cụ thể",
+    "explanationVi": "Bạn nên cung cấp số liệu cụ thể hoặc tên trò chơi để minh họa sự gia tăng.",
+    "repairVi": "Đưa ra ví dụ như trò chơi giải đố hoặc chiến lược.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "developed by educationalsists",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không xác định đối tượng",
+    "explanationVi": "Bạn cần nêu rõ nhóm chuyên gia giáo dục nào đã phát triển trò chơi này.",
+    "repairVi": "Liệt kê tổ chức hoặc cá nhân cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "f8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "certain level of logic thinking",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mô tả không đủ chi tiết",
+    "explanationVi": "Bạn nên mô tả cụ thể mức độ tư duy logic cần thiết, như cơ bản hay nâng cao.",
+    "repairVi": "Chỉ rõ yêu cầu cụ thể của trò chơi.",
+    "replacementText": ""
+   },
+   {
+    "id": "f9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "More people accept the idea now",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không nêu nhóm người cụ thể",
+    "explanationVi": "Bạn cần xác định rõ nhóm người đang chấp nhận ý tưởng này, như phụ huynh hay giáo viên.",
+    "repairVi": "Cung cấp thống kê hoặc quan điểm từ nguồn cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "f10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "an important role",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mô tả không đủ chi tiết",
+    "explanationVi": "Bạn nên giải thích vai trò cụ thể mà phương tiện truyền thông đóng góp trong việc học tập suốt đời của trẻ em.",
+    "repairVi": "Mô tả cách mà TV và trò chơi hỗ trợ học tập.",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "Many people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố chung chung",
+    "explanationVi": "Bạn nên nêu rõ nhóm người cụ thể để tăng tính thuyết phục.",
+    "repairVi": "Ví dụ, giáo viên hoặc phụ huynh.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "indispensable",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Từ ngữ trừu tượng",
+    "explanationVi": "Bạn nên giải thích tại sao chúng không thể thiếu với ví dụ cụ thể.",
+    "repairVi": "Ví dụ, giúp phát triển kỹ năng công nghệ.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "intellectual ability",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khái niệm mờ nhạt",
+    "explanationVi": "Bạn nên chỉ ra loại khả năng trí tuệ nào được phát triển, như tư duy logic.",
+    "repairVi": "Ví dụ, khả năng giải quyết vấn đề.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "important for children’s growing up",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tầm quan trọng không rõ",
+    "explanationVi": "Bạn nên nêu rõ tầm quan trọng đó là gì, như phát triển kỹ năng xã hội.",
+    "repairVi": "Ví dụ, giúp trẻ hòa đồng hơn.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "free thinking",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tư duy trừu tượng",
+    "explanationVi": "Bạn nên mô tả cụ thể loại tư duy tự do này hoạt động ra sao.",
+    "repairVi": "Ví dụ, tưởng tượng kết thúc khác nhau cho truyện.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "richer imagination",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mô tả mơ hồ",
+    "explanationVi": "Bạn nên ví dụ về sự tưởng tượng phong phú hơn, như tạo ra cốt truyện mới.",
+    "repairVi": "Ví dụ, trẻ sáng tạo ra nhân vật riêng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f9",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "far more effective than other methods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "So sánh chung chung",
+    "explanationVi": "Bạn nên so sánh cụ thể với các phương pháp khác, như đọc sách hoặc hoạt động thể chất.",
+    "repairVi": "Ví dụ, hiệu quả hơn đọc sách 30% theo nghiên cứu.",
+    "replacementText": ""
+   },
+   {
+    "id": "f11",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "great interest",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mức độ quan tâm mờ",
+    "explanationVi": "Bạn nên mô tả sự quan tâm đó biểu hiện như thế nào, như chú ý tập trung.",
+    "repairVi": "Ví dụ, trẻ xem liên tục 1 giờ không chán.",
+    "replacementText": ""
+   },
+   {
+    "id": "f12",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "a wide range of knowledge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Phạm vi kiến thức rộng",
+    "explanationVi": "Bạn nên liệt kê các kiến thức cụ thể, như tên loài vật hoặc phát minh.",
+    "repairVi": "Ví dụ, từ lịch sử đến vật lý.",
+    "replacementText": ""
+   },
+   {
+    "id": "f13",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "increasing number",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Xu hướng không rõ",
+    "explanationVi": "Bạn nên cung cấp số liệu hoặc xu hướng cụ thể để chứng minh sự tăng lên.",
+    "repairVi": "Ví dụ, tăng từ 100 lên 200 trò chơi mỗi năm.",
+    "replacementText": ""
+   },
+   {
+    "id": "f15",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "sometime could be challenggeable",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thời điểm mơ hồ",
+    "explanationVi": "Bạn nên nêu rõ khi nào và tại sao trở nên thách thức.",
+    "repairVi": "Ví dụ, khi trò chơi quá khó cho trẻ nhỏ.",
+    "replacementText": ""
+   },
+   {
+    "id": "f16",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "More people accept the idea",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nhóm người không rõ",
+    "explanationVi": "Bạn nên chỉ ra nhóm người cụ thể hoặc thống kê để hỗ trợ.",
+    "repairVi": "Ví dụ, 60% phụ huynh hiện nay đồng ý.",
+    "replacementText": ""
+   },
+   {
+    "id": "f17",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "important role",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vai trò mờ nhạt",
+    "explanationVi": "Bạn nên giải thích vai trò đó là gì, như hỗ trợ học tập suốt đời.",
+    "repairVi": "Ví dụ, giúp trẻ tự học qua trò chơi.",
+    "replacementText": ""
+   },
+   {
+    "id": "f18",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "all beneficial",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lợi ích chung",
+    "explanationVi": "Bạn nên tóm tắt lại lợi ích cụ thể của từng loại trong kết luận.",
+    "repairVi": "Ví dụ, sách giúp tưởng tượng, TV giúp kiến thức.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "other activities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mô tả không đủ chi tiết",
+      "explanationVi": "Bạn cần nêu rõ 'other activities' là những hoạt động nào, như vẽ tranh hay nghe nhạc, để người đọc hình dung được.",
+      "repairVi": "Thay vì chỉ nói 'other activities', hãy liệt kê vài ví dụ cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sometimes restrict their imagination",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu lý do cụ thể",
+      "explanationVi": "Bạn nên giải thích rõ trường hợp nào hoặc tại sao việc xem TV đôi khi hạn chế trí tưởng tượng.",
+      "repairVi": "Cung cấp nguyên nhân cụ thể hoặc ví dụ về thời điểm nào.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "globally regarded as a beneficial activity",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không nêu nguồn cụ thể",
+      "explanationVi": "Bạn cần chỉ ra cụ thể ai hoặc nhóm nào trên thế giới coi đọc sách là có lợi, để tăng tính thuyết phục.",
+      "repairVi": "Thêm bằng chứng từ các nghiên cứu hoặc quan điểm cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "other methods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mô tả không đủ chi tiết",
+      "explanationVi": "Bạn nên liệt kê các phương pháp khác để so sánh, như học từ sách giáo khoa hoặc tham gia lớp học ngoại khóa.",
+      "repairVi": "Đưa ra tên hoặc mô tả các phương pháp khác.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "numerous beneficial TV programs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu ví dụ cụ thể",
+      "explanationVi": "Bạn cần nêu tên hoặc thể loại cụ thể của các chương trình TV có lợi, để người đọc thấy rõ.",
+      "repairVi": "Ví dụ như chương trình khoa học hoặc giáo dục.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "increasing number of intellectual-oriented games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không có số liệu cụ thể",
+      "explanationVi": "Bạn nên cung cấp số liệu cụ thể hoặc tên trò chơi để minh họa sự gia tăng.",
+      "repairVi": "Đưa ra ví dụ như trò chơi giải đố hoặc chiến lược.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "developed by educationalsists",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không xác định đối tượng",
+      "explanationVi": "Bạn cần nêu rõ nhóm chuyên gia giáo dục nào đã phát triển trò chơi này.",
+      "repairVi": "Liệt kê tổ chức hoặc cá nhân cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "f8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "certain level of logic thinking",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mô tả không đủ chi tiết",
+      "explanationVi": "Bạn nên mô tả cụ thể mức độ tư duy logic cần thiết, như cơ bản hay nâng cao.",
+      "repairVi": "Chỉ rõ yêu cầu cụ thể của trò chơi.",
+      "replacementText": ""
+     },
+     {
+      "id": "f9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "More people accept the idea now",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không nêu nhóm người cụ thể",
+      "explanationVi": "Bạn cần xác định rõ nhóm người đang chấp nhận ý tưởng này, như phụ huynh hay giáo viên.",
+      "repairVi": "Cung cấp thống kê hoặc quan điểm từ nguồn cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "f10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "an important role",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mô tả không đủ chi tiết",
+      "explanationVi": "Bạn nên giải thích vai trò cụ thể mà phương tiện truyền thông đóng góp trong việc học tập suốt đời của trẻ em.",
+      "repairVi": "Mô tả cách mà TV và trò chơi hỗ trợ học tập.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "Many people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố chung chung",
+      "explanationVi": "Bạn nên nêu rõ nhóm người cụ thể để tăng tính thuyết phục.",
+      "repairVi": "Ví dụ, giáo viên hoặc phụ huynh.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "other activities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chi tiết thiếu",
+      "explanationVi": "Bạn nên liệt kê các hoạt động khác cụ thể thay vì nói chung chung.",
+      "repairVi": "Ví dụ, chơi thể thao hoặc học nhạc.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "indispensable",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ ngữ trừu tượng",
+      "explanationVi": "Bạn nên giải thích tại sao chúng không thể thiếu với ví dụ cụ thể.",
+      "repairVi": "Ví dụ, giúp phát triển kỹ năng công nghệ.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "intellectual ability",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái niệm mờ nhạt",
+      "explanationVi": "Bạn nên chỉ ra loại khả năng trí tuệ nào được phát triển, như tư duy logic.",
+      "repairVi": "Ví dụ, khả năng giải quyết vấn đề.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "important for children’s growing up",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tầm quan trọng không rõ",
+      "explanationVi": "Bạn nên nêu rõ tầm quan trọng đó là gì, như phát triển kỹ năng xã hội.",
+      "repairVi": "Ví dụ, giúp trẻ hòa đồng hơn.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "free thinking",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tư duy trừu tượng",
+      "explanationVi": "Bạn nên mô tả cụ thể loại tư duy tự do này hoạt động ra sao.",
+      "repairVi": "Ví dụ, tưởng tượng kết thúc khác nhau cho truyện.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "richer imagination",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mô tả mơ hồ",
+      "explanationVi": "Bạn nên ví dụ về sự tưởng tượng phong phú hơn, như tạo ra cốt truyện mới.",
+      "repairVi": "Ví dụ, trẻ sáng tạo ra nhân vật riêng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "globally regarded as a beneficial activity",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố không được hỗ trợ",
+      "explanationVi": "Bạn nên cung cấp bằng chứng hoặc số liệu để hỗ trợ tuyên bố này.",
+      "repairVi": "Ví dụ, nghiên cứu cho thấy 80% giáo viên ủng hộ.",
+      "replacementText": ""
+     },
+     {
+      "id": "f9",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "far more effective than other methods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "So sánh chung chung",
+      "explanationVi": "Bạn nên so sánh cụ thể với các phương pháp khác, như đọc sách hoặc hoạt động thể chất.",
+      "repairVi": "Ví dụ, hiệu quả hơn đọc sách 30% theo nghiên cứu.",
+      "replacementText": ""
+     },
+     {
+      "id": "f10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "numerous beneficial TV programs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Số lượng không rõ",
+      "explanationVi": "Bạn nên nêu tên một vài chương trình cụ thể để minh họa.",
+      "repairVi": "Ví dụ, chương trình khoa học như 'Cosmos'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f11",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "great interest",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mức độ quan tâm mờ",
+      "explanationVi": "Bạn nên mô tả sự quan tâm đó biểu hiện như thế nào, như chú ý tập trung.",
+      "repairVi": "Ví dụ, trẻ xem liên tục 1 giờ không chán.",
+      "replacementText": ""
+     },
+     {
+      "id": "f12",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "a wide range of knowledge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phạm vi kiến thức rộng",
+      "explanationVi": "Bạn nên liệt kê các kiến thức cụ thể, như tên loài vật hoặc phát minh.",
+      "repairVi": "Ví dụ, từ lịch sử đến vật lý.",
+      "replacementText": ""
+     },
+     {
+      "id": "f13",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "increasing number",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Xu hướng không rõ",
+      "explanationVi": "Bạn nên cung cấp số liệu hoặc xu hướng cụ thể để chứng minh sự tăng lên.",
+      "repairVi": "Ví dụ, tăng từ 100 lên 200 trò chơi mỗi năm.",
+      "replacementText": ""
+     },
+     {
+      "id": "f14",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "certain level of logic thinking",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Trình độ không xác định",
+      "explanationVi": "Bạn nên định nghĩa rõ trình độ đó, như tư duy phân tích vấn đề.",
+      "repairVi": "Ví dụ, khả năng giải đố logic.",
+      "replacementText": ""
+     },
+     {
+      "id": "f15",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sometime could be challenggeable",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thời điểm mơ hồ",
+      "explanationVi": "Bạn nên nêu rõ khi nào và tại sao trở nên thách thức.",
+      "repairVi": "Ví dụ, khi trò chơi quá khó cho trẻ nhỏ.",
+      "replacementText": ""
+     },
+     {
+      "id": "f16",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "More people accept the idea",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhóm người không rõ",
+      "explanationVi": "Bạn nên chỉ ra nhóm người cụ thể hoặc thống kê để hỗ trợ.",
+      "repairVi": "Ví dụ, 60% phụ huynh hiện nay đồng ý.",
+      "replacementText": ""
+     },
+     {
+      "id": "f17",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "important role",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vai trò mờ nhạt",
+      "explanationVi": "Bạn nên giải thích vai trò đó là gì, như hỗ trợ học tập suốt đời.",
+      "repairVi": "Ví dụ, giúp trẻ tự học qua trò chơi.",
+      "replacementText": ""
+     },
+     {
+      "id": "f18",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "all beneficial",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lợi ích chung",
+      "explanationVi": "Bạn nên tóm tắt lại lợi ích cụ thể của từng loại trong kết luận.",
+      "repairVi": "Ví dụ, sách giúp tưởng tượng, TV giúp kiến thức.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "stuydy-t2-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Bài viết chứa nhiều tuyên bố trừu tượng, thiếu ví dụ cụ thể để hỗ trợ luận điểm.",
+  "findings": [
+   {
+    "id": "vague1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "personal growth",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khái niệm trừu tượng",
+    "explanationVi": "Bạn đề cập 'personal growth' nhưng không nêu rõ là sự phát triển nào, ví dụ như kỹ năng giao tiếp hay tự lập.",
+    "repairVi": "Cung cấp ví dụ cụ thể về sự phát triển cá nhân.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "social activities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "hoạt động không cụ thể",
+    "explanationVi": "Bạn nói 'social activities' mà không nêu rõ đó là hoạt động gì, như tham gia câu lạc bộ hay làm tình nguyện.",
+    "repairVi": "Liệt kê một số hoạt động xã hội cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "organizing abilities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khả năng trừu tượng",
+    "explanationVi": "Bạn đề cập 'organizing abilities' nhưng không giải thích đó là khả năng tổ chức gì, như sự kiện hay dự án.",
+    "repairVi": "Cho biết loại khả năng tổ chức được rèn luyện.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "the bond between their friend",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mối quan hệ không rõ ràng",
+    "explanationVi": "Bạn nói 'the bond between their friend' mà không rõ đó là mối quan hệ như thế nào, sâu sắc hay gắn bó.",
+    "repairVi": "Mô tả rõ hơn sự gắn bó giữa bạn bè.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "lack in self-control",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu tự kiểm soát không cụ thể",
+    "explanationVi": "Bạn chỉ ra 'lack in self-control' nhưng không nêu ví dụ hành vi cụ thể, như thức khuya hay chi tiêu quá mức.",
+    "repairVi": "Đưa ra ví dụ về sự thiếu tự kiểm soát trong sinh hoạt.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "bad timetable",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thời khóa biểu không rõ",
+    "explanationVi": "Bạn đề cập 'bad timetable' mà không giải thích đó là thói quen xấu nào, như học lệch giờ hay không sắp xếp.",
+    "repairVi": "Chỉ rõ thói quen thời gian không tốt.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "mental problem",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "vấn đề tâm lý trừu tượng",
+    "explanationVi": "Bạn nói 'mental problem' nhưng không nêu loại vấn đề nào, như lo âu hay trầm cảm.",
+    "repairVi": "Xác định vấn đề tâm lý cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "adverse effect",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tác động tiêu cực không rõ",
+    "explanationVi": "Bạn đề cập 'adverse effect' mà không mô tả đó là tác động gì, như giảm thành tích học tập.",
+    "repairVi": "Mô tả tác động tiêu cực cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "most student",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "đối tượng không xác định",
+    "explanationVi": "Bạn nói 'most student' nhưng không nêu đó là nhóm sinh viên nào, như sinh viên năm nhất hay quốc tế.",
+    "repairVi": "Xác định nhóm sinh viên được đề cập.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "certain group",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "nhóm không cụ thể",
+    "explanationVi": "Bạn đề cập 'certain group' mà không nói rõ đó là nhóm sinh viên có đặc điểm gì.",
+    "repairVi": "Chỉ ra nhóm sinh viên cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "personal growth and the development for independent thought",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn đưa ra khái niệm 'personal growth' và 'development for independent thought' mà không nêu rõ cụ thể là những khía cạnh nào, khiến người đọc không thể hình dung được.",
+    "repairVi": "Nên liệt kê các khía cạnh cụ thể của sự phát triển cá nhân, ví dụ như kỹ năng tự quản lý thời gian, khả năng ra quyết định.",
+    "replacementText": ""
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "practicges their organizing abilities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khái niệm trừu tượng",
+    "explanationVi": "Bạn nói về 'organizing abilities' mà không làm rõ đó là kỹ năng tổ chức gì, như tổ chức sự kiện hay quản lý dự án.",
+    "repairVi": "Chỉ ra cụ thể loại kỹ năng tổ chức, ví dụ 'organize study groups'.",
+    "replacementText": ""
+   },
+   {
+    "id": "4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "enhancges the bond between their friend",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mối quan hệ không rõ ràng",
+    "explanationVi": "Bạn đề cập đến 'bond between their friend' nhưng không giải thích rõ mối liên kết này được thể hiện như thế nào.",
+    "repairVi": "Mô tả cụ thể, ví dụ 'develop deeper friendships through shared experiences'.",
+    "replacementText": ""
+   },
+   {
+    "id": "5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "negative impact",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tác động chung chung",
+    "explanationVi": "Bạn nói về 'negative impact' mà không nêu rõ những tác động cụ thể nào ngoài việc quản lý thời gian.",
+    "repairVi": "Liệt kê thêm các tác động khác, như suy giảm học tập hay vấn đề tài chính.",
+    "replacementText": ""
+   },
+   {
+    "id": "6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "pose mental problem",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vấn đề sức khỏe tâm thần không rõ",
+    "explanationVi": "Bạn đề cập đến 'mental problem' mà không xác định đó là vấn đề tâm thần gì, như trầm cảm hay lo âu.",
+    "repairVi": "Chỉ rõ loại vấn đề, ví dụ 'symptoms of anxiety or depression'.",
+    "replacementText": ""
+   },
+   {
+    "id": "7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "which may be distracted",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sự phân tâm không cụ thể",
+    "explanationVi": "Bạn nói rằng họ có thể bị phân tâm nhưng không giải thích nguyên nhân hay cách phân tâm như thế nào.",
+    "repairVi": "Thêm chi tiết, ví dụ 'distracted by loneliness or new responsibilities'.",
+    "replacementText": ""
+   },
+   {
+    "id": "8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "potential risk",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Rủi ro tiềm ẩn mơ hồ",
+    "explanationVi": "Bạn đề cập đến 'potential risk' mà không nêu rõ những rủi ro cụ thể ngoài việc sử dụng dụng cụ nhà bếp.",
+    "repairVi": "Mở rộng với ví dụ khác, như rủi ro về an toàn hoặc tài chính.",
+    "replacementText": ""
+   },
+   {
+    "id": "9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "short of practical skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kỹ năng thực tế không rõ ràng",
+    "explanationVi": "Bạn nói 'short of practical skills' nhưng không liệt kê những kỹ năng cụ thể thiếu hụt, ngoại trừ liên quan đến dụng cụ nhà bếp.",
+    "repairVi": "Thêm kỹ năng khác, như quản lý tài chính hoặc sửa chữa cơ bản.",
+    "replacementText": ""
+   },
+   {
+    "id": "10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "excellent chance for personal growth",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cơ hội phát triển cá nhân trừu tượng",
+    "explanationVi": "Bạn nhấn mạnh 'personal growth' nhưng không tóm tắt những khía cạnh cụ thể đã讨论 ở trên.",
+    "repairVi": "Tóm lại các điểm cụ thể như kỹ năng tự lập và tư duy độc lập.",
+    "replacementText": ""
+   },
+   {
+    "id": "12",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "positive for most student",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố không rõ đối tượng",
+    "explanationVi": "Bạn nói 'positive for most student' nhưng không giải thích tại sao là 'most' hay tiêu chí nào để xác định.",
+    "repairVi": "Cung cấp lý do cụ thể, như lợi ích vượt trối đối với đa số sinh viên.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "vague1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "personal growth",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khái niệm trừu tượng",
+      "explanationVi": "Bạn đề cập 'personal growth' nhưng không nêu rõ là sự phát triển nào, ví dụ như kỹ năng giao tiếp hay tự lập.",
+      "repairVi": "Cung cấp ví dụ cụ thể về sự phát triển cá nhân.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "social activities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "hoạt động không cụ thể",
+      "explanationVi": "Bạn nói 'social activities' mà không nêu rõ đó là hoạt động gì, như tham gia câu lạc bộ hay làm tình nguyện.",
+      "repairVi": "Liệt kê một số hoạt động xã hội cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "organizing abilities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khả năng trừu tượng",
+      "explanationVi": "Bạn đề cập 'organizing abilities' nhưng không giải thích đó là khả năng tổ chức gì, như sự kiện hay dự án.",
+      "repairVi": "Cho biết loại khả năng tổ chức được rèn luyện.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the bond between their friend",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mối quan hệ không rõ ràng",
+      "explanationVi": "Bạn nói 'the bond between their friend' mà không rõ đó là mối quan hệ như thế nào, sâu sắc hay gắn bó.",
+      "repairVi": "Mô tả rõ hơn sự gắn bó giữa bạn bè.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "lack in self-control",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu tự kiểm soát không cụ thể",
+      "explanationVi": "Bạn chỉ ra 'lack in self-control' nhưng không nêu ví dụ hành vi cụ thể, như thức khuya hay chi tiêu quá mức.",
+      "repairVi": "Đưa ra ví dụ về sự thiếu tự kiểm soát trong sinh hoạt.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "bad timetable",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thời khóa biểu không rõ",
+      "explanationVi": "Bạn đề cập 'bad timetable' mà không giải thích đó là thói quen xấu nào, như học lệch giờ hay không sắp xếp.",
+      "repairVi": "Chỉ rõ thói quen thời gian không tốt.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "mental problem",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "vấn đề tâm lý trừu tượng",
+      "explanationVi": "Bạn nói 'mental problem' nhưng không nêu loại vấn đề nào, như lo âu hay trầm cảm.",
+      "repairVi": "Xác định vấn đề tâm lý cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "adverse effect",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tác động tiêu cực không rõ",
+      "explanationVi": "Bạn đề cập 'adverse effect' mà không mô tả đó là tác động gì, như giảm thành tích học tập.",
+      "repairVi": "Mô tả tác động tiêu cực cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "most student",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "đối tượng không xác định",
+      "explanationVi": "Bạn nói 'most student' nhưng không nêu đó là nhóm sinh viên nào, như sinh viên năm nhất hay quốc tế.",
+      "repairVi": "Xác định nhóm sinh viên được đề cập.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "certain group",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "nhóm không cụ thể",
+      "explanationVi": "Bạn đề cập 'certain group' mà không nói rõ đó là nhóm sinh viên có đặc điểm gì.",
+      "repairVi": "Chỉ ra nhóm sinh viên cụ thể.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "personal growth and the development for independent thought",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn đưa ra khái niệm 'personal growth' và 'development for independent thought' mà không nêu rõ cụ thể là những khía cạnh nào, khiến người đọc không thể hình dung được.",
+      "repairVi": "Nên liệt kê các khía cạnh cụ thể của sự phát triển cá nhân, ví dụ như kỹ năng tự quản lý thời gian, khả năng ra quyết định.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "social activities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ mơ hồ",
+      "explanationVi": "Bạn đề cập đến 'social activities' nhưng không giải thích rõ những hoạt động cụ thể nào, như tham gia câu lạc bộ hay làm tình nguyện.",
+      "repairVi": "Cung cấp ví dụ cụ thể như 'join university clubs' hoặc 'volunteer in community projects'.",
+      "replacementText": ""
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "practicges their organizing abilities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái niệm trừu tượng",
+      "explanationVi": "Bạn nói về 'organizing abilities' mà không làm rõ đó là kỹ năng tổ chức gì, như tổ chức sự kiện hay quản lý dự án.",
+      "repairVi": "Chỉ ra cụ thể loại kỹ năng tổ chức, ví dụ 'organize study groups'.",
+      "replacementText": ""
+     },
+     {
+      "id": "4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "enhancges the bond between their friend",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mối quan hệ không rõ ràng",
+      "explanationVi": "Bạn đề cập đến 'bond between their friend' nhưng không giải thích rõ mối liên kết này được thể hiện như thế nào.",
+      "repairVi": "Mô tả cụ thể, ví dụ 'develop deeper friendships through shared experiences'.",
+      "replacementText": ""
+     },
+     {
+      "id": "5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "negative impact",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tác động chung chung",
+      "explanationVi": "Bạn nói về 'negative impact' mà không nêu rõ những tác động cụ thể nào ngoài việc quản lý thời gian.",
+      "repairVi": "Liệt kê thêm các tác động khác, như suy giảm học tập hay vấn đề tài chính.",
+      "replacementText": ""
+     },
+     {
+      "id": "6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "pose mental problem",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vấn đề sức khỏe tâm thần không rõ",
+      "explanationVi": "Bạn đề cập đến 'mental problem' mà không xác định đó là vấn đề tâm thần gì, như trầm cảm hay lo âu.",
+      "repairVi": "Chỉ rõ loại vấn đề, ví dụ 'symptoms of anxiety or depression'.",
+      "replacementText": ""
+     },
+     {
+      "id": "7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "which may be distracted",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sự phân tâm không cụ thể",
+      "explanationVi": "Bạn nói rằng họ có thể bị phân tâm nhưng không giải thích nguyên nhân hay cách phân tâm như thế nào.",
+      "repairVi": "Thêm chi tiết, ví dụ 'distracted by loneliness or new responsibilities'.",
+      "replacementText": ""
+     },
+     {
+      "id": "8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "potential risk",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Rủi ro tiềm ẩn mơ hồ",
+      "explanationVi": "Bạn đề cập đến 'potential risk' mà không nêu rõ những rủi ro cụ thể ngoài việc sử dụng dụng cụ nhà bếp.",
+      "repairVi": "Mở rộng với ví dụ khác, như rủi ro về an toàn hoặc tài chính.",
+      "replacementText": ""
+     },
+     {
+      "id": "9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "short of practical skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kỹ năng thực tế không rõ ràng",
+      "explanationVi": "Bạn nói 'short of practical skills' nhưng không liệt kê những kỹ năng cụ thể thiếu hụt, ngoại trừ liên quan đến dụng cụ nhà bếp.",
+      "repairVi": "Thêm kỹ năng khác, như quản lý tài chính hoặc sửa chữa cơ bản.",
+      "replacementText": ""
+     },
+     {
+      "id": "10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "excellent chance for personal growth",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cơ hội phát triển cá nhân trừu tượng",
+      "explanationVi": "Bạn nhấn mạnh 'personal growth' nhưng không tóm tắt những khía cạnh cụ thể đã讨论 ở trên.",
+      "repairVi": "Tóm lại các điểm cụ thể như kỹ năng tự lập và tư duy độc lập.",
+      "replacementText": ""
+     },
+     {
+      "id": "11",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "adverse effect",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tác hại chung chung",
+      "explanationVi": "Bạn đề cập đến 'adverse effect' mà không nhắc lại những tác động cụ thể đã nêu.",
+      "repairVi": "Tóm tắt lại như vấn đề quản lý thời gian và homesickness.",
+      "replacementText": ""
+     },
+     {
+      "id": "12",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "positive for most student",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố không rõ đối tượng",
+      "explanationVi": "Bạn nói 'positive for most student' nhưng không giải thích tại sao là 'most' hay tiêu chí nào để xác định.",
+      "repairVi": "Cung cấp lý do cụ thể, như lợi ích vượt trối đối với đa số sinh viên.",
+      "replacementText": ""
+     },
+     {
+      "id": "13",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "certain group",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhóm người không xác định",
+      "explanationVi": "Bạn đề cập đến 'certain group' mà không rõ nhóm nào, như nhóm thiếu kỹ năng hay thiếu tự chủ.",
+      "repairVi": "Xác định rõ, ví dụ 'students who lack self-discipline or practical skills'.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Các tuyên bố trong bài viết quá trừu tượng, thiếu chi tiết cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "vag1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "more and more shops",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn cần làm rõ những cửa hàng cụ thể nào sẽ bị đóng cửa, hoặc nêu ra xu hướng rõ ràng.",
+    "repairVi": "Thêm tên loại cửa hàng hoặc số liệu thống kê.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "more convenient and personalized",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn nên giải thích chi tiết hơn về sự tiện lợi và cá nhân hóa của cửa hàng truyền thống.",
+    "repairVi": "Liệt kê các ví dụ cụ thể như dịch vụ tư vấn hay trải nghiệm mua sắm.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "more choices",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn có thể nêu rõ loại lựa chọn nào được mở rộng, như sản phẩm quốc tế hay đa dạng thương hiệu.",
+    "repairVi": "Đưa ra ví dụ cụ thể về sự đa dạng sản phẩm.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "less time consuming",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn nên so sánh thời gian cụ thể giữa mua sắm trực tuyến và truyền thống.",
+    "repairVi": "Thêm số liệu về thời gian tiết kiệm được.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "save a considerable amount of time",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn cần ước tính thời gian tiết kiệm được, ví dụ như vài giờ mỗi tuần.",
+    "repairVi": "Cung cấp con số cụ thể hoặc ví dụ thời gian.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag7",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "more personalized services",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn liệt kê các dịch vụ cá nhân hóa cụ thể, như tư vấn hay sửa đổi sản phẩm.",
+    "repairVi": "Thêm chi tiết về loại dịch vụ được cung cấp.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "many traditional shops",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn cần chỉ ra những cửa hàng truyền thống nào sẽ bị đóng cửa và tại sao.",
+    "repairVi": "Nêu cụ thể loại cửa hàng như siêu thị hay cửa hàng quần áo.",
+    "replacementText": ""
+   },
+   {
+    "id": "vag9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "better services",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mệnh đề chung chung",
+    "explanationVi": "Bạn nên giải thích dịch vụ tốt hơn là như thế nào, ví dụ như hỗ trợ sau bán hàng.",
+    "repairVi": "Đưa ra ví dụ cụ thể về dịch vụ ưu việt.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "many advantages",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn nói 'many advantages' nhưng không nêu rõ là những ưu điểm nào. Độc giả tự hỏi 'những ưu điểm cụ thể?'",
+    "repairVi": "Nên liệt kê một vài ưu điểm cụ thể như giá rẻ hoặc sự đa dạng sản phẩm.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "other important businesses",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ không rõ ràng",
+    "explanationVi": "Bạn nhắc đến 'other important businesses' nhưng không giải thích đó là những hoạt động quan trọng nào.",
+    "repairVi": "Liệt kê cụ thể các hoạt động như làm thêm hoặc giải trí.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "saves a lot of time",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ mơ hồ",
+    "explanationVi": "Bạn nói 'saves a lot of time' nhưng không xác định bao nhiêu thời gian hoặc trong ngữ cảnh nào.",
+    "repairVi": "Thêm chi tiết cụ thể như tiết kiệm hàng giờ mỗi tuần.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding11",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "some shops",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn nói 'some shops' nhưng không xác định đó là cửa hàng nào có dịch vụ tốt hơn.",
+    "repairVi": "Chỉ ra cụ thể loại cửa hàng như cửa hàng thời trang hoặc cửa hàng thủ công.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "vag1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "more and more shops",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn cần làm rõ những cửa hàng cụ thể nào sẽ bị đóng cửa, hoặc nêu ra xu hướng rõ ràng.",
+      "repairVi": "Thêm tên loại cửa hàng hoặc số liệu thống kê.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "more convenient and personalized",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn nên giải thích chi tiết hơn về sự tiện lợi và cá nhân hóa của cửa hàng truyền thống.",
+      "repairVi": "Liệt kê các ví dụ cụ thể như dịch vụ tư vấn hay trải nghiệm mua sắm.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "more choices",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn có thể nêu rõ loại lựa chọn nào được mở rộng, như sản phẩm quốc tế hay đa dạng thương hiệu.",
+      "repairVi": "Đưa ra ví dụ cụ thể về sự đa dạng sản phẩm.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "less time consuming",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn nên so sánh thời gian cụ thể giữa mua sắm trực tuyến và truyền thống.",
+      "repairVi": "Thêm số liệu về thời gian tiết kiệm được.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "save a considerable amount of time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn cần ước tính thời gian tiết kiệm được, ví dụ như vài giờ mỗi tuần.",
+      "repairVi": "Cung cấp con số cụ thể hoặc ví dụ thời gian.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag7",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "more personalized services",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn liệt kê các dịch vụ cá nhân hóa cụ thể, như tư vấn hay sửa đổi sản phẩm.",
+      "repairVi": "Thêm chi tiết về loại dịch vụ được cung cấp.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "many traditional shops",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn cần chỉ ra những cửa hàng truyền thống nào sẽ bị đóng cửa và tại sao.",
+      "repairVi": "Nêu cụ thể loại cửa hàng như siêu thị hay cửa hàng quần áo.",
+      "replacementText": ""
+     },
+     {
+      "id": "vag9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "better services",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mệnh đề chung chung",
+      "explanationVi": "Bạn nên giải thích dịch vụ tốt hơn là như thế nào, ví dụ như hỗ trợ sau bán hàng.",
+      "repairVi": "Đưa ra ví dụ cụ thể về dịch vụ ưu việt.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "many advantages",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn nói 'many advantages' nhưng không nêu rõ là những ưu điểm nào. Độc giả tự hỏi 'những ưu điểm cụ thể?'",
+      "repairVi": "Nên liệt kê một vài ưu điểm cụ thể như giá rẻ hoặc sự đa dạng sản phẩm.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "more and more shops",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không rõ ràng",
+      "explanationVi": "Bạn đề cập 'more and more shops' nhưng không chỉ rõ loại cửa hàng nào. Cần thêm chi tiết.",
+      "repairVi": "Chỉ rõ các loại cửa hàng như cửa hàng tạp hóa hoặc cửa hàng quần áo.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "more choices",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn nói 'more choices' nhưng không giải thích cụ thể sự đa dạng này là gì. Độc giả muốn biết chi tiết hơn.",
+      "repairVi": "Đưa ra ví dụ cụ thể về các loại sản phẩm đa dạng có sẵn trực tuyến.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "save a considerable amount of time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ mơ hồ",
+      "explanationVi": "Bạn cho biết 'save a considerable amount of time' nhưng không nêu rõ bao nhiêu thời gian hoặc cho việc gì.",
+      "repairVi": "Thêm chi tiết về việc tiết kiệm thời gian đi lại hoặc so sánh thời gian cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "other important businesses",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không rõ ràng",
+      "explanationVi": "Bạn nhắc đến 'other important businesses' nhưng không giải thích đó là những hoạt động quan trọng nào.",
+      "repairVi": "Liệt kê cụ thể các hoạt động như làm thêm hoặc giải trí.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "more personalized services",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn nói 'more personalized services' nhưng không nêu rõ dịch vụ cá nhân hóa đó là gì. Độc giả cần ví dụ cụ thể.",
+      "repairVi": "Đưa ra ví dụ như tư vấn kích cỡ hoặc dịch vụ đặt hàng đặc biệt.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "more choices",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ lặp lại mơ hồ",
+      "explanationVi": "Trong kết luận, bạn lại dùng 'more choices' mà không thêm chi tiết mới. Cần làm rõ hơn.",
+      "repairVi": "Tóm tắt lại các lựa chọn đa dạng đã đề cập trước đó hoặc đưa ra ví dụ cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "saves a lot of time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ mơ hồ",
+      "explanationVi": "Bạn nói 'saves a lot of time' nhưng không xác định bao nhiêu thời gian hoặc trong ngữ cảnh nào.",
+      "repairVi": "Thêm chi tiết cụ thể như tiết kiệm hàng giờ mỗi tuần.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "many traditional shops",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không rõ ràng",
+      "explanationVi": "Bạn đề cập 'many traditional shops' nhưng không chỉ rõ cửa hàng truyền thống nào sẽ đóng cửa.",
+      "repairVi": "Phân loại các cửa hàng như cửa hàng quần áo hoặc siêu thị nhỏ.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding11",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "some shops",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn nói 'some shops' nhưng không xác định đó là cửa hàng nào có dịch vụ tốt hơn.",
+      "repairVi": "Chỉ ra cụ thể loại cửa hàng như cửa hàng thời trang hoặc cửa hàng thủ công.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 0,
+  "rationaleVi": "Các tuyên bố trong bài quá trừu tượng, thiếu chi tiết cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the majority of people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn dùng 'the majority of people' nhưng chưa xác định rõ đây là những ai.",
+    "repairVi": "Hãy nêu rõ nhóm người cụ thể, ví dụ như người tiêu dùng hay công nhân.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "various reasons",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ mơ hồ",
+    "explanationVi": "Bạn nói 'various reasons' mà không liệt kê lý do cụ thể nào.",
+    "repairVi": "Hãy nêu ít nhất hai lý do chính, như thiếu ý thức hay thiếu cơ sở vật chất.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "people’s conception and selfishness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khái niệm trừu tượng",
+    "explanationVi": "Bạn đề cập 'people’s conception and selfishness' quá mơ hồ, không rõ ý niệm gì và ích kỷ ra sao.",
+    "repairVi": "Hãy giải thích ý niệm nào và ích kỷ thể hiện như thế nào.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "general conception",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nội dung không rõ",
+    "explanationVi": "Bạn dùng 'general conception' mà không nói rõ nội dung ý niệm đó.",
+    "repairVi": "Hãy mô tả ý niệm chung đó là gì, chẳng hạn như 'bảo vệ môi trường chỉ là trồng cây'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "crucial problems",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vấn đề không xác định",
+    "explanationVi": "Bạn nhắc 'crucial problems' nhưng không nêu rõ vấn đề gì được coi là quan trọng.",
+    "repairVi": "Hãy chỉ ra vấn đề cụ thể, như biến đổi khí hậu hay ô nhiễm nguồn nước.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "some people may neglect environmental problems",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lý do thiếu",
+    "explanationVi": "Bạn nói 'some people may neglect environmental problems' mà không giải thích tại sao họ làm vậy.",
+    "repairVi": "Hãy nêu lý do họ bỏ mặc, ví dụ như do bận rộn hay do thiếu thông tin.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "constrain their daily convenience",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không có",
+    "explanationVi": "Bạn dùng 'constrain their daily convenience' quá trừu tượng, không rõ sự bất tiện nào.",
+    "repairVi": "Hãy nêu ví dụ cụ thể, như phải đi xe bus thay vì lái xe riêng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "several measures",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Biện pháp chung chung",
+    "explanationVi": "Bạn nói 'several measures' mà không nêu biện pháp nào cả.",
+    "repairVi": "Hãy liệt kê ít nhất hai biện pháp cụ thể, như tăng thuế carbon hay thúc đẩy tái chế.",
+    "replacementText": ""
+   },
+   {
+    "id": "f9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "make more effort",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nỗ lực không rõ",
+    "explanationVi": "Bạn kêu gọi 'make more effort' nhưng không nói chính phủ cần nỗ lực như thế nào.",
+    "repairVi": "Hãy đề xuất hành động cụ thể, như ban hành luật bảo vệ môi trường hay tài trợ dự án xanh.",
+    "replacementText": ""
+   },
+   {
+    "id": "f10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "take responsibility",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Trách nhiệm mờ nhạt",
+    "explanationVi": "Bạn bảo 'take responsibility' mà không giải thích trách nhiệm đó bao gồm những gì.",
+    "repairVi": "Hãy nêu hành động cụ thể, như giảm sử dụng nhựa hay tiết kiệm năng lượng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f11",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "play their part",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vai trò không xác định",
+    "explanationVi": "Bạn nói 'play their part' quá chung chung, không rõ phần đóng góp là gì.",
+    "repairVi": "Hãy mô tả hành động cụ thể, như tham gia dọn dẹp cộng động hay chọn sản phẩm thân thiện môi trường.",
+    "replacementText": ""
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "some people may neglect environmental problems on purpose",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nhóm người không xác định",
+    "explanationVi": "Bạn nói 'some people' nhưng không xác định nhóm nào.",
+    "repairVi": "Nêu rõ như người sử dụng xe ô tô cá nhân.",
+    "replacementText": ""
+   },
+   {
+    "id": "7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "many jobs",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Công việc không rõ",
+    "explanationVi": "Bạn nói 'many jobs' nhưng không nêu ví dụ cụ thể.",
+    "repairVi": "Đưa ra ngành nghề như xây dựng, y tế.",
+    "replacementText": ""
+   },
+   {
+    "id": "8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "most of companies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Công ty không xác định",
+    "explanationVi": "Bạn nói 'most of companies' không xác định.",
+    "repairVi": "Nên nêu loại công ty hoặc ngành cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 6,
+      "sourceText": "more likely to believe",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khả năng không chứng minh",
+    "explanationVi": "Bạn nói 'more likely' mà không chứng minh.",
+    "repairVi": "Cung cấp lý do hoặc dữ liệu hỗ trợ.",
+    "replacementText": ""
+   },
+   {
+    "id": "10",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 7,
+      "sourceText": "unpractical and unfair",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận thiếu tóm tắt",
+    "explanationVi": "Bạn kết luận 'unpractical and unfair' nhưng không tóm tắt lý do.",
+    "repairVi": "Tóm lại các luận điểm đã nêu.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the majority of people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn dùng 'the majority of people' nhưng chưa xác định rõ đây là những ai.",
+      "repairVi": "Hãy nêu rõ nhóm người cụ thể, ví dụ như người tiêu dùng hay công nhân.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "various reasons",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ mơ hồ",
+      "explanationVi": "Bạn nói 'various reasons' mà không liệt kê lý do cụ thể nào.",
+      "repairVi": "Hãy nêu ít nhất hai lý do chính, như thiếu ý thức hay thiếu cơ sở vật chất.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "people’s conception and selfishness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái niệm trừu tượng",
+      "explanationVi": "Bạn đề cập 'people’s conception and selfishness' quá mơ hồ, không rõ ý niệm gì và ích kỷ ra sao.",
+      "repairVi": "Hãy giải thích ý niệm nào và ích kỷ thể hiện như thế nào.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "general conception",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nội dung không rõ",
+      "explanationVi": "Bạn dùng 'general conception' mà không nói rõ nội dung ý niệm đó.",
+      "repairVi": "Hãy mô tả ý niệm chung đó là gì, chẳng hạn như 'bảo vệ môi trường chỉ là trồng cây'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "crucial problems",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vấn đề không xác định",
+      "explanationVi": "Bạn nhắc 'crucial problems' nhưng không nêu rõ vấn đề gì được coi là quan trọng.",
+      "repairVi": "Hãy chỉ ra vấn đề cụ thể, như biến đổi khí hậu hay ô nhiễm nguồn nước.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "some people may neglect environmental problems",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do thiếu",
+      "explanationVi": "Bạn nói 'some people may neglect environmental problems' mà không giải thích tại sao họ làm vậy.",
+      "repairVi": "Hãy nêu lý do họ bỏ mặc, ví dụ như do bận rộn hay do thiếu thông tin.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "constrain their daily convenience",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không có",
+      "explanationVi": "Bạn dùng 'constrain their daily convenience' quá trừu tượng, không rõ sự bất tiện nào.",
+      "repairVi": "Hãy nêu ví dụ cụ thể, như phải đi xe bus thay vì lái xe riêng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "several measures",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Biện pháp chung chung",
+      "explanationVi": "Bạn nói 'several measures' mà không nêu biện pháp nào cả.",
+      "repairVi": "Hãy liệt kê ít nhất hai biện pháp cụ thể, như tăng thuế carbon hay thúc đẩy tái chế.",
+      "replacementText": ""
+     },
+     {
+      "id": "f9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "make more effort",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nỗ lực không rõ",
+      "explanationVi": "Bạn kêu gọi 'make more effort' nhưng không nói chính phủ cần nỗ lực như thế nào.",
+      "repairVi": "Hãy đề xuất hành động cụ thể, như ban hành luật bảo vệ môi trường hay tài trợ dự án xanh.",
+      "replacementText": ""
+     },
+     {
+      "id": "f10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "take responsibility",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Trách nhiệm mờ nhạt",
+      "explanationVi": "Bạn bảo 'take responsibility' mà không giải thích trách nhiệm đó bao gồm những gì.",
+      "repairVi": "Hãy nêu hành động cụ thể, như giảm sử dụng nhựa hay tiết kiệm năng lượng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f11",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "play their part",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vai trò không xác định",
+      "explanationVi": "Bạn nói 'play their part' quá chung chung, không rõ phần đóng góp là gì.",
+      "repairVi": "Hãy mô tả hành động cụ thể, như tham gia dọn dẹp cộng động hay chọn sản phẩm thân thiện môi trường.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "various reasons",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do chung chung",
+      "explanationVi": "Bạn nói 'various reasons' nhưng không giải thích cụ thể là gì.",
+      "repairVi": "Nên liệt kê các lý do như thiếu nhận thức, thói quen tiện lợi.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "people’s conception and selfishness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái niệm trừu tượng",
+      "explanationVi": "Bạn đề cập 'conception and selfishness' mà không nêu rõ hình thức cụ thể.",
+      "repairVi": "Ví dụ: cho rằng bảo vệ môi trường là trách nhiệm của người khác.",
+      "replacementText": ""
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "some people may neglect environmental problems on purpose",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhóm người không xác định",
+      "explanationVi": "Bạn nói 'some people' nhưng không xác định nhóm nào.",
+      "repairVi": "Nêu rõ như người sử dụng xe ô tô cá nhân.",
+      "replacementText": ""
+     },
+     {
+      "id": "4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "make more effort",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nỗ lực không rõ",
+      "explanationVi": "Bạn nói 'make more effort' quá chung chung.",
+      "repairVi": "Nên đề xuất hành động cụ thể như tăng cường giáo dục.",
+      "replacementText": ""
+     },
+     {
+      "id": "5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "take responsibility",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Trách nhiệm không cụ thể",
+      "explanationVi": "Bạn nói 'take responsibility' mà không nói rõ làm gì.",
+      "repairVi": "Ví dụ: giảm sử dụng nhựa, tái chế.",
+      "replacementText": ""
+     },
+     {
+      "id": "6",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "play their part",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Hành động mập mờ",
+      "explanationVi": "Bạn nói 'play their part' không rõ nghĩa.",
+      "repairVi": "Nên giải thích hành động cụ thể cần làm.",
+      "replacementText": ""
+     },
+     {
+      "id": "7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "many jobs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Công việc không rõ",
+      "explanationVi": "Bạn nói 'many jobs' nhưng không nêu ví dụ cụ thể.",
+      "repairVi": "Đưa ra ngành nghề như xây dựng, y tế.",
+      "replacementText": ""
+     },
+     {
+      "id": "8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "most of companies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Công ty không xác định",
+      "explanationVi": "Bạn nói 'most of companies' không xác định.",
+      "repairVi": "Nên nêu loại công ty hoặc ngành cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 6,
+        "sourceText": "more likely to believe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khả năng không chứng minh",
+      "explanationVi": "Bạn nói 'more likely' mà không chứng minh.",
+      "repairVi": "Cung cấp lý do hoặc dữ liệu hỗ trợ.",
+      "replacementText": ""
+     },
+     {
+      "id": "10",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 7,
+        "sourceText": "unpractical and unfair",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận thiếu tóm tắt",
+      "explanationVi": "Bạn kết luận 'unpractical and unfair' nhưng không tóm tắt lý do.",
+      "repairVi": "Tóm lại các luận điểm đã nêu.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "6.5-internet-task-2.pdf",
+  "band": 0,
+  "rationaleVi": "Một số khẳng định trong bài quá chung chung, không đủ cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "thousands and millions of devices",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Số liệu chung chung",
+    "explanationVi": "Bạn nên nêu rõ loại thiết bị nào nhận tin tức, như điện thoại thông minh hay máy tính, để tăng tính cụ thể.",
+    "repairVi": "các thiết bị di động và máy tính cá nhân",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "all news",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Khẳng định quá rộng",
+    "explanationVi": "Bạn dùng 'all news' mà không liệt kê loại tin tức cụ thể, nên lời khẳng định trở nên mơ hồ.",
+    "repairVi": "tin tức thời sự, giải trí và thể thao",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "thousands and millions of devices",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Số liệu chung chung",
+      "explanationVi": "Bạn nên nêu rõ loại thiết bị nào nhận tin tức, như điện thoại thông minh hay máy tính, để tăng tính cụ thể.",
+      "repairVi": "các thiết bị di động và máy tính cá nhân",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "all news",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khẳng định quá rộng",
+      "explanationVi": "Bạn dùng 'all news' mà không liệt kê loại tin tức cụ thể, nên lời khẳng định trở nên mơ hồ.",
+      "repairVi": "tin tức thời sự, giải trí và thể thao",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 0,
+  "rationaleVi": "Nhiều tuyên bố chung chung như 'many countries', 'long-term profits', và 'improve the public well-being' quá mơ hồ, không được làm rõ bằng ví dụ cụ thể, khiến bài viết thiếu thuyết phục.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "many countries",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ quá chung chung",
+    "explanationVi": "Bạn nói 'many countries' nhưng không chỉ rõ quốc gia nào, làm cho tuyên bố này quá mơ hồ.",
+    "repairVi": "Hãy nêu tên các quốc gia cụ thể hoặc đưa ra ví dụ về các nước đã đầu tư vào chương trình không gian.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "long-term profits",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lợi nhuận dài hạn không rõ ràng",
+    "explanationVi": "Bạn đề cập 'long-term profits' nhưng không giải thích lợi nhuận cụ thể nào, nên ý kiến này quá trừu tượng.",
+    "repairVi": "Chỉ ra những lợi nhuận dài hạn cụ thể, như khám phá tài nguyên hoặc phát triển công nghệ.",
+    "replacementText": ""
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "huge burdens for governments",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "gánh nặng lớn không rõ nguồn gốc",
+    "explanationVi": "Bạn nói 'huge burdens for governments' nhưng không mô tả gánh nặng đó là gì, làm cho tuyên bố mơ hồ.",
+    "repairVi": "Mô tả cụ thể loại gánh nặng, như nợ công hoặc cắt giảm ngân sách.",
+    "replacementText": ""
+   },
+   {
+    "id": "5",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "improve the public well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cải thiện phúc lợi công không rõ ràng",
+    "explanationVi": "Bạn nói 'improve the public well-being' nhưng không giải thích cải thiện nào, nên ý kiến này quá chung chung.",
+    "repairVi": "Nêu các khía cạnh cụ thể của phúc lợi công, như giáo dục, y tế hoặc an sinh xã hội.",
+    "replacementText": ""
+   },
+   {
+    "id": "6",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "social equality may be achieved gradually",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "bình đẳng xã hội không được định nghĩa",
+    "explanationVi": "Bạn đề cập 'social equality' nhưng không nói rõ bình đẳng trong lĩnh vực nào, làm cho câu mơ hồ.",
+    "repairVi": "Chỉ ra sự bình đẳng cụ thể, như cơ hội giáo dục hoặc thu nhập.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "some people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn đề cập 'some people' nhưng không xác định nhóm người này là ai.",
+    "repairVi": "Nên chỉ rõ nhóm người như chuyên gia hay công chúng.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "huge burdens",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn dùng 'huge burdens' mà không mô tả gánh nặng đó là gì.",
+    "repairVi": "Phải liệt kê gánh nặng cụ thể như nợ nần hay cắt giảm dịch vụ.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "disastrous to the economy and stability",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn bảo 'disastrous' nhưng không nói hậu quả cụ thể cho kinh tế và ổn định.",
+    "repairVi": "Cần giải thích thảm họa ra sao, như khủng hoảng tài chính hay bất ổn xã hội.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "social equality",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn đề cập 'social equality' mà không giải thích loại bình đẳng nào.",
+    "repairVi": "Cần làm rõ bình đẳng về thu nhập, cơ hội hay quyền lợi.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "ifacilities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn dùng 'ifacilities' (sai chính tả) nhưng không nêu cơ sở vật chất cụ thể.",
+    "repairVi": "Nên liệt kê như trường học, bệnh viện hay đường sá.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "inequality in the society",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn nói 'inequality in the society' mà không xác định bất bình đẳng gì.",
+    "repairVi": "Cần giải thích bất bình đẳng thu nhập, giáo dục hay việc làm.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "possible negative effects",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn đề cập 'possible negative effects' nhưng không nêu hiệu ứng tiêu cực nào.",
+    "repairVi": "Phải liệt kê hiệu ứng cụ thể như lãng phí tiền bạc hay bỏ lỡ cơ hội.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague11",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "positive transformation",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn nói 'positive transformation' mà không giải thích sự thay đổi tích cực ra sao.",
+    "repairVi": "Cần mô tả sự thay đổi như cải thiện cuộc sống hay phát triển kinh tế.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "many countries",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ quá chung chung",
+      "explanationVi": "Bạn nói 'many countries' nhưng không chỉ rõ quốc gia nào, làm cho tuyên bố này quá mơ hồ.",
+      "repairVi": "Hãy nêu tên các quốc gia cụ thể hoặc đưa ra ví dụ về các nước đã đầu tư vào chương trình không gian.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "long-term profits",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lợi nhuận dài hạn không rõ ràng",
+      "explanationVi": "Bạn đề cập 'long-term profits' nhưng không giải thích lợi nhuận cụ thể nào, nên ý kiến này quá trừu tượng.",
+      "repairVi": "Chỉ ra những lợi nhuận dài hạn cụ thể, như khám phá tài nguyên hoặc phát triển công nghệ.",
+      "replacementText": ""
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "huge burdens for governments",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "gánh nặng lớn không rõ nguồn gốc",
+      "explanationVi": "Bạn nói 'huge burdens for governments' nhưng không mô tả gánh nặng đó là gì, làm cho tuyên bố mơ hồ.",
+      "repairVi": "Mô tả cụ thể loại gánh nặng, như nợ công hoặc cắt giảm ngân sách.",
+      "replacementText": ""
+     },
+     {
+      "id": "5",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "improve the public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cải thiện phúc lợi công không rõ ràng",
+      "explanationVi": "Bạn nói 'improve the public well-being' nhưng không giải thích cải thiện nào, nên ý kiến này quá chung chung.",
+      "repairVi": "Nêu các khía cạnh cụ thể của phúc lợi công, như giáo dục, y tế hoặc an sinh xã hội.",
+      "replacementText": ""
+     },
+     {
+      "id": "6",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "social equality may be achieved gradually",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "bình đẳng xã hội không được định nghĩa",
+      "explanationVi": "Bạn đề cập 'social equality' nhưng không nói rõ bình đẳng trong lĩnh vực nào, làm cho câu mơ hồ.",
+      "repairVi": "Chỉ ra sự bình đẳng cụ thể, như cơ hội giáo dục hoặc thu nhập.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "vague1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "many countries",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn dùng 'many countries' nhưng không nêu quốc gia nào, làm câu thiếu thuyết phục.",
+      "repairVi": "Cần liệt kê tên quốc gia cụ thể để minh họa rõ ràng.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "some people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn đề cập 'some people' nhưng không xác định nhóm người này là ai.",
+      "repairVi": "Nên chỉ rõ nhóm người như chuyên gia hay công chúng.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "long-term profits",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn nói 'long-term profits' nhưng không giải thích lợi nhuận cụ thể nào.",
+      "repairVi": "Cần nêu lợi nhuận chi tiết như khám phá tài nguyên hay công nghệ mới.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "huge burdens",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn dùng 'huge burdens' mà không mô tả gánh nặng đó là gì.",
+      "repairVi": "Phải liệt kê gánh nặng cụ thể như nợ nần hay cắt giảm dịch vụ.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "disastrous to the economy and stability",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn bảo 'disastrous' nhưng không nói hậu quả cụ thể cho kinh tế và ổn định.",
+      "repairVi": "Cần giải thích thảm họa ra sao, như khủng hoảng tài chính hay bất ổn xã hội.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "improve the public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn nói 'improve the public well-being' nhưng không nêu khía cạnh cụ thể nào.",
+      "repairVi": "Phải chỉ rõ cải thiện sức khỏe, giáo dục hay phúc lợi khác.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "social equality",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn đề cập 'social equality' mà không giải thích loại bình đẳng nào.",
+      "repairVi": "Cần làm rõ bình đẳng về thu nhập, cơ hội hay quyền lợi.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "ifacilities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn dùng 'ifacilities' (sai chính tả) nhưng không nêu cơ sở vật chất cụ thể.",
+      "repairVi": "Nên liệt kê như trường học, bệnh viện hay đường sá.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "inequality in the society",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn nói 'inequality in the society' mà không xác định bất bình đẳng gì.",
+      "repairVi": "Cần giải thích bất bình đẳng thu nhập, giáo dục hay việc làm.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "possible negative effects",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn đề cập 'possible negative effects' nhưng không nêu hiệu ứng tiêu cực nào.",
+      "repairVi": "Phải liệt kê hiệu ứng cụ thể như lãng phí tiền bạc hay bỏ lỡ cơ hội.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague11",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "positive transformation",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn nói 'positive transformation' mà không giải thích sự thay đổi tích cực ra sao.",
+      "repairVi": "Cần mô tả sự thay đổi như cải thiện cuộc sống hay phát triển kinh tế.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 0,
+  "rationaleVi": "Một số tuyên bố trong bài quá trừu tượng, thiếu chi tiết cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "many companies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "quá chung chung",
+    "explanationVi": "Bạn cần nêu rõ tên hoặc loại công ty cụ thể để làm ví dụ.",
+    "repairVi": "Thay vì nói 'many companies', hãy liệt kê vài công ty lớn như Apple, Samsung, hoặc ngành công nghiệp cụ thể.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "consumers nowadays",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "nhóm đối tượng không rõ ràng",
+    "explanationVi": "Bạn nên xác định nhóm người tiêu dùng cụ thể, như người trẻ ở thành thị hay người thu nhập cao.",
+    "repairVi": "Thêm chi tiết về loại người tiêu dùng, ví dụ: 'young urban professionals' hoặc 'high-income individuals'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "almost unanimous consensus",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khẳng định thiếu cơ sở",
+    "explanationVi": "Bạn cần chỉ ra ai có sự đồng thuận này và dựa trên nghiên cứu nào.",
+    "repairVi": "Thay bằng một nguồn cụ thể, ví dụ: 'a study by XYZ shows that most people believe...'",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "impulsive consumption",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khái niệm trừu tượng",
+    "explanationVi": "Bạn nên giải thích rõ hành vi mua hàng bốc đồng này diễn ra như thế nào.",
+    "repairVi": "Thêm ví dụ cụ thể về hành vi mua sắm bốc đồng, như mua hàng giảm giá mà không cần thiết.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "businesses",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chung chung",
+    "explanationVi": "Bạn có thể nêu rõ loại hình doanh nghiệp, như công ty công nghệ hay thực phẩm.",
+    "repairVi": "Sử dụng 'technology companies' hoặc 'consumer goods manufacturers' thay vì 'businesses'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "irrational consumption",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "hành vi không rõ ràng",
+    "explanationVi": "Bạn nên định nghĩa thế nào là tiêu dùng phi lý và đưa ra minh chứng.",
+    "repairVi": "Giải thích bằng hành vi cụ thể, ví dụ: mua sản phẩm không cần thiết chỉ vì quảng cáo.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "impulsive purchases",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mua hàng bốc đồng không rõ",
+    "explanationVi": "Bạn cần mô tả rõ các trường hợp mua hàng bốc đồng trong thực tế.",
+    "repairVi": "Thêm ví dụ như mua hàng online ngay lập tức khi看到 giảm giá.",
+    "replacementText": ""
+   },
+   {
+    "id": "f8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "high demands of consumers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "nhu cầu không xác định",
+    "explanationVi": "Bạn nên cụ thể hóa nhu cầu cao này, như nhu cầu về công nghệ mới hay thiết kế时尚.",
+    "repairVi": "Chỉ rõ nhu cầu cụ thể, ví dụ: 'demand for latest smartphones' hoặc 'desire for trendy products'.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "many companies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "quá chung chung",
+      "explanationVi": "Bạn cần nêu rõ tên hoặc loại công ty cụ thể để làm ví dụ.",
+      "repairVi": "Thay vì nói 'many companies', hãy liệt kê vài công ty lớn như Apple, Samsung, hoặc ngành công nghiệp cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "consumers nowadays",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "nhóm đối tượng không rõ ràng",
+      "explanationVi": "Bạn nên xác định nhóm người tiêu dùng cụ thể, như người trẻ ở thành thị hay người thu nhập cao.",
+      "repairVi": "Thêm chi tiết về loại người tiêu dùng, ví dụ: 'young urban professionals' hoặc 'high-income individuals'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "almost unanimous consensus",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khẳng định thiếu cơ sở",
+      "explanationVi": "Bạn cần chỉ ra ai có sự đồng thuận này và dựa trên nghiên cứu nào.",
+      "repairVi": "Thay bằng một nguồn cụ thể, ví dụ: 'a study by XYZ shows that most people believe...'",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "impulsive consumption",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khái niệm trừu tượng",
+      "explanationVi": "Bạn nên giải thích rõ hành vi mua hàng bốc đồng này diễn ra như thế nào.",
+      "repairVi": "Thêm ví dụ cụ thể về hành vi mua sắm bốc đồng, như mua hàng giảm giá mà không cần thiết.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "businesses",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chung chung",
+      "explanationVi": "Bạn có thể nêu rõ loại hình doanh nghiệp, như công ty công nghệ hay thực phẩm.",
+      "repairVi": "Sử dụng 'technology companies' hoặc 'consumer goods manufacturers' thay vì 'businesses'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "irrational consumption",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "hành vi không rõ ràng",
+      "explanationVi": "Bạn nên định nghĩa thế nào là tiêu dùng phi lý và đưa ra minh chứng.",
+      "repairVi": "Giải thích bằng hành vi cụ thể, ví dụ: mua sản phẩm không cần thiết chỉ vì quảng cáo.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "impulsive purchases",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mua hàng bốc đồng không rõ",
+      "explanationVi": "Bạn cần mô tả rõ các trường hợp mua hàng bốc đồng trong thực tế.",
+      "repairVi": "Thêm ví dụ như mua hàng online ngay lập tức khi看到 giảm giá.",
+      "replacementText": ""
+     },
+     {
+      "id": "f8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "high demands of consumers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "nhu cầu không xác định",
+      "explanationVi": "Bạn nên cụ thể hóa nhu cầu cao này, như nhu cầu về công nghệ mới hay thiết kế时尚.",
+      "repairVi": "Chỉ rõ nhu cầu cụ thể, ví dụ: 'demand for latest smartphones' hoặc 'desire for trendy products'.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "many companies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Yêu cầu chung chung",
+      "explanationVi": "Bạn nêu 'many companies' nhưng không chỉ rõ công ty nào. Cần thêm tên công ty hoặc ngành nghề cụ thể.",
+      "repairVi": "Thay 'many companies' bằng tên công ty hoặc nhóm công ty cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "consumers nowadays",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đối tượng không rõ",
+      "explanationVi": "Bạn nói 'consumers nowadays' nhưng không giải thích nhóm người tiêu dùng cụ thể. Nên nêu rõ độ tuổi, quốc gia hoặc hành vi.",
+      "repairVi": "Thêm chi tiết như 'young consumers in urban areas' hoặc 'people in developed countries'.",
+      "replacementText": ""
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "almost unanimous consensus",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thống nhất không rõ nguồn",
+      "explanationVi": "Bạn đề cập 'almost unanimous consensus' nhưng không nói đây là consensus của ai. Cần nêu rõ nhóm người hoặc nơi khảo sát.",
+      "repairVi": "Chỉ rõ nhóm người như 'among consumers in Asia' hoặc trích dẫn nghiên cứu cụ thể.",
+      "replacementText": ""
+     },
+     {
+      "id": "4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "businesses",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Doanh nghiệp không xác định",
+      "explanationVi": "Bạn dùng 'businesses' chung chung. Nên cụ thể hóa bằng loại hình kinh doanh hoặc công ty nào.",
+      "repairVi": "Thay 'businesses' bằng 'tech companies' hoặc 'manufacturers' nếu phù hợp.",
+      "replacementText": ""
+     },
+     {
+      "id": "5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "high demands of consumers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhu cầu không chi tiết",
+      "explanationVi": "Bạn nói 'high demands of consumers' nhưng không mô tả nhu cầu cụ thể. Cần thêm thông tin về loại nhu cầu.",
+      "repairVi": "Mô tả nhu cầu như 'demand for latest smartphones' hoặc 'desire for frequent upgrades'.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "task-2-band-7-space-programs.pdf",
+  "band": 0,
+  "rationaleVi": "Bài viết sử dụng nhiều cụm từ chung chung, không cung cấp chi tiết cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "many countries",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn viết 'many countries' nhưng không nêu rõ quốc gia nào, khiến người đọc tự hỏi 'những nước nào?'",
+    "repairVi": "Cần liệt kê cụ thể tên quốc gia hoặc nhóm quốc gia, ví dụ như 'các nước phát triển như Mỹ và Nhật'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "some people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ chung chung",
+    "explanationVi": "Bạn viết 'some people' nhưng không giải thích họ là ai, khiến câu nói thiếu rõ ràng.",
+    "repairVi": "Cần xác định rõ nhóm người, ví dụ 'một số nhà kinh tế học' hoặc 'các tổ chức xã hội'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "long-term profits",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lợi nhuận không rõ ràng",
+    "explanationVi": "Bạn đề cập 'long-term profits' nhưng không giải thích lợi nhuận cụ thể là gì, người đọc không hình dung được.",
+    "repairVi": "Cần nêu chi tiết lợi nhuận, ví dụ 'việc khai thác tài nguyên không gian có thể cung cấp năng lượng mới hoặc vật liệu quý'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "public well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khái niệm trừu tượng",
+    "explanationVi": "Bạn viết 'public well-being' nhưng không nói rõ cải thiện khía cạnh nào, khiến lập luận kém thuyết phục.",
+    "repairVi": "Cần liệt kê khía cạnh cụ thể, ví dụ 'sức khỏe cộng đồng, giáo dục và an sinh xã hội'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "social equality",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "bình đẳng xã hội mơ hồ",
+    "explanationVi": "Bạn nhắc 'social equality' nhưng không giải thích bình đẳng trong lĩnh vực nào, người đọc cần chi tiết hơn.",
+    "repairVi": "Cần xác định rõ khía cạnh bình đẳng, ví dụ 'bình đẳng về cơ hội giáo dục hoặc thu nhập giữa các vùng miền'.",
+    "replacementText": ""
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "outcomes of the investment",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố trừu tượng",
+    "explanationVi": "Bạn viết 'outcomes of the investment' mà không giải thích loại kết quả nào có thể xảy ra.",
+    "repairVi": "Hãy liệt kê ví dụ cụ thể như khám phá khoa học hay lợi ích kinh tế.",
+    "replacementText": ""
+   },
+   {
+    "id": "5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "huge burdens",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn viết 'huge burdens' mà không giải thích gánh nặng cụ thể là gì.",
+    "repairVi": "Hãy nêu ví dụ như nợ công hay cắt giảm chi phí khác.",
+    "replacementText": ""
+   },
+   {
+    "id": "9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "backwards lregions",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn viết 'backwards lregions' mà không xác định vùng miền cụ thể nào.",
+    "repairVi": "Hãy nêu tên vùng như miền núi hay nông thôn nghèo khó.",
+    "replacementText": ""
+   },
+   {
+    "id": "10",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "possible negative effects",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố trừu tượng",
+    "explanationVi": "Bạn tái sử dụng 'possible negative effects' mà không tóm tắt chi tiết.",
+    "repairVi": "Hãy nhắc lại các hiệu ứng cụ thể như lãng phí tiền bạc hay trì hoãn phát triển.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "many countries",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn viết 'many countries' nhưng không nêu rõ quốc gia nào, khiến người đọc tự hỏi 'những nước nào?'",
+      "repairVi": "Cần liệt kê cụ thể tên quốc gia hoặc nhóm quốc gia, ví dụ như 'các nước phát triển như Mỹ và Nhật'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "some people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ chung chung",
+      "explanationVi": "Bạn viết 'some people' nhưng không giải thích họ là ai, khiến câu nói thiếu rõ ràng.",
+      "repairVi": "Cần xác định rõ nhóm người, ví dụ 'một số nhà kinh tế học' hoặc 'các tổ chức xã hội'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "long-term profits",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lợi nhuận không rõ ràng",
+      "explanationVi": "Bạn đề cập 'long-term profits' nhưng không giải thích lợi nhuận cụ thể là gì, người đọc không hình dung được.",
+      "repairVi": "Cần nêu chi tiết lợi nhuận, ví dụ 'việc khai thác tài nguyên không gian có thể cung cấp năng lượng mới hoặc vật liệu quý'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khái niệm trừu tượng",
+      "explanationVi": "Bạn viết 'public well-being' nhưng không nói rõ cải thiện khía cạnh nào, khiến lập luận kém thuyết phục.",
+      "repairVi": "Cần liệt kê khía cạnh cụ thể, ví dụ 'sức khỏe cộng đồng, giáo dục và an sinh xã hội'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "social equality",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "bình đẳng xã hội mơ hồ",
+      "explanationVi": "Bạn nhắc 'social equality' nhưng không giải thích bình đẳng trong lĩnh vực nào, người đọc cần chi tiết hơn.",
+      "repairVi": "Cần xác định rõ khía cạnh bình đẳng, ví dụ 'bình đẳng về cơ hội giáo dục hoặc thu nhập giữa các vùng miền'.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "many countries",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn sử dụng 'many countries' mà không nêu rõ quốc gia nào, khiến tuyên bố không cụ thể.",
+      "repairVi": "Hãy liệt kê một vài quốc gia cụ thể như Mỹ, Nhật Bản để minh họa.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "some people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn viết 'some people' mà không chỉ ra nhóm người cụ thể nào.",
+      "repairVi": "Hãy nêu rõ nhóm người như các nhà kinh tế hay chính trị gia.",
+      "replacementText": ""
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "outcomes of the investment",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố trừu tượng",
+      "explanationVi": "Bạn viết 'outcomes of the investment' mà không giải thích loại kết quả nào có thể xảy ra.",
+      "repairVi": "Hãy liệt kê ví dụ cụ thể như khám phá khoa học hay lợi ích kinh tế.",
+      "replacementText": ""
+     },
+     {
+      "id": "4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "long-term profits",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn sử dụng 'long-term profits' mà không nêu rõ lợi nhuận cụ thể nào.",
+      "repairVi": "Hãy thêm chi tiết như phát triển công nghệ hay tài nguyên vũ trụ.",
+      "replacementText": ""
+     },
+     {
+      "id": "5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "huge burdens",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn viết 'huge burdens' mà không giải thích gánh nặng cụ thể là gì.",
+      "repairVi": "Hãy nêu ví dụ như nợ công hay cắt giảm chi phí khác.",
+      "replacementText": ""
+     },
+     {
+      "id": "6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố trừu tượng",
+      "explanationVi": "Bạn sử dụng 'public well-being' mà không định nghĩa rõ lợi ích cụ thể cho cộng đồng.",
+      "repairVi": "Hãy liệt kê như nâng cao sức khỏe, giáo dục cho tất cả mọi người.",
+      "replacementText": ""
+     },
+     {
+      "id": "7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "social equality",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn viết 'social equality' mà không giải thích bình đẳng trong lĩnh vực nào.",
+      "repairVi": "Hãy nêu cụ thể như bình đẳng giáo dục hay cơ hội việc làm.",
+      "replacementText": ""
+     },
+     {
+      "id": "9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "backwards lregions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn viết 'backwards lregions' mà không xác định vùng miền cụ thể nào.",
+      "repairVi": "Hãy nêu tên vùng như miền núi hay nông thôn nghèo khó.",
+      "replacementText": ""
+     },
+     {
+      "id": "10",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "possible negative effects",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố trừu tượng",
+      "explanationVi": "Bạn tái sử dụng 'possible negative effects' mà không tóm tắt chi tiết.",
+      "repairVi": "Hãy nhắc lại các hiệu ứng cụ thể như lãng phí tiền bạc hay trì hoãn phát triển.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Essay-t2-band-7.pdf",
+  "band": 0,
+  "rationaleVi": "Các tuyên bố trong bài viết quá mơ hồ, thiếu chi tiết cụ thể để thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Many claim",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố không rõ nguồn",
+    "explanationVi": "Bạn nên nêu rõ ai là người đưa ra tuyên bố này để tăng tính xác thực.",
+    "repairVi": "Hãy đề cập đến một nhóm người cụ thể hoặc một nguồn tin.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "unsuitable udrivers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thuật ngữ mơ hồ",
+    "explanationVi": "Bạn cần định nghĩa rõ thế nào là tài xế không phù hợp.",
+    "repairVi": "Liệt kê các đặc điểm như say rượu, bệnh tật, hoặc thiếu kinh nghiệm.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "exceptions where yearly testing is not a must",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ngoại lệ không xác định",
+    "explanationVi": "Bạn nên nêu cụ thể những trường hợp ngoại lệ này.",
+    "repairVi": "Đưa ra ví dụ như tài xế trẻ tuổi hoặc người có sức khỏe tốt.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "improve their driving skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kỹ năng lái xe chung chung",
+    "explanationVi": "Bạn cần chỉ rõ loại kỹ năng nào được cải thiện.",
+    "repairVi": "Nói về kỹ năng phản xạ, tuân thủ luật giao thông, hoặc xử lý tình huống.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "incapable drivers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tài xế bất lực không rõ",
+    "explanationVi": "Bạn nên giải thích tại sao họ bất lực và như thế nào.",
+    "repairVi": "Mô tả các vấn đề như bệnh tật hoặc thiếu kỹ năng cần thiết.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "physically unhealthy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sức khỏe không rõ ràng",
+    "explanationVi": "Bạn cần liệt kê các bệnh hoặc tình trạng sức khỏe cụ thể.",
+    "repairVi": "Đề cập đến bệnh tim, huyết áp cao, hoặc vấn đề thị lực.",
+    "replacementText": ""
+   },
+   {
+    "id": "f7",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "naturally energetic and passionate",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thuật ngữ cảm tính",
+    "explanationVi": "Bạn nên định nghĩa thế nào là năng động và đam mê trong bối cảnh này.",
+    "repairVi": "Nói về sự tỉnh táo, tập trung, hoặc tinh thần trách nhiệm.",
+    "replacementText": ""
+   },
+   {
+    "id": "f8",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "waste of time and money",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lãng phí không giải thích",
+    "explanationVi": "Bạn cần cung cấp số liệu hoặc phân tích chi phí để chứng minh.",
+    "repairVi": "Đưa ra ước tính chi phí và thời gian so với lợi ích.",
+    "replacementText": ""
+   },
+   {
+    "id": "f9",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "situations",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tình huống không liệt kê",
+    "explanationVi": "Bạn nên mô tả rõ các tình huống này là gì.",
+    "repairVi": "Liệt kê như tài xế trẻ, người sống ở vùng nông thôn, hoặc xe ít sử dụng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f10",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "enhances driving skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tóm tắt mơ hồ",
+    "explanationVi": "Bạn cần lặp lại chi tiết cụ thể từ các đoạn trước.",
+    "repairVi": "Nhắc lại việc cải thiện kỹ năng phản xạ hoặc kiến thức luật giao thông.",
+    "replacementText": ""
+   },
+   {
+    "id": "f11",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "reduces unhealthy drivers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tóm tắt không rõ",
+    "explanationVi": "Bạn nên giải thích cách giảm thiểu tài xế không khỏe.",
+    "repairVi": "Nói về việc loại bỏ những người có bệnh nguy hiểm thông qua kiểm tra.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "There are situations where annual driving testing is not a necessity",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tình huống không rõ ràng",
+    "explanationVi": "Bạn nên nêu rõ những tình huống cụ thể mà không cần kiểm tra hàng năm.",
+    "repairVi": "Đề cập đến nhóm cụ thể như người trẻ dưới 50 tuổi.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Many claim",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố không rõ nguồn",
+      "explanationVi": "Bạn nên nêu rõ ai là người đưa ra tuyên bố này để tăng tính xác thực.",
+      "repairVi": "Hãy đề cập đến một nhóm người cụ thể hoặc một nguồn tin.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "unsuitable udrivers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thuật ngữ mơ hồ",
+      "explanationVi": "Bạn cần định nghĩa rõ thế nào là tài xế không phù hợp.",
+      "repairVi": "Liệt kê các đặc điểm như say rượu, bệnh tật, hoặc thiếu kinh nghiệm.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "exceptions where yearly testing is not a must",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ngoại lệ không xác định",
+      "explanationVi": "Bạn nên nêu cụ thể những trường hợp ngoại lệ này.",
+      "repairVi": "Đưa ra ví dụ như tài xế trẻ tuổi hoặc người có sức khỏe tốt.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "improve their driving skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kỹ năng lái xe chung chung",
+      "explanationVi": "Bạn cần chỉ rõ loại kỹ năng nào được cải thiện.",
+      "repairVi": "Nói về kỹ năng phản xạ, tuân thủ luật giao thông, hoặc xử lý tình huống.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "incapable drivers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tài xế bất lực không rõ",
+      "explanationVi": "Bạn nên giải thích tại sao họ bất lực và như thế nào.",
+      "repairVi": "Mô tả các vấn đề như bệnh tật hoặc thiếu kỹ năng cần thiết.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "physically unhealthy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sức khỏe không rõ ràng",
+      "explanationVi": "Bạn cần liệt kê các bệnh hoặc tình trạng sức khỏe cụ thể.",
+      "repairVi": "Đề cập đến bệnh tim, huyết áp cao, hoặc vấn đề thị lực.",
+      "replacementText": ""
+     },
+     {
+      "id": "f7",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "naturally energetic and passionate",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thuật ngữ cảm tính",
+      "explanationVi": "Bạn nên định nghĩa thế nào là năng động và đam mê trong bối cảnh này.",
+      "repairVi": "Nói về sự tỉnh táo, tập trung, hoặc tinh thần trách nhiệm.",
+      "replacementText": ""
+     },
+     {
+      "id": "f8",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "waste of time and money",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lãng phí không giải thích",
+      "explanationVi": "Bạn cần cung cấp số liệu hoặc phân tích chi phí để chứng minh.",
+      "repairVi": "Đưa ra ước tính chi phí và thời gian so với lợi ích.",
+      "replacementText": ""
+     },
+     {
+      "id": "f9",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "situations",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tình huống không liệt kê",
+      "explanationVi": "Bạn nên mô tả rõ các tình huống này là gì.",
+      "repairVi": "Liệt kê như tài xế trẻ, người sống ở vùng nông thôn, hoặc xe ít sử dụng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f10",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "enhances driving skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tóm tắt mơ hồ",
+      "explanationVi": "Bạn cần lặp lại chi tiết cụ thể từ các đoạn trước.",
+      "repairVi": "Nhắc lại việc cải thiện kỹ năng phản xạ hoặc kiến thức luật giao thông.",
+      "replacementText": ""
+     },
+     {
+      "id": "f11",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "reduces unhealthy drivers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tóm tắt không rõ",
+      "explanationVi": "Bạn nên giải thích cách giảm thiểu tài xế không khỏe.",
+      "repairVi": "Nói về việc loại bỏ những người có bệnh nguy hiểm thông qua kiểm tra.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "incapable drivers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Khái niệm mơ hồ",
+      "explanationVi": "Bạn cần chỉ rõ loại tài xế không đủ khả năng là gì, ví dụ về sức khỏe hay kỹ năng.",
+      "repairVi": "Thay 'incapable drivers' bằng 'những tài xế bị vấn đề sức khỏe nghiêm trọng'",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "There are situations where annual driving testing is not a necessity",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tình huống không rõ ràng",
+      "explanationVi": "Bạn nên nêu rõ những tình huống cụ thể mà không cần kiểm tra hàng năm.",
+      "repairVi": "Đề cập đến nhóm cụ thể như người trẻ dưới 50 tuổi.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "IELTS-Writing-Task21111-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Một số cụm từ trong bài quá trừu tượng và không được giải thích cụ thể, khiến người đọc khó hình dung chi tiết.",
+  "findings": [
+   {
+    "id": "v1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "new area",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ mới nào?",
+    "explanationVi": "Bạn cần chỉ rõ những lĩnh vực mới nào mà sinh viên có thể chuyển sang, ví dụ như từ kỹ thuật sang tài chính.",
+    "repairVi": "Thêm ví dụ cụ thể về các lĩnh vực mới mà sinh viên có thể làm việc.",
+    "replacementText": ""
+   },
+   {
+    "id": "v2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "some skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Những kỹ năng nào?",
+    "explanationVi": "Bạn nên nêu rõ loại kỹ năng nào quan trọng hơn kiến thức lý thuyết, như kỹ năng giao tiếp hay kỹ năng thích ứng.",
+    "repairVi": "Liệt kê hoặc mô tả các kỹ năng cụ thể trong bối cảnh công việc.",
+    "replacementText": ""
+   },
+   {
+    "id": "v3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "learning skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kỹ năng học tập là gì?",
+    "explanationVi": "Bạn cần giải thích rõ kỹ năng học tập cụ thể, ví dụ như kỹ năng tự học hoặc kỹ năng sử dụng công nghệ mới.",
+    "repairVi": "Cung cấp định nghĩa hoặc ví dụ cụ thể về kỹ năng học tập được đề cập.",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "can sometimes be useless",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mơ hồ về tần suất",
+    "explanationVi": "Bạn nói 'sometimes' nhưng không chỉ rõ trường hợp nào lý thuyết trở nên vô dụng.",
+    "repairVi": "Chỉ rõ khi nào hoặc trong ngành nào lý thuyết thường không hữu ích.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "a new areaa",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không cụ thể về lĩnh vực",
+    "explanationVi": "Bạn đề cập 'new areaa' nhưng không nêu ví dụ cụ thể về lĩnh vực nào.",
+    "repairVi": "Thêm ví dụ về lĩnh vực cụ thể như tài chính hay marketing.",
+    "replacementText": ""
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "some skills are usually more important",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không liệt kê kỹ năng cụ thể",
+    "explanationVi": "Bạn nói 'some skills' nhưng không liệt kê kỹ năng nào được nhắc đến.",
+    "repairVi": "Đưa ra tên kỹ năng cụ thể như kỹ năng giao tiếp hay giải quyết vấn đề.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "many students may not work in the related area",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mơ hồ về đối tượng và phạm vi",
+    "explanationVi": "Bạn nói 'many students' và 'related area' nhưng không xác định rõ số lượng hay lĩnh vực.",
+    "repairVi": "Chỉ ra tỷ lệ sinh viên hoặc lĩnh vực cụ thể như kỹ thuật hay kinh tế.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "sometimes skills play a more significant role",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mơ hồ về tình huống",
+    "explanationVi": "Bạn dùng 'sometimes' mà không nêu tình huống cụ thể khi kỹ năng quan trọng hơn.",
+    "repairVi": "Mô tả trường hợp cụ thể như trong công việc yêu cầu thích ứng công nghệ mới.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "v1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "new area",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ mới nào?",
+      "explanationVi": "Bạn cần chỉ rõ những lĩnh vực mới nào mà sinh viên có thể chuyển sang, ví dụ như từ kỹ thuật sang tài chính.",
+      "repairVi": "Thêm ví dụ cụ thể về các lĩnh vực mới mà sinh viên có thể làm việc.",
+      "replacementText": ""
+     },
+     {
+      "id": "v2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "some skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Những kỹ năng nào?",
+      "explanationVi": "Bạn nên nêu rõ loại kỹ năng nào quan trọng hơn kiến thức lý thuyết, như kỹ năng giao tiếp hay kỹ năng thích ứng.",
+      "repairVi": "Liệt kê hoặc mô tả các kỹ năng cụ thể trong bối cảnh công việc.",
+      "replacementText": ""
+     },
+     {
+      "id": "v3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "learning skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kỹ năng học tập là gì?",
+      "explanationVi": "Bạn cần giải thích rõ kỹ năng học tập cụ thể, ví dụ như kỹ năng tự học hoặc kỹ năng sử dụng công nghệ mới.",
+      "repairVi": "Cung cấp định nghĩa hoặc ví dụ cụ thể về kỹ năng học tập được đề cập.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "can sometimes be useless",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mơ hồ về tần suất",
+      "explanationVi": "Bạn nói 'sometimes' nhưng không chỉ rõ trường hợp nào lý thuyết trở nên vô dụng.",
+      "repairVi": "Chỉ rõ khi nào hoặc trong ngành nào lý thuyết thường không hữu ích.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "a new areaa",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không cụ thể về lĩnh vực",
+      "explanationVi": "Bạn đề cập 'new areaa' nhưng không nêu ví dụ cụ thể về lĩnh vực nào.",
+      "repairVi": "Thêm ví dụ về lĩnh vực cụ thể như tài chính hay marketing.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "some skills are usually more important",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không liệt kê kỹ năng cụ thể",
+      "explanationVi": "Bạn nói 'some skills' nhưng không liệt kê kỹ năng nào được nhắc đến.",
+      "repairVi": "Đưa ra tên kỹ năng cụ thể như kỹ năng giao tiếp hay giải quyết vấn đề.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "many students may not work in the related area",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mơ hồ về đối tượng và phạm vi",
+      "explanationVi": "Bạn nói 'many students' và 'related area' nhưng không xác định rõ số lượng hay lĩnh vực.",
+      "repairVi": "Chỉ ra tỷ lệ sinh viên hoặc lĩnh vực cụ thể như kỹ thuật hay kinh tế.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "sometimes skills play a more significant role",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mơ hồ về tình huống",
+      "explanationVi": "Bạn dùng 'sometimes' mà không nêu tình huống cụ thể khi kỹ năng quan trọng hơn.",
+      "repairVi": "Mô tả trường hợp cụ thể như trong công việc yêu cầu thích ứng công nghệ mới.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 0,
+  "rationaleVi": "Bài viết sử dụng nhiều cụm từ chung chung như 'those who committed crimes' hay 'in some ways', khiến luận điểm thiếu sự thuyết phục.",
+  "findings": [
+   {
+    "id": "finding1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "those who committed crimes",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ chung chung",
+    "explanationVi": "Bạn dùng 'those who committed crimes' mà không rõ nhóm tội phạm cụ thể, cần xác định đối tượng.",
+    "repairVi": "Hãy nêu rõ loại tội phạm, ví dụ 'tội phạm tái phạm'.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "the crime rate could be lowered",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết quả mờ nhạt",
+    "explanationVi": "Bạn nói 'crime rate could be lowered' nhưng không giải thích giảm như thế nào hay loại tội nào.",
+    "repairVi": "Cung cấp số liệu cụ thể hoặc mô tả tỷ lệ giảm.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "some of theC extremely dangerous criminals",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Từ 'some' không rõ",
+    "explanationVi": "Bạn sử dụng 'some' mà không chỉ ra哪些罪犯 cụ thể, dù có 'extremely dangerous'.",
+    "repairVi": "Thay 'some' bằng mô tả chi tiết hoặc bỏ đi nếu đã rõ.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "in some ways",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Phương thức không rõ",
+    "explanationVi": "Bạn nói 'in some ways' nhưng không liệt kê cách thức cụ thể nào.",
+    "repairVi": "Nêu rõ các cách răn đe, ví dụ 'bằng cách tăng thời gian tù'.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "prevent crime",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mục tiêu chung chung",
+    "explanationVi": "Bạn đề cập 'prevent crime' mà không giải thích ngăn chặn tội nào hay如何实现.",
+    "repairVi": "Cụ thể hóa bằng cách giảm tội phạm cụ thể thông qua camera.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "inequality in the society",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "khái niệm mơ hồ",
+    "explanationVi": "Bạn đề cập 'inequality in the society' nhưng không giải thích loại bất bình đẳng nào. Cần nêu bật các khía cạnh cụ thể như kinh tế, giáo dục.",
+    "repairVi": "Chỉ rõ sự bất bình đẳng về thu nhập, cơ hội giáo dục hoặc tiếp cận việc làm cho gia đình thu nhập thấp.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "those who committed crimes",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ chung chung",
+      "explanationVi": "Bạn dùng 'those who committed crimes' mà không rõ nhóm tội phạm cụ thể, cần xác định đối tượng.",
+      "repairVi": "Hãy nêu rõ loại tội phạm, ví dụ 'tội phạm tái phạm'.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "the crime rate could be lowered",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết quả mờ nhạt",
+      "explanationVi": "Bạn nói 'crime rate could be lowered' nhưng không giải thích giảm như thế nào hay loại tội nào.",
+      "repairVi": "Cung cấp số liệu cụ thể hoặc mô tả tỷ lệ giảm.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "some of theC extremely dangerous criminals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ 'some' không rõ",
+      "explanationVi": "Bạn sử dụng 'some' mà không chỉ ra哪些罪犯 cụ thể, dù có 'extremely dangerous'.",
+      "repairVi": "Thay 'some' bằng mô tả chi tiết hoặc bỏ đi nếu đã rõ.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "in some ways",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phương thức không rõ",
+      "explanationVi": "Bạn nói 'in some ways' nhưng không liệt kê cách thức cụ thể nào.",
+      "repairVi": "Nêu rõ các cách răn đe, ví dụ 'bằng cách tăng thời gian tù'.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "prevent crime",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mục tiêu chung chung",
+      "explanationVi": "Bạn đề cập 'prevent crime' mà không giải thích ngăn chặn tội nào hay如何实现.",
+      "repairVi": "Cụ thể hóa bằng cách giảm tội phạm cụ thể thông qua camera.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "in some ways",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thuật ngữ trừu tượng",
+      "explanationVi": "Bạn nói 'in some ways' nhưng không nêu rõ những cách đó là gì. Cần liệt kê cụ thể để tăng sức thuyết phục.",
+      "repairVi": "Nêu ít nhất hai cách cụ thể mà bản án dài hạn có thể ngăn chặn tội phạm.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "inequality in the society",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "khái niệm mơ hồ",
+      "explanationVi": "Bạn đề cập 'inequality in the society' nhưng không giải thích loại bất bình đẳng nào. Cần nêu bật các khía cạnh cụ thể như kinh tế, giáo dục.",
+      "repairVi": "Chỉ rõ sự bất bình đẳng về thu nhập, cơ hội giáo dục hoặc tiếp cận việc làm cho gia đình thu nhập thấp.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

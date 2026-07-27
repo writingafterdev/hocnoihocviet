@@ -1,0 +1,607 @@
+[
+ {
+  "fileId": "5.5-t2-2.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có kiến trúc logic rõ ràng với các đoạn body có ý tưởng kiểm soát rõ ràng, sự di chuyển tự nhiên giữa các đoạn và cấu trúc hoàn chỉnh từ giới thiệu đến kết luận.",
+  "findings": [
+   {
+    "id": "coherence-error-1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "In contrast, I also feel that a society filled with patients",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chuyển tiếp sai giữa các đoạn",
+    "explanationVi": "Bạn sử dụng 'In contrast' ở đầu đoạn này, nhưng đoạn này thực sự đang cung cấp lý do bổ sung cho cùng một phía (nghĩa vụ với xã hội), không phải trái ngược với đoạn trước. Điều này làm cho người đọc hiểu sai về mối liên hệ logic giữa hai đoạn.",
+    "repairVi": "Thay 'In contrast' bằng 'Additionally' hoặc 'Furthermore' để chỉ ra rằng đây là một lý do bổ sung.",
+    "replacementText": "Additionally, I also feel that a society filled with patients"
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "coherence-error-1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "In contrast, I also feel that a society filled with patients",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển tiếp sai giữa các đoạn",
+      "explanationVi": "Bạn sử dụng 'In contrast' ở đầu đoạn này, nhưng đoạn này thực sự đang cung cấp lý do bổ sung cho cùng một phía (nghĩa vụ với xã hội), không phải trái ngược với đoạn trước. Điều này làm cho người đọc hiểu sai về mối liên hệ logic giữa hai đoạn.",
+      "repairVi": "Thay 'In contrast' bằng 'Additionally' hoặc 'Furthermore' để chỉ ra rằng đây là một lý do bổ sung.",
+      "replacementText": "Additionally, I also feel that a society filled with patients"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc logic rõ ràng, với mỗi đoạn văn có ý tưởng chủ đạo và sự phát triển suy luận xuyên suốt từ giới thiệu đến kết luận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-dependent-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận có cấu trúc cơ bản với quan điểm rõ ràng, nhưng các đoạn thân bài thiếu sự tổ chức logic bên trong, làm cho luồng lập luận không liên tục và khó theo dõi.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, playing tik-tok is a new trend among youngsters some youngsters become anxious and nervous because they feel like they will have no friends when they can’t get some jokes from tik-tok straight away, but they are actually not interested in it. A feeling of being no friendsT is a nightmare cfor many adolescents as they need actual support and loves from the relationships.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Luồng lập luận hỗn hợp",
+    "explanationVi": "Bạn viết về quan điểm phụ thuộc, nhưng sau đó nhảy sang ví dụ cụ thể về lo lắng trên TikTok rồi chuyển sang nhu cầu hỗ trợ thực tế, làm cho đoạn văn không tập trung vào một ý tưởng kiểm soát duy nhất.",
+    "repairVi": "Bạn nên giữ đoạn văn tập trung vào việc giải thích tại sao một số người cảm thấy phụ thuộc, ví dụ, bằng cách phát triển lý do và hậu quả của sự phụ thuộc vào công nghệ xã hội một cách mạch lạc hơn.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In the ancient time, people needed each other to build up the houses and found thel food due to athe lack of efficient tools. In the 21st century, we can just use an internet to finish our work, advanced technology makes things generate efficiently. We can just live alone and there is nothing need to be worried aboutw. Besides, Tcompared with keeping the conservative thinking, more youngsters believe that people don’tt need to rely on their marriage and even it’s more vital to live a life for their own not for any others.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tiến trình danh sách phẳng",
+    "explanationVi": "Bạn liệt kê nhiều điểm về sự độc lập như công nghệ, sống một mình, và quan niệm hôn nhân mà không có một vòng cung lập luận rõ ràng, làm cho đoạn văn thiếu sự liên kết nội bộ và逻辑顺序.",
+    "repairVi": "Bạn nên tổ chức các điểm này theo trình tự logic hơn, ví dụ, bắt đầu với sự tương phản giữa quá khứ và hiện tại về công nghệ, sau đó đến lối sống cá nhân, và cuối cùng là tư duy xã hội, với mỗi điểm được liên kết rõ ràng để hỗ trợ ý tưởng chính về sự độc lập.",
+    "replacementText": ""
+   },
+   {
+    "id": "coherence-finding-1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "For those who reckon themselves are becoming dependent is because sometimes people feela lost and isolated in the modern world. Comes with the modern world,the diversity.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "MISMATCH giữa chủ đề đoạn và nội dung",
+    "explanationVi": "Bạn đã bắt đầu đoạn bằng ý tưởng chính là sự phụ thuộc do cảm giác cô đơn, nhưng sau đó bạn chuyển sang nói về sự đa dạng và ví dụ về TikTok mà không giải thích rõ ràng tại sao điều này liên quan đến cảm giác cô đơn, làm cho đoạn trở nên hỗn hợp.",
+    "repairVi": "Bạn nên giữ đoạn tập trung vào việc giải thích cách cảm giác cô đơn dẫn đến sự phụ thuộc, và nếu sử dụng ví dụ, hãy gắn nó trực tiếp vào cảm giác cô đơn bằng cách sửa lại hoặc loại bỏ phần đề cập đến sự đa dạng nếu không cần thiết.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, playing tik-tok is a new trend among youngsters some youngsters become anxious and nervous because they feel like they will have no friends when they can’t get some jokes from tik-tok straight away, but they are actually not interested in it. A feeling of being no friendsT is a nightmare cfor many adolescents as they need actual support and loves from the relationships.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Luồng lập luận hỗn hợp",
+      "explanationVi": "Bạn viết về quan điểm phụ thuộc, nhưng sau đó nhảy sang ví dụ cụ thể về lo lắng trên TikTok rồi chuyển sang nhu cầu hỗ trợ thực tế, làm cho đoạn văn không tập trung vào một ý tưởng kiểm soát duy nhất.",
+      "repairVi": "Bạn nên giữ đoạn văn tập trung vào việc giải thích tại sao một số người cảm thấy phụ thuộc, ví dụ, bằng cách phát triển lý do và hậu quả của sự phụ thuộc vào công nghệ xã hội một cách mạch lạc hơn.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In the ancient time, people needed each other to build up the houses and found thel food due to athe lack of efficient tools. In the 21st century, we can just use an internet to finish our work, advanced technology makes things generate efficiently. We can just live alone and there is nothing need to be worried aboutw. Besides, Tcompared with keeping the conservative thinking, more youngsters believe that people don’tt need to rely on their marriage and even it’s more vital to live a life for their own not for any others.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tiến trình danh sách phẳng",
+      "explanationVi": "Bạn liệt kê nhiều điểm về sự độc lập như công nghệ, sống một mình, và quan niệm hôn nhân mà không có một vòng cung lập luận rõ ràng, làm cho đoạn văn thiếu sự liên kết nội bộ và逻辑顺序.",
+      "repairVi": "Bạn nên tổ chức các điểm này theo trình tự logic hơn, ví dụ, bắt đầu với sự tương phản giữa quá khứ và hiện tại về công nghệ, sau đó đến lối sống cá nhân, và cuối cùng là tư duy xã hội, với mỗi điểm được liên kết rõ ràng để hỗ trợ ý tưởng chính về sự độc lập.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "coherence-finding-1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "For those who reckon themselves are becoming dependent is because sometimes people feela lost and isolated in the modern world. Comes with the modern world,the diversity.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "MISMATCH giữa chủ đề đoạn và nội dung",
+      "explanationVi": "Bạn đã bắt đầu đoạn bằng ý tưởng chính là sự phụ thuộc do cảm giác cô đơn, nhưng sau đó bạn chuyển sang nói về sự đa dạng và ví dụ về TikTok mà không giải thích rõ ràng tại sao điều này liên quan đến cảm giác cô đơn, làm cho đoạn trở nên hỗn hợp.",
+      "repairVi": "Bạn nên giữ đoạn tập trung vào việc giải thích cách cảm giác cô đơn dẫn đến sự phụ thuộc, và nếu sử dụng ví dụ, hãy gắn nó trực tiếp vào cảm giác cô đơn bằng cách sửa lại hoặc loại bỏ phần đề cập đến sự đa dạng nếu không cần thiết.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-t2-concentrate (1).pdf",
+  "band": 8,
+  "rationaleVi": "Bài viết có kiến trúc mạch lạc với lời giới thiệu nêu rõ vấn đề và hai giải pháp, hai đoạn thân bài phát triển từng ý chính một cách logic, và kết luận tóm tắt đầy đủ. Thứ tự ý tưởng hợp lý, giúp người đọc dễ dàng theo dõi luồng lập luận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-t2-concentrate.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có cấu trúc logic rõ ràng với ý tưởng trung tâm được phát triển tốt trong mỗi đoạn, sự di chuyển giữa các đoạn mượt mà và kiến trúc tổng thể dễ theo dõi.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "gove-band-6-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc cơ bản với các đoạn thân bài rõ ràng và trình tự hợp lý, nhưng thiếu cầu nối so sánh giữa hai quan điểm trong phần kết luận, làm giảm tính nhất quán của lập luận tổng thể.",
+  "findings": [
+   {
+    "id": "missing_weighing_bridge_1",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In conclusion, it’s hard for artists to earn their living by themselves but the value they created is meaningful.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cầu nối so sánh",
+    "explanationVi": "Bạn đã trình bày cả hai quan điểm về việc tài trợ nghệ sĩ từ các nguồn thay thế hoặc chính phủ trong các đoạn thân bài, nhưng trong phần kết luận, bạn không kết nối chúng lại để so sánh hoặc đưa ra kết luận rõ ràng về nguồn tài trợ nào hợp lý hơn dựa trên các lập luận đã nêu.",
+    "repairVi": "Thêm một câu trong phần kết luận so sánh trực tiếp hai nguồn tài trợ và nêu rõ lập trường dựa trên các lập luận đã đưa ra, chẳng hạn như 'Tuy nhiên, xem xét giá trị vĩnh cửu của nghệ thuật và khó khăn tài chính của nghệ sĩ, chính phủ nên hỗ trợ tài chính để bảo tồn văn hóa'.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "missing_weighing_bridge_1",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In conclusion, it’s hard for artists to earn their living by themselves but the value they created is meaningful.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cầu nối so sánh",
+      "explanationVi": "Bạn đã trình bày cả hai quan điểm về việc tài trợ nghệ sĩ từ các nguồn thay thế hoặc chính phủ trong các đoạn thân bài, nhưng trong phần kết luận, bạn không kết nối chúng lại để so sánh hoặc đưa ra kết luận rõ ràng về nguồn tài trợ nào hợp lý hơn dựa trên các lập luận đã nêu.",
+      "repairVi": "Thêm một câu trong phần kết luận so sánh trực tiếp hai nguồn tài trợ và nêu rõ lập trường dựa trên các lập luận đã đưa ra, chẳng hạn như 'Tuy nhiên, xem xét giá trị vĩnh cửu của nghệ thuật và khó khăn tài chính của nghệ sĩ, chính phủ nên hỗ trợ tài chính để bảo tồn văn hóa'.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "coherence_global_architecture",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In conclusion, it’s hard for artists to earn their living by themselves but the value they created is meaningful.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu cầu so sánh trong kết luận",
+      "explanationVi": "Bạn đã trình bày hai quan điểm về nguồn tài trợ trong hai đoạn thân bài, nhưng đoạn kết không tạo một cầu nối logic để so sánh chúng. Kết luận chỉ nói về khó khăn của nghệ sĩ và giá trị nghệ thuật, không liên kết trực tiếp với vấn đề tài trợ.",
+      "repairVi": "Bạn nên sửa đổi đoạn kết để tóm tắt lại hai quan điểm và đưa ra lý do tại sao bạn ủng hộ quan điểm của mình, hoặc ít nhất đề cập đến sự cân bằng giữa hai nguồn tài trợ.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "ielts-essays-ads-are-more-important-then-the-real-needs-of-the-consumer.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có kiến trúc logic chặt chẽ, với mỗi đoạn phát triển rõ ràng từ ý tưởng chính và liên kết tự nhiên với nhau, tạo thành một lập luận mạch lạc.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "ielts-essays-alcohol-is-becoming-popular.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có kiến trúc logic rõ ràng, với đoạn giới thiệu, hai đoạn thân bài riêng biệt xử lý vấn đề và giải pháp, và đoạn kết luận. Các ý tưởng được trình bày theo trình tự tự nhiên, giúp người đọc dễ dàng theo dõi luồng lập luận từ đầu đến cuối.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "longevity-t2-band-6.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với các đoạn văn có ý tưởng chủ đề, nhưng thiếu cầu nối logic để so sánh và cân nhắc giữa các ưu và nhược điểm, khiến kết luận không được hỗ trợ đầy đủ bởi nội dung thân bài.",
+  "findings": [
+   {
+    "id": "coherence_missing_weighing",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "it cannot be denied that it has more positive influences",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cầu nối cân nhắc",
+    "explanationVi": "Bạn trình bày ưu điểm ở các đoạn 3 và 4, nhược điểm ở đoạn 5, nhưng không có sự so sánh hay cân nhắc giữa chúng trước khi kết luận rằng ưu điểm nhiều hơn. Điều này khiến kết luận thiếu cơ sở logic.",
+    "repairVi": "Bạn nên thêm một câu hoặc đoạn ngắn so sánh trực tiếp mức độ của ưu và nhược điểm, chẳng hạn như: 'Mặc dù nhược điểm tồn tại, nhưng ưu điểm về thời gian sống và an sinh xã hội lớn hơn đáng kể.'",
+    "replacementText": ""
+   },
+   {
+    "id": "boundary_failure_1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "However, weshould also see that the society are encountersing a challenge due to the increase of life expectancy.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai sót chuyển đoạn",
+    "explanationVi": "Bạn đã đề cập đến thách thức của việc tăng tuổi thọ ở đoạn thứ hai, nhưng ngay sau đó đã chuyển sang thảo luận về tác động tích cực lên cá nhân mà không giải thích thách thức đó. Điều này khiến người đọc bị gián đoạn trong việc theo dõi luận điểm vì mong đợi được nghe về thách thức nhưng lại được đưa sang chủ đề khác.",
+    "repairVi": "Bạn nên di chuyển câu đề cập đến thách thức này đến đoạn thảo luận về tác động tiêu cực (đoạn thứ năm), hoặc phát triển thách thức đó ngay sau khi đề cập để duy trì sự liên kết logic.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "coherence_missing_weighing",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "it cannot be denied that it has more positive influences",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cầu nối cân nhắc",
+      "explanationVi": "Bạn trình bày ưu điểm ở các đoạn 3 và 4, nhược điểm ở đoạn 5, nhưng không có sự so sánh hay cân nhắc giữa chúng trước khi kết luận rằng ưu điểm nhiều hơn. Điều này khiến kết luận thiếu cơ sở logic.",
+      "repairVi": "Bạn nên thêm một câu hoặc đoạn ngắn so sánh trực tiếp mức độ của ưu và nhược điểm, chẳng hạn như: 'Mặc dù nhược điểm tồn tại, nhưng ưu điểm về thời gian sống và an sinh xã hội lớn hơn đáng kể.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "boundary_failure_1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "However, weshould also see that the society are encountersing a challenge due to the increase of life expectancy.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai sót chuyển đoạn",
+      "explanationVi": "Bạn đã đề cập đến thách thức của việc tăng tuổi thọ ở đoạn thứ hai, nhưng ngay sau đó đã chuyển sang thảo luận về tác động tích cực lên cá nhân mà không giải thích thách thức đó. Điều này khiến người đọc bị gián đoạn trong việc theo dõi luận điểm vì mong đợi được nghe về thách thức nhưng lại được đưa sang chủ đề khác.",
+      "repairVi": "Bạn nên di chuyển câu đề cập đến thách thức này đến đoạn thảo luận về tác động tiêu cực (đoạn thứ năm), hoặc phát triển thách thức đó ngay sau khi đề cập để duy trì sự liên kết logic.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "multinationals-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc đoạn văn rõ ràng nhưng thiếu cầu nối so sánh trực tiếp giữa các mặt tích cực và tiêu cực trong phần thân bài, làm giảm tính mạch lạc của lập luận toàn văn.",
+  "findings": [
+   {
+    "id": "coherence_missing_weighing_bridge",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "On the other hand, multinational business, however, can also bring harmful effects to local districts.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cầu nối so sánh",
+    "explanationVi": "Bạn đã trình bày các mặt tích cực trong đoạn 1 và 2, rồi tách biệt đoạn 3 về tiêu cực, nhưng không có phần nào trong thân bài trực tiếp so sánh hay cân nhắc giữa hai mặt này trước khi kết luận rằng lợi ích lớn hơn.",
+    "repairVi": "Bạn nên thêm một câu hoặc phần trong đoạn văn thứ ba để so sánh ngay lập tức các tác động tiêu cực với tích cực, hoặc sửa đổi đoạn kết để tích hợp việc cân nhắc từ các đoạn trước.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding1",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "In conclusion, I believe the benefits brought by multinational companies outweigh its drawbacks.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cầu nối so sánh",
+    "explanationVi": "Bạn đã trình bày riêng biệt các ưu điểm trong các đoạn thân bài và nhược điểm trong một đoạn khác, nhưng không tích hợp chúng để giải thích tại sao ưu điểm vượt trội hơn, dẫn đến kết luận thiếu cơ sở logic.",
+    "repairVi": "Bạn nên thêm một đoạn hoặc tích hợp vào đoạn kết luận để trực tiếp so sánh và cân nhắc giữa ưu điểm và nhược điểm, chứng minh tại sao lợi ích lớn hơn.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "coherence_missing_weighing_bridge",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "On the other hand, multinational business, however, can also bring harmful effects to local districts.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cầu nối so sánh",
+      "explanationVi": "Bạn đã trình bày các mặt tích cực trong đoạn 1 và 2, rồi tách biệt đoạn 3 về tiêu cực, nhưng không có phần nào trong thân bài trực tiếp so sánh hay cân nhắc giữa hai mặt này trước khi kết luận rằng lợi ích lớn hơn.",
+      "repairVi": "Bạn nên thêm một câu hoặc phần trong đoạn văn thứ ba để so sánh ngay lập tức các tác động tiêu cực với tích cực, hoặc sửa đổi đoạn kết để tích hợp việc cân nhắc từ các đoạn trước.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "In conclusion, I believe the benefits brought by multinational companies outweigh its drawbacks.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cầu nối so sánh",
+      "explanationVi": "Bạn đã trình bày riêng biệt các ưu điểm trong các đoạn thân bài và nhược điểm trong một đoạn khác, nhưng không tích hợp chúng để giải thích tại sao ưu điểm vượt trội hơn, dẫn đến kết luận thiếu cơ sở logic.",
+      "repairVi": "Bạn nên thêm một đoạn hoặc tích hợp vào đoạn kết luận để trực tiếp so sánh và cân nhắc giữa ưu điểm và nhược điểm, chứng minh tại sao lợi ích lớn hơn.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "plants-band-6-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng nhưng thiếu cầu nối so sánh giữa hai vấn đề và chuyển ý đột ngột, khiến người đọc khó theo dõi luồng lập luận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 6,
+    "findings": []
+   },
+   {
+    "band": 5,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-6.5-task-2s.pdf",
+  "band": 4,
+  "rationaleVi": "Bài luận thiếu kiến trúc logic toàn cục vì chứa hai chủ đề hoàn toàn khác nhau không có sự kết nối, khiến người đọc không thể theo dõi một lập luận thống nhất.",
+  "findings": [
+   {
+    "id": "macro_mixed_topics",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "Some peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai cấu trúc luận điểm toàn cục",
+    "explanationVi": "Bạn đã viết hai bài luận riêng biệt về hai chủ đề khác nhau (thiết bị giải trí điện tử và hỗ trợ quốc tế) trong cùng một bài, không có chuyển logic hoặc chủ đề chung, nên người đọc không thể hiểu được lập luận chính của bài luận.",
+    "repairVi": "Bạn nên chọn một trong hai chủ đề để phát triển thành một bài luận hoàn chỉnh, hoặc thêm câu chuyển tiếp hợp lý để liên kết hai chủ đề nếu chúng có liên quan.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 4,
+    "findings": [
+     {
+      "id": "macro_mixed_topics",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "Some peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cấu trúc luận điểm toàn cục",
+      "explanationVi": "Bạn đã viết hai bài luận riêng biệt về hai chủ đề khác nhau (thiết bị giải trí điện tử và hỗ trợ quốc tế) trong cùng một bài, không có chuyển logic hoặc chủ đề chung, nên người đọc không thể hiểu được lập luận chính của bài luận.",
+      "repairVi": "Bạn nên chọn một trong hai chủ đề để phát triển thành một bài luận hoàn chỉnh, hoặc thêm câu chuyển tiếp hợp lý để liên kết hai chủ đề nếu chúng có liên quan.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "coherence_global",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "Some peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển đổi chủ đề đột ngột",
+      "explanationVi": "Bạn đã viết hai bài luận riêng biệt về hai chủ đề không liên quan (thiết bị điện tử cho trẻ em và hỗ trợ quốc tế) trong cùng một bài, gây hỗn loạn cho người đọc vì không có sự chuyển tiếp logic hay mối liên hệ nào giữa chúng.",
+      "repairVi": "Bạn nên chia bài thành hai bài luận riêng biệt, hoặc nếu muốn viết về cả hai trong một bài, cần thêm phần giới thiệu và kết luận rõ ràng để tạo sự liên kết giữa hai chủ đề.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

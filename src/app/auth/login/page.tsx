@@ -1,7 +1,68 @@
 'use client';
 import Link from 'next/link';
-import { loginWithGoogle } from '@/lib/auth';
+import { useState } from 'react';
+import { login, register } from '@/lib/auth';
 import { ArrowLeft } from 'lucide-react';
+
+/**
+ * Google is the only way in, so a deleted OAuth client locks the app out
+ * entirely — including local development, where signing in is just a step
+ * on the way to testing something else. auth.ts already exports email and
+ * password login; this exposes it when NEXT_PUBLIC_ENABLE_PASSWORD_LOGIN is
+ * set, so it stays off in production unless deliberately switched on.
+ */
+function PasswordLogin() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+
+  async function submit(mode: 'login' | 'register') {
+    setBusy(true);
+    setError('');
+    try {
+      if (mode === 'register') await register(email, password, email.split('@')[0]);
+      else await login(email, password);
+      window.location.href = '/';
+    } catch (cause) {
+      setError(cause instanceof Error ? cause.message : String(cause));
+      setBusy(false);
+    }
+  }
+
+  return (
+    <div className="mb-10 rounded-xl border border-dashed border-neutral-300 p-5">
+      <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.15em] text-neutral-400">
+        Đăng nhập bằng email (chỉ dùng khi phát triển)
+      </p>
+      <input
+        type="email" value={email} onChange={event => setEmail(event.target.value)}
+        placeholder="email" autoComplete="username"
+        className="mb-2 w-full rounded-lg border border-neutral-200 px-3 py-2 text-[14px]"
+      />
+      <input
+        type="password" value={password} onChange={event => setPassword(event.target.value)}
+        placeholder="mật khẩu (tối thiểu 8 ký tự)" autoComplete="current-password"
+        className="mb-3 w-full rounded-lg border border-neutral-200 px-3 py-2 text-[14px]"
+      />
+      <div className="flex gap-2">
+        <button
+          type="button" disabled={busy || password.length < 8} onClick={() => submit('login')}
+          className="flex-1 rounded-lg bg-[#141413] py-2 text-[13px] font-semibold text-white disabled:opacity-40"
+        >
+          Đăng nhập
+        </button>
+        <button
+          type="button" disabled={busy || password.length < 8} onClick={() => submit('register')}
+          className="flex-1 rounded-lg border border-neutral-300 py-2 text-[13px] font-semibold disabled:opacity-40"
+        >
+          Tạo tài khoản
+        </button>
+      </div>
+      {error && <p className="mt-3 text-[12px] text-red-600">{error}</p>}
+    </div>
+  );
+}
 
 export default function LoginPage() {
   return (
@@ -64,6 +125,8 @@ export default function LoginPage() {
             </svg>
             <span className="font-sans text-[15px] font-semibold text-[#141413]">Tiếp tục với Google</span>
           </a>
+
+          {process.env.NEXT_PUBLIC_ENABLE_PASSWORD_LOGIN === 'true' && <PasswordLogin />}
 
           <div className="flex items-center gap-4 mb-10 w-full opacity-60">
             <div className="flex-1 border-t border-neutral-300"></div>

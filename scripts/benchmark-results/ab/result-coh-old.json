@@ -1,0 +1,294 @@
+[
+  {
+    "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+    "band": 7,
+    "rationaleVi": "Bài viết nối câu khá tốt: chuỗi từ vựng về học ngôn ngữ ở nước ngoài được giữ đều và các từ nối được dùng đúng quan hệ. Tuy nhiên còn vài chỗ chuyển giao thông tin cũ/mới bị hụt: câu mới mở đầu bằng thông tin chưa được nêu (khác biệt văn hóa, sách giáo khoa) và phần kết bài có chuỗi tham chiếu this/these không rõ trỏ về đâu, khiến người đọc phải đoán câu đang tiếp nối ý nào.",
+    "findings": [
+      {
+        "id": "coh-old-f1-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "Due to the difference in culture that learners may experience",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "is the feeling of isolation and loneliness",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Mở câu bằng thông tin chưa được thiết lập",
+        "explanationVi": "Câu trước bạn vừa nêu ý mới là “the feeling of isolation and loneliness”. Câu sau bạn lại mở đầu bằng “Due to the difference in culture”, tức là bạn coi khác biệt văn hóa như thông tin đã có sẵn, trong khi bạn chưa hề nhắc tới nó. Người đọc phải tự đoán rằng khác biệt văn hóa chính là nguyên nhân của cảm giác cô đơn vừa nêu.",
+        "repairVi": "Hãy để câu sau bắt đầu từ chính ý vừa nêu rồi mới đưa nguyên nhân mới vào, ví dụ mở bằng “This loneliness often stems from cultural differences…” để nối lại đúng mạch.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f1-02",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "Beyond what they learn from textbooks",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "develop open-mindedness and intercultural competence",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thông tin mới bị trình bày như thông tin cũ, một nhánh ý bị bỏ rơi",
+        "explanationVi": "Câu trước bạn mở ra hai nhánh: “first-hand cultural exposure” và “open-mindedness and intercultural competence”. Câu sau bạn mở đầu bằng “Beyond what they learn from textbooks”, nhưng sách giáo khoa chưa từng xuất hiện trong bài, nên nó được nêu như thứ đã biết. Đồng thời câu này chỉ nói tiếp về cultural diversity, còn nhánh open-mindedness và intercultural competence thì biến mất, khiến người đọc không rõ câu đang nối tiếp ý nào.",
+        "repairVi": "Bỏ mệnh đề “Beyond what they learn from textbooks” hoặc nối thẳng vào nhánh vừa nêu, ví dụ “This open-mindedness grows as students experience the cultural diversity of their host country”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f1-03",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "this may present certain concerns",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 1,
+            "sourceText": "these are outstripped by the positives",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Chuỗi tham chiếu this/these không rõ đối tượng",
+        "explanationVi": "Trong kết bài, “this” đứng ngay sau “some drawbacks… to travelling abroad” nên người đọc không biết nó trỏ vào việc đi du học hay vào chính các nhược điểm; ngay sau đó “these” lại xuất hiện và cũng có thể là drawbacks hoặc concerns. Hai từ tham chiếu chồng lên nhau làm đứt mạch câu ở đúng chỗ bạn cần chốt lại lập luận.",
+        "repairVi": "Giữ một mắt xích tham chiếu duy nhất, ví dụ “while travelling abroad to learn a new language has some drawbacks, these drawbacks are outstripped by the positives…”.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+    "band": 6,
+    "rationaleVi": "Bạn có dùng từ nối và các cụm tham chiếu, nhưng ở nửa đầu bài nhiều mắt xích bị lỏng: từ nối báo hiệu quan hệ mà hai câu không thực sự có (“similar to this”, “as a result”), câu mở đầu bằng “Such as” nhưng không rõ đang ví dụ cho ý nào, và đại từ “they” ở kết bài không có đối tượng rõ ràng. Người đọc nhiều lần phải đoán câu đang tiếp nối thông tin nào của câu trước.",
+    "findings": [
+      {
+        "id": "coh-old-f2-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "many sports have no absolute guarantee of safety",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 1,
+            "sourceText": "similar to this, protective gear offers limited protection",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ nối báo sai quan hệ và “this” không rõ trỏ vào đâu",
+        "explanationVi": "Bạn nối hai ý bằng “similar to this”, tức là báo cho người đọc rằng hai ý giống nhau. Nhưng ý sau (đồ bảo hộ chỉ bảo vệ hạn chế) không phải là một trường hợp tương tự của ý trước mà là lý do giải thích cho ý trước. Ngoài ra “this” đứng ngay sau một mệnh đề dài nên người đọc không biết nó trỏ vào “many sports” hay vào việc không có bảo đảm an toàn.",
+        "repairVi": "Đổi sang quan hệ đúng, ví dụ “many sports have no absolute guarantee of safety, since even protective gear offers limited protection”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f2-02",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "Such as making personal choices regarding lifestyle and career",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 2,
+            "sourceText": "it would spark highly public resentment",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Câu mở đầu bằng “Such as” nhưng không rõ ví dụ cho ý nào",
+        "explanationVi": "Bạn bắt đầu cả một câu bằng “Such as”, nghĩa là câu này phải là ví dụ cho một danh từ vừa nêu. Nhưng câu ngay trước đó kết thúc ở “highly public resentment”, còn ý mà bạn thực sự muốn minh họa (basic human rights hoặc individual autonomy) lại nằm cách đó khá xa. Người đọc phải quay ngược lại tự tìm xem đây là ví dụ cho cái gì.",
+        "repairVi": "Nêu lại chủ ngữ được minh họa ngay trong câu, ví dụ “These basic rights include making personal choices regarding lifestyle and career…”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f2-03",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "Such opinions, as a result, will remain a significant balance",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 2,
+            "sourceText": "the government should implement rigorous safety inspections",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Tham chiếu sai loại và từ nối kết quả không có quan hệ thật",
+        "explanationVi": "Câu trước là một đề xuất chính sách (chính phủ nên kiểm định an toàn), không phải là các “opinions”, nên cụm “Such opinions” không tìm được đối tượng trong văn bản. Thêm vào đó “as a result” báo hiệu quan hệ nguyên nhân – kết quả, trong khi câu này chỉ nhắc lại ý cân bằng chứ không phải là hệ quả của câu trước.",
+        "repairVi": "Đổi thành “Such a policy would strike a balance between individuals’ safety and their choices” để cụm mở đầu trỏ đúng vào đề xuất vừa nêu và bỏ “as a result”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f2-04",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 3,
+            "sourceText": "I strongly maintain that they are still essential",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 3,
+            "sourceText": "banning unsafe sports can supplant",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ “they” không có đối tượng rõ ràng",
+        "explanationVi": "Trong câu kết, các danh từ số nhiều gần nhất là “unsafe sports”, “injuries” và “deaths”, nên “they are still essential” khiến người đọc hiểu thành “các môn thể thao nguy hiểm là thiết yếu”. Đây là chỗ chốt bài nên mắt xích tham chiếu bị mờ làm hỏng luôn kết luận.",
+        "repairVi": "Viết rõ chủ thể thay cho “they”, ví dụ “I strongly maintain that individuals’ freedom of choice is still essential”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f2-05",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "certify equipment and facilities before approval for companies",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Danh từ mới xuất hiện đột ngột làm đứt chuỗi từ vựng",
+        "explanationVi": "Cả đoạn bạn đang nói về chính phủ và cá nhân người chơi thể thao, rồi bỗng nhiên có “companies” ở cuối câu mà không được giới thiệu trước. Người đọc không rõ các công ty này là đơn vị tổ chức thể thao hay đơn vị sản xuất thiết bị, nên mạch từ vựng của đoạn bị gãy.",
+        "repairVi": "Nêu rõ đối tượng ngay khi xuất hiện lần đầu, ví dụ “before granting approval to sports companies that organise these activities”.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+    "band": 6,
+    "rationaleVi": "Bài có từ nối đầy đủ và mạch ý dễ theo ở mức tổng thể, nhưng một số mắt xích ở cấp câu bị lỏng: từ khóa bị đổi sang trường nghĩa khác (unpaid work thành workforce, employee; teenagers thành children) khiến người đọc không chắc còn đang nói cùng một ý, đại từ “They” ở đầu đoạn hai có thể trỏ vào society hoặc teenagers, và một câu ví dụ tưởng như nối tiếp lợi ích của xã hội nhưng lại lặng lẽ chuyển sang lợi ích cá nhân.",
+    "findings": [
+      {
+        "id": "coh-old-f3-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "entering the workforce helps teenagers to gain more soft skills",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "they will have the chance to become a real employee",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đứt chuỗi từ vựng: unpaid work đổi thành workforce/employee",
+        "explanationVi": "Chủ đề bạn đang theo là “unpaid work in their free time”, nhưng câu này chuyển sang “entering the workforce” và câu tiếp theo lại nói “become a real employee” với “colleagues and customers”. Vì từ ngữ đổi hẳn sang đi làm có lương, người đọc phải tự đoán đây vẫn là công việc tình nguyện hay đã là một chuyện khác.",
+        "repairVi": "Giữ nguyên từ khóa của đề, ví dụ “doing unpaid community work helps teenagers gain soft skills” và “they work alongside real staff and members of the public”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f3-02",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "They can lend a hand to people in difficulties",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "not only teenagers but also the whole society can benefit from this",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ “They” có hai đối tượng cùng khả năng",
+        "explanationVi": "Câu trước có cả “teenagers” lẫn “the whole society”, trong đó “the whole society” là phần thông tin mới và đứng gần nhất. Khi bạn viết “They can lend a hand”, người đọc có thể hiểu là xã hội giúp đỡ người khó khăn, trong khi ý bạn muốn nói là các bạn trẻ. Mắt xích tham chiếu ngay đầu đoạn bị mờ nên cả đoạn khó bám.",
+        "repairVi": "Thay đại từ bằng danh từ cụ thể: “Teenagers can lend a hand to people in difficulties…”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f3-03",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "receive certificates that are good for their CV",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "not only teenagers but also the whole society can benefit from this",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Có từ nối nhưng nội dung lặng lẽ chuyển sang vấn đề khác",
+        "explanationVi": "Đoạn này mở đầu bằng lợi ích cho “the whole society” và câu ví dụ được mở bằng “For example”, tức là hứa minh họa cho lợi ích của xã hội. Nhưng nửa sau câu lại chuyển sang cái lợi riêng của các bạn trẻ (giấy chứng nhận, hồ sơ xin việc). Liên kết bề mặt vẫn còn nhưng mạch ý đã trượt sang chuyện khác nên người đọc mất dấu ý chính của đoạn.",
+        "repairVi": "Cắt phần chứng nhận/CV ra khỏi câu ví dụ này, hoặc nối lại về xã hội, ví dụ “…become volunteers helping others with food and clothes, which eases the burden on local charities”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-old-f3-04",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "children can save their time by doing things that are useful",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "this is a nice way for teenagers to make use of their free time",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đổi từ chỉ cùng một nhóm người và đổi luôn ý",
+        "explanationVi": "Bạn đang gọi nhóm này là “teenagers” rồi đột ngột chuyển sang “children”, khiến người đọc phải cân nhắc xem có phải vẫn là cùng một nhóm hay không. Ngoài ra câu trước nói “make use of their free time” còn câu này lại nói “save their time”, hai cách diễn đạt không cùng một ý nên sợi dây nối giữa hai câu bị mờ.",
+        "repairVi": "Giữ nguyên “teenagers” và lặp lại đúng ý: “teenagers can use that time for activities that are useful in their later lives”.",
+        "replacementText": ""
+      }
+    ]
+  }
+]

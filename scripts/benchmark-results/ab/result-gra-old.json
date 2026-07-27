@@ -1,0 +1,617 @@
+[
+  {
+    "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+    "band": 7,
+    "rationaleVi": "Bạn dùng được nhiều kiểu câu phức: mệnh đề quan hệ ('which allows them...'), mệnh đề nhượng bộ ('while there are...'), cụm phân từ và cấu trúc 'not only... but also', và phần lớn câu không có lỗi. Điểm yếu tập trung ở dấu câu và ranh giới câu: dấu cách thừa hoặc thiếu quanh dấu chấm và dấu sở hữu, dấu chấm phẩy dùng sai chỗ, và một câu nối sai bằng dấu phẩy ở kết bài. Ngoài ra có hai lỗi chỉ xuất hiện khi bạn viết câu dài hơn: phân từ treo và liệt kê không song song. Đây là các lỗi lặt vặt chứ không phải lỗ hổng quy tắc, nên người đọc vẫn hiểu trọn ý.",
+    "findings": [
+      {
+        "id": "gra-e1-01",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "financial burden .",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Lỗi dấu câu",
+        "explanationVi": "Bạn để một dấu cách thừa trước dấu chấm. Trong tiếng Anh dấu chấm phải dính liền với từ đứng trước.",
+        "repairVi": "Bạn xóa dấu cách trước dấu chấm.",
+        "replacementText": "financial burden."
+      },
+      {
+        "id": "gra-e1-02",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "living expenses.However",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu dấu cách sau dấu chấm",
+        "explanationVi": "Bạn viết dính hai câu vào nhau vì thiếu dấu cách sau dấu chấm, làm ranh giới câu khó đọc.",
+        "repairVi": "Bạn thêm một dấu cách sau dấu chấm.",
+        "replacementText": "living expenses. However"
+      },
+      {
+        "id": "gra-e1-03",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "financial savings; reducing",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai dấu chấm phẩy",
+        "explanationVi": "Dấu chấm phẩy chỉ nối hai mệnh đề độc lập. Phần sau chỉ là cụm phân từ 'reducing...', nên bạn phải dùng dấu phẩy.",
+        "repairVi": "Bạn đổi dấu chấm phẩy thành dấu phẩy.",
+        "replacementText": "financial savings, reducing"
+      },
+      {
+        "id": "gra-e1-04",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "exposure, while also helping them develop",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Phân từ treo (dangling modifier)",
+        "explanationVi": "Chủ ngữ của 'helping' không rõ: người phát triển tư duy cởi mở chính là students, nhưng câu lại biến họ thành tân ngữ 'them'. Bạn nên dùng mệnh đề quan hệ 'which also helps'.",
+        "repairVi": "Bạn đổi 'while also helping them' thành 'which also helps them'.",
+        "replacementText": "exposure, which also helps them develop"
+      },
+      {
+        "id": "gra-e1-05",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "students’career prospects",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu dấu cách sau dấu sở hữu",
+        "explanationVi": "Sau dấu sở hữu của danh từ số nhiều bạn phải để một dấu cách trước danh từ tiếp theo.",
+        "repairVi": "Bạn thêm dấu cách: 'students’ career prospects'.",
+        "replacementText": "students’ career prospects"
+      },
+      {
+        "id": "gra-e1-06",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "certain concerns,these are outstripped",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Câu nối sai (comma splice)",
+        "explanationVi": "Bạn nối hai mệnh đề độc lập chỉ bằng một dấu phẩy và còn thiếu dấu cách. Bạn cần dấu chấm hoặc dấu chấm phẩy ở đây.",
+        "repairVi": "Bạn tách câu: 'certain concerns. These are outstripped'.",
+        "replacementText": "certain concerns. These are outstripped"
+      },
+      {
+        "id": "gra-e1-07",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "the increase in confidence in speaking, gaining knowledge",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Lỗi song song (parallelism)",
+        "explanationVi": "Trong cùng một danh sách bạn dùng cụm danh từ 'the increase in confidence' rồi lại dùng danh động từ 'gaining', 'expanding'. Các thành phần liệt kê phải cùng dạng.",
+        "repairVi": "Bạn đổi thành 'increasing confidence in speaking, gaining knowledge'.",
+        "replacementText": "increasing confidence in speaking, gaining knowledge"
+      }
+    ]
+  },
+  {
+    "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+    "band": 6,
+    "rationaleVi": "Bạn có phạm vi cấu trúc khá rộng: mệnh đề quan hệ, câu điều kiện loại 2, cụm bị động, cụm phân từ. Nhưng độ chính xác tụt rõ rệt ở nửa đầu bài, đúng vào những câu bạn cố viết dài: câu cụt bắt đầu bằng 'Because' và 'Such as', câu nối sai bằng dấu phẩy, thiếu danh từ sau tính từ, và các kết cấu giới từ sai lặp lại ('due to + động từ', 'with imposing', 'including in'). Đây là lỗ hổng quy tắc có hệ thống về giới từ và về cách dựng ranh giới câu, có vài chỗ làm người đọc phải đọc lại. Nửa sau bài chính xác hơn hẳn, chỉ còn lỗi dấu câu nhỏ, cho thấy bạn kiểm soát được khi viết chậm lại.",
+    "findings": [
+      {
+        "id": "gra-e2-01",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "One merit is that, this is a great way",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dấu phẩy thừa sau 'that'",
+        "explanationVi": "Bạn không được đặt dấu phẩy giữa 'that' và mệnh đề mà nó dẫn vào.",
+        "repairVi": "Bạn bỏ dấu phẩy sau 'that'.",
+        "replacementText": "One merit is that this is a great way"
+      },
+      {
+        "id": "gra-e2-02",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "the risk of life-threatening for residents",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu danh từ sau tính từ",
+        "explanationVi": "'life-threatening' là tính từ nên phải có danh từ đi kèm. Thiếu danh từ khiến người đọc không biết bạn muốn nói rủi ro về cái gì.",
+        "repairVi": "Bạn thêm danh từ: 'the risk of life-threatening injuries'.",
+        "replacementText": "the risk of life-threatening injuries for residents"
+      },
+      {
+        "id": "gra-e2-03",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "of safety, similar to this, protective gear offers",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Câu nối sai (comma splice)",
+        "explanationVi": "Bạn nối hai mệnh đề độc lập bằng dấu phẩy và cụm 'similar to this'. Bạn cần dấu chấm phẩy và trạng từ nối 'similarly'.",
+        "repairVi": "Bạn viết: 'of safety; similarly, protective gear offers'.",
+        "replacementText": "of safety; similarly, protective gear offers"
+      },
+      {
+        "id": "gra-e2-04",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "It leads to a nationwide ban",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai thì của động từ",
+        "explanationVi": "Cả đoạn kể lại một sự kiện đã xảy ra trong quá khứ ('there was a devastating tragedy'), nên động từ phải ở thì quá khứ đơn.",
+        "repairVi": "Bạn đổi 'It leads to' thành 'It led to'.",
+        "replacementText": "It led to a nationwide ban"
+      },
+      {
+        "id": "gra-e2-05",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "with imposing an indefinite suspension",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết cấu giới từ sai",
+        "explanationVi": "'with + V-ing' ở đây không diễn đạt được ý bổ sung. Bạn nên dùng 'including' để thêm chi tiết cho lệnh cấm.",
+        "repairVi": "Bạn đổi 'with imposing' thành 'including'.",
+        "replacementText": "including an indefinite suspension"
+      },
+      {
+        "id": "gra-e2-06",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "due to strike a balance",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai 'due to'",
+        "explanationVi": "'due to' phải đi với danh từ, không đi với động từ nguyên thể. Ở đây bạn diễn đạt mục đích nên phải dùng 'in order to'.",
+        "repairVi": "Bạn đổi thành 'in order to strike a balance'.",
+        "replacementText": "in order to strike a balance"
+      },
+      {
+        "id": "gra-e2-07",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "Because if the government infringed",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Câu cụt (fragment)",
+        "explanationVi": "Câu bắt đầu bằng 'Because' chỉ có mệnh đề phụ, không có mệnh đề chính đứng riêng, nên đây là một câu chưa hoàn chỉnh.",
+        "repairVi": "Bạn viết 'This is because, if the government infringed...'.",
+        "replacementText": "This is because, if the government infringed"
+      },
+      {
+        "id": "gra-e2-08",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "spark highly public resentment",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai dạng từ bổ nghĩa",
+        "explanationVi": "Trạng từ 'highly' không bổ nghĩa được cho 'public' theo cách bạn muốn. Bạn cần một tính từ chỉ mức độ lan rộng.",
+        "repairVi": "Bạn đổi thành 'spark widespread public resentment'.",
+        "replacementText": "spark widespread public resentment"
+      },
+      {
+        "id": "gra-e2-09",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "Such as making personal choices regarding",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Câu cụt bắt đầu bằng 'Such as'",
+        "explanationVi": "'Such as' chỉ dùng để nêu ví dụ bên trong một câu, không thể mở đầu một câu độc lập. Chủ ngữ của câu bị mất.",
+        "repairVi": "Bạn bỏ 'Such as' và bắt đầu bằng 'Making personal choices regarding'.",
+        "replacementText": "Making personal choices regarding"
+      },
+      {
+        "id": "gra-e2-10",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "is also citizens’ benefits",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Không hợp số giữa chủ ngữ và bổ ngữ",
+        "explanationVi": "Chủ ngữ là một hành động số ít nên bổ ngữ danh từ cũng phải ở số ít.",
+        "repairVi": "Bạn đổi thành 'is also a citizens’ benefit'.",
+        "replacementText": "is also a citizens’ benefit"
+      },
+      {
+        "id": "gra-e2-11",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "including in deciding whether",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thừa giới từ",
+        "explanationVi": "Sau 'including' bạn dùng thẳng danh động từ, không thêm 'in'.",
+        "repairVi": "Bạn bỏ 'in': 'including deciding whether'.",
+        "replacementText": "including deciding whether"
+      },
+      {
+        "id": "gra-e2-12",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "before approval for companies",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu từ và sai giới từ",
+        "explanationVi": "Cụm này thiếu động từ chỉ hành động cấp phép và dùng sai giới từ, khiến người đọc phải đoán ai cấp phép cho ai.",
+        "repairVi": "Bạn viết 'before granting approval to companies'.",
+        "replacementText": "before granting approval to companies"
+      },
+      {
+        "id": "gra-e2-13",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "being highlighted to have the final say",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Phân từ treo (dangling modifier)",
+        "explanationVi": "Chủ ngữ của 'being highlighted' là 'Such opinions', nhưng người 'have the final say' lại là con người. Chủ ngữ bị lệch nên ý nghĩa bị mờ.",
+        "repairVi": "Bạn viết 'and highlights that people should have the final say'.",
+        "replacementText": "and highlights that people should have the final say"
+      },
+      {
+        "id": "gra-e2-14",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 3,
+            "sourceText": "I strongly maintain that they are still essential",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ tham chiếu không rõ",
+        "explanationVi": "'they' đứng sau 'unsafe sports' và 'people’s lives' nên người đọc không biết bạn đang nói tới cái nào.",
+        "repairVi": "Bạn thay 'they' bằng danh từ cụ thể: 'such sports'.",
+        "replacementText": "I strongly maintain that such sports are still essential"
+      },
+      {
+        "id": "gra-e2-15",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 5,
+            "sourceText": "As a result of this policy the government",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu dấu phẩy sau trạng ngữ đầu câu",
+        "explanationVi": "Sau một cụm trạng ngữ dài mở đầu câu bạn cần một dấu phẩy để tách với mệnh đề chính.",
+        "repairVi": "Bạn thêm dấu phẩy sau 'policy'.",
+        "replacementText": "As a result of this policy, the government"
+      }
+    ]
+  },
+  {
+    "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+    "band": 6,
+    "rationaleVi": "Bạn kết hợp được câu đơn, câu ghép và một số câu phức ('that are good for them...', 'because staying at home...', 'not only... but also'), nên phạm vi cấu trúc ở mức đủ dùng. Tuy nhiên lỗi xuất hiện thường xuyên và tập trung vào vài nhóm quy tắc lặp lại: giới từ và từ thừa ('due to numerous reasons', 'spending time on doing'), cấu tạo cụm danh từ ('solving problems skills'), số ít số nhiều và từ hạn định ('their CV', 'in later lives'). Hai lỗi nặng hơn là mệnh đề quan hệ thừa chủ ngữ và cụm 'there have been are', khiến người đọc khựng lại một nhịp. Nhìn chung lỗi không chặn ý, nhưng tần suất đủ cao để giữ bài ở mức này.",
+    "findings": [
+      {
+        "id": "gra-e3-01",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "bring benefits for both teenagers",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai giới từ",
+        "explanationVi": "Cụm 'bring benefits' đi với giới từ 'to', không đi với 'for'.",
+        "repairVi": "Bạn đổi 'for' thành 'to'.",
+        "replacementText": "bring benefits to both teenagers"
+      },
+      {
+        "id": "gra-e3-02",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "with this statement due to numerous reasons",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai 'due to'",
+        "explanationVi": "'due to' chỉ nguyên nhân của một sự việc, không dùng để nêu lý do lập luận. Ở đây bạn cần 'for'.",
+        "repairVi": "Bạn đổi thành 'for numerous reasons'.",
+        "replacementText": "with this statement for numerous reasons"
+      },
+      {
+        "id": "gra-e3-03",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "a real employee that they work with other people",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Mệnh đề quan hệ sai cấu trúc",
+        "explanationVi": "Sau 'that' bạn lại thêm chủ ngữ 'they', tạo ra một mệnh đề thừa chủ ngữ. Mệnh đề quan hệ chỉ người phải dùng 'who' và động từ chia theo 'employee'.",
+        "repairVi": "Bạn viết 'a real employee who works with other people'.",
+        "replacementText": "a real employee who works with other people"
+      },
+      {
+        "id": "gra-e3-04",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "solving problems skills",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai cấu tạo cụm danh từ",
+        "explanationVi": "Khi ghép danh từ làm định ngữ, bạn phải viết 'problem-solving skills' chứ không đảo trật tự như vậy.",
+        "repairVi": "Bạn đổi thành 'problem-solving skills'.",
+        "replacementText": "problem-solving skills"
+      },
+      {
+        "id": "gra-e3-05",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "spending time on doing useless things",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thừa từ sau giới từ",
+        "explanationVi": "Bạn dùng 'spend time on + danh từ' hoặc 'spend time + V-ing'. Bạn dùng cả hai nên bị thừa 'doing'.",
+        "repairVi": "Bạn bỏ 'doing': 'spending time on useless things'.",
+        "replacementText": "spending time on useless things"
+      },
+      {
+        "id": "gra-e3-06",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "computer games, watching TV all day, children can",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu liên từ trong danh sách",
+        "explanationVi": "Danh sách ví dụ của bạn kết thúc bằng dấu phẩy rồi nối thẳng vào mệnh đề chính, khiến người đọc nhầm 'children' là mục cuối trong danh sách.",
+        "repairVi": "Bạn thêm 'and' trước mục cuối: 'computer games and watching TV all day, children can'.",
+        "replacementText": "computer games and watching TV all day, children can"
+      },
+      {
+        "id": "gra-e3-07",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "there have been are so many charity activities",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thừa động từ",
+        "explanationVi": "Bạn viết cả 'have been' lẫn 'are' trong cùng một vị ngữ, làm câu sai ngữ pháp và gây khựng khi đọc.",
+        "repairVi": "Bạn bỏ 'are'.",
+        "replacementText": "there have been so many charity activities"
+      },
+      {
+        "id": "gra-e3-08",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "They can lend a hand to people in difficulties",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ tham chiếu không rõ",
+        "explanationVi": "Câu trước nói tới cả 'teenagers' và 'the whole society', nên 'They' không rõ chỉ ai.",
+        "repairVi": "Bạn thay 'They' bằng 'Teenagers'.",
+        "replacementText": "Teenagers can lend a hand to people in difficulties"
+      },
+      {
+        "id": "gra-e3-09",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "good for their CV when they apply",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai số ít số nhiều",
+        "explanationVi": "Chủ sở hữu là số nhiều 'they', nên danh từ đếm được đi sau cũng phải ở số nhiều.",
+        "repairVi": "Bạn đổi 'CV' thành 'CVs'.",
+        "replacementText": "good for their CVs when they apply"
+      },
+      {
+        "id": "gra-e3-10",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "more stunning and fresher",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Không đồng nhất dạng so sánh",
+        "explanationVi": "Bạn dùng lẫn 'more + tính từ' và đuôi '-er' trong cùng một cặp so sánh; nên giữ một dạng thống nhất.",
+        "repairVi": "Bạn viết 'more stunning and fresh'.",
+        "replacementText": "more stunning and fresh"
+      },
+      {
+        "id": "gra-e3-11",
+        "criterion": "grammatical_range_accuracy",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "good for them in later lives",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Thiếu từ hạn định",
+        "explanationVi": "Danh từ 'lives' cần một từ sở hữu đi kèm như ở các câu trước ('their later lives').",
+        "repairVi": "Bạn thêm 'their': 'in their later lives'.",
+        "replacementText": "good for them in their later lives"
+      }
+    ]
+  }
+]

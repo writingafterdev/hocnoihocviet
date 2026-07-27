@@ -1,0 +1,161 @@
+[
+  {
+    "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+    "band": 7,
+    "rationaleVi": "Bài đi theo một mạch rõ ràng: mở bài nêu quan điểm, một đoạn nhượng bộ nhược điểm, một đoạn ưu điểm được chia theo góc học thuật, văn hóa và nghề nghiệp, rồi kết bài. Các mắt xích giữa câu phần lớn hoạt động tốt, từ khóa được lặp lại đều nên người đọc bám được ý. Chỉ ở kết bài chuỗi tham chiếu bị rối, còn lại người đọc gần như không phải dừng lại để đoán.",
+    "findings": [
+      {
+        "id": "coh-new-f1-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "these",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 1,
+            "sourceText": "this may present certain concerns",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ tham chiếu không rõ trỏ vào đâu",
+        "explanationVi": "Trong một câu kết bài bạn dùng liên tiếp hai từ tham chiếu. “this” đứng sau “some drawbacks to travelling abroad” nên có thể là việc đi nước ngoài hoặc là các nhược điểm; ngay sau đó “these” lại có thể trỏ vào drawbacks hoặc vào concerns vừa nhắc. Người đọc phải tự chọn một cách hiểu ở đúng câu chốt lại toàn bài.",
+        "repairVi": "Chỉ giữ một mắt xích và gọi tên nó, ví dụ “these drawbacks are outstripped by the positives”, đồng thời bỏ mệnh đề “this may present certain concerns”.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+    "band": 6,
+    "rationaleVi": "Bố cục có thể theo được: mở bài, một đoạn cho phía ủng hộ lệnh cấm, một đoạn cho phía tự do lựa chọn, rồi kết bài. Nhưng ở nửa đầu bài các mắt xích liên kết nhiều lần bị lỗi: từ nối báo sai quan hệ, cụm “Such opinions” không tìm được đối tượng trong câu trước, và đại từ “they” ở câu kết khiến câu chốt bị hiểu ngược. Người đọc phải dừng lại đọc lại ở vài chỗ, nên liên kết chỉ ở mức chấp nhận được chứ chưa hiệu quả.",
+    "findings": [
+      {
+        "id": "coh-new-f2-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "similar to this",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 1,
+            "sourceText": "many sports have no absolute guarantee of safety",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ nối báo sai quan hệ, “this” không có đối tượng rõ",
+        "explanationVi": "Bạn nối hai ý bằng “similar to this”, tức là báo rằng ý sau tương tự ý trước. Nhưng việc đồ bảo hộ chỉ bảo vệ hạn chế không phải là một ví dụ tương tự mà là lý do giải thích vì sao nhiều môn thể thao không thể bảo đảm an toàn. Thêm nữa “this” đứng sau một mệnh đề dài nên người đọc không biết nó trỏ vào các môn thể thao hay vào việc thiếu bảo đảm an toàn.",
+        "repairVi": "Đổi sang quan hệ nguyên nhân, ví dụ “many sports have no absolute guarantee of safety, since protective gear offers limited protection”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-new-f2-02",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "Such opinions",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 2,
+            "sourceText": "the government should implement rigorous safety inspections",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Cụm tham chiếu không tìm được đối tượng",
+        "explanationVi": "Câu trước đó là một đề xuất chính sách chứ không phải là các ý kiến, nên khi bạn mở câu bằng “Such opinions” người đọc không tìm được thứ nào trong văn bản để trỏ vào. Đây lại là câu chốt đoạn nên mắt xích hỏng ở đây làm cả đoạn khó gom lại.",
+        "repairVi": "Trỏ đúng vào đề xuất vừa nêu, ví dụ “Such a policy would maintain a balance between individuals’ safety and their choices”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-new-f2-03",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 3,
+            "sourceText": "they",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 3,
+            "sourceText": "banning unsafe sports can supplant",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ ở câu kết trỏ nhầm đối tượng",
+        "explanationVi": "Trong câu kết, các danh từ số nhiều gần nhất là “unsafe sports”, “injuries” và “deaths”, nên “they are still essential” bị đọc thành các môn thể thao nguy hiểm là thiết yếu, trong khi ý bạn muốn nói là quyền lựa chọn của cá nhân. Người đọc phải tự sửa lại cách hiểu ngay ở câu chốt bài.",
+        "repairVi": "Gọi tên đối tượng thay cho đại từ, ví dụ “I strongly maintain that individuals’ freedom of choice is still essential”.",
+        "replacementText": ""
+      }
+    ]
+  },
+  {
+    "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+    "band": 7,
+    "rationaleVi": "Bài có bố cục rõ và mạch ý dễ theo: mở bài nêu quan điểm, một đoạn về lợi ích cho thanh thiếu niên, một đoạn về lợi ích cho xã hội, rồi kết bài tóm lại cả hai. Các dấu hiệu trình tự và từ nối được dùng đúng chỗ. Liên kết nhìn chung hiệu quả nhưng chưa hoàn hảo: đầu đoạn hai đại từ “They” có hai đối tượng cùng khả năng, và ở đoạn một từ khóa bị đổi sang trường nghĩa đi làm có lương làm người đọc phải cân nhắc xem có còn cùng một ý hay không.",
+    "findings": [
+      {
+        "id": "coh-new-f3-01",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "They",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "not only teenagers but also the whole society can benefit from this",
+            "role": "context"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đại từ đầu đoạn có hai đối tượng cùng khả năng",
+        "explanationVi": "Câu ngay trước có cả “teenagers” lẫn “the whole society”, trong đó “the whole society” là phần thông tin mới và đứng gần nhất. Vì vậy khi bạn viết “They can lend a hand to people in difficulties”, người đọc có thể hiểu là xã hội đi giúp người khó khăn, trong khi ý bạn muốn nói là các bạn trẻ. Mắt xích mở đoạn bị mờ nên cả đoạn khó bám ngay từ câu đầu.",
+        "repairVi": "Thay đại từ bằng danh từ cụ thể: “Teenagers can lend a hand to people in difficulties…”.",
+        "replacementText": ""
+      },
+      {
+        "id": "coh-new-f3-02",
+        "criterion": "cohesion",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "entering the workforce helps teenagers to gain more soft skills",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 0,
+            "sourceText": "they will have the chance to become a real employee",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Đổi từ khóa làm mờ mạch ý",
+        "explanationVi": "Sợi dây bạn đang theo là “unpaid work in their free time”, nhưng câu này chuyển sang “entering the workforce” và câu sau lại nói “become a real employee” cùng với “colleagues and customers”. Từ ngữ đã đổi sang chuyện đi làm có lương nên người đọc phải tự nối lại xem đây vẫn là công việc không lương hay đã là một chuyện khác.",
+        "repairVi": "Lặp lại đúng từ khóa của đề, ví dụ “doing unpaid community work helps teenagers gain soft skills” rồi mới nói tới việc làm cùng người khác.",
+        "replacementText": ""
+      }
+    ]
+  }
+]

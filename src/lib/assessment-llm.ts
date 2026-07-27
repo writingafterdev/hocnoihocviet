@@ -3,6 +3,7 @@ import {
   type CostReservation,
   type TokenUsage,
 } from '@/lib/assessment-cost-budget';
+import { recordAssessmentModelCall } from '@/lib/assessment-run-context';
 
 export class AssessmentProviderError extends Error {
   status?: number;
@@ -167,6 +168,28 @@ async function generateJSONWithProvider<T>({
   maxTokensField?: 'max_tokens' | 'max_completion_tokens';
 }): Promise<T> {
   const startedAt = Date.now();
+  let telemetryRecorded = false;
+  const recordCall = (
+    status: 'success' | 'error',
+    usage?: Record<string, unknown>,
+    finishReason?: string,
+  ) => {
+    if (telemetryRecorded) return;
+    telemetryRecorded = true;
+    const promptTokens = Number(usage?.prompt_tokens || 0);
+    const completionTokens = Number(usage?.completion_tokens || 0);
+    recordAssessmentModelCall({
+      label: requestLabel || 'unlabelled',
+      provider: providerName,
+      model,
+      status,
+      durationMs: Date.now() - startedAt,
+      promptTokens,
+      completionTokens,
+      totalTokens: Number(usage?.total_tokens || promptTokens + completionTokens),
+      finishReason,
+    });
+  };
   const messages = [
     { role: 'system', content: systemPrompt },
     { role: 'user', content: userPrompt },
@@ -207,12 +230,14 @@ async function generateJSONWithProvider<T>({
     });
   } catch (error) {
     if (reservation) costBudget?.reconcile(reservation);
+    recordCall('error');
     const message = error instanceof Error ? error.message : String(error);
     throw new AssessmentProviderError(`${providerName} request failed: ${message}`);
   }
 
   if (!response.ok) {
     if (reservation) costBudget?.reconcile(reservation);
+    recordCall('error');
     const text = await response.text();
     let message = text;
     try {
@@ -228,6 +253,7 @@ async function generateJSONWithProvider<T>({
     data = await response.json();
   } catch {
     if (reservation) costBudget?.reconcile(reservation);
+    recordCall('error');
     throw new AssessmentProviderError(`${providerName} returned an invalid response body.`);
   }
   const providerUsage = usageFromProvider(data.usage);
@@ -251,12 +277,16 @@ async function generateJSONWithProvider<T>({
   }
   const content = data.choices?.[0]?.message?.content;
   if (typeof content !== 'string') {
+    recordCall('error', data.usage, data.choices?.[0]?.finish_reason);
     throw new AssessmentProviderError(`${providerName} did not return message content.`);
   }
 
   try {
-    return extractJSON(content) as T;
+    const parsed = extractJSON(content) as T;
+    recordCall('success', data.usage, data.choices?.[0]?.finish_reason);
+    return parsed;
   } catch {
+    recordCall('error', data.usage, data.choices?.[0]?.finish_reason);
     console.error(`Failed to parse ${providerName} JSON response.`);
     const finishReason = data.choices?.[0]?.finish_reason || 'unknown';
     const reasoningContent = data.choices?.[0]?.message?.reasoning_content;

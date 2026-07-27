@@ -1,0 +1,694 @@
+[
+  {
+    "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+    "band": 7,
+    "rationaleVi": "Vốn từ của bạn khá rộng và đúng chủ đề: bạn dùng tốt các cụm như 'immersion in a native-speaking environment', 'intercultural competence', 'first-hand cultural exposure' và biết diễn đạt lại đề bài. Tuy nhiên vẫn còn vài lỗi chọn từ và kết hợp từ đáng chú ý ('composes a financial burden', 'highly appreciate', 'basic conversations', 'mental issues about loneliness') làm giảm độ chính xác. Mức độ này tương ứng band 7: dùng được từ vựng ít thông dụng nhưng đôi chỗ còn thiếu chuẩn xác.",
+    "findings": [
+      {
+        "id": "lr-e1-01",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "composes a significant financial burden",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (composes)",
+        "explanationVi": "Bạn muốn nói việc du học tạo ra một gánh nặng tài chính lớn. Nhưng 'compose' nghĩa là cấu thành hoặc soạn ra, không đi với 'a financial burden'. Người bản ngữ sẽ hiểu sai hoặc thấy rất lạ.",
+        "repairVi": "Bạn thay 'composes' bằng 'constitutes' hoặc 'poses'.",
+        "replacementText": "poses a significant financial burden"
+      },
+      {
+        "id": "lr-e1-02",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "highly appreciate",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ không tự nhiên (highly appreciate)",
+        "explanationVi": "Ý bạn là nhà tuyển dụng đánh giá cao ứng viên. Nhưng 'appreciate' mang nghĩa biết ơn, cảm kích, nên 'highly appreciate candidates' nghe không tự nhiên trong văn viết học thuật. Từ đi kèm chuẩn là 'value'.",
+        "repairVi": "Bạn đổi 'highly appreciate' thành 'highly value'.",
+        "replacementText": "highly value"
+      },
+      {
+        "id": "lr-e1-03",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "Through basic conversations with local people",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ sai nghĩa (basic conversations)",
+        "explanationVi": "Bạn muốn nói học viên trò chuyện hằng ngày với người bản xứ. 'Basic conversations' lại có nghĩa là hội thoại ở trình độ sơ cấp, làm yếu ý 'giao tiếp thực tế' mà bạn vừa nêu ở câu trước.",
+        "repairVi": "Bạn thay 'basic' bằng 'everyday'.",
+        "replacementText": "Through everyday conversations with local people"
+      },
+      {
+        "id": "lr-e1-04",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "mental issues about loneliness",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ sai (mental issues about)",
+        "explanationVi": "Bạn muốn nói người học có thể gặp vấn đề tâm lý do cô đơn. Nhưng 'mental issues about loneliness' không phải cách nói của người bản ngữ; danh từ 'issue' không đi với 'about' theo nghĩa nguyên nhân này.",
+        "repairVi": "Bạn viết 'mental health problems caused by loneliness'.",
+        "replacementText": "mental health problems caused by loneliness"
+      },
+      {
+        "id": "lr-e1-05",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "career chances",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ kém chuẩn (career chances)",
+        "explanationVi": "Ở thân bài bạn đã dùng đúng 'career prospects', nhưng ở kết bài lại đổi sang 'career chances'. Cụm này không tự nhiên và làm từ vựng của bạn kém nhất quán.",
+        "repairVi": "Bạn dùng lại 'career prospects'.",
+        "replacementText": "career prospects"
+      },
+      {
+        "id": "lr-e1-06",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "master the language more proactively",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Trạng từ sai nghĩa (proactively)",
+        "explanationVi": "Bạn muốn nói người học làm chủ ngôn ngữ nhanh hơn hoặc hiệu quả hơn. 'Proactively' nghĩa là chủ động đón đầu, không mô tả được mức độ thành thạo, nên ý bị lệch. Từ này còn bị lặp lại ở đoạn sau.",
+        "repairVi": "Bạn thay 'more proactively' bằng 'more effectively'.",
+        "replacementText": "master the language more effectively"
+      },
+      {
+        "id": "lr-e1-07",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "providing comfort for international students",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ quá chung chung (providing comfort)",
+        "explanationVi": "Bạn muốn nói các giải pháp này giúp sinh viên quốc tế bớt áp lực tài chính. 'Providing comfort' quá mơ hồ và nghiêng về nghĩa an ủi tinh thần, không khớp với ngữ cảnh tiền bạc.",
+        "repairVi": "Bạn thay bằng 'easing financial pressure'.",
+        "replacementText": "easing financial pressure for international students"
+      }
+    ]
+  },
+  {
+    "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+    "band": 6,
+    "rationaleVi": "Bạn có cố gắng dùng từ vựng học thuật ('individual autonomy', 'rigorous safety inspections', 'infringed upon basic human rights') và bản viết lại phía sau chuẩn hơn hẳn. Nhưng phần đầu còn nhiều lỗi chọn từ nặng ('supplant people’s lives', 'risk of life-threatening', 'highly public resentment') và bạn dùng 'games' thay cho 'sports' xuyên suốt, khiến từ vựng chủ đề thiếu chính xác. Đây là mức band 6: đủ dùng nhưng lỗi từ vựng xuất hiện thường xuyên.",
+    "findings": [
+      {
+        "id": "lr-e2-01",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 3,
+            "sourceText": "supplant people’s lives",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (supplant)",
+        "explanationVi": "Ý bạn là cấm các môn thể thao nguy hiểm có thể cứu mạng người. 'Supplant' nghĩa là thay thế, nên câu của bạn thành 'thay thế mạng sống', hoàn toàn sai ý. Ở bản viết sau bạn đã dùng đúng 'save'.",
+        "repairVi": "Bạn thay 'supplant' bằng 'save'.",
+        "replacementText": "save people’s lives"
+      },
+      {
+        "id": "lr-e2-02",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "minimise the risk of life-threatening for residents",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai dạng từ (life-threatening)",
+        "explanationVi": "'Life-threatening' là tính từ, không đứng một mình sau 'the risk of'. Bạn đang thiếu danh từ đi kèm nên cụm này không có nghĩa trọn vẹn.",
+        "repairVi": "Bạn viết 'the risk of life-threatening injuries'.",
+        "replacementText": "minimise the risk of life-threatening injuries"
+      },
+      {
+        "id": "lr-e2-03",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "barring people from dangerous games",
+            "role": "primary"
+          },
+          {
+            "paragraphIndex": 2,
+            "sourceText": "preventing people from excessive games",
+            "role": "affected"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Chọn sai từ chủ đề (games)",
+        "explanationVi": "Đề bài nói về 'sports'. Bạn dùng 'games' nghĩa là trò chơi hoặc trận đấu, không phải môn thể thao mạo hiểm. Lỗi này lặp lại nhiều lần và làm từ vựng chủ đề của bạn kém chính xác.",
+        "repairVi": "Bạn thay 'games' bằng 'sports' ở tất cả các chỗ.",
+        "replacementText": "barring people from dangerous sports"
+      },
+      {
+        "id": "lr-e2-04",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "similar to this",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ nối (similar to this)",
+        "explanationVi": "Bạn muốn thêm một ý tương tự vào ý vừa nói. 'Similar to this' dùng để so sánh hai sự vật cụ thể, không dùng làm từ nối giữa hai mệnh đề như vậy.",
+        "repairVi": "Bạn thay 'similar to this' bằng 'likewise'.",
+        "replacementText": "likewise"
+      },
+      {
+        "id": "lr-e2-05",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 1,
+            "sourceText": "due to strike a balance",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai cụm chỉ mục đích (due to)",
+        "explanationVi": "Bạn muốn nói mục đích là cân bằng an toàn và tự do cá nhân. 'Due to' chỉ nguyên nhân, không chỉ mục đích, nên ý bị ngược.",
+        "repairVi": "Bạn thay 'due to' bằng 'in order to'.",
+        "replacementText": "in order to strike a balance"
+      },
+      {
+        "id": "lr-e2-06",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "spark highly public resentment",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai dạng từ (highly public resentment)",
+        "explanationVi": "Bạn muốn nói sự phản đối lan rộng trong dân chúng. 'Highly' bổ nghĩa cho tính từ, không bổ nghĩa cho 'public resentment' theo nghĩa quy mô. Ở bản viết sau bạn đã dùng đúng 'widespread'.",
+        "repairVi": "Bạn thay 'highly' bằng 'widespread'.",
+        "replacementText": "spark widespread public resentment"
+      },
+      {
+        "id": "lr-e2-07",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "which have an alarming risk",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ không tự nhiên (an alarming risk)",
+        "explanationVi": "Bạn muốn nói những môn có mức rủi ro cao. 'An alarming risk' nghe lạ vì 'alarming' thường đi với 'rate' hay 'increase'; với 'risk' người bản ngữ nói 'a high risk'.",
+        "repairVi": "Bạn viết 'which carry a high risk'.",
+        "replacementText": "which carry a high risk"
+      },
+      {
+        "id": "lr-e2-08",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "is also citizens’ benefits in a nation",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ sai nghĩa (benefits thay cho rights)",
+        "explanationVi": "Bạn đang nói về quyền tự quyết của công dân, không phải lợi ích vật chất. 'Benefits' làm lệch ý sang phúc lợi, trong khi ý bạn cần là 'rights'.",
+        "repairVi": "Bạn thay 'benefits' bằng 'rights'.",
+        "replacementText": "citizens’ rights"
+      },
+      {
+        "id": "lr-e2-09",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "will remain a significant balance",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Chọn sai động từ (remain a balance)",
+        "explanationVi": "Bạn muốn nói giữ được sự cân bằng. 'Remain' là động từ nội động, không đi với tân ngữ 'a balance'; động từ đi kèm đúng là 'maintain'.",
+        "repairVi": "Bạn thay 'will remain' bằng 'will maintain'.",
+        "replacementText": "will maintain a crucial balance"
+      },
+      {
+        "id": "lr-e2-10",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "selecting favorite sports is their liberty",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Chọn từ chưa chuẩn (liberty)",
+        "explanationVi": "Bạn muốn nói việc chọn môn thể thao yêu thích là quyền cá nhân. 'Liberty' mang nghĩa tự do trừu tượng, hơi trang trọng và không khớp; ở bản viết sau bạn đã dùng đúng 'a personal right'.",
+        "repairVi": "Bạn thay 'their liberty' bằng 'a personal right'.",
+        "replacementText": "choosing their preferred sports is a personal right"
+      },
+      {
+        "id": "lr-e2-11",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 2,
+            "sourceText": "respect individual autonomy in nations",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Cụm từ mơ hồ (autonomy in nations)",
+        "explanationVi": "Bạn muốn nói quyền tự chủ cá nhân trong xã hội hiện đại. 'In nations' quá chung và nghe không tự nhiên; ở bản viết sau bạn đã sửa thành 'in modern societies'.",
+        "repairVi": "Bạn thay 'in nations' bằng 'in modern societies'.",
+        "replacementText": "respect individual autonomy in modern societies"
+      }
+    ]
+  },
+  {
+    "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+    "band": 6,
+    "rationaleVi": "Bạn có một số cụm tốt như 'soft skills', 'lend a hand', 'gain more essential skills', cho thấy bạn biết mở rộng vốn từ. Tuy nhiên bài còn nhiều từ sai nghĩa ('strict', 'significant', 'save their time', 'scenery', 'humans'), một số cụm sai dạng ('solving problems skills') và khá nhiều chỗ mang giọng nói chuyện ('a nice way', 'totally agree', 'useless things', 'quite a lot of'). Vì vậy bài đạt band 6: vốn từ vừa đủ nhưng độ chính xác và văn phong chưa ổn định.",
+    "findings": [
+      {
+        "id": "lr-e3-01",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "major",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "become more strict and disciplined",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (strict)",
+        "explanationVi": "Bạn muốn nói các bạn trẻ trở nên có trách nhiệm và kỷ luật hơn. 'Strict' nghĩa là nghiêm khắc với người khác, không mô tả bản thân người học, nên ý bị sai hẳn.",
+        "repairVi": "Bạn thay 'strict' bằng 'responsible'.",
+        "replacementText": "become more responsible and disciplined"
+      },
+      {
+        "id": "lr-e3-02",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "solving problems skills",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai dạng từ ghép (solving problems skills)",
+        "explanationVi": "Cụm chuẩn là 'problem-solving skills'. Bạn đảo trật tự và để 'problems' số nhiều nên cụm danh từ sai dạng.",
+        "repairVi": "Bạn viết 'problem-solving skills'.",
+        "replacementText": "problem-solving skills"
+      },
+      {
+        "id": "lr-e3-03",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "children can save their time",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (save their time)",
+        "explanationVi": "Bạn muốn nói các em dùng thời gian vào việc có ích. 'Save time' nghĩa là tiết kiệm thời gian, ngược với ý bạn đang diễn đạt là dành thời gian làm việc gì đó.",
+        "repairVi": "Bạn thay 'save their time' bằng 'spend their time'.",
+        "replacementText": "spend their time"
+      },
+      {
+        "id": "lr-e3-04",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "children can save their time",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ chỉ đối tượng (children)",
+        "explanationVi": "Bài viết nói về 'teenagers', nhưng ở đây bạn chuyển sang 'children' nghĩa là trẻ em. Hai nhóm tuổi khác nhau nên từ vựng chủ đề của bạn thiếu chính xác.",
+        "repairVi": "Bạn thay 'children' bằng 'teenagers'.",
+        "replacementText": "teenagers"
+      },
+      {
+        "id": "lr-e3-05",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "their lives become more significant than ever",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ sai nghĩa (significant)",
+        "explanationVi": "Bạn muốn nói cuộc sống của các em trở nên ý nghĩa hơn. 'Significant' nghĩa là quan trọng, đáng kể theo hướng khách quan, không diễn tả được cảm giác 'có ý nghĩa' của cá nhân.",
+        "repairVi": "Bạn thay 'significant' bằng 'meaningful'.",
+        "replacementText": "their lives become more meaningful than ever"
+      },
+      {
+        "id": "lr-e3-06",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "their mental health will be ensured",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ sai (mental health will be ensured)",
+        "explanationVi": "Bạn muốn nói sức khỏe tinh thần được bảo vệ hoặc cải thiện. 'Ensure' đi với kết quả chắc chắn xảy ra, không đi tự nhiên với 'mental health'.",
+        "repairVi": "Bạn viết 'their mental health will be protected'.",
+        "replacementText": "their mental health will be protected"
+      },
+      {
+        "id": "lr-e3-07",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "besides giving help to humans",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (humans)",
+        "explanationVi": "Bạn muốn nói giúp đỡ con người nói chung. 'Humans' dùng để phân biệt loài người với động vật, nghe rất lạ trong ngữ cảnh hoạt động thiện nguyện.",
+        "repairVi": "Bạn thay 'humans' bằng 'people'.",
+        "replacementText": "besides giving help to people"
+      },
+      {
+        "id": "lr-e3-08",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "the scenery of the local neighborhood",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Dùng sai từ (scenery)",
+        "explanationVi": "Bạn muốn nói làm cho khu phố sạch đẹp hơn. 'Scenery' chỉ phong cảnh thiên nhiên rộng lớn, không dùng cho diện mạo của một khu dân cư.",
+        "repairVi": "Bạn thay 'the scenery of' bằng 'the appearance of'.",
+        "replacementText": "the appearance of the local neighborhood"
+      },
+      {
+        "id": "lr-e3-09",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "more stunning and fresher",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai sắc thái (stunning)",
+        "explanationVi": "'Stunning' là từ mạnh, dùng cho vẻ đẹp gây choáng ngợp, nên quá cường điệu khi nói về việc cắt cỏ, quét đường. 'Fresher' cũng không đi tự nhiên với cảnh quan khu phố.",
+        "repairVi": "Bạn viết 'cleaner and more attractive'.",
+        "replacementText": "cleaner and more attractive"
+      },
+      {
+        "id": "lr-e3-10",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "when they apply for anything",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ quá mơ hồ (apply for anything)",
+        "explanationVi": "Bạn muốn nói chứng nhận có ích khi các em nộp hồ sơ xin việc hoặc xin học. 'Anything' quá chung chung, làm câu mất độ chính xác.",
+        "repairVi": "Bạn thay 'anything' bằng 'jobs or university places'.",
+        "replacementText": "when they apply for jobs or university places"
+      },
+      {
+        "id": "lr-e3-11",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "lend a hand to people in difficulties",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ chưa chuẩn (people in difficulties)",
+        "explanationVi": "Bạn muốn nói những người gặp khó khăn. Người bản ngữ nói 'people in need' hoặc 'people in difficulty' số ít, chứ không nói 'people in difficulties'.",
+        "repairVi": "Bạn thay bằng 'lend a hand to people in need'.",
+        "replacementText": "lend a hand to people in need"
+      },
+      {
+        "id": "lr-e3-12",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "from old people to poor children",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai văn phong (old people)",
+        "explanationVi": "Trong bài viết học thuật, 'old people' nghe hơi thô. Bạn nên dùng 'the elderly' hoặc 'elderly people' cho lịch sự và trang trọng hơn.",
+        "repairVi": "Bạn thay 'old people' bằng 'the elderly'.",
+        "replacementText": "from the elderly to poor children"
+      },
+      {
+        "id": "lr-e3-13",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "this is a nice way for teenagers",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai văn phong (nice way)",
+        "explanationVi": "'Nice' là từ nói chuyện hằng ngày và rất chung chung, không hợp với văn viết Task 2. Bạn nên dùng từ đánh giá cụ thể hơn.",
+        "repairVi": "Bạn thay 'a nice way' bằng 'an effective way'.",
+        "replacementText": "this is an effective way for teenagers"
+      },
+      {
+        "id": "lr-e3-14",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "I totally agree with this statement",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Sai văn phong (totally agree)",
+        "explanationVi": "'Totally' mang tính khẩu ngữ. Trong bài luận trang trọng bạn nên dùng 'completely' hoặc 'strongly'.",
+        "repairVi": "Bạn thay 'totally' bằng 'completely'.",
+        "replacementText": "I completely agree with this statement"
+      },
+      {
+        "id": "lr-e3-15",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "doing useless things",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ quá chung chung và khẩu ngữ (useless things)",
+        "explanationVi": "Bạn muốn nói những hoạt động không mang lại lợi ích. 'Useless things' vừa mơ hồ vừa mang giọng nói chuyện, làm giảm độ chính xác của ý.",
+        "repairVi": "Bạn thay bằng 'unproductive activities'.",
+        "replacementText": "doing unproductive activities"
+      },
+      {
+        "id": "lr-e3-16",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "moderate",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "entering the workforce helps teenagers",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Từ sai ngữ cảnh (entering the workforce)",
+        "explanationVi": "Đề bài nói về công việc tình nguyện không lương. 'Entering the workforce' nghĩa là chính thức đi làm kiếm sống, nên không đúng với hoạt động cộng đồng bạn đang bàn.",
+        "repairVi": "Bạn thay bằng 'doing voluntary work'.",
+        "replacementText": "doing voluntary work helps teenagers"
+      },
+      {
+        "id": "lr-e3-17",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "unpaid jobs",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ chưa chuẩn (unpaid jobs)",
+        "explanationVi": "Ở phần đầu bạn đã dùng đúng 'unpaid work'. 'Unpaid jobs' nghe mâu thuẫn vì 'job' hàm ý có trả lương, nên cụm này không tự nhiên.",
+        "repairVi": "Bạn dùng lại 'unpaid work'.",
+        "replacementText": "unpaid work"
+      },
+      {
+        "id": "lr-e3-18",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "quite a lot of significant help",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Diễn đạt khẩu ngữ và mơ hồ (quite a lot of)",
+        "explanationVi": "'Quite a lot of' là cách nói thân mật, và ghép với 'significant help' thì vừa dài dòng vừa thiếu chính xác cho câu kết.",
+        "repairVi": "Bạn viết 'considerable support'.",
+        "replacementText": "considerable support"
+      },
+      {
+        "id": "lr-e3-19",
+        "criterion": "lexical_resource",
+        "scope": "local",
+        "severity": "minor",
+        "evidence": [
+          {
+            "paragraphIndex": 0,
+            "sourceText": "in their later lives",
+            "role": "primary"
+          }
+        ],
+        "requirementIds": [],
+        "errorLabelVi": "Kết hợp từ chưa chuẩn (in their later lives)",
+        "explanationVi": "Cụm cố định trong tiếng Anh là 'in later life' ở dạng số ít. Bạn dùng 'in their later lives' hai lần nên lỗi này lặp lại.",
+        "repairVi": "Bạn thay bằng 'in later life'.",
+        "replacementText": "in later life"
+      }
+    ]
+  }
+]

@@ -1,0 +1,681 @@
+[
+ {
+  "fileId": "t2-animals-5.5.pdf",
+  "band": 5,
+  "rationaleVi": "Một đoạn cơ thể phát triển tuyên bố bằng ví dụ, nhưng đoạn kia tuyên bố mà không giải thích đầy đủ.",
+  "findings": [
+   {
+    "id": "fp1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "human have to take this responsibility",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu lý do cho trách nhiệm",
+    "explanationVi": "Bạn tuyên bố rằng con người phải chịu trách nhiệm nhưng không giải thích tại sao điều này là cần thiết hoặc hậu quả cụ thể nếu không hành động.",
+    "repairVi": "Thêm lời giải thích về lý do tại sao con người cần nhận trách nhiệm hoặc mối liên hệ trực tiếp giữa hoạt động của con người và hậu quả.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "fp1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "human have to take this responsibility",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu lý do cho trách nhiệm",
+      "explanationVi": "Bạn tuyên bố rằng con người phải chịu trách nhiệm nhưng không giải thích tại sao điều này là cần thiết hoặc hậu quả cụ thể nếu không hành động.",
+      "repairVi": "Thêm lời giải thích về lý do tại sao con người cần nhận trách nhiệm hoặc mối liên hệ trực tiếp giữa hoạt động của con người và hậu quả.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "cause-t2-band-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Một đoạn thân bài tuyên bố quan điểm mà không đủ lý do so sánh.",
+  "findings": [
+   {
+    "id": "body2_claim_no_compare",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "watching TV and playing computer games are far more effective than other methods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố thiếu so sánh",
+    "explanationVi": "Bạn nói TV và trò chơi hiệu quả hơn nhưng không chứng minh tại sao chúng hiệu quả hơn các phương pháp khác.",
+    "repairVi": "Thêm lý do hoặc bằng chứng so sánh để hỗ trợ tuyên bố.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "body2_claim_no_compare",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "watching TV and playing computer games are far more effective than other methods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố thiếu so sánh",
+      "explanationVi": "Bạn nói TV và trò chơi hiệu quả hơn nhưng không chứng minh tại sao chúng hiệu quả hơn các phương pháp khác.",
+      "repairVi": "Thêm lý do hoặc bằng chứng so sánh để hỗ trợ tuyên bố.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "stuydy-t2-6.5.pdf",
+  "band": 5,
+  "rationaleVi": "Các đoạn thân bài đưa ra tuyên bố nhưng thiếu giải thích rõ ràng để người đọc chấp nhận, đặc biệt trong việc liên kết nguyên nhân và hậu quả.",
+  "findings": [
+   {
+    "id": "p1_claim_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu giải thích liên kết",
+    "explanationVi": "Bạn khẳng định giá trị của việc sống xa gia đình mà không giải thích tại sao sự xa cách này thực sự giúp phát triển cá nhân hoặc tư duy độc lập.",
+    "repairVi": "Thêm câu mô tả cụ thể cách việc tự lập thúc đẩy sự trưởng thành.",
+    "replacementText": ""
+   },
+   {
+    "id": "p2_claim_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "living alone will have a negative impact on studentwho lack in self-control",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không chứng minh nguyên nhân",
+    "explanationVi": "Bạn khẳng định tác động tiêu cực nhưng không giải thích tại sao thiếu tự kiểm soát lại gây ra lịch trình xấu hay nhớ nhà dẫn đến vấn đề tâm lý.",
+    "repairVi": "Giải thích rõ hơn nguyên nhân và hậu quả của các vấn đề được nêu.",
+    "replacementText": ""
+   },
+   {
+    "id": "p2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu phát triển hậu quả",
+    "explanationVi": "Bạn_nêu_ảnh_hưởng_tiêu_cực_nhưng_không_mô_tả_rõ_cách_nó_xảy_ra_hoặc_ảnh_hưởng_cụ_thể.",
+    "repairVi": "Hãy mô tả rõ hơn làm thế nào thiếu tự kỷ luật dẫn đến thói quen xấu và ảnh hưởng đến việc học.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "p1_claim_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu giải thích liên kết",
+      "explanationVi": "Bạn khẳng định giá trị của việc sống xa gia đình mà không giải thích tại sao sự xa cách này thực sự giúp phát triển cá nhân hoặc tư duy độc lập.",
+      "repairVi": "Thêm câu mô tả cụ thể cách việc tự lập thúc đẩy sự trưởng thành.",
+      "replacementText": ""
+     },
+     {
+      "id": "p2_claim_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "living alone will have a negative impact on studentwho lack in self-control",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không chứng minh nguyên nhân",
+      "explanationVi": "Bạn khẳng định tác động tiêu cực nhưng không giải thích tại sao thiếu tự kiểm soát lại gây ra lịch trình xấu hay nhớ nhà dẫn đến vấn đề tâm lý.",
+      "repairVi": "Giải thích rõ hơn nguyên nhân và hậu quả của các vấn đề được nêu.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "p1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Không phát triển đủ lý lẽ",
+      "explanationVi": "Bạn_assert_that_living_independently_leads_to_personal_growth_but_do_not_explain_how_or_why_it_does_so.",
+      "repairVi": "Hãy thêm giải thích cụ thể tại sao việc sống xa gia đình giúp phát triển sự độc lập và tư duy.",
+      "replacementText": ""
+     },
+     {
+      "id": "p2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu phát triển hậu quả",
+      "explanationVi": "Bạn_nêu_ảnh_hưởng_tiêu_cực_nhưng_không_mô_tả_rõ_cách_nó_xảy_ra_hoặc_ảnh_hưởng_cụ_thể.",
+      "repairVi": "Hãy mô tả rõ hơn làm thế nào thiếu tự kỷ luật dẫn đến thói quen xấu và ảnh hưởng đến việc học.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Cả hai đoạn thân bài đều phát triển tuyên bố của họ với lý do và ví dụ cụ thể, đủ để thuyết phục người đọc.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 0,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 0,
+  "rationaleVi": "Mỗi đoạn thân bài đều phát triển luận điểm đầy đủ với lý do và ví dụ minh họa, nên không có vấn đề cần nêu.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 0,
+    "findings": []
+   },
+   {
+    "band": 0,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "6.5-internet-task-2.pdf",
+  "band": 0,
+  "rationaleVi": "Cả hai đoạn thân bài đều phát triển luận điểm rõ ràng với lý do và ví dụ đủ để thuyết phục người đọc.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 0,
+    "findings": []
+   },
+   {
+    "band": 0,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 8,
+  "rationaleVi": "Cả hai đoạn thân bài đều phát triển luận điểm rõ ràng với lý luận và ví dụ cụ thể, thuyết phục người đọc.",
+  "findings": [
+   {
+    "id": "body2_insufficient_example",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "expending more money on public service is bound to improve the public well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không chứng minh được khẳng định",
+    "explanationVi": "Bạn khẳng định chi tiêu cho dịch vụ công sẽ cải thiện đời sống, nhưng ví dụ chỉ mô tả vấn đề thiếu thốn mà không cho thấy tác động thực tế của việc chi tiêu.",
+    "repairVi": "Thêm một ví dụ thực tế về quốc gia đã cải thiện equality nhờ đầu tư vào dịch vụ công.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "body2_insufficient_example",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "expending more money on public service is bound to improve the public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không chứng minh được khẳng định",
+      "explanationVi": "Bạn khẳng định chi tiêu cho dịch vụ công sẽ cải thiện đời sống, nhưng ví dụ chỉ mô tả vấn đề thiếu thốn mà không cho thấy tác động thực tế của việc chi tiêu.",
+      "repairVi": "Thêm một ví dụ thực tế về quốc gia đã cải thiện equality nhờ đầu tư vào dịch vụ công.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 0,
+  "rationaleVi": "Các đoạn thân bài phát triển claim đầy đủ với lý do và ví dụ cụ thể, đủ để người đọc chấp nhận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 0,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "task-2-band-7-space-programs.pdf",
+  "band": 8,
+  "rationaleVi": "Bạn đã phát triển rõ ràng các luận điểm trong đoạn thân bài với lý lẽ và ví dụ phù hợp.",
+  "findings": [
+   {
+    "id": "body2_claim_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "expending more money on public service is bound to improve the public well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không đủ phát triển",
+    "explanationVi": "Bạn cần giải thích rõ hơn cách giảm bất bình đẳng thực sự cải thiện phúc lợi xã hội.",
+    "repairVi": "Thêm bằng chứng cụ thể hoặc giải thích hậu quả tích cực của việc giảm bất bình đẳng.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "body2_claim_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "expending more money on public service is bound to improve the public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không đủ phát triển",
+      "explanationVi": "Bạn cần giải thích rõ hơn cách giảm bất bình đẳng thực sự cải thiện phúc lợi xã hội.",
+      "repairVi": "Thêm bằng chứng cụ thể hoặc giải thích hậu quả tích cực của việc giảm bất bình đẳng.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Essay-t2-band-7.pdf",
+  "band": 0,
+  "rationaleVi": "Cả hai đoạn thân bài đều đưa claim mà không phát triển đầy đủ; ví dụ không minh họa rõ ràng cách claim được thực hiện.",
+  "findings": [
+   {
+    "id": "body1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it will urge vehicle operators to improve their driving skills each year",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 1,
+      "sourceText": "in a comparison between car drivers and truck drivers in countries like China, where truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không minh họa rõ claim",
+    "explanationVi": "Bạn đưa ra ví dụ về tỷ lệ tai nạn, nhưng nó không chứng minh cách kiểm tra hàng năm cải thiện kỹ năng lái xe.",
+    "repairVi": "Nên giải thích rõ hơn tại sao kiểm tra hàng năm giúp cải thiện kỹ năng, hoặc đưa ví dụ trực tiếp về việc cải thiện kỹ năng.",
+    "replacementText": ""
+   },
+   {
+    "id": "body2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "incapable drivers threatening road safety can be sorted out through yearly testing",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "people suffering from heart attacks and cardiovascular disease might risk getting ill while drivingp",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ chỉ nêu vấn đề, không giải quyết claim",
+    "explanationVi": "Bạn đề cập đến vấn đề sức khỏe, nhưng không giải thích cách kiểm tra hàng năm loại bỏ tài xế không đủ khả năng.",
+    "repairVi": "Nên mô tả cơ chế kiểm tra sức khỏe hàng năm và cách nó phát hiện và loại bỏ tài xế không phù hợp.",
+    "replacementText": ""
+   },
+   {
+    "id": "paragraph_3_assertion",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu phát triển lý lẽ",
+    "explanationVi": "Bạn chỉ nêu lại claim rằng người trẻ không cần kiểm tra thường niên, nhưng không giải thích tại sao sức khỏe tốt làm việc này hợp lý.",
+    "repairVi": "Hãy thêm lý do chi tiết,例如 việc kiểm tra thường niên không cần thiết vì nguy cơ tai nạn thấp hơn ở người trẻ.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "body1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it will urge vehicle operators to improve their driving skills each year",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 1,
+        "sourceText": "in a comparison between car drivers and truck drivers in countries like China, where truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không minh họa rõ claim",
+      "explanationVi": "Bạn đưa ra ví dụ về tỷ lệ tai nạn, nhưng nó không chứng minh cách kiểm tra hàng năm cải thiện kỹ năng lái xe.",
+      "repairVi": "Nên giải thích rõ hơn tại sao kiểm tra hàng năm giúp cải thiện kỹ năng, hoặc đưa ví dụ trực tiếp về việc cải thiện kỹ năng.",
+      "replacementText": ""
+     },
+     {
+      "id": "body2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "incapable drivers threatening road safety can be sorted out through yearly testing",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "people suffering from heart attacks and cardiovascular disease might risk getting ill while drivingp",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ chỉ nêu vấn đề, không giải quyết claim",
+      "explanationVi": "Bạn đề cập đến vấn đề sức khỏe, nhưng không giải thích cách kiểm tra hàng năm loại bỏ tài xế không đủ khả năng.",
+      "repairVi": "Nên mô tả cơ chế kiểm tra sức khỏe hàng năm và cách nó phát hiện và loại bỏ tài xế không phù hợp.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "paragraph_3_assertion",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu phát triển lý lẽ",
+      "explanationVi": "Bạn chỉ nêu lại claim rằng người trẻ không cần kiểm tra thường niên, nhưng không giải thích tại sao sức khỏe tốt làm việc này hợp lý.",
+      "repairVi": "Hãy thêm lý do chi tiết,例如 việc kiểm tra thường niên không cần thiết vì nguy cơ tai nạn thấp hơn ở người trẻ.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "IELTS-Writing-Task21111-6.5.pdf",
+  "band": 0,
+  "rationaleVi": "Đoạn thân bài thứ hai chỉ asserted lý do mà khôngdevelop đủ reasoning để thuyết phục.",
+  "findings": [
+   {
+    "id": "body2_claim_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Another reason why the value of theoretical knowledge is hreduced is that some skills are usually more important than knowledget.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu liên kết nhân quả",
+    "explanationVi": "Bạn nêu kiến thức lỗi thời nhưng không giải thích tại sao điều này khiến kỹ năng quan trọng hơn.",
+    "repairVi": "Thêm câu giải thích rằng kỹ năng giúp thích ứng với thay đổi, bổ sung kiến thức mới.",
+    "replacementText": ""
+   },
+   {
+    "id": "para2_example_weakness",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, it is sometimes required for people in a company to adopt new technology, and hence learning skills. become vital",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không minh họa claim",
+    "explanationVi": "Bạn_assert_ rằng kỹ năng quan trọng hơn kiến thức lý thuyết nhưng không cho thấy rõ ràng ví dụ cụ thể nào thể hiện điều này.",
+    "repairVi": "Thêm một ví dụ rõ ràng như kỹ năng thích ứng với công nghệ mới giúp nhân viên thành công hơn kiến thức đại học.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "body2_claim_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Another reason why the value of theoretical knowledge is hreduced is that some skills are usually more important than knowledget.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu liên kết nhân quả",
+      "explanationVi": "Bạn nêu kiến thức lỗi thời nhưng không giải thích tại sao điều này khiến kỹ năng quan trọng hơn.",
+      "repairVi": "Thêm câu giải thích rằng kỹ năng giúp thích ứng với thay đổi, bổ sung kiến thức mới.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 0,
+    "findings": [
+     {
+      "id": "para2_example_weakness",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, it is sometimes required for people in a company to adopt new technology, and hence learning skills. become vital",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không minh họa claim",
+      "explanationVi": "Bạn_assert_ rằng kỹ năng quan trọng hơn kiến thức lý thuyết nhưng không cho thấy rõ ràng ví dụ cụ thể nào thể hiện điều này.",
+      "repairVi": "Thêm một ví dụ rõ ràng như kỹ năng thích ứng với công nghệ mới giúp nhân viên thành công hơn kiến thức đại học.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Cả hai đoạn thân bài đều phát triển luận điểm chính bằng lý lẽ và ví dụ hợp lý, đủ để người đọc chấp nhận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 0,
+    "findings": []
+   }
+  ]
+ }
+]

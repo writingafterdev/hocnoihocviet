@@ -711,7 +711,22 @@ export async function callMimoMarkdown(prompt: string) {
   };
 }
 
-export async function processBenchmarkReferenceJob(job: BenchmarkReferenceJob) {
+/** Read the bands the model itself wrote in the "## 1. Scores" block. */
+export function scoresFromAssessmentMarkdown(markdown: string): ExternalScores {
+  const read = (label: string) => markdown.match(new RegExp(`^${label}:\\s*([\\d.]+)`, 'm'))?.[1];
+  return {
+    overall: read('Overall'),
+    taskResponse: read('Task Response'),
+    coherenceCohesion: read('Coherence'),
+    lexicalResource: read('Lexical Resource'),
+    gra: read('Grammar'),
+  };
+}
+
+export async function processBenchmarkReferenceJob(
+  job: BenchmarkReferenceJob,
+  options: { blindScores?: boolean } = {},
+) {
   const startedAt = new Date().toISOString();
   await serverDatabases.updateDocument(
     BENCHMARK_DATABASE_ID,
@@ -724,13 +739,15 @@ export async function processBenchmarkReferenceJob(job: BenchmarkReferenceJob) {
     },
   );
 
+  const blindScores = options.blindScores ?? process.env.BENCHMARK_BLIND_SCORES === 'true';
   const promptInput = {
     question: job.question,
     essay: job.essay,
     scores: job.scores,
     sourceUrl: job.sourceUrl,
+    blindScores,
   };
-  const systemPromptSnapshot = buildBenchmarkSystemPrompt();
+  const systemPromptSnapshot = buildBenchmarkSystemPrompt({ blindScores });
   const userPromptSnapshot = buildBenchmarkUserPrompt(promptInput);
   const filledPrompt = buildBenchmarkReferencePrompt(promptInput);
 
@@ -739,7 +756,10 @@ export async function processBenchmarkReferenceJob(job: BenchmarkReferenceJob) {
     const filtered = filterBenchmarkAssessmentMarkdown({
       markdown: result.content,
       essay: job.essay,
-      scores: job.scores,
+      // The filter relaxes high-band findings using these bands. Feeding it the
+      // external ones during a blind run would reintroduce the very leak the
+      // run exists to avoid, so read the model's own bands back instead.
+      scores: blindScores ? scoresFromAssessmentMarkdown(result.content) : job.scores,
     });
     const resultDocument = await serverDatabases.createDocument(
       BENCHMARK_DATABASE_ID,
@@ -750,6 +770,8 @@ export async function processBenchmarkReferenceJob(job: BenchmarkReferenceJob) {
         assessment_markdown: filtered.markdown,
         filled_prompt: JSON.stringify({
           promptVersion: BENCHMARK_REFERENCE_SYSTEM_PROMPT_VERSION,
+          // Blind and anchored results are not comparable; record which this was.
+          blindScores,
           systemPromptSnapshot,
           userPromptSnapshot,
           postGenerationFilterVersion: BENCHMARK_POSTGEN_FILTER_VERSION,

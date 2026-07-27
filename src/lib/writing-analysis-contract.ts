@@ -23,24 +23,33 @@ export interface EssayParagraphManifest {
 }
 
 function sentenceManifest(text: string, paragraphStart: number): EssaySentenceManifest[] {
-  const sentences: EssaySentenceManifest[] = [];
-  const matcher = /[^.!?]+(?:[.!?]+(?=\s|$)|$)/g;
-  let match: RegExpExecArray | null;
+  const segmenter = new Intl.Segmenter('en', { granularity: 'sentence' });
+  const rawSegments = [...segmenter.segment(text)].flatMap(segment => {
+    const leading = segment.segment.length - segment.segment.trimStart().length;
+    const value = segment.segment.trim();
+    if (!value) return [];
+    const localStart = segment.index + leading;
+    return [{ localStart, localEnd: localStart + value.length, value }];
+  });
+  const merged: typeof rawSegments = [];
+  const standaloneTitle = /^(?:Mr|Mrs|Ms|Mx|Dr|Prof|Sr|Jr|St)\.$/i;
 
-  while ((match = matcher.exec(text))) {
-    const leading = match[0].length - match[0].trimStart().length;
-    const value = match[0].trim();
-    if (!value) continue;
-    const startChar = paragraphStart + match.index + leading;
-    sentences.push({
-      index: sentences.length + 1,
-      startChar,
-      endChar: startChar + value.length,
-      text: value,
-    });
-  }
+  rawSegments.forEach(segment => {
+    const previous = merged.at(-1);
+    if (previous && standaloneTitle.test(previous.value)) {
+      previous.localEnd = segment.localEnd;
+      previous.value = text.slice(previous.localStart, previous.localEnd);
+      return;
+    }
+    merged.push({ ...segment });
+  });
 
-  return sentences;
+  return merged.map((sentence, index) => ({
+    index: index + 1,
+    startChar: paragraphStart + sentence.localStart,
+    endChar: paragraphStart + sentence.localEnd,
+    text: sentence.value,
+  }));
 }
 
 export function buildEssayManifest(essay: string): EssayParagraphManifest[] {

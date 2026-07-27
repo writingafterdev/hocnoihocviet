@@ -1,0 +1,779 @@
+[
+ {
+  "fileId": "t2-animals-5.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có lập trường rõ ràng là cần ngăn chặn tuyệt chủng, nhưng chưa trực tiếp nêu trong phần mở đầu.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the majority people think it is necessary to save these creatures",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cam kết vị trí trực tiếp",
+    "explanationVi": "Bạn nêu quan điểm của đa số nhưng không tuyên bố rõ ràng 'tôi đồng ý' hay 'tôi không đồng ý' với đề bài.",
+    "repairVi": "Thêm câu như 'Tôi không đồng ý với quan điểm này' trong đoạn mở đầu.",
+    "replacementText": ""
+   },
+   {
+    "id": "intro_position_unclear",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the majority people think it is necessary to save these creatures and the following will explore different reasons regarding responsibility and economic balance.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lập trường không rõ ràng",
+    "explanationVi": "Bạn không đưa ra lập trường rõ ràng trong phần giới thiệu mà chỉ nói sẽ khám phá các lý do, không trực tiếp trả lời câu hỏi.",
+    "repairVi": "Nên thêm câu nêu quan điểm rõ, ví dụ: 'I disagree with the statement.'",
+    "replacementText": ""
+   },
+   {
+    "id": "idea_repetition",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "human have to take this responsibility",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "human have to make up thismistake",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý tưởng lặp lại",
+    "explanationVi": "Bạn lặp lại ý tưởng về trách nhiệm con người mà không phát triển thêm, thay vì đưa ý mới.",
+    "repairVi": "Nên thêm ý tưởng hoặc ví dụ khác để mở rộng, tránh lặp.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the majority people think it is necessary to save these creatures",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cam kết vị trí trực tiếp",
+      "explanationVi": "Bạn nêu quan điểm của đa số nhưng không tuyên bố rõ ràng 'tôi đồng ý' hay 'tôi không đồng ý' với đề bài.",
+      "repairVi": "Thêm câu như 'Tôi không đồng ý với quan điểm này' trong đoạn mở đầu.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "intro_position_unclear",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the majority people think it is necessary to save these creatures and the following will explore different reasons regarding responsibility and economic balance.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lập trường không rõ ràng",
+      "explanationVi": "Bạn không đưa ra lập trường rõ ràng trong phần giới thiệu mà chỉ nói sẽ khám phá các lý do, không trực tiếp trả lời câu hỏi.",
+      "repairVi": "Nên thêm câu nêu quan điểm rõ, ví dụ: 'I disagree with the statement.'",
+      "replacementText": ""
+     },
+     {
+      "id": "idea_repetition",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "human have to take this responsibility",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "human have to make up thismistake",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý tưởng lặp lại",
+      "explanationVi": "Bạn lặp lại ý tưởng về trách nhiệm con người mà không phát triển thêm, thay vì đưa ý mới.",
+      "repairVi": "Nên thêm ý tưởng hoặc ví dụ khác để mở rộng, tránh lặp.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "cause-t2-band-6.5.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận thiếu vị trí rõ ràng và không trực tiếp so sánh để trả lời câu hỏi.",
+  "findings": [
+   {
+    "id": "no_clear_position",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "Many people hold the view of reading books is more beneficial to children’s imagination ability than other activities. However, TV and computer games are also indispensable and can develop children’s intellectual ability.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [
+     "clear_position",
+     "answer_to_question"
+    ],
+    "errorLabelVi": "Thiếu quan điểm rõ ràng",
+    "explanationVi": "Bạn không xác nhận quan điểm đồng ý hay phản đối với câu hỏi.",
+    "repairVi": "Bạn nên thêm câu xác nhận quan điểm, ví dụ 'Tôi đồng ý rằng đọc sách tốt hơn cho trẻ em'.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "no_clear_position",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "Many people hold the view of reading books is more beneficial to children’s imagination ability than other activities. However, TV and computer games are also indispensable and can develop children’s intellectual ability.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [
+       "clear_position",
+       "answer_to_question"
+      ],
+      "errorLabelVi": "Thiếu quan điểm rõ ràng",
+      "explanationVi": "Bạn không xác nhận quan điểm đồng ý hay phản đối với câu hỏi.",
+      "repairVi": "Bạn nên thêm câu xác nhận quan điểm, ví dụ 'Tôi đồng ý rằng đọc sách tốt hơn cho trẻ em'.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "stuydy-t2-6.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận thảo luận cả hai mặt và kết luận quan điểm, nhưng phần giới thiệu không nêu rõ vị trí ngay từ đầu.",
+  "findings": [
+   {
+    "id": "intro_position_clarity",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "it is more beneficial for undergraduates to live independently. At the same time, however, there is uncertainty whether the merits of this decision outweigh the demerits.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cam kết vị trí rõ ràng",
+    "explanationVi": "Bạn không thể hiện rõ quan điểm cá nhân về việc liệu đây có phải ý tưởng tốt hay không ngay trong phần giới thiệu.",
+    "repairVi": "Nên thêm câu nêu rõ quan điểm, ví dụ: 'Tôi tin rằng việc sống độc lập là tốt cho hầu hết sinh viên.'",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "At the same time, however, there is uncertainty whether the merits of this decision outweigh the demerits.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vị trí không rõ ràng",
+    "explanationVi": "Bạn đã nêu 'it is more beneficial' nhưng sau đó nói 'there is uncertainty', làm cho vị trí ban đầu không rõ ràng.",
+    "repairVi": "Nên cam kết vị trí rõ ràng ngay từ đầu, ví dụ: 'I believe it is a good idea for students to live away from home.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "intro_position_clarity",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "it is more beneficial for undergraduates to live independently. At the same time, however, there is uncertainty whether the merits of this decision outweigh the demerits.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cam kết vị trí rõ ràng",
+      "explanationVi": "Bạn không thể hiện rõ quan điểm cá nhân về việc liệu đây có phải ý tưởng tốt hay không ngay trong phần giới thiệu.",
+      "repairVi": "Nên thêm câu nêu rõ quan điểm, ví dụ: 'Tôi tin rằng việc sống độc lập là tốt cho hầu hết sinh viên.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "At the same time, however, there is uncertainty whether the merits of this decision outweigh the demerits.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vị trí không rõ ràng",
+      "explanationVi": "Bạn đã nêu 'it is more beneficial' nhưng sau đó nói 'there is uncertainty', làm cho vị trí ban đầu không rõ ràng.",
+      "repairVi": "Nên cam kết vị trí rõ ràng ngay từ đầu, ví dụ: 'I believe it is a good idea for students to live away from home.'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận trả lời rõ ràng câu hỏi với vị trí được giữ vững, nhưng có sự lặp lại ý tưởng.",
+  "findings": [
+   {
+    "id": "repetition1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "However, traditional shops are still an essential part of people's daily life since they are more convenient and personalized.",
+      "role": "context"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "On the other hand, traditional shops are still an essential part of people's daily life because they are more convenient and personalized.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lặp lại ý tưởng",
+    "explanationVi": "Bạn đã lặp lại ý tưởng từ giới thiệu vào thân bài mà không phát triển thêm.",
+    "repairVi": "Hãy thêm các ý mới để mở rộng luận điểm thay vì lặp lại.",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "On the other hand, traditional shops are still an essential part of people's daily life because they are more convenient and personalized.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lặp ý",
+    "explanationVi": "Bạn đã lặp lại ý tưởng về sự tiện lợi của cửa hàng truyền thống từ phần giới thiệu mà không phát triển thêm.",
+    "repairVi": "Thêm ví dụ hoặc giải thích mới để làm phong phú ý tưởng.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "In conclusion, I agree that online shopping provides more choices and saves a lot of time for customers which will lead to the closure of many traditional shops.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "không trả lời đúng câu hỏi",
+    "explanationVi": "Bạn đã đồng ý với việc đóng cửa nhiều cửa hàng, nhưng câu hỏi yêu cầu bạn đồng ý hoặc không đồng ý với việc tất cả cửa hàng sẽ đóng cửa.",
+    "repairVi": "Xác định rõ vị trí: nếu bạn không đồng ý với 'tất cả', hãy nói rõ.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "repetition1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "However, traditional shops are still an essential part of people's daily life since they are more convenient and personalized.",
+        "role": "context"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "On the other hand, traditional shops are still an essential part of people's daily life because they are more convenient and personalized.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lặp lại ý tưởng",
+      "explanationVi": "Bạn đã lặp lại ý tưởng từ giới thiệu vào thân bài mà không phát triển thêm.",
+      "repairVi": "Hãy thêm các ý mới để mở rộng luận điểm thay vì lặp lại.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "On the other hand, traditional shops are still an essential part of people's daily life because they are more convenient and personalized.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lặp ý",
+      "explanationVi": "Bạn đã lặp lại ý tưởng về sự tiện lợi của cửa hàng truyền thống từ phần giới thiệu mà không phát triển thêm.",
+      "repairVi": "Thêm ví dụ hoặc giải thích mới để làm phong phú ý tưởng.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "In conclusion, I agree that online shopping provides more choices and saves a lot of time for customers which will lead to the closure of many traditional shops.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "không trả lời đúng câu hỏi",
+      "explanationVi": "Bạn đã đồng ý với việc đóng cửa nhiều cửa hàng, nhưng câu hỏi yêu cầu bạn đồng ý hoặc không đồng ý với việc tất cả cửa hàng sẽ đóng cửa.",
+      "repairVi": "Xác định rõ vị trí: nếu bạn không đồng ý với 'tất cả', hãy nói rõ.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận trả lời cả hai phần câu hỏi nhưng giới thiệu và kết luận chưa rõ ràng, có sự lặp lại ý tưởng.",
+  "findings": [
+   {
+    "id": "intro_vague",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "There are various reasons for this, but steps can definitely be taken to tackle this issue.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Giới thiệu mờ nhạt",
+    "explanationVi": "Bạn không cam kết rõ ràng với cả hai phần của câu hỏi trong đoạn mở đầu.",
+    "repairVi": "Nêu rõ lý do chính và hành động đề xuất ngay từ đầu.",
+    "replacementText": ""
+   },
+   {
+    "id": "conclusion_incomplete",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In conclusion, individualsmust play their part in looking after the environment not only for ourselves, but for our descendants in the future",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận thiếu phần lý do",
+    "explanationVi": "Bạn chỉ nhắc đến hành động bảo vệ môi trường mà không tóm tắt phần lý do trong kết luận.",
+    "repairVi": "Tóm tắt cả lý do và hành động trong kết luận.",
+    "replacementText": ""
+   },
+   {
+    "id": "idea_repetition",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "individualsmust play their part",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lặp lại ý tưởng",
+    "explanationVi": "Bạn lặp lại ý về trách nhiệm cá nhân từ đoạn thân bài vào kết luận mà không thêm thông tin mới.",
+    "repairVi": "Kết luận nên tóm tắt tất cả các điểm chính, không chỉ lặp lại.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": []
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "intro_vague",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "There are various reasons for this, but steps can definitely be taken to tackle this issue.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Giới thiệu mờ nhạt",
+      "explanationVi": "Bạn không cam kết rõ ràng với cả hai phần của câu hỏi trong đoạn mở đầu.",
+      "repairVi": "Nêu rõ lý do chính và hành động đề xuất ngay từ đầu.",
+      "replacementText": ""
+     },
+     {
+      "id": "conclusion_incomplete",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In conclusion, individualsmust play their part in looking after the environment not only for ourselves, but for our descendants in the future",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận thiếu phần lý do",
+      "explanationVi": "Bạn chỉ nhắc đến hành động bảo vệ môi trường mà không tóm tắt phần lý do trong kết luận.",
+      "repairVi": "Tóm tắt cả lý do và hành động trong kết luận.",
+      "replacementText": ""
+     },
+     {
+      "id": "idea_repetition",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "individualsmust play their part",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lặp lại ý tưởng",
+      "explanationVi": "Bạn lặp lại ý về trách nhiệm cá nhân từ đoạn thân bài vào kết luận mà không thêm thông tin mới.",
+      "repairVi": "Kết luận nên tóm tắt tất cả các điểm chính, không chỉ lặp lại.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "6.5-internet-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có vị trí rõ ràng nhưng phần giới thiệu chưa trực tiếp trả lời câu hỏi chính.",
+  "findings": [
+   {
+    "id": "intro_misalignment",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "I personally disagree with such opinion.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lệch câu hỏi",
+    "explanationVi": "Bạn không trực tiếp đề cập đến việc liệu báo chí có giữ vị trí quan trọng nhất hay không trong phần giới thiệu.",
+    "repairVi": "Hãy sửa lại để trực tiếp đồng ý hoặc không đồng ý với tuyên bố rằng báo chí sẽ vẫn là nguồn tin quan trọng nhất.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "intro_misalignment",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "I personally disagree with such opinion.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lệch câu hỏi",
+      "explanationVi": "Bạn không trực tiếp đề cập đến việc liệu báo chí có giữ vị trí quan trọng nhất hay không trong phần giới thiệu.",
+      "repairVi": "Hãy sửa lại để trực tiếp đồng ý hoặc không đồng ý với tuyên bố rằng báo chí sẽ vẫn là nguồn tin quan trọng nhất.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận trả lời đúng câu hỏi và giữ vững lập trường thống nhất từ đầu đến cuối.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận trả lời cả hai phần câu hỏi nhưng giới thiệu chưa nêu rõ lập trường tích cực hay tiêu cực.",
+  "findings": [
+   {
+    "id": "intro_position_01",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "In this eassay, some possible driving forces behind this trend will be proposed along with my attitude toward it.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Giới thiệu không cam kết lập trường rõ ràng",
+    "explanationVi": "Bạn đã nói về thái độ của mình trong giới thiệu nhưng chưa chỉ rõ đó là quan điểm tích cực hay tiêu cực, trong khi câu hỏi yêu cầu điều này.",
+    "repairVi": "Nên thêm một câu ngắn trong giới thiệu nêu rõ lập trường, ví dụ: 'Tôi tin rằng đây là một xu hướng tích cực với điều kiện có sự đổi mới thực sự.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "intro_position_01",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "In this eassay, some possible driving forces behind this trend will be proposed along with my attitude toward it.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Giới thiệu không cam kết lập trường rõ ràng",
+      "explanationVi": "Bạn đã nói về thái độ của mình trong giới thiệu nhưng chưa chỉ rõ đó là quan điểm tích cực hay tiêu cực, trong khi câu hỏi yêu cầu điều này.",
+      "repairVi": "Nên thêm một câu ngắn trong giới thiệu nêu rõ lập trường, ví dụ: 'Tôi tin rằng đây là một xu hướng tích cực với điều kiện có sự đổi mới thực sự.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "task-2-band-7-space-programs.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận trực tiếp trả lời câu hỏi và duy trì lập trường nhất quán từ đầu đến cuối.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 9,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Essay-t2-band-7.pdf",
+  "band": 8,
+  "rationaleVi": "Bạn trả lời đúng câu hỏi, cam kết vị trí rõ ràng và phát triển luận điểm hợp lý.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "IELTS-Writing-Task21111-6.5.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận hoàn toàn trả lời câu hỏi và giữ lập trường đồng ý suốt bài.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận thảo luận cả hai quan điểm và nêu rõ ý kiến riêng, nhưng đoạn cuối có phần lan man sang chủ đề mới.",
+  "findings": [
+   {
+    "id": "own_opinion_drift",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "The government should also investigate the root cause for this issue which is the inequality in the society.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lan man sang nguyên nhân gốc",
+    "explanationVi": "Bạn đã thêm ý về nguyên nhân và giải pháp khác mà không liên quan trực tiếp đến việc so sánh hai phương pháp giảm tội.",
+    "repairVi": "Nên bỏ phần discuss nguyên nhân để tập trung vào hiệu quả của các biện pháp đã nêu.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "own_opinion_drift",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "The government should also investigate the root cause for this issue which is the inequality in the society.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lan man sang nguyên nhân gốc",
+      "explanationVi": "Bạn đã thêm ý về nguyên nhân và giải pháp khác mà không liên quan trực tiếp đến việc so sánh hai phương pháp giảm tội.",
+      "repairVi": "Nên bỏ phần discuss nguyên nhân để tập trung vào hiệu quả của các biện pháp đã nêu.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ }
+]

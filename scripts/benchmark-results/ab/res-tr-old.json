@@ -1,0 +1,1574 @@
+[
+ {
+  "fileId": "t2-animals-5.5.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận đưa ra lý do để ngăn chặn tuyệt chủng nhưng bỏ qua phần tuyên bố rằng tuyệt chủng là quá trình tự nhiên, và vị trí của người viết không được nêu rõ ràng từ đầu.",
+  "findings": [
+   {
+    "id": "tr1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "animals going to bextinct because it is a natural process",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chưa đề cập đến khía cạnh tự nhiên",
+    "explanationVi": "Bạn chỉ tập trung vào tuyệt chủng do con người gây ra mà không giải quyết tuyên bố trong đề bài rằng tuyệt chủng là một quá trình tự nhiên. Điều này khiến câu trả lời không hoàn chỉnh vì đề bài yêu cầu đánh giá cả hai khía cạnh.",
+    "repairVi": "Nên thêm thảo luận rằng mặc dù tuyệt chủng tự nhiên có thể xảy ra, nhưng tuyệt chủng do con người là không tự nhiên và cần phải ngăn chặn để bảo vệ hệ sinh thái.",
+    "replacementText": ""
+   },
+   {
+    "id": "tr2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the following will explore different reasons regarding responsibility and economic balance",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "vị trí không rõ ràng",
+    "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối ngay từ đầu trong phần mở bài. Mặc dù bài luận ngụ ý phản đối, nhưng Task Response yêu cầu vị trí phải rõ ràng để người đọc không phải suy đoán.",
+    "repairVi": "Nên thêm một câu trực tiếp như 'I disagree with the statement that there is no reason to prevent extinction' trong phần mở bài để xác lập vị trí ngay từ đầu.",
+    "replacementText": ""
+   },
+   {
+    "id": "new_point_conclusion",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "It Tis not only for our children could see more beautiful creaturesf",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Điểm mới trong kết luận không được phát triển",
+    "explanationVi": "Kết luận đề cập đến lý do vì lợi ích cho trẻ em, nhưng điều này không được phát triển trong các đoạn thân bài, tạo ra một điểm mới chưa hỗ trợ.",
+    "repairVi": "Xóa phần đề cập đến trẻ em trong kết luận để giữ cho kết luận chỉ tóm tắt các ý đã phát triển, hoặc thêm một câu ngắn giải thích nó trong thân bài trước đó.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "tr1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "animals going to bextinct because it is a natural process",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chưa đề cập đến khía cạnh tự nhiên",
+      "explanationVi": "Bạn chỉ tập trung vào tuyệt chủng do con người gây ra mà không giải quyết tuyên bố trong đề bài rằng tuyệt chủng là một quá trình tự nhiên. Điều này khiến câu trả lời không hoàn chỉnh vì đề bài yêu cầu đánh giá cả hai khía cạnh.",
+      "repairVi": "Nên thêm thảo luận rằng mặc dù tuyệt chủng tự nhiên có thể xảy ra, nhưng tuyệt chủng do con người là không tự nhiên và cần phải ngăn chặn để bảo vệ hệ sinh thái.",
+      "replacementText": ""
+     },
+     {
+      "id": "tr2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the following will explore different reasons regarding responsibility and economic balance",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "vị trí không rõ ràng",
+      "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối ngay từ đầu trong phần mở bài. Mặc dù bài luận ngụ ý phản đối, nhưng Task Response yêu cầu vị trí phải rõ ràng để người đọc không phải suy đoán.",
+      "repairVi": "Nên thêm một câu trực tiếp như 'I disagree with the statement that there is no reason to prevent extinction' trong phần mở bài để xác lập vị trí ngay từ đầu.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "economic_balance_missing",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the following will explore different reasons regarding responsibility and economic balance",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do economic balance không được phát triển",
+      "explanationVi": "Bạn đã hứa sẽ khám phá lý do liên quan đến trách nhiệm và sự cân bằng kinh tế, nhưng bài luận chỉ phát triển trách nhiệm và hệ sinh thái, bỏ qua phần cân bằng kinh tế.",
+      "repairVi": "Hoặc thêm một đoạn ngắn về cách ngăn chặn tuyệt chủng mang lại lợi ích kinh tế, hoặc bỏ lời hứa trong giới thiệu.",
+      "replacementText": ""
+     },
+     {
+      "id": "new_point_conclusion",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "It Tis not only for our children could see more beautiful creaturesf",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Điểm mới trong kết luận không được phát triển",
+      "explanationVi": "Kết luận đề cập đến lý do vì lợi ích cho trẻ em, nhưng điều này không được phát triển trong các đoạn thân bài, tạo ra một điểm mới chưa hỗ trợ.",
+      "repairVi": "Xóa phần đề cập đến trẻ em trong kết luận để giữ cho kết luận chỉ tóm tắt các ý đã phát triển, hoặc thêm một câu ngắn giải thích nó trong thân bài trước đó.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "cause-t2-band-6.5.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận không trình bày rõ ràng vị trí cá nhân về mức độ đồng ý, và các lập luận thiếu sự so sánh trực tiếp và tổng thể với câu hỏi chính.",
+  "findings": [
+   {
+    "id": "TR2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "when it comes to children’s intellectual development, watching TV and playing computer games are far more effective than other methods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "So sánh không đầy đủ",
+    "explanationVi": "Bạn nói TV và trò chơi hiệu quả hơn cho sự phát triển trí tuệ, nhưng không so sánh trực tiếp với việc đọc sách để đáp ứng câu hỏi chính. Câu hỏi yêu cầu đánh giá đọc sách so với TV và trò chơi, nhưng đoạn văn chỉ nói \"hiệu quả hơn các phương pháp khác\" mà không đề cập đến đọc sách.",
+    "repairVi": "Cần thêm câu so sánh với việc đọc sách, ví dụ: \"Hơn nữa, trong khi đọc sách có thể cải thiện trí tưởng tượng, TV và trò chơi lại vượt trội hơn trong việc phát triển trí tuệ thực tế.\"",
+    "replacementText": "watching TV and playing computer games are often more effective than reading books for developing certain intellectual skills."
+   },
+   {
+    "id": "TR3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "And another reason is that...",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận không hoàn chỉnh",
+    "explanationVi": "Bạn liệt kê lợi ích nhưng không đưa ra kết luận rõ ràng về mức độ đọc sách tốt hơn hay không, và đoạn thứ hai kết thúc dang dở với \"And another reason is that...\", điều này làm yếu đi lập luận và không cung cấp sự phát triển đầy đủ cho điểm so sánh.",
+    "repairVi": "Cần hoàn thành đoạn văn và đưa ra kết luận so sánh hai mặt trong phần kết, ví dụ: \"Tóm lại, đọc sách tốt hơn cho trí tưởng tượng, nhưng TV và trò chơi hiệu quả hơn cho trí tuệ, vì vậy cả hai đều cần thiết.\"",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "To become well-rounded adults, it is perfectly reasonable for children to extend their imagination by reading more books and strengthen their intelligence by enjoying different TV programs or computer games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố so sánh không được chứng minh",
+    "explanationVi": "Bạn đưa ra kết luận rằng đọc sách giúp trí tưởng tượng và TV/games giúp trí tuệ, nhưng không so sánh tầm quan trọng hay ưu điểm của từng hoạt động để xác định cái nào tốt hơn nói chung.",
+    "repairVi": "So sánh hai hoạt động theo các tiêu chí như tầm quan trọng, tác động dài hạn hoặc mức độ phù hợp với sự phát triển toàn diện của trẻ em.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "No doubt reading is globally regarded as a beneficial activity for children’s well development",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tuyên bố sớm",
+    "explanationVi": "Bạn khẳng định rằng đọc sách được coi là có lợi mà không chứng minh điều này qua lập luận trước đó hoặc so sánh với các hoạt động khác.",
+    "repairVi": "Dựa trên các bằng chứng đã đưa ra (ví dụ: nghiên cứu từ Lancaster University) để hỗ trợ tuyên bố này trước khi kết luận.",
+    "replacementText": ""
+   },
+   {
+    "id": "f6",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In conclusion, books, TV programs and computer games are all beneficial",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận hời hợt",
+    "explanationVi": "Kết luận dừng lại ở việc nói tất cả đều có lợi mà không tie back vào câu hỏi ban đầu về việc đọc sách có tốt hơn không, bỏ lỡ cơ hội tổng hợp lập trường.",
+    "repairVi": "Trong kết luận, tóm tắt lại vị trí của bạn về mức độ đồng ý và giải thích tại sao đọc sách tốt hơn hoặc không tốt hơn dựa trên các điểm đã thảo luận.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "TR2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "when it comes to children’s intellectual development, watching TV and playing computer games are far more effective than other methods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "So sánh không đầy đủ",
+      "explanationVi": "Bạn nói TV và trò chơi hiệu quả hơn cho sự phát triển trí tuệ, nhưng không so sánh trực tiếp với việc đọc sách để đáp ứng câu hỏi chính. Câu hỏi yêu cầu đánh giá đọc sách so với TV và trò chơi, nhưng đoạn văn chỉ nói \"hiệu quả hơn các phương pháp khác\" mà không đề cập đến đọc sách.",
+      "repairVi": "Cần thêm câu so sánh với việc đọc sách, ví dụ: \"Hơn nữa, trong khi đọc sách có thể cải thiện trí tưởng tượng, TV và trò chơi lại vượt trội hơn trong việc phát triển trí tuệ thực tế.\"",
+      "replacementText": "watching TV and playing computer games are often more effective than reading books for developing certain intellectual skills."
+     },
+     {
+      "id": "TR3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "And another reason is that...",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận không hoàn chỉnh",
+      "explanationVi": "Bạn liệt kê lợi ích nhưng không đưa ra kết luận rõ ràng về mức độ đọc sách tốt hơn hay không, và đoạn thứ hai kết thúc dang dở với \"And another reason is that...\", điều này làm yếu đi lập luận và không cung cấp sự phát triển đầy đủ cho điểm so sánh.",
+      "repairVi": "Cần hoàn thành đoạn văn và đưa ra kết luận so sánh hai mặt trong phần kết, ví dụ: \"Tóm lại, đọc sách tốt hơn cho trí tưởng tượng, nhưng TV và trò chơi hiệu quả hơn cho trí tuệ, vì vậy cả hai đều cần thiết.\"",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "To become well-rounded adults, it is perfectly reasonable for children to extend their imagination by reading more books and strengthen their intelligence by enjoying different TV programs or computer games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố so sánh không được chứng minh",
+      "explanationVi": "Bạn đưa ra kết luận rằng đọc sách giúp trí tưởng tượng và TV/games giúp trí tuệ, nhưng không so sánh tầm quan trọng hay ưu điểm của từng hoạt động để xác định cái nào tốt hơn nói chung.",
+      "repairVi": "So sánh hai hoạt động theo các tiêu chí như tầm quan trọng, tác động dài hạn hoặc mức độ phù hợp với sự phát triển toàn diện của trẻ em.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "No doubt reading is globally regarded as a beneficial activity for children’s well development",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tuyên bố sớm",
+      "explanationVi": "Bạn khẳng định rằng đọc sách được coi là có lợi mà không chứng minh điều này qua lập luận trước đó hoặc so sánh với các hoạt động khác.",
+      "repairVi": "Dựa trên các bằng chứng đã đưa ra (ví dụ: nghiên cứu từ Lancaster University) để hỗ trợ tuyên bố này trước khi kết luận.",
+      "replacementText": ""
+     },
+     {
+      "id": "f6",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In conclusion, books, TV programs and computer games are all beneficial",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận hời hợt",
+      "explanationVi": "Kết luận dừng lại ở việc nói tất cả đều có lợi mà không tie back vào câu hỏi ban đầu về việc đọc sách có tốt hơn không, bỏ lỡ cơ hội tổng hợp lập trường.",
+      "repairVi": "Trong kết luận, tóm tắt lại vị trí của bạn về mức độ đồng ý và giải thích tại sao đọc sách tốt hơn hoặc không tốt hơn dựa trên các điểm đã thảo luận.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "stuydy-t2-6.5.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận chỉ liệt kê ưu và nhược điểm mà không phát triển chúng đầy đủ, và thiếu sự so sánh trực tiếp với việc sống ở nhà như đề bài yêu cầu, khiến vị trí của tác giả không được hỗ trợ vững chắc.",
+  "findings": [
+   {
+    "id": "incomplete_comparison",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "living without parents is a valuable opportunity for personal growth",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu so sánh giữa hai phương án",
+    "explanationVi": "Đề bài yêu cầu thảo luận về việc sống xa nhà so với sống với cha mẹ, nhưng bài luận chỉ tập trung vào lợi ích và hại của việc sống độc lập mà không trực tiếp so sánh hai phương án này.",
+    "repairVi": "Cần thêm đoạn so sánh, ví dụ như 'so với việc sống với cha mẹ, sống xa nhà giúp phát triển sự độc lập hơn vì...'",
+    "replacementText": ""
+   },
+   {
+    "id": "point_not_developed",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "the experience of living alone will imparts a wide range of practical skills, such as cooking, cleaning and banking",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Điểm được liệt kê mà không phát triển",
+    "explanationVi": "Bạn chỉ nêu ra kỹ năng thực tế mà không giải thích tại sao chúng có lợi hoặc làm thế nào chúng giúp ích cho sinh viên.",
+    "repairVi": "Cần giải thích thêm, ví dụ như 'việc nấu ăn và dọn dẹp giúp sinh viên tự lo cho bản thân, giảm phụ thuộc vào gia đình.'",
+    "replacementText": ""
+   },
+   {
+    "id": "adv_underdeveloped",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Điểm liệt kê nhưng không phát triển",
+    "explanationVi": "Bạn đã nêu rằng sống xa gia đình giúp phát triển bản thân, nhưng chưa giải thích làm thế nào hoặc tại sao điều này xảy ra. Cần chỉ ra các cơ chế cụ thể để điểm này có trọng lượng.",
+    "repairVi": "Thêm giải thích về cách sống độc lập thúc đẩy tư duy độc lập và kỹ năng ra quyết định.",
+    "replacementText": ""
+   },
+   {
+    "id": "social_act_mechanism",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "they can spend more time on social activities in the university., which not onlyT practicges their organizing abilities but also enhancges the bond between their friend",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cơ chế",
+    "explanationVi": "Bạn cho rằng hoạt động xã hội cải thiện khả năng tổ chức, nhưng không giải thích làm thế nào hoạt động này dẫn đến sự cải thiện đó. Cần mô tả mối liên hệ.",
+    "repairVi": "Giải thích rằng việc tham gia các câu lạc bộ hoặc sự kiện đòi hỏi lên kế hoạch và quản lý thời gian, từ đó rèn luyện khả năng tổ chức.",
+    "replacementText": ""
+   },
+   {
+    "id": "disadv_underdeveloped",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Điểm liệt kê nhưng không phát triển",
+    "explanationVi": "Bạn đã nêu rằng sống xa nhà có thể dẫn đến thời gian biểu xấu, nhưng không giải thích cơ chế tại sao việc thiếu tự kiểm soát lại gây ra vấn đề này khi sống độc lập. Cần giải thích rõ hơn.",
+    "repairVi": "Thêm giải thích rằng không có sự giám sát của cha mẹ, một số sinh viên có thể ưu tiên giải trí hơn học tập, gây mất cân bằng.",
+    "replacementText": ""
+   },
+   {
+    "id": "vague_mental_problem",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "it will pose mental problem，which may be distracted when they are studying",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Hậu quả mờ nhạt",
+    "explanationVi": "Bạn đề cập đến 'vấn đề tâm lý', nhưng không xác định loại vấn đề nào hoặc làm thế nào nó ảnh hưởng đến việc học. Cần cụ thể hóa hậu quả.",
+    "repairVi": "Chỉ ra rằng homesickness có thể gây lo âu hoặc trầm cảm, làm giảm khả năng tập trung vào bài vở.",
+    "replacementText": ""
+   },
+   {
+    "id": "weak_comparison",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "it is positive for most student living tindependently, as it the demerits only happen on certain group of undergraduates",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Yếu tố so sánh không được hỗ trợ",
+    "explanationVi": "Bạn kết luận rằng lợi ích outweigh cho hầu hết sinh viên vì nhược điểm chỉ xảy ra với một nhóm, nhưng không so sánh tầm quan trọng hoặc quy mô của lợi ích và nhược điểm. Cần phân tích tại sao lợi ích quan trọng hơn.",
+    "repairVi": "So sánh rằng lợi ích về sự trưởng thành và kỹ năng áp dụng rộng rãi cho tất cả sinh viên, trong khi nhược điểm chỉ ảnh hưởng đến một thiểu số thiếu kỹ năng tự quản lý.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "incomplete_comparison",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "living without parents is a valuable opportunity for personal growth",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu so sánh giữa hai phương án",
+      "explanationVi": "Đề bài yêu cầu thảo luận về việc sống xa nhà so với sống với cha mẹ, nhưng bài luận chỉ tập trung vào lợi ích và hại của việc sống độc lập mà không trực tiếp so sánh hai phương án này.",
+      "repairVi": "Cần thêm đoạn so sánh, ví dụ như 'so với việc sống với cha mẹ, sống xa nhà giúp phát triển sự độc lập hơn vì...'",
+      "replacementText": ""
+     },
+     {
+      "id": "point_not_developed",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the experience of living alone will imparts a wide range of practical skills, such as cooking, cleaning and banking",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Điểm được liệt kê mà không phát triển",
+      "explanationVi": "Bạn chỉ nêu ra kỹ năng thực tế mà không giải thích tại sao chúng có lợi hoặc làm thế nào chúng giúp ích cho sinh viên.",
+      "repairVi": "Cần giải thích thêm, ví dụ như 'việc nấu ăn và dọn dẹp giúp sinh viên tự lo cho bản thân, giảm phụ thuộc vào gia đình.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "adv_underdeveloped",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Điểm liệt kê nhưng không phát triển",
+      "explanationVi": "Bạn đã nêu rằng sống xa gia đình giúp phát triển bản thân, nhưng chưa giải thích làm thế nào hoặc tại sao điều này xảy ra. Cần chỉ ra các cơ chế cụ thể để điểm này có trọng lượng.",
+      "repairVi": "Thêm giải thích về cách sống độc lập thúc đẩy tư duy độc lập và kỹ năng ra quyết định.",
+      "replacementText": ""
+     },
+     {
+      "id": "social_act_mechanism",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "they can spend more time on social activities in the university., which not onlyT practicges their organizing abilities but also enhancges the bond between their friend",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cơ chế",
+      "explanationVi": "Bạn cho rằng hoạt động xã hội cải thiện khả năng tổ chức, nhưng không giải thích làm thế nào hoạt động này dẫn đến sự cải thiện đó. Cần mô tả mối liên hệ.",
+      "repairVi": "Giải thích rằng việc tham gia các câu lạc bộ hoặc sự kiện đòi hỏi lên kế hoạch và quản lý thời gian, từ đó rèn luyện khả năng tổ chức.",
+      "replacementText": ""
+     },
+     {
+      "id": "disadv_underdeveloped",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Điểm liệt kê nhưng không phát triển",
+      "explanationVi": "Bạn đã nêu rằng sống xa nhà có thể dẫn đến thời gian biểu xấu, nhưng không giải thích cơ chế tại sao việc thiếu tự kiểm soát lại gây ra vấn đề này khi sống độc lập. Cần giải thích rõ hơn.",
+      "repairVi": "Thêm giải thích rằng không có sự giám sát của cha mẹ, một số sinh viên có thể ưu tiên giải trí hơn học tập, gây mất cân bằng.",
+      "replacementText": ""
+     },
+     {
+      "id": "vague_mental_problem",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "it will pose mental problem，which may be distracted when they are studying",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Hậu quả mờ nhạt",
+      "explanationVi": "Bạn đề cập đến 'vấn đề tâm lý', nhưng không xác định loại vấn đề nào hoặc làm thế nào nó ảnh hưởng đến việc học. Cần cụ thể hóa hậu quả.",
+      "repairVi": "Chỉ ra rằng homesickness có thể gây lo âu hoặc trầm cảm, làm giảm khả năng tập trung vào bài vở.",
+      "replacementText": ""
+     },
+     {
+      "id": "weak_comparison",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it is positive for most student living tindependently, as it the demerits only happen on certain group of undergraduates",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Yếu tố so sánh không được hỗ trợ",
+      "explanationVi": "Bạn kết luận rằng lợi ích outweigh cho hầu hết sinh viên vì nhược điểm chỉ xảy ra với một nhóm, nhưng không so sánh tầm quan trọng hoặc quy mô của lợi ích và nhược điểm. Cần phân tích tại sao lợi ích quan trọng hơn.",
+      "repairVi": "So sánh rằng lợi ích về sự trưởng thành và kỹ năng áp dụng rộng rãi cho tất cả sinh viên, trong khi nhược điểm chỉ ảnh hưởng đến một thiểu số thiếu kỹ năng tự quản lý.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có vấn đề về vị trí không nhất quán giữa phần mở đầu và kết luận, điều này ảnh hưởng đến việc trả lời rõ ràng câu hỏi liệu tất cả cửa hàng có đóng cửa hay không.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 6,
+    "findings": []
+   },
+   {
+    "band": 6,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận đề cập đến cả hai phần của đề bài (lý do và hành động), nhưng các lý do còn giải thích chưa rõ ràng và phát triển chưa đầy đủ, trong khi các hành động được đề xuất hợp lý hơn với cơ chế giải thích cụ thể hơn.",
+  "findings": [
+   {
+    "id": "misaligned_example",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "such as driving private cars for freedom and convenience. Those exhaust fumes from vehicles lead to increasing global warming, which may have a devastating effect on the planet in the future",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không liên kết chặt chẽ",
+    "explanationVi": "Bạn đưa ra ví dụ về việc lái xe và hậu quả môi trường (global warming), nhưng tập trung vào hậu quả thay vì giải thích tại sao mọi người vẫn lái xe dù biết hậu quả. Cần liên kết rõ ràng hơn với lý do không hành động, chẳng hạn như do sự tiện lợi và tự do, họ chấp nhận gây hại.",
+    "repairVi": "Sau khi nêu hậu quả, thêm câu: 'Tuy nhiên, vì sự tiện lợi và tự do mà việc lái xe mang lại, nhiều người vẫn tiếp tục làm như vậy dù biết rõ tác hại.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "misaligned_example",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "such as driving private cars for freedom and convenience. Those exhaust fumes from vehicles lead to increasing global warming, which may have a devastating effect on the planet in the future",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không liên kết chặt chẽ",
+      "explanationVi": "Bạn đưa ra ví dụ về việc lái xe và hậu quả môi trường (global warming), nhưng tập trung vào hậu quả thay vì giải thích tại sao mọi người vẫn lái xe dù biết hậu quả. Cần liên kết rõ ràng hơn với lý do không hành động, chẳng hạn như do sự tiện lợi và tự do, họ chấp nhận gây hại.",
+      "repairVi": "Sau khi nêu hậu quả, thêm câu: 'Tuy nhiên, vì sự tiện lợi và tự do mà việc lái xe mang lại, nhiều người vẫn tiếp tục làm như vậy dù biết rõ tác hại.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "6.5-internet-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận trình bày quan điểm rõ ràng rằng Internet sẽ thay thế báo chí, nhưng thiếu sự so sánh trực tiếp và phân tích sâu về tại sao Internet sẽ trở nên quan trọng hơn đối với đa số mọi người, khiến việc chứng minh chưa đầy đủ.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Readers would certainly choose the Internet over newspapers for that they could be the first ones to be informed",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "It is simply easier, faster and more economical to share news over the Internet",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu so sánh cụ thể về tầm quan trọng",
+    "explanationVi": "Bạn đã chỉ ra ưu điểm của Internet như tốc độ và khả năng chia sẻ, nhưng chưa giải thích rõ tại sao những ưu điểm này khiến Internet trở nên quan trọng hơn báo chí đối với đa số người đọc. Cần so sánh trực tiếp hai nguồn tin để chứng minh rằng Internet vượt trội hơn.",
+    "repairVi": "Thêm phân tích so sánh, ví dụ: 'Mặc dù báo chí có thể đáng tin cậy hơn, tính nhanh chóng và dễ chia sẻ của Internet làm cho nó trở nên cần thiết hơn trong cuộc sống bận rộn của đa số người dùng hiện đại.'",
+    "replacementText": ""
+   },
+   {
+    "id": "finding1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "newspapers will soon die out as a media",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận quá cực đoan",
+    "explanationVi": "Bạn tuyên bố rằng báo chí sẽ 'chết dần' nhưng chỉ dựa trên hai ưu điểm của Internet, không xem xét các yếu tố khác có thể khiến báo chí vẫn quan trọng với đa số người.",
+    "repairVi": "Nên điều chỉnh kết luận để phản ánh chính xác hơn rằng Internet sẽ trở thành nguồn tin chính, thay vì khẳng định báo chí sẽ biến mất hoàn toàn.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Readers would certainly choose the Internet over newspapers for that they could be the first ones to be informed",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "It is simply easier, faster and more economical to share news over the Internet",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu so sánh cụ thể về tầm quan trọng",
+      "explanationVi": "Bạn đã chỉ ra ưu điểm của Internet như tốc độ và khả năng chia sẻ, nhưng chưa giải thích rõ tại sao những ưu điểm này khiến Internet trở nên quan trọng hơn báo chí đối với đa số người đọc. Cần so sánh trực tiếp hai nguồn tin để chứng minh rằng Internet vượt trội hơn.",
+      "repairVi": "Thêm phân tích so sánh, ví dụ: 'Mặc dù báo chí có thể đáng tin cậy hơn, tính nhanh chóng và dễ chia sẻ của Internet làm cho nó trở nên cần thiết hơn trong cuộc sống bận rộn của đa số người dùng hiện đại.'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "newspapers will soon die out as a media",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận quá cực đoan",
+      "explanationVi": "Bạn tuyên bố rằng báo chí sẽ 'chết dần' nhưng chỉ dựa trên hai ưu điểm của Internet, không xem xét các yếu tố khác có thể khiến báo chí vẫn quan trọng với đa số người.",
+      "repairVi": "Nên điều chỉnh kết luận để phản ánh chính xác hơn rằng Internet sẽ trở thành nguồn tin chính, thay vì khẳng định báo chí sẽ biến mất hoàn toàn.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có quan điểm rõ ràng và đưa ra lý do liên quan đến cả hai phía, nhưng thiếu sự so sánh trực tiếp và phân tích để chứng minh tại sao chi phí cho dịch vụ công nên được ưu tiên hơn chương trình không gian, điều cần thiết cho câu hỏi 'đến mức nào'.",
+  "findings": [
+   {
+    "id": "TR_comparative_analysis",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "regarding the possible negative effects caused by huge expenditure on space missions as well as the positive transformation that may be supported by the money saved",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu so sánh trực tiếp giữa hai bên",
+    "explanationVi": "Bạn đã liệt kê lý do chống lại chương trình không gian và ủng hộ dịch vụ công, nhưng bài luận không giải thích rõ ràng tại sao lợi ích của dịch vụ công quan trọng hơn hoặc thuyết phục hơn so với chương trình không gian, điều cần thiết để chứng minh rằng tiền nên được chuyển hướng theo câu hỏi 'tốt hơn'.",
+    "repairVi": "Thêm một đoạn hoặc câu trực tiếp so sánh hai bên, chẳng hạn giải thích tại sao sự khẩn cấp và tác động xã hội của dịch vụ công vượt trội hơn lợi ích dài hạn hoặc kinh tế của chương trình không gian.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "TR_comparative_analysis",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "regarding the possible negative effects caused by huge expenditure on space missions as well as the positive transformation that may be supported by the money saved",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu so sánh trực tiếp giữa hai bên",
+      "explanationVi": "Bạn đã liệt kê lý do chống lại chương trình không gian và ủng hộ dịch vụ công, nhưng bài luận không giải thích rõ ràng tại sao lợi ích của dịch vụ công quan trọng hơn hoặc thuyết phục hơn so với chương trình không gian, điều cần thiết để chứng minh rằng tiền nên được chuyển hướng theo câu hỏi 'tốt hơn'.",
+      "repairVi": "Thêm một đoạn hoặc câu trực tiếp so sánh hai bên, chẳng hạn giải thích tại sao sự khẩn cấp và tác động xã hội của dịch vụ công vượt trội hơn lợi ích dài hạn hoặc kinh tế của chương trình không gian.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận đề cập đến cả hai phần của đề bài nhưng phần ý kiến chưa được phát triển đầy đủ, thiếu sự đánh giá so sánh để đưa ra phán đoán rõ ràng về bản chất tích cực hay tiêu cực của xu hướng.",
+  "findings": [
+   {
+    "id": "opinion_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "I believe whether the development is negative or positive mainly depends on if there is real innovation and novelty in the products.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "the situation which, I believe, is not instinctively beneficial or harmful.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Phán đoán chưa được kiếm đủ",
+    "explanationVi": "Bạn đưa ra quan điểm rằng xu hướng này phụ thuộc vào sự đổi mới thực sự, nhưng không giải thích tại sao trong bối cảnh chung nó thường được coi là tích cực hay tiêu cực, hoặc so sánh tần suất và tác động của cả hai trường hợp để đưa ra kết luận rõ ràng.",
+    "repairVi": "Bạn nên thêm một câu so sánh hoặc đánh giá, chẳng hạn như 'Mặc dù cả hai trường hợp đều tồn tại, tôi tin rằng...' để củng cố phán đoán về bản chất của phát triển.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "opinion_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "I believe whether the development is negative or positive mainly depends on if there is real innovation and novelty in the products.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "the situation which, I believe, is not instinctively beneficial or harmful.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phán đoán chưa được kiếm đủ",
+      "explanationVi": "Bạn đưa ra quan điểm rằng xu hướng này phụ thuộc vào sự đổi mới thực sự, nhưng không giải thích tại sao trong bối cảnh chung nó thường được coi là tích cực hay tiêu cực, hoặc so sánh tần suất và tác động của cả hai trường hợp để đưa ra kết luận rõ ràng.",
+      "repairVi": "Bạn nên thêm một câu so sánh hoặc đánh giá, chẳng hạn như 'Mặc dù cả hai trường hợp đều tồn tại, tôi tin rằng...' để củng cố phán đoán về bản chất của phát triển.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "task-2-band-7-space-programs.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết có vị trí rõ ràng và đề cập đến cả hai phía của vấn đề, nhưng các luận điểm chính chưa được phát triển đầy đủ và sự so sánh giữa hai lựa chọn chưa được chứng minh chi tiết, làm giảm sức thuyết phục.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "regarding the possible negative effects caused by huge expenditure on space missions as well as the positive transformation that may be supported by the money saved",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "So sánh chưa được chứng minh đầy đủ",
+    "explanationVi": "Bạn đã đưa ra quan điểm rằng chi tiền cho dịch vụ công tốt hơn, nhưng trong các đoạn thân bài, bạn chỉ liệt kê ưu điểm của dịch vụ công và nhược điểm của chương trình không gian mà không giải thích rõ tại sao dịch vụ công quan trọng hơn hoặc có tác động lớn hơn.",
+    "repairVi": "Trong đoạn thân bài, hãy trực tiếp so sánh hai lĩnh vực bằng cách giải thích tại sao lợi ích ngay lập tức của dịch vụ công vượt trội so với lợi ích dài hạn tiềm năng của chương trình không gian.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Điểm chưa được phát triển",
+    "explanationVi": "Bạn khẳng định rằng kết quả đầu tư vào chương trình không gian là không chắc chắn, nhưng bạn không giải thích tại sao không chắc chắn hoặc nó dẫn đến hậu quả gì. Điều này làm cho lập luận yếu đi.",
+    "repairVi": "Giải thích thêm về các rủi ro hoặc biến động trong lợi nhuận từ chương trình không gian, và tại sao điều đó khiến cho việc đầu tư trở nên nguy hiểm.",
+    "replacementText": ""
+   },
+   {
+    "id": "f4",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Soviet once invested considerable money on the space programs in order to compete with the U.S in the universe, which involved the government in endless financial problems, contributing to the fall of this superpower.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ cần phân tích",
+    "explanationVi": "Bạn đưa ra ví dụ về Liên Xô, nhưng bạn không phân tích làm sao chi tiêu vào chương trình không gian cụ thể gây ra vấn đề tài chính và sự sụp đổ. Điều này làm cho ví dụ không đủ sức thuyết phục.",
+    "repairVi": "Phân tích thêm rằng chi tiêu lớn vào không gian làm giảm nguồn lực cho các lĩnh vực khác, dẫn đến bất ổn kinh tế và chính trị.",
+    "replacementText": ""
+   },
+   {
+    "id": "f5",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "expending more money on public service is bound to improve the public well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tổng quát hóa quá mức",
+    "explanationVi": "Bạn nói rằng chi tiền cho dịch vụ công chắc chắn sẽ cải thiện phúc lợi, nhưng điều này có thể quá tuyệt đối. Cần thêm điều kiện hoặc giải thích để làm cho nó thuyết phục hơn.",
+    "repairVi": "Sử dụng ngôn từ nhẹ nhàng hơn như \"có thể cải thiện\" hoặc thêm ví dụ để chứng minh.",
+    "replacementText": ""
+   },
+   {
+    "id": "macro_comparative",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "I am in firm belief that more money should be given to those public service like building more schools than the space exploration or exploitation.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu so sánh trực tiếp",
+    "explanationVi": "Bạn đã nêu rằng dịch vụ công cộng tốt hơn, nhưng chưa so sánh rõ ràng hai phương án về tầm quan trọng, quy mô hoặc tính cấp bách để chứng minh tại sao tiền nên được chi cho dịch vụ công cộng hơn.",
+    "repairVi": "Cần thêm đoạn hoặc câu so sánh trực tiếp, ví dụ: 'Trong khi các chương trình không gian có thể mang lại lợi ích lâu dài nhưng không chắc chắn, các dịch vụ công cộng giải quyết nhu cầu khẩn cấp hiện tại và cải thiện chất lượng sống ngay lập tức, từ đó có giá trị cao hơn.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "regarding the possible negative effects caused by huge expenditure on space missions as well as the positive transformation that may be supported by the money saved",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "So sánh chưa được chứng minh đầy đủ",
+      "explanationVi": "Bạn đã đưa ra quan điểm rằng chi tiền cho dịch vụ công tốt hơn, nhưng trong các đoạn thân bài, bạn chỉ liệt kê ưu điểm của dịch vụ công và nhược điểm của chương trình không gian mà không giải thích rõ tại sao dịch vụ công quan trọng hơn hoặc có tác động lớn hơn.",
+      "repairVi": "Trong đoạn thân bài, hãy trực tiếp so sánh hai lĩnh vực bằng cách giải thích tại sao lợi ích ngay lập tức của dịch vụ công vượt trội so với lợi ích dài hạn tiềm năng của chương trình không gian.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Điểm chưa được phát triển",
+      "explanationVi": "Bạn khẳng định rằng kết quả đầu tư vào chương trình không gian là không chắc chắn, nhưng bạn không giải thích tại sao không chắc chắn hoặc nó dẫn đến hậu quả gì. Điều này làm cho lập luận yếu đi.",
+      "repairVi": "Giải thích thêm về các rủi ro hoặc biến động trong lợi nhuận từ chương trình không gian, và tại sao điều đó khiến cho việc đầu tư trở nên nguy hiểm.",
+      "replacementText": ""
+     },
+     {
+      "id": "f4",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Soviet once invested considerable money on the space programs in order to compete with the U.S in the universe, which involved the government in endless financial problems, contributing to the fall of this superpower.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ cần phân tích",
+      "explanationVi": "Bạn đưa ra ví dụ về Liên Xô, nhưng bạn không phân tích làm sao chi tiêu vào chương trình không gian cụ thể gây ra vấn đề tài chính và sự sụp đổ. Điều này làm cho ví dụ không đủ sức thuyết phục.",
+      "repairVi": "Phân tích thêm rằng chi tiêu lớn vào không gian làm giảm nguồn lực cho các lĩnh vực khác, dẫn đến bất ổn kinh tế và chính trị.",
+      "replacementText": ""
+     },
+     {
+      "id": "f5",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "expending more money on public service is bound to improve the public well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tổng quát hóa quá mức",
+      "explanationVi": "Bạn nói rằng chi tiền cho dịch vụ công chắc chắn sẽ cải thiện phúc lợi, nhưng điều này có thể quá tuyệt đối. Cần thêm điều kiện hoặc giải thích để làm cho nó thuyết phục hơn.",
+      "repairVi": "Sử dụng ngôn từ nhẹ nhàng hơn như \"có thể cải thiện\" hoặc thêm ví dụ để chứng minh.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "macro_comparative",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "I am in firm belief that more money should be given to those public service like building more schools than the space exploration or exploitation.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu so sánh trực tiếp",
+      "explanationVi": "Bạn đã nêu rằng dịch vụ công cộng tốt hơn, nhưng chưa so sánh rõ ràng hai phương án về tầm quan trọng, quy mô hoặc tính cấp bách để chứng minh tại sao tiền nên được chi cho dịch vụ công cộng hơn.",
+      "repairVi": "Cần thêm đoạn hoặc câu so sánh trực tiếp, ví dụ: 'Trong khi các chương trình không gian có thể mang lại lợi ích lâu dài nhưng không chắc chắn, các dịch vụ công cộng giải quyết nhu cầu khẩn cấp hiện tại và cải thiện chất lượng sống ngay lập tức, từ đó có giá trị cao hơn.'",
+      "replacementText": ""
+     },
+     {
+      "id": "paragraph1_example",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Soviet once invested considerable money on the space programs in order to compete with the U.S in the universe, which involved the government in endless financial problems, contributing to the fall of this superpower.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ thiếu phân tích",
+      "explanationVi": "Bạn đưa ra ví dụ về Liên Xô, nhưng phân tích quá ngắn gọn, chưa giải thích rõ ràng cơ chế làm thế nào chi tiêu vào không gian đã gây ra vấn đề tài chính dẫn đến sụp đổ.",
+      "repairVi": "Nên thêm câu phân tích, ví dụ: 'Việc đầu tư lớn vào cạnh tranh không gian đã làm cạn kiệt ngân sách nhà nước, gây ra lạm phát và bất ổn kinh tế, từ đó đóng góp vào sự tan rã của Liên Xô.'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Essay-t2-band-7.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn đã đưa ra quan điểm rõ ràng và phát triển một số ý chính, nhưng bài luận không giải quyết đầy đủ khía cạnh 'best way' của đề bài và thiếu cơ chế hoặc phân tích sâu cho nhiều điểm chính, dẫn đến độ thuyết phục thấp.",
+  "findings": [
+   {
+    "id": "TR1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the most effective measure to better secure road traffic safety",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Bỏ sót khía cạnh 'best way'",
+    "explanationVi": "Bạn không so sánh việc kiểm tra hàng năm với các biện pháp an toàn đường bộ khác (ví dụ: cơ sở hạ tầng, luật pháp), nên không chứng minh được đây có phải là 'best way' hay không.",
+    "repairVi": "Thêm một đoạn văn so sánh ưu điểm của việc kiểm tra hàng năm với các biện pháp thay thế để làm rõ tại sao nó không phải là lựa chọn tối ưu nhất.",
+    "replacementText": ""
+   },
+   {
+    "id": "TR2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it will urge vehicle operators to improve their driving skills each year",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cơ chế",
+    "explanationVi": "Bạn nói việc kiểm tra hàng năm 'thúc đẩy' cải thiện kỹ năng lái xe, nhưng không giải thích làm thế nào hoặc tại sao nó có hiệu quả (ví dụ: thông qua việc học trước kỳ thi), nên điểm này thiếu sức nặng.",
+    "repairVi": "Giải thích rõ ràng hơn, chẳng hạn như: 'Việc chuẩn bị cho kỳ thi hàng năm buộc người lái xe phải ôn tập và cập nhật kiến thức, từ đó nâng cao kỹ năng thực tế.'",
+    "replacementText": ""
+   },
+   {
+    "id": "TR3",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ thiếu phân tích",
+    "explanationVi": "Bạn đưa ra ví dụ về tài xế xe tải và ô tô ở Trung Quốc, nhưng không phân tích tại sao tần suất kiểm tra khác nhau dẫn đến nhiều tai nạn hơn cho ô tô, nên bằng chứng này không thuyết phục.",
+    "repairVi": "Thêm phân tích, chẳng hạn như: 'Sự chuẩn bị liên tục cho kỳ thi hàng năm giúp tài xế xe tải duy trì phản xạ nhanh và tuân thủ luật giao thông tốt hơn, trong khi tài xế ô tô có thể quên luật sau nhiều năm không kiểm tra.'",
+    "replacementText": ""
+   },
+   {
+    "id": "TR4",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "incapable drivers threatening road safety can be sorted out through yearly testing",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Giả định thiếu cơ sở",
+    "explanationVi": "Bạn cho rằng việc kiểm tra hàng năm có thể phát hiện người lái xe không khỏe mạnh, nhưng không giải thích liệu kiểm tra lái xe thường bao gồm kiểm tra y tế hay không, đây là bước logic bị bỏ qua.",
+    "repairVi": "Xác nhận rằng kiểm tra lái xe hàng năm cần bao gồm kiểm tra sức khỏe để lọc người không phù hợp, hoặc giải thích cách kiểm tra này hoạt động trong thực tế.",
+    "replacementText": ""
+   },
+   {
+    "id": "incomplete_task_coverage",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Many claim that the most effective measure to better secure road traffic safety is to allow fdrivers to pass the test of driving license every year.",
+      "role": "context"
+     },
+     {
+      "paragraphIndex": 4,
+      "sourceText": "However, I am receptive to the argument disputing the aforementioned logic that it is a waste of time and money to force all citizens to take the test.",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nhiệm vụ không được hoàn thành đầy đủ",
+    "explanationVi": "Bạn cần đánh giá liệu kiểm tra hàng năm có phải là cách tốt nhất để làm giao thông đường bộ an toàn hơn, nhưng bài luận chỉ thảo luận về lợi ích và ngoại lệ mà không so sánh với các biện pháp an toàn khác (như luật lệ giao thông, cơ sở hạ tầng) để chứng minh tại sao kiểm tra hàng năm tốt hơn hoặc không tốt hơn. Điều này khiến bài luận chưa đáp ứng đầy đủ yêu cầu của đề bài.",
+    "repairVi": "Thêm đoạn so sánh với các biện pháp an toàn khác, chẳng hạn như so sánh hiệu quả của kiểm tra hàng năm với việc cải thiện luật giao thông hoặc đào tạo tài xế định kỳ, để chứng minh tại sao nó có thể hoặc không thể là cách tốt nhất."
+   },
+   {
+    "id": "missing_mechanism_body1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "A salient example of this can be seen in a comparison between car drivers and truck drivers in countries like China, where truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cơ chế giải thích",
+    "explanationVi": "Bạn nêu ví dụ so sánh tài xế xe tải và xe ô tô ở Trung Quốc, nhưng bài luận không giải thích tại sao kiểm tra hàng năm dẫn đến ít tai nạn hơn – nó chỉ giả định mối quan hệ nhân quả mà không chỉ ra cơ chế, chẳng hạn như kiểm tra giúp tài xế cập nhật kỹ năng thường xuyên. Điều này khiến luận điểm yếu đi vì thiếu bằng chứng logic.",
+    "repairVi": "Thêm lời giải thích: 'Việc kiểm tra hàng năm buộc tài xế phải ôn tập và cập nhật kiến thức giao thông liên tục, giúp giảm lỗi lái xe phổ biến.'"
+   },
+   {
+    "id": "underdeveloped_point_body3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "For instance, it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Luận điểm chưa được phát triển đầy đủ",
+    "explanationVi": "Bạn cho rằng kiểm tra hàng năm là lãng phí thời gian và tiền bạc cho người trẻ dưới 50 tuổi vì họ khỏe mạnh, nhưng bài luận không cung cấp bằng chứng hoặc lý do cụ thể tại sao họ không cần kiểm tra hàng năm (ví dụ: tỷ lệ tai nạn thấp hơn, chi phí không cân xứng với lợi ích). Điều này khiến luận điểm chỉ là tuyên bố chung chung mà chưa chứng minh được.",
+    "repairVi": "Thêm chi tiết: 'Người trẻ thường có sức khỏe tốt và phản xạ nhanh, nên tỷ lệ tai nạn thấp hơn; do đó, kiểm tra mỗi 5-10 năm đủ để đảm bảo an toàn mà không gây tốn kém.'"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "TR1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the most effective measure to better secure road traffic safety",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Bỏ sót khía cạnh 'best way'",
+      "explanationVi": "Bạn không so sánh việc kiểm tra hàng năm với các biện pháp an toàn đường bộ khác (ví dụ: cơ sở hạ tầng, luật pháp), nên không chứng minh được đây có phải là 'best way' hay không.",
+      "repairVi": "Thêm một đoạn văn so sánh ưu điểm của việc kiểm tra hàng năm với các biện pháp thay thế để làm rõ tại sao nó không phải là lựa chọn tối ưu nhất.",
+      "replacementText": ""
+     },
+     {
+      "id": "TR2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it will urge vehicle operators to improve their driving skills each year",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cơ chế",
+      "explanationVi": "Bạn nói việc kiểm tra hàng năm 'thúc đẩy' cải thiện kỹ năng lái xe, nhưng không giải thích làm thế nào hoặc tại sao nó có hiệu quả (ví dụ: thông qua việc học trước kỳ thi), nên điểm này thiếu sức nặng.",
+      "repairVi": "Giải thích rõ ràng hơn, chẳng hạn như: 'Việc chuẩn bị cho kỳ thi hàng năm buộc người lái xe phải ôn tập và cập nhật kiến thức, từ đó nâng cao kỹ năng thực tế.'",
+      "replacementText": ""
+     },
+     {
+      "id": "TR3",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ thiếu phân tích",
+      "explanationVi": "Bạn đưa ra ví dụ về tài xế xe tải và ô tô ở Trung Quốc, nhưng không phân tích tại sao tần suất kiểm tra khác nhau dẫn đến nhiều tai nạn hơn cho ô tô, nên bằng chứng này không thuyết phục.",
+      "repairVi": "Thêm phân tích, chẳng hạn như: 'Sự chuẩn bị liên tục cho kỳ thi hàng năm giúp tài xế xe tải duy trì phản xạ nhanh và tuân thủ luật giao thông tốt hơn, trong khi tài xế ô tô có thể quên luật sau nhiều năm không kiểm tra.'",
+      "replacementText": ""
+     },
+     {
+      "id": "TR4",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "incapable drivers threatening road safety can be sorted out through yearly testing",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Giả định thiếu cơ sở",
+      "explanationVi": "Bạn cho rằng việc kiểm tra hàng năm có thể phát hiện người lái xe không khỏe mạnh, nhưng không giải thích liệu kiểm tra lái xe thường bao gồm kiểm tra y tế hay không, đây là bước logic bị bỏ qua.",
+      "repairVi": "Xác nhận rằng kiểm tra lái xe hàng năm cần bao gồm kiểm tra sức khỏe để lọc người không phù hợp, hoặc giải thích cách kiểm tra này hoạt động trong thực tế.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "incomplete_task_coverage",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Many claim that the most effective measure to better secure road traffic safety is to allow fdrivers to pass the test of driving license every year.",
+        "role": "context"
+       },
+       {
+        "paragraphIndex": 4,
+        "sourceText": "However, I am receptive to the argument disputing the aforementioned logic that it is a waste of time and money to force all citizens to take the test.",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhiệm vụ không được hoàn thành đầy đủ",
+      "explanationVi": "Bạn cần đánh giá liệu kiểm tra hàng năm có phải là cách tốt nhất để làm giao thông đường bộ an toàn hơn, nhưng bài luận chỉ thảo luận về lợi ích và ngoại lệ mà không so sánh với các biện pháp an toàn khác (như luật lệ giao thông, cơ sở hạ tầng) để chứng minh tại sao kiểm tra hàng năm tốt hơn hoặc không tốt hơn. Điều này khiến bài luận chưa đáp ứng đầy đủ yêu cầu của đề bài.",
+      "repairVi": "Thêm đoạn so sánh với các biện pháp an toàn khác, chẳng hạn như so sánh hiệu quả của kiểm tra hàng năm với việc cải thiện luật giao thông hoặc đào tạo tài xế định kỳ, để chứng minh tại sao nó có thể hoặc không thể là cách tốt nhất."
+     },
+     {
+      "id": "missing_mechanism_body1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "A salient example of this can be seen in a comparison between car drivers and truck drivers in countries like China, where truckers are required to take the driving test yearly while car drivers only need once every six years, resulting in more accidents for cars over trucks.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cơ chế giải thích",
+      "explanationVi": "Bạn nêu ví dụ so sánh tài xế xe tải và xe ô tô ở Trung Quốc, nhưng bài luận không giải thích tại sao kiểm tra hàng năm dẫn đến ít tai nạn hơn – nó chỉ giả định mối quan hệ nhân quả mà không chỉ ra cơ chế, chẳng hạn như kiểm tra giúp tài xế cập nhật kỹ năng thường xuyên. Điều này khiến luận điểm yếu đi vì thiếu bằng chứng logic.",
+      "repairVi": "Thêm lời giải thích: 'Việc kiểm tra hàng năm buộc tài xế phải ôn tập và cập nhật kiến thức giao thông liên tục, giúp giảm lỗi lái xe phổ biến.'"
+     },
+     {
+      "id": "underdeveloped_point_body3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "For instance, it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Luận điểm chưa được phát triển đầy đủ",
+      "explanationVi": "Bạn cho rằng kiểm tra hàng năm là lãng phí thời gian và tiền bạc cho người trẻ dưới 50 tuổi vì họ khỏe mạnh, nhưng bài luận không cung cấp bằng chứng hoặc lý do cụ thể tại sao họ không cần kiểm tra hàng năm (ví dụ: tỷ lệ tai nạn thấp hơn, chi phí không cân xứng với lợi ích). Điều này khiến luận điểm chỉ là tuyên bố chung chung mà chưa chứng minh được.",
+      "repairVi": "Thêm chi tiết: 'Người trẻ thường có sức khỏe tốt và phản xạ nhanh, nên tỷ lệ tai nạn thấp hơn; do đó, kiểm tra mỗi 5-10 năm đủ để đảm bảo an toàn mà không gây tốn kém.'"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "IELTS-Writing-Task21111-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận trình bày rõ quan điểm đồng ý và phát triển hai lý do, nhưng lý do thứ hai về sự quan trọng của kỹ năng so với kiến thức lý thuyết chỉ liệt kê mà chưa giải thích đầy đủ cơ chế hoặc lý do tại sao kỹ năng có giá trị hơn, khiến luận điểm so sánh thiếu sức thuyết phục.",
+  "findings": [
+   {
+    "id": "tr1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Another reason why the value of theoretical knowledge is hreduced is that some skills are usually more important than knowledget.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Yếu điểm so sánh không được hỗ trợ",
+    "explanationVi": "Bạn tuyên bố rằng 'some skills are usually more important than knowledge' nhưng không giải thích tại sao kỹ năng có giá trị hơn hoặc bằng cách nào chúng vượt trội hơn kiến thức lý thuyết trong bối cảnh được đề cập, mà chỉ nêu rằng kiến thức có thể lỗi thời.",
+    "repairVi": "Bạn cần thêm lý do tại sao kỹ năng, chẳng hạn như khả năng thích ứng hoặc học hỏi liên tục, quan trọng hơn kiến thức lý thuyết đã lỗi thời, và so sánh giá trị của chúng trong việc đạt được thành công để thuyết phục người đọc.",
+    "replacementText": ""
+   },
+   {
+    "id": "task_coverage_success",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "some people argue that it is not as valuable as expected. I would agree with this opinion.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu liên kết với ngữ cảnh thành công",
+    "explanationVi": "Bạn đã đồng ý rằng kiến thức lý thuyết không giá trị bằng kỳ vọng, nhưng bài luận không đề cập đến việc những người thành công không quy công thành công cho kiến thức lý thuyết. Cần giải thích tại sao điều này hỗ trợ quan điểm của bạn.",
+    "repairVi": "Thêm phân tích trong thân bài hoặc mở đầu giải thích rằng thiếu sự quy kết thành công từ những người thành công cho thấy kiến thức lý thuyết có thể không đóng góp như kỳ vọng vào thành công.",
+    "replacementText": ""
+   },
+   {
+    "id": "example_no_analysis_b1",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, some engineering students may start to work in the financial sector and hence will find it difficult to apply engineering knowledge in financial industry.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không có phân tích",
+    "explanationVi": "Bạn đưa ra ví dụ về sinh viên kỹ thuật làm trong tài chính nhưng không phân tích nó chứng minh điều gì về giá trị kiến thức lý thuyết. Cần giải thích cách ví dụ này hỗ trợ luận điểm.",
+    "repairVi": "Thêm phân tích: 'Điều này chứng tỏ rằng kiến thức lý thuyết chuyên ngành không luôn phù hợp với thực tế công việc, làm giảm giá trị của nó trong bối cảnh thành công.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "tr1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Another reason why the value of theoretical knowledge is hreduced is that some skills are usually more important than knowledget.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Yếu điểm so sánh không được hỗ trợ",
+      "explanationVi": "Bạn tuyên bố rằng 'some skills are usually more important than knowledge' nhưng không giải thích tại sao kỹ năng có giá trị hơn hoặc bằng cách nào chúng vượt trội hơn kiến thức lý thuyết trong bối cảnh được đề cập, mà chỉ nêu rằng kiến thức có thể lỗi thời.",
+      "repairVi": "Bạn cần thêm lý do tại sao kỹ năng, chẳng hạn như khả năng thích ứng hoặc học hỏi liên tục, quan trọng hơn kiến thức lý thuyết đã lỗi thời, và so sánh giá trị của chúng trong việc đạt được thành công để thuyết phục người đọc.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "task_coverage_success",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "some people argue that it is not as valuable as expected. I would agree with this opinion.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu liên kết với ngữ cảnh thành công",
+      "explanationVi": "Bạn đã đồng ý rằng kiến thức lý thuyết không giá trị bằng kỳ vọng, nhưng bài luận không đề cập đến việc những người thành công không quy công thành công cho kiến thức lý thuyết. Cần giải thích tại sao điều này hỗ trợ quan điểm của bạn.",
+      "repairVi": "Thêm phân tích trong thân bài hoặc mở đầu giải thích rằng thiếu sự quy kết thành công từ những người thành công cho thấy kiến thức lý thuyết có thể không đóng góp như kỳ vọng vào thành công.",
+      "replacementText": ""
+     },
+     {
+      "id": "example_no_analysis_b1",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, some engineering students may start to work in the financial sector and hence will find it difficult to apply engineering knowledge in financial industry.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không có phân tích",
+      "explanationVi": "Bạn đưa ra ví dụ về sinh viên kỹ thuật làm trong tài chính nhưng không phân tích nó chứng minh điều gì về giá trị kiến thức lý thuyết. Cần giải thích cách ví dụ này hỗ trợ luận điểm.",
+      "repairVi": "Thêm phân tích: 'Điều này chứng tỏ rằng kiến thức lý thuyết chuyên ngành không luôn phù hợp với thực tế công việc, làm giảm giá trị của nó trong bối cảnh thành công.'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 5.5,
+  "rationaleVi": "Bài luận đề cập đến cả hai quan điểm nhưng các luận điểm chính không được phát triển đầy đủ và vị trí của người viết không rõ ràng, làm giảm khả năng đáp ứng yêu cầu thảo luận và đưa ra quan điểm cá nhân.",
+  "findings": [
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, the number of police officers in the population in China is less than 1% which is much less compared with the United States. However, the crime rate in China is much lower due to the mature and well-established security camera network.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không có phân tích",
+    "explanationVi": "Bạn đưa ra ví dụ về Trung Quốc để hỗ trợ camera an ninh hiệu quả, nhưng bài luận không phân tích làm thế nào camera dẫn đến tỷ lệ tội phạm thấp hơn hoặc liệu có yếu tố nào khác (như pháp luật hoặc văn hóa) ảnh hưởng, và không giải thích mối liên hệ trực tiếp.",
+    "repairVi": "Cần thêm phân tích về cơ chế mà camera giúp cảnh sát bắt giữ tội phạm và giảm tội phạm, hoặc so sánh với các biện pháp khác.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5.5,
+    "findings": [
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, the number of police officers in the population in China is less than 1% which is much less compared with the United States. However, the crime rate in China is much lower due to the mature and well-established security camera network.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không có phân tích",
+      "explanationVi": "Bạn đưa ra ví dụ về Trung Quốc để hỗ trợ camera an ninh hiệu quả, nhưng bài luận không phân tích làm thế nào camera dẫn đến tỷ lệ tội phạm thấp hơn hoặc liệu có yếu tố nào khác (như pháp luật hoặc văn hóa) ảnh hưởng, và không giải thích mối liên hệ trực tiếp.",
+      "repairVi": "Cần thêm phân tích về cơ chế mà camera giúp cảnh sát bắt giữ tội phạm và giảm tội phạm, hoặc so sánh với các biện pháp khác.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

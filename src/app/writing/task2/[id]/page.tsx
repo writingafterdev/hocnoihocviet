@@ -14,6 +14,7 @@ import { useParams } from 'next/navigation';
 import { getPromptById } from '@/lib/prompts';
 import { EMPTY_ANALYSIS } from '@/lib/writing-demo';
 import { motion, AnimatePresence } from 'motion/react';
+import { authenticatedFetch } from '@/lib/authenticated-fetch';
 
 type PageState = 'idle' | 'analyzing' | 'result';
 
@@ -39,7 +40,6 @@ export default function WritingPage() {
   const [analysis, setAnalysis] = useState<WritingAnalysis | null>(null);
   const [planPyramid, setPlanPyramid] = useState(EMPTY_ANALYSIS.pyramid);
   const [error, setError] = useState<string | null>(null);
-  const [persistenceError, setPersistenceError] = useState<string | null>(null);
   const [activeParagraphIndex, setActiveParagraphIndex] = useState<number | null>(null);
   const [activeDimension, setActiveDimension] = useState<DimensionKey>('taskAchievement');
   const [isGraphFullscreen, setIsGraphFullscreen] = useState(false);
@@ -61,7 +61,7 @@ export default function WritingPage() {
     const loadTimer = window.setTimeout(async () => {
       try {
         const cacheKey = `rnw-draft-task2-${params.id}`;
-        const response = await fetch(`/api/writing/assessments/${params.id}`);
+        const response = await authenticatedFetch(`/api/writing/assessments/${params.id}`);
         if (response.ok) {
           const { assessment } = await response.json();
           const persistedAnalysis = assessment.analysis as WritingAnalysis;
@@ -120,9 +120,13 @@ export default function WritingPage() {
     }
   }, [paragraphTexts, planPyramid, state, analysis, resultEssay, params.id, promptText]);
 
+  // Paragraphs are joined with a blank line and the assessment manifest splits on
+  // exactly that, so a blank line typed inside one planner paragraph would become
+  // two paragraphs downstream and shift every later paragraph index — which is
+  // what every piece of evidence in the review is anchored to. Collapse them.
   const draftEssay = planPyramid.paragraphs
-    .map(p => paragraphTexts[p.index] || '')
-    .filter(text => text.trim().length > 0)
+    .map(p => (paragraphTexts[p.index] || '').replace(/\n\s*\n+/g, '\n').trim())
+    .filter(text => text.length > 0)
     .join('\n\n');
   const essay = state === 'result' && resultEssay !== null ? resultEssay : draftEssay;
 
@@ -159,28 +163,24 @@ export default function WritingPage() {
   const handleSubmit = async () => {
     if (!promptText.trim() || !essay.trim()) return;
     setError(null);
-    setPersistenceError(null);
     setState('analyzing');
 
     try {
-      const res = await fetch('/api/writing/analyze', {
+      const res = await authenticatedFetch('/api/writing/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt: promptText, essay }),
+        body: JSON.stringify({
+          taskId: params.id,
+          prompt: promptText,
+          essay,
+          idempotencyKey: crypto.randomUUID(),
+        }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Analysis failed');
       setAnalysis(data.analysis);
       setResultEssay(essay);
       setState('result');
-      const saveResponse = await fetch(`/api/writing/assessments/${params.id}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt: promptText, essay, analysis: data.analysis }),
-      });
-      if (!saveResponse.ok) {
-        setPersistenceError('Bài đã được chấm nhưng chưa lưu được. Hãy giữ trang này mở và thử lại sau.');
-      }
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Analysis failed');
       setState('idle');
@@ -208,6 +208,14 @@ export default function WritingPage() {
               prompt={promptText}
               essay={essay}
               analysis={displayAnalysis}
+              onRequestComparison={async () => {
+                const response = await authenticatedFetch(`/api/writing/assessments/${params.id}/comparison`, {
+                  method: 'POST',
+                });
+                const payload = await response.json();
+                if (!response.ok) throw new Error(payload.error || 'Comparison failed');
+                setAnalysis(payload.analysis);
+              }}
               onStartNew={() => { setState('idle'); setAnalysis(null); setResultEssay(null); setActiveParagraphIndex(null); }}
             />
           ) : (
@@ -403,13 +411,6 @@ export default function WritingPage() {
           )}
         </div>
       </div>
-
-      {persistenceError && state === 'result' && (
-        <div className="fixed bottom-5 left-1/2 z-[120] flex -translate-x-1/2 items-center gap-3 rounded-[9px] border border-[#EC6A5B]/25 bg-white px-4 py-3 shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
-          <p className="font-sans text-[11px] text-[#7A3028]">{persistenceError}</p>
-          <button type="button" onClick={() => setPersistenceError(null)} className="font-mono text-[9px] uppercase text-black/45 hover:text-black">Đóng</button>
-        </div>
-      )}
 
       {isMounted && typeof document !== 'undefined' ? createPortal(
         <>

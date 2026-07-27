@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEvent } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
@@ -14,6 +14,7 @@ import {
   PyramidError,
   PyramidIssue,
   SentenceAnnotation,
+  AssessmentProblemStrength,
   WritingAnalysis,
 } from '@/types/writing';
 import SimpleArgumentGraph from './SimpleArgumentGraph';
@@ -40,6 +41,7 @@ interface WorkbenchProps {
   essay: string;
   analysis: WritingAnalysis;
   onStartNew: () => void;
+  onRequestComparison?: () => Promise<void>;
 }
 
 interface TextHighlight {
@@ -72,6 +74,7 @@ interface ReviewCommand {
   focusNodeIds?: string[];
   primaryNodeIds?: string[];
   evidenceSpans?: AssessmentEvidenceSpan[];
+  problemStrength?: AssessmentProblemStrength;
 }
 
 interface ColumnWidths {
@@ -250,6 +253,7 @@ function buildReasoningCommands(analysis: WritingAnalysis): ReviewCommand[] {
       focusNodeIds: ['macro', ...nodeIdsFromAffectedNodes(error.affectedNodes), ...nodeIdsFromLinks(error.nodeLinks)],
       evidenceSpans: error.evidenceSpans,
       primaryNodeIds: primaryNodeIdsFromLinks(error.nodeLinks),
+      problemStrength: error.problemStrength,
     });
   }
 
@@ -285,6 +289,7 @@ function buildReasoningCommands(analysis: WritingAnalysis): ReviewCommand[] {
         ],
         evidenceSpans: error.evidenceSpans,
         primaryNodeIds: primaryNodeIdsFromLinks(error.nodeLinks),
+        problemStrength: error.problemStrength,
       });
     }
 
@@ -315,6 +320,7 @@ function buildReasoningCommands(analysis: WritingAnalysis): ReviewCommand[] {
           ],
           evidenceSpans: error.evidenceSpans,
           primaryNodeIds: primaryNodeIdsFromLinks(error.nodeLinks),
+          problemStrength: error.problemStrength,
         });
       }
     }
@@ -350,6 +356,7 @@ function buildReasoningCommands(analysis: WritingAnalysis): ReviewCommand[] {
       ],
       evidenceSpans: issue?.evidenceSpans,
       primaryNodeIds: primaryNodeIdsFromLinks(issue?.nodeLinks),
+      problemStrength: issue?.problemStrength,
     });
   }
 
@@ -379,6 +386,7 @@ function buildReasoningCommands(analysis: WritingAnalysis): ReviewCommand[] {
       ],
       evidenceSpans: flow.issue.evidenceSpans,
       primaryNodeIds: primaryNodeIdsFromLinks(flow.issue.nodeLinks),
+      problemStrength: flow.issue.problemStrength,
     });
   }
 
@@ -421,6 +429,7 @@ function buildArgumentFlowCommands(analysis: WritingAnalysis) {
         sourceText: highlight.sourceText || '',
         nodeId: sentence?.nodeId,
       }],
+      problemStrength: highlight.problemStrength,
     });
   }
   return [...commands].sort((left, right) => {
@@ -902,6 +911,15 @@ function CommandCard({
               </span>
               <span className="font-mono text-[8px] uppercase tracking-[0.1em] text-black/40">{command.label}</span>
               <span className="font-mono text-[8px] text-[#A3A3A3]">#{index + 1}</span>
+              {command.problemStrength ? (
+                <span className={`rounded-[5px] px-1.5 py-0.5 font-mono text-[8px] font-semibold ${
+                  command.problemStrength === 'core_problem'
+                    ? 'bg-[#FDECEC] text-[#B42318]'
+                    : 'bg-[#FFF7DB] text-[#8A6514]'
+                }`}>
+                  {command.problemStrength === 'core_problem' ? 'Lỗi chính' : 'Đáng lưu ý'}
+                </span>
+              ) : null}
             </div>
             <p className="mt-1.5 font-sans text-[11px] font-semibold leading-snug text-[#2A2A2A]">{command.title}</p>
             {scaffoldCue ? (
@@ -1989,7 +2007,13 @@ function MissingComparisonData({ prompt, essay }: { prompt: string; essay: strin
   );
 }
 
-export default function WritingReviewWorkbench({ prompt, essay, analysis, onStartNew }: WorkbenchProps) {
+export default function WritingReviewWorkbench({
+  prompt,
+  essay,
+  analysis,
+  onStartNew,
+  onRequestComparison,
+}: WorkbenchProps) {
   const hasConfirmedFindings = useMemo(() => assessmentHasConfirmedFindings(analysis), [analysis]);
   const argumentChapters = useMemo(() => analysis.argumentFlowChapters || [], [analysis.argumentFlowChapters]);
   const macroArgumentChapters = useMemo(
@@ -2005,6 +2029,9 @@ export default function WritingReviewWorkbench({ prompt, essay, analysis, onStar
   const [activeArgumentChapterId, setActiveArgumentChapterId] = useState<string | null>(macroArgumentChapters[0]?.id || null);
   const [chapterFocusNodeIds, setChapterFocusNodeIds] = useState<string[]>(macroArgumentChapters[0]?.originalOrder || []);
   const [flowStages, setFlowStages] = useState<Record<string, FlowWalkthroughStage>>({});
+  const [comparisonLoading, setComparisonLoading] = useState(false);
+  const [comparisonError, setComparisonError] = useState<string | null>(null);
+  const comparisonRequestKeyRef = useRef<string | null>(null);
   const [columnWidthsByMode, setColumnWidthsByMode] = useState<Record<ReviewMode, ColumnWidths>>(WORKBENCH_COLUMN_PRESETS);
   const columnWidths = columnWidthsByMode[mode];
   const columnsRef = useRef<HTMLDivElement | null>(null);
@@ -2030,6 +2057,22 @@ export default function WritingReviewWorkbench({ prompt, essay, analysis, onStar
   const verifiedComparisonEssay = comparisonHasVerifiedChanges && analysis.comparison?.revisedEssay?.trim()
     ? analysis.comparison.revisedEssay
     : null;
+  const requestComparison = useCallback(async (force = false) => {
+    if (!onRequestComparison) return;
+    const requestKey = analysis.run?.assessmentId || `${essay.length}:${analysis.scores.overall}`;
+    if (!force && comparisonRequestKeyRef.current === requestKey) return;
+    comparisonRequestKeyRef.current = requestKey;
+    setComparisonLoading(true);
+    setComparisonError(null);
+    try {
+      await onRequestComparison();
+    } catch (error) {
+      setComparisonError(error instanceof Error ? error.message : 'Không thể tạo bản đối chiếu.');
+    } finally {
+      setComparisonLoading(false);
+    }
+  }, [analysis.run?.assessmentId, analysis.scores.overall, essay.length, onRequestComparison]);
+
   const fixedFlowPreview = useMemo(
     () => buildFixedFlowPreview(analysis, essay, macroArgumentChapters),
     [analysis, essay, macroArgumentChapters],
@@ -2116,6 +2159,11 @@ export default function WritingReviewWorkbench({ prompt, essay, analysis, onStar
 
   return (
     <div className="flex h-full min-h-0 w-full flex-col gap-4">
+      {analysis.run?.status === 'partial' ? (
+        <div className="shrink-0 rounded-[12px] border border-amber-300/60 bg-amber-50 px-4 py-2 font-sans text-[11px] text-amber-900">
+          Một phần đánh giá chưa hoàn tất. Các nhận xét hiển thị vẫn đã được xác minh, nhưng kết quả có thể chưa bao phủ đầy đủ mọi tiêu chí.
+        </div>
+      ) : null}
       <header className="grid shrink-0 items-stretch" style={{ gridTemplateColumns: workspaceGridTemplate }}>
         <section
           className="flex min-w-0 items-center rounded-[20px] bg-white p-3 shadow-[0_2px_12px_rgba(0,0,0,0.03),0_0_0_1px_rgba(0,0,0,0.04)]"
@@ -2149,6 +2197,14 @@ export default function WritingReviewWorkbench({ prompt, essay, analysis, onStar
               setMode(nextMode);
               setSelectedCommandId(null);
               if (nextMode === 'argument') setArgumentView(hasConfirmedFindings ? 'essay' : 'map');
+              if (
+                nextMode === 'comparison'
+                && hasConfirmedFindings
+                && !verifiedComparisonEssay
+                && onRequestComparison
+              ) {
+                void requestComparison();
+              }
             }}
           />
         </section>
@@ -2249,7 +2305,24 @@ export default function WritingReviewWorkbench({ prompt, essay, analysis, onStar
                 changes={analysis.comparison?.changes}
               />
             ) : hasConfirmedFindings ? (
-              <MissingComparisonData prompt={prompt} essay={essay} />
+              comparisonLoading ? (
+                <div className="flex h-full items-center justify-center rounded-[20px] bg-white font-sans text-[13px] text-[#565B63]">
+                  Đang tạo bản đối chiếu…
+                </div>
+              ) : comparisonError ? (
+                <div className="flex h-full flex-col items-center justify-center gap-3 rounded-[20px] bg-white p-6 text-center font-sans text-[12px] text-[#B42318]">
+                  <p>{comparisonError}</p>
+                  <button
+                    type="button"
+                    onClick={() => void requestComparison(true)}
+                    className="rounded-[8px] bg-[#171717] px-3 py-2 font-semibold text-white"
+                  >
+                    Thử lại
+                  </button>
+                </div>
+              ) : (
+                <MissingComparisonData prompt={prompt} essay={essay} />
+              )
             ) : (
               <ComparisonReviewPanel
                 prompt={prompt}

@@ -1,0 +1,1496 @@
+[
+ {
+  "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+  "band": 7,
+  "rationaleVi": "Bài luận sử dụng từ vựng phong phú và đa dạng, bao gồm nhiều thuật ngữ chuyên đề và cách diễn đạt tự nhiên, nhưng có một số lỗi về chọn từ và độ chính xác như 'composes' và 'mental issues', làm giảm sự tinh tế trong biểu đạt.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "composes",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn dùng 'composes' nhưng trong ngữ cảnh này, nghĩa là 'comprises' hoặc 'constitutes' không phù hợp. 'Compose' thường dùng để chỉ việc tạo thành hoặc sáng tạo, nên không tự nhiên khi nói về gánh nặng tài chính.",
+    "repairVi": "Thay 'composes' bằng 'constitutes'.",
+    "replacementText": "constitutes"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "mental issues",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "từ không chính xác",
+    "explanationVi": "Bạn dùng 'mental issues' nhưng trong ngữ cảnh về sự cô đơn và nhạy cảm, 'psychological problems' hoặc 'emotional issues' sẽ chính xác hơn vì 'mental issues' có thể quá rộng và không tập trung.",
+    "repairVi": "Thay 'mental issues' bằng 'psychological problems'.",
+    "replacementText": "psychological problems"
+   },
+   {
+    "id": "find1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "composes a significant financial burden",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn dùng 'composes' mà không phù hợp vì từ này thường chỉ sáng tác hoặc viết, không kết hợp tự nhiên với 'burden'. Cần dùng 'constitutes' hoặc 'poses' để chỉ sự cấu thành.",
+    "repairVi": "Thay 'composes' bằng 'constitutes' hoặc 'poses'.",
+    "replacementText": "constitutes a significant financial burden"
+   },
+   {
+    "id": "find2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "mental issues about loneliness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'mental issues' quá chung và 'about loneliness' không chính xác. Cần dùng 'psychological challenges related to loneliness' đểprecise hơn.",
+    "repairVi": "Thay 'mental issues about loneliness' bằng 'psychological challenges related to loneliness'.",
+    "replacementText": "psychological challenges related to loneliness"
+   },
+   {
+    "id": "find3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "more proactively",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn dùng 'proactively' nhưng từ này có nghĩa là chủ động trước vấn đề, không phù hợp ở đây. Cần dùng 'effectively' hoặc 'actively' để chỉ sự hiệu quả.",
+    "repairVi": "Thay 'more proactively' bằng 'more effectively'.",
+    "replacementText": "more effectively"
+   },
+   {
+    "id": "find4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "students’career",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn thiếu khoảng cách giữa từ sở hữu 'students’' và danh từ 'career', cần thêm khoảng trắng.",
+    "repairVi": "Thêm khoảng trắng: 'students’ career'.",
+    "replacementText": "students' career"
+   },
+   {
+    "id": "find5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "knowledge about cultures",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'knowledge about cultures' nhưng collocation tự nhiên hơn là 'knowledge of cultures'.",
+    "repairVi": "Thay 'about' bằng 'of'.",
+    "replacementText": "knowledge of cultures"
+   },
+   {
+    "id": "find6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "career chances",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không chính xác",
+    "explanationVi": "Bạn dùng 'career chances' nhưng collocation thông dụng hơn là 'career opportunities'.",
+    "repairVi": "Thay 'chances' bằng 'opportunities'.",
+    "replacementText": "career opportunities"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "composes",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'composes' nhưng trong ngữ cảnh này, nghĩa là 'comprises' hoặc 'constitutes' không phù hợp. 'Compose' thường dùng để chỉ việc tạo thành hoặc sáng tạo, nên không tự nhiên khi nói về gánh nặng tài chính.",
+      "repairVi": "Thay 'composes' bằng 'constitutes'.",
+      "replacementText": "constitutes"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "mental issues",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "từ không chính xác",
+      "explanationVi": "Bạn dùng 'mental issues' nhưng trong ngữ cảnh về sự cô đơn và nhạy cảm, 'psychological problems' hoặc 'emotional issues' sẽ chính xác hơn vì 'mental issues' có thể quá rộng và không tập trung.",
+      "repairVi": "Thay 'mental issues' bằng 'psychological problems'.",
+      "replacementText": "psychological problems"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "composes a significant financial burden",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'composes' mà không phù hợp vì từ này thường chỉ sáng tác hoặc viết, không kết hợp tự nhiên với 'burden'. Cần dùng 'constitutes' hoặc 'poses' để chỉ sự cấu thành.",
+      "repairVi": "Thay 'composes' bằng 'constitutes' hoặc 'poses'.",
+      "replacementText": "constitutes a significant financial burden"
+     },
+     {
+      "id": "find2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "mental issues about loneliness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'mental issues' quá chung và 'about loneliness' không chính xác. Cần dùng 'psychological challenges related to loneliness' đểprecise hơn.",
+      "repairVi": "Thay 'mental issues about loneliness' bằng 'psychological challenges related to loneliness'.",
+      "replacementText": "psychological challenges related to loneliness"
+     },
+     {
+      "id": "find3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "more proactively",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'proactively' nhưng từ này có nghĩa là chủ động trước vấn đề, không phù hợp ở đây. Cần dùng 'effectively' hoặc 'actively' để chỉ sự hiệu quả.",
+      "repairVi": "Thay 'more proactively' bằng 'more effectively'.",
+      "replacementText": "more effectively"
+     },
+     {
+      "id": "find4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "students’career",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn thiếu khoảng cách giữa từ sở hữu 'students’' và danh từ 'career', cần thêm khoảng trắng.",
+      "repairVi": "Thêm khoảng trắng: 'students’ career'.",
+      "replacementText": "students' career"
+     },
+     {
+      "id": "find5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "knowledge about cultures",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'knowledge about cultures' nhưng collocation tự nhiên hơn là 'knowledge of cultures'.",
+      "repairVi": "Thay 'about' bằng 'of'.",
+      "replacementText": "knowledge of cultures"
+     },
+     {
+      "id": "find6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "career chances",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không chính xác",
+      "explanationVi": "Bạn dùng 'career chances' nhưng collocation thông dụng hơn là 'career opportunities'.",
+      "repairVi": "Thay 'chances' bằng 'opportunities'.",
+      "replacementText": "career opportunities"
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "composes a significant financial burden",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cách搭配 từ",
+      "explanationVi": "Bạn dùng 'composes' không chính xác vì nó thường có nghĩa là 'soạn' hoặc 'biên soạn', không phù hợp để mô tả 'financial burden'. Từ chính xác hơn là 'constitutes' hoặc 'creates'.",
+      "repairVi": "Thay 'composes' bằng 'constitutes'.",
+      "replacementText": "constitutes"
+     },
+     {
+      "id": "find2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "mental issues about loneliness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'mental issues about loneliness' nghe không tự nhiên trong tiếng Anh học thuật. Thường nói 'mental health issues' hoặc 'psychological problems related to loneliness'.",
+      "repairVi": "Thay 'mental issues about loneliness' bằng 'mental health issues'.",
+      "replacementText": "mental health issues"
+     },
+     {
+      "id": "find3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "more proactively",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ dùng trong cụm",
+      "explanationVi": "Bạn dùng 'proactively' có nghĩa là 'chủ động', nhưng ở đây để mô tả việc 'master the language', từ phù hợp hơn là 'effectively' hoặc 'actively' để nhấn mạnh hiệu quả.",
+      "repairVi": "Thay 'proactively' bằng 'effectively'.",
+      "replacementText": "effectively"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+  "band": 5,
+  "rationaleVi": "Bài viết sử dụng một loạt từ vocabulary vừa phải nhưng có nhiều lỗi sai từ và搭配 không tự nhiên, làm giảm độ chính xác và tự nhiên.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "extreme sport participation",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'extreme sport participation' nhưng trong tiếng Anh tự nhiên hơn là 'participation in extreme sports'.",
+    "repairVi": "Thay bằng 'participation in extreme sports'.",
+    "replacementText": "participation in extreme sports"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "their liberty",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ chọn",
+    "explanationVi": "Bạn dùng 'liberty' nhưng trong ngữ cảnh này, 'right' phù hợp hơn để chỉ quyền tự do cá nhân.",
+    "repairVi": "Thay bằng 'their right'.",
+    "replacementText": "their right"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "dangerous games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "từ quá rộng",
+    "explanationVi": "Bạn dùng 'games' nhưng 'sports' cụ thể hơn và phù hợp với chủ đề thể thao nguy hiểm.",
+    "repairVi": "Thay bằng 'dangerous sports'.",
+    "replacementText": "dangerous sports"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "life-threatening for residents",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai hình thức từ",
+    "explanationVi": "Bạn dùng 'life-threatening' như danh từ, nhưng nó là tính từ và cần đi kèm danh từ như 'injuries' để hoàn chỉnh nghĩa.",
+    "repairVi": "Thay bằng 'life-threatening injuries'.",
+    "replacementText": "life-threatening injuries"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "influence their lives",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ chọn",
+    "explanationVi": "Bạn dùng 'influence' nhưng trong ngữ cảnh rủi ro, 'affect' hoặc 'endanger' chính xác hơn để chỉ tác động tiêu cực.",
+    "repairVi": "Thay bằng 'affect their lives'.",
+    "replacementText": "affect their lives"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "highly public resentment",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'highly public' nhưng 'widespread public' là cách diễn đạt tự nhiên hơn trong tiếng Anh.",
+    "repairVi": "Thay bằng 'widespread public resentment'.",
+    "replacementText": "widespread public resentment"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "supplant people’s lives",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ nghiêm trọng",
+    "explanationVi": "Bạn dùng 'supplant' có nghĩa là thay thế, nhưng ở đây bạn muốn nói 'save' (cứu). Lỗi sai từ này ảnh hưởng trực tiếp đến nghĩa.",
+    "repairVi": "Thay bằng 'save people’s lives'.",
+    "replacementText": "save people’s lives"
+   },
+   {
+    "id": "lex3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "with imposing",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai cụm từ",
+    "explanationVi": "Bạn dùng 'with imposing' không đúng; nên dùng 'by imposing' hoặc 'with the imposition of'.",
+    "repairVi": "thay bằng 'by imposing'",
+    "replacementText": "by imposing"
+   },
+   {
+    "id": "lex5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "excessive games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "Bạn dùng 'excessive games' nhưng ở đây nên nói 'dangerous sports' hoặc 'risky activities'.",
+    "repairVi": "thay bằng 'dangerous sports'",
+    "replacementText": "dangerous sports"
+   },
+   {
+    "id": "lex6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "individuals' selection including their preferences of games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ không tự nhiên",
+    "explanationVi": "Cụm 'selection including their preferences of games' awkward; nên dùng 'choice of sports' hoặc 'preferences in sports'.",
+    "repairVi": "thay bằng 'individuals' choice of sports'",
+    "replacementText": "individuals' choice of sports"
+   },
+   {
+    "id": "error2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "minimise the risk of life-threatening for residents",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu danh từ",
+    "explanationVi": "Bạn dùng 'life-threatening' như danh từ, nhưng đây là tính từ, nên thêm 'injuries' hoặc 'risks' để chính xác.",
+    "repairVi": "thay 'life-threatening for residents' bằng 'life-threatening injuries'",
+    "replacementText": "minimise the risk of life-threatening injuries"
+   },
+   {
+    "id": "error3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "preventing people from excessive games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn dùng 'excessive' có nghĩa là quá mức, nhưng ý bạn là thể thao nguy hiểm, nên dùng 'dangerous' hoặc 'risky'.",
+    "repairVi": "thay 'excessive games' bằng 'dangerous sports'",
+    "replacementText": "preventing people from dangerous sports"
+   },
+   {
+    "id": "error4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "due to strike a balance",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ sai",
+    "explanationVi": "Bạn dùng 'due to' để chỉ mục đích, nhưng đúng nên là 'in order to' hoặc 'to'.",
+    "repairVi": "thay 'due to' bằng 'in order to'",
+    "replacementText": "in order to strike a balance"
+   },
+   {
+    "id": "error5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "similar to this",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ không tự nhiên",
+    "explanationVi": "Bạn dùng 'similar to this' nhưng trong ngữ cảnh so sánh, 'similarly' hoặc 'likewise' tự nhiên hơn.",
+    "repairVi": "thay 'similar to this' bằng 'similarly'",
+    "replacementText": "similarly"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "extreme sport participation",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'extreme sport participation' nhưng trong tiếng Anh tự nhiên hơn là 'participation in extreme sports'.",
+      "repairVi": "Thay bằng 'participation in extreme sports'.",
+      "replacementText": "participation in extreme sports"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "their liberty",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ chọn",
+      "explanationVi": "Bạn dùng 'liberty' nhưng trong ngữ cảnh này, 'right' phù hợp hơn để chỉ quyền tự do cá nhân.",
+      "repairVi": "Thay bằng 'their right'.",
+      "replacementText": "their right"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "dangerous games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "từ quá rộng",
+      "explanationVi": "Bạn dùng 'games' nhưng 'sports' cụ thể hơn và phù hợp với chủ đề thể thao nguy hiểm.",
+      "repairVi": "Thay bằng 'dangerous sports'.",
+      "replacementText": "dangerous sports"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "life-threatening for residents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai hình thức từ",
+      "explanationVi": "Bạn dùng 'life-threatening' như danh từ, nhưng nó là tính từ và cần đi kèm danh từ như 'injuries' để hoàn chỉnh nghĩa.",
+      "repairVi": "Thay bằng 'life-threatening injuries'.",
+      "replacementText": "life-threatening injuries"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "influence their lives",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ chọn",
+      "explanationVi": "Bạn dùng 'influence' nhưng trong ngữ cảnh rủi ro, 'affect' hoặc 'endanger' chính xác hơn để chỉ tác động tiêu cực.",
+      "repairVi": "Thay bằng 'affect their lives'.",
+      "replacementText": "affect their lives"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "highly public resentment",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'highly public' nhưng 'widespread public' là cách diễn đạt tự nhiên hơn trong tiếng Anh.",
+      "repairVi": "Thay bằng 'widespread public resentment'.",
+      "replacementText": "widespread public resentment"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "supplant people’s lives",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ nghiêm trọng",
+      "explanationVi": "Bạn dùng 'supplant' có nghĩa là thay thế, nhưng ở đây bạn muốn nói 'save' (cứu). Lỗi sai từ này ảnh hưởng trực tiếp đến nghĩa.",
+      "repairVi": "Thay bằng 'save people’s lives'.",
+      "replacementText": "save people’s lives"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "lex1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "supplant people’s lives",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "Bạn dùng 'supplant' nghĩa là thay thế, nhưng ở đây ý bạn là 'cứu sống' hoặc 'bảo vệ'.",
+      "repairVi": "thay bằng 'save'",
+      "replacementText": "save people’s lives"
+     },
+     {
+      "id": "lex2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "life-threatening for residents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'life-threatening for residents' không tự nhiên; nên dùng 'life-threatening injuries' hoặc 'risk to residents'.",
+      "repairVi": "thay bằng 'life-threatening injuries for residents'",
+      "replacementText": "life-threatening injuries for residents"
+     },
+     {
+      "id": "lex3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "with imposing",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cụm từ",
+      "explanationVi": "Bạn dùng 'with imposing' không đúng; nên dùng 'by imposing' hoặc 'with the imposition of'.",
+      "repairVi": "thay bằng 'by imposing'",
+      "replacementText": "by imposing"
+     },
+     {
+      "id": "lex4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "highly public resentment",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'highly public' không tự nhiên; nên dùng 'widespread public' hoặc 'strong public'.",
+      "repairVi": "thay bằng 'widespread public resentment'",
+      "replacementText": "widespread public resentment"
+     },
+     {
+      "id": "lex5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "excessive games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "Bạn dùng 'excessive games' nhưng ở đây nên nói 'dangerous sports' hoặc 'risky activities'.",
+      "repairVi": "thay bằng 'dangerous sports'",
+      "replacementText": "dangerous sports"
+     },
+     {
+      "id": "lex6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "individuals' selection including their preferences of games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không tự nhiên",
+      "explanationVi": "Cụm 'selection including their preferences of games' awkward; nên dùng 'choice of sports' hoặc 'preferences in sports'.",
+      "repairVi": "thay bằng 'individuals' choice of sports'",
+      "replacementText": "individuals' choice of sports"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "supplant people’s lives",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'supplant' có nghĩa là thay thế, nhưng trong ngữ cảnh nên là 'save' hoặc 'preserve' để bảo vệ mạng sống.",
+      "repairVi": "thay 'supplant' bằng 'save'",
+      "replacementText": "save people’s lives"
+     },
+     {
+      "id": "error2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "minimise the risk of life-threatening for residents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu danh từ",
+      "explanationVi": "Bạn dùng 'life-threatening' như danh từ, nhưng đây là tính từ, nên thêm 'injuries' hoặc 'risks' để chính xác.",
+      "repairVi": "thay 'life-threatening for residents' bằng 'life-threatening injuries'",
+      "replacementText": "minimise the risk of life-threatening injuries"
+     },
+     {
+      "id": "error3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "preventing people from excessive games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'excessive' có nghĩa là quá mức, nhưng ý bạn là thể thao nguy hiểm, nên dùng 'dangerous' hoặc 'risky'.",
+      "repairVi": "thay 'excessive games' bằng 'dangerous sports'",
+      "replacementText": "preventing people from dangerous sports"
+     },
+     {
+      "id": "error4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "due to strike a balance",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ sai",
+      "explanationVi": "Bạn dùng 'due to' để chỉ mục đích, nhưng đúng nên là 'in order to' hoặc 'to'.",
+      "repairVi": "thay 'due to' bằng 'in order to'",
+      "replacementText": "in order to strike a balance"
+     },
+     {
+      "id": "error5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "similar to this",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'similar to this' nhưng trong ngữ cảnh so sánh, 'similarly' hoặc 'likewise' tự nhiên hơn.",
+      "repairVi": "thay 'similar to this' bằng 'similarly'",
+      "replacementText": "similarly"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+  "band": 6,
+  "rationaleVi": "Bài viết có khả năng sử dụng từ vựng ở mức khá, nhưng tồn tại nhiều lỗi sai lựa chọn từ và collocation không tự nhiên, làm giảm độ chính xác ở mức độ vừa phải. Tuy nhiên, ý nghĩa chung vẫn được truyền đạt rõ ràng.",
+  "findings": [
+   {
+    "id": "find1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "bring benefits for",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Collocation không chính xác",
+    "explanationVi": "Bạn sử dụng 'bring benefits for' nhưng cách nói tự nhiên trong tiếng Anh là 'bring benefits to' hoặc 'benefit'. 'For' không phù hợp với cấu trúc này.",
+    "repairVi": "Thay 'for' bằng 'to' hoặc sử dụng 'benefit'.",
+    "replacementText": "bring benefits to"
+   },
+   {
+    "id": "find2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "strict",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "Bạn dùng 'strict' nhưng trong bối cảnh này, ý bạn là trở nên kỷ luật hơn, nên 'disciplined' phù hợp hơn. 'Strict' có nghĩa là nghiêm khắc, thường áp dụng cho người khác.",
+    "repairVi": "Thay 'strict' bằng 'disciplined'.",
+    "replacementText": "disciplined"
+   },
+   {
+    "id": "find3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "solving problems skills",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Collocation không tự nhiên",
+    "explanationVi": "Cụm từ này không tự nhiên trong tiếng Anh. Cách nói chính xác là 'problem-solving skills' để chỉ kỹ năng giải quyết vấn đề.",
+    "repairVi": "Sử dụng 'problem-solving skills' thay vì 'solving problems skills'.",
+    "replacementText": "problem-solving skills"
+   },
+   {
+    "id": "find4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "save their time",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "Bạn muốn nói rằng青少年 nên sử dụng thời gian một cách hữu ích, nhưng 'save their time' có nghĩa là tiết kiệm thời gian, không phù hợp ở đây. Cụm từ tự nhiên là 'use their time wisely'.",
+    "repairVi": "Thay 'save their time' bằng 'use their time wisely'.",
+    "replacementText": "use their time wisely"
+   },
+   {
+    "id": "find5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "ensured",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "'Ensured' có nghĩa là đảm bảo, nhưng sức khỏe tinh thần không thể được đảm bảo tuyệt đối, chỉ có thể cải thiện hoặc duy trì. Nên dùng 'improved'.",
+    "repairVi": "Thay 'ensured' bằng 'improved'.",
+    "replacementText": "improved"
+   },
+   {
+    "id": "find6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "scenery",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "'Scenery' thường chỉ phong cảnh thiên nhiên, nhưng ở đây bạn nói về khu phố, nên 'environment' phù hợp hơn để mô tả môi trường sống.",
+    "repairVi": "Thay 'scenery' bằng 'environment'.",
+    "replacementText": "environment"
+   },
+   {
+    "id": "find7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "fresher",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "'Fresher' không thường dùng để mô tả môi trường. Bạn có thể muốn nói 'cleaner' hoặc 'more pleasant' để thể hiện sự sạch sẽ hơn.",
+    "repairVi": "Thay 'fresher' bằng 'cleaner'.",
+    "replacementText": "cleaner"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "people in difficulties",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "搭配 không tự nhiên",
+    "explanationVi": "Cụm từ 'people in difficulties' không thông dụng; cách diễn đạt tự nhiên hơn là 'people in need' hoặc 'people facing difficulties'.",
+    "repairVi": "Thay bằng 'people in need'.",
+    "replacementText": "people in need"
+   },
+   {
+    "id": "find2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "their mental health will be ensured",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lựa chọn từ không chính xác",
+    "explanationVi": "Bạn dùng 'ensured' nhưng trong bối cảnh này, ý là cải thiện hoặc duy trì sức khỏe tinh thần, nên từ 'improved' hoặc 'maintained' phù hợp hơn.",
+    "repairVi": "Thay 'ensured' bằng 'improved'.",
+    "replacementText": "improved"
+   },
+   {
+    "id": "find4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "giving help to humans",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai register hoặc không tự nhiên",
+    "explanationVi": "Bạn dùng 'humans' nhưng trong ngữ cảnh xã hội, 'people' là từ tự nhiên hơn. 'Humans' quá sinh học.",
+    "repairVi": "Thay 'giving help to humans' bằng 'helping people'.",
+    "replacementText": "helping people"
+   },
+   {
+    "id": "find5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "making the scenery of the local neighborhood more stunning and fresher",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không phù hợp",
+    "explanationVi": "Bạn dùng 'fresher' với 'scenery' nhưng từ này thường dùng cho không khí hoặc đồ vật, nên 'cleaner' hoặc 'more attractive' tốt hơn.",
+    "repairVi": "Thay 'fresher' bằng 'cleaner'.",
+    "replacementText": "cleaner"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "bring benefits for",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không chính xác",
+      "explanationVi": "Bạn sử dụng 'bring benefits for' nhưng cách nói tự nhiên trong tiếng Anh là 'bring benefits to' hoặc 'benefit'. 'For' không phù hợp với cấu trúc này.",
+      "repairVi": "Thay 'for' bằng 'to' hoặc sử dụng 'benefit'.",
+      "replacementText": "bring benefits to"
+     },
+     {
+      "id": "find2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "strict",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "Bạn dùng 'strict' nhưng trong bối cảnh này, ý bạn là trở nên kỷ luật hơn, nên 'disciplined' phù hợp hơn. 'Strict' có nghĩa là nghiêm khắc, thường áp dụng cho người khác.",
+      "repairVi": "Thay 'strict' bằng 'disciplined'.",
+      "replacementText": "disciplined"
+     },
+     {
+      "id": "find3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "solving problems skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không tự nhiên",
+      "explanationVi": "Cụm từ này không tự nhiên trong tiếng Anh. Cách nói chính xác là 'problem-solving skills' để chỉ kỹ năng giải quyết vấn đề.",
+      "repairVi": "Sử dụng 'problem-solving skills' thay vì 'solving problems skills'.",
+      "replacementText": "problem-solving skills"
+     },
+     {
+      "id": "find4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "save their time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "Bạn muốn nói rằng青少年 nên sử dụng thời gian một cách hữu ích, nhưng 'save their time' có nghĩa là tiết kiệm thời gian, không phù hợp ở đây. Cụm từ tự nhiên là 'use their time wisely'.",
+      "repairVi": "Thay 'save their time' bằng 'use their time wisely'.",
+      "replacementText": "use their time wisely"
+     },
+     {
+      "id": "find5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "ensured",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "'Ensured' có nghĩa là đảm bảo, nhưng sức khỏe tinh thần không thể được đảm bảo tuyệt đối, chỉ có thể cải thiện hoặc duy trì. Nên dùng 'improved'.",
+      "repairVi": "Thay 'ensured' bằng 'improved'.",
+      "replacementText": "improved"
+     },
+     {
+      "id": "find6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "scenery",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "'Scenery' thường chỉ phong cảnh thiên nhiên, nhưng ở đây bạn nói về khu phố, nên 'environment' phù hợp hơn để mô tả môi trường sống.",
+      "repairVi": "Thay 'scenery' bằng 'environment'.",
+      "replacementText": "environment"
+     },
+     {
+      "id": "find7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "fresher",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "'Fresher' không thường dùng để mô tả môi trường. Bạn có thể muốn nói 'cleaner' hoặc 'more pleasant' để thể hiện sự sạch sẽ hơn.",
+      "repairVi": "Thay 'fresher' bằng 'cleaner'.",
+      "replacementText": "cleaner"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "solving problems skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai hình thức từ",
+      "explanationVi": "Bạn đã viết 'solving problems skills', đây là sai hình thức từ tổng hợp; từ chính xác là 'problem-solving skills'.",
+      "repairVi": "Sửa thành 'problem-solving skills'.",
+      "replacementText": "problem-solving skills"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "save their time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配 sai",
+      "explanationVi": "Bạn dùng 'save their time', nhưng nghĩa thông thường là tiết kiệm thời gian; ở đây bạn muốn nói sử dụng thời gian hiệu quả, nên dùng cụm tự nhiên hơn.",
+      "repairVi": "Thay bằng 'use their time wisely'.",
+      "replacementText": "use their time wisely"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "ensured",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chọn sai từ",
+      "explanationVi": "Bạn dùng 'ensured' cho sức khỏe tinh thần, nhưng từ này có nghĩa là đảm bảo, không phù hợp; nên dùng 'protected' hoặc 'improved' để chính xác hơn.",
+      "repairVi": "Thay bằng 'protected'.",
+      "replacementText": "protected"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "people in difficulties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配 không tự nhiên",
+      "explanationVi": "Cụm từ 'people in difficulties' không thông dụng; cách diễn đạt tự nhiên hơn là 'people in need' hoặc 'people facing difficulties'.",
+      "repairVi": "Thay bằng 'people in need'.",
+      "replacementText": "people in need"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "scenery",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chọn sai từ",
+      "explanationVi": "Bạn dùng 'scenery' để chỉ khu phố, nhưng từ này thường chỉ phong cảnh thiên nhiên; nên dùng 'appearance' hoặc 'environment' cho phù hợp.",
+      "repairVi": "Thay bằng 'environment'.",
+      "replacementText": "environment"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "solving problems skills",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ ghép",
+      "explanationVi": "Bạn viết 'solving problems skills' nhưng cụm đúng là 'problem-solving skills' để chỉ kỹ năng giải quyết vấn đề.",
+      "repairVi": "Thay 'solving problems skills' bằng 'problem-solving skills'.",
+      "replacementText": "problem-solving skills"
+     },
+     {
+      "id": "find2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "their mental health will be ensured",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lựa chọn từ không chính xác",
+      "explanationVi": "Bạn dùng 'ensured' nhưng trong bối cảnh này, ý là cải thiện hoặc duy trì sức khỏe tinh thần, nên từ 'improved' hoặc 'maintained' phù hợp hơn.",
+      "repairVi": "Thay 'ensured' bằng 'improved'.",
+      "replacementText": "improved"
+     },
+     {
+      "id": "find3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "people in difficulties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn viết 'people in difficulties' nhưng cách nói tự nhiên hơn là 'people in difficulty' hoặc 'people in need'.",
+      "repairVi": "Thay 'people in difficulties' bằng 'people in need'.",
+      "replacementText": "people in need"
+     },
+     {
+      "id": "find4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "giving help to humans",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai register hoặc không tự nhiên",
+      "explanationVi": "Bạn dùng 'humans' nhưng trong ngữ cảnh xã hội, 'people' là từ tự nhiên hơn. 'Humans' quá sinh học.",
+      "repairVi": "Thay 'giving help to humans' bằng 'helping people'.",
+      "replacementText": "helping people"
+     },
+     {
+      "id": "find5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "making the scenery of the local neighborhood more stunning and fresher",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không phù hợp",
+      "explanationVi": "Bạn dùng 'fresher' với 'scenery' nhưng từ này thường dùng cho không khí hoặc đồ vật, nên 'cleaner' hoặc 'more attractive' tốt hơn.",
+      "repairVi": "Thay 'fresher' bằng 'cleaner'.",
+      "replacementText": "cleaner"
+     }
+    ]
+   }
+  ]
+ }
+]

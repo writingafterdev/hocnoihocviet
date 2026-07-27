@@ -1,0 +1,1333 @@
+[
+ {
+  "fileId": "t2-animals-5.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết đề cập đến câu hỏi nhưng vị trí không rõ ràng ngay từ đầu, và một số ý chính chưa được phát triển đầy đủ hoặc thiếu sự hỗ trợ cụ thể.",
+  "findings": [
+   {
+    "id": "intro_no_position",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the majority people think it is necessary to save these creatures",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cam kết vị trí rõ ràng",
+    "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối ngay từ phần giới thiệu, khiến người đọc khó xác định lập trường của bạn.",
+    "repairVi": "Hãy thêm một câu trực tiếp nêu vị trí, ví dụ: 'Tôi phản đối ý kiến này vì nhiều lý do.'"
+   },
+   {
+    "id": "bp1_weak_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "human activities over these tyyears have largely affected living spacess of animals",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Phát triển ý trách nhiệm chưa đủ",
+    "explanationVi": "Bạn_assert_ rằng hoạt động của con người ảnh hưởng đến động vật nhưng chưa giải thích đầy đủ tại sao con người phải chịu trách nhiệm và cần hành động để ngăn chặn sự tuyệt chủng.",
+    "repairVi": "Thêm chi tiết về hậu quả cụ thể hoặc lý do đạo đức để củng cố tại sao con người cần can thiệp."
+   },
+   {
+    "id": "conclusion_new_idea",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "for our children could see more beautiful creaturesf",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý tưởng mới không được hỗ trợ",
+    "explanationVi": "Phần kết đề cập đến việc cho con cái xem sinh vật đẹp, nhưng ý tưởng này chưa được giải thích hoặc chứng minh trong phần thân bài.",
+    "repairVi": "Thêm một câu trong thân bài để giải thích lợi ích này, hoặc bỏ nó khỏi phần kết để tập trung vào các ý đã phát triển."
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "intro_no_position",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the majority people think it is necessary to save these creatures",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cam kết vị trí rõ ràng",
+      "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối ngay từ phần giới thiệu, khiến người đọc khó xác định lập trường của bạn.",
+      "repairVi": "Hãy thêm một câu trực tiếp nêu vị trí, ví dụ: 'Tôi phản đối ý kiến này vì nhiều lý do.'"
+     },
+     {
+      "id": "bp1_weak_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "human activities over these tyyears have largely affected living spacess of animals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phát triển ý trách nhiệm chưa đủ",
+      "explanationVi": "Bạn_assert_ rằng hoạt động của con người ảnh hưởng đến động vật nhưng chưa giải thích đầy đủ tại sao con người phải chịu trách nhiệm và cần hành động để ngăn chặn sự tuyệt chủng.",
+      "repairVi": "Thêm chi tiết về hậu quả cụ thể hoặc lý do đạo đức để củng cố tại sao con người cần can thiệp."
+     },
+     {
+      "id": "conclusion_new_idea",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "for our children could see more beautiful creaturesf",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý tưởng mới không được hỗ trợ",
+      "explanationVi": "Phần kết đề cập đến việc cho con cái xem sinh vật đẹp, nhưng ý tưởng này chưa được giải thích hoặc chứng minh trong phần thân bài.",
+      "repairVi": "Thêm một câu trong thân bài để giải thích lợi ích này, hoặc bỏ nó khỏi phần kết để tập trung vào các ý đã phát triển."
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "cause-t2-band-6.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận phát triển các ý chính nhưng vị trí không rõ ràng ở đoạn mở bài, và một đoạn văn có ý tưởng chưa hoàn chỉnh.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the following will discuss few reasonsd",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vị trí không rõ ràng",
+    "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối với ý kiến đọc sách tốt hơn trong đoạn mở bài.",
+    "repairVi": "Nên viết thẳng: 'Tôi đồng ý một phần vì...' hoặc 'Tôi phản đối vì...' để xác định rõ thái độ.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "And another reason is that...",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý tưởng chưa hoàn chỉnh",
+    "explanationVi": "Đoạn văn kết thúc đột ngột với 'And another reason is that...' mà không giải thích thêm lý do.",
+    "repairVi": "Hoàn thành câu bằng cách nêu rõ lý do hoặc bỏ đi nếu không cần thiết.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the following will discuss few reasonsd",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vị trí không rõ ràng",
+      "explanationVi": "Bạn không nêu rõ quan điểm đồng ý hay phản đối với ý kiến đọc sách tốt hơn trong đoạn mở bài.",
+      "repairVi": "Nên viết thẳng: 'Tôi đồng ý một phần vì...' hoặc 'Tôi phản đối vì...' để xác định rõ thái độ.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "And another reason is that...",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý tưởng chưa hoàn chỉnh",
+      "explanationVi": "Đoạn văn kết thúc đột ngột với 'And another reason is that...' mà không giải thích thêm lý do.",
+      "repairVi": "Hoàn thành câu bằng cách nêu rõ lý do hoặc bỏ đi nếu không cần thiết.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "And another reason is that...",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đoạn văn kết không hoàn chỉnh",
+      "explanationVi": "Đoạn văn thứ hai kết thúc với 'And another reason is that...' mà không phát triển thêm, làm mất đi sự liền mạch.",
+      "repairVi": "Hoàn thành câu hoặc xóa bỏ phần chưa hoàn thành để đoạn văn kết thúc rõ ràng.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "stuydy-t2-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận đề cập đến cả lợi ích và hại, đưa ra ý kiến, nhưng phần phát triển ý trong thân bài còn nông, nhiều điểm được khẳng định mà chưa giải thích đủ để thuyết phục.",
+  "findings": [
+   {
+    "id": "paragraph1_personal_growth",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "valuable opportunity for personal growth",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "ý chính chưa phát triển đủ",
+    "explanationVi": "Bạn đề cập 'personal growth' nhưng không giải thích làm thế nào việc sống xa nhà giúp phát triển bản thân, nên luận điểm thiếu thuyết phục.",
+    "repairVi": "Hãy giải thích cụ thể, ví dụ việc tự quản lý thời gian và tài chính rèn luyện tính tự lập.",
+    "replacementText": ""
+   },
+   {
+    "id": "paragraph2_mental_problem",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "it will pose mental problem",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "đề xuất thiếu chi tiết",
+    "explanationVi": "Bạn nói 'mental problem' do homesickness nhưng không mô tả vấn đề cụ thể và cách nó ảnh hưởng đến việc học, nên ý chưa rõ ràng.",
+    "repairVi": "Nêu rõ, ví dụ như cảm giác cô đơn dẫn đến lo âu, mất tập trung trong học tập.",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý chính chưa được phát triển đầy đủ",
+    "explanationVi": "Bạn đưa ra ý về sự phát triển cá nhân và tư duy độc lập nhưng không giải thích tại sao sống xa nhà giúp đạt được điều đó.",
+    "repairVi": "Cần thêm lý do, ví dụ như việc tự đưa ra quyết định hàng ngày rèn luyện khả năng tư duy độc lập."
+   },
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "they can spend more time on social activities in the university., which not onlyT practicges their organizing abilities but also enhancges the bond between their friend.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý về hoạt động xã hội thiếu chi tiết",
+    "explanationVi": "Bạn nói rằng hoạt động xã hội giúp nâng cao khả năng tổ chức và gắn kết bạn bè, nhưng không minh họa bằng ví dụ cụ thể.",
+    "repairVi": "Thêm ví dụ như tham gia câu lạc bộ giúp học cách quản lý thời gian và xây dựng mối quan hệ."
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nhược điểm không được giải thích",
+    "explanationVi": "Bạn khẳng định rằng thiếu tự chủ dẫn đến thời khóa biểu tệ, nhưng không giải thích tại sao hoặc như thế nào.",
+    "repairVi": "Cần lý do, ví dụ như việc tự quản lý thời gian khó khăn nếu không có sự giám sát của cha mẹ."
+   },
+   {
+    "id": "4",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "it will pose mental problem，which may be distracted when they are studying.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vấn đề sức khỏe tinh thần không được phát triển",
+    "explanationVi": "Bạn đề cập đến vấn đề tinh thần như homesickness, nhưng không giải thích cách nó ảnh hưởng đến việc học.",
+    "repairVi": "Giải thích chi tiết hơn, ví dụ như sự lo âu có thể dẫn đến giảm tập trung và hiệu quả học tập."
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "paragraph1_personal_growth",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "valuable opportunity for personal growth",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "ý chính chưa phát triển đủ",
+      "explanationVi": "Bạn đề cập 'personal growth' nhưng không giải thích làm thế nào việc sống xa nhà giúp phát triển bản thân, nên luận điểm thiếu thuyết phục.",
+      "repairVi": "Hãy giải thích cụ thể, ví dụ việc tự quản lý thời gian và tài chính rèn luyện tính tự lập.",
+      "replacementText": ""
+     },
+     {
+      "id": "paragraph2_mental_problem",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "it will pose mental problem",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "đề xuất thiếu chi tiết",
+      "explanationVi": "Bạn nói 'mental problem' do homesickness nhưng không mô tả vấn đề cụ thể và cách nó ảnh hưởng đến việc học, nên ý chưa rõ ràng.",
+      "repairVi": "Nêu rõ, ví dụ như cảm giác cô đơn dẫn đến lo âu, mất tập trung trong học tập.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "living without parents is a valuable opportunity for personal growth and the development for independent thought.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý chính chưa được phát triển đầy đủ",
+      "explanationVi": "Bạn đưa ra ý về sự phát triển cá nhân và tư duy độc lập nhưng không giải thích tại sao sống xa nhà giúp đạt được điều đó.",
+      "repairVi": "Cần thêm lý do, ví dụ như việc tự đưa ra quyết định hàng ngày rèn luyện khả năng tư duy độc lập."
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "they can spend more time on social activities in the university., which not onlyT practicges their organizing abilities but also enhancges the bond between their friend.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý về hoạt động xã hội thiếu chi tiết",
+      "explanationVi": "Bạn nói rằng hoạt động xã hội giúp nâng cao khả năng tổ chức và gắn kết bạn bè, nhưng không minh họa bằng ví dụ cụ thể.",
+      "repairVi": "Thêm ví dụ như tham gia câu lạc bộ giúp học cách quản lý thời gian và xây dựng mối quan hệ."
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "living alone will have a negative impact on studentwho lack in self-control, as they may have a bad timetable on their daily life",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nhược điểm không được giải thích",
+      "explanationVi": "Bạn khẳng định rằng thiếu tự chủ dẫn đến thời khóa biểu tệ, nhưng không giải thích tại sao hoặc như thế nào.",
+      "repairVi": "Cần lý do, ví dụ như việc tự quản lý thời gian khó khăn nếu không có sự giám sát của cha mẹ."
+     },
+     {
+      "id": "4",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "it will pose mental problem，which may be distracted when they are studying.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vấn đề sức khỏe tinh thần không được phát triển",
+      "explanationVi": "Bạn đề cập đến vấn đề tinh thần như homesickness, nhưng không giải thích cách nó ảnh hưởng đến việc học.",
+      "repairVi": "Giải thích chi tiết hơn, ví dụ như sự lo âu có thể dẫn đến giảm tập trung và hiệu quả học tập."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận đề cập đến cả hai khía cạnh của vấn đề nhưng vị trí không rõ ràng về việc 'tất cả cửa hàng' sẽ đóng cửa và phần phát triển ý trong đoạn thân bài đầu tiên chưa liên kết chặt chẽ với chủ đề.",
+  "findings": [
+   {
+    "id": "pos_clarity",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "I somewhat agree with this view",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Vị trí không rõ ràng",
+    "explanationVi": "Bạn nói 'somewhat agree' nhưng chưa rõ là đồng ý với việc 'tất cả cửa hàng' sẽ đóng cửa hay chỉ là một phần. Câu hỏi yêu cầu đồng ý hoặc không đồng ý với tuyên bố rằng tất cả cửa hàng sẽ đóng cửa.",
+    "repairVi": "Trong phần giới thiệu, hãy nêu rõ ràng rằng bạn không đồng ý rằng tất cả cửa hàng sẽ đóng cửa, nhưng đồng ý rằng online shopping sẽ dẫn đến sự đóng cửa của nhiều cửa hàng.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Online shopping provides more gchoices for consumers and it is less time consuming.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu liên kết với chủ đề chính",
+    "explanationVi": "Bạn phát triển ưu điểm của mua sắm online nhưng không chứng minh tại sao điều này sẽ dẫn đến việc đóng cửa tất cả các cửa hàng.",
+    "repairVi": "Cần giải thích rõ hơn làm thế nào các ưu điểm này khiến mọi người chuyển sang mua online, dẫn đến đóng cửa cửa hàng vật lý."
+   },
+   {
+    "id": "3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "However, some shops can give better services for clients.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Phát triển ý chưa đủ sâu",
+    "explanationVi": "Bạn khẳng định một số cửa hàng sẽ tồn tại vì dịch vụ tốt hơn, nhưng không đưa ra ví dụ cụ thể hoặc giải thích tại sao điều này ngăn cản việc đóng cửa tất cả.",
+    "repairVi": "Nên thêm chi tiết về loại cửa hàng nào sẽ tồn tại và lý do cụ thể, như cửa hàng thực phẩm tươi sống hoặc dịch vụ cá nhân hóa."
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "pos_clarity",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "I somewhat agree with this view",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Vị trí không rõ ràng",
+      "explanationVi": "Bạn nói 'somewhat agree' nhưng chưa rõ là đồng ý với việc 'tất cả cửa hàng' sẽ đóng cửa hay chỉ là một phần. Câu hỏi yêu cầu đồng ý hoặc không đồng ý với tuyên bố rằng tất cả cửa hàng sẽ đóng cửa.",
+      "repairVi": "Trong phần giới thiệu, hãy nêu rõ ràng rằng bạn không đồng ý rằng tất cả cửa hàng sẽ đóng cửa, nhưng đồng ý rằng online shopping sẽ dẫn đến sự đóng cửa của nhiều cửa hàng.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "I somewhat agree with this view",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lập trường không rõ ràng",
+      "explanationVi": "Bạn dùng 'somewhat agree' nhưng không giải thích rõ tại sao chỉ đồng ý một phần về việc tất cả cửa hàng sẽ đóng cửa.",
+      "repairVi": "Nên trình bày rõ ràng rằng bạn đồng ý rằng mua sắm online sẽ dẫn đến đóng cửa nhiều cửa hàng, nhưng không phải tất cả, và giải thích lý do."
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Online shopping provides more gchoices for consumers and it is less time consuming.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu liên kết với chủ đề chính",
+      "explanationVi": "Bạn phát triển ưu điểm của mua sắm online nhưng không chứng minh tại sao điều này sẽ dẫn đến việc đóng cửa tất cả các cửa hàng.",
+      "repairVi": "Cần giải thích rõ hơn làm thế nào các ưu điểm này khiến mọi người chuyển sang mua online, dẫn đến đóng cửa cửa hàng vật lý."
+     },
+     {
+      "id": "3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "However, some shops can give better services for clients.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phát triển ý chưa đủ sâu",
+      "explanationVi": "Bạn khẳng định một số cửa hàng sẽ tồn tại vì dịch vụ tốt hơn, nhưng không đưa ra ví dụ cụ thể hoặc giải thích tại sao điều này ngăn cản việc đóng cửa tất cả.",
+      "repairVi": "Nên thêm chi tiết về loại cửa hàng nào sẽ tồn tại và lý do cụ thể, như cửa hàng thực phẩm tươi sống hoặc dịch vụ cá nhân hóa."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận trả lời được cả hai phần câu hỏi nhưng phần phát triển ý chưa đủ sâu, thiếu chi tiết thuyết phục.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "a main factor to blame for this issue is the problem ofpeople’s conception and selfishness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu phát triển lý do",
+    "explanationVi": "Bạn_asserts that selfishness is the cause but doesn't develop how it leads to inaction.",
+    "repairVi": "Hãy phân tích sâu hơn lý do khiến mọi người bỏ qua vấn đề môi trường."
+   },
+   {
+    "id": "f2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "impose “green taxes”",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu giải thích biện pháp",
+    "explanationVi": "Bạn đề xuất 'green taxes' nhưng chưa giải thích cách chính sách này khuyến khích hành vi.",
+    "repairVi": "Mô tả cơ chế mà thuế xanh giúp giảm sử dụng phương tiện cá nhân."
+   },
+   {
+    "id": "f3",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In conclusion, individualsmust play their part",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận không tổng hợp đầy đủ",
+    "explanationVi": "Bạn kết luận chỉ nhấn mạnh vai trò cá nhân mà bỏ qua biện pháp của chính phủ đã đề cập.",
+    "repairVi": "Kết luận nên tóm tắt cả hành động của chính phủ và cá nhân."
+   },
+   {
+    "id": "f1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "they do not realize the seriousness of tpollution",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lý do giải thích không khớp với giả định của đề",
+    "explanationVi": "Bạn cho rằng mọi người không nhận ra mức độ nghiêm trọng, nhưng đề bài giả định họ nghĩ điều đó quan trọng nhưng không hành động. Cần giải thích sự mâu thuẫn này.",
+    "repairVi": "Nên giải thích rằng dù mọi người ý thức được tầm quan trọng,但他们仍 không hành động vì lý do như thói quen, tiện ích cá nhân, hoặc thiếu động lực.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "a main factor to blame for this issue is the problem ofpeople’s conception and selfishness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu phát triển lý do",
+      "explanationVi": "Bạn_asserts that selfishness is the cause but doesn't develop how it leads to inaction.",
+      "repairVi": "Hãy phân tích sâu hơn lý do khiến mọi người bỏ qua vấn đề môi trường."
+     },
+     {
+      "id": "f2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "impose “green taxes”",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu giải thích biện pháp",
+      "explanationVi": "Bạn đề xuất 'green taxes' nhưng chưa giải thích cách chính sách này khuyến khích hành vi.",
+      "repairVi": "Mô tả cơ chế mà thuế xanh giúp giảm sử dụng phương tiện cá nhân."
+     },
+     {
+      "id": "f3",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In conclusion, individualsmust play their part",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận không tổng hợp đầy đủ",
+      "explanationVi": "Bạn kết luận chỉ nhấn mạnh vai trò cá nhân mà bỏ qua biện pháp của chính phủ đã đề cập.",
+      "repairVi": "Kết luận nên tóm tắt cả hành động của chính phủ và cá nhân."
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "they do not realize the seriousness of tpollution",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do giải thích không khớp với giả định của đề",
+      "explanationVi": "Bạn cho rằng mọi người không nhận ra mức độ nghiêm trọng, nhưng đề bài giả định họ nghĩ điều đó quan trọng nhưng không hành động. Cần giải thích sự mâu thuẫn này.",
+      "repairVi": "Nên giải thích rằng dù mọi người ý thức được tầm quan trọng,但他们仍 không hành động vì lý do như thói quen, tiện ích cá nhân, hoặc thiếu động lực.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "6.5-internet-task-2.pdf",
+  "band": 8,
+  "rationaleVi": "Vị trí phản đối rõ ràng, nhất quán từ đầu đến cuối, với hai ý chính được phát triển đầy đủ bằng lý do và ví dụ, giải quyết trực tiếp câu hỏi về mức độ đồng ý.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có vị trí rõ ràng và phát triển hai ý chính, nhưng phần hỗ trợ ý kiến chưa đủ sâu, với một ví dụ lịch sử và một giả định, khiến cho lập luận chưa hoàn toàn thuyết phục.",
+  "findings": [
+   {
+    "id": "find1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lý lẽ chưa đủ sâu",
+    "explanationVi": "Bạn cần giải thích rõ hơn tại sao việc đầu tư vào chương trình không gian có thể gây hại cho nền kinh tế, ngoài việc đưa ra một ví dụ lịch sử.",
+    "repairVi": "Thêm giải thích về cách chi tiêu lớn có thể làm gánh nặng cho chính phủ và ảnh hưởng ngắn hạn.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý lẽ chưa đủ sâu",
+      "explanationVi": "Bạn cần giải thích rõ hơn tại sao việc đầu tư vào chương trình không gian có thể gây hại cho nền kinh tế, ngoài việc đưa ra một ví dụ lịch sử.",
+      "repairVi": "Thêm giải thích về cách chi tiêu lớn có thể làm gánh nặng cho chính phủ và ảnh hưởng ngắn hạn.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 9,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận đề cậpđúng cả hai phần câu hỏi nhưng phần giải thích 'tại sao' chỉcó một lý do chính vàphát triển chưa đủ sâu.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "some possible driving forces behind this trend will be proposed",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chỉđề cập một lý do duy nhất",
+    "explanationVi": "Bạn hứa luận điểm đađa nhưng chỉdevelop một lý docho câu hỏi 'tại sao' trong bài.",
+    "repairVi": "Cầndevelop thêm các lý do khác như sự cạnh tranh thị trường hoặc nhu cầu đổi mới.",
+    "replacementText": ""
+   },
+   {
+    "id": "intro_vague_position",
+    "criterion": "task_response",
+    "scope": "macro",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "some possible driving forces behind this trend will be proposed along with my attitude toward it.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Giới thiệu chưa rõ ràng về quan điểm",
+    "explanationVi": "Bạn chưa nêu rõ quan điểm ngay từ đầu; câu hỏi yêu cầu đánh giá tích cực hay tiêu cực cần một cam kết rõ ràng hơn.",
+    "repairVi": "Nên viết rõ quan điểm trong phần giới thiệu, ví dụ: 'Tôi tin rằng đây là một phát triển tích cực/tiêu cực vì...'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "some possible driving forces behind this trend will be proposed",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chỉđề cập một lý do duy nhất",
+      "explanationVi": "Bạn hứa luận điểm đađa nhưng chỉdevelop một lý docho câu hỏi 'tại sao' trong bài.",
+      "repairVi": "Cầndevelop thêm các lý do khác như sự cạnh tranh thị trường hoặc nhu cầu đổi mới.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "intro_vague_position",
+      "criterion": "task_response",
+      "scope": "macro",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "some possible driving forces behind this trend will be proposed along with my attitude toward it.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Giới thiệu chưa rõ ràng về quan điểm",
+      "explanationVi": "Bạn chưa nêu rõ quan điểm ngay từ đầu; câu hỏi yêu cầu đánh giá tích cực hay tiêu cực cần một cam kết rõ ràng hơn.",
+      "repairVi": "Nên viết rõ quan điểm trong phần giới thiệu, ví dụ: 'Tôi tin rằng đây là một phát triển tích cực/tiêu cực vì...'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "task-2-band-7-space-programs.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận trả lời rõ ràng câu hỏi với vị trí nhất quán, các ý chính được hỗ trợ bằng ví dụ, nhưng một số phần phát triển chưa đủ sâu.",
+  "findings": [
+   {
+    "id": "finding_1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý chỉ ra sự không chắc chắn nhưng chỉ phát triển một phía",
+    "explanationVi": "Bạn đề cập đến sự không chắc chắn nhưng chỉ tập trung vào hậu quả tiêu cực, chưa phân tích cả hai mặt để làm rõ tại sao kết quả có thể không chắc chắn.",
+    "repairVi": "Nên phát triển cả lý do tại sao kết quả có thể không chắc chắn và minh họa bằng ví dụ đa dạng hơn.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding_2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For instance, in many developing countries such as India and China, the shortage of educational resources causes unfair distribution in the society.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ chỉ tập trung vào giáo dục, chưa mở rộng đến bệnh viện",
+    "explanationVi": "Bạn chỉ dùng ví dụ về trường học mà chưa đề cập đến bệnh viện như gợi ý trong đề bài, khiến ý chưa đủ bao quát.",
+    "repairVi": "Có thể thêm ví dụ về bệnh viện để làm rõ hơn lợi ích của việc chi tiền cho dịch vụ công.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding_1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it is uncertain whether the outcomes of the investment on space programs will be beneficial to the national economy or the opposite may happen",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý chỉ ra sự không chắc chắn nhưng chỉ phát triển một phía",
+      "explanationVi": "Bạn đề cập đến sự không chắc chắn nhưng chỉ tập trung vào hậu quả tiêu cực, chưa phân tích cả hai mặt để làm rõ tại sao kết quả có thể không chắc chắn.",
+      "repairVi": "Nên phát triển cả lý do tại sao kết quả có thể không chắc chắn và minh họa bằng ví dụ đa dạng hơn.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding_2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For instance, in many developing countries such as India and China, the shortage of educational resources causes unfair distribution in the society.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ chỉ tập trung vào giáo dục, chưa mở rộng đến bệnh viện",
+      "explanationVi": "Bạn chỉ dùng ví dụ về trường học mà chưa đề cập đến bệnh viện như gợi ý trong đề bài, khiến ý chưa đủ bao quát.",
+      "repairVi": "Có thể thêm ví dụ về bệnh viện để làm rõ hơn lợi ích của việc chi tiền cho dịch vụ công.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "Essay-t2-band-7.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có vị trí rõ ràng và đề cập đầy đủ các phần của câu hỏi, nhưng một số ý chính chưa được phát triển đầy đủ với ví dụ hoặc lý do thuyết phục.",
+  "findings": [
+   {
+    "id": "fp2_example",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, people suffering from heart attacks and cardiovascular disease might risk getting ill while drivingp.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ chỉ khẳng định lại vấn đề",
+    "explanationVi": "Bạn đưa ra ví dụ về người mắc bệnh tim nhưng không giải thích làm sao việc kiểm tra hàng năm có thể phát hiện và loại bỏ họ.",
+    "repairVi": "Nên thêm chi tiết về cách kiểm tra sức khỏe hàng năm giúp phát hiện bệnh và ngăn chặn nguy hiểm.",
+    "replacementText": ""
+   },
+   {
+    "id": "fp3_development",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lý do chưa phát triển đủ",
+    "explanationVi": "Bạn cho rằng người trẻ dưới 50 tuổi có sức khỏe tốt nên không cần kiểm tra hàng năm, nhưng không giải thích tại sao sức khỏe tốt lại làm giảm nguy cơ tai nạn cần kiểm tra thường xuyên.",
+    "repairVi": "Nên giải thích thêm rằng người trẻ có phản xạ nhanh và ít bệnh tật, nên kiểm tra định kỳ dài hơn vẫn đảm bảo an toàn.",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "resulting in more accidents for cars over trucks",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mối liên kết giữa bằng chứng và khẳng định chưa rõ ràng",
+    "explanationVi": "Bạn đưa ra ví dụ so sánh tài xế xe tải và xe hơi ở Trung Quốc, nhưng không giải thích rõ tại sao việc thi hàng năm giúp cải thiện kỹ năng lái xe mà chỉ nêu kết quả tai nạn.",
+    "repairVi": "Nên bổ sung giải thích làm thế nào việc thi hàng năm buộc tài xế phải cập nhật kiến thức và kỹ năng, từ đó giảm tai nạn.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "it is a waste of time and money to force all citizens to take the test",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý phản biện chưa đủ phát triển liên quan đến an toàn",
+    "explanationVi": "Bạn nêu việc thi hàng năm có thể lãng phí thời gian và tiền bạc, nhưng không giải thích rõ điều này ảnh hưởng thế nào đến việc cải thiện an toàn đường bộ.",
+    "repairVi": "Nên liên kết ý này với câu hỏi chính, ví dụ: lãng phí nguồn lực có thể cản trở các biện pháp an toàn hiệu quả khác.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "fp2_example",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, people suffering from heart attacks and cardiovascular disease might risk getting ill while drivingp.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ chỉ khẳng định lại vấn đề",
+      "explanationVi": "Bạn đưa ra ví dụ về người mắc bệnh tim nhưng không giải thích làm sao việc kiểm tra hàng năm có thể phát hiện và loại bỏ họ.",
+      "repairVi": "Nên thêm chi tiết về cách kiểm tra sức khỏe hàng năm giúp phát hiện bệnh và ngăn chặn nguy hiểm.",
+      "replacementText": ""
+     },
+     {
+      "id": "fp3_development",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it is more justifiable and realistic to take the test every five to ten years for young people under the age of 50 because of their good health.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lý do chưa phát triển đủ",
+      "explanationVi": "Bạn cho rằng người trẻ dưới 50 tuổi có sức khỏe tốt nên không cần kiểm tra hàng năm, nhưng không giải thích tại sao sức khỏe tốt lại làm giảm nguy cơ tai nạn cần kiểm tra thường xuyên.",
+      "repairVi": "Nên giải thích thêm rằng người trẻ có phản xạ nhanh và ít bệnh tật, nên kiểm tra định kỳ dài hơn vẫn đảm bảo an toàn.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "resulting in more accidents for cars over trucks",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mối liên kết giữa bằng chứng và khẳng định chưa rõ ràng",
+      "explanationVi": "Bạn đưa ra ví dụ so sánh tài xế xe tải và xe hơi ở Trung Quốc, nhưng không giải thích rõ tại sao việc thi hàng năm giúp cải thiện kỹ năng lái xe mà chỉ nêu kết quả tai nạn.",
+      "repairVi": "Nên bổ sung giải thích làm thế nào việc thi hàng năm buộc tài xế phải cập nhật kiến thức và kỹ năng, từ đó giảm tai nạn.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it is a waste of time and money to force all citizens to take the test",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý phản biện chưa đủ phát triển liên quan đến an toàn",
+      "explanationVi": "Bạn nêu việc thi hàng năm có thể lãng phí thời gian và tiền bạc, nhưng không giải thích rõ điều này ảnh hưởng thế nào đến việc cải thiện an toàn đường bộ.",
+      "repairVi": "Nên liên kết ý này với câu hỏi chính, ví dụ: lãng phí nguồn lực có thể cản trở các biện pháp an toàn hiệu quả khác.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "IELTS-Writing-Task21111-6.5.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có vị trí rõ ràng và trả lời đúng câu hỏi, nhưng một ý chính trong thân bài phát triển chưa đủ sâu và thiếu cụ thể, làm giảm hiệu quả thuyết phục.",
+  "findings": [
+   {
+    "id": "finding1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "some skills are usually more important than knowledge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu cụ thể hóa ý chính",
+    "explanationVi": "Bạn nhấn mạnh rằng kỹ năng quan trọng hơn tri thức lý thuyết nhưng không nêu rõ kỹ năng nào hoặc giải thích chi tiết tại sao.",
+    "repairVi": "Hãy nêu một kỹ năng cụ thể như khả năng thích ứng hoặc giao tiếp, và giải thích cách nó vượt trội hơn tri thức lý thuyết trong thực tế.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "some skills are usually more important than knowledge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu cụ thể hóa ý chính",
+      "explanationVi": "Bạn nhấn mạnh rằng kỹ năng quan trọng hơn tri thức lý thuyết nhưng không nêu rõ kỹ năng nào hoặc giải thích chi tiết tại sao.",
+      "repairVi": "Hãy nêu một kỹ năng cụ thể như khả năng thích ứng hoặc giao tiếp, và giải thích cách nó vượt trội hơn tri thức lý thuyết trong thực tế.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "some skills are usually more important than knowledge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Phát triển ý không đủ cụ thể",
+      "explanationVi": "Bạn nêu lý do kỹ năng quan trọng hơn kiến thức lý thuyết nhưng không giải thích rõ kỹ năng nào hoặc tại sao chúng có giá trị hơn.",
+      "repairVi": "Nêu rõ loại kỹ năng cụ thể và phân tích cách chúng làm giảm giá trị của kiến thức lý thuyết.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận đề cập đến cả hai quan điểm và đưa ra ý kiến cá nhân, nhưng một số ý chưa được phát triển đầy đủ, đặc biệt trong đoạn thảo luận về án tù dài hơn, làm giảm sự thuyết phục.",
+  "findings": [
+   {
+    "id": "finding1",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it tcan deter crime",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "ý chính chưa đủ phát triển",
+    "explanationVi": "Bạn khẳng định rằng án tù dài hơn ngăn chặn tội phạm nhưng chưa đưa ra lý do cụ thể hoặc ví dụ để thuyết phục người đọc.",
+    "repairVi": "Hãy thêm chi tiết về cách án tù dài hơn ngăn chặn tội phạm, ví dụ như thông qua việc răn đe tâm lý hoặc so sánh với các nước khác.",
+    "replacementText": ""
+   },
+   {
+    "id": "F3",
+    "criterion": "task_response",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "For example, the number of police officers in the population in China is less than 1% which is much less compared with the United States. However, the crime rate in China is much lower due to the mature and well-established security camera network.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ví dụ không đủ sức thuyết phục",
+    "explanationVi": "Bạn dùng số liệu về cảnh sát để so sánh, nhưng đề bài là về camera an ninh. Cần giải thích rõ hơn mối liên hệ: tại sao việc thiếu cảnh sát lại chứng tỏ camera hiệu quả? Hiện tại, ý này có vẻ rời rạc.",
+    "repairVi": "Tập trung vào camera: Ví dụ, camera giúp cảnh sát theo dõi hiệu quả hơn dù ít nhân lực, như ở Trung Quốc.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it tcan deter crime",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "ý chính chưa đủ phát triển",
+      "explanationVi": "Bạn khẳng định rằng án tù dài hơn ngăn chặn tội phạm nhưng chưa đưa ra lý do cụ thể hoặc ví dụ để thuyết phục người đọc.",
+      "repairVi": "Hãy thêm chi tiết về cách án tù dài hơn ngăn chặn tội phạm, ví dụ như thông qua việc răn đe tâm lý hoặc so sánh với các nước khác.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "F3",
+      "criterion": "task_response",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "For example, the number of police officers in the population in China is less than 1% which is much less compared with the United States. However, the crime rate in China is much lower due to the mature and well-established security camera network.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ví dụ không đủ sức thuyết phục",
+      "explanationVi": "Bạn dùng số liệu về cảnh sát để so sánh, nhưng đề bài là về camera an ninh. Cần giải thích rõ hơn mối liên hệ: tại sao việc thiếu cảnh sát lại chứng tỏ camera hiệu quả? Hiện tại, ý này có vẻ rời rạc.",
+      "repairVi": "Tập trung vào camera: Ví dụ, camera giúp cảnh sát theo dõi hiệu quả hơn dù ít nhân lực, như ở Trung Quốc.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

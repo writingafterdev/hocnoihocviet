@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test": "tsx --test \"src/lib/*.test.ts\"",
     "test:assessment-cost": "tsx --test src/lib/assessment-cost-budget.test.ts",
     "benchmark:deepseek": "tsx scripts/benchmark-deepseek.ts --provider deepseek",
     "benchmark:assessment": "tsx scripts/benchmark-deepseek.ts",

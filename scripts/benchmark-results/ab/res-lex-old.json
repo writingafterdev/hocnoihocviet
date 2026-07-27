@@ -1,0 +1,6530 @@
+[
+ {
+  "fileId": "two-band-5.5-t2s.pdf",
+  "band": 4,
+  "rationaleVi": "Bạn sử dụng một số từ vựng liên quan đến chủ đề nhưng có nhiều lỗi chính tả, từ sai và搭配不自然, khiến độ chính xác và sự tự nhiên bị giảm đáng kể.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "job seeks",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Từ sai",
+    "explanationVi": "Bạn viết 'job seeks' nhưng ý bạn là 'job seekers'. 'Seeks' là động từ, ở đây cần danh từ 'seekers' để chỉ người tìm việc.",
+    "repairVi": "Thay 'job seeks' bằng 'job seekers'.",
+    "replacementText": "job seekers"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "reply them",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai cấu trúc từ",
+    "explanationVi": "Bạn dùng 'reply them' nhưng 'reply' cần tiếp đầu từ 'to'. Cách nói đúng là 'reply to them'.",
+    "repairVi": "Thêm 'to' sau 'reply'.",
+    "replacementText": "reply to them"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "should be overlooked",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chọn từ sai",
+    "explanationVi": "Bạn viết 'either academic qualification or social life should be overlooked since they are equally essential'. Từ 'overlooked' nghĩa là bị bỏ qua, nhưng ý bạn là chúng không nên bị bỏ qua. Do đó, từ sai.",
+    "repairVi": "Thay 'should be overlooked' bằng 'should not be overlooked'.",
+    "replacementText": "should not be overlooked"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "wee are livingy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'wee' và 'livingy', nhưng đúng là 'we' và 'living'.",
+    "repairVi": "Sửa 'wee' thành 'we' và 'livingy' thành 'living'.",
+    "replacementText": "we are living"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "bonus of winner",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "搭配不自然",
+    "explanationVi": "Bạn viết 'bonus of winner' nhưng cách nói tự nhiên là 'winner's prize' hoặc 'prize money for winners'.",
+    "repairVi": "Thay 'bonus of winner' bằng 'winner's prize'.",
+    "replacementText": "winner's prize"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "intervene icompanies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ",
+    "explanationVi": "Bạn viết 'intervene icompanies' nhưng cần danh từ 'intervention' và 'companies' viết đúng.",
+    "repairVi": "Thay 'intervene icompanies' bằng 'intervention of companies'.",
+    "replacementText": "intervention of companies"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 10,
+      "sourceText": "the psjusticethe games",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "từ viết sai và không rõ nghĩa",
+    "explanationVi": "Bạn viết 'psjusticethe games', có vẻ là lỗi chính tả của 'justice of the games' hoặc 'purity of the games'. Từ này không rõ và ảnh hưởng đến ý nghĩa.",
+    "repairVi": "Nên viết 'the justice of the games' hoặc 'the purity of the games'",
+    "replacementText": "the justice of the games"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "contact with each other",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'contact with each other', nhưng trong tiếng Anh tự nhiên, ta nói 'contact each other' hoặc 'interact with each other'. 'Contact' thường không đi với 'with' khi dùng như động từ.",
+    "repairVi": "Nên dùng 'contact each other'",
+    "replacementText": "contact each other"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 6,
+      "sourceText": "all over over the world",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lặp từ",
+    "explanationVi": "Bạn viết 'all over over the world', từ 'over' bị lặp. Nên chỉ dùng 'all over the world'.",
+    "repairVi": "Bỏ bớt một 'over'",
+    "replacementText": "all over the world"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 10,
+      "sourceText": "without thinking the spectators' feeling",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn viết 'without thinking the spectators' feeling', nhưng 'thinking' không đi với 'feeling' như vậy. Nên dùng 'without considering the spectators' feelings'.",
+    "repairVi": "Dùng 'without considering the spectators' feelings'",
+    "replacementText": "without considering the spectators' feelings"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 11,
+      "sourceText": "arouse eits influence",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ chọn và collocation",
+    "explanationVi": "Bạn dùng 'arouse eits influence', nhưng 'arouse' có nghĩa là khơi dậy cảm xúc, ở đây nên là 'increase its influence' hoặc 'enhance its brand awareness'. Ngoài ra, 'eits' là lỗi chính tả của 'its'.",
+    "repairVi": "Dùng 'increase its influence'",
+    "replacementText": "increase its influence"
+   }
+  ],
+  "runs": [
+   {
+    "band": 4,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "job seeks",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ sai",
+      "explanationVi": "Bạn viết 'job seeks' nhưng ý bạn là 'job seekers'. 'Seeks' là động từ, ở đây cần danh từ 'seekers' để chỉ người tìm việc.",
+      "repairVi": "Thay 'job seeks' bằng 'job seekers'.",
+      "replacementText": "job seekers"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "reply them",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cấu trúc từ",
+      "explanationVi": "Bạn dùng 'reply them' nhưng 'reply' cần tiếp đầu từ 'to'. Cách nói đúng là 'reply to them'.",
+      "repairVi": "Thêm 'to' sau 'reply'.",
+      "replacementText": "reply to them"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "should be overlooked",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chọn từ sai",
+      "explanationVi": "Bạn viết 'either academic qualification or social life should be overlooked since they are equally essential'. Từ 'overlooked' nghĩa là bị bỏ qua, nhưng ý bạn là chúng không nên bị bỏ qua. Do đó, từ sai.",
+      "repairVi": "Thay 'should be overlooked' bằng 'should not be overlooked'.",
+      "replacementText": "should not be overlooked"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "wee are livingy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'wee' và 'livingy', nhưng đúng là 'we' và 'living'.",
+      "repairVi": "Sửa 'wee' thành 'we' và 'livingy' thành 'living'.",
+      "replacementText": "we are living"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "bonus of winner",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配不自然",
+      "explanationVi": "Bạn viết 'bonus of winner' nhưng cách nói tự nhiên là 'winner's prize' hoặc 'prize money for winners'.",
+      "repairVi": "Thay 'bonus of winner' bằng 'winner's prize'.",
+      "replacementText": "winner's prize"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "intervene icompanies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ",
+      "explanationVi": "Bạn viết 'intervene icompanies' nhưng cần danh từ 'intervention' và 'companies' viết đúng.",
+      "repairVi": "Thay 'intervene icompanies' bằng 'intervention of companies'.",
+      "replacementText": "intervention of companies"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "should be overlooked",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ chọn",
+      "explanationVi": "Bạn dùng 'overlooked' có nghĩa là bỏ qua hoặc không nhìn thấy, nhưng trong ngữ cảnh này, bạn muốn nói cả hai đều quan trọng và không nên bị coi nhẹ. Từ đúng nên là 'neglected' hoặc 'undervalued', hoặc tốt hơn là 'not overlooked'.",
+      "repairVi": "Nên dùng 'not overlooked' hoặc 'valued'",
+      "replacementText": "not overlooked"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 10,
+        "sourceText": "the psjusticethe games",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "từ viết sai và không rõ nghĩa",
+      "explanationVi": "Bạn viết 'psjusticethe games', có vẻ là lỗi chính tả của 'justice of the games' hoặc 'purity of the games'. Từ này không rõ và ảnh hưởng đến ý nghĩa.",
+      "repairVi": "Nên viết 'the justice of the games' hoặc 'the purity of the games'",
+      "replacementText": "the justice of the games"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "contact with each other",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'contact with each other', nhưng trong tiếng Anh tự nhiên, ta nói 'contact each other' hoặc 'interact with each other'. 'Contact' thường không đi với 'with' khi dùng như động từ.",
+      "repairVi": "Nên dùng 'contact each other'",
+      "replacementText": "contact each other"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 6,
+        "sourceText": "all over over the world",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lặp từ",
+      "explanationVi": "Bạn viết 'all over over the world', từ 'over' bị lặp. Nên chỉ dùng 'all over the world'.",
+      "repairVi": "Bỏ bớt một 'over'",
+      "replacementText": "all over the world"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 10,
+        "sourceText": "without thinking the spectators' feeling",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn viết 'without thinking the spectators' feeling', nhưng 'thinking' không đi với 'feeling' như vậy. Nên dùng 'without considering the spectators' feelings'.",
+      "repairVi": "Dùng 'without considering the spectators' feelings'",
+      "replacementText": "without considering the spectators' feelings"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 11,
+        "sourceText": "arouse eits influence",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ chọn và collocation",
+      "explanationVi": "Bạn dùng 'arouse eits influence', nhưng 'arouse' có nghĩa là khơi dậy cảm xúc, ở đây nên là 'increase its influence' hoặc 'enhance its brand awareness'. Ngoài ra, 'eits' là lỗi chính tả của 'its'.",
+      "repairVi": "Dùng 'increase its influence'",
+      "replacementText": "increase its influence"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "5.5-t2-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết có phạm vi từ vựng tương đối tốt với một số từ chuyên ngành, nhưng bị ảnh hưởng bởi lỗi chính tả và搭配 không tự nhiên, khiến độ chính xác giảm.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "tstaying",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn đã viết sai chính tả từ 'staying' thành 'tstaying', làm giảm tính chính xác.",
+    "repairVi": "Sửa 'tstaying' thành 'staying'.",
+    "replacementText": "staying"
+   },
+   {
+    "id": "f2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "positive to work",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "s搭配 không tự nhiên",
+    "explanationVi": "Bạn sử dụng cụm từ 'positive to work' không tự nhiên; một người nói bản địa sẽ dùng 'positive about working' hoặc 'positive and willing to work'.",
+    "repairVi": "Thay 'positive to work' thành 'positive about working'.",
+    "replacementText": "positive about working"
+   },
+   {
+    "id": "f3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "discrimination of unhealthy dwellers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "s搭配 không chính xác",
+    "explanationVi": "Bạn dùng 'discrimination of' nhưng s搭配 đúng là 'discrimination against',意为 phân biệt đối xử với ai đó.",
+    "repairVi": "Thay 'of' thành 'against'.",
+    "replacementText": "discrimination against unhealthy dwellers"
+   },
+   {
+    "id": "finding_2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "societiesA salient",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu khoảng trắng",
+    "explanationVi": "Bạn viết dính liền 'societiesA' thành 'societiesA'. Cần có khoảng trắng giữa hai từ.",
+    "repairVi": "Thêm khoảng trắng: 'societies A salient'.",
+    "replacementText": "societies A salient"
+   },
+   {
+    "id": "finding_3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "positive to work hard",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai cách dùng từ (Word Form) và搭配不自然",
+    "explanationVi": "Bạn dùng 'positive' (danh từ/tính từ) nhưng cần tính từ hoặc trạng từ để bổ nghĩa cho hành động 'work hard'. Một người nói tự nhiên sẽ dùng cụm như 'positively inclined to work hard' hoặc 'motivated to work hard'.",
+    "repairVi": "Sửa 'positive to work hard' thành 'positively inclined to work hard' hoặc 'motivated to work hard'.",
+    "replacementText": "positively inclined to work hard"
+   },
+   {
+    "id": "finding_4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "ftheir communitties",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'ftheir communitties' có cả lỗi chính tả ('communitties') và thừa ký tự ('f').",
+    "repairVi": "Sửa 'ftheir communitties' thành 'their communities'.",
+    "replacementText": "their communities"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "tstaying",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn đã viết sai chính tả từ 'staying' thành 'tstaying', làm giảm tính chính xác.",
+      "repairVi": "Sửa 'tstaying' thành 'staying'.",
+      "replacementText": "staying"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "positive to work",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "s搭配 không tự nhiên",
+      "explanationVi": "Bạn sử dụng cụm từ 'positive to work' không tự nhiên; một người nói bản địa sẽ dùng 'positive about working' hoặc 'positive and willing to work'.",
+      "repairVi": "Thay 'positive to work' thành 'positive about working'.",
+      "replacementText": "positive about working"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "discrimination of unhealthy dwellers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "s搭配 không chính xác",
+      "explanationVi": "Bạn dùng 'discrimination of' nhưng s搭配 đúng là 'discrimination against',意为 phân biệt đối xử với ai đó.",
+      "repairVi": "Thay 'of' thành 'against'.",
+      "replacementText": "discrimination against unhealthy dwellers"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "finding_2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "societiesA salient",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu khoảng trắng",
+      "explanationVi": "Bạn viết dính liền 'societiesA' thành 'societiesA'. Cần có khoảng trắng giữa hai từ.",
+      "repairVi": "Thêm khoảng trắng: 'societies A salient'.",
+      "replacementText": "societies A salient"
+     },
+     {
+      "id": "finding_3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "positive to work hard",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cách dùng từ (Word Form) và搭配不自然",
+      "explanationVi": "Bạn dùng 'positive' (danh từ/tính từ) nhưng cần tính từ hoặc trạng từ để bổ nghĩa cho hành động 'work hard'. Một người nói tự nhiên sẽ dùng cụm như 'positively inclined to work hard' hoặc 'motivated to work hard'.",
+      "repairVi": "Sửa 'positive to work hard' thành 'positively inclined to work hard' hoặc 'motivated to work hard'.",
+      "replacementText": "positively inclined to work hard"
+     },
+     {
+      "id": "finding_4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "ftheir communitties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'ftheir communitties' có cả lỗi chính tả ('communitties') và thừa ký tự ('f').",
+      "repairVi": "Sửa 'ftheir communitties' thành 'their communities'.",
+      "replacementText": "their communities"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-online-shopping-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng một số từ vựng chủ đề nhưng thường sai chính tả, dùng sai từ và collocation không tự nhiên, giảm độ chính xác và tự nhiên của bài viết.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "convenientce",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết 'convenientce' nhưng từ đúng là 'convenience', gây lỗi chính tả.",
+    "repairVi": "Thay 'convenientce' bằng 'convenience'.",
+    "replacementText": "convenience"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "are conducted",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ",
+    "explanationVi": "Bạn dùng 'are conducted' với chủ ngữ 'business owners', nhưng 'conducted' không phù hợp ở đây; bạn có thể muốn nói 'businesses are conducted' hoặc 'owners conduct business'.",
+    "repairVi": "Thay 'are conducted' bằng 'conduct business' hoặc sửa câu cho hợp lý.",
+    "replacementText": "conduct business"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "idecision",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết 'idecision' nhưng từ đúng là 'decision', là lỗi chính tả.",
+    "repairVi": "Thay 'idecision' bằng 'decision'.",
+    "replacementText": "decision"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "bare",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ",
+    "explanationVi": "Bạn dùng 'bare' nhưng ý muốn là 'barely' để chỉ sự hầu như không, đây là sai dạng từ.",
+    "repairVi": "Thay 'bare' bằng 'barely'.",
+    "replacementText": "barely"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "productfs",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết 'productfs' nhưng từ đúng là 'products', là lỗi chính tả.",
+    "repairVi": "Thay 'productfs' bằng 'products'.",
+    "replacementText": "products"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "effortse",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết 'effortse' nhưng từ đúng là 'efforts', là lỗi chính tả.",
+    "repairVi": "Thay 'effortse' bằng 'efforts'.",
+    "replacementText": "efforts"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "consumptive problemsa",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ",
+    "explanationVi": "Bạn dùng 'consumptive' nhưng ý muốn là 'consumer' để chỉ người tiêu dùng; 'consumptive' có nghĩa là liên quan đến tiêu hao trong y tế, không phù hợp.",
+    "repairVi": "Thay 'consumptive' bằng 'consumer' và sửa 'problemsa' thành 'problems'.",
+    "replacementText": "consumer problems"
+   },
+   {
+    "id": "8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "indespite",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ",
+    "explanationVi": "Bạn viết 'indespite' nhưng từ đúng là 'despite'; đây là lỗi dùng sai từ.",
+    "repairVi": "Thay 'indespite' bằng 'despite'.",
+    "replacementText": "despite"
+   },
+   {
+    "id": "error2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "haveh",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'haveh' thay vì 'have', đây là lỗi chính tả đơn giản.",
+    "repairVi": "Thay bằng 'have'",
+    "replacementText": "have"
+   },
+   {
+    "id": "error3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "most cost-efficient product",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn dùng 'product' ở dạng số ít, nhưng cần dạng số nhiều 'products' để chính xác trong ngữ cảnh so sánh.",
+    "repairVi": "Thay bằng 'most cost-efficient products'",
+    "replacementText": "most cost-efficient products"
+   },
+   {
+    "id": "error4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "are conducted via the Internet",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'are conducted' với 'business owners', nhưng 'conducted' thường chỉ điều khiển hoạt động, không phù hợp. Nên dùng 'operate' để tự nhiên hơn.",
+    "repairVi": "Thay bằng 'operate via the Internet'",
+    "replacementText": "operate via the Internet"
+   },
+   {
+    "id": "error5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "bare outweighed",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chọn sai từ",
+    "explanationVi": "Bạn viết 'bare' thay vì 'are', đây là lỗi chính tả hoặc chọn sai từ, làm thay đổi nghĩa.",
+    "repairVi": "Thay bằng 'are outweighed'",
+    "replacementText": "are outweighed"
+   },
+   {
+    "id": "error7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "the increase indespite",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ không chính xác",
+    "explanationVi": "Cụm từ 'the increase indespite' không rõ nghĩa và sai cấu trúc từ. Cần chỉnh lại để biểu đạt rõ ràng.",
+    "repairVi": "Thay bằng 'despite the increase in online shopping'",
+    "replacementText": "despite the increase in online shopping"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "convenientce",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết 'convenientce' nhưng từ đúng là 'convenience', gây lỗi chính tả.",
+      "repairVi": "Thay 'convenientce' bằng 'convenience'.",
+      "replacementText": "convenience"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "are conducted",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ",
+      "explanationVi": "Bạn dùng 'are conducted' với chủ ngữ 'business owners', nhưng 'conducted' không phù hợp ở đây; bạn có thể muốn nói 'businesses are conducted' hoặc 'owners conduct business'.",
+      "repairVi": "Thay 'are conducted' bằng 'conduct business' hoặc sửa câu cho hợp lý.",
+      "replacementText": "conduct business"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "idecision",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết 'idecision' nhưng từ đúng là 'decision', là lỗi chính tả.",
+      "repairVi": "Thay 'idecision' bằng 'decision'.",
+      "replacementText": "decision"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "bare",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ",
+      "explanationVi": "Bạn dùng 'bare' nhưng ý muốn là 'barely' để chỉ sự hầu như không, đây là sai dạng từ.",
+      "repairVi": "Thay 'bare' bằng 'barely'.",
+      "replacementText": "barely"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "productfs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết 'productfs' nhưng từ đúng là 'products', là lỗi chính tả.",
+      "repairVi": "Thay 'productfs' bằng 'products'.",
+      "replacementText": "products"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "effortse",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết 'effortse' nhưng từ đúng là 'efforts', là lỗi chính tả.",
+      "repairVi": "Thay 'effortse' bằng 'efforts'.",
+      "replacementText": "efforts"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "consumptive problemsa",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ",
+      "explanationVi": "Bạn dùng 'consumptive' nhưng ý muốn là 'consumer' để chỉ người tiêu dùng; 'consumptive' có nghĩa là liên quan đến tiêu hao trong y tế, không phù hợp.",
+      "repairVi": "Thay 'consumptive' bằng 'consumer' và sửa 'problemsa' thành 'problems'.",
+      "replacementText": "consumer problems"
+     },
+     {
+      "id": "8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "indespite",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ",
+      "explanationVi": "Bạn viết 'indespite' nhưng từ đúng là 'despite'; đây là lỗi dùng sai từ.",
+      "repairVi": "Thay 'indespite' bằng 'despite'.",
+      "replacementText": "despite"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "convenientce",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'convenientce' thay vì 'convenience', đây là lỗi chính tả phổ biến ảnh hưởng đến sự chính xác.",
+      "repairVi": "Thay bằng 'convenience'",
+      "replacementText": "convenience"
+     },
+     {
+      "id": "error2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "haveh",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'haveh' thay vì 'have', đây là lỗi chính tả đơn giản.",
+      "repairVi": "Thay bằng 'have'",
+      "replacementText": "have"
+     },
+     {
+      "id": "error3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "most cost-efficient product",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn dùng 'product' ở dạng số ít, nhưng cần dạng số nhiều 'products' để chính xác trong ngữ cảnh so sánh.",
+      "repairVi": "Thay bằng 'most cost-efficient products'",
+      "replacementText": "most cost-efficient products"
+     },
+     {
+      "id": "error4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "are conducted via the Internet",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'are conducted' với 'business owners', nhưng 'conducted' thường chỉ điều khiển hoạt động, không phù hợp. Nên dùng 'operate' để tự nhiên hơn.",
+      "repairVi": "Thay bằng 'operate via the Internet'",
+      "replacementText": "operate via the Internet"
+     },
+     {
+      "id": "error5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "bare outweighed",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chọn sai từ",
+      "explanationVi": "Bạn viết 'bare' thay vì 'are', đây là lỗi chính tả hoặc chọn sai từ, làm thay đổi nghĩa.",
+      "repairVi": "Thay bằng 'are outweighed'",
+      "replacementText": "are outweighed"
+     },
+     {
+      "id": "error6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "consumptive problemsa",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chọn sai từ và lỗi chính tả",
+      "explanationVi": "Bạn dùng 'consumptive' (thường liên quan đến bệnh) và 'problemsa' (lỗi chính tả). Nên dùng 'consumer problems' để chính xác.",
+      "repairVi": "Thay bằng 'consumer problems'",
+      "replacementText": "consumer problems"
+     },
+     {
+      "id": "error7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "the increase indespite",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ không chính xác",
+      "explanationVi": "Cụm từ 'the increase indespite' không rõ nghĩa và sai cấu trúc từ. Cần chỉnh lại để biểu đạt rõ ràng.",
+      "repairVi": "Thay bằng 'despite the increase in online shopping'",
+      "replacementText": "despite the increase in online shopping"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-prison-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bài viết có nhiều lỗi chính tả và một số lỗi chọn từ không chính xác, ảnh hưởng đến độ chính xác và sự tự nhiên trong việc sử dụng từ vựng.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "scriminals",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'scriminals' thay vì 'criminals', đây là lỗi chính tả phổ biến.",
+    "repairVi": "Sửa 'scriminals' thành 'criminals'.",
+    "replacementText": "criminals"
+   },
+   {
+    "id": "f2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "labour-effective",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'labour-effective' nhưng từ này không tự nhiên; nên dùng 'labor-efficient' hoặc diễn đạt tương tự.",
+    "repairVi": "Thay 'labour-effective' bằng 'labor-efficient'.",
+    "replacementText": "labor-efficient"
+   },
+   {
+    "id": "f3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "precedents",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ vựng",
+    "explanationVi": "Bạn dùng 'precedents' nhưng trong ngữ cảnh này nên dùng 'examples' hoặc 'instances' vì 'precedents' thường chỉ tiền lệ pháp lý.",
+    "repairVi": "Thay 'precedents' bằng 'examples'.",
+    "replacementText": "examples"
+   },
+   {
+    "id": "f4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "itracge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'itracge' thay vì 'trace', đây là lỗi chính tả.",
+    "repairVi": "Sửa 'itracge' thành 'trace'.",
+    "replacementText": "trace"
+   },
+   {
+    "id": "f5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "root cause for",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "collocation sai",
+    "explanationVi": "Bạn dùng 'root cause for' nhưng thông thường dùng 'root cause of'.",
+    "repairVi": "Thay 'for' thành 'of' trong 'root cause for'.",
+    "replacementText": "root cause of"
+   },
+   {
+    "id": "f6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "in the society",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "dùng mạo từ không phù hợp",
+    "explanationVi": "Bạn viết 'in the society' nhưng khi nói về xã hội nói chung, nên dùng 'in society' không có mạo từ.",
+    "repairVi": "Bỏ 'the' trong 'in the society'.",
+    "replacementText": "in society"
+   },
+   {
+    "id": "find2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "Iessay",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'essay'.",
+    "repairVi": "sửa 'Iessay' thành 'this essay'",
+    "replacementText": "this essay"
+   },
+   {
+    "id": "find3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "mway",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'way'.",
+    "repairVi": "sửa 'mway' thành 'way'",
+    "replacementText": "way"
+   },
+   {
+    "id": "find4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "tcan",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'can'.",
+    "repairVi": "sửa 'tcan' thành 'can'",
+    "replacementText": "can"
+   },
+   {
+    "id": "find5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "fa crime",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'a'.",
+    "repairVi": "sửa 'fa' thành 'a'",
+    "replacementText": "a"
+   },
+   {
+    "id": "find6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "acrime",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'a crime'.",
+    "repairVi": "sửa 'acrime' thành 'a crime'",
+    "replacementText": "a crime"
+   },
+   {
+    "id": "find7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "towards crimes which will prevent them",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai hình thức từ",
+    "explanationVi": "Bạn dùng dạng số nhiều 'crimes' nhưng đại từ 'them' ở sau ám chỉ những người phạm tội. Cách dùng này không chính xác về mặt logic ngữ nghĩa.",
+    "repairVi": "sửa 'crimes which will prevent them' thành 'crime and will prevent offenders from'",
+    "replacementText": "crime and will prevent offenders from"
+   },
+   {
+    "id": "find8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "the number of security cameras are more effective",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai hình thức từ (động từ)",
+    "explanationVi": "Chủ ngữ 'the number' thường được coi là số ít, do đó động từ phải là 'is' chứ không phải 'are'.",
+    "repairVi": "sửa 'are' thành 'is'",
+    "replacementText": "is"
+   },
+   {
+    "id": "find10",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "costeffective",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Từ ghép 'cost-effective' cần có dấu gạch ngang.",
+    "repairVi": "sửa 'costeffective' thành 'cost-effective'",
+    "replacementText": "cost-effective"
+   },
+   {
+    "id": "find12",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "facle recognition",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'facial'.",
+    "repairVi": "sửa 'facle' thành 'facial'",
+    "replacementText": "facial"
+   },
+   {
+    "id": "find14",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "gprisoners",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'prisoners'.",
+    "repairVi": "sửa 'gprisoners' thành 'prisoners'",
+    "replacementText": "prisoners"
+   },
+   {
+    "id": "find15",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "camerams",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'cameras'.",
+    "repairVi": "sửa 'camerams' thành 'cameras'",
+    "replacementText": "cameras"
+   },
+   {
+    "id": "find16",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "the numberi of",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'number'.",
+    "repairVi": "sửa 'numberi' thành 'number'",
+    "replacementText": "number"
+   },
+   {
+    "id": "find17",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "mature and well-established security camera network",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cách diễn đạt không tự nhiên",
+    "explanationVi": "Bạn cố gắng mô tả mạng lưới camera, nhưng cụm 'mature and well-established' nghe có vẻ thừa và không tự nhiên khi đi với 'network'. 'Mature' thường dùng cho người hoặc quá trình, ít khi cho hạ tầng kỹ thuật.",
+    "repairVi": "sửa 'mature and well-established security camera network' thành 'extensive and advanced security camera network'",
+    "replacementText": "extensive and advanced security camera network"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "scriminals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'scriminals' thay vì 'criminals', đây là lỗi chính tả phổ biến.",
+      "repairVi": "Sửa 'scriminals' thành 'criminals'.",
+      "replacementText": "criminals"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "labour-effective",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'labour-effective' nhưng từ này không tự nhiên; nên dùng 'labor-efficient' hoặc diễn đạt tương tự.",
+      "repairVi": "Thay 'labour-effective' bằng 'labor-efficient'.",
+      "replacementText": "labor-efficient"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "precedents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ vựng",
+      "explanationVi": "Bạn dùng 'precedents' nhưng trong ngữ cảnh này nên dùng 'examples' hoặc 'instances' vì 'precedents' thường chỉ tiền lệ pháp lý.",
+      "repairVi": "Thay 'precedents' bằng 'examples'.",
+      "replacementText": "examples"
+     },
+     {
+      "id": "f4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "itracge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'itracge' thay vì 'trace', đây là lỗi chính tả.",
+      "repairVi": "Sửa 'itracge' thành 'trace'.",
+      "replacementText": "trace"
+     },
+     {
+      "id": "f5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "root cause for",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "collocation sai",
+      "explanationVi": "Bạn dùng 'root cause for' nhưng thông thường dùng 'root cause of'.",
+      "repairVi": "Thay 'for' thành 'of' trong 'root cause for'.",
+      "replacementText": "root cause of"
+     },
+     {
+      "id": "f6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "in the society",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "dùng mạo từ không phù hợp",
+      "explanationVi": "Bạn viết 'in the society' nhưng khi nói về xã hội nói chung, nên dùng 'in society' không có mạo từ.",
+      "repairVi": "Bỏ 'the' trong 'in the society'.",
+      "replacementText": "in society"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "scriminals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai từ 'offenders' hoặc 'criminals'. 'Scriminals' không phải là một từ tiếng Anh.",
+      "repairVi": "sửa 'scriminals' thành 'criminals'",
+      "replacementText": "criminals"
+     },
+     {
+      "id": "find2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "Iessay",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'essay'.",
+      "repairVi": "sửa 'Iessay' thành 'this essay'",
+      "replacementText": "this essay"
+     },
+     {
+      "id": "find3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "mway",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'way'.",
+      "repairVi": "sửa 'mway' thành 'way'",
+      "replacementText": "way"
+     },
+     {
+      "id": "find4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "tcan",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'can'.",
+      "repairVi": "sửa 'tcan' thành 'can'",
+      "replacementText": "can"
+     },
+     {
+      "id": "find5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "fa crime",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'a'.",
+      "repairVi": "sửa 'fa' thành 'a'",
+      "replacementText": "a"
+     },
+     {
+      "id": "find6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "acrime",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'a crime'.",
+      "repairVi": "sửa 'acrime' thành 'a crime'",
+      "replacementText": "a crime"
+     },
+     {
+      "id": "find7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "towards crimes which will prevent them",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai hình thức từ",
+      "explanationVi": "Bạn dùng dạng số nhiều 'crimes' nhưng đại từ 'them' ở sau ám chỉ những người phạm tội. Cách dùng này không chính xác về mặt logic ngữ nghĩa.",
+      "repairVi": "sửa 'crimes which will prevent them' thành 'crime and will prevent offenders from'",
+      "replacementText": "crime and will prevent offenders from"
+     },
+     {
+      "id": "find8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "the number of security cameras are more effective",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai hình thức từ (động từ)",
+      "explanationVi": "Chủ ngữ 'the number' thường được coi là số ít, do đó động từ phải là 'is' chứ không phải 'are'.",
+      "repairVi": "sửa 'are' thành 'is'",
+      "replacementText": "is"
+     },
+     {
+      "id": "find9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "itracge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'track'.",
+      "repairVi": "sửa 'itracge' thành 'track'",
+      "replacementText": "track"
+     },
+     {
+      "id": "find10",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "costeffective",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Từ ghép 'cost-effective' cần có dấu gạch ngang.",
+      "repairVi": "sửa 'costeffective' thành 'cost-effective'",
+      "replacementText": "cost-effective"
+     },
+     {
+      "id": "find11",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "labour-effective",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ ghép không tự nhiên",
+      "explanationVi": "Bạn tạo ra từ ghép 'labour-effective' để đối ứng với 'cost-effective'. Tuy nhiên, từ thường dùng ở đây là 'labour-saving' hoặc 'efficient in terms of labour'.",
+      "repairVi": "sửa 'labour-effective' thành 'labour-saving'",
+      "replacementText": "labour-saving"
+     },
+     {
+      "id": "find12",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "facle recognition",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'facial'.",
+      "repairVi": "sửa 'facle' thành 'facial'",
+      "replacementText": "facial"
+     },
+     {
+      "id": "find14",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "gprisoners",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'prisoners'.",
+      "repairVi": "sửa 'gprisoners' thành 'prisoners'",
+      "replacementText": "prisoners"
+     },
+     {
+      "id": "find15",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "camerams",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'cameras'.",
+      "repairVi": "sửa 'camerams' thành 'cameras'",
+      "replacementText": "cameras"
+     },
+     {
+      "id": "find16",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "the numberi of",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'number'.",
+      "repairVi": "sửa 'numberi' thành 'number'",
+      "replacementText": "number"
+     },
+     {
+      "id": "find17",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "mature and well-established security camera network",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cách diễn đạt không tự nhiên",
+      "explanationVi": "Bạn cố gắng mô tả mạng lưới camera, nhưng cụm 'mature and well-established' nghe có vẻ thừa và không tự nhiên khi đi với 'network'. 'Mature' thường dùng cho người hoặc quá trình, ít khi cho hạ tầng kỹ thuật.",
+      "repairVi": "sửa 'mature and well-established security camera network' thành 'extensive and advanced security camera network'",
+      "replacementText": "extensive and advanced security camera network"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-life-forms.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng một số từ vựng liên quan đến chủ đề, nhưng có nhiều lỗi chính tả và sai từ thường xuyên, làm giảm độ chính xác và tự nhiên của bài viết.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "intelligentce",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 1,
+      "sourceText": "intelligentce",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'intelligent', nên sửa thành 'intelligent'.",
+    "repairVi": "Thay 'intelligentce' bằng 'intelligent'.",
+    "replacementText": "intelligent"
+   },
+   {
+    "id": "f2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "livge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'live', nên sửa thành 'live'.",
+    "repairVi": "Thay 'livge' bằng 'live'.",
+    "replacementText": "live"
+   },
+   {
+    "id": "f3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "phazards",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'hazards', nên sửa thành 'hazards'.",
+    "repairVi": "Thay 'phazards' bằng 'hazards'.",
+    "replacementText": "hazards"
+   },
+   {
+    "id": "f4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "ithe",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'the', nên sửa thành 'the'.",
+    "repairVi": "Thay 'ithe' bằng 'the'.",
+    "replacementText": "the"
+   },
+   {
+    "id": "f5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "materialsm",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'materials', nên sửa thành 'materials'.",
+    "repairVi": "Thay 'materialsm' bằng 'materials'.",
+    "replacementText": "materials"
+   },
+   {
+    "id": "f6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "cwork",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'cooperate' hoặc 'work together', nên sửa thành 'cooperate'.",
+    "repairVi": "Thay 'cwork' bằng 'cooperate'.",
+    "replacementText": "cooperate"
+   },
+   {
+    "id": "f7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "provideo",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'provide', nên sửa thành 'provide'.",
+    "repairVi": "Thay 'provideo' bằng 'provide'.",
+    "replacementText": "provide"
+   },
+   {
+    "id": "f8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "formsa",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'forms', nên sửa thành 'forms'.",
+    "repairVi": "Thay 'formsa' bằng 'forms'.",
+    "replacementText": "forms"
+   },
+   {
+    "id": "f9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "top fight",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'to fight', nên sửa thành 'to fight'.",
+    "repairVi": "Thay 'top fight' bằng 'to fight'.",
+    "replacementText": "to fight"
+   },
+   {
+    "id": "f10",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Eearth",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'Earth', nên sửa thành 'Earth'.",
+    "repairVi": "Thay 'Eearth' bằng 'Earth'.",
+    "replacementText": "Earth"
+   },
+   {
+    "id": "f11",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "inspected rto intrude",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ vựng",
+    "explanationVi": "Bạn dùng sai từ 'inspected', ý bạn là 'intend' để diễn tả ý định, nên sửa thành 'intend to intrude'.",
+    "repairVi": "Thay 'inspected rto intrude' bằng 'intend to intrude'.",
+    "replacementText": "intend to intrude"
+   },
+   {
+    "id": "f12",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "claim war",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Cụm từ không tự nhiên",
+    "explanationVi": "Bạn dùng cụm từ không tự nhiên 'claim war', người nói tự nhiên dùng 'declare war', nên sửa thành 'declare war'.",
+    "repairVi": "Thay 'claim war' bằng 'declare war'.",
+    "replacementText": "declare war"
+   },
+   {
+    "id": "f13",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "c cause",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả, 'c' thừa, nên sửa thành 'cause' hoặc 'could cause'.",
+    "repairVi": "Thay 'c cause' bằng 'cause'.",
+    "replacementText": "cause"
+   },
+   {
+    "id": "f14",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "human being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ",
+    "explanationVi": "Bạn dùng dạng số ít 'human being' nhưng ngữ cảnh cần số nhiều, nên sửa thành 'human beings'.",
+    "repairVi": "Thay 'human being' bằng 'human beings'.",
+    "replacementText": "human beings"
+   },
+   {
+    "id": "f15",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "oother",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "oother",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'other', nên sửa thành 'other'.",
+    "repairVi": "Thay 'oother' bằng 'other'.",
+    "replacementText": "other"
+   },
+   {
+    "id": "f16",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "fthe",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'the', nên sửa thành 'the'.",
+    "repairVi": "Thay 'fthe' bằng 'the'.",
+    "replacementText": "the"
+   },
+   {
+    "id": "f17",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "mutualsly",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'mutually', nên sửa thành 'mutually'.",
+    "repairVi": "Thay 'mutualsly' bằng 'mutually'.",
+    "replacementText": "mutually"
+   },
+   {
+    "id": "f18",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "take defensive measure",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ",
+    "explanationVi": "Bạn dùng dạng số ít 'measure' nhưng ngữ cảnh cần số nhiều, nên sửa thành 'take defensive measures'.",
+    "repairVi": "Thay 'take defensive measure' bằng 'take defensive measures'.",
+    "replacementText": "take defensive measures"
+   },
+   {
+    "id": "find002",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "researches",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn dùng 'researches' như danh từ đếm được, nhưng trong ngữ cảnh này, 'research' thường là danh từ không đếm được.",
+    "repairVi": "thay 'researches' bằng 'research'",
+    "replacementText": "research"
+   },
+   {
+    "id": "find003",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "claim war on",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cách phối hợp từ không tự nhiên",
+    "explanationVi": "Bạn dùng 'claim war on' nhưng cách diễn đạt tự nhiên là 'declare war on'.",
+    "repairVi": "thay 'claim war on' bằng 'declare war on'",
+    "replacementText": "declare war on"
+   },
+   {
+    "id": "find005",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "a position top fight",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ không rõ nghĩa",
+    "explanationVi": "Bạn viết 'a position top fight' nhưng ý bạn là 'intend to fight', và 'top' là lỗi chính tả cho 'to'.",
+    "repairVi": "thay 'a position top fight' bằng 'intend to fight'",
+    "replacementText": "intend to fight"
+   },
+   {
+    "id": "find007",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "intelligentce",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'intelligentce' nhưng từ chính xác là 'intelligent'.",
+    "repairVi": "thay 'intelligentce' bằng 'intelligent'",
+    "replacementText": "intelligent"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "intelligentce",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 1,
+        "sourceText": "intelligentce",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'intelligent', nên sửa thành 'intelligent'.",
+      "repairVi": "Thay 'intelligentce' bằng 'intelligent'.",
+      "replacementText": "intelligent"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "livge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'live', nên sửa thành 'live'.",
+      "repairVi": "Thay 'livge' bằng 'live'.",
+      "replacementText": "live"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "phazards",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'hazards', nên sửa thành 'hazards'.",
+      "repairVi": "Thay 'phazards' bằng 'hazards'.",
+      "replacementText": "hazards"
+     },
+     {
+      "id": "f4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "ithe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'the', nên sửa thành 'the'.",
+      "repairVi": "Thay 'ithe' bằng 'the'.",
+      "replacementText": "the"
+     },
+     {
+      "id": "f5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "materialsm",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'materials', nên sửa thành 'materials'.",
+      "repairVi": "Thay 'materialsm' bằng 'materials'.",
+      "replacementText": "materials"
+     },
+     {
+      "id": "f6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "cwork",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'cooperate' hoặc 'work together', nên sửa thành 'cooperate'.",
+      "repairVi": "Thay 'cwork' bằng 'cooperate'.",
+      "replacementText": "cooperate"
+     },
+     {
+      "id": "f7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "provideo",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'provide', nên sửa thành 'provide'.",
+      "repairVi": "Thay 'provideo' bằng 'provide'.",
+      "replacementText": "provide"
+     },
+     {
+      "id": "f8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "formsa",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'forms', nên sửa thành 'forms'.",
+      "repairVi": "Thay 'formsa' bằng 'forms'.",
+      "replacementText": "forms"
+     },
+     {
+      "id": "f9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "top fight",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'to fight', nên sửa thành 'to fight'.",
+      "repairVi": "Thay 'top fight' bằng 'to fight'.",
+      "replacementText": "to fight"
+     },
+     {
+      "id": "f10",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Eearth",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'Earth', nên sửa thành 'Earth'.",
+      "repairVi": "Thay 'Eearth' bằng 'Earth'.",
+      "replacementText": "Earth"
+     },
+     {
+      "id": "f11",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "inspected rto intrude",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ vựng",
+      "explanationVi": "Bạn dùng sai từ 'inspected', ý bạn là 'intend' để diễn tả ý định, nên sửa thành 'intend to intrude'.",
+      "repairVi": "Thay 'inspected rto intrude' bằng 'intend to intrude'.",
+      "replacementText": "intend to intrude"
+     },
+     {
+      "id": "f12",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "claim war",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không tự nhiên",
+      "explanationVi": "Bạn dùng cụm từ không tự nhiên 'claim war', người nói tự nhiên dùng 'declare war', nên sửa thành 'declare war'.",
+      "repairVi": "Thay 'claim war' bằng 'declare war'.",
+      "replacementText": "declare war"
+     },
+     {
+      "id": "f13",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "c cause",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả, 'c' thừa, nên sửa thành 'cause' hoặc 'could cause'.",
+      "repairVi": "Thay 'c cause' bằng 'cause'.",
+      "replacementText": "cause"
+     },
+     {
+      "id": "f14",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "human being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ",
+      "explanationVi": "Bạn dùng dạng số ít 'human being' nhưng ngữ cảnh cần số nhiều, nên sửa thành 'human beings'.",
+      "repairVi": "Thay 'human being' bằng 'human beings'.",
+      "replacementText": "human beings"
+     },
+     {
+      "id": "f15",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "oother",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "oother",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'other', nên sửa thành 'other'.",
+      "repairVi": "Thay 'oother' bằng 'other'.",
+      "replacementText": "other"
+     },
+     {
+      "id": "f16",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "fthe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'the', nên sửa thành 'the'.",
+      "repairVi": "Thay 'fthe' bằng 'the'.",
+      "replacementText": "the"
+     },
+     {
+      "id": "f17",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "mutualsly",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'mutually', nên sửa thành 'mutually'.",
+      "repairVi": "Thay 'mutualsly' bằng 'mutually'.",
+      "replacementText": "mutually"
+     },
+     {
+      "id": "f18",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "take defensive measure",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ",
+      "explanationVi": "Bạn dùng dạng số ít 'measure' nhưng ngữ cảnh cần số nhiều, nên sửa thành 'take defensive measures'.",
+      "repairVi": "Thay 'take defensive measure' bằng 'take defensive measures'.",
+      "replacementText": "take defensive measures"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "find001",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "phazards",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'phazards' nhưng từ chính xác là 'hazards' để chỉ mối nguy hiểm.",
+      "repairVi": "thay 'phazards' bằng 'hazards'",
+      "replacementText": "hazards"
+     },
+     {
+      "id": "find002",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "researches",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn dùng 'researches' như danh từ đếm được, nhưng trong ngữ cảnh này, 'research' thường là danh từ không đếm được.",
+      "repairVi": "thay 'researches' bằng 'research'",
+      "replacementText": "research"
+     },
+     {
+      "id": "find003",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "claim war on",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cách phối hợp từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'claim war on' nhưng cách diễn đạt tự nhiên là 'declare war on'.",
+      "repairVi": "thay 'claim war on' bằng 'declare war on'",
+      "replacementText": "declare war on"
+     },
+     {
+      "id": "find004",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "inspected rto intrude",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dùng từ",
+      "explanationVi": "Bạn dùng 'inspected' nhưng ý bạn là 'intend' hoặc 'attempt', và 'rto' là lỗi chính tả cho 'to'.",
+      "repairVi": "thay 'inspected rto' bằng 'intend to'",
+      "replacementText": "intend to"
+     },
+     {
+      "id": "find005",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "a position top fight",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ không rõ nghĩa",
+      "explanationVi": "Bạn viết 'a position top fight' nhưng ý bạn là 'intend to fight', và 'top' là lỗi chính tả cho 'to'.",
+      "repairVi": "thay 'a position top fight' bằng 'intend to fight'",
+      "replacementText": "intend to fight"
+     },
+     {
+      "id": "find006",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "mutualsly",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'mutualsly' nhưng từ chính xác là 'mutually'.",
+      "repairVi": "thay 'mutualsly' bằng 'mutually'",
+      "replacementText": "mutually"
+     },
+     {
+      "id": "find007",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "intelligentce",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'intelligentce' nhưng từ chính xác là 'intelligent'.",
+      "repairVi": "thay 'intelligentce' bằng 'intelligent'",
+      "replacementText": "intelligent"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết sử dụng một số từ vựng chủ đề và cố gắng paraphrasing, nhưng có nhiều lỗi chính tả, sai từ và搭配 không tự nhiên, làm giảm độ chính xác và tự nhiên.",
+  "findings": [
+   {
+    "id": "fe1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "green awarenessa",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả và từ không tự nhiên",
+    "explanationVi": "Bạn viết 'green awarenessa' có chữ 'a' thừa, và 'green awareness' không tự nhiên; 'environmental awareness' thường dùng hơn.",
+    "repairVi": "Sửa thành 'environmental awareness'.",
+    "replacementText": "environmental awareness"
+   },
+   {
+    "id": "fe2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "encourage and force",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ và搭配 không tự nhiên",
+    "explanationVi": "Từ 'force' quá mạnh và không phù hợp ở đây; bạn nên dùng 'motivate' hoặc 'persuade'.",
+    "repairVi": "Sửa thành 'encourage and motivate'.",
+    "replacementText": "encourage and motivate"
+   },
+   {
+    "id": "fe3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "get ha general conception",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ và lỗi đánh máy",
+    "explanationVi": "Bạn dùng 'get' quá thông tục và 'ha' là lỗi đánh máy; 'have a general conception' phù hợp hơn.",
+    "repairVi": "Sửa thành 'have a general conception'.",
+    "replacementText": "have a general conception"
+   },
+   {
+    "id": "fe4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "constrain their daily convenience",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Từ không chính xác",
+    "explanationVi": "'Constrain' quá mạnh để mô tả ảnh hưởng đến sự tiện lợi; 'restrict' hoặc 'affect' nhẹ nhàng hơn.",
+    "repairVi": "Sửa thành 'restrict their daily convenience'.",
+    "replacementText": "restrict their daily convenience"
+   },
+   {
+    "id": "fe5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "airplane companies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "搭配 không tự nhiên",
+    "explanationVi": "'Airplane companies' không phải cách nói thông thường; 'airlines' là từ chính xác.",
+    "repairVi": "Sửa thành 'airlines'.",
+    "replacementText": "airlines"
+   },
+   {
+    "id": "fe6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "provideingreusable",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'provideingreusable' là lỗi đánh máy; nên là 'providing reusable'.",
+    "repairVi": "Sửa thành 'providing reusable'.",
+    "replacementText": "providing reusable"
+   },
+   {
+    "id": "fe7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "reduce waste pollution",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "搭配 không tự nhiên",
+    "explanationVi": "'Waste pollution' không phải cách kết hợp từ thông thường; 'reduce waste' hoặc 'reduce pollution from waste' tốt hơn.",
+    "repairVi": "Sửa thành 'reduce waste'.",
+    "replacementText": "reduce waste"
+   },
+   {
+    "id": "se1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "positionsv",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'positionsv' là lỗi đánh máy; nên là 'positions'.",
+    "repairVi": "Sửa thành 'positions'.",
+    "replacementText": "positions"
+   },
+   {
+    "id": "se2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 6,
+      "sourceText": "on any positions",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai giới từ",
+    "explanationVi": "'On any positions' không chính xác; 'for any positions' hoặc 'in any roles' phù hợp hơn.",
+    "repairVi": "Sửa thành 'for any positions'.",
+    "replacementText": "for any positions"
+   },
+   {
+    "id": "se3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 6,
+      "sourceText": "construction area",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "搭配 không tự nhiên",
+    "explanationVi": "'Construction area' không tự nhiên; 'construction industry' hoặc 'construction sector' tốt hơn.",
+    "repairVi": "Sửa thành 'construction industry'.",
+    "replacementText": "construction industry"
+   },
+   {
+    "id": "se4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 7,
+      "sourceText": "admission to working positions",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ",
+    "explanationVi": "'Admission' thường dùng cho nhập học; cho công việc, nên dùng 'appointment' hoặc 'recruitment'.",
+    "repairVi": "Sửa thành 'appointment to working positions'.",
+    "replacementText": "appointment to working positions"
+   },
+   {
+    "id": "se5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 9,
+      "sourceText": "unpractical",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai hình thức từ",
+    "explanationVi": "'Unpractical' không phải từ chuẩn; 'impractical' đúng hơn.",
+    "repairVi": "Sửa thành 'impractical'.",
+    "replacementText": "impractical"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "fe1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "green awarenessa",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả và từ không tự nhiên",
+      "explanationVi": "Bạn viết 'green awarenessa' có chữ 'a' thừa, và 'green awareness' không tự nhiên; 'environmental awareness' thường dùng hơn.",
+      "repairVi": "Sửa thành 'environmental awareness'.",
+      "replacementText": "environmental awareness"
+     },
+     {
+      "id": "fe2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "encourage and force",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ và搭配 không tự nhiên",
+      "explanationVi": "Từ 'force' quá mạnh và không phù hợp ở đây; bạn nên dùng 'motivate' hoặc 'persuade'.",
+      "repairVi": "Sửa thành 'encourage and motivate'.",
+      "replacementText": "encourage and motivate"
+     },
+     {
+      "id": "fe3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "get ha general conception",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ và lỗi đánh máy",
+      "explanationVi": "Bạn dùng 'get' quá thông tục và 'ha' là lỗi đánh máy; 'have a general conception' phù hợp hơn.",
+      "repairVi": "Sửa thành 'have a general conception'.",
+      "replacementText": "have a general conception"
+     },
+     {
+      "id": "fe4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "constrain their daily convenience",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ không chính xác",
+      "explanationVi": "'Constrain' quá mạnh để mô tả ảnh hưởng đến sự tiện lợi; 'restrict' hoặc 'affect' nhẹ nhàng hơn.",
+      "repairVi": "Sửa thành 'restrict their daily convenience'.",
+      "replacementText": "restrict their daily convenience"
+     },
+     {
+      "id": "fe5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "airplane companies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配 không tự nhiên",
+      "explanationVi": "'Airplane companies' không phải cách nói thông thường; 'airlines' là từ chính xác.",
+      "repairVi": "Sửa thành 'airlines'.",
+      "replacementText": "airlines"
+     },
+     {
+      "id": "fe6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "provideingreusable",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'provideingreusable' là lỗi đánh máy; nên là 'providing reusable'.",
+      "repairVi": "Sửa thành 'providing reusable'.",
+      "replacementText": "providing reusable"
+     },
+     {
+      "id": "fe7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "reduce waste pollution",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配 không tự nhiên",
+      "explanationVi": "'Waste pollution' không phải cách kết hợp từ thông thường; 'reduce waste' hoặc 'reduce pollution from waste' tốt hơn.",
+      "repairVi": "Sửa thành 'reduce waste'.",
+      "replacementText": "reduce waste"
+     },
+     {
+      "id": "se1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "positionsv",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'positionsv' là lỗi đánh máy; nên là 'positions'.",
+      "repairVi": "Sửa thành 'positions'.",
+      "replacementText": "positions"
+     },
+     {
+      "id": "se2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 6,
+        "sourceText": "on any positions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai giới từ",
+      "explanationVi": "'On any positions' không chính xác; 'for any positions' hoặc 'in any roles' phù hợp hơn.",
+      "repairVi": "Sửa thành 'for any positions'.",
+      "replacementText": "for any positions"
+     },
+     {
+      "id": "se3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 6,
+        "sourceText": "construction area",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "搭配 không tự nhiên",
+      "explanationVi": "'Construction area' không tự nhiên; 'construction industry' hoặc 'construction sector' tốt hơn.",
+      "repairVi": "Sửa thành 'construction industry'.",
+      "replacementText": "construction industry"
+     },
+     {
+      "id": "se4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 7,
+        "sourceText": "admission to working positions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ",
+      "explanationVi": "'Admission' thường dùng cho nhập học; cho công việc, nên dùng 'appointment' hoặc 'recruitment'.",
+      "repairVi": "Sửa thành 'appointment to working positions'.",
+      "replacementText": "appointment to working positions"
+     },
+     {
+      "id": "se5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 9,
+        "sourceText": "unpractical",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai hình thức từ",
+      "explanationVi": "'Unpractical' không phải từ chuẩn; 'impractical' đúng hơn.",
+      "repairVi": "Sửa thành 'impractical'.",
+      "replacementText": "impractical"
+     }
+    ]
+   },
+   {
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "uni-t2-band-7.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng một số từ vựng liên quan đến chủ đề nhưng có nhiều lỗi chính tả, sai chọn từ, và搭配 không tự nhiên, làm giảm độ chính xác và tự nhiên của bài viết.",
+  "findings": [
+   {
+    "id": "lex1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "benefit to",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai搭配",
+    "explanationVi": "Bạn dùng 'benefit to' không tự nhiên; đúng là 'benefit' hoặc 'be beneficial to'.",
+    "repairVi": "Sửa thành 'benefit' hoặc 'be beneficial to'.",
+    "replacementText": "benefit"
+   },
+   {
+    "id": "lex2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "isecure",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai 'secure' thành 'isecure'.",
+    "repairVi": "Sửa thành 'secure'.",
+    "replacementText": "secure"
+   },
+   {
+    "id": "lex3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "narrow qualification",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn dùng 'narrow' không chính xác cho nghĩa 'nghiêm ngặt'; nên dùng 'strict' hoặc 'specific'.",
+    "repairVi": "Sửa thành 'strict qualification'.",
+    "replacementText": "strict qualification"
+   },
+   {
+    "id": "lex4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "tap intoe",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai 'tap into' thành 'tap intoe'.",
+    "repairVi": "Sửa thành 'tap into'.",
+    "replacementText": "tap into"
+   },
+   {
+    "id": "lex5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "dsolutions",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai 'solutions' thành 'dsolutions'.",
+    "repairVi": "Sửa thành 'solutions'.",
+    "replacementText": "solutions"
+   },
+   {
+    "id": "f2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "graduatecareer",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'graduatecareer' thành một từ, nhưng nên tách thành 'graduates' careers' hoặc 'graduate's career'.",
+    "repairVi": "Thay 'graduatecareer' bằng 'graduates' careers'.",
+    "replacementText": "graduates' careers"
+   },
+   {
+    "id": "f4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "much narrow qualification",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ và kết hợp từ",
+    "explanationVi": "Bạn dùng 'much narrow qualification', nhưng 'narrow' nên ở dạng so sánh hơn 'narrower' hoặc dùng từ khác như 'strict qualifications'. 'Much' thường dùng với tính từ so sánh hơn.",
+    "repairVi": "Thay 'much narrow qualification' bằng 'very narrow qualifications'.",
+    "replacementText": "very narrow qualifications"
+   },
+   {
+    "id": "f5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "job hunterss",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'job hunterss' với多余的 's', đúng phải là 'job hunters'.",
+    "repairVi": "Thay 'job hunterss' bằng 'job hunters'.",
+    "replacementText": "job hunters"
+   },
+   {
+    "id": "f6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "are graduated from",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng động từ",
+    "explanationVi": "Bạn dùng 'are graduated from', nhưng đúng phải là 'have graduated from' hoặc 'are graduates of'.",
+    "repairVi": "Thay 'are graduated from' bằng 'have graduated from'.",
+    "replacementText": "have graduated from"
+   },
+   {
+    "id": "f7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "aninstitution",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'aninstitution' thành một từ, nhưng nên tách thành 'an institution'.",
+    "repairVi": "Thay 'aninstitution' bằng 'an institution'.",
+    "replacementText": "an institution"
+   },
+   {
+    "id": "f8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "funiversity",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'funiversity' sai chính tả, đúng phải là 'university'.",
+    "repairVi": "Thay 'funiversity' bằng 'university'.",
+    "replacementText": "university"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "lex1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "benefit to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai搭配",
+      "explanationVi": "Bạn dùng 'benefit to' không tự nhiên; đúng là 'benefit' hoặc 'be beneficial to'.",
+      "repairVi": "Sửa thành 'benefit' hoặc 'be beneficial to'.",
+      "replacementText": "benefit"
+     },
+     {
+      "id": "lex2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "isecure",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai 'secure' thành 'isecure'.",
+      "repairVi": "Sửa thành 'secure'.",
+      "replacementText": "secure"
+     },
+     {
+      "id": "lex3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "narrow qualification",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn dùng 'narrow' không chính xác cho nghĩa 'nghiêm ngặt'; nên dùng 'strict' hoặc 'specific'.",
+      "repairVi": "Sửa thành 'strict qualification'.",
+      "replacementText": "strict qualification"
+     },
+     {
+      "id": "lex4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "tap intoe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai 'tap into' thành 'tap intoe'.",
+      "repairVi": "Sửa thành 'tap into'.",
+      "replacementText": "tap into"
+     },
+     {
+      "id": "lex5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "dsolutions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai 'solutions' thành 'dsolutions'.",
+      "repairVi": "Sửa thành 'solutions'.",
+      "replacementText": "solutions"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "benefit to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết hợp từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'benefit to', nhưng động từ 'benefit' thường là transitive và không đi với 'to' theo cách này. Nên dùng 'benefit' trực tiếp.",
+      "repairVi": "Thay 'benefit to' bằng 'benefit'.",
+      "replacementText": "benefit"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "graduatecareer",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'graduatecareer' thành một từ, nhưng nên tách thành 'graduates' careers' hoặc 'graduate's career'.",
+      "repairVi": "Thay 'graduatecareer' bằng 'graduates' careers'.",
+      "replacementText": "graduates' careers"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "isecure",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'isecure' sai chính tả, đúng phải là 'secure'.",
+      "repairVi": "Thay 'isecure' bằng 'secure'.",
+      "replacementText": "secure"
+     },
+     {
+      "id": "f4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "much narrow qualification",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ và kết hợp từ",
+      "explanationVi": "Bạn dùng 'much narrow qualification', nhưng 'narrow' nên ở dạng so sánh hơn 'narrower' hoặc dùng từ khác như 'strict qualifications'. 'Much' thường dùng với tính từ so sánh hơn.",
+      "repairVi": "Thay 'much narrow qualification' bằng 'very narrow qualifications'.",
+      "replacementText": "very narrow qualifications"
+     },
+     {
+      "id": "f5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "job hunterss",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'job hunterss' với多余的 's', đúng phải là 'job hunters'.",
+      "repairVi": "Thay 'job hunterss' bằng 'job hunters'.",
+      "replacementText": "job hunters"
+     },
+     {
+      "id": "f6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "are graduated from",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng động từ",
+      "explanationVi": "Bạn dùng 'are graduated from', nhưng đúng phải là 'have graduated from' hoặc 'are graduates of'.",
+      "repairVi": "Thay 'are graduated from' bằng 'have graduated from'.",
+      "replacementText": "have graduated from"
+     },
+     {
+      "id": "f7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "aninstitution",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'aninstitution' thành một từ, nhưng nên tách thành 'an institution'.",
+      "repairVi": "Thay 'aninstitution' bằng 'an institution'.",
+      "replacementText": "an institution"
+     },
+     {
+      "id": "f8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "funiversity",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'funiversity' sai chính tả, đúng phải là 'university'.",
+      "repairVi": "Thay 'funiversity' bằng 'university'.",
+      "replacementText": "university"
+     },
+     {
+      "id": "f9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "tap intoe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'tap intoe' với多余的 'e', đúng phải là 'tap into'.",
+      "repairVi": "Thay 'tap intoe' bằng 'tap into'.",
+      "replacementText": "tap into"
+     },
+     {
+      "id": "f10",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "dsolutions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'dsolutions' sai chính tả, đúng phải là 'solutions'.",
+      "repairVi": "Thay 'dsolutions' bằng 'solutions'.",
+      "replacementText": "solutions"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Writing-21-task-2-7.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết có phạm vi từ vựng đủ cho chủ đề, nhưng chứa nhiều lỗi chính tả và vài collocation chưa tự nhiên như 'gharm', 'sgiven', 'ifacilities', 'twhereby', 'backwards lregions', 'Soviet', và dùng 'on' thay vì 'in' ở 'investing on'. Các lỗi này giảm độ chính xác và tự nhiên của ngôn từ.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "gharm",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'gharm' thay vì 'harm'. Đây là lỗi chính tả khiến từ không chính xác.",
+    "repairVi": "Thay 'gharm' bằng 'harm'.",
+    "replacementText": "harm"
+   },
+   {
+    "id": "f2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "sgiven",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'sgiven' thay vì 'given'. Lỗi chính tả làm sai nghĩa.",
+    "repairVi": "Thay 'sgiven' bằng 'given'.",
+    "replacementText": "given"
+   },
+   {
+    "id": "f3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "ifacilities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'ifacilities' thay vì 'facilities'. Lỗi chính tả nghiêm trọng.",
+    "repairVi": "Thay 'ifacilities' bằng 'facilities'.",
+    "replacementText": "facilities"
+   },
+   {
+    "id": "f4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "twhereby",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'twhereby' thay vì 'whereby'. Lỗi chính tả.",
+    "repairVi": "Thay 'twhereby' bằng 'whereby'.",
+    "replacementText": "whereby"
+   },
+   {
+    "id": "f5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "backwards",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng từ",
+    "explanationVi": "Bạn dùng 'backwards' (trạng từ) thay vì 'backward' (tính từ) trong cụm 'backward regions'.",
+    "repairVi": "Thay 'backwards' bằng 'backward'.",
+    "replacementText": "backward"
+   },
+   {
+    "id": "f6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "lregions",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'lregions' thay vì 'regions'. Lỗi chính tả.",
+    "repairVi": "Thay 'lregions' bằng 'regions'.",
+    "replacementText": "regions"
+   },
+   {
+    "id": "f7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "peopleconsidering",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu khoảng trắng",
+    "explanationVi": "Bạn viết 'peopleconsidering' mà thiếu khoảng trắng, nên tách thành 'people considering'.",
+    "repairVi": "Thay 'peopleconsidering' bằng 'people considering'.",
+    "replacementText": "people considering"
+   },
+   {
+    "id": "f8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "articleParagraphIndex": 2,
+      "sourceText": "Soviet",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai dạng danh từ",
+    "explanationVi": "Bạn viết 'Soviet' nhưng nên là 'the Soviet Union' để chính xác về mặt từ vựng.",
+    "repairVi": "Thay 'Soviet' bằng 'the Soviet Union'.",
+    "replacementText": "the Soviet Union"
+   },
+   {
+    "id": "f9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "on",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Collocation không tự nhiên",
+    "explanationVi": "Bạn dùng 'investing on' nhưng tự nhiên hơn là 'investing in' trong ngữ cảnh này.",
+    "repairVi": "Thay 'on' bằng 'in' trong cụm 'investing a large sum of money in'.",
+    "replacementText": "in"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "public service",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi dạng từ",
+    "explanationVi": "Bạn viết 'public service' ở dạng số ít, nhưng trong ngữ cảnh nên dùng số nhiều 'public services' để chỉ các dịch vụ công cộng cụ thể.",
+    "repairVi": "Thay 'public service' bằng 'public services'.",
+    "replacementText": "public services"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "like",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chọn từ",
+    "explanationVi": "Bạn dùng 'like' để đưa ra ví dụ, nhưng trong văn viết trang trọng, 'such as' phù hợp hơn để tạo sự chính xác.",
+    "repairVi": "Thay 'like' bằng 'such as'.",
+    "replacementText": "such as"
+   },
+   {
+    "id": "8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "than",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chọn từ",
+    "explanationVi": "Bạn dùng 'than' để so sánh, nhưng trong câu này, ý nghĩa là 'thay vì', nên dùng 'rather than' sẽ chính xác hơn.",
+    "repairVi": "Thay 'than' bằng 'rather than'.",
+    "replacementText": "rather than"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "gharm",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'gharm' thay vì 'harm'. Đây là lỗi chính tả khiến từ không chính xác.",
+      "repairVi": "Thay 'gharm' bằng 'harm'.",
+      "replacementText": "harm"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sgiven",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'sgiven' thay vì 'given'. Lỗi chính tả làm sai nghĩa.",
+      "repairVi": "Thay 'sgiven' bằng 'given'.",
+      "replacementText": "given"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "ifacilities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'ifacilities' thay vì 'facilities'. Lỗi chính tả nghiêm trọng.",
+      "repairVi": "Thay 'ifacilities' bằng 'facilities'.",
+      "replacementText": "facilities"
+     },
+     {
+      "id": "f4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "twhereby",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'twhereby' thay vì 'whereby'. Lỗi chính tả.",
+      "repairVi": "Thay 'twhereby' bằng 'whereby'.",
+      "replacementText": "whereby"
+     },
+     {
+      "id": "f5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "backwards",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng từ",
+      "explanationVi": "Bạn dùng 'backwards' (trạng từ) thay vì 'backward' (tính từ) trong cụm 'backward regions'.",
+      "repairVi": "Thay 'backwards' bằng 'backward'.",
+      "replacementText": "backward"
+     },
+     {
+      "id": "f6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "lregions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'lregions' thay vì 'regions'. Lỗi chính tả.",
+      "repairVi": "Thay 'lregions' bằng 'regions'.",
+      "replacementText": "regions"
+     },
+     {
+      "id": "f7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "peopleconsidering",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu khoảng trắng",
+      "explanationVi": "Bạn viết 'peopleconsidering' mà thiếu khoảng trắng, nên tách thành 'people considering'.",
+      "repairVi": "Thay 'peopleconsidering' bằng 'people considering'.",
+      "replacementText": "people considering"
+     },
+     {
+      "id": "f8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "articleParagraphIndex": 2,
+        "sourceText": "Soviet",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai dạng danh từ",
+      "explanationVi": "Bạn viết 'Soviet' nhưng nên là 'the Soviet Union' để chính xác về mặt từ vựng.",
+      "repairVi": "Thay 'Soviet' bằng 'the Soviet Union'.",
+      "replacementText": "the Soviet Union"
+     },
+     {
+      "id": "f9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "on",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không tự nhiên",
+      "explanationVi": "Bạn dùng 'investing on' nhưng tự nhiên hơn là 'investing in' trong ngữ cảnh này.",
+      "repairVi": "Thay 'on' bằng 'in' trong cụm 'investing a large sum of money in'.",
+      "replacementText": "in"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "gharm",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'gharm' thay vì 'harm', đây là lỗi chính tả làm sai nghĩa từ.",
+      "repairVi": "Thay 'gharm' bằng 'harm'.",
+      "replacementText": "harm"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sgiven",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'sgiven' thay vì 'given', gây lỗi chính tả và ảnh hưởng đến độ chính xác.",
+      "repairVi": "Thay 'sgiven' bằng 'given'.",
+      "replacementText": "given"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "ifacilities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'ifacilities' thay vì 'facilities', đây là lỗi chính tả nghiêm trọng.",
+      "repairVi": "Thay 'ifacilities' bằng 'facilities'.",
+      "replacementText": "facilities"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "twhereby",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'twhereby' thay vì 'whereby', gây lỗi chính tả.",
+      "repairVi": "Thay 'twhereby' bằng 'whereby'.",
+      "replacementText": "whereby"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "lregions",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'lregions' thay vì 'regions', đây là lỗi chính tả.",
+      "repairVi": "Thay 'lregions' bằng 'regions'.",
+      "replacementText": "regions"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "public service",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi dạng từ",
+      "explanationVi": "Bạn viết 'public service' ở dạng số ít, nhưng trong ngữ cảnh nên dùng số nhiều 'public services' để chỉ các dịch vụ công cộng cụ thể.",
+      "repairVi": "Thay 'public service' bằng 'public services'.",
+      "replacementText": "public services"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "like",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chọn từ",
+      "explanationVi": "Bạn dùng 'like' để đưa ra ví dụ, nhưng trong văn viết trang trọng, 'such as' phù hợp hơn để tạo sự chính xác.",
+      "repairVi": "Thay 'like' bằng 'such as'.",
+      "replacementText": "such as"
+     },
+     {
+      "id": "8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "than",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chọn từ",
+      "explanationVi": "Bạn dùng 'than' để so sánh, nhưng trong câu này, ý nghĩa là 'thay vì', nên dùng 'rather than' sẽ chính xác hơn.",
+      "repairVi": "Thay 'than' bằng 'rather than'.",
+      "replacementText": "rather than"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết có phạm vi từ vựng đủ với một số thuật ngữ chuyên ngành, nhưng mắc nhiều lỗi chính tả và một số lỗi lựa chọn từ không chính xác, ảnh hưởng đến sự trôi chảy.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "eassay",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'eassay', nên sửa thành 'essay'.",
+    "repairVi": "Sửa 'eassay' thành 'essay'.",
+    "replacementText": "essay"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "pursuinge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'pursuinge', nên sửa thành 'pursuing'.",
+    "repairVi": "Sửa 'pursuinge' thành 'pursuing'.",
+    "replacementText": "pursuing"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "publish",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn dùng 'publish' nhưng cần dạng tính từ 'published' để sửa thành 'published research result'.",
+    "repairVi": "Sửa 'publish' thành 'published'.",
+    "replacementText": "published"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "bew",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'bew', nên sửa thành 'be'.",
+    "repairVi": "Sửa 'bew' thành 'be'.",
+    "replacementText": "be"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "misguiding fora",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lựa chọn từ sai và chính tả",
+    "explanationVi": "Bạn dùng 'misguiding fora' không tự nhiên; nên sửa thành 'misleading for' cho chính xác.",
+    "repairVi": "Sửa 'misguiding fora' thành 'misleading for'.",
+    "replacementText": "misleading for"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "ithe",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết sai chính tả từ 'ithe', nên sửa thành 'the'.",
+    "repairVi": "Sửa 'ithe' thành 'the'.",
+    "replacementText": "the"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "reasons of f",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ và chính tả",
+    "explanationVi": "Bạn dùng 'reasons of f' sai ngữ pháp và chính tả; nên sửa thành 'reason of the' cho đúng.",
+    "repairVi": "Sửa 'reasons of f' thành 'reason of the'.",
+    "replacementText": "reason of the"
+   },
+   {
+    "id": "8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "instinctively",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lựa chọn từ sai",
+    "explanationVi": "Bạn dùng 'instinctively' (dựa vào bản năng) nhưng ý là 'inherently' (vốn có), nên sửa lại.",
+    "repairVi": "Sửa 'instinctively' thành 'inherently'.",
+    "replacementText": "inherently"
+   },
+   {
+    "id": "9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "impulsive consumption for newness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cặp từ không tự nhiên",
+    "explanationVi": "Bạn dùng 'impulsive consumption for newness' không trôi chảy; nên sửa thành 'impulsive consumption driven by newness'.",
+    "repairVi": "Sửa 'for newness' thành 'driven by newness'.",
+    "replacementText": "impulsive consumption driven by newness"
+   },
+   {
+    "id": "f3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "publish research result",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ loại và số",
+    "explanationVi": "'publish' nên là 'published' (tính từ) và 'result' nên là 'results' (số nhiều) để chính xác về mặt từ vựng.",
+    "repairVi": "Sửa thành 'published research results'.",
+    "replacementText": "published research results"
+   },
+   {
+    "id": "f5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "misguiding",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "'misguiding' không phải từ đúng; từ chính xác là 'misleading'.",
+    "repairVi": "Sửa thành 'misleading'.",
+    "replacementText": "misleading"
+   },
+   {
+    "id": "f6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "fora",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết sai 'for' thành 'fora'.",
+    "repairVi": "Sửa thành 'for'.",
+    "replacementText": "for"
+   },
+   {
+    "id": "f10",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "regardless if",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cách phối hợp từ không chính xác",
+    "explanationVi": "'regardless if' không tự nhiên; nên dùng 'regardless of whether' hoặc 'even if'.",
+    "repairVi": "Sửa thành 'regardless of whether'.",
+    "replacementText": "regardless of whether"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "eassay",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'eassay', nên sửa thành 'essay'.",
+      "repairVi": "Sửa 'eassay' thành 'essay'.",
+      "replacementText": "essay"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "pursuinge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'pursuinge', nên sửa thành 'pursuing'.",
+      "repairVi": "Sửa 'pursuinge' thành 'pursuing'.",
+      "replacementText": "pursuing"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "publish",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn dùng 'publish' nhưng cần dạng tính từ 'published' để sửa thành 'published research result'.",
+      "repairVi": "Sửa 'publish' thành 'published'.",
+      "replacementText": "published"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "bew",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'bew', nên sửa thành 'be'.",
+      "repairVi": "Sửa 'bew' thành 'be'.",
+      "replacementText": "be"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "misguiding fora",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lựa chọn từ sai và chính tả",
+      "explanationVi": "Bạn dùng 'misguiding fora' không tự nhiên; nên sửa thành 'misleading for' cho chính xác.",
+      "repairVi": "Sửa 'misguiding fora' thành 'misleading for'.",
+      "replacementText": "misleading for"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "ithe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'ithe', nên sửa thành 'the'.",
+      "repairVi": "Sửa 'ithe' thành 'the'.",
+      "replacementText": "the"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "reasons of f",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ và chính tả",
+      "explanationVi": "Bạn dùng 'reasons of f' sai ngữ pháp và chính tả; nên sửa thành 'reason of the' cho đúng.",
+      "repairVi": "Sửa 'reasons of f' thành 'reason of the'.",
+      "replacementText": "reason of the"
+     },
+     {
+      "id": "8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "instinctively",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lựa chọn từ sai",
+      "explanationVi": "Bạn dùng 'instinctively' (dựa vào bản năng) nhưng ý là 'inherently' (vốn có), nên sửa lại.",
+      "repairVi": "Sửa 'instinctively' thành 'inherently'.",
+      "replacementText": "inherently"
+     },
+     {
+      "id": "9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "impulsive consumption for newness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cặp từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'impulsive consumption for newness' không trôi chảy; nên sửa thành 'impulsive consumption driven by newness'.",
+      "repairVi": "Sửa 'for newness' thành 'driven by newness'.",
+      "replacementText": "impulsive consumption driven by newness"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "eassay",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết sai chính tả từ 'essay'.",
+      "repairVi": "Sửa thành 'essay'.",
+      "replacementText": "essay"
+     },
+     {
+      "id": "f2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "pursuinge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đánh máy",
+      "explanationVi": "Bạn viết thừa ký tự 'e' trong từ 'pursuing'.",
+      "repairVi": "Sửa thành 'pursuing'.",
+      "replacementText": "pursuing"
+     },
+     {
+      "id": "f3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "publish research result",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ loại và số",
+      "explanationVi": "'publish' nên là 'published' (tính từ) và 'result' nên là 'results' (số nhiều) để chính xác về mặt từ vựng.",
+      "repairVi": "Sửa thành 'published research results'.",
+      "replacementText": "published research results"
+     },
+     {
+      "id": "f4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "impulsive consumption for newness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cách phối hợp từ không tự nhiên",
+      "explanationVi": "Cụm 'impulsive consumption for newness' không tự nhiên; một người nói tiếng Anh sẽ dùng 'impulsive consumption of new products' hoặc tương tự.",
+      "repairVi": "Sửa thành 'impulsive consumption of new products'.",
+      "replacementText": "impulsive consumption of new products"
+     },
+     {
+      "id": "f5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "misguiding",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "'misguiding' không phải từ đúng; từ chính xác là 'misleading'.",
+      "repairVi": "Sửa thành 'misleading'.",
+      "replacementText": "misleading"
+     },
+     {
+      "id": "f6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "fora",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết sai 'for' thành 'fora'.",
+      "repairVi": "Sửa thành 'for'.",
+      "replacementText": "for"
+     },
+     {
+      "id": "f7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "ithe",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đánh máy",
+      "explanationVi": "Bạn viết thừa ký tự 'i' trong từ 'the'.",
+      "repairVi": "Sửa thành 'the'.",
+      "replacementText": "the"
+     },
+     {
+      "id": "f8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "reasons of f",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả và từ vựng",
+      "explanationVi": "'reasons of f' là lỗi rõ ràng; nên là 'reasons of the' hoặc 'reasons for the' để hợp lý.",
+      "repairVi": "Sửa thành 'reasons of the'.",
+      "replacementText": "reasons of the"
+     },
+     {
+      "id": "f9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "instinctively",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ chọn",
+      "explanationVi": "'instinctively' (bản năng) không phù hợp ở đây; bạn có thể muốn nói 'inherently' (vốn có).",
+      "repairVi": "Sửa thành 'inherently'.",
+      "replacementText": "inherently"
+     },
+     {
+      "id": "f10",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "regardless if",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cách phối hợp từ không chính xác",
+      "explanationVi": "'regardless if' không tự nhiên; nên dùng 'regardless of whether' hoặc 'even if'.",
+      "repairVi": "Sửa thành 'regardless of whether'.",
+      "replacementText": "regardless of whether"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-games-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng nhiều lỗi chính tả, sai dạng từ và cách搭配 không tự nhiên, thường xuyên làm giảm độ chính xác và sự trôi chảy, khiến ý nghĩa có thể không rõ ràng.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "harmeffects",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả và dạng từ",
+    "explanationVi": "Bạn viết 'harmeffects' thay vì 'harmful effects', là lỗi chính tả và thiếu từ 'ful' cần thiết để tạo tính từ đúng nghĩa.",
+    "repairVi": "Thay 'harmeffects' bằng 'harmful effects'.",
+    "replacementText": "harmful effects"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "compeletly",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'compeletly' thay vì 'completely', là lỗi chính tả cơ bản.",
+    "repairVi": "Thay 'compeletly' bằng 'completely'.",
+    "replacementText": "completely"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "introduced our society",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "k搭配 không tự nhiên",
+    "explanationVi": "Bạn dùng 'introduced our society' mà thiếu giới từ; một người nói tự nhiên sẽ nói 'introduced to our society' hoặc 'brought into our society'.",
+    "repairVi": "Thêm 'to' sau 'introduced' hoặc thay bằng 'brought into'.",
+    "replacementText": "introduced to our society"
+   },
+   {
+    "id": "4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "andrare people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ và chính tả",
+    "explanationVi": "Bạn viết 'andrare' (thiếu khoảng cách) và dùng 'rare people' không đúng nghĩa; bạn có thể muốn nói 'few people' hoặc 'hardly any people'.",
+    "repairVi": "Thay 'andrare people' bằng 'and few people'.",
+    "replacementText": "and few people"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "matured worldview",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn dùng 'matured' thay vì 'mature' làm tính từ; 'matured' thường dùng cho quá kh tiếp của động từ, không phù hợp ở đây.",
+    "repairVi": "Thay 'matured' bằng 'mature'.",
+    "replacementText": "mature worldview"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "completed and more attractive",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn dùng 'completed' thay vì 'complete' làm tính từ; 'completed' nhấn mạnh việc hoàn thành, trong khi 'complete' mô tả trạng thái đầy đủ.",
+    "repairVi": "Thay 'completed' bằng 'complete'.",
+    "replacementText": "complete and more attractive"
+   },
+   {
+    "id": "error3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "rare people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai lựa chọn từ",
+    "explanationVi": "Bạn dùng 'rare people' để ý là 'ít người', nhưng từ 'rare' không phù hợp trong ngữ cảnh này; người nói tự nhiên sẽ dùng 'people rarely' hoặc 'rarely people'.",
+    "repairVi": "Thay bằng 'people rarely'",
+    "replacementText": "people rarely"
+   },
+   {
+    "id": "error4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "competitionalways",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cột từ không tự nhiên",
+    "explanationVi": "Bạn viết 'competitionalways' thay vì 'competition always', đây là lỗi từ ghép không tự nhiên, làm giảm tính chính xác.",
+    "repairVi": "Sử dụng 'competition always'",
+    "replacementText": "competition always"
+   },
+   {
+    "id": "error5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "deleted rfrom",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả và lựa chọn từ",
+    "explanationVi": "Bạn viết 'deleted rfrom' thay vì 'removed from', cả lỗi chính tả lẫn từ không chính xác, vì 'deleted' thường dùng cho dữ liệu, không phù hợp ở đây.",
+    "repairVi": "Thay bằng 'removed from'",
+    "replacementText": "removed from"
+   },
+   {
+    "id": "error6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "these violence",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn viết 'these violence' nhưng 'violence' là danh từ không đếm được, nên dùng 'this violence' để đúng ngữ pháp và nghĩa.",
+    "repairVi": "Sử dụng 'this violence'",
+    "replacementText": "this violence"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "harmeffects",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả và dạng từ",
+      "explanationVi": "Bạn viết 'harmeffects' thay vì 'harmful effects', là lỗi chính tả và thiếu từ 'ful' cần thiết để tạo tính từ đúng nghĩa.",
+      "repairVi": "Thay 'harmeffects' bằng 'harmful effects'.",
+      "replacementText": "harmful effects"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "compeletly",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'compeletly' thay vì 'completely', là lỗi chính tả cơ bản.",
+      "repairVi": "Thay 'compeletly' bằng 'completely'.",
+      "replacementText": "completely"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "introduced our society",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "k搭配 không tự nhiên",
+      "explanationVi": "Bạn dùng 'introduced our society' mà thiếu giới từ; một người nói tự nhiên sẽ nói 'introduced to our society' hoặc 'brought into our society'.",
+      "repairVi": "Thêm 'to' sau 'introduced' hoặc thay bằng 'brought into'.",
+      "replacementText": "introduced to our society"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "andrare people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ và chính tả",
+      "explanationVi": "Bạn viết 'andrare' (thiếu khoảng cách) và dùng 'rare people' không đúng nghĩa; bạn có thể muốn nói 'few people' hoặc 'hardly any people'.",
+      "repairVi": "Thay 'andrare people' bằng 'and few people'.",
+      "replacementText": "and few people"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "matured worldview",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn dùng 'matured' thay vì 'mature' làm tính từ; 'matured' thường dùng cho quá kh tiếp của động từ, không phù hợp ở đây.",
+      "repairVi": "Thay 'matured' bằng 'mature'.",
+      "replacementText": "mature worldview"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "completed and more attractive",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn dùng 'completed' thay vì 'complete' làm tính từ; 'completed' nhấn mạnh việc hoàn thành, trong khi 'complete' mô tả trạng thái đầy đủ.",
+      "repairVi": "Thay 'completed' bằng 'complete'.",
+      "replacementText": "complete and more attractive"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "harmeffects",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cú pháp từ",
+      "explanationVi": "Bạn viết 'harmeffects' thay vì 'harmful effects', đây là lỗi từ ghép không chính xác, làm giảm độ chính xác của nghĩa.",
+      "repairVi": "Sử dụng 'harmful effects'",
+      "replacementText": "harmful effects"
+     },
+     {
+      "id": "error2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "compeletly",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'compeletly' thay vì 'completely', đây là lỗi chính tả ảnh hưởng đến sự rõ ràng.",
+      "repairVi": "Sửa thành 'completely'",
+      "replacementText": "completely"
+     },
+     {
+      "id": "error3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "rare people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai lựa chọn từ",
+      "explanationVi": "Bạn dùng 'rare people' để ý là 'ít người', nhưng từ 'rare' không phù hợp trong ngữ cảnh này; người nói tự nhiên sẽ dùng 'people rarely' hoặc 'rarely people'.",
+      "repairVi": "Thay bằng 'people rarely'",
+      "replacementText": "people rarely"
+     },
+     {
+      "id": "error4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "competitionalways",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cột từ không tự nhiên",
+      "explanationVi": "Bạn viết 'competitionalways' thay vì 'competition always', đây là lỗi từ ghép không tự nhiên, làm giảm tính chính xác.",
+      "repairVi": "Sử dụng 'competition always'",
+      "replacementText": "competition always"
+     },
+     {
+      "id": "error5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "deleted rfrom",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả và lựa chọn từ",
+      "explanationVi": "Bạn viết 'deleted rfrom' thay vì 'removed from', cả lỗi chính tả lẫn từ không chính xác, vì 'deleted' thường dùng cho dữ liệu, không phù hợp ở đây.",
+      "repairVi": "Thay bằng 'removed from'",
+      "replacementText": "removed from"
+     },
+     {
+      "id": "error6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "these violence",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn viết 'these violence' nhưng 'violence' là danh từ không đếm được, nên dùng 'this violence' để đúng ngữ pháp và nghĩa.",
+      "repairVi": "Sử dụng 'this violence'",
+      "replacementText": "this violence"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-humans-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bạn có sử dụng từ vựng chủ đề hợp lý nhưng gặp nhiều lỗi chính tả và lỗi dùng từ, đặc biệt trong cách kết hợp từ và chính tả, làm giảm độ chính xác và tự nhiên của bài viết.",
+  "findings": [
+   {
+    "id": "lex1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "tby",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'tby' thay vì 'by', đây là lỗi chính tả.",
+    "repairVi": "thay 'tby' bằng 'by'",
+    "replacementText": "by"
+   },
+   {
+    "id": "lex2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Iconcerned",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'Iconcerned' thay vì 'I'm concerned', đây là lỗi chính tả.",
+    "repairVi": "thay 'Iconcerned' bằng 'I'm concerned'",
+    "replacementText": "I'm concerned"
+   },
+   {
+    "id": "lex3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "sanimals’",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'sanimals’' thay vì 'animals'', đây là lỗi chính tả.",
+    "repairVi": "thay 'sanimals’' bằng 'animals''",
+    "replacementText": "animals'"
+   },
+   {
+    "id": "lex4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "deserve being protected",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi kết hợp từ",
+    "explanationVi": "Cụm 'deserve being protected' không tự nhiên; đúng hơn là 'deserve to be protected'.",
+    "repairVi": "thay 'being protected' bằng 'to be protected'",
+    "replacementText": "to be protected"
+   },
+   {
+    "id": "lex5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "the amount",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dùng từ",
+    "explanationVi": "Bạn dùng 'amount' cho động vật đếm được, nên dùng 'number' để chính xác.",
+    "repairVi": "thay 'amount' bằng 'number'",
+    "replacementText": "the number"
+   },
+   {
+    "id": "lex6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "a couple few years",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi cụm từ",
+    "explanationVi": "Cụm 'a couple few years' không chính xác; đúng hơn là 'a few years' hoặc 'a couple of years'.",
+    "repairVi": "thay 'a couple few years' bằng 'a few years'",
+    "replacementText": "a few years"
+   },
+   {
+    "id": "lex7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "Fevery",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'Fevery' thay vì 'Every', đây là lỗi chính tả.",
+    "repairVi": "thay 'Fevery' bằng 'Every'",
+    "replacementText": "Every"
+   },
+   {
+    "id": "lex8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "iecosystem",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'iecosystem' thay vì 'ecosystem', đây là lỗi chính tả.",
+    "repairVi": "thay 'iecosystem' bằng 'ecosystem'",
+    "replacementText": "ecosystem"
+   },
+   {
+    "id": "lex9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "foods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dạng từ",
+    "explanationVi": "Bạn dùng 'foods' nhưng trong ngữ cảnh này, 'food' (không đếm) là phù hợp hơn.",
+    "repairVi": "thay 'foods' bằng 'food'",
+    "replacementText": "food"
+   },
+   {
+    "id": "finding1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "despoiled tby",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'tby' thay vì 'by', đây là lỗi chính tả cơ bản.",
+    "repairVi": "Sửa 'tby' thành 'by'.",
+    "replacementText": "by"
+   },
+   {
+    "id": "finding2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "I’m Iconcerned",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Bạn viết 'Iconcerned' thay vì 'concerned', gây khó hiểu.",
+    "repairVi": "Sửa 'Iconcerned' thành 'concerned'.",
+    "replacementText": "concerned"
+   },
+   {
+    "id": "finding3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "increasing amounts of species",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "'Amounts' dùng cho danh từ không đếm được, nhưng 'species' đếm được, nên dùng 'numbers' để chính xác.",
+    "repairVi": "Sửa 'amounts' thành 'numbers'.",
+    "replacementText": "numbers"
+   },
+   {
+    "id": "finding4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "endangered sanimals’ foods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả và collocation",
+    "explanationVi": "'sanimals' là lỗi chính tả, và 'foods' không tự nhiên ở đây; nên dùng 'animals' food' cho chính xác.",
+    "repairVi": "Sửa 'sanimals’ foods' thành 'animals' food'.",
+    "replacementText": "animals' food"
+   },
+   {
+    "id": "finding6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "thorough thinking",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Collocation không tự nhiên",
+    "explanationVi": "'thorough thinking' không phải搭配 tự nhiên; 'thorough consideration' phù hợp hơn trong ngữ cảnh học thuật.",
+    "repairVi": "Sửa thành 'thorough consideration'.",
+    "replacementText": "thorough consideration"
+   },
+   {
+    "id": "finding7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "logically improper",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai lựa chọn từ",
+    "explanationVi": "'improper' thường dùng cho hành vi, không hợp với logic; nên dùng 'flawed' hoặc 'illogical' để chính xác.",
+    "repairVi": "Sửa thành 'logically flawed'.",
+    "replacementText": "logically flawed"
+   },
+   {
+    "id": "finding9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "useful to human",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu số nhiều",
+    "explanationVi": "'useful to human' thiếu số nhiều; nên dùng 'useful to humans' để đúng ngữ pháp và tự nhiên.",
+    "repairVi": "Sửa thành 'useful to humans'.",
+    "replacementText": "useful to humans"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "lex1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "tby",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'tby' thay vì 'by', đây là lỗi chính tả.",
+      "repairVi": "thay 'tby' bằng 'by'",
+      "replacementText": "by"
+     },
+     {
+      "id": "lex2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Iconcerned",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'Iconcerned' thay vì 'I'm concerned', đây là lỗi chính tả.",
+      "repairVi": "thay 'Iconcerned' bằng 'I'm concerned'",
+      "replacementText": "I'm concerned"
+     },
+     {
+      "id": "lex3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sanimals’",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'sanimals’' thay vì 'animals'', đây là lỗi chính tả.",
+      "repairVi": "thay 'sanimals’' bằng 'animals''",
+      "replacementText": "animals'"
+     },
+     {
+      "id": "lex4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "deserve being protected",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi kết hợp từ",
+      "explanationVi": "Cụm 'deserve being protected' không tự nhiên; đúng hơn là 'deserve to be protected'.",
+      "repairVi": "thay 'being protected' bằng 'to be protected'",
+      "replacementText": "to be protected"
+     },
+     {
+      "id": "lex5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "the amount",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dùng từ",
+      "explanationVi": "Bạn dùng 'amount' cho động vật đếm được, nên dùng 'number' để chính xác.",
+      "repairVi": "thay 'amount' bằng 'number'",
+      "replacementText": "the number"
+     },
+     {
+      "id": "lex6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "a couple few years",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi cụm từ",
+      "explanationVi": "Cụm 'a couple few years' không chính xác; đúng hơn là 'a few years' hoặc 'a couple of years'.",
+      "repairVi": "thay 'a couple few years' bằng 'a few years'",
+      "replacementText": "a few years"
+     },
+     {
+      "id": "lex7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "Fevery",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'Fevery' thay vì 'Every', đây là lỗi chính tả.",
+      "repairVi": "thay 'Fevery' bằng 'Every'",
+      "replacementText": "Every"
+     },
+     {
+      "id": "lex8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "iecosystem",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'iecosystem' thay vì 'ecosystem', đây là lỗi chính tả.",
+      "repairVi": "thay 'iecosystem' bằng 'ecosystem'",
+      "replacementText": "ecosystem"
+     },
+     {
+      "id": "lex9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "foods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dạng từ",
+      "explanationVi": "Bạn dùng 'foods' nhưng trong ngữ cảnh này, 'food' (không đếm) là phù hợp hơn.",
+      "repairVi": "thay 'foods' bằng 'food'",
+      "replacementText": "food"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "despoiled tby",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'tby' thay vì 'by', đây là lỗi chính tả cơ bản.",
+      "repairVi": "Sửa 'tby' thành 'by'.",
+      "replacementText": "by"
+     },
+     {
+      "id": "finding2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "I’m Iconcerned",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'Iconcerned' thay vì 'concerned', gây khó hiểu.",
+      "repairVi": "Sửa 'Iconcerned' thành 'concerned'.",
+      "replacementText": "concerned"
+     },
+     {
+      "id": "finding3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "increasing amounts of species",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "'Amounts' dùng cho danh từ không đếm được, nhưng 'species' đếm được, nên dùng 'numbers' để chính xác.",
+      "repairVi": "Sửa 'amounts' thành 'numbers'.",
+      "replacementText": "numbers"
+     },
+     {
+      "id": "finding4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "endangered sanimals’ foods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả và collocation",
+      "explanationVi": "'sanimals' là lỗi chính tả, và 'foods' không tự nhiên ở đây; nên dùng 'animals' food' cho chính xác.",
+      "repairVi": "Sửa 'sanimals’ foods' thành 'animals' food'.",
+      "replacementText": "animals' food"
+     },
+     {
+      "id": "finding5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "a couple few years",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không tự nhiên",
+      "explanationVi": "'a couple few years' không phải cụm từ tiếng Anh tiêu chuẩn; nên dùng 'a couple of years' hoặc 'a few years'.",
+      "repairVi": "Sửa thành 'a couple of years'.",
+      "replacementText": "a couple of years"
+     },
+     {
+      "id": "finding6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "thorough thinking",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Collocation không tự nhiên",
+      "explanationVi": "'thorough thinking' không phải搭配 tự nhiên; 'thorough consideration' phù hợp hơn trong ngữ cảnh học thuật.",
+      "repairVi": "Sửa thành 'thorough consideration'.",
+      "replacementText": "thorough consideration"
+     },
+     {
+      "id": "finding7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "logically improper",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai lựa chọn từ",
+      "explanationVi": "'improper' thường dùng cho hành vi, không hợp với logic; nên dùng 'flawed' hoặc 'illogical' để chính xác.",
+      "repairVi": "Sửa thành 'logically flawed'.",
+      "replacementText": "logically flawed"
+     },
+     {
+      "id": "finding8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "iecosystem",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Bạn viết 'iecosystem' thay vì 'ecosystem', lỗi chính tả rõ ràng.",
+      "repairVi": "Sửa thành 'ecosystem'.",
+      "replacementText": "ecosystem"
+     },
+     {
+      "id": "finding9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "useful to human",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu số nhiều",
+      "explanationVi": "'useful to human' thiếu số nhiều; nên dùng 'useful to humans' để đúng ngữ pháp và tự nhiên.",
+      "repairVi": "Sửa thành 'useful to humans'.",
+      "replacementText": "useful to humans"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6.5-t2-essay.pdf",
+  "band": 6,
+  "rationaleVi": "Bạn sử dụng một lượng từ vựng adequate với thuật ngữ chủ đề, nhưng thường xuyên mắc lỗi chính tả, chọn từ sai và搭配 không tự nhiên, ảnh hưởng đến độ chính xác và sự trôi chảy.",
+  "findings": [
+   {
+    "id": "lex1",
+    "criterion": "lexical_resource",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "A larger amount",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chọn từ",
+    "explanationVi": "Bạn dùng 'amount' cho danh từ đếm được 'young adults', nhưng 'amount' thường dùng cho danh từ không đếm được. Nên dùng 'number'.",
+    "repairVi": "Thay 'amount' bằng 'number'.",
+    "replacementText": "A larger number"
+   },
+   {
+    "id": "lex2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "financial budget",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đặp từ thừa",
+    "explanationVi": "'Budget' đã mang nghĩa tài chính, nên 'financial budget' là thừa. Nên dùng 'budget' hoặc 'financial constraints'.",
+    "repairVi": "Thay 'financial budget' bằng 'budget' hoặc 'financial constraints'.",
+    "replacementText": "budget"
+   },
+   {
+    "id": "lex3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "fconstruction",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Sai chính tả, nên là 'construction'.",
+    "repairVi": "Thay 'fconstruction' bằng 'construction'.",
+    "replacementText": "construction"
+   },
+   {
+    "id": "lex4",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "pre-school agencies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chọn từ",
+    "explanationVi": "'Agencies' thường chỉ tổ chức, không phải cơ sở giáo dục. Nên dùng 'pre-schools' hoặc 'pre-school facilities'.",
+    "repairVi": "Thay 'agencies' bằng 'schools' hoặc 'facilities'.",
+    "replacementText": "pre-schools"
+   },
+   {
+    "id": "lex5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "surgeof",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Thiếu khoảng trắng, nên là 'surge of'.",
+    "repairVi": "Thay 'surgeof' bằng 'surge of'.",
+    "replacementText": "surge of"
+   },
+   {
+    "id": "lex6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "youngera",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Sai chính tả, nên là 'younger'.",
+    "repairVi": "Thay 'youngera' bằng 'younger'.",
+    "replacementText": "younger"
+   },
+   {
+    "id": "lex7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "willenjoy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Thiếu khoảng trắng, nên là 'will enjoy'.",
+    "repairVi": "Thay 'willenjoy' bằng 'will enjoy'.",
+    "replacementText": "will enjoy"
+   },
+   {
+    "id": "lex8",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "costcould",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Sai chính tả, nên là 'cost could'.",
+    "repairVi": "Thay 'costcould' bằng 'cost could'.",
+    "replacementText": "cost could"
+   },
+   {
+    "id": "lex9",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "bew",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi chính tả",
+    "explanationVi": "Sai chính tả, nên là 'be'.",
+    "repairVi": "Thay 'bew' bằng 'be'.",
+    "replacementText": "be"
+   },
+   {
+    "id": "1",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "A larger amount of young adults",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai từ cho danh từ đếm được",
+    "explanationVi": "Bạn dùng 'amount' cho danh từ đếm được 'young adults', trong khi đúng là 'number'.",
+    "repairVi": "Thay 'amount' bằng 'number'.",
+    "replacementText": "A larger number of young adults"
+   },
+   {
+    "id": "2",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the senior people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thuật ngữ không chuẩn",
+    "explanationVi": "Bạn dùng 'senior people' để chỉ người cao tuổi, nhưng 'elderly' hoặc 'older people' phổ biến hơn.",
+    "repairVi": "Sử dụng 'the elderly' hoặc 'older people'.",
+    "replacementText": "the elderly"
+   },
+   {
+    "id": "3",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "in fconstruction",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai chính tả",
+    "explanationVi": "Bạn viết sai 'fconstruction' thay vì 'construction'.",
+    "repairVi": "Sửa 'fconstruction' thành 'construction'.",
+    "replacementText": "in construction"
+   },
+   {
+    "id": "5",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "development of economy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thiếu mạo từ",
+    "explanationVi": "Bạn viết 'development of economy' nên là 'development of the economy' hoặc 'economic development'.",
+    "repairVi": "Thêm 'the' trước 'economy' hoặc sử dụng 'economic development'.",
+    "replacementText": "development of the economy"
+   },
+   {
+    "id": "6",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Larger amount of workforce",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai cách dùng từ",
+    "explanationVi": "Bạn dùng 'amount of workforce' nhưng 'workforce' thường dùng với 'larger' trực tiếp.",
+    "repairVi": "Thay 'Larger amount of workforce' bằng 'A larger workforce'.",
+    "replacementText": "A larger workforce"
+   },
+   {
+    "id": "7",
+    "criterion": "lexical_resource",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "through the history of China",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Giới sai",
+    "explanationVi": "Bạn dùng 'through' thay vì 'throughout' để chỉ suốt lịch sử.",
+    "repairVi": "Thay 'through' bằng 'throughout'.",
+    "replacementText": "throughout the history of China"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "lex1",
+      "criterion": "lexical_resource",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "A larger amount",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chọn từ",
+      "explanationVi": "Bạn dùng 'amount' cho danh từ đếm được 'young adults', nhưng 'amount' thường dùng cho danh từ không đếm được. Nên dùng 'number'.",
+      "repairVi": "Thay 'amount' bằng 'number'.",
+      "replacementText": "A larger number"
+     },
+     {
+      "id": "lex2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "financial budget",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đặp từ thừa",
+      "explanationVi": "'Budget' đã mang nghĩa tài chính, nên 'financial budget' là thừa. Nên dùng 'budget' hoặc 'financial constraints'.",
+      "repairVi": "Thay 'financial budget' bằng 'budget' hoặc 'financial constraints'.",
+      "replacementText": "budget"
+     },
+     {
+      "id": "lex3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "fconstruction",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Sai chính tả, nên là 'construction'.",
+      "repairVi": "Thay 'fconstruction' bằng 'construction'.",
+      "replacementText": "construction"
+     },
+     {
+      "id": "lex4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "pre-school agencies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chọn từ",
+      "explanationVi": "'Agencies' thường chỉ tổ chức, không phải cơ sở giáo dục. Nên dùng 'pre-schools' hoặc 'pre-school facilities'.",
+      "repairVi": "Thay 'agencies' bằng 'schools' hoặc 'facilities'.",
+      "replacementText": "pre-schools"
+     },
+     {
+      "id": "lex5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "surgeof",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Thiếu khoảng trắng, nên là 'surge of'.",
+      "repairVi": "Thay 'surgeof' bằng 'surge of'.",
+      "replacementText": "surge of"
+     },
+     {
+      "id": "lex6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "youngera",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Sai chính tả, nên là 'younger'.",
+      "repairVi": "Thay 'youngera' bằng 'younger'.",
+      "replacementText": "younger"
+     },
+     {
+      "id": "lex7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "willenjoy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Thiếu khoảng trắng, nên là 'will enjoy'.",
+      "repairVi": "Thay 'willenjoy' bằng 'will enjoy'.",
+      "replacementText": "will enjoy"
+     },
+     {
+      "id": "lex8",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "costcould",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Sai chính tả, nên là 'cost could'.",
+      "repairVi": "Thay 'costcould' bằng 'cost could'.",
+      "replacementText": "cost could"
+     },
+     {
+      "id": "lex9",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "bew",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi chính tả",
+      "explanationVi": "Sai chính tả, nên là 'be'.",
+      "repairVi": "Thay 'bew' bằng 'be'.",
+      "replacementText": "be"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "A larger amount of young adults",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai từ cho danh từ đếm được",
+      "explanationVi": "Bạn dùng 'amount' cho danh từ đếm được 'young adults', trong khi đúng là 'number'.",
+      "repairVi": "Thay 'amount' bằng 'number'.",
+      "replacementText": "A larger number of young adults"
+     },
+     {
+      "id": "2",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the senior people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thuật ngữ không chuẩn",
+      "explanationVi": "Bạn dùng 'senior people' để chỉ người cao tuổi, nhưng 'elderly' hoặc 'older people' phổ biến hơn.",
+      "repairVi": "Sử dụng 'the elderly' hoặc 'older people'.",
+      "replacementText": "the elderly"
+     },
+     {
+      "id": "3",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "in fconstruction",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai chính tả",
+      "explanationVi": "Bạn viết sai 'fconstruction' thay vì 'construction'.",
+      "repairVi": "Sửa 'fconstruction' thành 'construction'.",
+      "replacementText": "in construction"
+     },
+     {
+      "id": "4",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "pre-school agencies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Cụm từ không tự nhiên",
+      "explanationVi": "Bạn dùng 'pre-school agencies' nhưng 'preschools' hoặc 'preschool facilities' phổ biến hơn.",
+      "repairVi": "Thay 'pre-school agencies' bằng 'preschools'.",
+      "replacementText": "preschools"
+     },
+     {
+      "id": "5",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "development of economy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thiếu mạo từ",
+      "explanationVi": "Bạn viết 'development of economy' nên là 'development of the economy' hoặc 'economic development'.",
+      "repairVi": "Thêm 'the' trước 'economy' hoặc sử dụng 'economic development'.",
+      "replacementText": "development of the economy"
+     },
+     {
+      "id": "6",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Larger amount of workforce",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai cách dùng từ",
+      "explanationVi": "Bạn dùng 'amount of workforce' nhưng 'workforce' thường dùng với 'larger' trực tiếp.",
+      "repairVi": "Thay 'Larger amount of workforce' bằng 'A larger workforce'.",
+      "replacementText": "A larger workforce"
+     },
+     {
+      "id": "7",
+      "criterion": "lexical_resource",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "through the history of China",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Giới sai",
+      "explanationVi": "Bạn dùng 'through' thay vì 'throughout' để chỉ suốt lịch sử.",
+      "repairVi": "Thay 'through' bằng 'throughout'.",
+      "replacementText": "throughout the history of China"
+     }
+    ]
+   }
+  ]
+ }
+]

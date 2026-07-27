@@ -1,0 +1,606 @@
+[
+ {
+  "fileId": "5.5-t2-2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với luận điểm chính được trình bày mạch lạc trong lời giới thiệu và kết luận. Tuy nhiên, sự chuyển ý giữa các đoạn văn body chưa hoàn toàn trôi chảy, cụ thể là việc sử dụng nhầm từ 'In contrast' ở đầu đoạn 2 tạo ra sự không liền mạch trong kiến trúc tư tưởng.",
+  "findings": [
+   {
+    "id": "finding_1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "In contrast, I also feel that a society filled with patients",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mối quan hệ giữa các đoạn văn không rõ ràng",
+    "explanationVi": "Bạn mở đầu đoạn 2 bằng 'In contrast', nhưng đoạn này thực chất không đối lập với đoạn 1. Cả hai đoạn đều ủng hộ luận điểm chính về trách nhiệm với xã hội. Từ 'contrast' khiến người đọc chờ đợi một ý kiến trái chiều, nhưng họ lại nhận được một lập luận bổ sung, gây phá vỡ dòng chảy logic.",
+    "repairVi": "Bạn nên thay 'In contrast' bằng một cụm từ chỉ sự bổ sung, như 'Furthermore' hoặc 'Another important consideration is that', để thể hiện rõ rằng đây là một lý do thứ hai ủng hộ quan điểm đã nêu ở đoạn 1.",
+    "replacementText": "Furthermore, I also feel that"
+   },
+   {
+    "id": "find1",
+    "criterion": "coherence",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "In contrast, I also feel that a society filled with patients withincurable diseases and disabled inhabitants will result in resentment and discrimination among community members.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sử dụng từ nối không phù hợp",
+    "explanationVi": "Bạn đã sử dụng 'In contrast' để bắt đầu đoạn văn, nhưng ý ở đây không phải là tương phản với đoạn trước mà là bổ sung cho cùng luận điểm đồng ý. Điều này có thể khiến người đọc hiểu sai mối quan hệ logic giữa các đoạn, gây khó khăn nhỏ trong việc theo dõi luồng ý.",
+    "repairVi": "Thay 'In contrast' bằng 'Furthermore' hoặc 'Additionally' để chỉ ra sự bổ sung ý, phù hợp với mối quan hệ thực tế giữa hai đoạn.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding_1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "In contrast, I also feel that a society filled with patients",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mối quan hệ giữa các đoạn văn không rõ ràng",
+      "explanationVi": "Bạn mở đầu đoạn 2 bằng 'In contrast', nhưng đoạn này thực chất không đối lập với đoạn 1. Cả hai đoạn đều ủng hộ luận điểm chính về trách nhiệm với xã hội. Từ 'contrast' khiến người đọc chờ đợi một ý kiến trái chiều, nhưng họ lại nhận được một lập luận bổ sung, gây phá vỡ dòng chảy logic.",
+      "repairVi": "Bạn nên thay 'In contrast' bằng một cụm từ chỉ sự bổ sung, như 'Furthermore' hoặc 'Another important consideration is that', để thể hiện rõ rằng đây là một lý do thứ hai ủng hộ quan điểm đã nêu ở đoạn 1.",
+      "replacementText": "Furthermore, I also feel that"
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "coherence",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "In contrast, I also feel that a society filled with patients withincurable diseases and disabled inhabitants will result in resentment and discrimination among community members.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sử dụng từ nối không phù hợp",
+      "explanationVi": "Bạn đã sử dụng 'In contrast' để bắt đầu đoạn văn, nhưng ý ở đây không phải là tương phản với đoạn trước mà là bổ sung cho cùng luận điểm đồng ý. Điều này có thể khiến người đọc hiểu sai mối quan hệ logic giữa các đoạn, gây khó khăn nhỏ trong việc theo dõi luồng ý.",
+      "repairVi": "Thay 'In contrast' bằng 'Furthermore' hoặc 'Additionally' để chỉ ra sự bổ sung ý, phù hợp với mối quan hệ thực tế giữa hai đoạn.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng, với các đoạn văn phát triển ý logic và liên kết chặt chẽ. Người đọc dễ dàng theo dõi luồng ý kiến từ giới thiệu đến kết luận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-dependent-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc chung rõ ràng với mở đoạn, hai đoạn thân bài và kết luận, nhưng sự mạch lạc bên trong các đoạn văn chưa tốt. Đoạn thứ ba trộn lẫn hai luồng ý tưởng về công nghệ và hôn nhân mà không kết nối hợp lý, tạo khó khăn cho người đọc. Sự gắn kết được sử dụng nhưng đôi khi cơ học hoặc không chính xác.",
+  "findings": [
+   {
+    "id": "finding1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "Besides, Tcompared with keeping the conservative thinking, more youngsters believe that people don’tt need to rely on their marriage",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Luồng ý tưởng hỗn hợp trong đoạn văn",
+    "explanationVi": "Bạn mở đầu đoạn văn với chủ đề công nghệ giúp con người trở nên độc lập, nhưng sau đó chuyển sang vấn đề tư duy hôn nhân mà không có sự liên kết rõ ràng với công nghệ, tạo ra hai ý tưởng riêng biệt trong cùng một đoạn.",
+    "repairVi": "Kết nối điểm về hôn nhân với chủ đề độc lập bằng cách giải thích rằng công nghệ cũng thay đổi tư duy xã hội, giúp mọi người tự quyết định cuộc sống mà không phụ thuộc vào các quan hệ truyền thống.",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "For those who reckon themselves are becoming dependent is because sometimes people feela lost and isolated in the modern world. Comes with the modern world,the diversity. For example, playing tik-tok is a new trend among youngsters some youngsters become anxious and nervous",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Luồng ý hỗn hợp",
+    "explanationVi": "Bạn bắt đầu đoạn bằng ý chính về sự phụ thuộc do cảm giác mất mát, nhưng sau đó chuyển sang chủ đề đa dạng và ví dụ về TikTok mà không giải thích rõ ràng mối liên hệ. Điều này khiến người đọc phải tự tìm cách nối ý.",
+    "repairVi": "Bạn nên duy trì chủ đề về sự phụ thuộc, và chỉ sử dụng ví dụ TikTok để minh họa trực tiếp cho cảm giác mất mát hoặc cô lập, thay vì đề cập đến đa dạng một cách đột ngột.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "Besides, Tcompared with keeping the conservative thinking, more youngsters believe that people don’tt need to rely on their marriage",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Luồng ý tưởng hỗn hợp trong đoạn văn",
+      "explanationVi": "Bạn mở đầu đoạn văn với chủ đề công nghệ giúp con người trở nên độc lập, nhưng sau đó chuyển sang vấn đề tư duy hôn nhân mà không có sự liên kết rõ ràng với công nghệ, tạo ra hai ý tưởng riêng biệt trong cùng một đoạn.",
+      "repairVi": "Kết nối điểm về hôn nhân với chủ đề độc lập bằng cách giải thích rằng công nghệ cũng thay đổi tư duy xã hội, giúp mọi người tự quyết định cuộc sống mà không phụ thuộc vào các quan hệ truyền thống.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "For those who reckon themselves are becoming dependent is because sometimes people feela lost and isolated in the modern world. Comes with the modern world,the diversity. For example, playing tik-tok is a new trend among youngsters some youngsters become anxious and nervous",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Luồng ý hỗn hợp",
+      "explanationVi": "Bạn bắt đầu đoạn bằng ý chính về sự phụ thuộc do cảm giác mất mát, nhưng sau đó chuyển sang chủ đề đa dạng và ví dụ về TikTok mà không giải thích rõ ràng mối liên hệ. Điều này khiến người đọc phải tự tìm cách nối ý.",
+      "repairVi": "Bạn nên duy trì chủ đề về sự phụ thuộc, và chỉ sử dụng ví dụ TikTok để minh họa trực tiếp cho cảm giác mất mát hoặc cô lập, thay vì đề cập đến đa dạng một cách đột ngột.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-t2-concentrate (1).pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với mỗi đoạn thân bài có ý tưởng chủ đề rõ ràng và phát triển đúng hướng. Sự chuyển ý giữa các đoạn mượt mà, nhưng một số thiết bị liên kết có phần máy móc và lặp lại, làm giảm tính trôi chảy tổng thể.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "band-7-t2-concentrate.pdf",
+  "band": 8,
+  "rationaleVi": "Luận văn có cấu trúc rõ ràng, với đoạn giới thiệu, hai đoạn thân bài và kết luận. Mỗi đoạn thân bài có câu chủ đề nêu rõ ý tưởng chính và phát triển đúng hướng, dòng chảy từ đoạn này sang đoạn khác mượt mà, giúp người đọc dễ dàng theo dõi luồng luận điểm. Không có vấn đề lớn về thứ tự ý tưởng hoặc nhầm lẫn giữa các luồng tranh luận.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "gove-band-6-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc logic rõ ràng với các đoạn văn phát triển ý tưởng mạch lạc, nhưng sự gắn kết giữa các ý có lúc chưa hoàn hảo.",
+  "findings": [
+   {
+    "id": "coherence-conclusion-weak",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "In conclusion, it’s hard for artists to earn their living by themselves but the value they created is meaningful.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết luận không tổng hợp lập trường",
+    "explanationVi": "Bạn viết rằng các nghệ sĩ khó tự kiếm sống, nhưng không giải quyết vấn đề chính là nên tài trợ từ nguồn nào trong phần kết. Các thân bài đã trình bày hai nguồn tài trợ khác nhau, nhưng kết luận chỉ nêu giá trị của nghệ thuật mà không nối lại hai lập trường hoặc xác định rõ quan điểm cá nhân.",
+    "repairVi": "Thêm một câu tóm tắt quan điểm về nguồn tài trợ, ví dụ: 'Vì vậy, chính phủ nên hỗ trợ tài chính cho nghệ sĩ để duy trì giá trị văn hóa lâu dài, thay vì dựa hoàn toàn vào nguồn thay thế.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "coherence-conclusion-weak",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "In conclusion, it’s hard for artists to earn their living by themselves but the value they created is meaningful.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết luận không tổng hợp lập trường",
+      "explanationVi": "Bạn viết rằng các nghệ sĩ khó tự kiếm sống, nhưng không giải quyết vấn đề chính là nên tài trợ từ nguồn nào trong phần kết. Các thân bài đã trình bày hai nguồn tài trợ khác nhau, nhưng kết luận chỉ nêu giá trị của nghệ thuật mà không nối lại hai lập trường hoặc xác định rõ quan điểm cá nhân.",
+      "repairVi": "Thêm một câu tóm tắt quan điểm về nguồn tài trợ, ví dụ: 'Vì vậy, chính phủ nên hỗ trợ tài chính cho nghệ sĩ để duy trì giá trị văn hóa lâu dài, thay vì dựa hoàn toàn vào nguồn thay thế.'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "ielts-essays-ads-are-more-important-then-the-real-needs-of-the-consumer.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với các đoạn thân bài phát triển đúng hướng từ câu chủ đề, nhưng sự liên kết giữa các ý chưa hoàn toàn mượt mà ở một số chỗ, làm người đọc phải chú ý hơn.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "ielts-essays-alcohol-is-becoming-popular.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với câu chủ đề hiệu quả, luồng logic từ vấn đề sang giải pháp dễ theo dõi, và sự gắn kết tốt giữa các đoạn, giúp người đọc nắm bắt ý kiến một cách thuận lợi.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "longevity-t2-band-6.pdf",
+  "band": 7,
+  "rationaleVi": "Cấu trúc bài luận rõ ràng với các đoạn văn có ý tưởng kiểm soát phát triển hợp lý, nhưng phần giới thiệu lặp lại và một số liên kết nội bộ chưa hoàn thiện khiến người đọc phải gắng sức đôi chút.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "multinationals-6.5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với phần giới thiệu, hai đoạn thân bài ủng hộ và một đoạn nêu mặt trái, cùng kết luận. Tuy nhiên, luồng ý trong đoạn thứ ba (mặt trái) bị gián đoạn do sử dụng thừa các từ nối, và sự chuyển ý giữa các đoạn chưa thực sự mượt mà. Cấu trúc tổng thể vẫn duy trì được lập trường và mạch lạc cho người đọc.",
+  "findings": [
+   {
+    "id": "find_1",
+    "criterion": "coherence",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "On the other hand, multinational business, however, can also bring harmful effects to local districts.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Từ nối lặp ý gây gián đoạn",
+    "explanationVi": "Bạn sử dụng cả 'On the other hand' và 'however' trong cùng một câu chủ đề. Cả hai đều mang chức năng tương tự là nối ý trái ngược, nên việc dùng chung tạo cảm giác lặp ý và gây bối rối cho người đọc về việc liệu đây có phải là một sự chuyển ý mới hay chỉ là một ý mở rộng.",
+    "repairVi": "Bạn chỉ nên chọn một trong hai từ nối. Ví dụ: 'On the other hand, multinational companies can also bring harmful effects...' hoặc 'However, multinational companies can also bring harmful effects...'",
+    "replacementText": "On the other hand, multinational companies can also bring harmful effects to local districts."
+   },
+   {
+    "id": "find_3",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Another positive impact that multinational companies have is that they introduce new technology and professional skills with them and this boosts the communication between countries about the latest technologyical innovation and inventions. There is no doubt that with global corporation nand participation, the efficiency of manufacturing and global business will be greatly enhanced.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Luồng ý phát triển chưa rõ ràng",
+    "explanationVi": "Câu chủ đề của bạn nói về việc giới thiệu 'công nghệ và kỹ năng mới', nhưng phần phát triển lại đi về hướng 'giao tiếp giữa các quốc gia' và 'hiệu quả sản xuất'. Mặc dù có liên quan, nhưng không có câu nào giải thích rõ ràng làm thế nào việc giới thiệu công nghệ lại dẫn đến tăng cường giao tiếp, rồi từ đó lại giúp提高 hiệu quả sản xuất. Luồng ý nhảy cóc.",
+    "repairVi": "Bạn cần thêm một hoặc hai câu để giải thích rõ mối liên kết logic giữa việc giới thiệu công nghệ và sự提高 hiệu quả sản xuất thông qua sự hợp tác toàn cầu.",
+    "replacementText": "Another positive impact is that multinational companies introduce new technology and professional skills. This fosters international collaboration on technological innovations. Consequently, with such global participation, the efficiency of manufacturing and business processes is greatly enhanced."
+   },
+   {
+    "id": "coherence_paragraphing",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "First of all, the spread of multinational corporation means offering oa large number of job opportunities to inthe local area, which can definitely ease the pressure ofunemployment rate.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu phân đoạn rõ ràng",
+    "explanationVi": "Bạn viết toàn bộ bài trong một đoạn duy nhất, không chia thành các đoạn văn cho từng ý chính trong thân bài. Điều này làm giảm tính rõ ràng về kiến trúc luận điểm, vì người đọc phải tự xác định ranh giới giữa các ý.",
+    "repairVi": "Bạn nên chia bài thành nhiều đoạn: một đoạn mở đầu, sau đó mỗi ý chính (ví dụ: việc làm, phát triển kinh tế, công nghệ) thành một đoạn riêng, và đoạn kết luận. Điều này giúp người đọc dễ dàng theo dõi luồng ý tưởng.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "find_1",
+      "criterion": "coherence",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "On the other hand, multinational business, however, can also bring harmful effects to local districts.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Từ nối lặp ý gây gián đoạn",
+      "explanationVi": "Bạn sử dụng cả 'On the other hand' và 'however' trong cùng một câu chủ đề. Cả hai đều mang chức năng tương tự là nối ý trái ngược, nên việc dùng chung tạo cảm giác lặp ý và gây bối rối cho người đọc về việc liệu đây có phải là một sự chuyển ý mới hay chỉ là một ý mở rộng.",
+      "repairVi": "Bạn chỉ nên chọn một trong hai từ nối. Ví dụ: 'On the other hand, multinational companies can also bring harmful effects...' hoặc 'However, multinational companies can also bring harmful effects...'",
+      "replacementText": "On the other hand, multinational companies can also bring harmful effects to local districts."
+     },
+     {
+      "id": "find_3",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Another positive impact that multinational companies have is that they introduce new technology and professional skills with them and this boosts the communication between countries about the latest technologyical innovation and inventions. There is no doubt that with global corporation nand participation, the efficiency of manufacturing and global business will be greatly enhanced.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Luồng ý phát triển chưa rõ ràng",
+      "explanationVi": "Câu chủ đề của bạn nói về việc giới thiệu 'công nghệ và kỹ năng mới', nhưng phần phát triển lại đi về hướng 'giao tiếp giữa các quốc gia' và 'hiệu quả sản xuất'. Mặc dù có liên quan, nhưng không có câu nào giải thích rõ ràng làm thế nào việc giới thiệu công nghệ lại dẫn đến tăng cường giao tiếp, rồi từ đó lại giúp提高 hiệu quả sản xuất. Luồng ý nhảy cóc.",
+      "repairVi": "Bạn cần thêm một hoặc hai câu để giải thích rõ mối liên kết logic giữa việc giới thiệu công nghệ và sự提高 hiệu quả sản xuất thông qua sự hợp tác toàn cầu.",
+      "replacementText": "Another positive impact is that multinational companies introduce new technology and professional skills. This fosters international collaboration on technological innovations. Consequently, with such global participation, the efficiency of manufacturing and business processes is greatly enhanced."
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "coherence_paragraphing",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "First of all, the spread of multinational corporation means offering oa large number of job opportunities to inthe local area, which can definitely ease the pressure ofunemployment rate.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu phân đoạn rõ ràng",
+      "explanationVi": "Bạn viết toàn bộ bài trong một đoạn duy nhất, không chia thành các đoạn văn cho từng ý chính trong thân bài. Điều này làm giảm tính rõ ràng về kiến trúc luận điểm, vì người đọc phải tự xác định ranh giới giữa các ý.",
+      "repairVi": "Bạn nên chia bài thành nhiều đoạn: một đoạn mở đầu, sau đó mỗi ý chính (ví dụ: việc làm, phát triển kinh tế, công nghệ) thành một đoạn riêng, và đoạn kết luận. Điều này giúp người đọc dễ dàng theo dõi luồng ý tưởng.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "plants-band-6-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với các đoạn văn riêng biệt, nhưng sự lặp lại nội dung trong đoạn thân bài đầu tiên phá vỡ sự phát triển logic, khiến người đọc khó theo dõi.",
+  "findings": [
+   {
+    "id": "repetition_body1",
+    "criterion": "coherence",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "The extinction of particular plants and animals can lead to the scarce of gene diversity.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Nội dung lặp lại",
+    "explanationVi": "Bạn đã lặp lại câu chủ đề và các ý chính trong đoạn thân bài về sự tuyệt chủng, điều này làm cho đoạn văn trở nên rườm rà và không phát triển thêm ý mới, khiến người đọc khó theo dõi sự tiến triển logic.",
+    "repairVi": "Bạn nên xóa bỏ các câu lặp lại và chỉ giữ lại một lần trình bày để đoạn văn tập trung vào việc giải thích nguyên nhân và hậu quả của sự tuyệt chủng.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "repetition_body1",
+      "criterion": "coherence",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "The extinction of particular plants and animals can lead to the scarce of gene diversity.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Nội dung lặp lại",
+      "explanationVi": "Bạn đã lặp lại câu chủ đề và các ý chính trong đoạn thân bài về sự tuyệt chủng, điều này làm cho đoạn văn trở nên rườm rà và không phát triển thêm ý mới, khiến người đọc khó theo dõi sự tiến triển logic.",
+      "repairVi": "Bạn nên xóa bỏ các câu lặp lại và chỉ giữ lại một lần trình bày để đoạn văn tập trung vào việc giải thích nguyên nhân và hậu quả của sự tuyệt chủng.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-6.5-task-2s.pdf",
+  "band": 5,
+  "rationaleVi": "Bài luận có cấu trúc toàn cục không mạch lạc vì chứa hai chủ đề riêng biệt không liên quan (giải trí điện tử và hỗ trợ quốc tế), khiến người đọc không thể theo dõi một lập luận duy nhất xuyên suốt bài viết.",
+  "findings": [
+   {
+    "id": "global-arch-mix",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Only by doing so, can children have abetter development.\nSome peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lỗi kiến trúc toàn cục",
+    "explanationVi": "Bạn đã viết hai bài luận riêng biệt về các chủ đề không liên kết trong cùng một bài, đoạn chuyển tiếp giữa chúng hoàn toàn đột ngột và không có lý do logic nào được cung cấp.",
+    "repairVi": "Bạn nên chọn một chủ đề (ví dụ: tác động của giải trí điện tử lên trẻ em) và phát triển nó hoàn chỉnh trong toàn bài, bỏ qua phần viết về hỗ trợ quốc tế.",
+    "replacementText": ""
+   },
+   {
+    "id": "coherence_global_architecture",
+    "criterion": "coherence",
+    "scope": "macro",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "Some peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chuyển đề đột ngột không có liên kết",
+    "explanationVi": "Bạn viết thêm một đoạn về chủ đề quốc tế hỗ trợ tài chính mà không có phần chuyển tiếp hoặc liên kết với chủ đề trước đó, phá vỡ kiến trúc logic của bài luận, khiến toàn bộ bài trở nên rời rạc.",
+    "repairVi": "Bạn nên xóa phần về chủ đề quốc tế hỗ trợ tài chính hoặc nếu muốn viết hai chủ đề, cần thêm câu chuyển tiếp hợp lý để nối chúng lại với nhau.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "global-arch-mix",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Only by doing so, can children have abetter development.\nSome peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lỗi kiến trúc toàn cục",
+      "explanationVi": "Bạn đã viết hai bài luận riêng biệt về các chủ đề không liên kết trong cùng một bài, đoạn chuyển tiếp giữa chúng hoàn toàn đột ngột và không có lý do logic nào được cung cấp.",
+      "repairVi": "Bạn nên chọn một chủ đề (ví dụ: tác động của giải trí điện tử lên trẻ em) và phát triển nó hoàn chỉnh trong toàn bài, bỏ qua phần viết về hỗ trợ quốc tế.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "coherence_global_architecture",
+      "criterion": "coherence",
+      "scope": "macro",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "Some peop Nowadays, an increasing number of people are concerned about the international assistance in athe world.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển đề đột ngột không có liên kết",
+      "explanationVi": "Bạn viết thêm một đoạn về chủ đề quốc tế hỗ trợ tài chính mà không có phần chuyển tiếp hoặc liên kết với chủ đề trước đó, phá vỡ kiến trúc logic của bài luận, khiến toàn bộ bài trở nên rời rạc.",
+      "repairVi": "Bạn nên xóa phần về chủ đề quốc tế hỗ trợ tài chính hoặc nếu muốn viết hai chủ đề, cần thêm câu chuyển tiếp hợp lý để nối chúng lại với nhau.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

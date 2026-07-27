@@ -11,6 +11,16 @@ interface BenchmarkReferencePromptInput {
   essay: string;
   scores?: ExternalScores;
   sourceUrl?: string;
+  /**
+   * Withhold the external assessor's bands from the model.
+   *
+   * Showing them makes the run useless for measuring scoring accuracy: the
+   * model is handed the answer and told to stay within 0.5 of it, so agreement
+   * with those bands says nothing about independent judgment. Set this whenever
+   * the run is being used to calibrate scoring rather than to draft reference
+   * commentary for an essay whose band is already settled.
+   */
+  blindScores?: boolean;
 }
 
 const BENCHMARK_INSTRUCTIONS = String.raw`
@@ -42,10 +52,35 @@ Overall score is the arithmetic mean of the criterion scores, rounded to the nea
 Do not convert raw error count into a band.
 A band is a holistic judgment.
 
-Use the external assessor scores as calibration anchors, not as blind truth.
-If your score differs from the external overall score by more than 0.5, privately re-check whether you are over-penalizing or under-penalizing the essay.
-If you still disagree, the reason must be a central task/clarity/control problem, not merely a longer list of local edits.
+Score before you hunt. Read the essay once as a reader, then commit to the five
+bands in section 1. Only after that go looking for errors. You may not lower a
+score in section 1 because section 5 turned out long: a list that grows means
+you looked harder, not that the writing got worse. Two essays with four and with
+eight local errors can both be band 8 if none of them impede the reader.
 
+Before recording any error, ask whether a real examiner reading at normal speed
+would stop at it. If not, it belongs in section 6 as an optional note, not in
+section 5.
+
+Error budget by band, to keep section 5 consistent with section 1:
+- Band 8 or above on a criterion: at most 2 Must-Catch errors for it, and none marked major.
+- Band 7: at most 4, at most one major.
+- Band 6 and below: as many as the writing genuinely shows.
+If you cannot fit under the budget, one of the two judgments is wrong. Either the
+band should be lower, or the findings are not really Must-Catch. Fix the mismatch
+rather than reporting both.
+
+“major” means this single problem by itself stops the essay reaching the next
+band. It is rare. Most real errors are medium or minor.
+
+The bottom of the scale is real. Band 5 is not the floor:
+- If the reader must re-read sentences to recover the meaning, that is band 4.
+- If meaning is frequently lost, that is band 3.
+- If no point is developed beyond a bare assertion, Task Response is 4 or below
+  however clean the language is.
+Award a low band when the writing earns it instead of settling on 5.
+
+{{EXTERNAL_SCORE_ANCHORING}}
 No error quota:
 - Low-band essays should have enough material errors explained.
 - Mid-band essays should show the main limiting patterns.
@@ -121,8 +156,14 @@ Sound like a real tutor/editor sitting beside the writer:
 - no repeated formula like “hãy nhìn vào...” in every comment
 
 Use simple Vietnamese.
-Avoid unnecessary technical terms like “dependency”, “theme-rheme”, “macro proposition”, unless you explain them in ordinary words.
-Do not mix languages accidentally in Vietnamese explanations. Do not output Chinese/Japanese characters, raw placeholder terms, or malformed words such as “不足”, “lpatterns”, or similar artifacts. If you need an English assessment term, use it deliberately and explain it in Vietnamese.
+
+Script rule, absolute:
+Write Vietnamese using the Vietnamese alphabet only. Never emit a Chinese, Japanese, or Korean character anywhere in the output — not one character, not inside brackets, not as an abbreviation. This fails most often mid-sentence on abstract words, where a character such as 限制, 虽然, 缺, 词, or 论 is substituted for the Vietnamese word. If a Vietnamese word does not come to you, choose a simpler Vietnamese word. Re-read every Vietnamese sentence you write and delete any non-Vietnamese character before moving on.
+
+English words in Vietnamese prose, allow-list:
+The only English permitted inside a Vietnamese sentence is the five criterion names and exact essay quotations. Every other term is Vietnamese, or Vietnamese with the English in brackets on first use only: “câu chủ đề (topic sentence)”, “cách kết hợp từ (collocation)”, “câu cụt (fragment)”, “thân bài (body)”, “lập trường (position)”.
+Never fuse an English word into a Vietnamese phrase as if it were Vietnamese. Write “câu chủ đề”, not “câu topic”. Write “lỗi ngữ pháp”, not “lỗi grammar”. Write “phần phát triển ý chưa đủ sâu”, not “develop chưa đủ sâu”. Write “xuyên suốt bài”, not “throughout essay”.
+Do not use a technical label the writer would not recognise — “dependency”, “theme-rheme”, “macro proposition”, “auxiliary”, “participle”, “dangling modifier” — unless you immediately explain it in ordinary Vietnamese. Prefer describing what the sentence currently makes the reader understand.
 
 When a point is uncertain, mark it as an optional/style opinion, not a hard error.
 Example tone:
@@ -231,6 +272,17 @@ Treat these as sufficient unless a real contradiction or missing task requiremen
 These chains may still contain language errors, overclaiming, or weak evidence, but they are not automatically underdeveloped.
 
 If that chain exists, do not call it underdeveloped merely because the wording is awkward, repetitive, or grammatically imperfect.
+
+The named error patterns in this prompt are a vocabulary for describing a problem
+you have already found in this essay. They are not a checklist to run against
+every essay. If a pattern name would fit almost any Task 2 response, it is not
+telling the reader anything about this one.
+
+“Missing mechanism” and “underdeveloped point” are the two most over-applied
+labels. Use either only when you can quote the exact sentence where a reader
+stops and asks “why?”, and the answer is genuinely absent from the rest of the
+paragraph. Write that unanswered question as one plain sentence. If you cannot
+phrase it, the point is developed enough and there is no finding.
 
 Before reporting an underdeveloped point, state privately:
 1. the exact claim,
@@ -490,8 +542,23 @@ Do not call a phrasing choice Grammar when the sentence is grammatically accepta
 
 Every hard error must include exact English evidence from the essay.
 
+The evidence field is a character-for-character copy of the essay. It is not a
+place to demonstrate the fix.
+- Do not retype from memory. Locate the span in the essay and copy it.
+- Do not splice your correction into the quote. “that they adapt atsuit them” is
+  a fused quote-plus-fix and is always wrong; the fix goes in the suggested-fix field.
+- Before reporting any spelling or word-choice error, search the essay for that
+  exact string. If it is not there you have invented it — delete the finding
+  rather than repairing it. Invented misspellings are the single most common
+  evidence failure.
+- Evidence is English only. Never put Vietnamese commentary inside it.
+- Never quote the exam question, the word count, or your own earlier text as if
+  it were the writer's essay.
+
 Quote the smallest span that proves the issue.
-Add context quote only when needed.
+One error block quotes one span. If a sentence contains two independent problems,
+write two blocks rather than quoting the whole sentence once.
+Add a context quote only when the problem cannot be shown without it.
 
 Before saying an idea is underdeveloped, inspect the whole paragraph.
 Do not miss later support.
@@ -567,9 +634,18 @@ Cohesion: [whole band only]
 Lexical Resource: [whole band only]
 Grammar: [whole band only]
 
+Compute Overall explicitly before writing it: add the five criterion bands, divide
+by five, then round to the nearest 0.5. Write the number that arithmetic gives,
+even when it feels low or high. Do not round upward to soften the result.
+
 ## 2. First Impression
 
 [2-5 sentences in Vietnamese. Say what the essay is doing, what is limiting the score most, and why.]
+
+Describe what the writing does and where its limit lies. Do not write that an
+error “giới hạn band”, “khiến band dừng ở mức”, or otherwise caused a specific
+number — the band came from the descriptors in section 1, not from any one
+finding. On a strong essay, say what makes it strong before naming its limit.
 
 ## 3. Prompt Requirements
 
@@ -650,6 +726,12 @@ Criterion: [Task Response / Coherence / Cohesion / Lexical Resource / Grammar]
 Severity: [major / medium / minor]
 Confidence: [high / medium / low]
 
+Criterion takes exactly one of those five names. Never join two with “/”, “+”, or
+“and” — if a span needs two different fixes, write two error blocks. Severity
+takes exactly one of major, medium, minor, with no qualifier attached.
+Confidence must be honest and it decides placement: anything below high does not
+belong in this section, so move it to section 6 rather than promoting it here.
+
 Original evidence:
 > [exact English quote]
 
@@ -669,6 +751,9 @@ Suggested fix:
 
 Only include things that are not definite errors.
 
+Sections 6 and 7 have no target length. Zero items is a valid answer for either.
+Do not produce a fixed number of them out of habit.
+
 ### Suggestion [number]: [short name]
 
 Criterion: [Lexical Resource / Grammar / Style / Argument]
@@ -685,6 +770,10 @@ Suggested alternative:
 
 List places that may look questionable but should NOT be treated as errors.
 
+This is where a band 7+ essay earns its score. On strong writing this section
+should normally be longer than section 5. Name what the writer controls well and
+why it is not a defect, using the same exact-quote discipline as section 5.
+
 ### Do Not Penalize [number]
 
 Evidence:
@@ -695,7 +784,11 @@ Reason:
 
 ## 8. Band 8/9 Rewrite
 
-Write a stronger version of the whole essay.
+Write a stronger version of the whole essay, in no more than 320 words.
+
+This is the longest section and the sections after it are the ones that get lost
+when a response runs out of room. Keep it within the limit so sections 9 and 10
+are always written.
 
 Rules:
 - Preserve the writer’s position.
@@ -736,10 +829,25 @@ What this essay is best for testing:
 [e.g. Task Response development, missing outweigh comparison, cohesion handoff, grammar accuracy, high-band no-error restraint]
 `.trim();
 
-export const BENCHMARK_REFERENCE_SYSTEM_PROMPT_VERSION = 'benchmark-reference-v2.2.7';
+export const BENCHMARK_REFERENCE_SYSTEM_PROMPT_VERSION = 'benchmark-reference-v2.3.0';
 
-export function buildBenchmarkSystemPrompt() {
-  return BENCHMARK_INSTRUCTIONS;
+/** Shown only when the external bands are in the prompt; meaningless without them. */
+const EXTERNAL_SCORE_ANCHORING = `Use the external assessor scores as calibration anchors, not as blind truth.
+If your score differs from the external overall score by more than 0.5, privately re-check whether you are over-penalizing or under-penalizing the essay.
+If you still disagree, the reason must be a central task/clarity/control problem, not merely a longer list of local edits.
+`;
+
+const BLIND_SCORE_DISCIPLINE = `You are scoring without any external band to anchor against, so commit to the
+judgment the descriptors support. Most essays are not band 6: award the low and
+high bands when the writing earns them, and never pick a middle band because it
+is the safer guess.
+`;
+
+export function buildBenchmarkSystemPrompt(options: { blindScores?: boolean } = {}) {
+  return BENCHMARK_INSTRUCTIONS.replace(
+    '{{EXTERNAL_SCORE_ANCHORING}}',
+    options.blindScores ? BLIND_SCORE_DISCIPLINE : EXTERNAL_SCORE_ANCHORING,
+  );
 }
 
 function essayWordCount(value: string) {
@@ -748,7 +856,15 @@ function essayWordCount(value: string) {
 
 export function buildBenchmarkUserPrompt(input: BenchmarkReferencePromptInput) {
   const scores = input.scores || {};
-  return `# Reference Scores From External Assessor
+  const externalScoreBlock = input.blindScores
+    ? `# Scoring Mode
+
+No external bands are supplied for this essay. Judge every criterion from the
+descriptors and the essay alone, and commit to the band you actually believe.
+Do not hedge toward the middle of the scale: a genuinely weak essay should
+receive a low band and a genuinely strong one a high band.
+`
+    : `# Reference Scores From External Assessor
 
 Source: YouPass page scrape
 Source URL: ${input.sourceUrl || 'unknown'}
@@ -762,7 +878,8 @@ Lexical Resource: ${scores.lexicalResource || 'unknown'}
 Grammar: ${scores.gra || 'unknown'}
 
 Note: The external assessor provides one combined Coherence & Cohesion score. Coherence and Cohesion are copied provisionally only so the benchmark can be completed; keep the combined score as the source of truth.
-
+`;
+  return `${externalScoreBlock}
 # Input
 
 Exam question:
@@ -777,7 +894,7 @@ ${input.essay}
 }
 
 export function buildBenchmarkReferencePrompt(input: BenchmarkReferencePromptInput) {
-  return `${buildBenchmarkSystemPrompt()}
+  return `${buildBenchmarkSystemPrompt({ blindScores: input.blindScores })}
 
 ---
 

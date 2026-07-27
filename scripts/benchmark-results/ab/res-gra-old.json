@@ -1,0 +1,6024 @@
+[
+ {
+  "fileId": "t2-band-6.5-sugar.pdf",
+  "band": 5,
+  "rationaleVi": "Bài viết có sự đa dạng cấu trúc nhưng chứa nhiều lỗi ngữ pháp như sai chủ vị, thì, giới từ và cấu trúc song song, ảnh hưởng đến độ chính xác.",
+  "findings": [
+   {
+    "id": "err1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "are increasing amount",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chủ vị và mạo từ",
+    "explanationVi": "Bạn dùng 'are' với 'amount' là sai vì 'amount' là danh từ số ít. Cần thêm 'an' trước 'increasing amount'.",
+    "repairVi": "Thay 'are increasing amount' bằng 'is an increasing amount'.",
+    "replacementText": "is an increasing amount"
+   },
+   {
+    "id": "err2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "it it iproposed",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lặp từ và thiếu động từ",
+    "explanationVi": "Bạn viết 'it it iproposed', trong đó 'iproposed' là lỗi đánh máy cho 'is proposed'. Cần sửa thành 'it is proposed'.",
+    "repairVi": "Thay 'it it iproposed' bằng 'it is proposed'.",
+    "replacementText": "it is proposed"
+   },
+   {
+    "id": "err3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "With accordance to",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn dùng 'With accordance to' nhưng cách diễn đạt đúng là 'In accordance with'.",
+    "repairVi": "Thay 'With accordance to' bằng 'In accordance with'.",
+    "replacementText": "In accordance with"
+   },
+   {
+    "id": "err4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "have excessive sugar intake in the past decade",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai thì",
+    "explanationVi": "Bạn dùng 'have' với 'in the past decade' không hợp lý. Phải dùng thì quá khứ hoặc hiện tại hoàn thành.",
+    "repairVi": "Thay 'have' bằng 'had'.",
+    "replacementText": "had excessive sugar intake"
+   },
+   {
+    "id": "err5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "the generally physical condition and well-beings",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai mạo từ và danh từ không đếm được",
+    "explanationVi": "Bạn viết 'generally' thay vì 'general' và 'well-beings' không cần 's' vì 'well-being' là không đếm được.",
+    "repairVi": "Sửa thành 'the general physical condition and well-being'.",
+    "replacementText": "the general physical condition and well-being"
+   },
+   {
+    "id": "err6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "elasticitythink the apricing strategy can bei",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy và lỗi chính tả",
+    "explanationVi": "Bạn viết 'elasticitythink' mà không có dấu câu, và 'the apricing strategy can bei' có lỗi đánh máy. Cần tách câu và sửa lỗi.",
+    "repairVi": "Sửa thành 'elasticity, I think the pricing strategy can be'.",
+    "replacementText": "elasticity, I think the pricing strategy can be"
+   },
+   {
+    "id": "err7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "between charging high prices and their survival",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai cấu trúc song song",
+    "explanationVi": "Bạn so sánh 'charging high prices' (động từ gerund) với 'their survival' (danh từ), cần đồng nhất cấu trúc.",
+    "repairVi": "Sửa thành 'between charging high prices and ensuring their survival'.",
+    "replacementText": "between charging high prices and ensuring their survival"
+   },
+   {
+    "id": "1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "increasing amount",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai số của danh từ",
+    "explanationVi": "Bạn viết 'increasing amount' nhưng với 'there are' cần danh từ số nhiều.",
+    "repairVi": "sửa thành 'increasing amounts'",
+    "replacementText": "increasing amounts"
+   },
+   {
+    "id": "2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "added in",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn dùng 'added in' nhưng đúng phải là 'added to' (được thêm vào).",
+    "repairVi": "sửa thành 'added to'",
+    "replacementText": "added to"
+   },
+   {
+    "id": "3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "processed food and drink",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu số nhiều của danh từ",
+    "explanationVi": "Bạn viết 'food and drink' nhưng trong ngữ cảnh này nên dùng số nhiều 'foods and drinks'.",
+    "repairVi": "sửa thành 'processed foods and drinks'",
+    "replacementText": "processed foods and drinks"
+   },
+   {
+    "id": "4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "peoples’ fitness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng sở hữu",
+    "explanationVi": "Bạn viết 'peoples’' nhưng đúng phải là 'people’s' (sở hữu của people, không phải peoples).",
+    "repairVi": "sửa thành 'people’s fitness'",
+    "replacementText": "people’s fitness"
+   },
+   {
+    "id": "5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "generally physical condition",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai loại từ",
+    "explanationVi": "Bạn dùng trạng từ 'generally' trước danh từ, nhưng cần tính từ 'general' để修饰 'condition'.",
+    "repairVi": "sửa thành 'general physical condition'",
+    "replacementText": "general physical condition"
+   },
+   {
+    "id": "6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "well-beings",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng không đếm được",
+    "explanationVi": "Bạn viết 'well-beings' nhưng 'well-being' là danh từ không đếm được.",
+    "repairVi": "sửa thành 'well-being'",
+    "replacementText": "well-being"
+   },
+   {
+    "id": "8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "think the apricing strategy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu chủ ngữ và lỗi chính tả",
+    "explanationVi": "Bạn viết 'think the apricing strategy' thiếu chủ ngữ 'I' và 'apricing' là lỗi chính tả, gây câu chạy (run-on).",
+    "repairVi": "thêm 'I' và sửa 'apricing' thành 'pricing': 'I think the pricing strategy'",
+    "replacementText": "I think the pricing strategy"
+   },
+   {
+    "id": "9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "the welfare of the society",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai mạo từ",
+    "explanationVi": "Bạn viết 'the welfare of the society' nhưng 'society' ở đây không cần mạo từ.",
+    "repairVi": "sửa thành 'the welfare of society'",
+    "replacementText": "the welfare of society"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "err1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "are increasing amount",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chủ vị và mạo từ",
+      "explanationVi": "Bạn dùng 'are' với 'amount' là sai vì 'amount' là danh từ số ít. Cần thêm 'an' trước 'increasing amount'.",
+      "repairVi": "Thay 'are increasing amount' bằng 'is an increasing amount'.",
+      "replacementText": "is an increasing amount"
+     },
+     {
+      "id": "err2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "it it iproposed",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lặp từ và thiếu động từ",
+      "explanationVi": "Bạn viết 'it it iproposed', trong đó 'iproposed' là lỗi đánh máy cho 'is proposed'. Cần sửa thành 'it is proposed'.",
+      "repairVi": "Thay 'it it iproposed' bằng 'it is proposed'.",
+      "replacementText": "it is proposed"
+     },
+     {
+      "id": "err3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "With accordance to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn dùng 'With accordance to' nhưng cách diễn đạt đúng là 'In accordance with'.",
+      "repairVi": "Thay 'With accordance to' bằng 'In accordance with'.",
+      "replacementText": "In accordance with"
+     },
+     {
+      "id": "err4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "have excessive sugar intake in the past decade",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai thì",
+      "explanationVi": "Bạn dùng 'have' với 'in the past decade' không hợp lý. Phải dùng thì quá khứ hoặc hiện tại hoàn thành.",
+      "repairVi": "Thay 'have' bằng 'had'.",
+      "replacementText": "had excessive sugar intake"
+     },
+     {
+      "id": "err5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the generally physical condition and well-beings",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai mạo từ và danh từ không đếm được",
+      "explanationVi": "Bạn viết 'generally' thay vì 'general' và 'well-beings' không cần 's' vì 'well-being' là không đếm được.",
+      "repairVi": "Sửa thành 'the general physical condition and well-being'.",
+      "replacementText": "the general physical condition and well-being"
+     },
+     {
+      "id": "err6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "elasticitythink the apricing strategy can bei",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy và lỗi chính tả",
+      "explanationVi": "Bạn viết 'elasticitythink' mà không có dấu câu, và 'the apricing strategy can bei' có lỗi đánh máy. Cần tách câu và sửa lỗi.",
+      "repairVi": "Sửa thành 'elasticity, I think the pricing strategy can be'.",
+      "replacementText": "elasticity, I think the pricing strategy can be"
+     },
+     {
+      "id": "err7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "between charging high prices and their survival",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc song song",
+      "explanationVi": "Bạn so sánh 'charging high prices' (động từ gerund) với 'their survival' (danh từ), cần đồng nhất cấu trúc.",
+      "repairVi": "Sửa thành 'between charging high prices and ensuring their survival'.",
+      "replacementText": "between charging high prices and ensuring their survival"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "increasing amount",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai số của danh từ",
+      "explanationVi": "Bạn viết 'increasing amount' nhưng với 'there are' cần danh từ số nhiều.",
+      "repairVi": "sửa thành 'increasing amounts'",
+      "replacementText": "increasing amounts"
+     },
+     {
+      "id": "2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "added in",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn dùng 'added in' nhưng đúng phải là 'added to' (được thêm vào).",
+      "repairVi": "sửa thành 'added to'",
+      "replacementText": "added to"
+     },
+     {
+      "id": "3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "processed food and drink",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu số nhiều của danh từ",
+      "explanationVi": "Bạn viết 'food and drink' nhưng trong ngữ cảnh này nên dùng số nhiều 'foods and drinks'.",
+      "repairVi": "sửa thành 'processed foods and drinks'",
+      "replacementText": "processed foods and drinks"
+     },
+     {
+      "id": "4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "peoples’ fitness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng sở hữu",
+      "explanationVi": "Bạn viết 'peoples’' nhưng đúng phải là 'people’s' (sở hữu của people, không phải peoples).",
+      "repairVi": "sửa thành 'people’s fitness'",
+      "replacementText": "people’s fitness"
+     },
+     {
+      "id": "5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "generally physical condition",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai loại từ",
+      "explanationVi": "Bạn dùng trạng từ 'generally' trước danh từ, nhưng cần tính từ 'general' để修饰 'condition'.",
+      "repairVi": "sửa thành 'general physical condition'",
+      "replacementText": "general physical condition"
+     },
+     {
+      "id": "6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "well-beings",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng không đếm được",
+      "explanationVi": "Bạn viết 'well-beings' nhưng 'well-being' là danh từ không đếm được.",
+      "repairVi": "sửa thành 'well-being'",
+      "replacementText": "well-being"
+     },
+     {
+      "id": "7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "With accordance to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cách dùng cố định sai",
+      "explanationVi": "Bạn viết 'With accordance to' nhưng cách nói đúng là 'In accordance with'.",
+      "repairVi": "sửa thành 'In accordance with'",
+      "replacementText": "In accordance with"
+     },
+     {
+      "id": "8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "think the apricing strategy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu chủ ngữ và lỗi chính tả",
+      "explanationVi": "Bạn viết 'think the apricing strategy' thiếu chủ ngữ 'I' và 'apricing' là lỗi chính tả, gây câu chạy (run-on).",
+      "repairVi": "thêm 'I' và sửa 'apricing' thành 'pricing': 'I think the pricing strategy'",
+      "replacementText": "I think the pricing strategy"
+     },
+     {
+      "id": "9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "the welfare of the society",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai mạo từ",
+      "explanationVi": "Bạn viết 'the welfare of the society' nhưng 'society' ở đây không cần mạo từ.",
+      "repairVi": "sửa thành 'the welfare of society'",
+      "replacementText": "the welfare of society"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6.5-task-2-sample.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn mắc nhiều lỗi ngữ pháp cục bộ như sai chính tả, từ loại, và đồng bộ, nhưng vẫn giữ được ý chính. Cấu trúc câu có sử dụng câu phức nhưng chưa linh hoạt và lỗi thường xuyên xuất hiện.",
+  "findings": [
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "seniors people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ loại",
+    "explanationVi": "Bạn dùng 'seniors' như tính từ nhưng phải là 'senior'.",
+    "repairVi": "sửa thành 'senior people'",
+    "replacementText": "senior people"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Leaving in",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ",
+    "explanationVi": "Bạn viết 'Leaving' nhưng ý là 'Living'.",
+    "repairVi": "sửa thành 'Living in'",
+    "replacementText": "Living in"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "put on warm clothing",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai cấu trúc song song",
+    "explanationVi": "Sau 'such as', bạn nên dùng dạng gerund: 'putting on'.",
+    "repairVi": "sửa thành 'putting on warm clothing'",
+    "replacementText": "putting on"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "absolute positive",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ loại",
+    "explanationVi": "Bạn dùng tính từ 'absolute' nhưng cần trạng từ 'absolutely' để bổ nghĩa cho 'positive'.",
+    "repairVi": "sửa thành 'absolutely positive'",
+    "replacementText": "absolutely positive"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "developmentA developed",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy",
+    "explanationVi": "Bạn viết hai câu liền nhau không có dấu chấm hoặc liên từ.",
+    "repairVi": "thêm dấu chấm: 'development. A developed'",
+    "replacementText": "development. A developed"
+   },
+   {
+    "id": "f2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "peoples’ independence",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai sở hữu cách",
+    "explanationVi": "Bạn viết 'peoples’', nhưng 'people' là danh từ số nhiều không đếm được, sở hữu cách đúng là 'people's'.",
+    "repairVi": "Thay 'peoples’' bằng 'people's'.",
+    "replacementText": "people's"
+   },
+   {
+    "id": "f4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "worrying the a’old’s",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn viết 'worrying the old's', nhưng phải là 'worrying about the old's' và sửa lỗi chính tả 'a’old’s'.",
+    "repairVi": "Thay 'worrying the a’old’s' bằng 'worrying about the old's'.",
+    "replacementText": "worrying about the old's"
+   },
+   {
+    "id": "f5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "are tend too",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai cấu trúc động từ",
+    "explanationVi": "Bạn viết 'are tend too', nhưng đúng là 'tend to' hoặc 'are tending to'.",
+    "repairVi": "Thay 'are tend too' bằng 'tend to'.",
+    "replacementText": "tend to"
+   },
+   {
+    "id": "f6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "ones better medical care",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu giới từ",
+    "explanationVi": "Bạn viết 'ones better medical care', nhưng cần thêm 'with' để rõ nghĩa.",
+    "repairVi": "Thêm 'with' trước 'better medical care'.",
+    "replacementText": "ones with better medical care"
+   },
+   {
+    "id": "f8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "but also also",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lặp từ",
+    "explanationVi": "Bạn viết 'but also also', nhưng chỉ cần 'but also' một lần.",
+    "repairVi": "Xóa một 'also' thừa.",
+    "replacementText": "but also"
+   },
+   {
+    "id": "f9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "developmentA",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy",
+    "explanationVi": "Bạn viết 'developmentA' mà không có dấu câu, tạo thành câu chạy. Cần thêm dấu chấm và viết hoa.",
+    "repairVi": "Thay 'developmentA' bằng 'development. A'.",
+    "replacementText": "development. A"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "seniors people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ loại",
+      "explanationVi": "Bạn dùng 'seniors' như tính từ nhưng phải là 'senior'.",
+      "repairVi": "sửa thành 'senior people'",
+      "replacementText": "senior people"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Leaving in",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ",
+      "explanationVi": "Bạn viết 'Leaving' nhưng ý là 'Living'.",
+      "repairVi": "sửa thành 'Living in'",
+      "replacementText": "Living in"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "put on warm clothing",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc song song",
+      "explanationVi": "Sau 'such as', bạn nên dùng dạng gerund: 'putting on'.",
+      "repairVi": "sửa thành 'putting on warm clothing'",
+      "replacementText": "putting on"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "absolute positive",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ loại",
+      "explanationVi": "Bạn dùng tính từ 'absolute' nhưng cần trạng từ 'absolutely' để bổ nghĩa cho 'positive'.",
+      "repairVi": "sửa thành 'absolutely positive'",
+      "replacementText": "absolutely positive"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "developmentA developed",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy",
+      "explanationVi": "Bạn viết hai câu liền nhau không có dấu chấm hoặc liên từ.",
+      "repairVi": "thêm dấu chấm: 'development. A developed'",
+      "replacementText": "development. A developed"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "seniors people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai đếm hoặc tính từ",
+      "explanationVi": "Bạn sử dụng 'seniors people', nhưng 'senior' là tính từ nên phải là 'senior people' hoặc 'seniors'.",
+      "repairVi": "Thay 'seniors people' bằng 'senior people'.",
+      "replacementText": "senior people"
+     },
+     {
+      "id": "f2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "peoples’ independence",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai sở hữu cách",
+      "explanationVi": "Bạn viết 'peoples’', nhưng 'people' là danh từ số nhiều không đếm được, sở hữu cách đúng là 'people's'.",
+      "repairVi": "Thay 'peoples’' bằng 'people's'.",
+      "replacementText": "people's"
+     },
+     {
+      "id": "f4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "worrying the a’old’s",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn viết 'worrying the old's', nhưng phải là 'worrying about the old's' và sửa lỗi chính tả 'a’old’s'.",
+      "repairVi": "Thay 'worrying the a’old’s' bằng 'worrying about the old's'.",
+      "replacementText": "worrying about the old's"
+     },
+     {
+      "id": "f5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "are tend too",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc động từ",
+      "explanationVi": "Bạn viết 'are tend too', nhưng đúng là 'tend to' hoặc 'are tending to'.",
+      "repairVi": "Thay 'are tend too' bằng 'tend to'.",
+      "replacementText": "tend to"
+     },
+     {
+      "id": "f6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "ones better medical care",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu giới từ",
+      "explanationVi": "Bạn viết 'ones better medical care', nhưng cần thêm 'with' để rõ nghĩa.",
+      "repairVi": "Thêm 'with' trước 'better medical care'.",
+      "replacementText": "ones with better medical care"
+     },
+     {
+      "id": "f7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "absolute positive",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai trạng từ",
+      "explanationVi": "Bạn viết 'absolute positive', nhưng cần trạng từ 'absolutely' để修饰形容词 'positive'.",
+      "repairVi": "Thay 'absolute' bằng 'absolutely'.",
+      "replacementText": "absolutely positive"
+     },
+     {
+      "id": "f8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "but also also",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lặp từ",
+      "explanationVi": "Bạn viết 'but also also', nhưng chỉ cần 'but also' một lần.",
+      "repairVi": "Xóa một 'also' thừa.",
+      "replacementText": "but also"
+     },
+     {
+      "id": "f9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "developmentA",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy",
+      "explanationVi": "Bạn viết 'developmentA' mà không có dấu câu, tạo thành câu chạy. Cần thêm dấu chấm và viết hoa.",
+      "repairVi": "Thay 'developmentA' bằng 'development. A'.",
+      "replacementText": "development. A"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "general-training-t2-6.5.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng hỗn hợp cấu trúc đơn, ghép và phức, nhưng độ chính xác ngữ pháp bị ảnh hưởng bởi nhiều lỗi như sai agreement động từ, câu chạy, và cấu trúc không đầy đủ, tuy nhiên ý nghĩa chung vẫn rõ ràng.",
+  "findings": [
+   {
+    "id": "err1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "which save a considerable amount of time",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai agreement động từ",
+    "explanationVi": "Bạn dùng 'which save' nhưng 'which' ám chỉ một hành động số ít, nên cần 'saves'.",
+    "repairVi": "thay 'save' thành 'saves'",
+    "replacementText": "which saves"
+   },
+   {
+    "id": "err2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "is increasing which will eventually",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy hoặc thiếu dấu phẩy",
+    "explanationVi": "Bạn viết 'is increasing which' mà không có dấu phẩy hoặc từ nối, tạo thành câu chạy.",
+    "repairVi": "thêm dấu phẩy trước 'which'",
+    "replacementText": "is increasing, which will eventually"
+   },
+   {
+    "id": "err3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "browsing the internetThat means",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu khoảng trắng hoặc dấu câu",
+    "explanationVi": "Bạn viết 'internetThat' liền nhau, cần tách câu bằng dấu chấm.",
+    "repairVi": "thêm dấu chấm và khoảng trắng",
+    "replacementText": "internet. That"
+   },
+   {
+    "id": "err4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "with a single click on your smartphone will bring all thegoods for you.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cấu trúc câu không đầy đủ",
+    "explanationVi": "Bạn bắt đầu câu bằng 'with' nhưng không có chủ ngữ rõ ràng cho động từ 'will bring', gây hiểu nhầm.",
+    "repairVi": "đổi câu thành có chủ ngữ hoặc sửa lại cấu trúc",
+    "replacementText": "a single click on your smartphone will bring all the goods for you."
+   },
+   {
+    "id": "err5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "or aother important businesses",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai mạo từ hoặc đếm được",
+    "explanationVi": "Bạn dùng 'another' với danh từ số nhiều 'businesses', cần đổi sang 'other' để phù hợp.",
+    "repairVi": "đổi 'another' thành 'other'",
+    "replacementText": "or other important businesses"
+   },
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "which save",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đồng chủ ngữ",
+    "explanationVi": "Bạn dùng 'which' với động từ 'save', nhưng chủ ngữ 'which' là số ít, nên cần dạng 'saves'.",
+    "repairVi": "thay 'save' bằng 'saves'",
+    "replacementText": "which saves"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "aother",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi mạo từ",
+    "explanationVi": "Bạn viết 'aother' thay vì 'another', đây là lỗi mạo từ và chính tả.",
+    "repairVi": "thay 'aother' bằng 'another'",
+    "replacementText": "another"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "tom buy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi giới từ",
+    "explanationVi": "Bạn viết 'tom' thay vì 'to', đây là lỗi chính tả hoặc giới từ sai.",
+    "repairVi": "thay 'tom' bằng 'to'",
+    "replacementText": "to buy"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "internetThat",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dấu câu",
+    "explanationVi": "Bạn thiếu khoảng cách hoặc dấu câu giữa 'internet' và 'That', gây ra lỗi câu.",
+    "repairVi": "thêm dấu chấm hoặc khoảng cách: 'internet. That'",
+    "replacementText": "internet. That"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "err1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "which save a considerable amount of time",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai agreement động từ",
+      "explanationVi": "Bạn dùng 'which save' nhưng 'which' ám chỉ một hành động số ít, nên cần 'saves'.",
+      "repairVi": "thay 'save' thành 'saves'",
+      "replacementText": "which saves"
+     },
+     {
+      "id": "err2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "is increasing which will eventually",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy hoặc thiếu dấu phẩy",
+      "explanationVi": "Bạn viết 'is increasing which' mà không có dấu phẩy hoặc từ nối, tạo thành câu chạy.",
+      "repairVi": "thêm dấu phẩy trước 'which'",
+      "replacementText": "is increasing, which will eventually"
+     },
+     {
+      "id": "err3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "browsing the internetThat means",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu khoảng trắng hoặc dấu câu",
+      "explanationVi": "Bạn viết 'internetThat' liền nhau, cần tách câu bằng dấu chấm.",
+      "repairVi": "thêm dấu chấm và khoảng trắng",
+      "replacementText": "internet. That"
+     },
+     {
+      "id": "err4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "with a single click on your smartphone will bring all thegoods for you.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cấu trúc câu không đầy đủ",
+      "explanationVi": "Bạn bắt đầu câu bằng 'with' nhưng không có chủ ngữ rõ ràng cho động từ 'will bring', gây hiểu nhầm.",
+      "repairVi": "đổi câu thành có chủ ngữ hoặc sửa lại cấu trúc",
+      "replacementText": "a single click on your smartphone will bring all the goods for you."
+     },
+     {
+      "id": "err5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "or aother important businesses",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai mạo từ hoặc đếm được",
+      "explanationVi": "Bạn dùng 'another' với danh từ số nhiều 'businesses', cần đổi sang 'other' để phù hợp.",
+      "repairVi": "đổi 'another' thành 'other'",
+      "replacementText": "or other important businesses"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "which save",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng chủ ngữ",
+      "explanationVi": "Bạn dùng 'which' với động từ 'save', nhưng chủ ngữ 'which' là số ít, nên cần dạng 'saves'.",
+      "repairVi": "thay 'save' bằng 'saves'",
+      "replacementText": "which saves"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "aother",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi mạo từ",
+      "explanationVi": "Bạn viết 'aother' thay vì 'another', đây là lỗi mạo từ và chính tả.",
+      "repairVi": "thay 'aother' bằng 'another'",
+      "replacementText": "another"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "tom buy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi giới từ",
+      "explanationVi": "Bạn viết 'tom' thay vì 'to', đây là lỗi chính tả hoặc giới từ sai.",
+      "repairVi": "thay 'tom' bằng 'to'",
+      "replacementText": "to buy"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "internetThat",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dấu câu",
+      "explanationVi": "Bạn thiếu khoảng cách hoặc dấu câu giữa 'internet' và 'That', gây ra lỗi câu.",
+      "repairVi": "thêm dấu chấm hoặc khoảng cách: 'internet. That'",
+      "replacementText": "internet. That"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "ielts-essays-consumer-culture.pdf",
+  "band": 6,
+  "rationaleVi": "Bạn sử dụng cấu trúc câu đa dạng包括câu đơn, kép và phức, nhưng có nhiều lỗi ngữ pháp như thiếu mạo từ, sai dạng từ, và lỗi câu chạy, ảnh hưởng đến độ chính xác tổng thể.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "anddiscusse on",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu thiếu hoàn chỉnh",
+    "explanationVi": "Bạn viết 'anddiscusse on' là một câu fragment không hoàn chỉnh.",
+    "repairVi": "Nên xóa hoặc sửa thành 'and discuss' nếu cần.",
+    "replacementText": "and discuss"
+   },
+   {
+    "id": "f2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "increasing number of people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn viết 'increasing number' mà thiếu mạo từ 'an'.",
+    "repairVi": "Thêm 'an' trước 'increasing number'.",
+    "replacementText": "an increasing number of people"
+   },
+   {
+    "id": "f3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "there is definite link",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn viết 'there is definite link' mà thiếu mạo từ 'a'.",
+    "repairVi": "Thêm 'a' trước 'definite link'.",
+    "replacementText": "there is a definite link"
+   },
+   {
+    "id": "f4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "pursueof",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai dạng từ",
+    "explanationVi": "Bạn viết 'pursueof' nhưng đúng là 'pursuit of'.",
+    "repairVi": "Sửa thành 'pursuit of'.",
+    "replacementText": "pursuit of"
+   },
+   {
+    "id": "f5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "does free people from manual work and are able to have more time to relax.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chủ vị và tính song song",
+    "explanationVi": "Bạn viết 'does free' nhưng sau đó dùng 'are', không đồng nhất chủ vị và cấu trúc.",
+    "repairVi": "Sửa thành 'free people from manual work and enable them to have more time to relax'.",
+    "replacementText": "free people from manual work and allow them to have more time to relax"
+   },
+   {
+    "id": "f6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it is not only a waste of money and it is also a cause",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy hoặc lỗi dấu phẩy",
+    "explanationVi": "Bạn sử dụng 'not only... and it is also' thay vì 'not only... but also', tạo câu liệt không chính xác.",
+    "repairVi": "Sửa thành 'not only a waste of money but also a cause'.",
+    "replacementText": "not only a waste of money but also a cause"
+   },
+   {
+    "id": "f7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "enjoying better quality of life",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn viết 'better quality of life' mà thiếu mạo từ 'a'.",
+    "repairVi": "Thêm 'a' trước 'better quality of life'.",
+    "replacementText": "enjoying a better quality of life"
+   },
+   {
+    "id": "f8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "such as washing machine",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn viết 'washing machine' mà thiếu mạo từ 'a'.",
+    "repairVi": "Thêm 'a' trước 'washing machine'.",
+    "replacementText": "such as a washing machine"
+   },
+   {
+    "id": "f9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "made majority of people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn viết 'made majority of people' mà thiếu mạo từ 'the'.",
+    "repairVi": "Thêm 'the' trước 'majority'.",
+    "replacementText": "made the majority of people"
+   },
+   {
+    "id": "f10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "will bei booming",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'bei' thay vì 'be'.",
+    "repairVi": "Sửa thành 'be'.",
+    "replacementText": "will be booming"
+   },
+   {
+    "id": "f1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "has endued",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai động từ",
+    "explanationVi": "Bạn dùng 'endued' thay vì 'ensued' hoặc 'resulted', khiến câu nghĩa không rõ ràng.",
+    "repairVi": "Thay 'endued' bằng 'ensued'.",
+    "replacementText": "has ensued"
+   },
+   {
+    "id": "f3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "increasing number",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'an' trước 'increasing number'.",
+    "repairVi": "Thêm 'an' trước 'increasing number'.",
+    "replacementText": "an increasing number"
+   },
+   {
+    "id": "f4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "definite link",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'a' trước 'definite link'.",
+    "repairVi": "Thêm 'a' trước 'definite link'.",
+    "replacementText": "a definite link"
+   },
+   {
+    "id": "f6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "serious disease",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai số",
+    "explanationVi": "Danh từ 'disease' đếm được nên cần ở số nhiều.",
+    "repairVi": "Sửa thành 'serious diseases'.",
+    "replacementText": "serious diseases"
+   },
+   {
+    "id": "f7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "extra amount",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'an' trước 'extra amount'.",
+    "repairVi": "Thêm 'an' trước 'extra amount'.",
+    "replacementText": "an extra amount"
+   },
+   {
+    "id": "f8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "and it is not only a waste of money and it is also",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy",
+    "explanationVi": "Câu này sử dụng nhiều 'and' mà không có cấu trúc 'not only...but also', gây rối.",
+    "repairVi": "Sửa thành 'not only a waste of money but also'.",
+    "replacementText": "not only a waste of money but also"
+   },
+   {
+    "id": "f10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "better quality of life",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'a' trước 'better quality'.",
+    "repairVi": "Thêm 'a' trước 'better quality'.",
+    "replacementText": "a better quality of life"
+   },
+   {
+    "id": "f11",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "does free people from manual work and are able",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đồng chủ ngữ-động từ",
+    "explanationVi": "Chủ ngữ 'the purchase' là số ít, nhưng 'are able' là số nhiều.",
+    "repairVi": "Sửa thành 'is able' hoặc điều chỉnh câu cho phù hợp.",
+    "replacementText": "is able"
+   },
+   {
+    "id": "f12",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "made majority",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'the' trước 'majority'.",
+    "repairVi": "Thêm 'the' trước 'majority'.",
+    "replacementText": "made the majority"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "anddiscusse on",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu thiếu hoàn chỉnh",
+      "explanationVi": "Bạn viết 'anddiscusse on' là một câu fragment không hoàn chỉnh.",
+      "repairVi": "Nên xóa hoặc sửa thành 'and discuss' nếu cần.",
+      "replacementText": "and discuss"
+     },
+     {
+      "id": "f2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "increasing number of people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn viết 'increasing number' mà thiếu mạo từ 'an'.",
+      "repairVi": "Thêm 'an' trước 'increasing number'.",
+      "replacementText": "an increasing number of people"
+     },
+     {
+      "id": "f3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "there is definite link",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn viết 'there is definite link' mà thiếu mạo từ 'a'.",
+      "repairVi": "Thêm 'a' trước 'definite link'.",
+      "replacementText": "there is a definite link"
+     },
+     {
+      "id": "f4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "pursueof",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai dạng từ",
+      "explanationVi": "Bạn viết 'pursueof' nhưng đúng là 'pursuit of'.",
+      "repairVi": "Sửa thành 'pursuit of'.",
+      "replacementText": "pursuit of"
+     },
+     {
+      "id": "f5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "does free people from manual work and are able to have more time to relax.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chủ vị và tính song song",
+      "explanationVi": "Bạn viết 'does free' nhưng sau đó dùng 'are', không đồng nhất chủ vị và cấu trúc.",
+      "repairVi": "Sửa thành 'free people from manual work and enable them to have more time to relax'.",
+      "replacementText": "free people from manual work and allow them to have more time to relax"
+     },
+     {
+      "id": "f6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it is not only a waste of money and it is also a cause",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy hoặc lỗi dấu phẩy",
+      "explanationVi": "Bạn sử dụng 'not only... and it is also' thay vì 'not only... but also', tạo câu liệt không chính xác.",
+      "repairVi": "Sửa thành 'not only a waste of money but also a cause'.",
+      "replacementText": "not only a waste of money but also a cause"
+     },
+     {
+      "id": "f7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "enjoying better quality of life",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn viết 'better quality of life' mà thiếu mạo từ 'a'.",
+      "repairVi": "Thêm 'a' trước 'better quality of life'.",
+      "replacementText": "enjoying a better quality of life"
+     },
+     {
+      "id": "f8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "such as washing machine",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn viết 'washing machine' mà thiếu mạo từ 'a'.",
+      "repairVi": "Thêm 'a' trước 'washing machine'.",
+      "replacementText": "such as a washing machine"
+     },
+     {
+      "id": "f9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "made majority of people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn viết 'made majority of people' mà thiếu mạo từ 'the'.",
+      "repairVi": "Thêm 'the' trước 'majority'.",
+      "replacementText": "made the majority of people"
+     },
+     {
+      "id": "f10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "will bei booming",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'bei' thay vì 'be'.",
+      "repairVi": "Sửa thành 'be'.",
+      "replacementText": "will be booming"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "has endued",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai động từ",
+      "explanationVi": "Bạn dùng 'endued' thay vì 'ensued' hoặc 'resulted', khiến câu nghĩa không rõ ràng.",
+      "repairVi": "Thay 'endued' bằng 'ensued'.",
+      "replacementText": "has ensued"
+     },
+     {
+      "id": "f2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "paragraph",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "anddiscusse on",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu cụt",
+      "explanationVi": "Đây là một mảnh câu không hoàn chỉnh, gây khó hiểu cho người đọc.",
+      "repairVi": "Xóa phần này hoặc sửa thành câu hoàn chỉnh.",
+      "replacementText": ""
+     },
+     {
+      "id": "f3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "increasing number",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'an' trước 'increasing number'.",
+      "repairVi": "Thêm 'an' trước 'increasing number'.",
+      "replacementText": "an increasing number"
+     },
+     {
+      "id": "f4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "definite link",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'a' trước 'definite link'.",
+      "repairVi": "Thêm 'a' trước 'definite link'.",
+      "replacementText": "a definite link"
+     },
+     {
+      "id": "f5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "pursueof",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai hình thức từ",
+      "explanationVi": "Từ 'pursue' nên là 'pursuit' ở dạng danh từ.",
+      "repairVi": "Sửa thành 'pursuit of'.",
+      "replacementText": "pursuit of"
+     },
+     {
+      "id": "f6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "serious disease",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai số",
+      "explanationVi": "Danh từ 'disease' đếm được nên cần ở số nhiều.",
+      "repairVi": "Sửa thành 'serious diseases'.",
+      "replacementText": "serious diseases"
+     },
+     {
+      "id": "f7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "extra amount",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'an' trước 'extra amount'.",
+      "repairVi": "Thêm 'an' trước 'extra amount'.",
+      "replacementText": "an extra amount"
+     },
+     {
+      "id": "f8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "and it is not only a waste of money and it is also",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy",
+      "explanationVi": "Câu này sử dụng nhiều 'and' mà không có cấu trúc 'not only...but also', gây rối.",
+      "repairVi": "Sửa thành 'not only a waste of money but also'.",
+      "replacementText": "not only a waste of money but also"
+     },
+     {
+      "id": "f9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "will bei booming",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Từ 'bei' nên là 'be'.",
+      "repairVi": "Sửa thành 'will be booming'.",
+      "replacementText": "will be booming"
+     },
+     {
+      "id": "f10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "better quality of life",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'a' trước 'better quality'.",
+      "repairVi": "Thêm 'a' trước 'better quality'.",
+      "replacementText": "a better quality of life"
+     },
+     {
+      "id": "f11",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "does free people from manual work and are able",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng chủ ngữ-động từ",
+      "explanationVi": "Chủ ngữ 'the purchase' là số ít, nhưng 'are able' là số nhiều.",
+      "repairVi": "Sửa thành 'is able' hoặc điều chỉnh câu cho phù hợp.",
+      "replacementText": "is able"
+     },
+     {
+      "id": "f12",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "made majority",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'the' trước 'majority'.",
+      "repairVi": "Thêm 'the' trước 'majority'.",
+      "replacementText": "made the majority"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-5.5-t2s.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng cấu trúc câu đa dạng từ đơn giản đến phức tạp, nhưng có nhiều lỗi ngữ pháp cơ bản như lỗi số, mạo từ, và lỗi câu, thường gặp trong các câu phức tạp. Các lỗi này đôi khi gây khó hiểu nhưng không làm mất hoàn toàn ý nghĩa.",
+  "findings": [
+   {
+    "id": "err1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "the qualifications represents",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chủ ngữ-động từ",
+    "explanationVi": "Bạn dùng 'represents' với chủ ngữ số nhiều 'qualifications', cần sửa thành 'represent' để đồng bộ.",
+    "repairVi": "thay 'represents' bằng 'represent'",
+    "replacementText": "the qualifications represent"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "require the job seeks at least has the postgraduate degree",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi cấu trúc câu và từ vựng",
+    "explanationVi": "Bạn viết 'job seeks' thay vì 'job seekers' và 'at least has' cần sửa thành 'to have at least', câu bị sai cấu trúc và khó hiểu.",
+    "repairVi": "sửa thành 'require job seekers to have at least a postgraduate degree'",
+    "replacementText": "require job seekers to have at least a postgraduate degree"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "interpersonal skills,,which isneeded going through almost every aspects",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dấu phẩy, đồng chủ ngữ, và từ",
+    "explanationVi": "Bạn dùng dấu phẩy thừa, 'isneeded' nên là 'is needed', và 'aspects' nên là 'aspect' số ít, câu bị rườm rà và sai ngữ pháp.",
+    "repairVi": "sửa thành 'interpersonal skills, which are needed in almost every aspect'",
+    "replacementText": "interpersonal skills, which are needed in almost every aspect"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "a large amounta of the running cost derive",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả và đồng chủ ngữ",
+    "explanationVi": "Bạn viết 'amounta' thay vì 'amount', 'cost' nên là 'costs' số nhiều, và 'derive' nên là 'derives' cho chủ ngữ số ít.",
+    "repairVi": "sửa thành 'a large amount of the running costs derives'",
+    "replacementText": "a large amount of the running costs derives"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "err1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the qualifications represents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chủ ngữ-động từ",
+      "explanationVi": "Bạn dùng 'represents' với chủ ngữ số nhiều 'qualifications', cần sửa thành 'represent' để đồng bộ.",
+      "repairVi": "thay 'represents' bằng 'represent'",
+      "replacementText": "the qualifications represent"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the qualifications represents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng chủ ngữ",
+      "explanationVi": "Bạn dùng 'represents' cho chủ ngữ số nhiều 'qualifications', cần sửa thành 'represent' cho đúng.",
+      "repairVi": "thay 'represents' bằng 'represent'",
+      "replacementText": "represent"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "require the job seeks at least has the postgraduate degree",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi cấu trúc câu và từ vựng",
+      "explanationVi": "Bạn viết 'job seeks' thay vì 'job seekers' và 'at least has' cần sửa thành 'to have at least', câu bị sai cấu trúc và khó hiểu.",
+      "repairVi": "sửa thành 'require job seekers to have at least a postgraduate degree'",
+      "replacementText": "require job seekers to have at least a postgraduate degree"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "interpersonal skills,,which isneeded going through almost every aspects",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dấu phẩy, đồng chủ ngữ, và từ",
+      "explanationVi": "Bạn dùng dấu phẩy thừa, 'isneeded' nên là 'is needed', và 'aspects' nên là 'aspect' số ít, câu bị rườm rà và sai ngữ pháp.",
+      "repairVi": "sửa thành 'interpersonal skills, which are needed in almost every aspect'",
+      "replacementText": "interpersonal skills, which are needed in almost every aspect"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "a large amounta of the running cost derive",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả và đồng chủ ngữ",
+      "explanationVi": "Bạn viết 'amounta' thay vì 'amount', 'cost' nên là 'costs' số nhiều, và 'derive' nên là 'derives' cho chủ ngữ số ít.",
+      "repairVi": "sửa thành 'a large amount of the running costs derives'",
+      "replacementText": "a large amount of the running costs derives"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "two-band-7-essays-task-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài viết có sự đa dạng về cấu trúc câu từ đơn giản đến phức tạp, nhưng tồn tại nhiều lỗi ngữ pháp cơ bản như đồng chủ ngữ, thì, mạo từ, và chính tả. Các lỗi này đôi khi gây hiểu lầm nhưng không hoàn toàn che lấp ý nghĩa.",
+  "findings": [
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "awarenessa do not always encourage",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đồng chủ ngữ và chính tả",
+    "explanationVi": "Bạn viết 'awarenessa' sai chính tả và sử dụng 'do not' thay vì 'does not' cho chủ ngữ số ít.",
+    "repairVi": "Sửa 'awarenessa do not' thành 'awareness does not'",
+    "replacementText": "awareness does not"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "protect the environmentt",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết thêm chữ 't' thừa ở cuối 'environment'.",
+    "repairVi": "Xóa chữ 't' thừa",
+    "replacementText": "environment"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the problem ofpeople’s",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi khoảng cách",
+    "explanationVi": "Bạn thiếu khoảng cách giữa 'of' và 'people's'.",
+    "repairVi": "Thêm khoảng cách giữa 'of' và 'people's'",
+    "replacementText": "of people's"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "for people tto get",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'tto' thay vì 'to'.",
+    "repairVi": "Sửa 'tto' thành 'to'",
+    "replacementText": "to"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "get ha general",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'ha' thay vì 'a'.",
+    "repairVi": "Sửa 'ha' thành 'a'",
+    "replacementText": "a"
+   },
+   {
+    "id": "error6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "seriousness of tpollution",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'tpollution' thay vì 'pollution'.",
+    "repairVi": "Sửa 'tpollution' thành 'pollution'",
+    "replacementText": "pollution"
+   },
+   {
+    "id": "error7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "these mayo constrain",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'mayo' thay vì 'may'.",
+    "repairVi": "Sửa 'mayo' thành 'may'",
+    "replacementText": "may"
+   },
+   {
+    "id": "error8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "preserve the environmentThey",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dấu câu",
+    "explanationVi": "Bạn thiếu dấu câu hoặc khoảng cách giữa 'environment' và 'They'.",
+    "repairVi": "Thêm dấu chấm và khoảng cách",
+    "replacementText": "environment. They"
+   },
+   {
+    "id": "error9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "now provideingreusable bags",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả và khoảng cách",
+    "explanationVi": "Bạn viết 'provideingreusable' thay vì 'providing reusable'.",
+    "repairVi": "Sửa 'provideingreusable' thành 'providing reusable'",
+    "replacementText": "providing reusable"
+   },
+   {
+    "id": "error10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "setting pmore rubbish",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'pmore' thay vì 'more'.",
+    "repairVi": "Sửa 'pmore' thành 'more'",
+    "replacementText": "more"
+   },
+   {
+    "id": "error11",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "individualsmust play",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi khoảng cách",
+    "explanationVi": "Bạn thiếu khoảng cách giữa 'individuals' và 'must'.",
+    "repairVi": "Thêm khoảng cách",
+    "replacementText": "individuals must"
+   },
+   {
+    "id": "error12",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "equal proportion of employees",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ trước 'equal proportion'.",
+    "repairVi": "Thêm 'an' trước 'equal proportion'",
+    "replacementText": "an equal proportion of employees"
+   },
+   {
+    "id": "error13",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "the application that companies received",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi thì và số nhiều",
+    "explanationVi": "Bạn dùng thì quá khứ và số ít sai.",
+    "repairVi": "Sửa 'application that companies received' thành 'applications that companies receive'",
+    "replacementText": "the applications that companies receive"
+   },
+   {
+    "id": "error14",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "job positionsv",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'positionsv' thay vì 'positions'.",
+    "repairVi": "Sửa 'positionsv' thành 'positions'",
+    "replacementText": "positions"
+   },
+   {
+    "id": "error15",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "equal numberof males",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi khoảng cách",
+    "explanationVi": "Bạn thiếu khoảng cách giữa 'number' và 'of'.",
+    "repairVi": "Thêm khoảng cách",
+    "replacementText": "equal number of"
+   },
+   {
+    "id": "error16",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "for most of companies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi giới từ",
+    "explanationVi": "Bạn dùng 'of' thừa.",
+    "repairVi": "Xóa 'of' trong 'most of companies'",
+    "replacementText": "for most companies"
+   },
+   {
+    "id": "error17",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "places needed to go to females",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi thì",
+    "explanationVi": "Bạn dùng thì quá khứ 'needed' nhưng câu điều kiện cần thì hiện tại.",
+    "repairVi": "Sửa 'needed' thành 'need'",
+    "replacementText": "places need to go to females"
+   },
+   {
+    "id": "error18",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "can have same job opportunities",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi mạo từ",
+    "explanationVi": "Bạn thiếu mạo từ 'the' trước 'same'.",
+    "repairVi": "Thêm 'the' trước 'same job opportunities'",
+    "replacementText": "can have the same job opportunities"
+   },
+   {
+    "id": "error19",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "on atheir jobs",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết 'at their' thay vì 'their'.",
+    "repairVi": "Sửa 'at their' thành 'their'",
+    "replacementText": "on their jobs"
+   },
+   {
+    "id": "error20",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "should base on merit",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi cấu trúc bị động",
+    "explanationVi": "Bạn dùng 'base' thay vì 'be based' cho nghĩa bị động.",
+    "repairVi": "Sửa 'should base' thành 'should be based'",
+    "replacementText": "should be based on merit"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "awarenessa do not always encourage",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng chủ ngữ và chính tả",
+      "explanationVi": "Bạn viết 'awarenessa' sai chính tả và sử dụng 'do not' thay vì 'does not' cho chủ ngữ số ít.",
+      "repairVi": "Sửa 'awarenessa do not' thành 'awareness does not'",
+      "replacementText": "awareness does not"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "protect the environmentt",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết thêm chữ 't' thừa ở cuối 'environment'.",
+      "repairVi": "Xóa chữ 't' thừa",
+      "replacementText": "environment"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the problem ofpeople’s",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi khoảng cách",
+      "explanationVi": "Bạn thiếu khoảng cách giữa 'of' và 'people's'.",
+      "repairVi": "Thêm khoảng cách giữa 'of' và 'people's'",
+      "replacementText": "of people's"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "for people tto get",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'tto' thay vì 'to'.",
+      "repairVi": "Sửa 'tto' thành 'to'",
+      "replacementText": "to"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "get ha general",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'ha' thay vì 'a'.",
+      "repairVi": "Sửa 'ha' thành 'a'",
+      "replacementText": "a"
+     },
+     {
+      "id": "error6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "seriousness of tpollution",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'tpollution' thay vì 'pollution'.",
+      "repairVi": "Sửa 'tpollution' thành 'pollution'",
+      "replacementText": "pollution"
+     },
+     {
+      "id": "error7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "these mayo constrain",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'mayo' thay vì 'may'.",
+      "repairVi": "Sửa 'mayo' thành 'may'",
+      "replacementText": "may"
+     },
+     {
+      "id": "error8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "preserve the environmentThey",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dấu câu",
+      "explanationVi": "Bạn thiếu dấu câu hoặc khoảng cách giữa 'environment' và 'They'.",
+      "repairVi": "Thêm dấu chấm và khoảng cách",
+      "replacementText": "environment. They"
+     },
+     {
+      "id": "error9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "now provideingreusable bags",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả và khoảng cách",
+      "explanationVi": "Bạn viết 'provideingreusable' thay vì 'providing reusable'.",
+      "repairVi": "Sửa 'provideingreusable' thành 'providing reusable'",
+      "replacementText": "providing reusable"
+     },
+     {
+      "id": "error10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "setting pmore rubbish",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'pmore' thay vì 'more'.",
+      "repairVi": "Sửa 'pmore' thành 'more'",
+      "replacementText": "more"
+     },
+     {
+      "id": "error11",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "individualsmust play",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi khoảng cách",
+      "explanationVi": "Bạn thiếu khoảng cách giữa 'individuals' và 'must'.",
+      "repairVi": "Thêm khoảng cách",
+      "replacementText": "individuals must"
+     },
+     {
+      "id": "error12",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "equal proportion of employees",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ trước 'equal proportion'.",
+      "repairVi": "Thêm 'an' trước 'equal proportion'",
+      "replacementText": "an equal proportion of employees"
+     },
+     {
+      "id": "error13",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "the application that companies received",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi thì và số nhiều",
+      "explanationVi": "Bạn dùng thì quá khứ và số ít sai.",
+      "repairVi": "Sửa 'application that companies received' thành 'applications that companies receive'",
+      "replacementText": "the applications that companies receive"
+     },
+     {
+      "id": "error14",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "job positionsv",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'positionsv' thay vì 'positions'.",
+      "repairVi": "Sửa 'positionsv' thành 'positions'",
+      "replacementText": "positions"
+     },
+     {
+      "id": "error15",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "equal numberof males",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi khoảng cách",
+      "explanationVi": "Bạn thiếu khoảng cách giữa 'number' và 'of'.",
+      "repairVi": "Thêm khoảng cách",
+      "replacementText": "equal number of"
+     },
+     {
+      "id": "error16",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "for most of companies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi giới từ",
+      "explanationVi": "Bạn dùng 'of' thừa.",
+      "repairVi": "Xóa 'of' trong 'most of companies'",
+      "replacementText": "for most companies"
+     },
+     {
+      "id": "error17",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "places needed to go to females",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi thì",
+      "explanationVi": "Bạn dùng thì quá khứ 'needed' nhưng câu điều kiện cần thì hiện tại.",
+      "repairVi": "Sửa 'needed' thành 'need'",
+      "replacementText": "places need to go to females"
+     },
+     {
+      "id": "error18",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "can have same job opportunities",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi mạo từ",
+      "explanationVi": "Bạn thiếu mạo từ 'the' trước 'same'.",
+      "repairVi": "Thêm 'the' trước 'same job opportunities'",
+      "replacementText": "can have the same job opportunities"
+     },
+     {
+      "id": "error19",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "on atheir jobs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết 'at their' thay vì 'their'.",
+      "repairVi": "Sửa 'at their' thành 'their'",
+      "replacementText": "on their jobs"
+     },
+     {
+      "id": "error20",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "should base on merit",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi cấu trúc bị động",
+      "explanationVi": "Bạn dùng 'base' thay vì 'be based' cho nghĩa bị động.",
+      "repairVi": "Sửa 'should base' thành 'should be based'",
+      "replacementText": "should be based on merit"
+     }
+    ]
+   },
+   {
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "5.5-t2-2.pdf",
+  "band": 6,
+  "rationaleVi": "Bạn sử dụng nhiều cấu trúc câu đơn, kép và phức tạp, cho thấy phạm vi ngữ pháp khá đa dạng. Tuy nhiên, có nhiều lỗi chính tả nhỏ và một số lỗi ngữ pháp như thiếu dấu possession, sai giới từ, và thiếu liên từ, nhưng các lỗi này không nghiêm trọng và không cản trở giao tiếp. Các lỗi tập trung ở một số câu phức tạp, nhưng độ chính xác tổng thể ở mức trung bình.",
+  "findings": [
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "tstaying",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn đã viết 'tstaying' thay vì 'staying', đây là lỗi đánh máy nhỏ.",
+    "repairVi": "Sửa thành 'staying'.",
+    "replacementText": "staying"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "individuals well-being",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu dấu possession",
+    "explanationVi": "Bạn đã viết 'individuals well-being' mà thiếu dấu apostrophe để chỉ sở hữu.",
+    "repairVi": "Sửa thành 'individuals' well-being'.",
+    "replacementText": "individuals' well-being"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "positive to work hard",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cấu trúc sai",
+    "explanationVi": "Bạn đã viết 'positive to work hard', nhưng cấu trúc chính xác thường là 'positive enough to work hard'.",
+    "repairVi": "Sửa thành 'positive enough to work hard'.",
+    "replacementText": "positive enough to work hard"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "witnessed n the majority",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu liên từ",
+    "explanationVi": "Bạn đã viết 'witnessed n the majority',缺少 'that' để giới thiệu mệnh đề danh từ, gây hiểu lầm nhẹ.",
+    "repairVi": "Sửa thành 'witnessed that the majority'.",
+    "replacementText": "witnessed that the majority"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "over societiesA",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đánh máy và thiếu dấu câu",
+    "explanationVi": "Bạn đã viết 'over societiesA', cần sửa thành 'over society's' và thêm dấu câu.",
+    "repairVi": "Sửa thành 'over society's. A'.",
+    "replacementText": "over society's. A"
+   },
+   {
+    "id": "error6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "ftheir communitties",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn đã viết 'ftheir communitties' thay vì 'their communities', đây là lỗi đánh máy.",
+    "repairVi": "Sửa thành 'their communities'.",
+    "replacementText": "their communities"
+   },
+   {
+    "id": "error7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "discrimination of unhealthy dwellers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn đã viết 'discrimination of' nhưng đúng là 'discrimination against'.",
+    "repairVi": "Sửa thành 'discrimination against unhealthy dwellers'.",
+    "replacementText": "discrimination against unhealthy dwellers"
+   },
+   {
+    "id": "2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "obligation of tstaying healthy",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'tstaying' thay vì 'staying', đây là lỗi đánh máy.",
+    "repairVi": "thay 'tstaying' thành 'staying'",
+    "replacementText": "staying"
+   },
+   {
+    "id": "3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "healthy people iare more energetic",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'iare' thay vì 'are', đây là lỗi đánh máy.",
+    "repairVi": "thay 'iare' thành 'are'",
+    "replacementText": "are"
+   },
+   {
+    "id": "4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "communities twould be able",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'twould' thay vì 'would', đây là lỗi đánh máy.",
+    "repairVi": "thay 'twould' thành 'would'",
+    "replacementText": "would"
+   },
+   {
+    "id": "5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "get enoughpersonal income taxes",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu khoảng cách",
+    "explanationVi": "Bạn viết 'enoughpersonal' thay vì 'enough personal', thiếu khoảng cách giữa hai từ.",
+    "repairVi": "thêm khoảng cách giữa 'enough' và 'personal'",
+    "replacementText": "enough personal"
+   },
+   {
+    "id": "6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "patients withincurable diseases",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu khoảng cách",
+    "explanationVi": "Bạn viết 'withincurable' thay vì 'with incurable', thiếu khoảng cách giữa hai từ.",
+    "repairVi": "thêm khoảng cách giữa 'with' và 'incurable'",
+    "replacementText": "with incurable"
+   },
+   {
+    "id": "7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "some mpoverty-stricken areas",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'mpoverty' thay vì 'poverty', đây là lỗi đánh máy.",
+    "repairVi": "thay 'mpoverty' thành 'poverty'",
+    "replacementText": "poverty"
+   },
+   {
+    "id": "8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "have witnessed n the majority",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi từ và cấu trúc",
+    "explanationVi": "Bạn viết 'n' thay vì 'that' hoặc từ khác, và câu có thể thiếu dấu phẩy hoặc từ nối, gây hiểu nhầm nhẹ.",
+    "repairVi": "thay 'n' thành 'that' và kiểm tra cấu trúc câu",
+    "replacementText": "have witnessed that the majority"
+   },
+   {
+    "id": "10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "to ftheir communitties",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'ftheir' thay vì 'their', đây là lỗi đánh máy.",
+    "repairVi": "thay 'ftheir' thành 'their'",
+    "replacementText": "their"
+   },
+   {
+    "id": "11",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "communitties",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'communitties' thay vì 'communities', đây là lỗi đánh máy.",
+    "repairVi": "thay 'communitties' thành 'communities'",
+    "replacementText": "communities"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "tstaying",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn đã viết 'tstaying' thay vì 'staying', đây là lỗi đánh máy nhỏ.",
+      "repairVi": "Sửa thành 'staying'.",
+      "replacementText": "staying"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "individuals well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu dấu possession",
+      "explanationVi": "Bạn đã viết 'individuals well-being' mà thiếu dấu apostrophe để chỉ sở hữu.",
+      "repairVi": "Sửa thành 'individuals' well-being'.",
+      "replacementText": "individuals' well-being"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "positive to work hard",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cấu trúc sai",
+      "explanationVi": "Bạn đã viết 'positive to work hard', nhưng cấu trúc chính xác thường là 'positive enough to work hard'.",
+      "repairVi": "Sửa thành 'positive enough to work hard'.",
+      "replacementText": "positive enough to work hard"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "witnessed n the majority",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu liên từ",
+      "explanationVi": "Bạn đã viết 'witnessed n the majority',缺少 'that' để giới thiệu mệnh đề danh từ, gây hiểu lầm nhẹ.",
+      "repairVi": "Sửa thành 'witnessed that the majority'.",
+      "replacementText": "witnessed that the majority"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "over societiesA",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đánh máy và thiếu dấu câu",
+      "explanationVi": "Bạn đã viết 'over societiesA', cần sửa thành 'over society's' và thêm dấu câu.",
+      "repairVi": "Sửa thành 'over society's. A'.",
+      "replacementText": "over society's. A"
+     },
+     {
+      "id": "error6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "ftheir communitties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn đã viết 'ftheir communitties' thay vì 'their communities', đây là lỗi đánh máy.",
+      "repairVi": "Sửa thành 'their communities'.",
+      "replacementText": "their communities"
+     },
+     {
+      "id": "error7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "discrimination of unhealthy dwellers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn đã viết 'discrimination of' nhưng đúng là 'discrimination against'.",
+      "repairVi": "Sửa thành 'discrimination against unhealthy dwellers'.",
+      "replacementText": "discrimination against unhealthy dwellers"
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "individuals well-being",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu dấu nháy sở hữu",
+      "explanationVi": "Bạn viết 'individuals well-being' thay vì 'individuals' well-being' để thể hiện dạng sở hữu.",
+      "repairVi": "thêm dấu nháy sau 'individuals'",
+      "replacementText": "individuals' well-being"
+     },
+     {
+      "id": "2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "obligation of tstaying healthy",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'tstaying' thay vì 'staying', đây là lỗi đánh máy.",
+      "repairVi": "thay 'tstaying' thành 'staying'",
+      "replacementText": "staying"
+     },
+     {
+      "id": "3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "healthy people iare more energetic",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'iare' thay vì 'are', đây là lỗi đánh máy.",
+      "repairVi": "thay 'iare' thành 'are'",
+      "replacementText": "are"
+     },
+     {
+      "id": "4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "communities twould be able",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'twould' thay vì 'would', đây là lỗi đánh máy.",
+      "repairVi": "thay 'twould' thành 'would'",
+      "replacementText": "would"
+     },
+     {
+      "id": "5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "get enoughpersonal income taxes",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu khoảng cách",
+      "explanationVi": "Bạn viết 'enoughpersonal' thay vì 'enough personal', thiếu khoảng cách giữa hai từ.",
+      "repairVi": "thêm khoảng cách giữa 'enough' và 'personal'",
+      "replacementText": "enough personal"
+     },
+     {
+      "id": "6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "patients withincurable diseases",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu khoảng cách",
+      "explanationVi": "Bạn viết 'withincurable' thay vì 'with incurable', thiếu khoảng cách giữa hai từ.",
+      "repairVi": "thêm khoảng cách giữa 'with' và 'incurable'",
+      "replacementText": "with incurable"
+     },
+     {
+      "id": "7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "some mpoverty-stricken areas",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'mpoverty' thay vì 'poverty', đây là lỗi đánh máy.",
+      "repairVi": "thay 'mpoverty' thành 'poverty'",
+      "replacementText": "poverty"
+     },
+     {
+      "id": "8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "have witnessed n the majority",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi từ và cấu trúc",
+      "explanationVi": "Bạn viết 'n' thay vì 'that' hoặc từ khác, và câu có thể thiếu dấu phẩy hoặc từ nối, gây hiểu nhầm nhẹ.",
+      "repairVi": "thay 'n' thành 'that' và kiểm tra cấu trúc câu",
+      "replacementText": "have witnessed that the majority"
+     },
+     {
+      "id": "9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "over societiesA",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu dấu câu hoặc khoảng cách",
+      "explanationVi": "Bạn viết 'societiesA' thay vì 'societies. A' hoặc 'societies, A', thiếu dấu câu và khoảng cách.",
+      "repairVi": "thêm dấu câu và khoảng cách",
+      "replacementText": "societies. A"
+     },
+     {
+      "id": "10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "to ftheir communitties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'ftheir' thay vì 'their', đây là lỗi đánh máy.",
+      "repairVi": "thay 'ftheir' thành 'their'",
+      "replacementText": "their"
+     },
+     {
+      "id": "11",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "communitties",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'communitties' thay vì 'communities', đây là lỗi đánh máy.",
+      "repairVi": "thay 'communitties' thành 'communities'",
+      "replacementText": "communities"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "Human-activity-has-had-a-negative-impact-on-plants-and-animals-around-the-world.pdf",
+  "band": 5.5,
+  "rationaleVi": "Bạn sử dụng một số cấu trúc đa dạng như đơn giản, kép và phức tạp, nhưng độ chính xác ngữ pháp thấp với nhiều lỗi lặp lại về mạo từ, giới từ, dấu câu và cấu trúc câu, khiến một số ý nghĩa bị ảnh hưởng hoặc khó hiểu.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "problems plants and animal kingdom",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu giới từ và mạo từ",
+    "explanationVi": "Bạn đã bỏ sót giới từ 'for' trước 'plants' và mạo từ 'the' trước 'animal kingdom', làm câu thiếu trôi chảy và gây hiểu nhầm nhẹ.",
+    "repairVi": "Thêm 'for' trước 'plants' và 'the' trước 'animal kingdom'.",
+    "replacementText": "problems for plants and the animal kingdom"
+   },
+   {
+    "id": "2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "on order to",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn viết 'on order to' thay vì 'in order to', đây là lỗi sai giới từ thường gặp.",
+    "repairVi": "Thay 'on order to' thành 'in order to'.",
+    "replacementText": "in order to"
+   },
+   {
+    "id": "3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "national biological survey of India",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn đã không sử dụng mạo từ 'the' trước tên tổ chức cụ thể, lỗi này lặp lại nhiều lần trong bài.",
+    "repairVi": "Thêm 'the' trước 'National Biological Survey of India'.",
+    "replacementText": "the National Biological Survey of India"
+   },
+   {
+    "id": "4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "as a result use of fossil fuels will decrease",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu chạy (run-on)",
+    "explanationVi": "Bạn viết một câu chạy mà không có dấu câu hoặc từ nối giữa hai mệnh đề, gây momentary confusion cho người đọc.",
+    "repairVi": "Thêm dấu phẩy sau 'pollution' để tách câu.",
+    "replacementText": "as a result, use of fossil fuels will decrease"
+   },
+   {
+    "id": "5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "butan not have this because of “thovious claus",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi cấu trúc câu và từ sai",
+    "explanationVi": "Bạn viết 'butan not have this' rất khó hiểu, có thể là lỗi đánh máy hoặc cấu trúc sai, khiến ý nghĩa bị che khuất nghiêm trọng.",
+    "repairVi": "Sửa thành 'but it cannot be ignored' để rõ nghĩa hơn.",
+    "replacementText": "but it cannot be ignored"
+   },
+   {
+    "id": "2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "changedsentence is n in",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu liền nhau thiếu dấu câu",
+    "explanationVi": "Bạn viết 'changedsentence' không có dấu câu và viết liền với từ tiếp theo, gây khó hiểu.",
+    "repairVi": "Thêm dấu chấm và viết hoa chữ cái sau.",
+    "replacementText": "changed. In"
+   },
+   {
+    "id": "3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "the process human acts wrong",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu từ và dạng từ sai",
+    "explanationVi": "Bạn viết 'human acts wrong' mà thiếu giới từ 'of' và từ 'activities' thay cho 'acts wrong'.",
+    "repairVi": "Thay 'human acts wrong' thành 'of human activities'.",
+    "replacementText": "the process of human activities"
+   },
+   {
+    "id": "4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Being without depending on plants and animals human race cannot survive",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu dấu phẩy",
+    "explanationVi": "Bạn thiếu dấu phẩy sau cụm từ đầu câu, làm câu liền nhau khó đọc.",
+    "repairVi": "Thêm dấu phẩy sau 'animals'.",
+    "replacementText": "Being without depending on plants and animals, the human race cannot survive"
+   },
+   {
+    "id": "5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "by taking making some changes",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "từ lặp lại",
+    "explanationVi": "Bạn viết 'taking making' là thừa từ, nên chỉ dùng một động từ.",
+    "repairVi": "Bỏ 'taking' hoặc 'making', giữ một từ.",
+    "replacementText": "by making some changes"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5.5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "problems plants and animal kingdom",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu giới từ và mạo từ",
+      "explanationVi": "Bạn đã bỏ sót giới từ 'for' trước 'plants' và mạo từ 'the' trước 'animal kingdom', làm câu thiếu trôi chảy và gây hiểu nhầm nhẹ.",
+      "repairVi": "Thêm 'for' trước 'plants' và 'the' trước 'animal kingdom'.",
+      "replacementText": "problems for plants and the animal kingdom"
+     },
+     {
+      "id": "2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "on order to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn viết 'on order to' thay vì 'in order to', đây là lỗi sai giới từ thường gặp.",
+      "repairVi": "Thay 'on order to' thành 'in order to'.",
+      "replacementText": "in order to"
+     },
+     {
+      "id": "3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "national biological survey of India",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn đã không sử dụng mạo từ 'the' trước tên tổ chức cụ thể, lỗi này lặp lại nhiều lần trong bài.",
+      "repairVi": "Thêm 'the' trước 'National Biological Survey of India'.",
+      "replacementText": "the National Biological Survey of India"
+     },
+     {
+      "id": "4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "as a result use of fossil fuels will decrease",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu chạy (run-on)",
+      "explanationVi": "Bạn viết một câu chạy mà không có dấu câu hoặc từ nối giữa hai mệnh đề, gây momentary confusion cho người đọc.",
+      "repairVi": "Thêm dấu phẩy sau 'pollution' để tách câu.",
+      "replacementText": "as a result, use of fossil fuels will decrease"
+     },
+     {
+      "id": "5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "butan not have this because of “thovious claus",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi cấu trúc câu và từ sai",
+      "explanationVi": "Bạn viết 'butan not have this' rất khó hiểu, có thể là lỗi đánh máy hoặc cấu trúc sai, khiến ý nghĩa bị che khuất nghiêm trọng.",
+      "repairVi": "Sửa thành 'but it cannot be ignored' để rõ nghĩa hơn.",
+      "replacementText": "but it cannot be ignored"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "problems plants and animal kingdom",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu giới từ và mạo từ",
+      "explanationVi": "Bạn viết 'problems plants' mà thiếu giới từ 'for', và 'animal kingdom' thiếu mạo từ 'the'.",
+      "repairVi": "Thêm 'for' trước 'plants' và 'the' trước 'animal kingdom'.",
+      "replacementText": "problems for plants and the animal kingdom"
+     },
+     {
+      "id": "2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "changedsentence is n in",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu liền nhau thiếu dấu câu",
+      "explanationVi": "Bạn viết 'changedsentence' không có dấu câu và viết liền với từ tiếp theo, gây khó hiểu.",
+      "repairVi": "Thêm dấu chấm và viết hoa chữ cái sau.",
+      "replacementText": "changed. In"
+     },
+     {
+      "id": "3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "the process human acts wrong",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu từ và dạng từ sai",
+      "explanationVi": "Bạn viết 'human acts wrong' mà thiếu giới từ 'of' và từ 'activities' thay cho 'acts wrong'.",
+      "repairVi": "Thay 'human acts wrong' thành 'of human activities'.",
+      "replacementText": "the process of human activities"
+     },
+     {
+      "id": "4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Being without depending on plants and animals human race cannot survive",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu dấu phẩy",
+      "explanationVi": "Bạn thiếu dấu phẩy sau cụm từ đầu câu, làm câu liền nhau khó đọc.",
+      "repairVi": "Thêm dấu phẩy sau 'animals'.",
+      "replacementText": "Being without depending on plants and animals, the human race cannot survive"
+     },
+     {
+      "id": "5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "by taking making some changes",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "từ lặp lại",
+      "explanationVi": "Bạn viết 'taking making' là thừa từ, nên chỉ dùng một động từ.",
+      "repairVi": "Bỏ 'taking' hoặc 'making', giữ một từ.",
+      "replacementText": "by making some changes"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "adverts-band-7.5-t2.pdf",
+  "band": 7,
+  "rationaleVi": "Bạn sử dụng nhiều loại cấu trúc câu như đơn, ghép, phức, và điều kiện, nhưng có một số lỗi ngữ pháp nhỏ như sai word form, thiếu từ trong cấu trúc song song, và lỗi article, tuy nhiên ý nghĩa chung vẫn rõ ràng.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "the recent publish research result",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai word form",
+    "explanationVi": "Bạn dùng 'publish' thay vì 'published' để sửa đổi 'research result'.",
+    "repairVi": "Thay 'publish' bằng 'published'.",
+    "replacementText": "published"
+   },
+   {
+    "id": "2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "regardless if",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai giới từ",
+    "explanationVi": "Bạn dùng 'regardless if' thay vì 'regardless of whether' trong văn phong trang trọng.",
+    "repairVi": "Thay 'regardless if' bằng 'regardless of whether'.",
+    "replacementText": "regardless of whether"
+   },
+   {
+    "id": "3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "in the technology",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai article",
+    "explanationVi": "Bạn dùng 'the technology' nhưng ở đây cần bỏ article vì technology dùng chung.",
+    "repairVi": "Bỏ 'the' để thành 'in technology'.",
+    "replacementText": "in technology"
+   },
+   {
+    "id": "4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "convince consumers , retain their competitiveness",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu từ trong cấu trúc song song",
+    "explanationVi": "Bạn thiếu 'to' trước 'retain' để cấu trúc song song với 'to convince'.",
+    "repairVi": "Thêm 'to' trước 'retain'.",
+    "replacementText": "to retain"
+   },
+   {
+    "id": "5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 7,
+      "sourceText": "Apple official press conferences",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu sở hữu cách",
+    "explanationVi": "Bạn viết 'Apple official' thay vì 'Apple's official' để chỉ quyền sở hữu.",
+    "repairVi": "Thêm 's vào Apple.",
+    "replacementText": "Apple's official"
+   },
+   {
+    "id": "6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 9,
+      "sourceText": "misguiding fora consumers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai word form và countability",
+    "explanationVi": "Bạn dùng 'misguiding' (không chuẩn) và 'fora consumers' (sai article và số).",
+    "repairVi": "Thay 'misguiding fora consumers' bằng 'misleading for consumers'.",
+    "replacementText": "misleading for consumers"
+   },
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "pursuinge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết sai từ 'pursuinge' thành 'pursuing'.",
+    "repairVi": "Sửa 'pursuinge' thành 'pursuing'.",
+    "replacementText": "pursuing"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "eassay",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả",
+    "explanationVi": "Bạn viết sai từ 'eassay' thành 'essay'.",
+    "repairVi": "Sửa 'eassay' thành 'essay'.",
+    "replacementText": "essay"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "ithe main underlying reasons of f",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả và thiếu từ",
+    "explanationVi": "Bạn viết 'ithe' và 'of f' sai, nên là 'the main underlying reasons of the'.",
+    "repairVi": "Sửa 'ithe' thành 'the' và 'of f' thành 'of the'.",
+    "replacementText": "the main underlying reasons of the"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "the recent publish research result",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai word form",
+      "explanationVi": "Bạn dùng 'publish' thay vì 'published' để sửa đổi 'research result'.",
+      "repairVi": "Thay 'publish' bằng 'published'.",
+      "replacementText": "published"
+     },
+     {
+      "id": "2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "regardless if",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai giới từ",
+      "explanationVi": "Bạn dùng 'regardless if' thay vì 'regardless of whether' trong văn phong trang trọng.",
+      "repairVi": "Thay 'regardless if' bằng 'regardless of whether'.",
+      "replacementText": "regardless of whether"
+     },
+     {
+      "id": "3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "in the technology",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai article",
+      "explanationVi": "Bạn dùng 'the technology' nhưng ở đây cần bỏ article vì technology dùng chung.",
+      "repairVi": "Bỏ 'the' để thành 'in technology'.",
+      "replacementText": "in technology"
+     },
+     {
+      "id": "4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "convince consumers , retain their competitiveness",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu từ trong cấu trúc song song",
+      "explanationVi": "Bạn thiếu 'to' trước 'retain' để cấu trúc song song với 'to convince'.",
+      "repairVi": "Thêm 'to' trước 'retain'.",
+      "replacementText": "to retain"
+     },
+     {
+      "id": "5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 7,
+        "sourceText": "Apple official press conferences",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu sở hữu cách",
+      "explanationVi": "Bạn viết 'Apple official' thay vì 'Apple's official' để chỉ quyền sở hữu.",
+      "repairVi": "Thêm 's vào Apple.",
+      "replacementText": "Apple's official"
+     },
+     {
+      "id": "6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 9,
+        "sourceText": "misguiding fora consumers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai word form và countability",
+      "explanationVi": "Bạn dùng 'misguiding' (không chuẩn) và 'fora consumers' (sai article và số).",
+      "repairVi": "Thay 'misguiding fora consumers' bằng 'misleading for consumers'.",
+      "replacementText": "misleading for consumers"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "pursuinge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết sai từ 'pursuinge' thành 'pursuing'.",
+      "repairVi": "Sửa 'pursuinge' thành 'pursuing'.",
+      "replacementText": "pursuing"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "eassay",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả",
+      "explanationVi": "Bạn viết sai từ 'eassay' thành 'essay'.",
+      "repairVi": "Sửa 'eassay' thành 'essay'.",
+      "replacementText": "essay"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "the recent publish research result",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dạng từ",
+      "explanationVi": "Bạn dùng 'publish' thay vì 'published' trong cụm 'recent publish research result'.",
+      "repairVi": "Sửa 'publish' thành 'published'.",
+      "replacementText": "published"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "regardless if",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi giới từ",
+      "explanationVi": "Bạn dùng 'regardless if' sai, đúng là 'regardless of whether'.",
+      "repairVi": "Sửa 'regardless if' thành 'regardless of whether'.",
+      "replacementText": "regardless of whether"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "ithe main underlying reasons of f",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả và thiếu từ",
+      "explanationVi": "Bạn viết 'ithe' và 'of f' sai, nên là 'the main underlying reasons of the'.",
+      "repairVi": "Sửa 'ithe' thành 'the' và 'of f' thành 'of the'.",
+      "replacementText": "the main underlying reasons of the"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-5.5-water-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn có nhiều lỗi ngữ pháp cơ bản như sai đồng chủ ngữ-động từ, thiếu mạo từ, và lỗi chính tả, cùng với các câu phức thường bị lỗi cấu trúc, dẫn đến sự chính xác thấp và ảnh hưởng đến khả năng hiểu.",
+  "findings": [
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "water resource",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai đếm được",
+    "explanationVi": "Bạn dùng 'water resource' số ít, nhưng trong ngữ cảnh này nên dùng số nhiều.",
+    "repairVi": "thay 'resource' bằng 'resources'",
+    "replacementText": "water resources"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "reason onw increasing demand",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'onw' thay vì 'for' hoặc 'of', làm câu không rõ nghĩa.",
+    "repairVi": "sửa 'onw' thành 'for'",
+    "replacementText": "for increasing demand"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "reasons lead to",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu đại từ quan hệ",
+    "explanationVi": "Bạn cần thêm 'that' hoặc thay 'lead' thành 'leading' để câu đúng.",
+    "repairVi": "thêm 'that' trước 'lead' hoặc đổi thành 'leading'",
+    "replacementText": "reasons that lead to"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "government indulge",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai đồng chủ ngữ-động từ",
+    "explanationVi": "Chủ ngữ 'government' là số ít, nên động từ phải là 'indulges'.",
+    "repairVi": "đổi 'indulge' thành 'indulges'",
+    "replacementText": "government indulges"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "where is the river",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai trật tự từ trong mệnh đề quan hệ",
+    "explanationVi": "Trong mệnh đề quan hệ, trật tự từ phải là 'where the river was' thay vì 'where is the river'.",
+    "repairVi": "đổi thành 'where the river was'",
+    "replacementText": "where the river was"
+   },
+   {
+    "id": "error6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "have also been lost",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai đồng chủ ngữ-động từ",
+    "explanationVi": "Chủ ngữ 'area' là số ít, nên động từ phải là 'has been lost'.",
+    "repairVi": "đổi 'have' thành 'has'",
+    "replacementText": "has also been lost"
+   },
+   {
+    "id": "error7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "meaning ato save",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ và thiếu khoảng cách",
+    "explanationVi": "Bạn viết 'meaning ato' thay vì 'meaning to' hoặc 'intention to', và 'ato' là sai chính tả.",
+    "repairVi": "sửa thành 'intention to'",
+    "replacementText": "intention to"
+   },
+   {
+    "id": "error8",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "carwith",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu khoảng cách",
+    "explanationVi": "Bạn viết 'carwith' thay vì 'cars with', cần tách từ.",
+    "repairVi": "tách thành 'cars with'",
+    "replacementText": "cars with"
+   },
+   {
+    "id": "error9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For government",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Bạn cần thêm mạo từ 'the' trước 'government'.",
+    "repairVi": "thêm 'the' trước 'government'",
+    "replacementText": "For the government"
+   },
+   {
+    "id": "error10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "fenterprises account for their overuse water resources",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả và thiếu giới từ",
+    "explanationVi": "Bạn viết 'fenterprises' thay vì 'enterprises', và 'overuse water resources' cần 'overuse of water resources'.",
+    "repairVi": "sửa 'fenterprises' thành 'enterprises' và thêm 'of' sau 'overuse'",
+    "replacementText": "enterprises account for their overuse of water resources"
+   },
+   {
+    "id": "error11",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "sky-finess",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả nghiêm trọng",
+    "explanationVi": "Bạn viết 'sky-finess' không rõ nghĩa, nên là 'fines' hoặc 'penalties'.",
+    "repairVi": "sửa thành 'fines'",
+    "replacementText": "fines"
+   },
+   {
+    "id": "error12",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "should recycling",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai cấu trúc với động từ khuyết thiếu",
+    "explanationVi": "Sau 'should' phải dùng động từ nguyên thể: 'should recycle'.",
+    "repairVi": "đổi 'recycling' thành 'recycle'",
+    "replacementText": "should recycle"
+   },
+   {
+    "id": "error13",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "which used to wash vegetables",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai cấu trúc mệnh đề quan hệ",
+    "explanationVi": "Bạn cần thêm động từ hoặc sửa thành 'which is used to wash vegetables'.",
+    "repairVi": "thêm 'is' trước 'used' hoặc đổi thành 'that was used'",
+    "replacementText": "which is used to wash vegetables"
+   },
+   {
+    "id": "err2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "onw increasing demand on water",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả và giới từ",
+    "explanationVi": "Bạn viết 'onw' thay vì 'of', và 'demand on' nên là 'demand for'.",
+    "repairVi": "sửa thành 'of increasing demand for water'",
+    "replacementText": "of increasing demand for water"
+   },
+   {
+    "id": "err4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "the government indulge destruction",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai sự agreement và thiếu giới từ",
+    "explanationVi": "Chủ ngữ 'government' là số ít, nên 'indulge' cần 's', và 'indulge in destruction'.",
+    "repairVi": "sửa thành 'the government indulges in destruction'",
+    "replacementText": "the government indulges in destruction"
+   },
+   {
+    "id": "err5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "where is the river in the past",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai thì và trật tự từ",
+    "explanationVi": "Cụm này cố gắng nói 'where the river was', nhưng viết sai.",
+    "repairVi": "sửa thành 'where the river was'",
+    "replacementText": "where the river was"
+   },
+   {
+    "id": "err7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "lack the meaning ato save",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai từ và chính tả",
+    "explanationVi": "Bạn dùng 'meaning' thay vì 'intention' hoặc 'means', và 'ato' thay vì 'to'.",
+    "repairVi": "sửa thành 'lack the intention to save'",
+    "replacementText": "lack the intention to save"
+   },
+   {
+    "id": "err9",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "For government and individuals",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu mạo từ",
+    "explanationVi": "Cần mạo từ 'the' trước 'government'.",
+    "repairVi": "sửa thành 'For the government and individuals'",
+    "replacementText": "For the government and individuals"
+   },
+   {
+    "id": "err10",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "let fenterprises",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'fenterprises' thay vì 'enterprises'.",
+    "repairVi": "sửa thành 'let enterprises'",
+    "replacementText": "let enterprises"
+   },
+   {
+    "id": "err11",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "issue sky-finess",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sai chính tả",
+    "explanationVi": "Bạn viết 'sky-finess' có thể là 'fines' hoặc 'penalties'.",
+    "repairVi": "sửa thành 'issue fines'",
+    "replacementText": "issue fines"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "water resource",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai đếm được",
+      "explanationVi": "Bạn dùng 'water resource' số ít, nhưng trong ngữ cảnh này nên dùng số nhiều.",
+      "repairVi": "thay 'resource' bằng 'resources'",
+      "replacementText": "water resources"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "reason onw increasing demand",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'onw' thay vì 'for' hoặc 'of', làm câu không rõ nghĩa.",
+      "repairVi": "sửa 'onw' thành 'for'",
+      "replacementText": "for increasing demand"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "reasons lead to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu đại từ quan hệ",
+      "explanationVi": "Bạn cần thêm 'that' hoặc thay 'lead' thành 'leading' để câu đúng.",
+      "repairVi": "thêm 'that' trước 'lead' hoặc đổi thành 'leading'",
+      "replacementText": "reasons that lead to"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "government indulge",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai đồng chủ ngữ-động từ",
+      "explanationVi": "Chủ ngữ 'government' là số ít, nên động từ phải là 'indulges'.",
+      "repairVi": "đổi 'indulge' thành 'indulges'",
+      "replacementText": "government indulges"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "where is the river",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai trật tự từ trong mệnh đề quan hệ",
+      "explanationVi": "Trong mệnh đề quan hệ, trật tự từ phải là 'where the river was' thay vì 'where is the river'.",
+      "repairVi": "đổi thành 'where the river was'",
+      "replacementText": "where the river was"
+     },
+     {
+      "id": "error6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "have also been lost",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai đồng chủ ngữ-động từ",
+      "explanationVi": "Chủ ngữ 'area' là số ít, nên động từ phải là 'has been lost'.",
+      "repairVi": "đổi 'have' thành 'has'",
+      "replacementText": "has also been lost"
+     },
+     {
+      "id": "error7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "meaning ato save",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ và thiếu khoảng cách",
+      "explanationVi": "Bạn viết 'meaning ato' thay vì 'meaning to' hoặc 'intention to', và 'ato' là sai chính tả.",
+      "repairVi": "sửa thành 'intention to'",
+      "replacementText": "intention to"
+     },
+     {
+      "id": "error8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "carwith",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu khoảng cách",
+      "explanationVi": "Bạn viết 'carwith' thay vì 'cars with', cần tách từ.",
+      "repairVi": "tách thành 'cars with'",
+      "replacementText": "cars with"
+     },
+     {
+      "id": "error9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For government",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Bạn cần thêm mạo từ 'the' trước 'government'.",
+      "repairVi": "thêm 'the' trước 'government'",
+      "replacementText": "For the government"
+     },
+     {
+      "id": "error10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "fenterprises account for their overuse water resources",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả và thiếu giới từ",
+      "explanationVi": "Bạn viết 'fenterprises' thay vì 'enterprises', và 'overuse water resources' cần 'overuse of water resources'.",
+      "repairVi": "sửa 'fenterprises' thành 'enterprises' và thêm 'of' sau 'overuse'",
+      "replacementText": "enterprises account for their overuse of water resources"
+     },
+     {
+      "id": "error11",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "sky-finess",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả nghiêm trọng",
+      "explanationVi": "Bạn viết 'sky-finess' không rõ nghĩa, nên là 'fines' hoặc 'penalties'.",
+      "repairVi": "sửa thành 'fines'",
+      "replacementText": "fines"
+     },
+     {
+      "id": "error12",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "should recycling",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc với động từ khuyết thiếu",
+      "explanationVi": "Sau 'should' phải dùng động từ nguyên thể: 'should recycle'.",
+      "repairVi": "đổi 'recycling' thành 'recycle'",
+      "replacementText": "should recycle"
+     },
+     {
+      "id": "error13",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "which used to wash vegetables",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc mệnh đề quan hệ",
+      "explanationVi": "Bạn cần thêm động từ hoặc sửa thành 'which is used to wash vegetables'.",
+      "repairVi": "thêm 'is' trước 'used' hoặc đổi thành 'that was used'",
+      "replacementText": "which is used to wash vegetables"
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "err1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "water resource",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "số nhiều không đúng",
+      "explanationVi": "Bạn dùng 'resource' ở dạng số ít, nhưng trong ngữ cảnh này cần số nhiều.",
+      "repairVi": "thay 'resource' thành 'resources'",
+      "replacementText": "water resources"
+     },
+     {
+      "id": "err2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "onw increasing demand on water",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả và giới từ",
+      "explanationVi": "Bạn viết 'onw' thay vì 'of', và 'demand on' nên là 'demand for'.",
+      "repairVi": "sửa thành 'of increasing demand for water'",
+      "replacementText": "of increasing demand for water"
+     },
+     {
+      "id": "err3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "reasons lead to",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu đại từ quan hệ",
+      "explanationVi": "Câu 'There are two main reasons lead to' thiếu 'that' hoặc 'which'.",
+      "repairVi": "thêm 'that' sau 'reasons'",
+      "replacementText": "reasons that lead to"
+     },
+     {
+      "id": "err4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "the government indulge destruction",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai sự agreement và thiếu giới từ",
+      "explanationVi": "Chủ ngữ 'government' là số ít, nên 'indulge' cần 's', và 'indulge in destruction'.",
+      "repairVi": "sửa thành 'the government indulges in destruction'",
+      "replacementText": "the government indulges in destruction"
+     },
+     {
+      "id": "err5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "where is the river in the past",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai thì và trật tự từ",
+      "explanationVi": "Cụm này cố gắng nói 'where the river was', nhưng viết sai.",
+      "repairVi": "sửa thành 'where the river was'",
+      "replacementText": "where the river was"
+     },
+     {
+      "id": "err6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "have also been lost",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai sự agreement",
+      "explanationVi": "Chủ ngữ 'area' là số ít, nên dùng 'has been lost'.",
+      "repairVi": "sửa thành 'has also been lost'",
+      "replacementText": "has also been lost"
+     },
+     {
+      "id": "err7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "lack the meaning ato save",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai từ và chính tả",
+      "explanationVi": "Bạn dùng 'meaning' thay vì 'intention' hoặc 'means', và 'ato' thay vì 'to'.",
+      "repairVi": "sửa thành 'lack the intention to save'",
+      "replacementText": "lack the intention to save"
+     },
+     {
+      "id": "err8",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "carwith",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu khoảng trắng",
+      "explanationVi": "Bạn viết 'carwith' thành một từ, nên tách ra.",
+      "repairVi": "sửa thành 'cars with'",
+      "replacementText": "cars with"
+     },
+     {
+      "id": "err9",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "For government and individuals",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu mạo từ",
+      "explanationVi": "Cần mạo từ 'the' trước 'government'.",
+      "repairVi": "sửa thành 'For the government and individuals'",
+      "replacementText": "For the government and individuals"
+     },
+     {
+      "id": "err10",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "let fenterprises",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'fenterprises' thay vì 'enterprises'.",
+      "repairVi": "sửa thành 'let enterprises'",
+      "replacementText": "let enterprises"
+     },
+     {
+      "id": "err11",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "issue sky-finess",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai chính tả",
+      "explanationVi": "Bạn viết 'sky-finess' có thể là 'fines' hoặc 'penalties'.",
+      "repairVi": "sửa thành 'issue fines'",
+      "replacementText": "issue fines"
+     },
+     {
+      "id": "err12",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "should recycling",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc động từ sau modal",
+      "explanationVi": "Sau 'should' cần động từ nguyên形, không phải dạng V-ing.",
+      "repairVi": "sửa thành 'should recycle'",
+      "replacementText": "should recycle"
+     },
+     {
+      "id": "err13",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "which used to wash vegetables",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sai cấu trúc relative clause",
+      "explanationVi": "Cần 'which is used' hoặc 'which was used' thay vì 'which used'.",
+      "repairVi": "sửa thành 'which is used to wash vegetables'",
+      "replacementText": "which is used to wash vegetables"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6-hunger-t2.pdf",
+  "band": 5,
+  "rationaleVi": "Bạn sử dụng một số cấu trúc đơn giản và phức tạp, nhưng có nhiều lỗi ngữ pháp cơ bản như lỗi đếm được, thiếu từ, lỗi chính tả, và câu fragment, khiến cho ý nghĩa đôi khi bị模糊. Cần cải thiện độ chính xác và đa dạng cấu trúc.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "foods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đếm được",
+    "explanationVi": "Bạn sử dụng 'foods' ở dạng số nhiều, nhưng 'food' thường là danh từ không đếm được trong ngữ cảnh này.",
+    "repairVi": "Sử dụng 'food' thay vì 'foods'.",
+    "replacementText": "food"
+   },
+   {
+    "id": "f2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "plangs",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chính tả từ",
+    "explanationVi": "Bạn viết 'plangs' có lẽ là lỗi chính tả cho 'plans'.",
+    "repairVi": "Sử dụng 'plans'.",
+    "replacementText": "plans"
+   },
+   {
+    "id": "f3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "specialist",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đếm được",
+    "explanationVi": "Bạn viết 'specialist' ở dạng số ít, nhưng cần số nhiều 'specialists'.",
+    "repairVi": "Sử dụng 'specialists'.",
+    "replacementText": "specialists"
+   },
+   {
+    "id": "f4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "inhungryo",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cụm từ không hợp lệ",
+    "explanationVi": "Bạn viết 'inhungryo' không phải là từ chuẩn; có lẽ ý là 'in hunger'.",
+    "repairVi": "Thay thế bằng 'in hunger'.",
+    "replacementText": "in hunger"
+   },
+   {
+    "id": "f5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "harvestmas",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu dấu cách hoặc từ",
+    "explanationVi": "Bạn viết 'harvestmas' có lẽ là 'harvest as' hợp lại.",
+    "repairVi": "Sử dụng 'harvest as'.",
+    "replacementText": "harvest as"
+   },
+   {
+    "id": "f6",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "continue suffer",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "thiếu từ 'to'",
+    "explanationVi": "Bạn viết 'continue suffer'缺少 'to' trước động từ nguyên thể.",
+    "repairVi": "Thêm 'to' để thành 'continue to suffer'.",
+    "replacementText": "continue to suffer"
+   },
+   {
+    "id": "f7",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "A typical example to approach an advanced technology that takes advantage of nutrient medium to cultivate certain cereals such as Hybrid ricew.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu fragment",
+    "explanationVi": "Đoạn văn này bắt đầu bằng 'A typical example' nhưng không có động từ chính, tạo thành câu không hoàn chỉnh.",
+    "repairVi": "Kết nối với câu trước hoặc thêm động từ, ví dụ: 'A typical example is an advanced technology...'",
+    "replacementText": "A typical example is an advanced technology that takes advantage of nutrient medium to cultivate certain cereals such as hybrid rice."
+   },
+   {
+    "id": "find2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "A typical example to approach an advanced technology",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "câu không hoàn chỉnh",
+    "explanationVi": "Đây là một câu fragment, không có động từ chính để tạo câu hoàn chỉnh, làm ý nghĩa bị che khuất.",
+    "repairVi": "Thêm 'is' hoặc sửa lại thành 'A typical example is to approach...'",
+    "replacementText": "A typical example is to approach"
+   },
+   {
+    "id": "find3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "major",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "is omore focusbring iin talents",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "cấu trúc lỗi",
+    "explanationVi": "Câu này bị lỗi chính tả và cấu trúc, khiến ý nghĩa không rõ ràng và khó hiểu.",
+    "repairVi": "Sửa thành 'is to focus more on bringing in talents'.",
+    "replacementText": "is to focus more on bringing in talents"
+   },
+   {
+    "id": "find4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "gain enough foods",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đếm được",
+    "explanationVi": "Bạn sử dụng 'foods' thay vì 'food' ở dạng không đếm được, đây là lỗi nhỏ.",
+    "repairVi": "Sửa 'foods' thành 'food'.",
+    "replacementText": "gain enough food"
+   }
+  ],
+  "runs": [
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "foods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đếm được",
+      "explanationVi": "Bạn sử dụng 'foods' ở dạng số nhiều, nhưng 'food' thường là danh từ không đếm được trong ngữ cảnh này.",
+      "repairVi": "Sử dụng 'food' thay vì 'foods'.",
+      "replacementText": "food"
+     },
+     {
+      "id": "f2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "plangs",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chính tả từ",
+      "explanationVi": "Bạn viết 'plangs' có lẽ là lỗi chính tả cho 'plans'.",
+      "repairVi": "Sử dụng 'plans'.",
+      "replacementText": "plans"
+     },
+     {
+      "id": "f3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "specialist",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đếm được",
+      "explanationVi": "Bạn viết 'specialist' ở dạng số ít, nhưng cần số nhiều 'specialists'.",
+      "repairVi": "Sử dụng 'specialists'.",
+      "replacementText": "specialists"
+     },
+     {
+      "id": "f4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "inhungryo",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cụm từ không hợp lệ",
+      "explanationVi": "Bạn viết 'inhungryo' không phải là từ chuẩn; có lẽ ý là 'in hunger'.",
+      "repairVi": "Thay thế bằng 'in hunger'.",
+      "replacementText": "in hunger"
+     },
+     {
+      "id": "f5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "harvestmas",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu dấu cách hoặc từ",
+      "explanationVi": "Bạn viết 'harvestmas' có lẽ là 'harvest as' hợp lại.",
+      "repairVi": "Sử dụng 'harvest as'.",
+      "replacementText": "harvest as"
+     },
+     {
+      "id": "f6",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "continue suffer",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "thiếu từ 'to'",
+      "explanationVi": "Bạn viết 'continue suffer'缺少 'to' trước động từ nguyên thể.",
+      "repairVi": "Thêm 'to' để thành 'continue to suffer'.",
+      "replacementText": "continue to suffer"
+     },
+     {
+      "id": "f7",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "A typical example to approach an advanced technology that takes advantage of nutrient medium to cultivate certain cereals such as Hybrid ricew.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu fragment",
+      "explanationVi": "Đoạn văn này bắt đầu bằng 'A typical example' nhưng không có động từ chính, tạo thành câu không hoàn chỉnh.",
+      "repairVi": "Kết nối với câu trước hoặc thêm động từ, ví dụ: 'A typical example is an advanced technology...'",
+      "replacementText": "A typical example is an advanced technology that takes advantage of nutrient medium to cultivate certain cereals such as hybrid rice."
+     }
+    ]
+   },
+   {
+    "band": 5,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "harvestmas",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi ranh giới mệnh đề",
+      "explanationVi": "Bạn viết 'harvestmas' thay vì 'harvest as', làm hỏng cấu trúc câu và gây nhầm lẫn.",
+      "repairVi": "Sửa 'harvestmas' thành 'harvest as'.",
+      "replacementText": "harvest as"
+     },
+     {
+      "id": "find2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "A typical example to approach an advanced technology",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "câu không hoàn chỉnh",
+      "explanationVi": "Đây là một câu fragment, không có động từ chính để tạo câu hoàn chỉnh, làm ý nghĩa bị che khuất.",
+      "repairVi": "Thêm 'is' hoặc sửa lại thành 'A typical example is to approach...'",
+      "replacementText": "A typical example is to approach"
+     },
+     {
+      "id": "find3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "major",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "is omore focusbring iin talents",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "cấu trúc lỗi",
+      "explanationVi": "Câu này bị lỗi chính tả và cấu trúc, khiến ý nghĩa không rõ ràng và khó hiểu.",
+      "repairVi": "Sửa thành 'is to focus more on bringing in talents'.",
+      "replacementText": "is to focus more on bringing in talents"
+     },
+     {
+      "id": "find4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "gain enough foods",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đếm được",
+      "explanationVi": "Bạn sử dụng 'foods' thay vì 'food' ở dạng không đếm được, đây là lỗi nhỏ.",
+      "repairVi": "Sửa 'foods' thành 'food'.",
+      "replacementText": "gain enough food"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6.5-task-2-marked.pdf",
+  "band": 7,
+  "rationaleVi": "Bạn có range ngữ pháp tốt với nhiều cấu trúc phức tạp, nhưng accuracy bị ảnh hưởng bởi một số lỗi nhỏ như agreement chủ ngữ, modifier treo, và preposition. Các lỗi này là minor slips và momentary confusion, không che đậy ý nghĩa.",
+  "findings": [
+   {
+    "id": "error1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "are said to be",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi agreement chủ ngữ",
+    "explanationVi": "Bạn dùng 'are said to be' cho chủ ngữ số ít 'the large amount', nên cần sửa thành 'is said to be'.",
+    "repairVi": "sửa 'are said to be' thành 'is said to be'",
+    "replacementText": "is said to be"
+   },
+   {
+    "id": "error2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "causes",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi agreement chủ ngữ",
+    "explanationVi": "Bạn dùng 'causes' cho danh từ số nhiều 'factors', nên sửa thành 'cause'.",
+    "repairVi": "sửa 'causes' thành 'cause'",
+    "replacementText": "cause"
+   },
+   {
+    "id": "error3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "paragraph",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "Aside from gaining excessive amounts of fat, dental issues are",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "modifier treo (dangling modifier)",
+    "explanationVi": "Cụm 'Aside from gaining excessive amounts of fat' không gắn rõ ràng với chủ ngữ 'dental issues', vì dental issues không thể gain fat. Cần rephrase để tránh dangling.",
+    "repairVi": "thay đổi câu để tránh modifier treo, ví dụ: 'Aside from the risk of gaining excessive amounts of fat, dental issues are...'",
+    "replacementText": "Aside from the risk of gaining excessive amounts of fat, dental issues are"
+   },
+   {
+    "id": "error4",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "method on freducing",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi preposition",
+    "explanationVi": "Bạn dùng 'on' sai chỗ, nên sửa thành 'for' hoặc 'in'. Ở đây 'for reducing' phù hợp.",
+    "repairVi": "sửa 'on freducing' thành 'for reducing'",
+    "replacementText": "for reducing"
+   },
+   {
+    "id": "error5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 0,
+      "sourceText": "thus they should be discouragedR",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi câu chạy (run-on) hoặc dấu phẩy sai",
+    "explanationVi": "Bạn dùng 'thus' sau dấu phẩy mà không có dấu chấm phẩy hoặc từ nối phù hợp, dẫn đến câu chạy. Nên sửa thành '; thus, they should be discouraged.' để rõ ràng.",
+    "repairVi": "thêm dấu chấm phẩy trước 'thus' và sửa lỗi chính tả",
+    "replacementText": "; thus, they should be discouraged"
+   },
+   {
+    "id": "find1",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "health, thus they should be discouragedR",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dùng dấu phẩy",
+    "explanationVi": "Bạn dùng dấu phẩy để nối hai mệnh đề độc lập với 'thus', gây ra lỗi chạy câu.",
+    "repairVi": "Sử dụng dấu chấm hoặc dấu chấm phẩy để tách hai câu.",
+    "replacementText": "health. Thus, they should be discouraged."
+   },
+   {
+    "id": "find2",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "are said to be one of the main factors",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đồng thuận chủ ngữ",
+    "explanationVi": "Bạn dùng động từ số nhiều 'are' với chủ ngữ số ít 'the large amount', cần đổi thành 'is'.",
+    "repairVi": "Đổi 'are' thành 'is' để đồng thuận với chủ ngữ.",
+    "replacementText": "is said to be one of the main factors"
+   },
+   {
+    "id": "find3",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "factors that causes obesity",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi đồng thuận chủ ngữ",
+    "explanationVi": "Bạn dùng động từ số ít 'causes' với đại từ quan hệ 'that' tham chiếu đến 'factors' số nhiều, cần đổi thành 'cause'.",
+    "repairVi": "Đổi 'causes' thành 'cause' để đồng thuận với 'factors'.",
+    "replacementText": "factors that cause obesity"
+   },
+   {
+    "id": "find5",
+    "criterion": "grammatical_range_accuracy",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "for this reason,their prices should not be raised",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi dùng dấu phẩy",
+    "explanationVi": "Bạn dùng dấu phẩy để nối hai mệnh đề độc lập với 'for this reason', gây ra lỗi chạy câu.",
+    "repairVi": "Sử dụng dấu chấm hoặc dấu chấm phẩy để tách hai câu.",
+    "replacementText": "for this reason. Their prices should not be raised."
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "error1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "are said to be",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi agreement chủ ngữ",
+      "explanationVi": "Bạn dùng 'are said to be' cho chủ ngữ số ít 'the large amount', nên cần sửa thành 'is said to be'.",
+      "repairVi": "sửa 'are said to be' thành 'is said to be'",
+      "replacementText": "is said to be"
+     },
+     {
+      "id": "error2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "causes",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi agreement chủ ngữ",
+      "explanationVi": "Bạn dùng 'causes' cho danh từ số nhiều 'factors', nên sửa thành 'cause'.",
+      "repairVi": "sửa 'causes' thành 'cause'",
+      "replacementText": "cause"
+     },
+     {
+      "id": "error3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "paragraph",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "Aside from gaining excessive amounts of fat, dental issues are",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "modifier treo (dangling modifier)",
+      "explanationVi": "Cụm 'Aside from gaining excessive amounts of fat' không gắn rõ ràng với chủ ngữ 'dental issues', vì dental issues không thể gain fat. Cần rephrase để tránh dangling.",
+      "repairVi": "thay đổi câu để tránh modifier treo, ví dụ: 'Aside from the risk of gaining excessive amounts of fat, dental issues are...'",
+      "replacementText": "Aside from the risk of gaining excessive amounts of fat, dental issues are"
+     },
+     {
+      "id": "error4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "method on freducing",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi preposition",
+      "explanationVi": "Bạn dùng 'on' sai chỗ, nên sửa thành 'for' hoặc 'in'. Ở đây 'for reducing' phù hợp.",
+      "repairVi": "sửa 'on freducing' thành 'for reducing'",
+      "replacementText": "for reducing"
+     },
+     {
+      "id": "error5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 0,
+        "sourceText": "thus they should be discouragedR",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi câu chạy (run-on) hoặc dấu phẩy sai",
+      "explanationVi": "Bạn dùng 'thus' sau dấu phẩy mà không có dấu chấm phẩy hoặc từ nối phù hợp, dẫn đến câu chạy. Nên sửa thành '; thus, they should be discouraged.' để rõ ràng.",
+      "repairVi": "thêm dấu chấm phẩy trước 'thus' và sửa lỗi chính tả",
+      "replacementText": "; thus, they should be discouraged"
+     }
+    ]
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "find1",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "health, thus they should be discouragedR",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dùng dấu phẩy",
+      "explanationVi": "Bạn dùng dấu phẩy để nối hai mệnh đề độc lập với 'thus', gây ra lỗi chạy câu.",
+      "repairVi": "Sử dụng dấu chấm hoặc dấu chấm phẩy để tách hai câu.",
+      "replacementText": "health. Thus, they should be discouraged."
+     },
+     {
+      "id": "find2",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "are said to be one of the main factors",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng thuận chủ ngữ",
+      "explanationVi": "Bạn dùng động từ số nhiều 'are' với chủ ngữ số ít 'the large amount', cần đổi thành 'is'.",
+      "repairVi": "Đổi 'are' thành 'is' để đồng thuận với chủ ngữ.",
+      "replacementText": "is said to be one of the main factors"
+     },
+     {
+      "id": "find3",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "factors that causes obesity",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi đồng thuận chủ ngữ",
+      "explanationVi": "Bạn dùng động từ số ít 'causes' với đại từ quan hệ 'that' tham chiếu đến 'factors' số nhiều, cần đổi thành 'cause'.",
+      "repairVi": "Đổi 'causes' thành 'cause' để đồng thuận với 'factors'.",
+      "replacementText": "factors that cause obesity"
+     },
+     {
+      "id": "find4",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "method on freducing",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi giới từ",
+      "explanationVi": "Bạn dùng sai giới từ 'on' và lỗi chính tả 'freducing', cần đổi thành 'for reducing'.",
+      "repairVi": "Sử dụng đúng giới từ 'for' và sửa lỗi chính tả.",
+      "replacementText": "method for reducing"
+     },
+     {
+      "id": "find5",
+      "criterion": "grammatical_range_accuracy",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "for this reason,their prices should not be raised",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi dùng dấu phẩy",
+      "explanationVi": "Bạn dùng dấu phẩy để nối hai mệnh đề độc lập với 'for this reason', gây ra lỗi chạy câu.",
+      "repairVi": "Sử dụng dấu chấm hoặc dấu chấm phẩy để tách hai câu.",
+      "replacementText": "for this reason. Their prices should not be raised."
+     }
+    ]
+   }
+  ]
+ }
+]

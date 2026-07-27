@@ -1,0 +1,2061 @@
+[
+ {
+  "fileId": "11252020-Caroline-task2-6-point-5.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng và mạch lạc tổng thể, nhưng sự gắn kết giữa các câu đôi khi chưa mượt mà, đặc biệt là ở một điểm nối ý yếu trong đoạn văn thứ hai, khiến người đọc phải tự suy luận mối liên hệ.",
+  "findings": [
+   {
+    "id": "cohesion_finding_1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Moreover, society members may increasye trend of being isolated and idealistic",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "face to face meeting in real life plays crucial role in people's daily lifec",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chuyển ý yếu giữa các câu",
+    "explanationVi": "Bạn dùng \"Moreover\" để thêm ý mới về sự cô lập do sử dụng điện thoại, nhưng câu trước đó nói về tầm quan trọng của gặp mặt trực tiếp để gắn kết. Không có từ nào nối rõ ràng giữa hai ý này, nên người đọc phải tự liên hệ rằng cả hai đều thuộc hiệu ứng xã hội.",
+    "repairVi": "Kết nối lại bằng cách thêm một cụm từ như \"However, về mặt khác\" hoặc \"Tuy nhiên, ngược lại\" để làm rõ sự tương phản hoặc chuyển ý.",
+    "replacementText": "However, society members may increase trend of being isolated and idealistic"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "cohesion_finding_1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Moreover, society members may increasye trend of being isolated and idealistic",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "face to face meeting in real life plays crucial role in people's daily lifec",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chuyển ý yếu giữa các câu",
+      "explanationVi": "Bạn dùng \"Moreover\" để thêm ý mới về sự cô lập do sử dụng điện thoại, nhưng câu trước đó nói về tầm quan trọng của gặp mặt trực tiếp để gắn kết. Không có từ nào nối rõ ràng giữa hai ý này, nên người đọc phải tự liên hệ rằng cả hai đều thuộc hiệu ứng xã hội.",
+      "repairVi": "Kết nối lại bằng cách thêm một cụm từ như \"However, về mặt khác\" hoặc \"Tuy nhiên, ngược lại\" để làm rõ sự tương phản hoặc chuyển ý.",
+      "replacementText": "However, society members may increase trend of being isolated and idealistic"
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "5.5-t2-2.pdf",
+  "band": 8,
+  "rationaleVi": "Bài luận có sự gắn kết tốt với luồng ý tưởng logic rõ ràng, sử dụng hiệu quả các từ nối và tham chiếu, giúp người đọc dễ dàng theo dõi mà không gặp trở ngại lớn.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "This is because healthy people",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "the prosperity of a community is closely related to the health status of individuals",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tham chiếu demonstrative代词 không rõ ràng",
+    "explanationVi": "Bạn dùng 'This' để bắt đầu câu giải thích. 'This' có vẻ tham chiếu đến cả câu trước đó ('the reason why... is that...'), nhưng ý chính của câu trước là 'prosperity related to health'. Câu mới bắt đầu bằng 'This is because healthy people...' hơi nhảy từ khái niệm chung ('prosperity') sang chủ thể cụ thể ('healthy people'). Việc thiếu một cụm từ chuyển tiếp rõ ràng hơn (ví dụ: 'The main reason is that...' hoặc 'This relationship exists because...') khiến việc kết nối không hoàn toàn liền mạch.",
+    "repairVi": "Thay 'This is because' bằng một cụm từ chuyển tiếp rõ ràng hơn như 'The main reason is that' hoặc 'This link exists because' để nối trực tiếp với ý 'prosperity related to health'.",
+    "replacementText": "The main reason is that healthy people"
+   },
+   {
+    "id": "4",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "prioritize their own health benefits over societies",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Thay đổi thuật ngữ bất ngờ gây gián đoạn",
+    "explanationVi": "Bạn viết 'prioritize their own health benefits over societies'. Cụm từ 'over societies' là một cách viết tắt bất ngờ. Ở phần trước của câu và các đoạn trước, bạn luôn dùng 'society', 'the community', 'the society', hoặc 'society'. Việc sử dụng 'societies' (số nhiều, và là một danh từ trừu tượng chung chung hơn) ở đây tạo ra một sự thay đổi ngữ pháp nhẹ (số nhiều) và ngữ nghĩa không hoàn toàn liền mạch. Người đọc phải tự suy luận rằng 'societies' ở đây có nghĩa là 'societal duties' hoặc 'the interests of society as discussed before'.",
+    "repairVi": "Viết rõ ràng hơn để giữ sự liên kết từ vựng, ví dụ: 'prioritize their own health benefits over their duty to society' hoặc 'prioritize their own health over societal expectations'.",
+    "replacementText": "prioritize their own health benefits over their duty to society"
+   },
+   {
+    "id": "5",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 5,
+      "sourceText": "This is because healthy inhabitants contribute",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 5,
+      "sourceText": "I reiterate my partial agreement",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tham chiếu demonstrative代词 bao trùm quá rộng",
+    "explanationVi": "Bạn viết 'This is because...'. Từ 'This' tham chiếu đến toàn bộ câu trước đó ('I reiterate my partial agreement that individuals hold the responsibility...'). Tuy nhiên, lý do bạn đưa ra ('healthy inhabitants contribute... while communities... are filled with hostility') thực tế giải thích cho phần 'partial agreement' và cũng bao gồm cả điểm ngoại lệ ở câu sau ('However, I admit...'). 'This' ở đây đóng vai trò như một từ nối kết luận, nhưng phạm vi tham chiếu của nó không hoàn toàn rõ ràng khi nó đứng giữa một tuyên bố chính và một ngoại lệ.",
+    "repairVi": "Để rõ ràng hơn, bạn có thể tách phần giải thích thành hai câu hoặc dùng một cụm từ chính xác hơn, ví dụ: 'The primary reason for this is that...' hoặc 'This partial agreement is based on the fact that...'.",
+    "replacementText": "The primary reason for this is that healthy inhabitants"
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 6,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "This is because healthy people",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "the prosperity of a community is closely related to the health status of individuals",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tham chiếu demonstrative代词 không rõ ràng",
+      "explanationVi": "Bạn dùng 'This' để bắt đầu câu giải thích. 'This' có vẻ tham chiếu đến cả câu trước đó ('the reason why... is that...'), nhưng ý chính của câu trước là 'prosperity related to health'. Câu mới bắt đầu bằng 'This is because healthy people...' hơi nhảy từ khái niệm chung ('prosperity') sang chủ thể cụ thể ('healthy people'). Việc thiếu một cụm từ chuyển tiếp rõ ràng hơn (ví dụ: 'The main reason is that...' hoặc 'This relationship exists because...') khiến việc kết nối không hoàn toàn liền mạch.",
+      "repairVi": "Thay 'This is because' bằng một cụm từ chuyển tiếp rõ ràng hơn như 'The main reason is that' hoặc 'This link exists because' để nối trực tiếp với ý 'prosperity related to health'.",
+      "replacementText": "The main reason is that healthy people"
+     },
+     {
+      "id": "4",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "prioritize their own health benefits over societies",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Thay đổi thuật ngữ bất ngờ gây gián đoạn",
+      "explanationVi": "Bạn viết 'prioritize their own health benefits over societies'. Cụm từ 'over societies' là một cách viết tắt bất ngờ. Ở phần trước của câu và các đoạn trước, bạn luôn dùng 'society', 'the community', 'the society', hoặc 'society'. Việc sử dụng 'societies' (số nhiều, và là một danh từ trừu tượng chung chung hơn) ở đây tạo ra một sự thay đổi ngữ pháp nhẹ (số nhiều) và ngữ nghĩa không hoàn toàn liền mạch. Người đọc phải tự suy luận rằng 'societies' ở đây có nghĩa là 'societal duties' hoặc 'the interests of society as discussed before'.",
+      "repairVi": "Viết rõ ràng hơn để giữ sự liên kết từ vựng, ví dụ: 'prioritize their own health benefits over their duty to society' hoặc 'prioritize their own health over societal expectations'.",
+      "replacementText": "prioritize their own health benefits over their duty to society"
+     },
+     {
+      "id": "5",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 5,
+        "sourceText": "This is because healthy inhabitants contribute",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 5,
+        "sourceText": "I reiterate my partial agreement",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tham chiếu demonstrative代词 bao trùm quá rộng",
+      "explanationVi": "Bạn viết 'This is because...'. Từ 'This' tham chiếu đến toàn bộ câu trước đó ('I reiterate my partial agreement that individuals hold the responsibility...'). Tuy nhiên, lý do bạn đưa ra ('healthy inhabitants contribute... while communities... are filled with hostility') thực tế giải thích cho phần 'partial agreement' và cũng bao gồm cả điểm ngoại lệ ở câu sau ('However, I admit...'). 'This' ở đây đóng vai trò như một từ nối kết luận, nhưng phạm vi tham chiếu của nó không hoàn toàn rõ ràng khi nó đứng giữa một tuyên bố chính và một ngoại lệ.",
+      "repairVi": "Để rõ ràng hơn, bạn có thể tách phần giải thích thành hai câu hoặc dùng một cụm từ chính xác hơn, ví dụ: 'The primary reason for this is that...' hoặc 'This partial agreement is based on the fact that...'.",
+      "replacementText": "The primary reason for this is that healthy inhabitants"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "band-6.5-task-essay-2.pdf",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc rõ ràng với các đoạn văn logic và chuyển ý cơ bản, nhưng có một vấn đề liên kết đại từ ở một chỗ khiến người đọc phải suy luận, làm giảm tính mạch lạc ở mức độ cục bộ.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "It is time saving that also really matterss.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chuyển ý yếu từ câu trước",
+    "explanationVi": "Bạn đang nói về việc tiết kiệm tiền ở câu trước, nhưng câu này đột ngột chuyển sang 'thời gian tiết kiệm' mà không nối rõ ràng, khiến người đọc phải tự suy luận rằng đây là quay lại ý cũ.",
+    "repairVi": "Kết nối rõ ràng hơn, ví dụ: 'Ngoài ra, thời gian tiết kiệm cũng rất quan trọng.'"
+   },
+   {
+    "id": "f2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "it is also a result of demands for employment.",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đại từ 'it' không rõ tiền ngữ",
+    "explanationVi": "Bạn sử dụng 'it' nhưng không có danh từ nào trước đó để nó chỉ rõ, khiến người đọc không biết 'it' đề cập đến điều gì.",
+    "repairVi": "Thay 'it' bằng chủ ngữ rõ ràng, ví dụ: 'Điều này cũng là kết quả của nhu cầu việc làm.'"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "It is time saving that also really matterss.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển ý yếu từ câu trước",
+      "explanationVi": "Bạn đang nói về việc tiết kiệm tiền ở câu trước, nhưng câu này đột ngột chuyển sang 'thời gian tiết kiệm' mà không nối rõ ràng, khiến người đọc phải tự suy luận rằng đây là quay lại ý cũ.",
+      "repairVi": "Kết nối rõ ràng hơn, ví dụ: 'Ngoài ra, thời gian tiết kiệm cũng rất quan trọng.'"
+     },
+     {
+      "id": "f2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "it is also a result of demands for employment.",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đại từ 'it' không rõ tiền ngữ",
+      "explanationVi": "Bạn sử dụng 'it' nhưng không có danh từ nào trước đó để nó chỉ rõ, khiến người đọc không biết 'it' đề cập đến điều gì.",
+      "repairVi": "Thay 'it' bằng chủ ngữ rõ ràng, ví dụ: 'Điều này cũng là kết quả của nhu cầu việc làm.'"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "plants-band-6-t2.pdf",
+  "band": 6,
+  "rationaleVi": "Bài luận có cấu trúc đoạn rõ ràng nhưng sự gắn kết giữa các câu đôi khi bị gián đoạn, với lỗi tham chiếu đại từ và liên kết ý yếu, làm người đọc phải tự suy luận.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "The expansion of agricultural field",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "scarce of gene diversity",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "liên kết yếu giữa câu",
+    "explanationVi": "Bạn thấy rằng câu trước kết thúc với ý về 'scarce of gene diversity', nhưng câu sau bắt đầu với chủ đề mới là 'The expansion of agricultural field' mà không có từ nối hoặc liên kết rõ ràng, khiến người đọc phải tự suy ra rằng đây là một nguyên nhân khác của sự tuyệt chủng.",
+    "repairVi": "Thêm từ nối hoặc liên kết rõ ràng, ví dụ: 'Moreover, the expansion...' hoặc 'Another cause is the expansion...'"
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "An increasing number of factories and cars",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "worldwide attention",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "liên kết yếu giữa câu",
+    "explanationVi": "Bạn thấy rằng câu trước nói về sự chú ý toàn cầu đối với xu hướng nóng lên toàn cầu, nhưng câu sau bắt đầu với số lượng nhà máy và xe hơi tăng lên mà không có từ nối rõ ràng, khiến người đọc phải tự liên hệ rằng đây là nguyên nhân gây ra hiện tượng.",
+    "repairVi": "Thêm từ nối như 'For instance,' hoặc 'This is due to,'"
+   }
+  ],
+  "runs": [
+   {
+    "band": 6,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "The expansion of agricultural field",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "scarce of gene diversity",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "liên kết yếu giữa câu",
+      "explanationVi": "Bạn thấy rằng câu trước kết thúc với ý về 'scarce of gene diversity', nhưng câu sau bắt đầu với chủ đề mới là 'The expansion of agricultural field' mà không có từ nối hoặc liên kết rõ ràng, khiến người đọc phải tự suy ra rằng đây là một nguyên nhân khác của sự tuyệt chủng.",
+      "repairVi": "Thêm từ nối hoặc liên kết rõ ràng, ví dụ: 'Moreover, the expansion...' hoặc 'Another cause is the expansion...'"
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "An increasing number of factories and cars",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "worldwide attention",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "liên kết yếu giữa câu",
+      "explanationVi": "Bạn thấy rằng câu trước nói về sự chú ý toàn cầu đối với xu hướng nóng lên toàn cầu, nhưng câu sau bắt đầu với số lượng nhà máy và xe hơi tăng lên mà không có từ nối rõ ràng, khiến người đọc phải tự liên hệ rằng đây là nguyên nhân gây ra hiện tượng.",
+      "repairVi": "Thêm từ nối như 'For instance,' hoặc 'This is due to,'"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1ta64FIluaK3-c_-LSFgjEfiPNFGNMiWRa8h9Nyv9BMU",
+  "band": 7,
+  "rationaleVi": "Bài viết có sự tiến triển chủ đề chung rõ ràng, nhưng có vài vấn đề liên kết cục bộ như tham chiếu không rõ ràng và bỏ sót chủ đề, khiến người đọc đôi khi phải suy luận.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "These distinctive features",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "promoting the unique character/distinctive identity of each tourist attraction",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu mập mờ",
+    "explanationVi": "Bạn sử dụng \"These distinctive features\" nhưng không rõ nó chỉ đến cái gì từ câu trước; có thể là \"unique character\" từ câu 1 hoặc \"historical events and craftsmanship\" từ câu 2, khiến người đọc phải догадка.",
+    "repairVi": "Nên viết rõ ràng hơn, ví dụ: \"These cultural characteristics\" nếu muốn chỉ đến câu 2.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "paragraph",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "boost the expenditure on healthcare services and education",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "The higher the level of knowledge and productivity among citizens",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "bỏ sót chủ đề",
+    "explanationVi": "Bạn đề cập đến cả y tế và giáo dục trong câu đầu tiên, nhưng câu tiếp theo chỉ phát triển chủ đề giáo dục mà không liên kết đến y tế, khiến chủ đề y tế bị bỏ ngỏ.",
+    "repairVi": "Nên thêm một câu về lợi ích của y tế, hoặc kết hợp cả hai trong câu phát triển.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "The higher the level of knowledge and productivity among citizens",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chuyển ý yếu",
+    "explanationVi": "Bạn giới thiệu chủ đề mới về mức độ kiến thức và năng suất mà không gắn rõ ràng với chi tiêu ở câu trước, buộc người đọc phải suy ra mối liên hệ.",
+    "repairVi": "Thêm câu nối như 'Điều này có thể đạt được bằng cách nâng cao kiến thức và năng suất của công dân.' hoặc sửa lại để chủ đề được duy trì.",
+    "replacementText": ""
+   },
+   {
+    "id": "finding2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "For example, authorities have implemented policies to improve facilities in some remote areas",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Sai sót liên kết",
+    "explanationVi": "Bạn dùng 'For example' để dẫn ví dụ về chính sách giáo dục, nhưng câu trước nói về lợi ích của kiến thức và năng suất, không phải về chính sách. Người đọc khó hiểu ví dụ này minh họa cho điều gì.",
+    "repairVi": "Sửa câu ví dụ để minh họa trực tiếp lợi ích đã nêu, hoặc thêm câu nối rõ ràng hơn.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "These distinctive features",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "promoting the unique character/distinctive identity of each tourist attraction",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu mập mờ",
+      "explanationVi": "Bạn sử dụng \"These distinctive features\" nhưng không rõ nó chỉ đến cái gì từ câu trước; có thể là \"unique character\" từ câu 1 hoặc \"historical events and craftsmanship\" từ câu 2, khiến người đọc phải догадка.",
+      "repairVi": "Nên viết rõ ràng hơn, ví dụ: \"These cultural characteristics\" nếu muốn chỉ đến câu 2.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "paragraph",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "boost the expenditure on healthcare services and education",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "The higher the level of knowledge and productivity among citizens",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "bỏ sót chủ đề",
+      "explanationVi": "Bạn đề cập đến cả y tế và giáo dục trong câu đầu tiên, nhưng câu tiếp theo chỉ phát triển chủ đề giáo dục mà không liên kết đến y tế, khiến chủ đề y tế bị bỏ ngỏ.",
+      "repairVi": "Nên thêm một câu về lợi ích của y tế, hoặc kết hợp cả hai trong câu phát triển.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "The higher the level of knowledge and productivity among citizens",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển ý yếu",
+      "explanationVi": "Bạn giới thiệu chủ đề mới về mức độ kiến thức và năng suất mà không gắn rõ ràng với chi tiêu ở câu trước, buộc người đọc phải suy ra mối liên hệ.",
+      "repairVi": "Thêm câu nối như 'Điều này có thể đạt được bằng cách nâng cao kiến thức và năng suất của công dân.' hoặc sửa lại để chủ đề được duy trì.",
+      "replacementText": ""
+     },
+     {
+      "id": "finding2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "For example, authorities have implemented policies to improve facilities in some remote areas",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Sai sót liên kết",
+      "explanationVi": "Bạn dùng 'For example' để dẫn ví dụ về chính sách giáo dục, nhưng câu trước nói về lợi ích của kiến thức và năng suất, không phải về chính sách. Người đọc khó hiểu ví dụ này minh họa cho điều gì.",
+      "repairVi": "Sửa câu ví dụ để minh họa trực tiếp lợi ích đã nêu, hoặc thêm câu nối rõ ràng hơn.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1zb1NT-GgItb-5W8IqotFYhHmsh-9-xewpvAXfJLijcA",
+  "band": 7,
+  "rationaleVi": "Bài luận có tổ chức rõ ràng với hai quan điểm được trình bày mạch lạc, nhưng một số vấn đề về sự gắn kết như tham chiếu代 từ không rõ ràng và sự chuyển ý yếu ở một vài chỗ, ảnh hưởng nhẹ đến sự liền mạch.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "it can lead to a serious consequence",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu代 từ không rõ ràng",
+    "explanationVi": "Bạn dùng 'it' nhưng không rõ nó chỉ vào ý nào trước đó, khiến người đọc phải đoán.",
+    "repairVi": "Thay 'it' bằng 'điều này' hoặc làm rõ ý trước đó.",
+    "replacementText": "This can lead to serious consequences"
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "these solutions can boost",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "with the combinations of eating more fruits or vegetables",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "sự gắn kết yếu giữa các ý",
+    "explanationVi": "Bạn giới thiệu 'these solutions' nhưng trước đó có thêm ý mới về việc ăn trái cây và rau quả, khiến liên kết không rõ ràng.",
+    "repairVi": "Nên tách hoặc giải thích rõ hơn mối liên hệ giữa các giải pháp và việc ăn uống.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "with the combinations of eating more fruits or vegetables",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Ý mới xuất hiện đột ngột",
+    "explanationVi": "Bạn đưa ra ý 'eating more fruits or vegetables' mà chưa từng được thiết lập trước đó trong đoạn. Người đọc không thấy rõ mối liên hệ giữa ý mới này với các giải pháp của chính phủ (chiến dịch và nhãn thực phẩm) đã được nêu ở trước.",
+    "repairVi": "Nên thêm một từ nối hoặc giải thích ngắn gọn để liên kết ý mới này với nội dung trước đó, hoặc đặt nó vào một câu riêng.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it can lead to a serious consequence",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu代 từ không rõ ràng",
+      "explanationVi": "Bạn dùng 'it' nhưng không rõ nó chỉ vào ý nào trước đó, khiến người đọc phải đoán.",
+      "repairVi": "Thay 'it' bằng 'điều này' hoặc làm rõ ý trước đó.",
+      "replacementText": "This can lead to serious consequences"
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "these solutions can boost",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "with the combinations of eating more fruits or vegetables",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "sự gắn kết yếu giữa các ý",
+      "explanationVi": "Bạn giới thiệu 'these solutions' nhưng trước đó có thêm ý mới về việc ăn trái cây và rau quả, khiến liên kết không rõ ràng.",
+      "repairVi": "Nên tách hoặc giải thích rõ hơn mối liên hệ giữa các giải pháp và việc ăn uống.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it can lead to a serious consequence",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tham chiếu đại từ mờ",
+      "explanationVi": "Bạn dùng đại từ 'it' nhưng không rõ nó tham chiếu đến cụm nào trong câu trước: 'Individuals choose to eat healthily hay không' hay 'no one can control what they consume'? Điều này khiến người đọc phải tự suy đoán.",
+      "repairVi": "Thay 'it' bằng một cụm từ rõ ràng hơn, ví dụ: 'This choice' hoặc 'This lack of control'.",
+      "replacementText": "This choice can lead to a serious consequence"
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "with the combinations of eating more fruits or vegetables",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Ý mới xuất hiện đột ngột",
+      "explanationVi": "Bạn đưa ra ý 'eating more fruits or vegetables' mà chưa từng được thiết lập trước đó trong đoạn. Người đọc không thấy rõ mối liên hệ giữa ý mới này với các giải pháp của chính phủ (chiến dịch và nhãn thực phẩm) đã được nêu ở trước.",
+      "repairVi": "Nên thêm một từ nối hoặc giải thích ngắn gọn để liên kết ý mới này với nội dung trước đó, hoặc đặt nó vào một câu riêng.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1b94LESYQ8YtCDrSez5nx9DDuSqQSeOpcXiXUocD4kOo",
+  "band": 7,
+  "rationaleVi": "Bài viết có sự gắn kết tổng thể tốt với việc sử dụng đại từ và từ nối rõ ràng, nhưng có một số lối ý yếu giữa các câu, đòi hỏi người đọc phải suy đoán liên hệ.",
+  "findings": [
+   {
+    "id": "cohesion_weak_handoff_data_loss",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "risk of data loss",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Internet users tend to store",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lối nối ý yếu",
+    "explanationVi": "Bạn bắt đầu câu về nguy cơ mất dữ liệu, nhưng câu tiếp theo nhảy sang hành vi lưu trữ của người dùng mà không liên kết rõ ràng, khiến người đọc phải suy đoán mối liên hệ.",
+    "repairVi": "Thêm một từ nối hoặc diễn giải rõ hơn để nối liền hai ý, ví dụ: 'Một nguyên nhân chính của việc này là người dùng thường...'",
+    "replacementText": ""
+   },
+   {
+    "id": "cohesion_weak_handoff_environment",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "environmental impacts and economic costs",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "The large-scale production of books",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Lối nối ý yếu",
+    "explanationVi": "Bạn đề cập đến tác động môi trường và chi phí kinh tế, nhưng câu tiếp theo bắt đầu với sản xuất sách quy mô lớn mà không nối lại rõ ràng với các tác động được đề cập trước đó.",
+    "repairVi": "Kết nối trực tiếp bằng cách thêm từ như 'Một ví dụ cụ thể là...' hoặc 'Điều này xuất phát từ...'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "cohesion_weak_handoff_data_loss",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "risk of data loss",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Internet users tend to store",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lối nối ý yếu",
+      "explanationVi": "Bạn bắt đầu câu về nguy cơ mất dữ liệu, nhưng câu tiếp theo nhảy sang hành vi lưu trữ của người dùng mà không liên kết rõ ràng, khiến người đọc phải suy đoán mối liên hệ.",
+      "repairVi": "Thêm một từ nối hoặc diễn giải rõ hơn để nối liền hai ý, ví dụ: 'Một nguyên nhân chính của việc này là người dùng thường...'",
+      "replacementText": ""
+     },
+     {
+      "id": "cohesion_weak_handoff_environment",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "environmental impacts and economic costs",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "The large-scale production of books",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Lối nối ý yếu",
+      "explanationVi": "Bạn đề cập đến tác động môi trường và chi phí kinh tế, nhưng câu tiếp theo bắt đầu với sản xuất sách quy mô lớn mà không nối lại rõ ràng với các tác động được đề cập trước đó.",
+      "repairVi": "Kết nối trực tiếp bằng cách thêm từ như 'Một ví dụ cụ thể là...' hoặc 'Điều này xuất phát từ...'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "19f4tVQ_r9IsEgeJt8bemRmggsSEMD1l7byTu5XgpGvs",
+  "band": 7,
+  "rationaleVi": "Luồng ý trong bài viết rõ ràng với các liên kết hợp lý, chỉ có một điểm yếu ở đại từ 'their' không rõ tiền ngữ, nhưng không ảnh hưởng lớn đến việc theo dõi nội dung.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "expand their businesses",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "This campaign had a long-lasting lasting impact on their consumers, particularly athletes.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đại từ 'their' tham chiếu không rõ ràng",
+    "explanationVi": "Bạn dùng 'their businesses' nhưng trong câu trước đó không có tiền ngữ nào rõ ràng để 'their' tham chiếu; người đọc phải suy đoán rằng 'their' có thể chỉ các doanh nghiệp hoặc người bán, nhưng điều này không được xác lập rõ.",
+    "repairVi": "Bạn có thể sửa thành 'expand businesses' hoặc 'expand the businesses of advertisers' để làm rõ.",
+    "replacementText": "expand businesses"
+   },
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "their businesses",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "This campaign had a long-lasting lasting impact on their consumers",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu đại từ không rõ ràng",
+    "explanationVi": "Bạn dùng 'their' trong câu cuối của đoạn thân bài 2, nhưng không rõ 'their' chỉ đến ai – có thể là các nhà bán lẻ hoặc Nike, khiến người đọc phải suy đoán.",
+    "repairVi": "Bạn có thể sửa thành 'expand businesses' hoặc 'expand the businesses of advertisers' để rõ ràng hơn.",
+    "replacementText": "expand businesses"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "expand their businesses",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "This campaign had a long-lasting lasting impact on their consumers, particularly athletes.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đại từ 'their' tham chiếu không rõ ràng",
+      "explanationVi": "Bạn dùng 'their businesses' nhưng trong câu trước đó không có tiền ngữ nào rõ ràng để 'their' tham chiếu; người đọc phải suy đoán rằng 'their' có thể chỉ các doanh nghiệp hoặc người bán, nhưng điều này không được xác lập rõ.",
+      "repairVi": "Bạn có thể sửa thành 'expand businesses' hoặc 'expand the businesses of advertisers' để làm rõ.",
+      "replacementText": "expand businesses"
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "their businesses",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "This campaign had a long-lasting lasting impact on their consumers",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu đại từ không rõ ràng",
+      "explanationVi": "Bạn dùng 'their' trong câu cuối của đoạn thân bài 2, nhưng không rõ 'their' chỉ đến ai – có thể là các nhà bán lẻ hoặc Nike, khiến người đọc phải suy đoán.",
+      "repairVi": "Bạn có thể sửa thành 'expand businesses' hoặc 'expand the businesses of advertisers' để rõ ràng hơn.",
+      "replacementText": "expand businesses"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1RX8c-g7ZYMc49Yx4Mf_OaK-i30Sh-cppWgdfa1UCzdI",
+  "band": 8,
+  "rationaleVi": "Bạn có thể theo dõi luồng ý rõ ràng, sử dụng các từ nối hợp lý và referent rõ ràng. Không có vấn đề cohesion đáng kể.",
+  "findings": [
+   {
+    "id": "cohesion_finding_1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Furthermore, parental involvement also can prevent",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "ensures a balanced mix of entertainment and learning",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mối liên kết yếu giữa các ý",
+    "explanationVi": "Bạn dùng 'parental involvement' ở đầu câu mới mà không tham chiếu rõ ràng đến các hoạt động được đề cập trước đó, khiến người đọc phải suy luận rằng chúng là cùng một ý.",
+    "repairVi": "Thêm tham chiếu rõ ràng như 'This parental involvement' hoặc 'Such involvement' để nối liền ý trước đó.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "cohesion_finding_1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Furthermore, parental involvement also can prevent",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "ensures a balanced mix of entertainment and learning",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mối liên kết yếu giữa các ý",
+      "explanationVi": "Bạn dùng 'parental involvement' ở đầu câu mới mà không tham chiếu rõ ràng đến các hoạt động được đề cập trước đó, khiến người đọc phải suy luận rằng chúng là cùng một ý.",
+      "repairVi": "Thêm tham chiếu rõ ràng như 'This parental involvement' hoặc 'Such involvement' để nối liền ý trước đó.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+  "band": 8,
+  "rationaleVi": "Bài viết có sự gắn kết tốt với các mối liên hệ rõ ràng giữa các câu, nhưng có một số điểm chuyển tiếp yếu ở Body 1 và Body 2, nơi mà ý mới không được gắn liền rõ ràng với ý trước đó.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "prevent fatal accidents and minimise the risk of life-threatening injuries.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "In fact, even with safety measures",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "lỗi chuyển tiếp yếu",
+    "explanationVi": "Bạn đã giới thiệu 'safety measures' trong câu sau mà không liên kết rõ ràng với ý 'prevent fatal accidents' từ câu trước. Người đọc phải tự suy ra mối liên hệ.",
+    "repairVi": "Thêm một từ nối hoặc cụm từ để gắn liền 'safety measures' với mục tiêu phòng ngừa tai nạn.",
+    "replacementText": ""
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "it would spark widespread public resentment.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "The ability to make personal choices",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "mối liên kết mờ nhạt",
+    "explanationVi": "Câu về 'resentment' không được kết nối trực tiếp với câu tiếp theo về 'ability to make personal choices'. Mối liên hệ bị gián đoạn.",
+    "repairVi": "Thêm một câu liên kết như 'This includes' để gắn liền hai ý.",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "In fact, even with safety measures in place, protective gear offers limited protection.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 1,
+      "sourceText": "One merit is that this is an effective way to prevent fatal accidents and minimise the risk of life-threatening injuries.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chuyển ý yếu",
+    "explanationVi": "Bạn sử dụng 'In fact' để giới thiệu ý về protective gear, nhưng không có liên kết rõ ràng với câu trước về việc ngăn ngừa tai nạn. Người đọc phải tự suy ra rằng protective gear liên quan đến các biện pháp an toàn, làm giảm sự liền mạch.",
+    "repairVi": "Thêm một cụm từ nối như 'Vì vậy' hoặc 'Điều này cho thấy' để liên kết trực tiếp với câu trước.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "prevent fatal accidents and minimise the risk of life-threatening injuries.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "In fact, even with safety measures",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "lỗi chuyển tiếp yếu",
+      "explanationVi": "Bạn đã giới thiệu 'safety measures' trong câu sau mà không liên kết rõ ràng với ý 'prevent fatal accidents' từ câu trước. Người đọc phải tự suy ra mối liên hệ.",
+      "repairVi": "Thêm một từ nối hoặc cụm từ để gắn liền 'safety measures' với mục tiêu phòng ngừa tai nạn.",
+      "replacementText": ""
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "it would spark widespread public resentment.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "The ability to make personal choices",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "mối liên kết mờ nhạt",
+      "explanationVi": "Câu về 'resentment' không được kết nối trực tiếp với câu tiếp theo về 'ability to make personal choices'. Mối liên hệ bị gián đoạn.",
+      "repairVi": "Thêm một câu liên kết như 'This includes' để gắn liền hai ý.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "In fact, even with safety measures in place, protective gear offers limited protection.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 1,
+        "sourceText": "One merit is that this is an effective way to prevent fatal accidents and minimise the risk of life-threatening injuries.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chuyển ý yếu",
+      "explanationVi": "Bạn sử dụng 'In fact' để giới thiệu ý về protective gear, nhưng không có liên kết rõ ràng với câu trước về việc ngăn ngừa tai nạn. Người đọc phải tự suy ra rằng protective gear liên quan đến các biện pháp an toàn, làm giảm sự liền mạch.",
+      "repairVi": "Thêm một cụm từ nối như 'Vì vậy' hoặc 'Điều này cho thấy' để liên kết trực tiếp với câu trước.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1ufgBAcjcYtjXHl2lUsFqtKJprp729mrVz29Z9K89R-k",
+  "band": 7,
+  "rationaleVi": "Bài luận có sự gắn kết rõ ràng với sự tiến triển logic giữa các câu, nhưng vẫn có một số lỗi nhỏ trong việc tham chiếu và liên kết, làm giảm tính mượt mà tổng thể.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 7,
+    "findings": []
+   },
+   {
+    "band": 7,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "1xDrqmlBgtASSiSgjHpTG-FegzevN2n7gqhR2T1ykKnQ",
+  "band": 7,
+  "rationaleVi": "Bài viết có sự gắn kết tổng thể khá rõ ràng, nhưng có vài chỗ tham chiếu đại từ không rõ ràng và bước nhảy ý mới chưa liền mạch, khiến người đọc phải suy luận ở một số nơi.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "It would result in their inability",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tham chiếu đại từ không rõ ràng",
+    "explanationVi": "Bạn có thể không chắc 'it' chỉ đến khái niệm nào trước đó, như 'pressing environment' hay 'problems', khiến câu nối không mạch lạc.",
+    "repairVi": "Thay 'it' bằng cụm từ rõ ràng hơn, ví dụ: 'This pressure' hoặc 'These problems'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "Moreover, students who are talented or have a special interest in art can easily engage in art class after school",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "academic lessons are more likely to be prioritised because of their vital role for the university exam and future career",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Bước nhảy ý mới không rõ ràng",
+    "explanationVi": "Bạn có thể bối rối vì câu mới giới thiệu 'students' mà không liên kết trực tiếp với ý trước đó về việc ưu tiên bài học.",
+    "repairVi": "Thêm từ nối hoặc tái diễn ý trước, ví dụ: 'Additionally, for students who are talented...'",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "moderate",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "It would result in",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Due to the heavy academic workload of subjects such as math, biology, chemistry and so on, causing a pressing environment for students and problems with creativity and relaxation.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu đại từ không rõ ràng",
+    "explanationVi": "Bạn dùng 'It' ở đầu câu thứ ba của đoạn body nhưng 'It' không có tiền lệ rõ ràng vì câu trước đó là một câu chưa hoàn chỉnh (cụm từ 'Due to...' không có động từ chính), làm cho người đọc khó xác định 'It' chỉ vào vấn đề nào.",
+    "repairVi": "Sửa câu trước đó thành một câu hoàn chỉnh để 'It' có thể tham chiếu rõ ràng, ví dụ: 'Do áp lực học tập nặng nề từ các môn như toán, sinh học, hóa học và tương tự, môi trường căng thẳng đã ảnh hưởng đến học sinh và gây ra vấn đề về sáng tạo và thư松弛.'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "It would result in their inability",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tham chiếu đại từ không rõ ràng",
+      "explanationVi": "Bạn có thể không chắc 'it' chỉ đến khái niệm nào trước đó, như 'pressing environment' hay 'problems', khiến câu nối không mạch lạc.",
+      "repairVi": "Thay 'it' bằng cụm từ rõ ràng hơn, ví dụ: 'This pressure' hoặc 'These problems'.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "Moreover, students who are talented or have a special interest in art can easily engage in art class after school",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "academic lessons are more likely to be prioritised because of their vital role for the university exam and future career",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Bước nhảy ý mới không rõ ràng",
+      "explanationVi": "Bạn có thể bối rối vì câu mới giới thiệu 'students' mà không liên kết trực tiếp với ý trước đó về việc ưu tiên bài học.",
+      "repairVi": "Thêm từ nối hoặc tái diễn ý trước, ví dụ: 'Additionally, for students who are talented...'",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "moderate",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "It would result in",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Due to the heavy academic workload of subjects such as math, biology, chemistry and so on, causing a pressing environment for students and problems with creativity and relaxation.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu đại từ không rõ ràng",
+      "explanationVi": "Bạn dùng 'It' ở đầu câu thứ ba của đoạn body nhưng 'It' không có tiền lệ rõ ràng vì câu trước đó là một câu chưa hoàn chỉnh (cụm từ 'Due to...' không có động từ chính), làm cho người đọc khó xác định 'It' chỉ vào vấn đề nào.",
+      "repairVi": "Sửa câu trước đó thành một câu hoàn chỉnh để 'It' có thể tham chiếu rõ ràng, ví dụ: 'Do áp lực học tập nặng nề từ các môn như toán, sinh học, hóa học và tương tự, môi trường căng thẳng đã ảnh hưởng đến học sinh và gây ra vấn đề về sáng tạo và thư松弛.'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1CIMuPmEGh21a04vyEiMWwqc6UOMpKYoS5qOk5HcyIJA",
+  "band": 7,
+  "rationaleVi": "Bài luận có sự tổ chức rõ ràng về mặt đoạn lạc, nhưng các mạch liên kết giữa các câu trong đoạn văn đôi khi còn lỏng lẻo hoặc không rõ ràng, khiến người đọc phải tự suy đoán mối liên hệ.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "Despite these reasons,",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "this perspective somewhat oversimplifies.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mối nối từ không chặt",
+    "explanationVi": "Bạn dùng cụm từ \"Despite these reasons\" để bắt đầu đoạn mới, nhưng đoạn trước đó kết thúc bằng một lời phê phán (\"this perspective somewhat oversimplifies\") chứ không liệt kê ra các \"lý do\" cụ thể nào cả. Do đó, từ \"these reasons\" không có tiền ngữ rõ ràng để người đọc bám vào.",
+    "repairVi": "Thay \"Despite these reasons,\" bằng một mệnh đề nối tiếp trực tiếp hơn, ví dụ: \"However, this view overlooks a crucial point.\"",
+    "replacementText": "However, this view overlooks a crucial point."
+   },
+   {
+    "id": "2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "In this sense, the influence of members of public to the environment is equal to politicians.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "they start to reduce the consumption of plastic bags, disposable goods and tend to choose eco-friendly items when shopping.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Kết nối ý yếu",
+    "explanationVi": "Cụm từ \"In this sense\" được dùng để khép lại đoạn, nhưng ý trước đó (khi mọi người nhận thức được thì sẽ thay đổi hành vi) và ý sau (ảnh hưởng của公众 bằng chính trị gia) không có mối liên hệ \"tại thời điểm/sức mạnh\" (sense) rõ ràng. Việc so sánh ngang bằng không được trích xuất trực tiếp từ ví dụ về việc giảm sử dụng túi nhựa.",
+    "repairVi": "Kết nối lại bằng cách làm rõ cái \"sense\" là gì, hoặc dùng một cách nối khác sát hơn với logic của đoạn.",
+    "replacementText": "Through these collective actions, the influence of the public can be as significant as that of politicians."
+   },
+   {
+    "id": "finding_1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "this perspective somewhat oversimplifies.",
+      "role": "context"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "these reasons",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Tham chiếu không rõ ràng",
+    "explanationVi": "Bạn sử dụng 'these reasons' để bắt đầu đoạn mới, nhưng nó không tham chiếu một cách rõ ràng đến bất kỳ lý do cụ thể nào được liệt kê trong câu trước. Câu trước nói về việc quan điểm đó 'quá đơn giản hóa vấn đề' ('oversimplifies'), không phải là một danh sách các 'lý do'. Điều này buộc người đọc phải suy luận rằng 'these reasons' có thể liên quan đến các điểm được đưa ra trước đó về vai trò của chính trị gia, nhưng sự liên kết này không được thiết lập rõ ràng ở cấp độ câu.",
+    "repairVi": "Bạn có thể sửa thành 'Despite this counterpoint, I believe...' hoặc 'While acknowledging this, I believe...' để tạo sự liên kết rõ ràng hơn với ý 'quá đơn giản hóa' vừa nêu.",
+    "replacementText": "Despite this counterpoint,"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "Despite these reasons,",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "this perspective somewhat oversimplifies.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mối nối từ không chặt",
+      "explanationVi": "Bạn dùng cụm từ \"Despite these reasons\" để bắt đầu đoạn mới, nhưng đoạn trước đó kết thúc bằng một lời phê phán (\"this perspective somewhat oversimplifies\") chứ không liệt kê ra các \"lý do\" cụ thể nào cả. Do đó, từ \"these reasons\" không có tiền ngữ rõ ràng để người đọc bám vào.",
+      "repairVi": "Thay \"Despite these reasons,\" bằng một mệnh đề nối tiếp trực tiếp hơn, ví dụ: \"However, this view overlooks a crucial point.\"",
+      "replacementText": "However, this view overlooks a crucial point."
+     },
+     {
+      "id": "2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "In this sense, the influence of members of public to the environment is equal to politicians.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "they start to reduce the consumption of plastic bags, disposable goods and tend to choose eco-friendly items when shopping.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Kết nối ý yếu",
+      "explanationVi": "Cụm từ \"In this sense\" được dùng để khép lại đoạn, nhưng ý trước đó (khi mọi người nhận thức được thì sẽ thay đổi hành vi) và ý sau (ảnh hưởng của公众 bằng chính trị gia) không có mối liên hệ \"tại thời điểm/sức mạnh\" (sense) rõ ràng. Việc so sánh ngang bằng không được trích xuất trực tiếp từ ví dụ về việc giảm sử dụng túi nhựa.",
+      "repairVi": "Kết nối lại bằng cách làm rõ cái \"sense\" là gì, hoặc dùng một cách nối khác sát hơn với logic của đoạn.",
+      "replacementText": "Through these collective actions, the influence of the public can be as significant as that of politicians."
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "finding_1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "this perspective somewhat oversimplifies.",
+        "role": "context"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "these reasons",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Tham chiếu không rõ ràng",
+      "explanationVi": "Bạn sử dụng 'these reasons' để bắt đầu đoạn mới, nhưng nó không tham chiếu một cách rõ ràng đến bất kỳ lý do cụ thể nào được liệt kê trong câu trước. Câu trước nói về việc quan điểm đó 'quá đơn giản hóa vấn đề' ('oversimplifies'), không phải là một danh sách các 'lý do'. Điều này buộc người đọc phải suy luận rằng 'these reasons' có thể liên quan đến các điểm được đưa ra trước đó về vai trò của chính trị gia, nhưng sự liên kết này không được thiết lập rõ ràng ở cấp độ câu.",
+      "repairVi": "Bạn có thể sửa thành 'Despite this counterpoint, I believe...' hoặc 'While acknowledging this, I believe...' để tạo sự liên kết rõ ràng hơn với ý 'quá đơn giản hóa' vừa nêu.",
+      "replacementText": "Despite this counterpoint,"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1KWrD6rOTAHaBJjExjpOrqCTcFrmRH2GzcjcLCk5fcmQ",
+  "band": 9,
+  "rationaleVi": "Dòng chảy ý trong bài rất mượt mà: mọi câu đều bắt nguồn rõ ràng từ câu trước đó, các đại từ và từ nối được dùng chính xác, và người đọc không cần ph猜测 bất kỳ mối liên hệ nào.",
+  "findings": [
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "Many researchers have pointed out that bilingual people have better flexibility in conversation",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "which can be seen as bilingual skill.",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chủ đề mới không được kết nối rõ ràng",
+    "explanationVi": "Bạn bắt đầu câu bằng 'Many researchers', đây là một chủ đề mới chưa được thiết lập rõ từ câu trước, khiến người đọc phải tự liên kết với 'bilingual skill' ở câu trước, làm giảm sự liền mạch.",
+    "repairVi": "Kết nối rõ ràng hơn bằng cách thêm cụm từ tham chiếu, chẳng hạn như 'This is supported by research showing that' hoặc 'On this basis, researchers have pointed out that'",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 9,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "Many researchers have pointed out that bilingual people have better flexibility in conversation",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "which can be seen as bilingual skill.",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chủ đề mới không được kết nối rõ ràng",
+      "explanationVi": "Bạn bắt đầu câu bằng 'Many researchers', đây là một chủ đề mới chưa được thiết lập rõ từ câu trước, khiến người đọc phải tự liên kết với 'bilingual skill' ở câu trước, làm giảm sự liền mạch.",
+      "repairVi": "Kết nối rõ ràng hơn bằng cách thêm cụm từ tham chiếu, chẳng hạn như 'This is supported by research showing that' hoặc 'On this basis, researchers have pointed out that'",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1Xhv5315cTz0-JVeSc1_XxATg79rC8xW3E3rymEHNFeQ",
+  "band": 8,
+  "rationaleVi": "Cấu trúc bài luận rõ ràng, các ý được liên kết mượt mà với từ nối và sự phát triển ý hợp lý, giúp người đọc dễ theo dõi mà không gặp trở ngại.",
+  "findings": [],
+  "runs": [
+   {
+    "band": 8,
+    "findings": []
+   },
+   {
+    "band": 8,
+    "findings": []
+   }
+  ]
+ },
+ {
+  "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+  "band": 7,
+  "rationaleVi": "Bài luận có cấu trúc logic rõ ràng với phần giới thiệu, hai đoạn thân bài và kết luận, nhưng cohesion có một số vấn đề cục bộ như tham chiếu không rõ ràng và chuyển tiếp chủ đề mới chưa mượt mà, khiến người đọc phải suy đoán ở vài chỗ.",
+  "findings": [
+   {
+    "id": "ref1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it helps them to become more strict",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu không rõ ràng",
+    "explanationVi": "Bạn dùng 'it' nhưng không rõ 'it' chỉ điều gì trước đó; người đọc có thể đoán là 'becoming a real employee' hoặc 'entering the workforce', nhưng không được xác định rõ.",
+    "repairVi": "Bạn cần chỉ rõ chủ ngữ của 'it', ví dụ: 'this experience helps them' hoặc thay thế bằng một từ rõ ràng hơn.",
+    "replacementText": ""
+   },
+   {
+    "id": "weak1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "entering the workforce helps teenagers",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "chuyển tiếp chủ đề mới không rõ",
+    "explanationVi": "Bạn giới thiệu 'entering the workforce' mà không nối rõ với 'this idea' (công việc không lương) ở câu trước, khiến người đọc phải tự suy đoán rằng đây là một phần của công việc không lương.",
+    "repairVi": "Bạn nên thêm từ nối hoặc giải thích để liên kết, ví dụ: 'Doing unpaid work can be seen as entering the workforce, which helps teenagers...'",
+    "replacementText": ""
+   },
+   {
+    "id": "ref2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "They can lend a hand to people",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "tham chiếu không rõ ràng",
+    "explanationVi": "Bạn dùng 'They' nhưng không rõ 'They' chỉ thanh niên hay toàn xã hội, vì câu trước nói cả hai đều hưởng lợi, nên người đọc phải đoán.",
+    "repairVi": "Bạn cần xác định rõ chủ ngữ, ví dụ: 'Teenagers can lend a hand' hoặc 'Society can benefit by having teenagers lend a hand'.",
+    "replacementText": ""
+   },
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "it helps them",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 1,
+      "sourceText": "they will have the chance to become a real employee",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đại từ 'it' tham chiếu không rõ",
+    "explanationVi": "Bạn dùng 'it' trong câu 'it helps them' nhưng không rõ 'it' chỉ điều gì trước đó – có thể là 'entering the workforce' hoặc 'become a real employee', gây phân vân.",
+    "repairVi": "Thay 'it' bằng cụm từ rõ ràng hơn như 'this process' hoặc 'entering the workforce' để xác định tham chiếu.",
+    "replacementText": ""
+   },
+   {
+    "id": "f2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "They can lend a hand",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "not only teenagers but also the whole society can benefit",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đại từ 'they' tham chiếu mập mờ",
+    "explanationVi": "Bạn viết 'They can lend a hand' ngay sau câu đề cập cả 'teenagers' và 'society', nên người đọc có thể bối rối không biết 'they' chỉ nhóm nào.",
+    "repairVi": "Sửa thành 'Teenagers can lend a hand' để làm rõ chủ thể.",
+    "replacementText": "Teenagers can lend a hand"
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "ref1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it helps them to become more strict",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu không rõ ràng",
+      "explanationVi": "Bạn dùng 'it' nhưng không rõ 'it' chỉ điều gì trước đó; người đọc có thể đoán là 'becoming a real employee' hoặc 'entering the workforce', nhưng không được xác định rõ.",
+      "repairVi": "Bạn cần chỉ rõ chủ ngữ của 'it', ví dụ: 'this experience helps them' hoặc thay thế bằng một từ rõ ràng hơn.",
+      "replacementText": ""
+     },
+     {
+      "id": "weak1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "entering the workforce helps teenagers",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "chuyển tiếp chủ đề mới không rõ",
+      "explanationVi": "Bạn giới thiệu 'entering the workforce' mà không nối rõ với 'this idea' (công việc không lương) ở câu trước, khiến người đọc phải tự suy đoán rằng đây là một phần của công việc không lương.",
+      "repairVi": "Bạn nên thêm từ nối hoặc giải thích để liên kết, ví dụ: 'Doing unpaid work can be seen as entering the workforce, which helps teenagers...'",
+      "replacementText": ""
+     },
+     {
+      "id": "ref2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "They can lend a hand to people",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "tham chiếu không rõ ràng",
+      "explanationVi": "Bạn dùng 'They' nhưng không rõ 'They' chỉ thanh niên hay toàn xã hội, vì câu trước nói cả hai đều hưởng lợi, nên người đọc phải đoán.",
+      "repairVi": "Bạn cần xác định rõ chủ ngữ, ví dụ: 'Teenagers can lend a hand' hoặc 'Society can benefit by having teenagers lend a hand'.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "it helps them",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 1,
+        "sourceText": "they will have the chance to become a real employee",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đại từ 'it' tham chiếu không rõ",
+      "explanationVi": "Bạn dùng 'it' trong câu 'it helps them' nhưng không rõ 'it' chỉ điều gì trước đó – có thể là 'entering the workforce' hoặc 'become a real employee', gây phân vân.",
+      "repairVi": "Thay 'it' bằng cụm từ rõ ràng hơn như 'this process' hoặc 'entering the workforce' để xác định tham chiếu.",
+      "replacementText": ""
+     },
+     {
+      "id": "f2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "They can lend a hand",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "not only teenagers but also the whole society can benefit",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đại từ 'they' tham chiếu mập mờ",
+      "explanationVi": "Bạn viết 'They can lend a hand' ngay sau câu đề cập cả 'teenagers' và 'society', nên người đọc có thể bối rối không biết 'they' chỉ nhóm nào.",
+      "repairVi": "Sửa thành 'Teenagers can lend a hand' để làm rõ chủ thể.",
+      "replacementText": "Teenagers can lend a hand"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+  "band": 8,
+  "rationaleVi": "Bài luận sử dụng các từ nối và mạch lạc ý tưởng tương đối tốt, nhưng có một chỗ tham chiếu không rõ ràng ở phần kết luận, khiến người đọc phải suy đoán.",
+  "findings": [
+   {
+    "id": "f1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 3,
+      "sourceText": "these are outstripped by the positives",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 3,
+      "sourceText": "this may present certain concerns",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chỉ từ 'these' không rõ ràng",
+    "explanationVi": "Bạn sử dụng 'these' để chỉ những điều bất lợi, nhưng trong câu trước đó có cả 'drawbacks' và 'concerns', khiến người đọc phải đoán 'these' đề cập đến cái nào.",
+    "repairVi": "Sửa lại để 'these' rõ ràng hơn, ví dụ: 'these drawbacks are outstripped' hoặc viết lại câu cho rõ.",
+    "replacementText": "these drawbacks are outstripped"
+   },
+   {
+    "id": "conclusion_pronoun_ambiguity",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 4,
+      "sourceText": "these are outstripped",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 4,
+      "sourceText": "this may present certain concerns",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Đại từ chỉ định không rõ",
+    "explanationVi": "Bạn sử dụng 'these' trong câu kết, nhưng không rõ nó đề cập đến 'concerns' hay 'drawbacks', khiến người đọc phải suy đoán mối liên hệ.",
+    "repairVi": "Bạn nên viết lại để rõ ràng, ví dụ: 'these concerns are outstripped' hoặc 'the drawbacks are outstripped'.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "f1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 3,
+        "sourceText": "these are outstripped by the positives",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 3,
+        "sourceText": "this may present certain concerns",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chỉ từ 'these' không rõ ràng",
+      "explanationVi": "Bạn sử dụng 'these' để chỉ những điều bất lợi, nhưng trong câu trước đó có cả 'drawbacks' và 'concerns', khiến người đọc phải đoán 'these' đề cập đến cái nào.",
+      "repairVi": "Sửa lại để 'these' rõ ràng hơn, ví dụ: 'these drawbacks are outstripped' hoặc viết lại câu cho rõ.",
+      "replacementText": "these drawbacks are outstripped"
+     }
+    ]
+   },
+   {
+    "band": 8,
+    "findings": [
+     {
+      "id": "conclusion_pronoun_ambiguity",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 4,
+        "sourceText": "these are outstripped",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 4,
+        "sourceText": "this may present certain concerns",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Đại từ chỉ định không rõ",
+      "explanationVi": "Bạn sử dụng 'these' trong câu kết, nhưng không rõ nó đề cập đến 'concerns' hay 'drawbacks', khiến người đọc phải suy đoán mối liên hệ.",
+      "repairVi": "Bạn nên viết lại để rõ ràng, ví dụ: 'these concerns are outstripped' hoặc 'the drawbacks are outstripped'.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "fileId": "1Fw3Kair2k5egTZgns_csOx4_C4wBFVed82wgBctr0fQ",
+  "band": 7,
+  "rationaleVi": "Bài luận có tiến triển logic rõ ràng và các liên kết cơ bản thường hiệu quả. Tuy nhiên, một vài điểm chuyển ý giữa các câu trong thân bài chưa thật sự mượt mà, khiến người đọc phải suy luận nhẹ về sự liên tục của luồng ý. Nhìn chung, mạch lạc nhưng chưa hoàn toàn liền mạch.",
+  "findings": [
+   {
+    "id": "c2",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 1,
+      "sourceText": "allowing parents to design a suitable learning pathway for their offspring.",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 1,
+      "sourceText": "homeschooled children concentrate mostly on their individualized curriculum, leading to appropriate career orientation",
+      "role": "affected"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Chuyển ý không liền mạch",
+    "explanationVi": "Bạn vừa nói về việc phụ huynh thiết kế lộ trình học, sau đó chuyển sang \"homeschooled children concentrate... leading to appropriate career orientation\". Câu sau không trực tiếp bắt lấy \"design a learning pathway\" mà nhảy sang chủ đề \"concentrate on curriculum\" và \"career orientation\". Mặc dù ý có liên quan, nhưng sợi dây liên kết cụ thể giữa \"thiết kế lộ trình\" và \"hướng nghề nghiệp\" bị bỏ ngỏ.",
+    "repairVi": "Thêm một liên kết rõ ràng hơn, ví dụ: 'This personalized pathway, in turn, allows children to concentrate mostly on their individualized curriculum...'",
+    "replacementText": ""
+   },
+   {
+    "id": "c3",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Also, such a trend leads to the lack of other essential skills",
+      "role": "primary"
+     },
+     {
+      "paragraphIndex": 2,
+      "sourceText": "Inadequate social skill development is the first drawback",
+      "role": "context"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Mở rộng ý mới thiếu cầu nối",
+    "explanationVi": "Bạn dùng \"Also\" để thêm một ý mới (thiếu kỹ năng khác), nhưng việc liệt kê các kỹ năng (teamwork, problem-solving) không gắn trực tiếp vào \"inadequate social skill development\" vừa nêu ở câu trước. Người đọc phải tự suy ra rằng những kỹ năng này cũng là một phần của vấn đề giao tiếp xã hội.",
+    "repairVi": "Nối liền rõ ràng hơn, ví dụ: 'This lack of interaction further hinders the development of other essential social skills...' hoặc đổi lại thứ tự nêu vấn đề.",
+    "replacementText": ""
+   },
+   {
+    "id": "1",
+    "criterion": "cohesion",
+    "scope": "local",
+    "severity": "minor",
+    "evidence": [
+     {
+      "paragraphIndex": 2,
+      "sourceText": "disregarding both capabilities and preferences of students. Meanwhile, homeschooling could address this issue radically",
+      "role": "primary"
+     }
+    ],
+    "requirementIds": [],
+    "errorLabelVi": "Liên kết đại từ/chỉ định mơ hồ",
+    "explanationVi": "Bạn sử dụng 'this issue' để nối với câu trước, nhưng 'issue' có thể ám chỉ cả 'disregarding capabilities and preferences' (điểm yếu của trường truyền thống) hoặc 'learning programs concentrate on academic knowledge' (đặc điểm của chương trình). Việc xác định chính xác vấn đề nào được 'giải quyết' đòi hỏi người đọc phải suy luận thêm.",
+    "repairVi": "Bạn có thể viết rõ hơn: 'Meanwhile, homeschooling could address this problem by allowing parents to design...' hoặc 'This shortcoming can be addressed by homeschooling, which allows...'.",
+    "replacementText": ""
+   }
+  ],
+  "runs": [
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "c2",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 1,
+        "sourceText": "allowing parents to design a suitable learning pathway for their offspring.",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 1,
+        "sourceText": "homeschooled children concentrate mostly on their individualized curriculum, leading to appropriate career orientation",
+        "role": "affected"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Chuyển ý không liền mạch",
+      "explanationVi": "Bạn vừa nói về việc phụ huynh thiết kế lộ trình học, sau đó chuyển sang \"homeschooled children concentrate... leading to appropriate career orientation\". Câu sau không trực tiếp bắt lấy \"design a learning pathway\" mà nhảy sang chủ đề \"concentrate on curriculum\" và \"career orientation\". Mặc dù ý có liên quan, nhưng sợi dây liên kết cụ thể giữa \"thiết kế lộ trình\" và \"hướng nghề nghiệp\" bị bỏ ngỏ.",
+      "repairVi": "Thêm một liên kết rõ ràng hơn, ví dụ: 'This personalized pathway, in turn, allows children to concentrate mostly on their individualized curriculum...'",
+      "replacementText": ""
+     },
+     {
+      "id": "c3",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Also, such a trend leads to the lack of other essential skills",
+        "role": "primary"
+       },
+       {
+        "paragraphIndex": 2,
+        "sourceText": "Inadequate social skill development is the first drawback",
+        "role": "context"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Mở rộng ý mới thiếu cầu nối",
+      "explanationVi": "Bạn dùng \"Also\" để thêm một ý mới (thiếu kỹ năng khác), nhưng việc liệt kê các kỹ năng (teamwork, problem-solving) không gắn trực tiếp vào \"inadequate social skill development\" vừa nêu ở câu trước. Người đọc phải tự suy ra rằng những kỹ năng này cũng là một phần của vấn đề giao tiếp xã hội.",
+      "repairVi": "Nối liền rõ ràng hơn, ví dụ: 'This lack of interaction further hinders the development of other essential social skills...' hoặc đổi lại thứ tự nêu vấn đề.",
+      "replacementText": ""
+     }
+    ]
+   },
+   {
+    "band": 7,
+    "findings": [
+     {
+      "id": "1",
+      "criterion": "cohesion",
+      "scope": "local",
+      "severity": "minor",
+      "evidence": [
+       {
+        "paragraphIndex": 2,
+        "sourceText": "disregarding both capabilities and preferences of students. Meanwhile, homeschooling could address this issue radically",
+        "role": "primary"
+       }
+      ],
+      "requirementIds": [],
+      "errorLabelVi": "Liên kết đại từ/chỉ định mơ hồ",
+      "explanationVi": "Bạn sử dụng 'this issue' để nối với câu trước, nhưng 'issue' có thể ám chỉ cả 'disregarding capabilities and preferences' (điểm yếu của trường truyền thống) hoặc 'learning programs concentrate on academic knowledge' (đặc điểm của chương trình). Việc xác định chính xác vấn đề nào được 'giải quyết' đòi hỏi người đọc phải suy luận thêm.",
+      "repairVi": "Bạn có thể viết rõ hơn: 'Meanwhile, homeschooling could address this problem by allowing parents to design...' hoặc 'This shortcoming can be addressed by homeschooling, which allows...'.",
+      "replacementText": ""
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,842 @@
+[
+ {
+  "fileId": "1xlM0Ra-kIuC4o2gDVvOyNX1O3id3_-7OwAYQrLF7erU",
+  "docTitle": "Task 2 - outweigh 1 - Ngọc Anh Vũ  - done",
+  "question": "Many people choose to travel abroad to learn a foreign language instead of studying in their home town. do the advantages of learning a new language in this way outweigh the disadvantages?",
+  "essay": "Nowadays, some people go overseas to learn a new language rather than doing it in their own country. In my opinion, while there are certain disadvantages associated with acquiring a new language abroad, the advantages far outweigh these.\nAdmittedly, the drawbacks of studying a foreign language abroad are readily apparent. First and foremost, studying overseas composes a significant financial burden . For instance, students need to pay tuition and fees, accommodation, and living expenses.However, these problems can typically be addressed by scholarships, part-time jobs, or financial savings; reducing difficulties and providing comfort for international students. Another frequently cited drawback of studying abroad is the feeling of isolation and loneliness. Due to the difference in culture that learners may experience when adapting to a completely new environment, they can have some mental issues about loneliness, which may cause them to become more sensitive. Nonetheless, these difficulties can normally be overcome by seeking support from local communities, joining student clubs, or staying in touch with family regularly.\nOn the other hand, there are more significant advantages of studying a new language overseas. From an academic perspective, immersion in a native-speaking environment enables learners to practice the language daily in real-life contexts. Through basic conversations with local people, students can acquire a wide range of native expressions, improve their pronunciation, and master the language more proactively. This not only enhances their communication skills but also gives them greater confidence when interacting with people. From a socio-cultural perspective, students gain first-hand cultural exposure, while also helping them develop open-mindedness and intercultural competence. Beyond what they learn from textbooks, students are able to experience the cultural diversity of their host country, which allows them to further broaden their knowledge about cultures. Finally,  studying abroad for languages enhances students’career prospects. International employers highly appreciate candidates who possess advanced linguistic abilities along with cross-cultural experience; therefore, students can proactively expand their career opportunities in the international labor market.\n\nIn conclusion, while there are some drawbacks to travelling abroad to learn a new language, this may present certain concerns,these are outstripped by the positives, including the increase in confidence in speaking, gaining knowledge of different cultures, and expanding their career chances overseas.",
+  "lrAnchors": [
+   {
+    "anchoredText": "this may present certain concerns",
+    "comment": "k cần thiết",
+    "startChar": 2420,
+    "endChar": 2453
+   },
+   {
+    "anchoredText": "appreciate",
+    "comment": "sai collocation",
+    "startChar": 2121,
+    "endChar": 2131
+   },
+   {
+    "anchoredText": "which allows them to further broaden their knowledge about cultures",
+    "comment": "trùng ý với câu trc",
+    "startChar": 1946,
+    "endChar": 2013
+   },
+   {
+    "anchoredText": "enhances their communication skills",
+    "comment": "cái này lặp ý với cái trc mà",
+    "startChar": 1567,
+    "endChar": 1602
+   },
+   {
+    "anchoredText": "master the language more proactively",
+    "comment": "basic thì master dễ lms hở.....",
+    "startChar": 1515,
+    "endChar": 1551
+   },
+   {
+    "anchoredText": "n real-life contexts",
+    "comment": "lặp vs cụm native -speaking envi -phía trc",
+    "startChar": 1356,
+    "endChar": 1376
+   },
+   {
+    "anchoredText": "tudying a new language overseas",
+    "comment": "lặp",
+    "startChar": 1201,
+    "endChar": 1232
+   },
+   {
+    "anchoredText": "staying in touch with family regularly",
+    "comment": "ưu tiên Noun chứ đừng dùng nhiều Verb thế này",
+    "startChar": 1100,
+    "endChar": 1138
+   },
+   {
+    "anchoredText": "local communities",
+    "comment": "cộng đồng địa phương là cộng đồng nào?",
+    "startChar": 1055,
+    "endChar": 1072
+   },
+   {
+    "anchoredText": "difference in culture that learners may experience when adapting to a completely new environment,",
+    "comment": "diễn đạt dài dòng",
+    "startChar": 778,
+    "endChar": 875
+   },
+   {
+    "anchoredText": "mental issues about loneliness",
+    "comment": "sai collocation",
+    "startChar": 895,
+    "endChar": 925
+   },
+   {
+    "anchoredText": "the feeling of isolation and loneliness",
+    "comment": "2 cái này trùng ý",
+    "startChar": 726,
+    "endChar": 765
+   },
+   {
+    "anchoredText": "and providing comfort for international students",
+    "comment": "nên là gq phần nào vđ đc nêu ra nhé, ns thế này informal qus",
+    "startChar": 620,
+    "endChar": 668
+   },
+   {
+    "anchoredText": "composes",
+    "comment": "Sai collocation",
+    "startChar": 362,
+    "endChar": 370
+   },
+   {
+    "anchoredText": "drawbacks of studying a foreign language abroad",
+    "comment": "dùng nhiều danh từ dài >> rườm rà",
+    "startChar": 254,
+    "endChar": 301
+   },
+   {
+    "anchoredText": "readily apparent",
+    "comment": "sai collocation r nhé",
+    "startChar": 306,
+    "endChar": 322
+   },
+   {
+    "anchoredText": "acquiring a new language abroad",
+    "comment": "lặp r nhé",
+    "startChar": 170,
+    "endChar": 201
+   },
+   {
+    "anchoredText": "these",
+    "comment": "these là cgi?",
+    "startChar": 231,
+    "endChar": 236
+   }
+  ],
+  "allAnchors": [
+   {
+    "anchoredText": "increase in confidence in speaking, gaining knowledge of different cultures, and expanding their career chances overseas",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "this may present certain concerns",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "students",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "appreciate",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "enhances",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "which allows them to further broaden their knowledge about cultures",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "while also helping them develop open-mindedness and intercultural competence",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "students gain first-hand cultural exposure, while also helping them develop open-mindedness",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "enhances their communication skills",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "master the language more proactively",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "basic conversations with local people, students can acquire a wide range",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "learners to practice the language daily",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "n real-life contexts",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "enables",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "tudying a new language overseas",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "On the other hand",
+    "criterion": "cohesion"
+   },
+   {
+    "anchoredText": "staying in touch with family regularly",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "local communities",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "difference in culture that learners may experience when adapting to a completely new environment,",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "may",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "mental issues about loneliness",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "the feeling of isolation and loneliness",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "and providing comfort for international students",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "ay tuition and fees, accommodation, and living expenses",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "financial burden",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "composes",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "drawbacks of studying a foreign language abroad",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "readily apparent",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "acquiring a new language abroad",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "these",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "doing it",
+    "criterion": "cohesion"
+   }
+  ],
+  "graAnchors": [
+   {
+    "anchoredText": "while also helping them develop open-mindedness and intercultural competence",
+    "comment": "while also helping them, students câu trc là chủ ngữ mà sang câu này lại thành them (tân ngữ) >> ai giúp ai + sai ngữ pháp"
+   },
+   {
+    "anchoredText": "students gain first-hand cultural exposure, while also helping them develop open-mindedness",
+    "comment": "while also helping them, students câu trc là chủ ngữ mà sang câu này lại thành them (tân ngữ) >> ai giúp ai + sai ngữ pháp"
+   }
+  ],
+  "trAnchors": [
+   {
+    "anchoredText": "increase in confidence in speaking, gaining knowledge of different cultures, and expanding their career chances overseas",
+    "comment": "nên sử dụng cụm Noun nhiều hơn"
+   },
+   {
+    "anchoredText": "students",
+    "comment": "phải nói rõ là students nào nhé"
+   },
+   {
+    "anchoredText": "enhances",
+    "comment": "“enhances” là quy chụp, cần hedging nhé"
+   },
+   {
+    "anchoredText": "basic conversations with local people, students can acquire a wide range",
+    "comment": "“basic conversations” thì chỉ kiểu hello, how r u ý, còn “a wide range” là kiểu nói nhiều mà còn nói sâu nx cơ"
+   },
+   {
+    "anchoredText": "learners to practice the language daily",
+    "comment": "nên nói rõ hiệu quả là gì nhé"
+   },
+   {
+    "anchoredText": "enables",
+    "comment": "quy chụp “enables” (không phải ai cũng dùng daily)"
+   },
+   {
+    "anchoredText": "may",
+    "comment": "quá nhiều hedging may/can/may >>> yếu lập luận"
+   },
+   {
+    "anchoredText": "ay tuition and fees, accommodation, and living expenses",
+    "comment": "r là cái này đắt ở mọi qgia hay sao? vs lại tùy scholarships nx chứ> kiểu em viết khá chung chung và k có hedging, đk khó khăn của từng học bổng ấy >> quy chụp"
+   },
+   {
+    "anchoredText": "financial burden",
+    "comment": "gánh nặng tài chính vs ai?"
+   }
+  ],
+  "cohAnchors": [
+   {
+    "anchoredText": "On the other hand",
+    "comment": "Dùng On the other hand mà trước không có On the one hand"
+   },
+   {
+    "anchoredText": "doing it",
+    "comment": "cái reference sao lại dùng it nhỉ? reference e cần phải là learn >> doing so ms đúng (it thì nó đặt trọng tâm vào ngôn ngữ r)"
+   }
+  ]
+ },
+ {
+  "fileId": "16AY_l442S5TA5HvgdmI6poo3RmN_ovPm1-G5GmJ8Im4",
+  "docTitle": "Dangerous Sports Discussion 112 - Nhi Yến - done",
+  "question": "Some people believe that dangerous sports should be banned. However, others believe that people should be free to choose their sport. Discuss both views and give your opinion.",
+  "essay": "It is often argued that the government should enact laws to ban people from extreme sport participation, while others believe that selecting favorite sports is their liberty. I will explore both viewpoints before drawing a conclusion that I am inclined towards the latter.\n\nAdmittedly, there are compelling reasons why many contend that barring people from dangerous games is essential for people’s lives. One merit is that, this is a great way to prevent fatal accidents and minimise the risk of life-threatening for residents. In fact, many sports have no absolute guarantee of safety, similar to this, protective gear offers limited protection. For instance, there was a devastating tragedy at an ultramarathon event in China, which claimed 21 lives in extreme weather conditions. It leads to a nationwide ban on extreme sports with imposing an indefinite suspension on risky activities to protect players from the risks that influence their lives. Thanks to this, the government succeeded in ensuring citizens’ safety and wellbeing and  promoting a safer and more peaceful lifestyle. However, the government should only set reasonable restrictions instead of outright bans such as imposing age limits for participation due to strike a balance between safety and personal freedom.\n\nI am strongly convinced that the freedom of individuals' selection including their preferences of games is superior to completely removing games which have an alarming risk. One major issue is that it is vital to respect individual autonomy in nations. Because if the government infringed upon basic human rights, it would spark highly public resentment. Such as making personal choices regarding lifestyle and career or determining people’s own risk tolerance is also citizens’ benefits in a nation including in deciding whether to engage in high-risk sports.  Instead of preventing people from excessive games, the government should implement rigorous safety inspections as well as certify equipment and facilities before approval for companies.  Such opinions, as a result, will remain a significant balance between individuals’ safety and choices, being highlighted to have the final say in matters affecting people’s lives. \n\nIn conclusion, although some take the view that banning unsafe sports can supplant people’s lives and prevent serious injuries and deaths, I strongly maintain that they are still essential in respecting individuals’ choices. \n\nIt is often argued that the government should enact laws to ban people from participating in extreme sports, while others believe that choosing their preferred sports is a personal right. I will explore both viewpoints on whether risky activities should be prohibited or left to individual discretion before drawing a conclusion that I am inclined towards the latter.\n\nAdmittedly, there are compelling reasons why many argue that restricting people’s participation in dangerous sports is crucial to safeguard lives. One merit is that  this is an effective way to prevent fatal accidents and minimise the risk of life-threatening injuries. In fact, even with safety measures in place, protective gear offers limited protection. For instance, there was a tragedy at an ultramarathon event in China, which claimed 21 lives in extreme weather conditions. It led to a nationwide ban on extreme sports including an indefinite suspension on risky activities to protect players from risks that pose threats to their lives. As a result of this policy the government succeeded in ensuring citizens’ safety and wellbeing, thus reducing the likelihood of future incidents. However, rather than enforcing outright bans, governments should consider reasonable restrictions such as age limits. Such an approach aims to strike a balance between safety and individual freedom.\n\nI am strongly convinced that individuals’ freedom to choose their preferred sports should be prioritized over bans on these activities. One major point is that it is vital to respect individual autonomy in modern societies. If the government infringed upon basic human rights, it would spark widespread public resentment. The ability to make personal choices regarding one’s lifestyle, career, and risk tolerance, including whether to participate in high-risk sports, is a fundamental human right that should be protected. Instead of preventing people from dangerous sports, the government should implement rigorous safety inspections as well as certify equipment and facilities before granting operational approval to sporting organizations. Such an approach helps maintain a crucial balance between individuals’ safety and their own choices, ensuring that people retain the right to make choices about their own lives.\n\nIn conclusion, although some take the view that banning unsafe sports can save people’s lives and prevent serious injuries and fatalities, I strongly believe that such sports remain essential in upholding individuals’  freedom of choice.",
+  "lrAnchors": [
+   {
+    "anchoredText": "promoting a safer and more peaceful lifestyle",
+    "comment": "k đến mức là peaceful (yên bình), từ này cũng k đi vs từ lifestyle nhé",
+    "startChar": 1039,
+    "endChar": 1084
+   },
+   {
+    "anchoredText": "influence their lives.",
+    "comment": "nói rõ là sẽ gây hại đến cuộc sống chứ k chỉ đơn thuần là ảnh hưởng k th nhé",
+    "startChar": 928,
+    "endChar": 950
+   },
+   {
+    "anchoredText": "supplant",
+    "comment": "sai nghĩa hoàn toàn, supplant = thay thế mà?",
+    "startChar": 2283,
+    "endChar": 2291
+   },
+   {
+    "anchoredText": "being highlighted",
+    "comment": "từ highlight này nghĩa là gì mà cho vào hả em? Diễn đạt kiểu này lộn xộn mà k rõ nghĩa nx",
+    "startChar": 2132,
+    "endChar": 2149
+   },
+   {
+    "anchoredText": "opinions, as a result, will remain a significant balance",
+    "comment": "opinions không thể remain a balance",
+    "startChar": 2034,
+    "endChar": 2090
+   },
+   {
+    "anchoredText": "approval for companies",
+    "comment": "approval của ai, cho mục đích gì?",
+    "startChar": 2005,
+    "endChar": 2027
+   },
+   {
+    "anchoredText": "excessive games",
+    "comment": "sai hoàn toàn về nghĩa",
+    "startChar": 1877,
+    "endChar": 1892
+   },
+   {
+    "anchoredText": "highly",
+    "comment": "sai collocation",
+    "startChar": 1611,
+    "endChar": 1617
+   },
+   {
+    "anchoredText": "and",
+    "comment": "k nên dùng quá nhiều từ and để nối >> thể hiện sự hạn chế trg CC",
+    "startChar": 471,
+    "endChar": 474
+   },
+   {
+    "anchoredText": "with imposing",
+    "comment": "liên quan đến gì đó thì k dùng từ  \"with\" nhé",
+    "startChar": 830,
+    "endChar": 843
+   },
+   {
+    "anchoredText": "devastating",
+    "comment": "tragedy đã bào hàm ý nghĩa của cả devastating r nhé",
+    "startChar": 673,
+    "endChar": 684
+   },
+   {
+    "anchoredText": "residents",
+    "comment": "người dân chx sát nghĩa bằng người chs, người tham gia những hđ này",
+    "startChar": 517,
+    "endChar": 526
+   },
+   {
+    "anchoredText": "barring people from",
+    "comment": "mang sắc thái hơi tiêu cực, cưỡng ép quá",
+    "startChar": 336,
+    "endChar": 355
+   },
+   {
+    "anchoredText": "contend",
+    "comment": "tranh luận, tranh cãi, k khớp vs compelling reasons",
+    "startChar": 323,
+    "endChar": 330
+   },
+   {
+    "anchoredText": "selecting favorite sports is their liberty",
+    "comment": "liberty là sự tự do, sự k phụ thuộc k nên dùng trong TH là quyền tự do cá nhân",
+    "startChar": 131,
+    "endChar": 173
+   },
+   {
+    "anchoredText": "from extreme sport participation",
+    "comment": "ban from doing sth, k phải from + N nhé",
+    "startChar": 71,
+    "endChar": 103
+   }
+  ],
+  "allAnchors": [
+   {
+    "anchoredText": "promoting a safer and more peaceful lifestyle",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "this",
+    "criterion": "cohesion"
+   },
+   {
+    "anchoredText": "influence their lives.",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "they",
+    "criterion": "cohesion"
+   },
+   {
+    "anchoredText": "supplant",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "being highlighted",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "opinions, as a result, will remain a significant balance",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "approval for companies",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "excessive games",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "Such as making personal choices regarding lifestyle and career or determining people’s own risk tolerance is also citizens’ benefits in a nation including in deciding whether to engage in high-risk sports",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "highly",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "infringed",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "Because",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "the freedom of individuals&#39; selection including their preferences of games is superior to completely removing games which have an alarming risk",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "the government should only set reasonable restrictions instead of outright bans such as imposing age limits for participatio",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "due to strike",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "and",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "with imposing",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "leads",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "devastating",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "similar to this",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "residents",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "life-threatening",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "that,",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "essential",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "barring people from",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "contend",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "selecting favorite sports is their liberty",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "from extreme sport participation",
+    "criterion": "lexical_resource"
+   }
+  ],
+  "graAnchors": [
+   {
+    "anchoredText": "Such as making personal choices regarding lifestyle and career or determining people’s own risk tolerance is also citizens’ benefits in a nation including in deciding whether to engage in high-risk sports",
+    "comment": "Câu dài mà về cơ bản ý cũng đơn giản >> dư thừa mà cũng k cần biể đạt đc hết ý (do dùng quá nhiều danh từ dài và ngữ pháp khó)"
+   },
+   {
+    "anchoredText": "infringed",
+    "comment": "sao lại dùng thì QK ở đây nhỉ? câu đk loại 2 ở đây k hợp lý lắm"
+   },
+   {
+    "anchoredText": "Because",
+    "comment": "because k dùng để nối hai câu riêng biệt vs nhau nhé"
+   },
+   {
+    "anchoredText": "the freedom of individuals&#39; selection including their preferences of games is superior to completely removing games which have an alarming risk",
+    "comment": "câu dài, rườm rà, dùng quá nhiều danh từ (thường một cụm danh từ nên chỉ có 1 danh từ chính, nhg như freedom of individuals' selection lại có đến 3 danh từ dài)"
+   },
+   {
+    "anchoredText": "the government should only set reasonable restrictions instead of outright bans such as imposing age limits for participatio",
+    "comment": "cả 1 câu dài, nhiều ý >> câu rườm rà và ngữ pháp còn sai"
+   },
+   {
+    "anchoredText": "due to strike",
+    "comment": "sau due to + Noun >> k dùng verb"
+   },
+   {
+    "anchoredText": "leads",
+    "comment": "sk diễn ra trong quá khứ >> thì qk nhé"
+   },
+   {
+    "anchoredText": "similar to this",
+    "comment": "cái gì tương tự vs cái gì á em? Ko có chủ ngữ của similar hở?"
+   },
+   {
+    "anchoredText": "life-threatening",
+    "comment": "danh từ đằng sau đâu?"
+   },
+   {
+    "anchoredText": "that,",
+    "comment": "Sai ngắt câu"
+   }
+  ],
+  "trAnchors": [
+   {
+    "anchoredText": "essential",
+    "comment": "quan trọng trong việc gì thì nên nói rõ ra nhé"
+   }
+  ],
+  "cohAnchors": [
+   {
+    "anchoredText": "this",
+    "comment": "nêu rõ luôn this là gì nhé"
+   },
+   {
+    "anchoredText": "they",
+    "comment": "they là refer đến gì? sports hay bans?"
+   }
+  ]
+ },
+ {
+  "fileId": "1AB41r1-7bWKwpG6iMp-aaKZ2R0WRSOSxPY0VaRCB6-Y",
+  "docTitle": "work agree or disagree 3 - Linh Phạm - done",
+  "question": "Task 2: Some people think that all teenagers should be required to do unpaid work in their free time to help the local community. They believe this would benefit both the individual teenager and society as a whole. Do you agree or disagree?",
+  "essay": "There is an argument saying that all youngsters should do unpaid work in their free time in order to contribute to the local community. People believe that this idea would bring benefits for both teenagers and the whole society. From my perspective, I totally agree with this statement due to numerous reasons.\nIt is true that teenagers will benefit from this idea for some reasons. Firstly, entering the workforce helps teenagers to gain more soft skills. In fact, they will have the chance to become a real employee that they work with other people, including their colleagues and customers. Therefore, it helps them to become more strict and disciplined, and also improve skills like communication skills, solving problems skills, etc. Secondly, this is a nice way for teenagers to make use of their free time. Instead of spending time on doing useless things such as playing computer games, watching TV all day, children can save their time by doing things that are useful for them in their later lives. On top of that, they will definitely feel their lives become more significant than ever, and their mental health will be ensured because staying at home for too long can lead to some mental problems, especially with youngsters.\nAdditionally, not only teenagers but also the whole society can benefit from this. They can lend a hand to people in difficulties, from old people to poor children. In fact, recently, there have been are so many charity activities organized by the local community that youngsters should participate in. For example, it is easy for young people to become volunteers helping others with food, clothes and then receive certificates that are good for their CV when they apply for anything. Moreover, besides giving help to humans, unpaid work also includes making the scenery of the local neighborhood more stunning and fresher. In fact, teenagers can join in activities like cutting grass, sweeping the road, or picking up litter by themselves or through environmental organizations.\nTo conclude, I strongly agree with the statement saying that teenagers ought to do unpaid jobs in their free time because this will benefit both themselves and the whole society. In particular, teenagers can gain more essential skills that are good for them in later lives, while society receives quite a lot of significant help.",
+  "lrAnchors": [
+   {
+    "anchoredText": "by themselves",
+    "comment": "by themselves: họ làm một mình >> sai nghĩa",
+    "startChar": 1963,
+    "endChar": 1976
+   },
+   {
+    "anchoredText": "cutting grass",
+    "comment": "dịch word by word từ TV sang TA quá, sai collocation r",
+    "startChar": 1908,
+    "endChar": 1921
+   },
+   {
+    "anchoredText": "fresher",
+    "comment": "tươi này rau quả tươi chứ k phải mtrg sạch đẹp hơn nhé",
+    "startChar": 1852,
+    "endChar": 1859
+   },
+   {
+    "anchoredText": "scenery",
+    "comment": "scenery thường dùng cho phong cảnh thiên nhiên rộng lớn > k hợp vs nghĩa của khu dân cư",
+    "startChar": 1800,
+    "endChar": 1807
+   },
+   {
+    "anchoredText": "apply for anything",
+    "comment": "Cụm từ rất mơ hồ và thiếu chính xác",
+    "startChar": 1702,
+    "endChar": 1720
+   },
+   {
+    "anchoredText": "good for their CV",
+    "comment": "good là good cgi, ntn? CV còn viết tắt nx chứ",
+    "startChar": 1674,
+    "endChar": 1691
+   },
+   {
+    "anchoredText": "are",
+    "comment": "có been r còn are làm gì?",
+    "startChar": 966,
+    "endChar": 969
+   },
+   {
+    "anchoredText": "from",
+    "comment": "từ này k dùng để liệt kê các nhóm đối tượng nhé",
+    "startChar": 350,
+    "endChar": 354
+   },
+   {
+    "anchoredText": "significant",
+    "comment": "significant: quan trọng, có tầm quan trọng hơn >> văn lùa gà quá, bảo cs có ý nghĩa hơn thì còn oke á =))))))))",
+    "startChar": 1074,
+    "endChar": 1085
+   },
+   {
+    "anchoredText": "save their time",
+    "comment": "Save time là tiết kiệm thời gian (làm việc gì đó nhanh hơn) >> sai nghĩa r nhé",
+    "startChar": 929,
+    "endChar": 944
+   },
+   {
+    "anchoredText": "useless things",
+    "comment": "thing: mơ hồ, k rõ là cgi  + diễn đạt tiêu cực và phiến diện",
+    "startChar": 848,
+    "endChar": 862
+   },
+   {
+    "anchoredText": "nice way",
+    "comment": "“nice way” quá văn nói, cực kì thiếu văn phong trang trọng khi viết",
+    "startChar": 759,
+    "endChar": 767
+   },
+   {
+    "anchoredText": "and also improve skills like communication skills, solving problems skills, etc",
+    "comment": "tránh dùng and để nối mà nên dùng MĐQH + lặp từ skills liên tục",
+    "startChar": 658,
+    "endChar": 737
+   },
+   {
+    "anchoredText": "skills like communication skills, solving problems skills",
+    "comment": "lặp từ skills liên tục",
+    "startChar": 675,
+    "endChar": 732
+   }
+  ],
+  "allAnchors": [
+   {
+    "anchoredText": "r. In fact, teenagers can join in activities like",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "by themselves",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "cutting grass",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "fresher",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "scenery",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "besides",
+    "criterion": "cohesion"
+   },
+   {
+    "anchoredText": "apply for anything",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "good for their CV",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "helping others with food, clothes and then receive",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "should",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "are",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "from",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "They",
+    "criterion": "cohesion"
+   },
+   {
+    "anchoredText": "not only teenagers but also the whole society can benefit from this",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "use staying at home for too long can lead to some mental problems, especially with youngsters.",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "will be ensured",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "significant",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "are useful for them in their later lives",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "save their time",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "useless things",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "nice way",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "and also improve skills like communication skills, solving problems skills, etc",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "skills like communication skills, solving problems skills",
+    "criterion": "lexical_resource"
+   },
+   {
+    "anchoredText": "more strict",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "mployee that they work with other people,",
+    "criterion": "grammatical_range_accuracy"
+   },
+   {
+    "anchoredText": "entering the workforce helps teenagers to gain more soft skills",
+    "criterion": "task_response"
+   },
+   {
+    "anchoredText": "People",
+    "criterion": "cohesion"
+   }
+  ],
+  "graAnchors": [
+   {
+    "anchoredText": "helping others with food, clothes and then receive",
+    "comment": "Động từ \"helping\" và \"receive\" không cùng dạng, mà động từ trc và sau \"and\" phải đồng dạng"
+   },
+   {
+    "anchoredText": "not only teenagers but also the whole society can benefit from this",
+    "comment": "Cấu trúc \"Not only ... but also ....\" yêu cầu đảo ngữ ở mệnh đề \"not only\" nhé"
+   },
+   {
+    "anchoredText": "mployee that they work with other people,",
+    "comment": "đoạn này logic c chx hiểu lắm, là sao hả em, có khả năng trở tành nv (MĐQH vs tân ngữ là người mà sao lại dùng that?)"
+   }
+  ],
+  "trAnchors": [
+   {
+    "anchoredText": "r. In fact, teenagers can join in activities like",
+    "comment": "Câu này chỉ liệt kê hoạt động th à,  không thấy kết nối với lợi ích cho xã hội đã nêu ở câu trước (\"more stunning and fresher\"), nói rõ hơn nó kết nối nhau tn nhé"
+   },
+   {
+    "anchoredText": "should",
+    "comment": "không cần thiết + làm yếu lập luận, nói là can thì sẽ chắc chăn hơn"
+   },
+   {
+    "anchoredText": "use staying at home for too long can lead to some mental problems, especially with youngsters.",
+    "comment": "lí do này chỉ áp dụng vs phần nhỏ th, mà em nói như vđ lớn quá >> có tính quy chụp lớn"
+   },
+   {
+    "anchoredText": "will be ensured",
+    "comment": "Dùng từ quá chắc chắn và cứng nhắc, k có hedging"
+   },
+   {
+    "anchoredText": "are useful for them in their later lives",
+    "comment": "things này là things gì, hoạt động gì thì nói rõ, viết quá mơ hồ"
+   },
+   {
+    "anchoredText": "more strict",
+    "comment": "sao lại trở nên ngkhac hơn? ngkhac vs ai, vs người khác à?"
+   },
+   {
+    "anchoredText": "entering the workforce helps teenagers to gain more soft skills",
+    "comment": "câu đơn cụt lủn, cũng chx nói rõ soft skills là gì, có thể thêm tí vd nx"
+   }
+  ],
+  "cohAnchors": [
+   {
+    "anchoredText": "besides",
+    "comment": "k cần phải nói cụm này nx vì Moreover là nối đủ r"
+   },
+   {
+    "anchoredText": "They",
+    "comment": "Đại từ không rõ ràng, \"They\" ở đây ám chỉ \"society\" hay \"teenagers\"?"
+   },
+   {
+    "anchoredText": "People",
+    "comment": "Từ này chưa bắt mạch trực tiếp từ câu trước"
+   }
+  ]
+ }
+]

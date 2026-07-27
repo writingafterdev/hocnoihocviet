@@ -10,6 +10,41 @@ export type PromptType =
   | 'problem_solution'
   | 'two_part';
 
+export type AssessmentProblemStrength = 'core_problem' | 'worth_noting';
+
+export interface AssessmentModelCall {
+  label: string;
+  provider: string;
+  model: string;
+  status: 'success' | 'error';
+  durationMs: number;
+  promptTokens: number;
+  completionTokens: number;
+  totalTokens: number;
+  finishReason?: string;
+}
+
+export interface AssessmentRun {
+  schemaVersion: '2026-07-28';
+  assessmentId: string;
+  idempotencyKey: string;
+  pipelineVersion: 'v8';
+  promptVersion: string;
+  provider: string;
+  model: string;
+  startedAt: string;
+  completedAt?: string;
+  durationMs?: number;
+  status: 'complete' | 'partial' | 'failed';
+  incompletePasses: string[];
+  calls?: AssessmentModelCall[];
+  usage?: {
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+  };
+}
+
 export type SentenceRole =
   | 'setup'
   | 'claim'
@@ -49,6 +84,7 @@ export interface PyramidError {
   evidenceSpans?: AssessmentEvidenceSpan[];
   nodeLinks?: AssessmentNodeLinks;
   descriptorAnchor?: AssessmentDescriptorAnchor;
+  problemStrength?: AssessmentProblemStrength;
 }
 
 export interface AssessmentReference {
@@ -117,6 +153,7 @@ export interface PyramidIssue {
   evidenceSpans?: AssessmentEvidenceSpan[];
   nodeLinks?: AssessmentNodeLinks;
   descriptorAnchor?: AssessmentDescriptorAnchor;
+  problemStrength?: AssessmentProblemStrength;
 }
 
 export interface PyramidSolutionAction {
@@ -290,6 +327,7 @@ export interface EssayHighlight {
   paragraphIndex?: number;
   sentenceIndex?: number;
   descriptorAnchor?: AssessmentDescriptorAnchor;
+  problemStrength?: AssessmentProblemStrength;
 }
 
 export interface BandScores {
@@ -332,6 +370,7 @@ export interface OverallAssessment {
     titleVi: string;
     actionVi: string;
     evidenceIds: string[];
+    problemStrength?: AssessmentProblemStrength;
   }>;
   descriptorAlignment: Array<{
     criterion: keyof Omit<BandScores, 'overall'>;
@@ -439,6 +478,7 @@ export interface ArgumentFlowOverview {
 }
 
 export interface WritingAnalysis {
+  run?: AssessmentRun;
   promptType: PromptType;
   assessmentAudit?: AssessmentAudit;
   scores: BandScores;

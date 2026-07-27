@@ -13,6 +13,14 @@ import {
   type EssayParagraphManifest,
 } from '@/lib/writing-analysis-contract';
 import {
+  ACTIVE_ASSESSMENT_PROMPT_VERSION,
+  AUTHOR_COHERENCE_SYSTEM,
+  AUTHOR_COHESION_SYSTEM,
+  AUTHOR_GRAMMAR_SYSTEM,
+  AUTHOR_LEXICAL_SYSTEM,
+  AUTHOR_TASK_RESPONSE_SYSTEM,
+} from '@/lib/writing-assessment-author-prompts';
+import {
   ensureBandScores,
   mergeTaskAndStructure,
   normalizeDecomposition,
@@ -33,6 +41,7 @@ import type {
   BandComparison,
   BandScores,
   CoherenceFlow,
+  EdgeReview,
   EssayHighlight,
   MacroAnswerNode,
   NodeReview,
@@ -98,6 +107,7 @@ interface AuthoritativeExaminerPass {
 }
 
 interface VerifiedFinding extends ExaminerObservation {
+  problemStrength?: QuoteFirstFinding['problemStrength'];
   errorCode: string;
   errorLabelVi?: string;
   verdict: 'confirmed' | 'rejected' | 'uncertain';
@@ -131,6 +141,7 @@ interface QuoteFirstFinding {
   criterion: FindingCriterion;
   scope: 'macro' | 'paragraph' | 'local';
   severity: 'minor' | 'moderate' | 'major';
+  problemStrength?: 'core_problem' | 'worth_noting';
   evidence: QuoteEvidenceInput[];
   requirementIds?: string[];
   errorLabelVi: string;
@@ -163,6 +174,76 @@ interface QuoteFirstAuditPass {
 
 interface FocusedFindingPass {
   findings: QuoteFirstFinding[];
+}
+
+interface MentorBinaryVerificationPass {
+  decisions: Array<{
+    findingId: string;
+    verdict: 'YES' | 'NO';
+    reasonVi: string;
+  }>;
+}
+
+const MENTOR_BINARY_VERIFICATION_SYSTEM = `You are the binary verification phase of an IELTS error-detection pipeline. Return JSON only.
+
+You receive the essay, deterministic audit units, and a fixed list of candidate
+findings. Do not search for new errors, rewrite candidates, merge candidates,
+rank them, or score the essay.
+
+For each candidate independently:
+1. Read its complete relevant audit unit, not only its smallest quote.
+2. Apply only the candidate's stated criterion and error label.
+3. Answer YES when the stated error is clearly present.
+4. Answer NO when the evidence does not establish that exact error.
+
+Return one decision for every supplied candidate ID in the same order:
+{
+  "decisions": [{
+    "findingId": "copy candidate id exactly",
+    "verdict": "YES | NO",
+    "reasonVi": "one short specific Vietnamese reason"
+  }]
+}
+
+Vietnamese alphabet only. Never omit a candidate and never introduce an ID that
+was not supplied.`;
+
+function mentorVerificationErrors(
+  value: MentorBinaryVerificationPass,
+  candidateIds: string[],
+): string[] {
+  if (!value || !Array.isArray(value.decisions)) return ['decisions must be an array'];
+  const supplied = new Set(candidateIds);
+  const seen = new Set<string>();
+  const errors: string[] = [];
+  value.decisions.forEach((decision, index) => {
+    if (!decision || typeof decision.findingId !== 'string' || !supplied.has(decision.findingId)) {
+      errors.push(`Decision ${index + 1} must copy a supplied findingId.`);
+      return;
+    }
+    if (seen.has(decision.findingId)) errors.push(`Duplicate decision for ${decision.findingId}.`);
+    seen.add(decision.findingId);
+    if (decision.verdict !== 'YES' && decision.verdict !== 'NO') {
+      errors.push(`Decision ${index + 1} verdict must be YES or NO.`);
+    }
+    if (typeof decision.reasonVi !== 'string' || !decision.reasonVi.trim()) {
+      errors.push(`Decision ${index + 1} needs reasonVi.`);
+    }
+  });
+  candidateIds.forEach(id => {
+    if (!seen.has(id)) errors.push(`Missing decision for ${id}.`);
+  });
+  return errors;
+}
+
+function mentorFindingVerificationId(finding: QuoteFirstFinding): string {
+  const evidenceKey = (finding.evidence || [])
+    .map(item => `${item.paragraphIndex}:${item.sourceText}`)
+    .join('|');
+  return `mentor-${createHash('sha1')
+    .update(`${finding.criterion}|${finding.id}|${finding.errorLabelVi}|${evidenceKey}`)
+    .digest('hex')
+    .slice(0, 16)}`;
 }
 
 export interface TaskResponsePointAudit {
@@ -244,6 +325,7 @@ interface PromptProfilePass {
 interface V7CriterionPass extends FocusedFindingPass {
   band: number;
   rationaleVi: string;
+  candidateFindings?: QuoteFirstFinding[];
 }
 
 const BAND_CALIBRATION = `
@@ -439,6 +521,79 @@ Return JSON only:
 }
 `;
 
+/**
+ * Appended to every v8 specialist. Three problems it answers, all measured on
+ * the 520-assessment reference corpus produced by the same provider family:
+ * 69% of outputs contained Chinese characters substituted mid-sentence for
+ * Vietnamese words, 12.4% of lexical evidence quotes were not present in the
+ * essay at all (mostly invented misspellings), and the band a specialist
+ * returned tracked how many findings it happened to produce rather than the
+ * descriptors.
+ */
+const V8_SPECIALIST_DISCIPLINE = `
+Script rule, absolute: write Vietnamese in the Vietnamese alphabet only. Never emit a Chinese, Japanese, or Korean character anywhere in the output. This fails most often mid-sentence on abstract words. If a Vietnamese word does not come to you, use a simpler Vietnamese one.
+
+Do not fuse English into a Vietnamese phrase as if it were Vietnamese. Write "câu chủ đề", not "câu topic"; "lỗi ngữ pháp", not "lỗi grammar"; "phần phát triển ý chưa đủ sâu", not "develop chưa đủ sâu". Exact essay quotations and English replacements stay in English.
+
+sourceText is copied from the essay character for character. Do not retype it from memory and do not splice your correction into it. Before reporting any spelling or word-choice error, look for that exact string in the essay; if it is not there you have invented it, so drop the finding.
+
+Decide the band from the descriptors and the essay as a whole, then report findings. How many findings you happen to write down must not move the band: a long list means you looked closely, not that the writing is weaker, and finding little does not by itself make a band high.
+
+That is different from error frequency, which is a real descriptor signal. How widespread errors are across the response, and how much work they cost the reader, legitimately sets the band — "slips in nearly every sentence, and I have to re-read" is a band judgment. "I listed nine items" is not. Judge the spread and the reader's effort, not the length of your own list.
+`;
+
+/**
+ * Task Response runs as two narrow passes rather than one broad one.
+ *
+ * Four rewrites of the single pass — including two sharing no wording with the
+ * original — all landed at or below its 14.4% recall against examiner marking.
+ * Splitting the work moves it: development alone reaches 14.6%, coverage alone
+ * 7.1%, and together 19.6% at 2.4 spans per essay against an examiner's 3.5.
+ *
+ * A third pass targeting vague claims scored higher still (39.3% combined) but
+ * emitted 11.5 spans per essay at 16.7% precision, so it is left out until its
+ * trigger is tighter.
+ */
+const TR_DEVELOPMENT_SYSTEM = `
+You are an IELTS Writing Task 2 examiner. You have ONE job: judge whether each body paragraph develops its claim enough for a reader to accept it. Return JSON only.
+
+Ignore everything else. Do not judge coverage of the task, position consistency, relevance, vocabulary, grammar or organisation. Another examiner handles each of those.
+
+Take the body paragraphs in order. For each one, in turn:
+  a. Identify its main claim.
+  b. Ask whether the paragraph gives a reason a reader would accept, or asserts and moves on.
+  c. Ask whether any example shows the claim or merely restates it.
+
+Report every paragraph where the claim is asserted rather than earned. Two paragraphs with the same weakness are two findings, not one — the writer needs to see both. Name what specifically is missing in one plain sentence: the skipped step, the absent consequence, the example that does no work.
+
+A claim a reasonable reader would accept as written needs no finding, however short the paragraph. Reasoning is enough; never demand statistics or named studies.
+
+Write like a marker in the margin: Vietnamese, addressing the writer as “bạn”, ten to twenty words. Keep quoted essay text in English.
+
+Every finding MUST set "criterion" to exactly "task_response".
+`;
+
+const TR_COVERAGE_SYSTEM = `
+You are an IELTS Writing Task 2 examiner. You have ONE job: judge whether the essay answers the exact question asked and holds one position. Return JSON only.
+
+Ignore everything else. Do not judge how deeply ideas are developed, how specific they are, vocabulary, grammar or sentence order. Another examiner handles each of those.
+
+Check, in this order:
+  a. What exactly does the task ask? Name its parts.
+  b. Does the introduction commit to a position, and is it an answer to THIS question rather than a neighbouring one?
+  c. Is any required part of the task missing from the whole essay?
+  d. Does any paragraph drift to a different question part-way through? Quote the sentence where it leaves the task.
+  e. Does the conclusion state the same position as the introduction?
+  f. Is any idea repeated in different words in place of a new one? Quote the second appearance.
+  g. Is the introduction or conclusion taking space the body needed?
+
+Report each problem separately. Do not require both sides unless the task asks for both sides. A qualified position (“I partly agree, except when...”) is a position, not a contradiction.
+
+Write like a marker in the margin: Vietnamese, addressing the writer as “bạn”, ten to twenty words. Keep quoted essay text in English.
+
+Every finding MUST set "criterion" to exactly "task_response".
+`;
+
 const PROMPT_PROFILE_SYSTEM = `
 You are an IELTS Writing Task 2 prompt analyst. Your job is to profile the task, not assess an essay. Return JSON only.
 
@@ -490,6 +645,12 @@ Return:
 
 const PROMPT_PROFILE_ASSESSMENT_GUIDANCE = `
 Use the supplied promptProfile if present.
+
+Read hardRequirements before you read the essay, and take them one at a time.
+Each carries a "question" the essay must answer and a "successTest" describing
+what answering it looks like. For each requirement in turn, find the text in the
+essay that answers it and compare that text against the successTest. Requirements
+you never checked are requirements you cannot have judged.
 
 How to use it:
 - Treat hardRequirements as the exact task demands.
@@ -563,7 +724,14 @@ Read the essay naturally, then inspect the architecture:
 - Privately verify paragraph structure before creating findings: stated purpose, actual content, and whether the two match.
 - Privately check internal paragraph coherence, paragraph-to-paragraph movement, then whole-essay architecture. Report only the level where the reading problem actually lives.
 
-Use these coherence error families as your mental backbone, but report only material errors:
+Two things account for most of what a human marker actually writes under Coherence, so check them first:
+1. Topic sentence: does the paragraph open with a sentence that states its controlling idea, and does the paragraph then deliver that idea? A missing, vague, or misleading topic sentence is the single most common coherence comment.
+2. Paragraphing: is the essay divided into paragraphs that each carry one job? Report a paragraph that bundles two separate arguments, a paragraph so short it cannot develop anything, an absent introduction or conclusion, or a wall of text that should have been split.
+
+Pure reordering problems, where the ideas are right but written in the wrong sequence, are genuinely rare — a few cases in a hundred marked scripts. Report one only when you can quote both endpoints and show the reader must hold the second before the first makes sense. Do not reach for it because nothing else turned up.
+
+Use these coherence error families as your mental backbone. Work through them in
+order and report every one you can evidence:
 - Misordered sequence: the written order makes the reader meet the result before the reason, or the answer before the question.
 - Mixed argument threads: two different lines of reasoning are interleaved, so the reader has to sort them out.
 - Orphaned branch: the paragraph opens or splits into a line of thought, then abandons it.
@@ -579,7 +747,7 @@ Boundary rules:
 - If the essay can be fixed by adding missing reasoning rather than reordering/grouping existing ideas, prefer Task Response.
 - If an outweigh essay merely asserts that one side is stronger, that is Task Response. Report Coherence only when the comparative material exists but is placed, grouped, or sequenced so poorly that the reader cannot follow the comparison.
 - If a cohesion problem remains local and does not change paragraph-level architecture, leave it to Cohesion. Report it here only when the local handoff causes a paragraph-level or essay-level reading break.
-- Macro restructure is rare. Prefer local or mid-range flow findings when only one or two existing chunks need relocation or regrouping.
+- When only one or two existing chunks need relocation or regrouping, write it as a local or mid-range flow finding rather than a macro restructure.
 
 Quote the smallest exact English evidence needed to show the ordering/grouping problem. Explain in plain Vietnamese using “bạn”. If a repair is useful, describe the smallest ordering or grouping change, not a full rewrite.
 
@@ -607,7 +775,8 @@ Inspect every sentence-to-sentence handoff, especially:
 - transitions such as since, therefore, in addition, moreover, however, for example;
 - repeated or substituted keywords that are supposed to carry the same thread.
 
-Use these cohesion error families as your mental backbone, but report only material local issues:
+Use these cohesion error families as your mental backbone. Work through them in
+order and report every one you can evidence:
 - Brand-new theme: a sentence starts from information not yet established.
 - Weak given-new handoff: the new sentence is related but does not clearly continue the previous sentence's rheme.
 - Broken or ambiguous reference: a pronoun or demonstrative has no clear referent.
@@ -631,7 +800,7 @@ Boundary rules:
 - Do not report missing evidence, missing example analysis, or underdeveloped harm as Cohesion; that is Task Response.
 - Do not report large-scale ordering/grouping as Cohesion; that is Coherence.
 - Do not report grammar or vocabulary defects here.
-- Do not inflate every connective issue. If "Moreover" or "In addition" simply introduces a genuinely parallel point, leave it alone.
+- The parallel-point test above is the whole test for ordinary addition; apply it once and move on.
 - Do not flag a new theme just because it is new; flag it only when the sentence presents that new idea as already established and the reader must guess the link.
 
 Quote the exact English handoff that fails, preferably two adjacent small spans. Explain in simple Vietnamese using “bạn”. No praise. No generic "use more linking words" advice.
@@ -654,7 +823,11 @@ If the repair needs adding a verb, completing a fragment, changing clause struct
 
 Collocation test: if the individual words are correct but a fluent speaker would not naturally combine them, report the phrase as a lexical issue. Precision test: explain what the writer likely meant and how the chosen word shifts that meaning. Repetition test: distinguish key-term repetition from lazy repetition; do not penalize necessary repeated task terms.
 Privately inventory the essay's lexical range before deciding the band: basic vocabulary, topic-specific vocabulary, academic/formal vocabulary, paraphrasing attempts, natural expressions, and vocabulary gaps that force vague wording. Do not output that inventory unless it explains the band rationale.
-Use these lexical error families as your mental backbone: wrong word, wrong word form, overgeneral word, lazy repetition, register mismatch, and unnatural collocation. For each finding, explain the gap between intended meaning and actual word choice.
+Use these lexical error families as your mental backbone, in roughly the order a real marker raises them: register and informality, unnatural collocation, wordiness, lazy repetition, wrong meaning, overgeneral or vague word, and wrong word form. For each finding, explain the gap between intended meaning and actual word choice.
+
+Lexical Resource is where a marker has the most to say, usually more than on any other criterion. Inspect the essay word by word rather than settling for the two or three most obvious slips.
+
+A precision or register upgrade is a legitimate minor finding, not a forbidden one. When the writer's wording is understandable but noticeably informal, wordy, or imprecise for academic writing, report it with severity "minor" and give the tighter phrasing. Keep this distinct from a wrong-meaning error, which is at least moderate. What you must not do is invent a preference where the original is already accurate and idiomatic.
 When judging collocation, ask whether a fluent speaker would naturally produce that exact phrase. If they would understand it but rephrase it, it is awkward; if they would not produce it, it is incorrect. Do not turn every less-than-perfect phrase into an error.
 
 Write the explanation in short, plain Vietnamese using “bạn”; retain source and replacement text in English.
@@ -673,7 +846,9 @@ Find only material, local grammar or sentence-control defects: agreement, tense,
 
 Classify severity from the reader's perspective: minor slip, momentary confusion, meaning obscured, or meaning impossible. You do not need to output that label, but your severity and rationale must reflect it. If several errors come from the same rule, mention the pattern in rationaleVi rather than creating broad evidence spans.
 Privately inventory structural range before deciding the band: simple structures, compound structures, complex structures, and structures absent from the essay. Count distinct structure types, not repeated instances.
-Use these grammar error families as your mental backbone: subject-verb agreement, tense, article, countability, preposition, word order, modal/auxiliary, relative clause, pronoun reference, parallel structure, missing/extra words, fragment, run-on/comma splice, punctuation, and dangling modifier.
+Use these grammar error families as your mental backbone, in roughly this order of how often they matter to a real marker: overlong or overloaded sentences that should be split, clause construction and complex-sentence control, fragment and missing verb, run-on and comma splice, agreement and number, tense, parallel structure, voice, word order, then article and preposition.
+
+Sentence control is the largest single family and is easy to miss because every clause may be locally correct. When one sentence carries several ideas at once and a reader must hold too much before reaching the verb, report it and show the split. A sentence past roughly 35 words that stacks more than two clauses is usually the case. This is the one grammar finding where quoting the full sentence is right, because the repair is the split itself: quote the whole sentence and give the divided version as the replacement.
 After scanning errors, look for patterns: systematic rule gaps, isolated slips, whether errors cluster in complex sentences, and whether accuracy drops when the writer attempts more complex structures. Keep this pattern analysis in the band rationale; do not create broad evidence spans for it.
 
 Write the explanation in short, plain Vietnamese using “bạn”; retain source and replacement text in English.
@@ -1513,6 +1688,80 @@ async function runComparisonRewriteOnce(
   return comparison;
 }
 
+export async function generateAssessmentComparison({
+  prompt,
+  essay,
+  analysis,
+}: {
+  prompt: string;
+  essay: string;
+  analysis: WritingAnalysis;
+}) {
+  const reasoningErrors = [
+    ...(analysis.pyramid.macroAnswer.errors || []),
+    ...analysis.pyramid.paragraphs.flatMap(paragraph => [
+      ...(paragraph.errors || []),
+      ...paragraph.sentences.flatMap(sentence => sentence.errors || []),
+    ]),
+    ...(analysis.pyramid.edgeReviews || []).flatMap(review => review.issues || []),
+    ...(analysis.pyramid.coherenceFlows || []).map(flow => flow.issue),
+  ];
+  const languageHighlights = [
+    ...(analysis.cohesionHighlights || []),
+    ...(analysis.lexicalHighlights || []),
+    ...(analysis.grammaticalHighlights || []),
+  ];
+  const confirmedFindings = [
+    ...reasoningErrors.map((finding, index) => ({
+      id: `reasoning:${index + 1}`,
+      problemStrength: finding.problemStrength,
+      errorCode: finding.errorCode,
+      errorLabelVi: finding.errorLabelVi,
+      diagnosisVi: 'whyWrong' in finding ? finding.whyWrong : finding.explanation || finding.message,
+      repairDirectionVi: 'solutionActions' in finding
+        ? finding.solutionActions?.map(action => action.details).join(' ')
+        : 'suggestion' in finding ? finding.suggestion : undefined,
+      evidence: finding.evidenceSpans || [],
+    })),
+    ...languageHighlights.map((finding, index) => ({
+      id: `highlight:${index + 1}`,
+      problemStrength: finding.problemStrength,
+      errorCode: finding.errorCode,
+      errorLabelVi: finding.errorLabelVi,
+      diagnosisVi: finding.feedback,
+      repairDirectionVi: finding.solutionFeedback,
+      replacementText: finding.replacementText,
+      evidence: [{
+        sourceText: finding.sourceText,
+        startChar: finding.startChar,
+        endChar: finding.endChar,
+      }],
+    })),
+  ];
+
+  if (!confirmedFindings.length) {
+    return {
+      targetBand: (analysis.scores.overall >= 8.5 ? 9 : 8) as 8 | 9,
+      revisedEssay: essay,
+      changeSummaryVi: 'Không có lỗi đủ rõ để cần viết lại bản đối chiếu.',
+      preservedStrengthsVi: [],
+      changes: [],
+    } satisfies BandComparison;
+  }
+
+  return runPass<BandComparison>(
+    COMPARISON_SYSTEM,
+    {
+      taskPrompt: prompt,
+      originalEssay: essay,
+      authoritativeScores: analysis.scores,
+      confirmedFindings,
+    },
+    value => comparisonRewriteErrors(value, essay, analysis.scores),
+    'band-8-9-comparison-lazy',
+  );
+}
+
 function scoreConsistencyErrors(
   result: ScoreConsistencyPass,
   initialScores: BandScores,
@@ -1799,6 +2048,7 @@ function pyramidErrorForFinding(
     return match ? [{ paraIndex: Number(match[1]), sentenceIndex: Number(match[2]) }] : [];
   });
   return {
+    problemStrength: finding.problemStrength,
     errorCode: finding.errorCode,
     errorLabelVi,
     type: 'internal',
@@ -1825,6 +2075,67 @@ function pyramidErrorForFinding(
   };
 }
 
+function edgeReviewForCoherenceFinding(
+  essay: string,
+  manifest: EssayParagraphManifest[],
+  decomposition: DecompositionPass,
+  finding: VerifiedFinding,
+): EdgeReview | undefined {
+  const nodeLinks = nodeLinksForFinding(decomposition, finding, essay, manifest);
+  const nodeIds = [
+    ...(nodeLinks.primaryNodeIds || []),
+    ...(nodeLinks.contextNodeIds || []),
+    ...(nodeLinks.affectedNodeIds || []),
+  ];
+  if (!nodeIds.length) return undefined;
+
+  const fromNodeId = nodeIds[0];
+  const toNodeId = nodeIds[1] || fromNodeId;
+  const errorLabelVi = readableErrorLabelVi(finding);
+  return {
+    edgeId: finding.id,
+    fromNodeId,
+    toNodeId,
+    relationshipTag: errorLabelVi,
+    expectedRelationship: finding.repairDirectionVi,
+    actualRelationship: finding.diagnosisVi,
+    status: finding.severity === 'major' ? 'broken' : 'weak',
+    assessment: finding.diagnosisVi,
+    issues: [{
+      problemStrength: finding.problemStrength,
+      id: finding.id,
+      errorCode: finding.errorCode,
+      errorLabelVi,
+      type: 'relational',
+      title: errorLabelVi,
+      whyWrong: finding.diagnosisVi,
+      impactOnPurpose: finding.readerEffectVi,
+      impactOnReader: finding.readerEffectVi,
+      affectedNodes: {
+        paragraphs: [...new Set(finding.evidence.map(item => item.paragraphIndex))],
+        sentences: nodeIds.flatMap(nodeId => {
+          const match = /^sentence-(\d+)-(\d+)$/.exec(nodeId);
+          return match ? [{ paraIndex: Number(match[1]), sentenceIndex: Number(match[2]) }] : [];
+        }),
+      },
+      solutionActions: [{
+        type: 'rewrite_node',
+        label: 'Làm rõ mạch lập luận',
+        details: finding.repairDirectionVi,
+        targetNodeIds: nodeIds,
+        whyBetter: finding.readerEffectVi,
+      }],
+      comment: {
+        bodyVi: finding.diagnosisVi,
+        solutionBodyVi: finding.repairDirectionVi,
+      },
+      evidenceSpans: exactEvidenceSpans(essay, manifest, finding),
+      nodeLinks,
+      descriptorAnchor: descriptorAnchor(finding.errorCode),
+    }],
+  };
+}
+
 function emptyReview(nodeId: string, job: string): NodeReview {
   return { nodeId, status: 'works', job, assessment: '', issues: [] };
 }
@@ -1837,6 +2148,10 @@ function buildTaskPass(
   manifest: EssayParagraphManifest[],
 ): TaskPass {
   const taskFindings = findings.filter(finding => finding.criterion === 'task_response');
+  const coherenceEdgeReviews = findings
+    .filter(finding => finding.criterion === 'coherence')
+    .map(finding => edgeReviewForCoherenceFinding(essay, manifest, decomposition, finding))
+    .filter((review): review is EdgeReview => Boolean(review));
   const macroCodes = new Set(['unclear_position', 'partial_prompt_coverage', 'unbalanced_coverage', 'unsupported_comparative_judgment', 'off_task']);
   const paragraphCodes = new Set(['unclear_paragraph_job']);
   const macroErrors: PyramidError[] = [];
@@ -1937,7 +2252,7 @@ function buildTaskPass(
     taskCoverage,
     macroAnswer,
     paragraphs,
-    edgeReviews: [],
+    edgeReviews: coherenceEdgeReviews,
   };
 }
 
@@ -1982,6 +2297,7 @@ function highlightForFinding(
     : readableErrorLabelVi(finding);
   const replacement = finding.replacementText?.trim();
   return {
+    problemStrength: finding.problemStrength,
     startChar: Math.max(0, startChar),
     endChar: Math.max(0, startChar) + (evidence?.sourceText.length || 0),
     errorCode: finding.errorCode,
@@ -2093,13 +2409,16 @@ function overallAssessment(
     grammatical_range_accuracy: 'grammaticalRange',
   };
   const priorities = findings
-    .filter(finding => finding.severity !== 'minor' && !isStyleOpinionFinding(finding))
-    .slice(0, 5)
+    .filter(finding => (
+      finding.problemStrength === 'core_problem'
+      || (!finding.problemStrength && finding.severity !== 'minor')
+    ) && !isStyleOpinionFinding(finding))
     .map(finding => ({
       criterion: criterionMap[finding.criterion],
       titleVi: readableErrorLabelVi(finding),
       actionVi: finding.repairDirectionVi,
       evidenceIds: [finding.id],
+      problemStrength: finding.problemStrength,
     }));
   return {
     summaryVi: findings.length
@@ -2169,10 +2488,11 @@ function sourceContext(prompt: string, essay: string, manifest: EssayParagraphMa
 }
 
 const promptProfileCache = new Map<string, PromptProfilePass>();
+const PROMPT_PROFILE_SCHEMA_VERSION = 'v8.1-2026-07-28';
 
 function promptProfileCacheKey(prompt: string) {
   return createHash('sha256')
-    .update(prompt.replace(/\s+/g, ' ').trim().toLocaleLowerCase('en'))
+    .update(`${PROMPT_PROFILE_SCHEMA_VERSION}\u0000${prompt.replace(/\s+/g, ' ').trim().toLocaleLowerCase('en')}`)
     .digest('hex');
 }
 
@@ -2246,7 +2566,6 @@ function promptProfileErrors(result: PromptProfilePass) {
   ];
   if (!promptTypes.includes(result.promptType)) errors.push('Prompt profile needs a valid promptType.');
   if (!result.taskInPlainEnglish?.trim()) errors.push('Prompt profile needs taskInPlainEnglish.');
-  if (!result.hardRequirements?.length) errors.push('Prompt profile needs hardRequirements.');
   const ids = new Set<string>();
   const collect = (group: string, items: Array<Record<string, unknown>> | undefined) => {
     (items || []).forEach((item, index) => {
@@ -2269,6 +2588,7 @@ function promptProfileErrors(result: PromptProfilePass) {
   result.conditionalRequirements = result.conditionalRequirements || [];
   result.optionalAngles = result.optionalAngles || [];
   result.commonTraps = result.commonTraps || [];
+  if (!result.hardRequirements.length) errors.push('Prompt profile needs at least one complete hardRequirement.');
   return errors;
 }
 
@@ -2331,7 +2651,8 @@ async function readStoredPromptProfile(hash: string): Promise<PromptProfilePass 
       databaseId,
       collectionId,
       promptProfileDocumentId(hash),
-    ) as { profileJson?: unknown };
+    ) as { profileJson?: unknown; version?: unknown };
+    if (document.version !== PROMPT_PROFILE_SCHEMA_VERSION) return undefined;
     const profileJson = typeof document.profileJson === 'string'
       ? document.profileJson
       : undefined;
@@ -2362,7 +2683,7 @@ async function writeStoredPromptProfile(
       promptHash: hash,
       promptText: prompt,
       profileJson: JSON.stringify(profile),
-      version: 'v8',
+      version: PROMPT_PROFILE_SCHEMA_VERSION,
     };
     try {
       await serverDatabases.updateDocument(databaseId, collectionId, documentId, payload);
@@ -2477,6 +2798,16 @@ function replacementAlreadyExistsInEvidence(finding: VerifiedFinding) {
   return finding.evidence.some(item => item.sourceText.includes(replacement));
 }
 
+/** Wording that marks a finding as a real error rather than a preference. */
+const HARD_ERROR_LANGUAGE = /không đúng nghĩa|sai nghĩa|sai chính tả|sai cấu trúc|sai ngữ pháp|sai thì|dùng sai|thiếu chủ ngữ|thiếu động từ|làm hỏng cấu trúc|không đúng ngữ pháp|wrong meaning|incorrect meaning|ungrammatical|misspelled/;
+
+/** Wording that marks a finding as an optional upgrade the writer could ignore. */
+const STYLE_OPINION_LANGUAGE = /hoàn toàn chính xác|mặc dù[^.]{0,100}đúng|cũng chính xác|không phải lỗi chắc chắn|tự nhiên hơn|phổ biến hơn|người ta thường dùng|có thể cải thiện|sẽ mượt hơn|style preference|stylistic preference|more natural|more common|would choose|i would choose|could improve|would improve/;
+
+function statesHardError(text: string) {
+  return HARD_ERROR_LANGUAGE.test(text);
+}
+
 function isStyleOpinionFinding(finding: VerifiedFinding) {
   if (
     finding.criterion !== 'lexical_resource'
@@ -2484,9 +2815,7 @@ function isStyleOpinionFinding(finding: VerifiedFinding) {
   ) return false;
 
   const text = findingCombinedText(finding);
-  const optionalLanguage = /hoàn toàn chính xác|mặc dù[^.]{0,100}đúng|cũng chính xác|không phải lỗi chắc chắn|tự nhiên hơn|phổ biến hơn|người ta thường dùng|style preference|stylistic preference|more natural|more common|would choose|i would choose/.test(text);
-  const hardErrorLanguage = /không đúng nghĩa|sai nghĩa|sai cấu trúc|sai ngữ pháp|làm hỏng cấu trúc|wrong meaning|incorrect meaning|ungrammatical/.test(text);
-  return optionalLanguage && !hardErrorLanguage;
+  return STYLE_OPINION_LANGUAGE.test(text) && !statesHardError(text);
 }
 
 function removeUnrequiredVerifiedMacroComparisonFindings(
@@ -2497,31 +2826,33 @@ function removeUnrequiredVerifiedMacroComparisonFindings(
   return findings.filter(finding => finding.errorCode !== 'unsupported_comparative_judgment');
 }
 
-function filterLowSignalFindingsForHighBand(findings: VerifiedFinding[], scores: BandScores) {
+/**
+ * At band 8+ the report should carry only what an examiner would still raise:
+ * genuine errors, not optional upgrades. Two rules here used to run backwards.
+ * A finding recognised as a style opinion was kept rather than dropped, and the
+ * lexical drop pattern matched "đúng nghĩa" inside "không đúng nghĩa", so real
+ * wrong-meaning errors were discarded while preferences survived. Together with
+ * the blanket removal of every minor finding, a clean band-8 essay could come
+ * back with nothing at all.
+ *
+ * A stated hard error now always survives, whatever its severity; only opinions
+ * and improvement suggestions are removed.
+ */
+export function filterLowSignalFindingsForHighBand(findings: VerifiedFinding[], scores: BandScores) {
   return findings.filter(finding => {
     if (finding.verdict !== 'confirmed') return false;
     const band = bandForFindingCriterion(scores, finding.criterion);
     if (band < 8) return true;
-    if (isStyleOpinionFinding(finding)) return true;
 
     const text = findingCombinedText(finding);
-    if (
-      finding.criterion === 'lexical_resource'
-      && /hoàn toàn chính xác|đúng nghĩa|tự nhiên hơn|phổ biến hơn|người ta thường dùng|stylistic|style|preference|more natural|more common/.test(text)
-    ) return false;
+    if (statesHardError(text)) return true;
+    if (isStyleOpinionFinding(finding)) return false;
     if (
       finding.criterion === 'grammatical_range_accuracy'
-      && (
-        replacementAlreadyExistsInEvidence(finding)
-        || /cũng chính xác|tự nhiên hơn|phổ biến hơn|một số ngữ cảnh|sai sót nhỏ về sự trôi chảy|style|preference|more natural|more common/.test(text)
-      )
+      && replacementAlreadyExistsInEvidence(finding)
     ) return false;
-    if (
-      finding.criterion === 'cohesion'
-      && /mặc dù hai ý liên quan|có thể cải thiện|thêm một cụm từ liên kết|could improve|would improve/.test(text)
-    ) return false;
-    if (finding.severity !== 'minor') return true;
-    return false;
+    if (STYLE_OPINION_LANGUAGE.test(text)) return false;
+    return true;
   });
 }
 
@@ -2581,6 +2912,61 @@ function focusedFindingErrors(
     }
   });
   errors.push(...languageFindingSpanErrors(result));
+  return errors;
+}
+
+function v7CandidateFindingErrors(
+  result: V7CriterionPass,
+  allowedCriteria: FindingCriterion[],
+  essay: string,
+  manifest: EssayParagraphManifest[],
+) {
+  const errors: string[] = [];
+  if (!Array.isArray(result.candidateFindings)) {
+    errors.push('V7 criterion pass needs candidateFindings as an array.');
+    return errors;
+  }
+  if (ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength') {
+    result.candidateFindings.forEach((finding, index) => {
+      if (finding.problemStrength !== 'core_problem' && finding.problemStrength !== 'worth_noting') {
+        errors.push(`candidateFindings: Finding ${finding.id || index + 1} needs problemStrength core_problem or worth_noting.`);
+      }
+    });
+  }
+
+  const candidatePass: FocusedFindingPass = {
+    findings: result.candidateFindings,
+  };
+  errors.push(...focusedFindingErrors(candidatePass, allowedCriteria, essay, manifest).map(error => (
+    `candidateFindings: ${error}`
+  )));
+  result.candidateFindings = candidatePass.findings;
+
+  errors.push(...meaningfulNonLanguageEvidenceErrors(candidatePass, 'candidateFindings'));
+
+  return errors;
+}
+
+function meaningfulNonLanguageEvidenceErrors(
+  result: FocusedFindingPass,
+  label: string,
+) {
+  const errors: string[] = [];
+  (result.findings || []).forEach((finding, index) => {
+    const primary = finding.evidence?.find(item => item.role === 'primary') || finding.evidence?.[0];
+    const sourceText = primary?.sourceText?.trim() || '';
+    const tokenCount = sourceText.match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g)?.length || 0;
+
+    if (
+      finding.criterion !== 'lexical_resource'
+      && finding.criterion !== 'grammatical_range_accuracy'
+      && (sourceText.length < 20 || tokenCount < 4)
+    ) {
+      errors.push(
+        `${label}: Finding ${finding.id || index + 1} needs a meaningful phrase or clause as evidence, not a single character or fragment.`,
+      );
+    }
+  });
   return errors;
 }
 
@@ -2716,7 +3102,33 @@ function v7CriterionPassErrors(
   result.findings = criterion === 'task_response'
     ? (result.findings || []).map(finding => ({ ...finding, criterion }))
     : (result.findings || []).filter(finding => finding.criterion === criterion);
-  const errors = focusedFindingErrors(result, [criterion], essay, manifest);
+  result.candidateFindings = criterion === 'task_response'
+    ? (result.candidateFindings || []).map(finding => ({ ...finding, criterion }))
+    : (result.candidateFindings || []).filter(finding => finding.criterion === criterion);
+  const candidateOnly = (
+    ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v8-candidate-only'
+    || ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v10-stable-candidate'
+    || ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v11-core-worth'
+    || ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength'
+    || (
+      ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v9-hybrid-candidate'
+      && criterion !== 'task_response'
+      && criterion !== 'coherence'
+    )
+  );
+  const errors = candidateOnly
+    ? v7CandidateFindingErrors(result, [criterion], essay, manifest)
+    : [
+        ...focusedFindingErrors(result, [criterion], essay, manifest),
+        ...meaningfulNonLanguageEvidenceErrors(result, 'findings'),
+        ...v7CandidateFindingErrors(result, [criterion], essay, manifest),
+      ];
+  if (candidateOnly) {
+    // Candidate-only experiments measure detection without forcing the model
+    // to select a final subset. Copy candidates into findings only after
+    // validation so the existing assembly path can still build an analysis.
+    result.findings = result.candidateFindings || [];
+  }
   if (!Number.isInteger(result.band) || result.band < 0 || result.band > 9) {
     errors.push('V7 criterion band must be a whole number from 0 to 9.');
   }
@@ -3002,16 +3414,55 @@ function canonicalizeFocusedFindingPass(
   manifest: EssayParagraphManifest[],
   idPrefix: string,
 ): QuoteFirstFinding[] {
-  return (result.findings || []).map((finding, index) => {
-    const canonicalFinding: QuoteFirstFinding = {
-      ...finding,
-      id: `${idPrefix}:${index + 1}`,
-      evidence: finding.evidence.flatMap(evidence => (
-      resolveEvidenceListOrThrow(essay, manifest, evidence, `${idPrefix}:${index + 1}`)
-      )),
-    };
-    return normalizeLanguageReplacementAgainstContext(canonicalFinding, essay, manifest);
+  // One unresolvable quote used to abort the entire assessment after every
+  // specialist call had already been paid for. A finding whose quote cannot be
+  // located in the essay cannot be rendered or anchored either, so it is
+  // dropped and the rest of the analysis survives.
+  return (result.findings || []).flatMap((finding, index) => {
+    const id = `${idPrefix}:${index + 1}`;
+    let evidence;
+    try {
+      evidence = finding.evidence.flatMap(item => resolveEvidenceListOrThrow(essay, manifest, item, id));
+    } catch (error) {
+      if (process.env.ASSESSMENT_LLM_LOG_USAGE === 'true' || process.env.ASSESSMENT_BENCHMARK_MODE === 'true') {
+        console.warn('[assessment-unresolvable-evidence]', error instanceof Error ? error.message : String(error));
+      }
+      return [];
+    }
+    if (!evidence.length) return [];
+    const canonicalFinding: QuoteFirstFinding = { ...finding, id, evidence };
+    return [normalizeLanguageReplacementAgainstContext(canonicalFinding, essay, manifest)];
   });
+}
+
+function evidenceSignatureForFinding(finding: QuoteFirstFinding) {
+  const primary = finding.evidence.find(item => item.role === 'primary') || finding.evidence[0];
+  return `${finding.criterion}|${(primary?.sourceText || '').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim()}`;
+}
+
+function severityEvidenceSignatureForFinding(finding: QuoteFirstFinding) {
+  const primary = finding.evidence.find(item => item.role === 'primary') || finding.evidence[0];
+  return `${finding.severity}|${finding.criterion}|${(primary?.sourceText || '').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim()}`;
+}
+
+function problemStrengthEvidenceSignatureForFinding(finding: QuoteFirstFinding) {
+  const primary = finding.evidence.find(item => item.role === 'primary') || finding.evidence[0];
+  const strength = finding.problemStrength || 'unlabeled';
+  return `${strength}|${finding.criterion}|${(primary?.sourceText || '').toLocaleLowerCase('en').replace(/\s+/g, ' ').trim()}`;
+}
+
+function canonicalizeCandidateFindingPass(
+  result: V7CriterionPass,
+  essay: string,
+  manifest: EssayParagraphManifest[],
+  idPrefix: string,
+): QuoteFirstFinding[] {
+  return canonicalizeFocusedFindingPass(
+    { findings: result.candidateFindings || [] },
+    essay,
+    manifest,
+    idPrefix,
+  );
 }
 
 export function normalizeLanguageReplacementAgainstContext(
@@ -3151,6 +3602,7 @@ function verifiedFindingsFromQuoteAudit(
         id: finding.id,
         criterion: finding.criterion,
         severity: finding.severity,
+        problemStrength: finding.problemStrength,
         confidence: 0.9,
         evidence: finding.evidence as ExaminerEvidence[],
         requirementIds: linkedRequirementIds,
@@ -4334,17 +4786,46 @@ export async function runWritingAssessmentPipelineV4({
 }
 
 function localCompatibilityDecomposition(manifest: EssayParagraphManifest[]): DecompositionPass {
+  const inferRole = (
+    text: string,
+    paragraphIndex: number,
+    sentenceIndex: number,
+  ): DecompositionPass['paragraphs'][number]['chunks'][number]['role'] => {
+    const normalized = text.trim().toLowerCase();
+    const isIntroduction = paragraphIndex === 0;
+    const isConclusion = manifest.length > 1 && paragraphIndex === manifest.length - 1;
+
+    if (/\b(for example|for instance|such as|to illustrate)\b/.test(normalized)) return 'example';
+    if (/^(although|though|even though|while|admittedly)\b/.test(normalized)) return 'concession';
+    if (/^(however|nevertheless|nonetheless|on the other hand|by contrast|in contrast)\b/.test(normalized)) return 'contrast';
+    if (/\b(compared with|compared to|whereas|more than|less than)\b/.test(normalized)) return 'comparison';
+    if (/^(therefore|thus|hence|consequently|as a result|overall)\b/.test(normalized)) {
+      return isConclusion ? 'final_stance' : 'mini_conclusion';
+    }
+    if (/\b(because|since|due to|owing to)\b/.test(normalized)) return 'reason';
+    if (/\b(this means|which means|thereby|leads? to|results? in|allows? them|enables? them)\b/.test(normalized)) {
+      return 'mechanism';
+    }
+    if (isConclusion) return sentenceIndex === 0 ? 'mini_conclusion' : 'final_stance';
+    if (isIntroduction) return sentenceIndex === 0 ? 'setup' : 'final_stance';
+    return sentenceIndex === 0 ? 'claim' : 'explanation';
+  };
+
   return {
     paragraphs: manifest.map(paragraph => ({
       index: paragraph.index,
-      label: paragraph.index === 0 ? 'Introduction' : `Paragraph ${paragraph.index + 1}`,
+      label: paragraph.index === 0
+        ? 'Introduction'
+        : paragraph.index === manifest.length - 1
+          ? 'Conclusion'
+          : `Body ${paragraph.index}`,
       chunks: paragraph.sentences.map((sentence, index) => ({
         nodeId: `sentence-${paragraph.index}-${index + 1}`,
         sourceSentenceIndex: sentence.index,
         sourceText: sentence.text,
         startChar: sentence.startChar,
         endChar: sentence.endChar,
-        role: 'claim',
+        role: inferRole(sentence.text, paragraph.index, index),
         simplifiedIdea: sentence.text,
       })),
     })),
@@ -5119,7 +5600,7 @@ function synthesizeCoverageFindings(
   return [...existing, ...synthetic];
 }
 
-function compactPromptProfile(profile: PromptProfilePass) {
+export function compactPromptProfile(profile: PromptProfilePass) {
   return {
     promptType: profile.promptType,
     taskInPlainEnglish: profile.taskInPlainEnglish,
@@ -5136,10 +5617,14 @@ function fallbackCriterionPass(
 ): V7CriterionPass {
   const message = reason instanceof Error ? reason.message : String(reason);
   const criterionName = criterion.replace(/_/g, ' ');
+  if (process.env.ASSESSMENT_LLM_LOG_USAGE === 'true' || process.env.ASSESSMENT_BENCHMARK_MODE === 'true') {
+    console.warn('[assessment-specialist-fallback]', JSON.stringify({ criterion, message }));
+  }
   return {
     band,
-    rationaleVi: `${criterionName} pass không hoàn tất ổn định (${message}). Điểm tạm giữ theo lượt đọc đầu và không tự bịa thêm lỗi.`,
+    rationaleVi: `${criterionName} chưa hoàn tất trong lượt này. Điểm tạm giữ theo lượt đọc đầu; phần kết quả được đánh dấu là chưa đầy đủ.`,
     findings: [],
+    candidateFindings: [],
   };
 }
 
@@ -5156,25 +5641,189 @@ function settledValueOrThrow<T>(
  * prompt-specific obligations once, then the natural read and five criterion
  * specialists use it as a diagnostic lens rather than a rigid checklist.
  */
+/**
+ * Drop highlights whose quote is not literally in the essay, instead of failing
+ * the whole assessment.
+ *
+ * About one lexical or grammar quote in eight comes back tidied -- the model
+ * silently corrects the student's own typo while quoting it, so "communicateion"
+ * is returned as "communication" and no longer matches. The contract validator
+ * treats that as fatal, so three bad quotes out of twenty discarded a complete
+ * analysis that had already cost every specialist call.
+ *
+ * A highlight that cannot be located cannot be rendered either, so losing it
+ * costs the student nothing. Losing the other seventeen costs them everything.
+ */
+function dropUnquotableHighlights(
+  analysis: WritingAnalysis,
+  manifest: EssayParagraphManifest[],
+): WritingAnalysis {
+  // Mirror the contract's own rule exactly: the quote must sit inside a single
+  // sentence, not merely somewhere in the essay. A whole-essay containment
+  // check passes quotes that span a sentence boundary and the validator then
+  // rejects them anyway.
+  const sentences = manifest.flatMap(paragraph => paragraph.sentences.map(sentence => sentence.text));
+  const quotable = <T extends { sourceText?: string }>(highlight: T) => {
+    const quote = highlight.sourceText;
+    return Boolean(quote) && sentences.some(sentence => sentence.includes(quote as string));
+  };
+  return {
+    ...analysis,
+    cohesionHighlights: (analysis.cohesionHighlights || []).filter(quotable),
+    lexicalHighlights: (analysis.lexicalHighlights || []).filter(quotable),
+    grammaticalHighlights: (analysis.grammaticalHighlights || []).filter(quotable),
+  };
+}
+
+function mentorAuditUnits(
+  manifest: EssayParagraphManifest[],
+  promptProfile: PromptProfilePass,
+) {
+  const sentences = manifest.flatMap(paragraph => paragraph.sentences.map((sentence, sentenceOffset) => ({
+    id: `p${paragraph.index}-s${sentence.index}`,
+    paragraphIndex: paragraph.index,
+    sentenceIndex: sentence.index,
+    text: sentence.text,
+    previousSentence: sentenceOffset > 0 ? paragraph.sentences[sentenceOffset - 1]?.text : null,
+    nextSentence: sentenceOffset < paragraph.sentences.length - 1
+      ? paragraph.sentences[sentenceOffset + 1]?.text
+      : null,
+  })));
+  const linkingPattern = /\b(?:however|therefore|moreover|furthermore|additionally|consequently|thus|because|although|for example|for instance|in contrast|on the other hand|firstly|secondly|finally)\b/gi;
+  const referencePattern = /\b(?:this|these|that|those|it|they|such|former|latter)\b/gi;
+  const sentencePairs = manifest.flatMap(paragraph => paragraph.sentences.slice(0, -1).map((sentence, index) => {
+    const right = paragraph.sentences[index + 1];
+    const joined = `${sentence.text} ${right.text}`;
+    return {
+      id: `p${paragraph.index}-pair-${sentence.index}-${right.index}`,
+      paragraphIndex: paragraph.index,
+      leftSentenceId: `p${paragraph.index}-s${sentence.index}`,
+      rightSentenceId: `p${paragraph.index}-s${right.index}`,
+      leftText: sentence.text,
+      rightText: right.text,
+      linkingDevices: [...joined.matchAll(linkingPattern)].map(match => match[0]),
+      referenceWords: [...right.text.matchAll(referencePattern)].map(match => match[0]),
+    };
+  }));
+  const paragraphs = manifest.map(paragraph => ({
+    id: `paragraph-${paragraph.index}`,
+    paragraphIndex: paragraph.index,
+    openingSentence: paragraph.sentences[0]?.text || paragraph.text,
+    bodySentences: paragraph.sentences.slice(1).map(sentence => sentence.text),
+    completeText: paragraph.text,
+  }));
+  const paragraphTransitions = manifest.slice(0, -1).map((paragraph, index) => {
+    const right = manifest[index + 1];
+    return {
+      id: `transition-${paragraph.index}-${right.index}`,
+      leftParagraphId: `paragraph-${paragraph.index}`,
+      rightParagraphId: `paragraph-${right.index}`,
+      leftClosingSentence: paragraph.sentences.at(-1)?.text || paragraph.text,
+      rightOpeningSentence: right.sentences[0]?.text || right.text,
+    };
+  });
+  const words = sentences.flatMap(sentence => (
+    sentence.text.toLocaleLowerCase('en').match(/[a-z]+(?:'[a-z]+)?/g) || []
+  ));
+  const frequencies = words.reduce<Record<string, number>>((counts, word) => {
+    counts[word] = (counts[word] || 0) + 1;
+    return counts;
+  }, {});
+
+  return {
+    sentences,
+    sentencePairs,
+    paragraphs,
+    paragraphTransitions,
+    essayStructure: {
+      paragraphCount: manifest.length,
+      paragraphIds: paragraphs.map(paragraph => paragraph.id),
+    },
+    claimChains: paragraphs.slice(1, Math.max(1, paragraphs.length - 1)),
+    promptRequirements: promptProfile.hardRequirements,
+    lexicalInventory: Object.entries(frequencies)
+      .filter(([, count]) => count >= 2)
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([word, count]) => ({ word, count })),
+  };
+}
+
+function stableLiteAuditUnits(manifest: EssayParagraphManifest[]) {
+  const sentences = manifest.flatMap(paragraph => paragraph.sentences.map(sentence => ({
+    paragraphIndex: paragraph.index,
+    sentenceIndex: sentence.index,
+    text: sentence.text,
+  })));
+  const linkingPattern = /\b(?:however|therefore|moreover|furthermore|additionally|consequently|thus|because|although|for example|for instance|in contrast|on the other hand|firstly|secondly|finally)\b/gi;
+  const referencePattern = /\b(?:this|these|that|those|it|they|such|former|latter)\b/gi;
+  const sentencePairs = manifest.flatMap(paragraph => paragraph.sentences.slice(0, -1).map((sentence, index) => {
+    const right = paragraph.sentences[index + 1];
+    const joined = `${sentence.text} ${right.text}`;
+    return {
+      paragraphIndex: paragraph.index,
+      leftText: sentence.text,
+      rightText: right.text,
+      linkingDevices: [...joined.matchAll(linkingPattern)].map(match => match[0]),
+      referenceWords: [...right.text.matchAll(referencePattern)].map(match => match[0]),
+    };
+  }));
+  const paragraphs = manifest.map(paragraph => ({
+    paragraphIndex: paragraph.index,
+    openingSentence: paragraph.sentences[0]?.text || paragraph.text,
+    closingSentence: paragraph.sentences.at(-1)?.text || paragraph.text,
+  }));
+  const paragraphTransitions = manifest.slice(0, -1).map((paragraph, index) => {
+    const right = manifest[index + 1];
+    return {
+      leftParagraphIndex: paragraph.index,
+      rightParagraphIndex: right.index,
+      leftClosingSentence: paragraph.sentences.at(-1)?.text || paragraph.text,
+      rightOpeningSentence: right.sentences[0]?.text || right.text,
+    };
+  });
+
+  return {
+    sentences,
+    sentencePairs,
+    paragraphs,
+    paragraphTransitions,
+  };
+}
+
 export async function runWritingAssessmentPipelineV8({
   prompt,
   essay,
   manifest,
+  includeComparison = false,
+  onIncompletePasses,
 }: {
   prompt: string;
   essay: string;
   manifest: EssayParagraphManifest[];
+  includeComparison?: boolean;
+  onIncompletePasses?: (passes: string[]) => void;
 }): Promise<WritingAnalysis> {
   const promptProfile = await getPromptProfile(prompt);
   const profileForAssessment = compactPromptProfile(promptProfile);
   const initialSource = { taskPrompt: prompt, essay, promptProfile: profileForAssessment };
-  const specialistSource = { taskPrompt: prompt, essay, promptProfile: profileForAssessment };
+  const specialistSource = {
+    taskPrompt: prompt,
+    essay,
+    promptProfile: profileForAssessment,
+    ...(['v3-mentor-units', 'v4-stable-areas', 'v6-mixed-stable', 'v7-candidate-pool', 'v8-candidate-only', 'v9-hybrid-candidate', 'v10-stable-candidate', 'v11-core-worth', 'v12-free-strength'].includes(ACTIVE_ASSESSMENT_PROMPT_VERSION)
+      ? { auditUnits: mentorAuditUnits(manifest, promptProfile) }
+      : {}),
+    ...(ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v5-stable-lite'
+      ? { auditUnits: stableLiteAuditUnits(manifest) }
+      : {}),
+  };
 
   const [
     initialSettled,
-    taskSettled,
-    coherenceSettled,
+    taskDevelopmentSettled,
+    taskCoverageSettled,
     cohesionSettled,
+    coherenceSettled,
     lexicalSettled,
     grammarSettled,
   ] = await Promise.allSettled([
@@ -5185,47 +5834,85 @@ export async function runWritingAssessmentPipelineV8({
       'initial-reading-v8',
     ),
     runPass<V7CriterionPass>(
-      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_TASK_RESPONSE_SYSTEM}`,
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_TASK_RESPONSE_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
       specialistSource,
       value => v7CriterionPassErrors(value, 'task_response', essay, manifest),
-      'task-response-v8',
+      'task-response-development-v8',
     ),
     runPass<V7CriterionPass>(
-      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_COHERENCE_SYSTEM}`,
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${TR_COVERAGE_SYSTEM}\n${CRITERION_SCORE_SYSTEMS.taskAchievement}\n${V8_SPECIALIST_DISCIPLINE}\n${V7_CRITERION_OUTPUT}`,
       specialistSource,
-      value => v7CriterionPassErrors(value, 'coherence', essay, manifest),
-      'coherence-v8',
+      value => v7CriterionPassErrors(value, 'task_response', essay, manifest),
+      'task-response-coverage-v8',
     ),
     runPass<V7CriterionPass>(
-      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_COHESION_SYSTEM}`,
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_COHESION_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
       specialistSource,
       value => v7CriterionPassErrors(value, 'cohesion', essay, manifest),
       'cohesion-v8',
     ),
     runPass<V7CriterionPass>(
-      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_LEXICAL_RESOURCE_SYSTEM}`,
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_COHERENCE_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
+      specialistSource,
+      value => v7CriterionPassErrors(value, 'coherence', essay, manifest),
+      'coherence-v8',
+    ),
+    runPass<V7CriterionPass>(
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_LEXICAL_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
       specialistSource,
       value => v7CriterionPassErrors(value, 'lexical_resource', essay, manifest),
       'lexical-resource-v8',
     ),
     runPass<V7CriterionPass>(
-      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_GRAMMATICAL_RANGE_SYSTEM}`,
+      `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_GRAMMAR_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
       specialistSource,
       value => v7CriterionPassErrors(value, 'grammatical_range_accuracy', essay, manifest),
       'grammar-v8',
     ),
   ]);
 
+  const incompletePasses = [
+    ['initial-reading-v8', initialSettled],
+    ['task-response-development-v8', taskDevelopmentSettled],
+    ['task-response-coverage-v8', taskCoverageSettled],
+    ['cohesion-v8', cohesionSettled],
+    ['coherence-v8', coherenceSettled],
+    ['lexical-resource-v8', lexicalSettled],
+    ['grammar-v8', grammarSettled],
+  ].flatMap(([label, settled]) => (
+    (settled as PromiseSettledResult<unknown>).status === 'rejected' ? [label as string] : []
+  ));
   const initialRaw = settledValueOrThrow(initialSettled, 'initial-reading-v8');
-  const taskRaw = taskSettled.status === 'fulfilled'
-    ? taskSettled.value
-    : fallbackCriterionPass('task_response', initialRaw.scores.taskAchievement, taskSettled.reason);
-  const coherenceRaw = coherenceSettled.status === 'fulfilled'
-    ? coherenceSettled.value
-    : fallbackCriterionPass('coherence', initialRaw.scores.coherenceCohesion, coherenceSettled.reason);
+  // The two Task Response passes cover different ground by construction, so
+  // their findings merge rather than compete. The band is theirs to agree on;
+  // when only one pass survives, its band stands alone.
+  const taskDevelopmentRaw = taskDevelopmentSettled.status === 'fulfilled'
+    ? taskDevelopmentSettled.value
+    : fallbackCriterionPass('task_response', initialRaw.scores.taskAchievement, taskDevelopmentSettled.reason);
+  const taskCoverageRaw = taskCoverageSettled.status === 'fulfilled'
+    ? taskCoverageSettled.value
+    : fallbackCriterionPass('task_response', initialRaw.scores.taskAchievement, taskCoverageSettled.reason);
+  const taskBands = [taskDevelopmentSettled, taskCoverageSettled]
+    .filter(settled => settled.status === 'fulfilled')
+    .map(settled => (settled as PromiseFulfilledResult<V7CriterionPass>).value.band);
+  const taskRaw: V7CriterionPass = {
+    band: taskBands.length
+      ? Math.round(taskBands.reduce((sum, band) => sum + band, 0) / taskBands.length)
+      : initialRaw.scores.taskAchievement,
+    rationaleVi: [taskDevelopmentRaw.rationaleVi, taskCoverageRaw.rationaleVi]
+      .filter(Boolean).join(' ').trim(),
+    findings: [...(taskDevelopmentRaw.findings || []), ...(taskCoverageRaw.findings || [])],
+    candidateFindings: [
+      ...(taskDevelopmentRaw.candidateFindings || []),
+      ...(taskCoverageRaw.candidateFindings || []),
+    ],
+  };
   const cohesionRaw = cohesionSettled.status === 'fulfilled'
     ? cohesionSettled.value
     : fallbackCriterionPass('cohesion', initialRaw.scores.coherenceCohesion, cohesionSettled.reason);
+  const coherenceRaw = coherenceSettled.status === 'fulfilled'
+    ? coherenceSettled.value
+    : fallbackCriterionPass('coherence', initialRaw.scores.coherenceCohesion, coherenceSettled.reason);
   const lexicalRaw = lexicalSettled.status === 'fulfilled'
     ? lexicalSettled.value
     : fallbackCriterionPass('lexical_resource', initialRaw.scores.lexicalResource, lexicalSettled.reason);
@@ -5233,16 +5920,127 @@ export async function runWritingAssessmentPipelineV8({
     ? grammarSettled.value
     : fallbackCriterionPass('grammatical_range_accuracy', initialRaw.scores.grammaticalRange, grammarSettled.reason);
 
+  let mentorAcceptedFindingIds: Set<string> | undefined;
+  if (ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v3-mentor-units') {
+    const rawCandidates = [
+      ...(taskRaw.findings || []),
+      ...(cohesionRaw.findings || []),
+      ...(coherenceRaw.findings || []),
+      ...(lexicalRaw.findings || []),
+      ...(grammarRaw.findings || []),
+    ];
+    const candidateByVerificationId = new Map<string, QuoteFirstFinding>();
+    rawCandidates.forEach(finding => {
+      candidateByVerificationId.set(mentorFindingVerificationId(finding), finding);
+    });
+    const candidates = [...candidateByVerificationId.entries()].map(([verificationId, finding]) => ({
+      ...finding,
+      id: verificationId,
+    }));
+    if (candidates.length) {
+      const candidateIds = candidates.map(finding => finding.id);
+      const verification = await runPass<MentorBinaryVerificationPass>(
+        MENTOR_BINARY_VERIFICATION_SYSTEM,
+        {
+          ...specialistSource,
+          candidates,
+        },
+        value => mentorVerificationErrors(value, candidateIds),
+        'mentor-binary-verification-v8',
+      );
+      mentorAcceptedFindingIds = new Set(
+        verification.decisions
+          .filter(decision => decision.verdict === 'YES')
+          .map(decision => candidateByVerificationId.get(decision.findingId))
+          .filter((finding): finding is QuoteFirstFinding => Boolean(finding))
+          .map(finding => mentorFindingVerificationId(finding)),
+      );
+    } else {
+      mentorAcceptedFindingIds = new Set();
+    }
+  }
+  const verifiedForMentorExperiment = (pass: V7CriterionPass): V7CriterionPass => (
+    mentorAcceptedFindingIds
+      ? {
+          ...pass,
+          findings: (pass.findings || []).filter(finding => (
+            mentorAcceptedFindingIds?.has(mentorFindingVerificationId(finding))
+          )),
+        }
+      : pass
+  );
+  const taskForAssembly = verifiedForMentorExperiment(taskRaw);
+  const cohesionForAssembly = verifiedForMentorExperiment(cohesionRaw);
+  const coherenceForAssembly = verifiedForMentorExperiment(coherenceRaw);
+  const lexicalForAssembly = verifiedForMentorExperiment(lexicalRaw);
+  const grammarForAssembly = verifiedForMentorExperiment(grammarRaw);
+  const benchmarkCandidateSignatures = (
+    ['v7-candidate-pool', 'v8-candidate-only', 'v9-hybrid-candidate', 'v10-stable-candidate', 'v11-core-worth', 'v12-free-strength'].includes(ACTIVE_ASSESSMENT_PROMPT_VERSION)
+      ? (
+          ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v9-hybrid-candidate'
+            ? [
+                ...canonicalizeFocusedFindingPass(taskRaw, essay, manifest, 'hybrid-tr'),
+                ...canonicalizeFocusedFindingPass(coherenceRaw, essay, manifest, 'hybrid-coherence'),
+                ...canonicalizeCandidateFindingPass(cohesionRaw, essay, manifest, 'hybrid-candidate-cohesion'),
+                ...canonicalizeCandidateFindingPass(lexicalRaw, essay, manifest, 'hybrid-candidate-lr'),
+                ...canonicalizeCandidateFindingPass(grammarRaw, essay, manifest, 'hybrid-candidate-gra'),
+              ]
+            : [
+                ...canonicalizeCandidateFindingPass(taskRaw, essay, manifest, 'candidate-tr'),
+                ...canonicalizeCandidateFindingPass(coherenceRaw, essay, manifest, 'candidate-coherence'),
+                ...canonicalizeCandidateFindingPass(cohesionRaw, essay, manifest, 'candidate-cohesion'),
+                ...canonicalizeCandidateFindingPass(lexicalRaw, essay, manifest, 'candidate-lr'),
+                ...canonicalizeCandidateFindingPass(grammarRaw, essay, manifest, 'candidate-gra'),
+              ]
+        ).map(evidenceSignatureForFinding)
+      : undefined
+  );
+  const benchmarkCandidateSeveritySignatures = (
+    ['v7-candidate-pool', 'v8-candidate-only', 'v9-hybrid-candidate', 'v10-stable-candidate', 'v11-core-worth', 'v12-free-strength'].includes(ACTIVE_ASSESSMENT_PROMPT_VERSION)
+      ? (
+          ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v9-hybrid-candidate'
+            ? [
+                ...canonicalizeFocusedFindingPass(taskRaw, essay, manifest, 'hybrid-tr'),
+                ...canonicalizeFocusedFindingPass(coherenceRaw, essay, manifest, 'hybrid-coherence'),
+                ...canonicalizeCandidateFindingPass(cohesionRaw, essay, manifest, 'hybrid-candidate-cohesion'),
+                ...canonicalizeCandidateFindingPass(lexicalRaw, essay, manifest, 'hybrid-candidate-lr'),
+                ...canonicalizeCandidateFindingPass(grammarRaw, essay, manifest, 'hybrid-candidate-gra'),
+              ]
+            : [
+                ...canonicalizeCandidateFindingPass(taskRaw, essay, manifest, 'candidate-tr'),
+                ...canonicalizeCandidateFindingPass(coherenceRaw, essay, manifest, 'candidate-coherence'),
+                ...canonicalizeCandidateFindingPass(cohesionRaw, essay, manifest, 'candidate-cohesion'),
+                ...canonicalizeCandidateFindingPass(lexicalRaw, essay, manifest, 'candidate-lr'),
+                ...canonicalizeCandidateFindingPass(grammarRaw, essay, manifest, 'candidate-gra'),
+              ]
+        ).map(severityEvidenceSignatureForFinding)
+      : undefined
+  );
+  const benchmarkCandidateProblemStrengthSignatures = (
+    ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength'
+      ? [
+          ...canonicalizeCandidateFindingPass(taskRaw, essay, manifest, 'candidate-tr'),
+          ...canonicalizeCandidateFindingPass(coherenceRaw, essay, manifest, 'candidate-coherence'),
+          ...canonicalizeCandidateFindingPass(cohesionRaw, essay, manifest, 'candidate-cohesion'),
+          ...canonicalizeCandidateFindingPass(lexicalRaw, essay, manifest, 'candidate-lr'),
+          ...canonicalizeCandidateFindingPass(grammarRaw, essay, manifest, 'candidate-gra'),
+        ].map(problemStrengthEvidenceSignatureForFinding)
+      : undefined
+  );
+
   initialRaw.scores = normalizeOverallScore(initialRaw.scores);
   const initial = canonicalizeQuoteFirstExaminer(initialRaw, essay, manifest);
+  const assembledFocusedFindings = [
+      ...canonicalizeFocusedFindingPass(taskForAssembly, essay, manifest, 'tr'),
+      ...canonicalizeFocusedFindingPass(coherenceForAssembly, essay, manifest, 'coherence'),
+      ...canonicalizeFocusedFindingPass(cohesionForAssembly, essay, manifest, 'cohesion'),
+      ...canonicalizeFocusedFindingPass(lexicalForAssembly, essay, manifest, 'lr'),
+      ...canonicalizeFocusedFindingPass(grammarForAssembly, essay, manifest, 'gra'),
+  ];
   const focusedFindings = removeUnrequiredMacroComparisonFindings(
-    orderAndDedupeFocusedFindings(reconcileFocusedLocalOwnership([
-      ...canonicalizeFocusedFindingPass(taskRaw, essay, manifest, 'tr'),
-      ...canonicalizeFocusedFindingPass(coherenceRaw, essay, manifest, 'coherence'),
-      ...canonicalizeFocusedFindingPass(cohesionRaw, essay, manifest, 'cohesion'),
-      ...canonicalizeFocusedFindingPass(lexicalRaw, essay, manifest, 'lr'),
-      ...canonicalizeFocusedFindingPass(grammarRaw, essay, manifest, 'gra'),
-    ])),
+    ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength'
+      ? assembledFocusedFindings
+      : orderAndDedupeFocusedFindings(reconcileFocusedLocalOwnership(assembledFocusedFindings)),
     initial.promptType,
   );
   const reconciledCriterionBands = {
@@ -5255,7 +6053,7 @@ export async function runWritingAssessmentPipelineV8({
     grammaticalRange: reconcileCriterionBand(initial.scores.grammaticalRange, grammarRaw.band),
   };
   const scoreValues = Object.values(reconciledCriterionBands);
-  const scores = ensureBandScores({
+  let scores = ensureBandScores({
     ...reconciledCriterionBands,
     overall: Math.round((scoreValues.reduce((sum, band) => sum + band, 0) / 4) * 2) / 2,
   });
@@ -5298,23 +6096,81 @@ export async function runWritingAssessmentPipelineV8({
     criterionJudgments,
     findings: focusedFindings,
   };
-  const confirmedFindings = filterLowSignalFindingsForHighBand(
-    removeUnrequiredVerifiedMacroComparisonFindings(
-      dedupeVerifiedFindings(synthesizeCoverageFindings(
+  const rawVerifiedFindings = verifiedFindingsFromQuoteExaminer(quoteExaminer);
+  const assembledVerifiedFindings = ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength'
+    ? rawVerifiedFindings
+    : synthesizeCoverageFindings(
         quoteExaminer,
         reconcileCrossCriterionOwnership(
-          reconcileOverlappingLanguageOwnership(
-            verifiedFindingsFromQuoteExaminer(quoteExaminer),
-            essay,
-            manifest,
-          ),
+          reconcileOverlappingLanguageOwnership(rawVerifiedFindings, essay, manifest),
         ).filter(finding => !finding.mergedIntoFindingId),
         manifest,
-      )),
-      initial.promptType,
-    ),
-    scores,
+      );
+  const validConfirmedFindings = removeUnrequiredVerifiedMacroComparisonFindings(
+    dedupeVerifiedFindings(assembledVerifiedFindings),
+    initial.promptType,
   );
+  const confirmedFindings = ACTIVE_ASSESSMENT_PROMPT_VERSION === 'v12-free-strength'
+    ? validConfirmedFindings
+    : filterLowSignalFindingsForHighBand(validConfirmedFindings, scores);
+  let scoreAudit: ScoreConsistencyPass = {
+    scores,
+    decisions: criterionJudgments.map(judgment => ({
+      criterion: judgment.criterion,
+      initialBand: initial.scores[judgment.criterion],
+      finalBand: scores[judgment.criterion],
+      reasonVi: judgment.rationaleVi,
+    })),
+  };
+  try {
+    const adjudicationExaminer = examinerForQuoteFirstAssembly(quoteExaminer, confirmedFindings);
+    scoreAudit = await runPass<ScoreConsistencyPass>(
+      SCORE_CONSISTENCY_SYSTEM,
+      {
+        taskPrompt: prompt,
+        essay,
+        initialScores: initial.scores,
+        initialCriterionJudgments: initial.criterionJudgments,
+        criterionPassScores: {
+          taskDevelopment: taskDevelopmentRaw.band,
+          taskCoverage: taskCoverageRaw.band,
+          coherence: coherenceRaw.band,
+          cohesion: cohesionRaw.band,
+          lexicalResource: lexicalRaw.band,
+          grammaticalRange: grammarRaw.band,
+        },
+        criterionPassRationales: {
+          taskDevelopment: taskDevelopmentRaw.rationaleVi,
+          taskCoverage: taskCoverageRaw.rationaleVi,
+          coherence: coherenceRaw.rationaleVi,
+          cohesion: cohesionRaw.rationaleVi,
+          lexicalResource: lexicalRaw.rationaleVi,
+          grammaticalRange: grammarRaw.rationaleVi,
+        },
+        confirmedFindings,
+      },
+      value => scoreConsistencyErrors(
+        value,
+        initial.scores,
+        adjudicationExaminer,
+        confirmedFindings,
+      ),
+      'score-adjudication-v8',
+    );
+    scores = ensureBandScores(scoreAudit.scores);
+    quoteExaminer.scores = scores;
+    quoteExaminer.criterionJudgments = scoreAudit.decisions.map(decision => ({
+      criterion: decision.criterion,
+      band: decision.finalBand,
+      rationaleVi: decision.reasonVi,
+    }));
+  } catch (error) {
+    incompletePasses.push('score-adjudication-v8');
+    if (process.env.ASSESSMENT_LLM_LOG_USAGE === 'true' || process.env.ASSESSMENT_BENCHMARK_MODE === 'true') {
+      console.warn('[assessment-score-adjudication-fallback]', error instanceof Error ? error.message : String(error));
+    }
+  }
+  onIncompletePasses?.(incompletePasses);
   const examiner = examinerForQuoteFirstAssembly(quoteExaminer, confirmedFindings);
   const decomposition = localCompatibilityDecomposition(manifest);
   const task = buildTaskPass(examiner, confirmedFindings, decomposition, essay, manifest);
@@ -5325,15 +6181,6 @@ export async function runWritingAssessmentPipelineV8({
     findings: confirmedFindings,
     coverageCheckVi: 'Prompt profile được dùng như diagnostic lens; quote được resolve lại với nguyên văn ở local.',
   };
-  const scoreAudit: ScoreConsistencyPass = {
-    scores,
-    decisions: criterionJudgments.map(judgment => ({
-      criterion: judgment.criterion,
-      initialBand: initial.scores[judgment.criterion],
-      finalBand: scores[judgment.criterion],
-      reasonVi: judgment.rationaleVi,
-    })),
-  };
   let comparison: BandComparison = {
     targetBand: (scores.overall >= 8.5 ? 9 : 8) as 8 | 9,
     revisedEssay: essay,
@@ -5343,7 +6190,7 @@ export async function runWritingAssessmentPipelineV8({
     preservedStrengthsVi: [],
     changes: [],
   };
-  if (confirmedFindings.length) {
+  if (confirmedFindings.length && includeComparison) {
     try {
       comparison = await runComparisonRewriteOnce({
         taskPrompt: prompt,
@@ -5375,7 +6222,25 @@ export async function runWritingAssessmentPipelineV8({
     overallAssessment: overallAssessment(examiner, confirmedFindings, scores, scoreAudit),
     comparison,
   };
-  const analysis = alignWritingAnalysis(materializeReviewErrors(raw), essay, manifest);
+  const analysis = dropUnquotableHighlights(
+    alignWritingAnalysis(materializeReviewErrors(raw), essay, manifest),
+    manifest,
+  );
+  if (benchmarkCandidateSignatures) {
+    (analysis as WritingAnalysis & { benchmarkCandidateSignatures?: string[]; benchmarkCandidateSeveritySignatures?: string[]; benchmarkCandidateProblemStrengthSignatures?: string[] }).benchmarkCandidateSignatures = [
+      ...new Set(benchmarkCandidateSignatures),
+    ];
+  }
+  if (benchmarkCandidateSeveritySignatures) {
+    (analysis as WritingAnalysis & { benchmarkCandidateSignatures?: string[]; benchmarkCandidateSeveritySignatures?: string[]; benchmarkCandidateProblemStrengthSignatures?: string[] }).benchmarkCandidateSeveritySignatures = [
+      ...new Set(benchmarkCandidateSeveritySignatures),
+    ];
+  }
+  if (benchmarkCandidateProblemStrengthSignatures) {
+    (analysis as WritingAnalysis & { benchmarkCandidateSignatures?: string[]; benchmarkCandidateSeveritySignatures?: string[]; benchmarkCandidateProblemStrengthSignatures?: string[] }).benchmarkCandidateProblemStrengthSignatures = [
+      ...new Set(benchmarkCandidateProblemStrengthSignatures),
+    ];
+  }
   const errors = validateWritingAnalysis(analysis, manifest, essay);
   if (errors.length) throw new Error(`Assessment v8 failed validation: ${errors.join(' ')}`);
   return analysis;
@@ -5439,13 +6304,14 @@ export const assessmentPipelineV7Prompts = {
   grammar: V7_GRAMMATICAL_RANGE_SYSTEM,
 };
 
+/** The specialist entries are the full composed prompts v8 actually sends. */
 export const assessmentPipelineV8Prompts = {
   promptProfile: PROMPT_PROFILE_SYSTEM,
   profileGuidance: PROMPT_PROFILE_ASSESSMENT_GUIDANCE,
   initialReading: NATURAL_ASSESSMENT_V6_SYSTEM,
-  taskResponse: V7_TASK_RESPONSE_SYSTEM,
-  coherence: V7_COHERENCE_SYSTEM,
-  cohesion: V7_COHESION_SYSTEM,
-  lexicalResource: V7_LEXICAL_RESOURCE_SYSTEM,
-  grammar: V7_GRAMMATICAL_RANGE_SYSTEM,
+  taskResponse: `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${TR_DEVELOPMENT_SYSTEM}\n${TR_COVERAGE_SYSTEM}\n${CRITERION_SCORE_SYSTEMS.taskAchievement}\n${V8_SPECIALIST_DISCIPLINE}\n${V7_CRITERION_OUTPUT}`,
+  coherence: `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_COHERENCE_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
+  cohesion: `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${AUTHOR_COHESION_SYSTEM}\n${V8_SPECIALIST_DISCIPLINE}`,
+  lexicalResource: `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_LEXICAL_RESOURCE_SYSTEM}\n${CRITERION_SCORE_SYSTEMS.lexicalResource}\n${V8_SPECIALIST_DISCIPLINE}`,
+  grammar: `${PROMPT_PROFILE_ASSESSMENT_GUIDANCE}\n${V7_GRAMMATICAL_RANGE_SYSTEM}\n${CRITERION_SCORE_SYSTEMS.grammaticalRange}\n${V8_SPECIALIST_DISCIPLINE}`,
 };

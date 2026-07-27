@@ -647,6 +647,15 @@ export default function LanguageFeedbackPanel({
                         </span>
                         <span className="font-mono text-[8px] uppercase tracking-[0.1em] text-black/40">{criterion}</span>
                         <span className="font-mono text-[8px] text-[#A3A3A3]">#{index + 1}</span>
+                        {highlight.problemStrength ? (
+                          <span className={`rounded-[5px] px-1.5 py-0.5 font-mono text-[8px] font-semibold ${
+                            highlight.problemStrength === 'core_problem'
+                              ? 'bg-[#FDECEC] text-[#B42318]'
+                              : 'bg-[#FFF7DB] text-[#8A6514]'
+                          }`}>
+                            {highlight.problemStrength === 'core_problem' ? 'Lỗi chính' : 'Đáng lưu ý'}
+                          </span>
+                        ) : null}
                       </div>
                       <p className="mt-1.5 font-sans text-[11px] font-semibold leading-snug text-[#2A2A2A]">{highlight.label}</p>
                       <p className="mt-2 font-sans text-[10px] leading-relaxed text-[#737373]">

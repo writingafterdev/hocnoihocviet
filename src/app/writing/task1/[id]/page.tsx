@@ -14,6 +14,7 @@ import { useParams } from 'next/navigation';
 import { getPromptById } from '@/lib/prompts';
 import { EMPTY_ANALYSIS } from '@/lib/writing-demo';
 import { motion, AnimatePresence } from 'motion/react';
+import { authenticatedFetch } from '@/lib/authenticated-fetch';
 
 type PageState = 'idle' | 'analyzing' | 'result';
 
@@ -95,9 +96,13 @@ export default function WritingPage() {
     }
   }, [paragraphTexts, planPyramid, state, analysis, params.id, promptText]);
 
+  // Paragraphs are joined with a blank line and the assessment manifest splits on
+  // exactly that, so a blank line typed inside one planner paragraph would become
+  // two paragraphs downstream and shift every later paragraph index — which is
+  // what every piece of evidence in the review is anchored to. Collapse them.
   const essay = planPyramid.paragraphs
-    .map(p => paragraphTexts[p.index] || '')
-    .filter(text => text.trim().length > 0)
+    .map(p => (paragraphTexts[p.index] || '').replace(/\n\s*\n+/g, '\n').trim())
+    .filter(text => text.length > 0)
     .join('\n\n');
 
   const [leftWidth, setLeftWidth] = useState(50);
@@ -136,10 +141,15 @@ export default function WritingPage() {
     setState('analyzing');
 
     try {
-      const res = await fetch('/api/writing/analyze', {
+      const res = await authenticatedFetch('/api/writing/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt: promptText, essay }),
+        body: JSON.stringify({
+          taskId: params.id,
+          prompt: promptText,
+          essay,
+          idempotencyKey: crypto.randomUUID(),
+        }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Analysis failed');
@@ -173,6 +183,14 @@ export default function WritingPage() {
               prompt={promptText}
               essay={essay}
               analysis={displayAnalysis}
+              onRequestComparison={async () => {
+                const response = await authenticatedFetch(`/api/writing/assessments/${params.id}/comparison`, {
+                  method: 'POST',
+                });
+                const payload = await response.json();
+                if (!response.ok) throw new Error(payload.error || 'Comparison failed');
+                setAnalysis(payload.analysis);
+              }}
               onStartNew={() => { setState('idle'); setAnalysis(null); setActiveParagraphIndex(null); }}
             />
           ) : (

@@ -8,6 +8,13 @@ import type { Article, Category, Source, Tag } from '@/types';
 
 const ARTICLES = COLLECTIONS.articles;
 
+// Appwrite SDK documents have a null prototype, which Next.js refuses to pass
+// from Server Components to Client Components. Round-trip through JSON to get
+// plain objects.
+function toPlain<T>(value: unknown): T {
+  return JSON.parse(JSON.stringify(value));
+}
+
 export async function getPublishedArticles(opts?: {
   limit?: number;
   offset?: number;
@@ -26,7 +33,7 @@ export async function getPublishedArticles(opts?: {
   if (opts?.search) queries.push(Query.search('title', opts.search));
 
   const res = await serverDatabases.listDocuments(DB_ID, ARTICLES, queries);
-  return res.documents as unknown as Article[];
+  return toPlain<Article[]>(res.documents);
 }
 
 export async function getFeaturedArticles(limit = 5): Promise<Article[]> {
@@ -35,7 +42,7 @@ export async function getFeaturedArticles(limit = 5): Promise<Article[]> {
     Query.orderDesc('published_at'),
     Query.limit(limit),
   ]);
-  return res.documents as unknown as Article[];
+  return toPlain<Article[]>(res.documents);
 }
 
 export async function getHighlightArticles(limit = 20): Promise<Article[]> {
@@ -45,7 +52,7 @@ export async function getHighlightArticles(limit = 20): Promise<Article[]> {
     Query.orderDesc('published_at'),
     Query.limit(limit),
   ]);
-  return (res.documents as unknown as Article[]).filter(
+  return toPlain<Article[]>(res.documents).filter(
     (a) => a.highlights && a.highlights.length > 0,
   );
 }
@@ -57,7 +64,7 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
     Query.limit(1),
   ]);
   if (res.documents.length === 0) return null;
-  return res.documents[0] as unknown as Article;
+  return toPlain<Article>(res.documents[0]);
 }
 
 export async function getAllPublishedSlugs(): Promise<string[]> {
@@ -71,18 +78,18 @@ export async function getAllPublishedSlugs(): Promise<string[]> {
 
 export async function getSources(): Promise<Source[]> {
   const res = await serverDatabases.listDocuments(DB_ID, COLLECTIONS.sources);
-  return res.documents as unknown as Source[];
+  return toPlain<Source[]>(res.documents);
 }
 
 export async function getCategories(sourceSlug?: string): Promise<Category[]> {
   const queries = sourceSlug ? [Query.equal('source_slug', sourceSlug)] : [];
   const res = await serverDatabases.listDocuments(DB_ID, COLLECTIONS.categories, queries);
-  return res.documents as unknown as Category[];
+  return toPlain<Category[]>(res.documents);
 }
 
 export async function getTags(): Promise<Tag[]> {
   const res = await serverDatabases.listDocuments(DB_ID, COLLECTIONS.tags);
-  return res.documents as unknown as Tag[];
+  return toPlain<Tag[]>(res.documents);
 }
 
 export function estimateReadingTime(text: string): number {

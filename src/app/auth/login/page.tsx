@@ -52,8 +52,9 @@ export default function LoginPage() {
             Dùng tài khoản Google của bạn để tiếp tục. Không cần mật khẩu, không phiền hà.
           </p>
 
-          <a
-            href="https://sgp.cloud.appwrite.io/v1/account/sessions/oauth2/google?project=6a1d8fca002bb2a78d76&success=http%3A%2F%2Flocalhost%3A3000%2F&failure=http%3A%2F%2Flocalhost%3A3000%2Fauth%2Flogin%3Ferror%3Doauth_failed"
+          <button
+            type="button"
+            onClick={() => loginWithGoogle()}
             className="w-full flex items-center justify-center gap-3 bg-white border border-neutral-200 py-4 rounded-xl hover:bg-neutral-50 hover:shadow-sm transition-all mb-10 shadow-[0_2px_10px_rgba(0,0,0,0.02)]"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +64,7 @@ export default function LoginPage() {
               <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
             </svg>
             <span className="font-sans text-[15px] font-semibold text-[#141413]">Tiếp tục với Google</span>
-          </a>
+          </button>
 
           <div className="flex items-center gap-4 mb-10 w-full opacity-60">
             <div className="flex-1 border-t border-neutral-300"></div>
